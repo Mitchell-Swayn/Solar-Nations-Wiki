@@ -37,10 +37,8 @@ const ICON_ALIASES: Record<string, string> = {
   attack: 'smallArms0', entrenchment: 'fortifications', recon: 'activeRecon', truck: 'logistics',
 };
 
-function resolveIconSource(icon: string, type: string): string {
-  if (ICON_ALIASES[icon]) return ICON_ALIASES[icon];
-  if (type === 'culture-traits') return getCultureTraitGroup(icon).icon ?? icon;
-  return icon;
+function resolveIconSource(icon: string): string {
+  return ICON_ALIASES[icon] ?? icon;
 }
 
 function stripJsonComments(text: string): string {
@@ -189,7 +187,7 @@ function localize(
   localization: Record<string, string>,
 ): string | undefined {
   if (typeof value !== 'string') return undefined;
-  return localization[value] ?? value;
+  return localization[value] ?? localization[value.toLowerCase()] ?? value;
 }
 
 function humanizeId(id: string): string {
@@ -338,7 +336,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
   let removed = 0;
   for (const entry of entries) {
     if (!entry.icon) continue;
-    const sourceName = resolveIconSource(entry.icon, entry.type);
+    const sourceName = resolveIconSource(entry.icon);
     if (!sourceFiles.has(sourceName.toLowerCase())) {
       entry.icon = undefined;
       delete entry.fields.Icon;
@@ -361,14 +359,41 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   let copied = 0;
   const missing: string[] = [];
   for (const icon of [...requested].sort()) {
-    const entry = entries.find((candidate) => candidate.icon === icon);
-    const sourceName = resolveIconSource(icon, entry?.type ?? '');
+    const sourceName = resolveIconSource(icon);
     const source = sourceFiles.get(sourceName.toLowerCase());
     if (!source) { missing.push(icon); continue; }
     cpSync(source, join(outputRoot, `${icon}.png`));
     copied++;
   }
   console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
+}
+
+function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry[], gameRoot: string) {
+  const sourceFiles = indexPngFiles(getIconsPath(gameRoot));
+  const available = (icon: string | undefined): icon is string =>
+    Boolean(icon && sourceFiles.has(resolveIconSource(icon).toLowerCase()));
+  const modifierIcons = new Map(
+    modifierEntries
+      .filter((modifier) => modifier.icon)
+      .map((modifier) => [modifier.id, modifier.icon as string]),
+  );
+  for (const entry of entries) {
+    if (entry.type !== 'culture-traits') continue;
+    const candidates = [
+      ...entry.modifiers.map((modifier) => modifierIcons.get(modifier.key)),
+      getCultureTraitGroup(entry.id).icon,
+    ];
+    const icon = candidates.find(available);
+    entry.references = entry.references.filter((reference) => reference.type !== 'icon');
+    if (!icon) {
+      entry.icon = undefined;
+      delete entry.fields.Icon;
+      continue;
+    }
+    entry.icon = icon;
+    entry.fields.Icon = icon;
+    entry.references.push({ type: 'icon', id: icon });
+  }
 }
 
 function loadLocalization(modPath: string): Record<string, string> {
@@ -548,6 +573,7 @@ function main() {
   const modifierEntries = loadModifiers(modPath, localization);
   const missionEntries = loadMissionComponents(modPath);
 
+  applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);
   const allEntries = [...defineEntries, ...modifierEntries, ...missionEntries];
   const source = useRaw
     ? 'data/raw extracted Defines + tutorialMod modifiers'

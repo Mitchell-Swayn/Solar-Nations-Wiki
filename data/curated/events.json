@@ -1,10 +1,10 @@
 [
   {
-    "id": "robotCountrySetup",
+    "id": "superhumanCountrySetup",
     "type": "events",
-    "displayName": "Robot Country Setup",
+    "displayName": "Eugenogenesis",
     "fields": {
-      "Name": "robotCountrySetup"
+      "Name": "superhumanCountrySetup"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -22,11 +22,11 @@
     "references": []
   },
   {
-    "id": "superhumanCountrySetup",
+    "id": "robotCountrySetup",
     "type": "events",
-    "displayName": "Superhuman Country Setup",
+    "displayName": "THE BECOMING",
     "fields": {
-      "Name": "superhumanCountrySetup"
+      "Name": "robotCountrySetup"
     },
     "modifiers": [],
     "prerequisites": [],

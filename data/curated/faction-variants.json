@@ -112,6 +112,34 @@
     ]
   },
   {
+    "id": "middleClass_hivemind",
+    "type": "faction-variants",
+    "displayName": "Complex Drones",
+    "icon": "middleClass_hivemind",
+    "fields": {
+      "Name": "middleClass_hivemind",
+      "Icon": "middleClass_hivemind",
+      "BaseFaction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [
+      {
+        "type": "reformOption",
+        "id": "middleClass"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass_hivemind"
+      },
+      {
+        "type": "factions",
+        "id": "middleClass"
+      }
+    ]
+  },
+  {
     "id": "clergy_fascist",
     "type": "faction-variants",
     "displayName": "Fascist Ideocrats",
@@ -224,6 +252,34 @@
     ]
   },
   {
+    "id": "upperClass_hivemind",
+    "type": "faction-variants",
+    "displayName": "Mastercontroller Drones",
+    "icon": "upperClass_hivemind",
+    "fields": {
+      "Name": "upperClass_hivemind",
+      "Icon": "upperClass_hivemind",
+      "BaseFaction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [
+      {
+        "type": "reformOption",
+        "id": "upperClass"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClass_hivemind"
+      },
+      {
+        "type": "factions",
+        "id": "upperClass"
+      }
+    ]
+  },
+  {
     "id": "laborer_hivemind",
     "type": "faction-variants",
     "displayName": "Menial Drones",
@@ -248,34 +304,6 @@
       {
         "type": "factions",
         "id": "laborer"
-      }
-    ]
-  },
-  {
-    "id": "middleClass_hivemind",
-    "type": "faction-variants",
-    "displayName": "Middle Class Hivemind",
-    "icon": "middleClass_hivemind",
-    "fields": {
-      "Name": "middleClass_hivemind",
-      "Icon": "middleClass_hivemind",
-      "BaseFaction": "middleClass"
-    },
-    "modifiers": [],
-    "prerequisites": [
-      {
-        "type": "reformOption",
-        "id": "middleClass"
-      }
-    ],
-    "references": [
-      {
-        "type": "icon",
-        "id": "middleClass_hivemind"
-      },
-      {
-        "type": "factions",
-        "id": "middleClass"
       }
     ]
   },
@@ -308,34 +336,6 @@
     ]
   },
   {
-    "id": "militaryIndustrialComplex",
-    "type": "faction-variants",
-    "displayName": "Military Industrial Complex",
-    "icon": "militaryIndustrialComplex",
-    "fields": {
-      "Name": "militaryIndustrialComplex",
-      "Icon": "militaryIndustrialComplex",
-      "BaseFaction": "military"
-    },
-    "modifiers": [],
-    "prerequisites": [
-      {
-        "type": "reformOption",
-        "id": "military"
-      }
-    ],
-    "references": [
-      {
-        "type": "icon",
-        "id": "militaryIndustrialComplex"
-      },
-      {
-        "type": "factions",
-        "id": "military"
-      }
-    ]
-  },
-  {
     "id": "military_mercenary",
     "type": "faction-variants",
     "displayName": "Military Mercenary",
@@ -356,6 +356,34 @@
       {
         "type": "icon",
         "id": "military_mercenary"
+      },
+      {
+        "type": "factions",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "militaryIndustrialComplex",
+    "type": "faction-variants",
+    "displayName": "Military-Industrial Complex",
+    "icon": "militaryIndustrialComplex",
+    "fields": {
+      "Name": "militaryIndustrialComplex",
+      "Icon": "militaryIndustrialComplex",
+      "BaseFaction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [
+      {
+        "type": "reformOption",
+        "id": "military"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryIndustrialComplex"
       },
       {
         "type": "factions",
@@ -444,34 +472,6 @@
       {
         "type": "factions",
         "id": "clergy"
-      }
-    ]
-  },
-  {
-    "id": "upperClass_hivemind",
-    "type": "faction-variants",
-    "displayName": "Upper Class Hivemind",
-    "icon": "upperClass_hivemind",
-    "fields": {
-      "Name": "upperClass_hivemind",
-      "Icon": "upperClass_hivemind",
-      "BaseFaction": "upperClass"
-    },
-    "modifiers": [],
-    "prerequisites": [
-      {
-        "type": "reformOption",
-        "id": "upperClass"
-      }
-    ],
-    "references": [
-      {
-        "type": "icon",
-        "id": "upperClass_hivemind"
-      },
-      {
-        "type": "factions",
-        "id": "upperClass"
       }
     ]
   },

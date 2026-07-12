@@ -2,7 +2,7 @@
   {
     "id": "airCapacity",
     "type": "resources",
-    "displayName": "Air Capacity",
+    "displayName": "Airforce Limit",
     "icon": "airCapacity",
     "fields": {
       "Name": "airCapacity",
@@ -36,9 +36,27 @@
     ]
   },
   {
+    "id": "superSteel",
+    "type": "resources",
+    "displayName": "Chromite",
+    "icon": "superSteel",
+    "fields": {
+      "Name": "superSteel",
+      "Icon": "superSteel"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superSteel"
+      }
+    ]
+  },
+  {
     "id": "diplomacyCapacity",
     "type": "resources",
-    "displayName": "Diplomacy Capacity",
+    "displayName": "Diplomatic Capacity",
     "icon": "diplomacyCapacity",
     "fields": {
       "Name": "diplomacyCapacity",
@@ -158,7 +176,7 @@
   {
     "id": "navyCapacity",
     "type": "resources",
-    "displayName": "Navy Capacity",
+    "displayName": "Naval Capacity",
     "icon": "navyCapacity",
     "fields": {
       "Name": "navyCapacity",
@@ -210,9 +228,27 @@
     ]
   },
   {
+    "id": "willpowerCapacity",
+    "type": "resources",
+    "displayName": "Sapiessence",
+    "icon": "willpowerCapacity",
+    "fields": {
+      "Name": "willpowerCapacity",
+      "Icon": "willpowerCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "willpowerCapacity"
+      }
+    ]
+  },
+  {
     "id": "spaceCapacity",
     "type": "resources",
-    "displayName": "Space Capacity",
+    "displayName": "Spacefleet Capacity",
     "icon": "spaceCapacity",
     "fields": {
       "Name": "spaceCapacity",
@@ -242,42 +278,6 @@
       {
         "type": "icon",
         "id": "strategicCapacity"
-      }
-    ]
-  },
-  {
-    "id": "superSteel",
-    "type": "resources",
-    "displayName": "Super Steel",
-    "icon": "superSteel",
-    "fields": {
-      "Name": "superSteel",
-      "Icon": "superSteel"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "superSteel"
-      }
-    ]
-  },
-  {
-    "id": "willpowerCapacity",
-    "type": "resources",
-    "displayName": "Willpower Capacity",
-    "icon": "willpowerCapacity",
-    "fields": {
-      "Name": "willpowerCapacity",
-      "Icon": "willpowerCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "willpowerCapacity"
       }
     ]
   }

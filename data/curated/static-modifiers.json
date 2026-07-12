@@ -20,7 +20,7 @@
   {
     "id": "bankruptEffect",
     "type": "static-modifiers",
-    "displayName": "Bankrupt Effect",
+    "displayName": "Bankruptcy",
     "icon": "bankruptEffect",
     "fields": {
       "Name": "bankruptEffect",
@@ -147,7 +147,7 @@
   {
     "id": "rebelChaosEffect",
     "type": "static-modifiers",
-    "displayName": "Rebel Chaos Effect",
+    "displayName": "Rebellious Chaos",
     "icon": "rebelChaosEffect",
     "fields": {
       "Name": "rebelChaosEffect",

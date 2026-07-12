@@ -36,27 +36,9 @@
     ]
   },
   {
-    "id": "consumerGoods",
-    "type": "deposit-resources",
-    "displayName": "Consumer Goods",
-    "icon": "consumerGoods",
-    "fields": {
-      "Name": "consumerGoods",
-      "Icon": "consumerGoods"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "consumerGoods"
-      }
-    ]
-  },
-  {
     "id": "cryoOrganics",
     "type": "deposit-resources",
-    "displayName": "Cryo Organics",
+    "displayName": "Cryo-Organics",
     "icon": "cryoOrganics",
     "fields": {
       "Name": "cryoOrganics",
@@ -128,7 +110,7 @@
   {
     "id": "exoticGasses",
     "type": "deposit-resources",
-    "displayName": "Exotic Gasses",
+    "displayName": "Exotic Refining",
     "icon": "exoticGasses",
     "fields": {
       "Name": "exoticGasses",
@@ -164,7 +146,7 @@
   {
     "id": "iceNine",
     "type": "deposit-resources",
-    "displayName": "Ice Nine",
+    "displayName": "Ice-9",
     "icon": "iceNine",
     "fields": {
       "Name": "iceNine",
@@ -182,7 +164,7 @@
   {
     "id": "letheTreasure",
     "type": "deposit-resources",
-    "displayName": "Lethe Treasure",
+    "displayName": "Lethe's Treasure",
     "icon": "letheTreasure",
     "fields": {
       "Name": "letheTreasure",
@@ -200,7 +182,7 @@
   {
     "id": "lqdMethane",
     "type": "deposit-resources",
-    "displayName": "Lqd Methane",
+    "displayName": "Liquid Methane",
     "icon": "lqdMethane",
     "fields": {
       "Name": "lqdMethane",
@@ -212,6 +194,24 @@
       {
         "type": "icon",
         "id": "lqdMethane"
+      }
+    ]
+  },
+  {
+    "id": "consumerGoods",
+    "type": "deposit-resources",
+    "displayName": "Manufacturing",
+    "icon": "consumerGoods",
+    "fields": {
+      "Name": "consumerGoods",
+      "Icon": "consumerGoods"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "consumerGoods"
       }
     ]
   },

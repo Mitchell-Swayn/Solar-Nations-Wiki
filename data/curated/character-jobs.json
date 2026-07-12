@@ -115,121 +115,6 @@
     ]
   },
   {
-    "id": "civilLiberty_hypocritical",
-    "type": "character-jobs",
-    "displayName": "Civil Liberty Hypocritical",
-    "icon": "civilLiberty_hypocritical",
-    "fields": {
-      "Name": "civilLiberty_hypocritical",
-      "Icon": "civilLiberty_hypocritical",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_hypocritical"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_liberal",
-    "type": "character-jobs",
-    "displayName": "Civil Liberty Liberal",
-    "icon": "civilLiberty_liberal",
-    "fields": {
-      "Name": "civilLiberty_liberal",
-      "Icon": "civilLiberty_liberal",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_liberal"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_neutral",
-    "type": "character-jobs",
-    "displayName": "Civil Liberty Neutral",
-    "icon": "civilLiberty_neutral",
-    "fields": {
-      "Name": "civilLiberty_neutral",
-      "Icon": "civilLiberty_neutral",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_neutral"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_restricted",
-    "type": "character-jobs",
-    "displayName": "Civil Liberty Restricted",
-    "icon": "civilLiberty_restricted",
-    "fields": {
-      "Name": "civilLiberty_restricted",
-      "Icon": "civilLiberty_restricted",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_restricted"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_totalitarian",
-    "type": "character-jobs",
-    "displayName": "Civil Liberty Totalitarian",
-    "icon": "civilLiberty_totalitarian",
-    "fields": {
-      "Name": "civilLiberty_totalitarian",
-      "Icon": "civilLiberty_totalitarian",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_totalitarian"
-      }
-    ]
-  },
-  {
     "id": "form_corporation",
     "type": "character-jobs",
     "displayName": "Corporation",
@@ -276,29 +161,6 @@
     ]
   },
   {
-    "id": "economy_lassezFaire",
-    "type": "character-jobs",
-    "displayName": "Economy Lassez Faire",
-    "icon": "economy_lassezFaire",
-    "fields": {
-      "Name": "economy_lassezFaire",
-      "Icon": "economy_lassezFaire",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economy_lassezFaire"
-      }
-    ]
-  },
-  {
     "id": "espionage",
     "type": "character-jobs",
     "displayName": "Espionage",
@@ -318,6 +180,29 @@
       {
         "type": "icon",
         "id": "espionage"
+      }
+    ]
+  },
+  {
+    "id": "economy_lassezFaire",
+    "type": "character-jobs",
+    "displayName": "Free Enterprise",
+    "icon": "economy_lassezFaire",
+    "fields": {
+      "Name": "economy_lassezFaire",
+      "Icon": "economy_lassezFaire",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_lassezFaire"
       }
     ]
   },
@@ -345,6 +230,29 @@
     ]
   },
   {
+    "id": "civilLiberty_hypocritical",
+    "type": "character-jobs",
+    "displayName": "Hypocritical",
+    "icon": "civilLiberty_hypocritical",
+    "fields": {
+      "Name": "civilLiberty_hypocritical",
+      "Icon": "civilLiberty_hypocritical",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_hypocritical"
+      }
+    ]
+  },
+  {
     "id": "economy_interventionism",
     "type": "character-jobs",
     "displayName": "Interventionism",
@@ -368,6 +276,29 @@
     ]
   },
   {
+    "id": "civilLiberty_liberal",
+    "type": "character-jobs",
+    "displayName": "Liberal",
+    "icon": "civilLiberty_liberal",
+    "fields": {
+      "Name": "civilLiberty_liberal",
+      "Icon": "civilLiberty_liberal",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_liberal"
+      }
+    ]
+  },
+  {
     "id": "form_monarchy",
     "type": "character-jobs",
     "displayName": "Monarchy",
@@ -387,6 +318,29 @@
       {
         "type": "icon",
         "id": "form_monarchy"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_neutral",
+    "type": "character-jobs",
+    "displayName": "Neutral",
+    "icon": "civilLiberty_neutral",
+    "fields": {
+      "Name": "civilLiberty_neutral",
+      "Icon": "civilLiberty_neutral",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_neutral"
       }
     ]
   },
@@ -483,6 +437,29 @@
     ]
   },
   {
+    "id": "civilLiberty_restricted",
+    "type": "character-jobs",
+    "displayName": "Restricted",
+    "icon": "civilLiberty_restricted",
+    "fields": {
+      "Name": "civilLiberty_restricted",
+      "Icon": "civilLiberty_restricted",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_restricted"
+      }
+    ]
+  },
+  {
     "id": "strategy",
     "type": "character-jobs",
     "displayName": "Strategy",
@@ -525,6 +502,29 @@
       {
         "type": "icon",
         "id": "form_algocracy"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_totalitarian",
+    "type": "character-jobs",
+    "displayName": "Totalitarianism",
+    "icon": "civilLiberty_totalitarian",
+    "fields": {
+      "Name": "civilLiberty_totalitarian",
+      "Icon": "civilLiberty_totalitarian",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_totalitarian"
       }
     ]
   }

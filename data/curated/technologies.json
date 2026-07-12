@@ -744,6 +744,37 @@
     ]
   },
   {
+    "id": "superSteel",
+    "type": "technologies",
+    "displayName": "Chromite",
+    "icon": "superSteel",
+    "fields": {
+      "Name": "superSteel",
+      "Icon": "superSteel",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superSteel"
+      }
+    ]
+  },
+  {
     "id": "colossalCommandCenter",
     "type": "technologies",
     "displayName": "Colossal Command Center",
@@ -802,6 +833,37 @@
       {
         "type": "icon",
         "id": "commerceZones"
+      }
+    ]
+  },
+  {
+    "id": "matterEnergyCovalence",
+    "type": "technologies",
+    "displayName": "Covalence Machine",
+    "icon": "matterEnergyCovalence",
+    "fields": {
+      "Name": "matterEnergyCovalence",
+      "Icon": "matterEnergyCovalence",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "matterEnergyCovalence"
       }
     ]
   },
@@ -1054,68 +1116,6 @@
     ]
   },
   {
-    "id": "eraInterplanetary",
-    "type": "technologies",
-    "displayName": "Era Interplanetary",
-    "icon": "eraInterplanetary",
-    "fields": {
-      "Name": "eraInterplanetary",
-      "Icon": "eraInterplanetary",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "eraInterplanetary"
-      }
-    ]
-  },
-  {
-    "id": "eraUnification",
-    "type": "technologies",
-    "displayName": "Era Unification",
-    "icon": "eraUnification",
-    "fields": {
-      "Name": "eraUnification",
-      "Icon": "eraUnification",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "eraUnification"
-      }
-    ]
-  },
-  {
     "id": "exoticMatter",
     "type": "technologies",
     "displayName": "Exotic Matter",
@@ -1333,6 +1333,99 @@
     ]
   },
   {
+    "id": "warpDrive_1",
+    "type": "technologies",
+    "displayName": "Improved Warp Drive",
+    "icon": "warpDrive_1",
+    "fields": {
+      "Name": "warpDrive_1",
+      "Icon": "warpDrive_1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive_1"
+      }
+    ]
+  },
+  {
+    "id": "replicatorIndustrial",
+    "type": "technologies",
+    "displayName": "Industrial Replicator",
+    "icon": "replicatorIndustrial",
+    "fields": {
+      "Name": "replicatorIndustrial",
+      "Icon": "replicatorIndustrial",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "replicatorIndustrial"
+      }
+    ]
+  },
+  {
+    "id": "eraInterplanetary",
+    "type": "technologies",
+    "displayName": "Interplanetary Age",
+    "icon": "eraInterplanetary",
+    "fields": {
+      "Name": "eraInterplanetary",
+      "Icon": "eraInterplanetary",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraInterplanetary"
+      }
+    ]
+  },
+  {
     "id": "laserTurret1",
     "type": "technologies",
     "displayName": "Laser Turret1",
@@ -1490,7 +1583,7 @@
   {
     "id": "livingMetal",
     "type": "technologies",
-    "displayName": "Living Metal",
+    "displayName": "Living Metals",
     "icon": "livingMetal",
     "fields": {
       "Name": "livingMetal",
@@ -1521,7 +1614,7 @@
   {
     "id": "magneticShield",
     "type": "technologies",
-    "displayName": "Magnetic Shield",
+    "displayName": "Magnetic Proto-Shields",
     "icon": "magneticShield",
     "fields": {
       "Name": "magneticShield",
@@ -1546,99 +1639,6 @@
       {
         "type": "icon",
         "id": "magneticShield"
-      }
-    ]
-  },
-  {
-    "id": "matterEnergyCovalence",
-    "type": "technologies",
-    "displayName": "Matter Energy Covalence",
-    "icon": "matterEnergyCovalence",
-    "fields": {
-      "Name": "matterEnergyCovalence",
-      "Icon": "matterEnergyCovalence",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "matterEnergyCovalence"
-      }
-    ]
-  },
-  {
-    "id": "microCooling",
-    "type": "technologies",
-    "displayName": "Micro Cooling",
-    "icon": "microCooling",
-    "fields": {
-      "Name": "microCooling",
-      "Icon": "microCooling",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "microCooling"
-      }
-    ]
-  },
-  {
-    "id": "militaryDoctrine_mobile",
-    "type": "technologies",
-    "displayName": "Military Doctrine Mobile",
-    "icon": "militaryDoctrine_mobile",
-    "fields": {
-      "Name": "militaryDoctrine_mobile",
-      "Icon": "militaryDoctrine_mobile",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "militaryDoctrine_mobile"
       }
     ]
   },
@@ -1798,9 +1798,40 @@
     ]
   },
   {
+    "id": "militaryDoctrine_mobile",
+    "type": "technologies",
+    "displayName": "Mobile Warfare",
+    "icon": "militaryDoctrine_mobile",
+    "fields": {
+      "Name": "militaryDoctrine_mobile",
+      "Icon": "militaryDoctrine_mobile",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_mobile"
+      }
+    ]
+  },
+  {
     "id": "nanocompositeUsage",
     "type": "technologies",
-    "displayName": "Nanocomposite Usage",
+    "displayName": "Nanocomposite Integration",
     "icon": "nanocompositeUsage",
     "fields": {
       "Name": "nanocompositeUsage",
@@ -1856,6 +1887,37 @@
       {
         "type": "icon",
         "id": "nanoscopicAssembly"
+      }
+    ]
+  },
+  {
+    "id": "microCooling",
+    "type": "technologies",
+    "displayName": "Nanoscopic Cooling",
+    "icon": "microCooling",
+    "fields": {
+      "Name": "microCooling",
+      "Icon": "microCooling",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "microCooling"
       }
     ]
   },
@@ -2166,37 +2228,6 @@
       {
         "type": "icon",
         "id": "radiator5"
-      }
-    ]
-  },
-  {
-    "id": "replicatorIndustrial",
-    "type": "technologies",
-    "displayName": "Replicator Industrial",
-    "icon": "replicatorIndustrial",
-    "fields": {
-      "Name": "replicatorIndustrial",
-      "Icon": "replicatorIndustrial",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "replicatorIndustrial"
       }
     ]
   },
@@ -2573,37 +2604,6 @@
     ]
   },
   {
-    "id": "superSteel",
-    "type": "technologies",
-    "displayName": "Super Steel",
-    "icon": "superSteel",
-    "fields": {
-      "Name": "superSteel",
-      "Icon": "superSteel",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "superSteel"
-      }
-    ]
-  },
-  {
     "id": "supercollider",
     "type": "technologies",
     "displayName": "Supercollider",
@@ -2976,6 +2976,37 @@
     ]
   },
   {
+    "id": "eraUnification",
+    "type": "technologies",
+    "displayName": "Unification Age",
+    "icon": "eraUnification",
+    "fields": {
+      "Name": "eraUnification",
+      "Icon": "eraUnification",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraUnification"
+      }
+    ]
+  },
+  {
     "id": "warExpansion",
     "type": "technologies",
     "displayName": "War Expansion",
@@ -3034,37 +3065,6 @@
       {
         "type": "icon",
         "id": "warpDrive"
-      }
-    ]
-  },
-  {
-    "id": "warpDrive_1",
-    "type": "technologies",
-    "displayName": "Warp Drive 1",
-    "icon": "warpDrive_1",
-    "fields": {
-      "Name": "warpDrive_1",
-      "Icon": "warpDrive_1",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "warpDrive_1"
       }
     ]
   }

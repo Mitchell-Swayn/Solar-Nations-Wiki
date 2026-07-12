@@ -2,7 +2,7 @@
   {
     "id": "eraAbomination",
     "type": "eras",
-    "displayName": "Era Abomination",
+    "displayName": "Age of Abominations",
     "icon": "eraAbomination",
     "fields": {
       "Name": "eraAbomination",
@@ -20,7 +20,7 @@
   {
     "id": "eraBeyond",
     "type": "eras",
-    "displayName": "Era Beyond",
+    "displayName": "Age of the Beyond",
     "icon": "eraBeyond",
     "fields": {
       "Name": "eraBeyond",
@@ -36,27 +36,27 @@
     ]
   },
   {
-    "id": "eraDarkCentury",
+    "id": "eraUnraveling",
     "type": "eras",
-    "displayName": "Era Dark Century",
-    "icon": "eraDarkCentury",
+    "displayName": "Age of Unraveling",
+    "icon": "eraUnraveling",
     "fields": {
-      "Name": "eraDarkCentury",
-      "Icon": "eraDarkCentury"
+      "Name": "eraUnraveling",
+      "Icon": "eraUnraveling"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "eraDarkCentury"
+        "id": "eraUnraveling"
       }
     ]
   },
   {
     "id": "eraIndustrial",
     "type": "eras",
-    "displayName": "Era Industrial",
+    "displayName": "Industrial Age",
     "icon": "eraIndustrial",
     "fields": {
       "Name": "eraIndustrial",
@@ -74,7 +74,7 @@
   {
     "id": "eraInformation",
     "type": "eras",
-    "displayName": "Era Information",
+    "displayName": "Information Age",
     "icon": "eraInformation",
     "fields": {
       "Name": "eraInformation",
@@ -92,7 +92,7 @@
   {
     "id": "eraInterplanetary",
     "type": "eras",
-    "displayName": "Era Interplanetary",
+    "displayName": "Interplanetary Age",
     "icon": "eraInterplanetary",
     "fields": {
       "Name": "eraInterplanetary",
@@ -108,9 +108,27 @@
     ]
   },
   {
+    "id": "eraDarkCentury",
+    "type": "eras",
+    "displayName": "The Dark Century",
+    "icon": "eraDarkCentury",
+    "fields": {
+      "Name": "eraDarkCentury",
+      "Icon": "eraDarkCentury"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraDarkCentury"
+      }
+    ]
+  },
+  {
     "id": "eraUnification",
     "type": "eras",
-    "displayName": "Era Unification",
+    "displayName": "Unification Age",
     "icon": "eraUnification",
     "fields": {
       "Name": "eraUnification",
@@ -122,24 +140,6 @@
       {
         "type": "icon",
         "id": "eraUnification"
-      }
-    ]
-  },
-  {
-    "id": "eraUnraveling",
-    "type": "eras",
-    "displayName": "Era Unraveling",
-    "icon": "eraUnraveling",
-    "fields": {
-      "Name": "eraUnraveling",
-      "Icon": "eraUnraveling"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "eraUnraveling"
       }
     ]
   }

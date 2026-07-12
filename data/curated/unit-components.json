@@ -720,9 +720,27 @@
     ]
   },
   {
+    "id": "reinforcedBulkheads",
+    "type": "unit-components",
+    "displayName": "Bulkhead Reinforcement",
+    "icon": "reinforcedBulkheads",
+    "fields": {
+      "Name": "reinforcedBulkheads",
+      "Icon": "reinforcedBulkheads"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reinforcedBulkheads"
+      }
+    ]
+  },
+  {
     "id": "capitalCommandCenter",
     "type": "unit-components",
-    "displayName": "Capital Command Center",
+    "displayName": "Capital Ship CIC",
     "icon": "capitalCommandCenter",
     "fields": {
       "Name": "capitalCommandCenter",
@@ -866,7 +884,7 @@
   {
     "id": "destroyerCommandCenter",
     "type": "unit-components",
-    "displayName": "Destroyer Command Center",
+    "displayName": "Destroyer CIC",
     "icon": "destroyerCommandCenter",
     "fields": {
       "Name": "destroyerCommandCenter",
@@ -884,7 +902,7 @@
   {
     "id": "droidCommandCore",
     "type": "unit-components",
-    "displayName": "Droid Command Core",
+    "displayName": "Droid Central Control Core",
     "icon": "droidCommandCore",
     "fields": {
       "Name": "droidCommandCore",
@@ -1334,7 +1352,7 @@
   {
     "id": "gravitonShield",
     "type": "unit-components",
-    "displayName": "Graviton Shield",
+    "displayName": "Gravometric Shield",
     "icon": "gravitonShield",
     "fields": {
       "Name": "gravitonShield",
@@ -1404,6 +1422,24 @@
     ]
   },
   {
+    "id": "warpDrive_1",
+    "type": "unit-components",
+    "displayName": "Improved Warp Drive",
+    "icon": "warpDrive_1",
+    "fields": {
+      "Name": "warpDrive_1",
+      "Icon": "warpDrive_1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive_1"
+      }
+    ]
+  },
+  {
     "id": "infantryPowerSuit",
     "type": "unit-components",
     "displayName": "Infantry Power Suit",
@@ -1424,7 +1460,7 @@
   {
     "id": "irregularInfantryEquipment",
     "type": "unit-components",
-    "displayName": "Irregular Infantry Equipment",
+    "displayName": "Irregular Equipment",
     "icon": "irregularInfantryEquipment",
     "fields": {
       "Name": "irregularInfantryEquipment",
@@ -1442,7 +1478,7 @@
   {
     "id": "landCruiser",
     "type": "unit-components",
-    "displayName": "Land Cruiser",
+    "displayName": "Landcruiser",
     "icon": "landCruiser",
     "fields": {
       "Name": "landCruiser",
@@ -1568,7 +1604,7 @@
   {
     "id": "magneticShield",
     "type": "unit-components",
-    "displayName": "Magnetic Shield",
+    "displayName": "Magnetic Proto-Shields",
     "icon": "magneticShield",
     "fields": {
       "Name": "magneticShield",
@@ -2300,24 +2336,6 @@
       {
         "type": "icon",
         "id": "recon"
-      }
-    ]
-  },
-  {
-    "id": "reinforcedBulkheads",
-    "type": "unit-components",
-    "displayName": "Reinforced Bulkheads",
-    "icon": "reinforcedBulkheads",
-    "fields": {
-      "Name": "reinforcedBulkheads",
-      "Icon": "reinforcedBulkheads"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "reinforcedBulkheads"
       }
     ]
   },
@@ -3092,24 +3110,6 @@
       {
         "type": "icon",
         "id": "warpDrive"
-      }
-    ]
-  },
-  {
-    "id": "warpDrive_1",
-    "type": "unit-components",
-    "displayName": "Warp Drive 1",
-    "icon": "warpDrive_1",
-    "fields": {
-      "Name": "warpDrive_1",
-      "Icon": "warpDrive_1"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "warpDrive_1"
       }
     ]
   }

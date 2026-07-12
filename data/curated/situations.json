@@ -1,26 +1,26 @@
 [
   {
-    "id": "bioweaponSituation",
+    "id": "jehovaSituation",
     "type": "situations",
-    "displayName": "Bioweapon Situation",
-    "icon": "bioweaponSituation",
+    "displayName": "Beholding Jehova",
+    "icon": "jehovaSituation",
     "fields": {
-      "Name": "bioweaponSituation",
-      "Icon": "bioweaponSituation"
+      "Name": "jehovaSituation",
+      "Icon": "jehovaSituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "bioweaponSituation"
+        "id": "jehovaSituation"
       }
     ]
   },
   {
     "id": "bureaucracyCrisis",
     "type": "situations",
-    "displayName": "Bureaucracy Crisis",
+    "displayName": "Bureaucratic Betrayal",
     "icon": "bureaucracyCrisis",
     "fields": {
       "Name": "bureaucracyCrisis",
@@ -38,7 +38,7 @@
   {
     "id": "clergyCrisis",
     "type": "situations",
-    "displayName": "Clergy Crisis",
+    "displayName": "Clerical Collapse",
     "icon": "clergyCrisis",
     "fields": {
       "Name": "clergyCrisis",
@@ -56,7 +56,7 @@
   {
     "id": "corporateCrisis",
     "type": "situations",
-    "displayName": "Corporate Crisis",
+    "displayName": "Corporate Chaos",
     "icon": "corporateCrisis",
     "fields": {
       "Name": "corporateCrisis",
@@ -68,6 +68,24 @@
       {
         "type": "icon",
         "id": "corporateCrisis"
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation",
+    "type": "situations",
+    "displayName": "Defense of the Rodina",
+    "icon": "russiaSituation",
+    "fields": {
+      "Name": "russiaSituation",
+      "Icon": "russiaSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "russiaSituation"
       }
     ]
   },
@@ -90,9 +108,63 @@
     ]
   },
   {
+    "id": "saturnSituation",
+    "type": "situations",
+    "displayName": "Edge of the World",
+    "icon": "saturnSituation",
+    "fields": {
+      "Name": "saturnSituation",
+      "Icon": "saturnSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "saturnSituation"
+      }
+    ]
+  },
+  {
+    "id": "upperClassCrisis",
+    "type": "situations",
+    "displayName": "Elite Extremism",
+    "icon": "upperClassCrisis",
+    "fields": {
+      "Name": "upperClassCrisis",
+      "Icon": "upperClassCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClassCrisis"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCrisis",
+    "type": "situations",
+    "displayName": "Eugenics Unleashed",
+    "icon": "superhumanCrisis",
+    "fields": {
+      "Name": "superhumanCrisis",
+      "Icon": "superhumanCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCrisis"
+      }
+    ]
+  },
+  {
     "id": "enterpriseZonesSituation",
     "type": "situations",
-    "displayName": "Enterprise Zones Situation",
+    "displayName": "Free Trade Zones",
     "icon": "enterpriseZonesSituation",
     "fields": {
       "Name": "enterpriseZonesSituation",
@@ -108,38 +180,56 @@
     ]
   },
   {
-    "id": "jehovaSituation",
+    "id": "pirateRepublicSituation",
     "type": "situations",
-    "displayName": "Jehova Situation",
-    "icon": "jehovaSituation",
+    "displayName": "Hoist the Jolly Roger",
+    "icon": "pirateRepublicSituation",
     "fields": {
-      "Name": "jehovaSituation",
-      "Icon": "jehovaSituation"
+      "Name": "pirateRepublicSituation",
+      "Icon": "pirateRepublicSituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "jehovaSituation"
+        "id": "pirateRepublicSituation"
       }
     ]
   },
   {
-    "id": "laborerCrisis",
+    "id": "superhumanCountrySituation",
     "type": "situations",
-    "displayName": "Laborer Crisis",
-    "icon": "laborerCrisis",
+    "displayName": "Homo-Superior",
+    "icon": "superhumanCountrySituation",
     "fields": {
-      "Name": "laborerCrisis",
-      "Icon": "laborerCrisis"
+      "Name": "superhumanCountrySituation",
+      "Icon": "superhumanCountrySituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "laborerCrisis"
+        "id": "superhumanCountrySituation"
+      }
+    ]
+  },
+  {
+    "id": "thuleSituation",
+    "type": "situations",
+    "displayName": "Last Days of Europe",
+    "icon": "thuleSituation",
+    "fields": {
+      "Name": "thuleSituation",
+      "Icon": "thuleSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "thuleSituation"
       }
     ]
   },
@@ -162,27 +252,27 @@
     ]
   },
   {
-    "id": "mechanistCoalescence_migrantSituation",
+    "id": "unleashMemeticVirusSituation",
     "type": "situations",
-    "displayName": "Mechanist Coalescence Migrant Situation",
-    "icon": "mechanistCoalescence_migrantSituation",
+    "displayName": "Memetic Corruption",
+    "icon": "unleashMemeticVirusSituation",
     "fields": {
-      "Name": "mechanistCoalescence_migrantSituation",
-      "Icon": "mechanistCoalescence_migrantSituation"
+      "Name": "unleashMemeticVirusSituation",
+      "Icon": "unleashMemeticVirusSituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "mechanistCoalescence_migrantSituation"
+        "id": "unleashMemeticVirusSituation"
       }
     ]
   },
   {
     "id": "middleClassCrisis",
     "type": "situations",
-    "displayName": "Middle Class Crisis",
+    "displayName": "Middle Class Manipulations",
     "icon": "middleClassCrisis",
     "fields": {
       "Name": "middleClassCrisis",
@@ -198,9 +288,27 @@
     ]
   },
   {
+    "id": "mechanistCoalescence_migrantSituation",
+    "type": "situations",
+    "displayName": "Migrant Strain",
+    "icon": "mechanistCoalescence_migrantSituation",
+    "fields": {
+      "Name": "mechanistCoalescence_migrantSituation",
+      "Icon": "mechanistCoalescence_migrantSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mechanistCoalescence_migrantSituation"
+      }
+    ]
+  },
+  {
     "id": "militaryCrisis",
     "type": "situations",
-    "displayName": "Military Crisis",
+    "displayName": "Military Machinations",
     "icon": "militaryCrisis",
     "fields": {
       "Name": "militaryCrisis",
@@ -216,9 +324,63 @@
     ]
   },
   {
+    "id": "venusCIASituation",
+    "type": "situations",
+    "displayName": "MR-CONTRA Experiments",
+    "icon": "venusCIASituation",
+    "fields": {
+      "Name": "venusCIASituation",
+      "Icon": "venusCIASituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "venusCIASituation"
+      }
+    ]
+  },
+  {
+    "id": "bioweaponSituation",
+    "type": "situations",
+    "displayName": "Pandemic",
+    "icon": "bioweaponSituation",
+    "fields": {
+      "Name": "bioweaponSituation",
+      "Icon": "bioweaponSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bioweaponSituation"
+      }
+    ]
+  },
+  {
+    "id": "unleashBioweaponSituation",
+    "type": "situations",
+    "displayName": "Pandemic",
+    "icon": "unleashBioweaponSituation",
+    "fields": {
+      "Name": "unleashBioweaponSituation",
+      "Icon": "unleashBioweaponSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashBioweaponSituation"
+      }
+    ]
+  },
+  {
     "id": "perfectionSituation",
     "type": "situations",
-    "displayName": "Perfection Situation",
+    "displayName": "Pursuit of Perfection",
     "icon": "perfectionSituation",
     "fields": {
       "Name": "perfectionSituation",
@@ -234,63 +396,9 @@
     ]
   },
   {
-    "id": "pirateRepublicSituation",
-    "type": "situations",
-    "displayName": "Pirate Republic Situation",
-    "icon": "pirateRepublicSituation",
-    "fields": {
-      "Name": "pirateRepublicSituation",
-      "Icon": "pirateRepublicSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "pirateRepublicSituation"
-      }
-    ]
-  },
-  {
-    "id": "redArmyOrgSituation",
-    "type": "situations",
-    "displayName": "Red Army Org Situation",
-    "icon": "redArmyOrgSituation",
-    "fields": {
-      "Name": "redArmyOrgSituation",
-      "Icon": "redArmyOrgSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "redArmyOrgSituation"
-      }
-    ]
-  },
-  {
-    "id": "robotCountrySituation",
-    "type": "situations",
-    "displayName": "Robot Country Situation",
-    "icon": "robotCountrySituation",
-    "fields": {
-      "Name": "robotCountrySituation",
-      "Icon": "robotCountrySituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "robotCountrySituation"
-      }
-    ]
-  },
-  {
     "id": "robotRevolutionSituation",
     "type": "situations",
-    "displayName": "Robot Revolution Situation",
+    "displayName": "Robotic Revolution",
     "icon": "robotRevolutionSituation",
     "fields": {
       "Name": "robotRevolutionSituation",
@@ -306,63 +414,27 @@
     ]
   },
   {
-    "id": "roboticsCrisis",
+    "id": "laborerCrisis",
     "type": "situations",
-    "displayName": "Robotics Crisis",
-    "icon": "roboticsCrisis",
+    "displayName": "Rural Rebellion",
+    "icon": "laborerCrisis",
     "fields": {
-      "Name": "roboticsCrisis",
-      "Icon": "roboticsCrisis"
+      "Name": "laborerCrisis",
+      "Icon": "laborerCrisis"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "roboticsCrisis"
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation",
-    "type": "situations",
-    "displayName": "Russia Situation",
-    "icon": "russiaSituation",
-    "fields": {
-      "Name": "russiaSituation",
-      "Icon": "russiaSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "russiaSituation"
-      }
-    ]
-  },
-  {
-    "id": "saturnSituation",
-    "type": "situations",
-    "displayName": "Saturn Situation",
-    "icon": "saturnSituation",
-    "fields": {
-      "Name": "saturnSituation",
-      "Icon": "saturnSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "saturnSituation"
+        "id": "laborerCrisis"
       }
     ]
   },
   {
     "id": "separatistCrisis",
     "type": "situations",
-    "displayName": "Separatist Crisis",
+    "displayName": "Separatist Strikes",
     "icon": "separatistCrisis",
     "fields": {
       "Name": "separatistCrisis",
@@ -380,7 +452,7 @@
   {
     "id": "shadowEmpireSituation",
     "type": "situations",
-    "displayName": "Shadow Empire Situation",
+    "displayName": "Shadow Empire",
     "icon": "shadowEmpireSituation",
     "fields": {
       "Name": "shadowEmpireSituation",
@@ -396,117 +468,63 @@
     ]
   },
   {
-    "id": "superhumanCountrySituation",
+    "id": "robotCountrySituation",
     "type": "situations",
-    "displayName": "Superhuman Country Situation",
-    "icon": "superhumanCountrySituation",
+    "displayName": "Synthetic God",
+    "icon": "robotCountrySituation",
     "fields": {
-      "Name": "superhumanCountrySituation",
-      "Icon": "superhumanCountrySituation"
+      "Name": "robotCountrySituation",
+      "Icon": "robotCountrySituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "superhumanCountrySituation"
+        "id": "robotCountrySituation"
       }
     ]
   },
   {
-    "id": "superhumanCrisis",
+    "id": "roboticsCrisis",
     "type": "situations",
-    "displayName": "Superhuman Crisis",
-    "icon": "superhumanCrisis",
+    "displayName": "Technological Singularity",
+    "icon": "roboticsCrisis",
     "fields": {
-      "Name": "superhumanCrisis",
-      "Icon": "superhumanCrisis"
+      "Name": "roboticsCrisis",
+      "Icon": "roboticsCrisis"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "superhumanCrisis"
+        "id": "roboticsCrisis"
       }
     ]
   },
   {
-    "id": "thuleSituation",
+    "id": "redArmyOrgSituation",
     "type": "situations",
-    "displayName": "Thule Situation",
-    "icon": "thuleSituation",
+    "displayName": "The Red Army",
+    "icon": "redArmyOrgSituation",
     "fields": {
-      "Name": "thuleSituation",
-      "Icon": "thuleSituation"
+      "Name": "redArmyOrgSituation",
+      "Icon": "redArmyOrgSituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "thuleSituation"
-      }
-    ]
-  },
-  {
-    "id": "unitedColoniesSituation",
-    "type": "situations",
-    "displayName": "United Colonies Situation",
-    "icon": "unitedColoniesSituation",
-    "fields": {
-      "Name": "unitedColoniesSituation",
-      "Icon": "unitedColoniesSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitedColoniesSituation"
-      }
-    ]
-  },
-  {
-    "id": "unleashBioweaponSituation",
-    "type": "situations",
-    "displayName": "Unleash Bioweapon Situation",
-    "icon": "unleashBioweaponSituation",
-    "fields": {
-      "Name": "unleashBioweaponSituation",
-      "Icon": "unleashBioweaponSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unleashBioweaponSituation"
-      }
-    ]
-  },
-  {
-    "id": "unleashMemeticVirusSituation",
-    "type": "situations",
-    "displayName": "Unleash Memetic Virus Situation",
-    "icon": "unleashMemeticVirusSituation",
-    "fields": {
-      "Name": "unleashMemeticVirusSituation",
-      "Icon": "unleashMemeticVirusSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unleashMemeticVirusSituation"
+        "id": "redArmyOrgSituation"
       }
     ]
   },
   {
     "id": "unleashScrapCodeSituation",
     "type": "situations",
-    "displayName": "Unleash Scrap Code Situation",
+    "displayName": "The Scrap Code",
     "icon": "unleashScrapCodeSituation",
     "fields": {
       "Name": "unleashScrapCodeSituation",
@@ -522,38 +540,20 @@
     ]
   },
   {
-    "id": "upperClassCrisis",
+    "id": "unitedColoniesSituation",
     "type": "situations",
-    "displayName": "Upper Class Crisis",
-    "icon": "upperClassCrisis",
+    "displayName": "Union of Necessity",
+    "icon": "unitedColoniesSituation",
     "fields": {
-      "Name": "upperClassCrisis",
-      "Icon": "upperClassCrisis"
+      "Name": "unitedColoniesSituation",
+      "Icon": "unitedColoniesSituation"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "upperClassCrisis"
-      }
-    ]
-  },
-  {
-    "id": "venusCIASituation",
-    "type": "situations",
-    "displayName": "Venus CIASituation",
-    "icon": "venusCIASituation",
-    "fields": {
-      "Name": "venusCIASituation",
-      "Icon": "venusCIASituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "venusCIASituation"
+        "id": "unitedColoniesSituation"
       }
     ]
   },

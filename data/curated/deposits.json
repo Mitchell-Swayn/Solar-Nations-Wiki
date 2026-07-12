@@ -20,7 +20,7 @@
   {
     "id": "apollo11Site",
     "type": "deposits",
-    "displayName": "Apollo11Site",
+    "displayName": "Apollo 11 Site",
     "icon": "apollo11Site",
     "fields": {
       "Name": "apollo11Site",
@@ -108,27 +108,9 @@
     ]
   },
   {
-    "id": "colonizableOcean",
-    "type": "deposits",
-    "displayName": "Colonizable Ocean",
-    "icon": "colonizableOcean",
-    "fields": {
-      "Name": "colonizableOcean",
-      "Icon": "colonizableOcean"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "colonizableOcean"
-      }
-    ]
-  },
-  {
     "id": "cryoOrganics",
     "type": "deposits",
-    "displayName": "Cryo Organics",
+    "displayName": "Cryo-Organics",
     "icon": "cryoOrganics",
     "fields": {
       "Name": "cryoOrganics",
@@ -164,7 +146,7 @@
   {
     "id": "exoticGasses",
     "type": "deposits",
-    "displayName": "Exotic Gasses",
+    "displayName": "Exotic Refining",
     "icon": "exoticGasses",
     "fields": {
       "Name": "exoticGasses",
@@ -200,7 +182,7 @@
   {
     "id": "gravityEarthlike",
     "type": "deposits",
-    "displayName": "Gravity Earthlike",
+    "displayName": "Gravity: Earthlike",
     "icon": "gravityEarthlike",
     "fields": {
       "Name": "gravityEarthlike",
@@ -218,7 +200,7 @@
   {
     "id": "gravityHigh",
     "type": "deposits",
-    "displayName": "Gravity High",
+    "displayName": "Gravity: High",
     "icon": "gravityHigh",
     "fields": {
       "Name": "gravityHigh",
@@ -236,7 +218,7 @@
   {
     "id": "gravityInsignificant",
     "type": "deposits",
-    "displayName": "Gravity Insignificant",
+    "displayName": "Gravity: Insignificant",
     "icon": "gravityInsignificant",
     "fields": {
       "Name": "gravityInsignificant",
@@ -254,7 +236,7 @@
   {
     "id": "gravityLow",
     "type": "deposits",
-    "displayName": "Gravity Low",
+    "displayName": "Gravity: Low",
     "icon": "gravityLow",
     "fields": {
       "Name": "gravityLow",
@@ -266,6 +248,24 @@
       {
         "type": "icon",
         "id": "gravityLow"
+      }
+    ]
+  },
+  {
+    "id": "colonizableOcean",
+    "type": "deposits",
+    "displayName": "Great Sea",
+    "icon": "colonizableOcean",
+    "fields": {
+      "Name": "colonizableOcean",
+      "Icon": "colonizableOcean"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colonizableOcean"
       }
     ]
   },
@@ -308,7 +308,7 @@
   {
     "id": "iceNine",
     "type": "deposits",
-    "displayName": "Ice Nine",
+    "displayName": "Ice-9",
     "icon": "iceNine",
     "fields": {
       "Name": "iceNine",
@@ -320,6 +320,24 @@
       {
         "type": "icon",
         "id": "iceNine"
+      }
+    ]
+  },
+  {
+    "id": "noAtmosphere",
+    "type": "deposits",
+    "displayName": "Insignificant Atmosphere",
+    "icon": "noAtmosphere",
+    "fields": {
+      "Name": "noAtmosphere",
+      "Icon": "noAtmosphere"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "noAtmosphere"
       }
     ]
   },
@@ -344,7 +362,7 @@
   {
     "id": "letheTreasure",
     "type": "deposits",
-    "displayName": "Lethe Treasure",
+    "displayName": "Lethe's Treasure",
     "icon": "letheTreasure",
     "fields": {
       "Name": "letheTreasure",
@@ -356,6 +374,24 @@
       {
         "type": "icon",
         "id": "letheTreasure"
+      }
+    ]
+  },
+  {
+    "id": "lqdMethane",
+    "type": "deposits",
+    "displayName": "Liquid Methane",
+    "icon": "lqdMethane",
+    "fields": {
+      "Name": "lqdMethane",
+      "Icon": "lqdMethane"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lqdMethane"
       }
     ]
   },
@@ -392,60 +428,6 @@
       {
         "type": "icon",
         "id": "lowSolarOrbit"
-      }
-    ]
-  },
-  {
-    "id": "lqdMethane",
-    "type": "deposits",
-    "displayName": "Lqd Methane",
-    "icon": "lqdMethane",
-    "fields": {
-      "Name": "lqdMethane",
-      "Icon": "lqdMethane"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "lqdMethane"
-      }
-    ]
-  },
-  {
-    "id": "noAtmosphere",
-    "type": "deposits",
-    "displayName": "No Atmosphere",
-    "icon": "noAtmosphere",
-    "fields": {
-      "Name": "noAtmosphere",
-      "Icon": "noAtmosphere"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "noAtmosphere"
-      }
-    ]
-  },
-  {
-    "id": "noSunlight",
-    "type": "deposits",
-    "displayName": "No Sunlight",
-    "icon": "noSunlight",
-    "fields": {
-      "Name": "noSunlight",
-      "Icon": "noSunlight"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "noSunlight"
       }
     ]
   },
@@ -542,7 +524,7 @@
   {
     "id": "placidGiant",
     "type": "deposits",
-    "displayName": "Placid Giant",
+    "displayName": "Placid Atmosphere",
     "icon": "placidGiant",
     "fields": {
       "Name": "placidGiant",
@@ -594,6 +576,24 @@
     ]
   },
   {
+    "id": "noSunlight",
+    "type": "deposits",
+    "displayName": "Sparse Sunlight",
+    "icon": "noSunlight",
+    "fields": {
+      "Name": "noSunlight",
+      "Icon": "noSunlight"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "noSunlight"
+      }
+    ]
+  },
+  {
     "id": "subsurfaceOcean",
     "type": "deposits",
     "displayName": "Subsurface Ocean",
@@ -632,7 +632,7 @@
   {
     "id": "superAtmosphere",
     "type": "deposits",
-    "displayName": "Super Atmosphere",
+    "displayName": "Thick Atmosphere",
     "icon": "superAtmosphere",
     "fields": {
       "Name": "superAtmosphere",

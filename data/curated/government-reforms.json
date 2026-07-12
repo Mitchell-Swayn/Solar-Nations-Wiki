@@ -62,7 +62,7 @@
   {
     "id": "economySystem",
     "type": "government-reforms",
-    "displayName": "Economy System",
+    "displayName": "Economic System",
     "fields": {
       "Name": "economySystem",
       "Options": [
@@ -177,7 +177,7 @@
   {
     "id": "espionagePolicy",
     "type": "government-reforms",
-    "displayName": "Espionage Policy",
+    "displayName": "Espionage Focus",
     "fields": {
       "Name": "espionagePolicy",
       "Options": [
@@ -450,6 +450,56 @@
     ]
   },
   {
+    "id": "serviceLaw",
+    "type": "government-reforms",
+    "displayName": "Military Service",
+    "fields": {
+      "Name": "serviceLaw",
+      "Options": [
+        "serviceLaw_conscription",
+        "serviceLaw_disarmed",
+        "serviceLaw_timed",
+        "serviceLaw_totalMobilization"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_conscription"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_disarmed"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_timed"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_totalMobilization"
+      }
+    ]
+  },
+  {
     "id": "nationalFocus",
     "type": "government-reforms",
     "displayName": "National Focus",
@@ -501,56 +551,6 @@
       {
         "type": "government-reform-options",
         "id": "focus_recruitment"
-      }
-    ]
-  },
-  {
-    "id": "serviceLaw",
-    "type": "government-reforms",
-    "displayName": "Service Law",
-    "fields": {
-      "Name": "serviceLaw",
-      "Options": [
-        "serviceLaw_conscription",
-        "serviceLaw_disarmed",
-        "serviceLaw_timed",
-        "serviceLaw_totalMobilization"
-      ],
-      "Variants": [
-        "default",
-        "genetics",
-        "cyberneticsTech",
-        "virtualReality",
-        "futuristic"
-      ],
-      "Cost": 20,
-      "Cooldown": 3600,
-      "DefaultIndex": 1,
-      "Sequential": false,
-      "IsPolitical": 0,
-      "Prerequisite": {
-        "A": "None",
-        "B": "None"
-      }
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "government-reform-options",
-        "id": "serviceLaw_conscription"
-      },
-      {
-        "type": "government-reform-options",
-        "id": "serviceLaw_disarmed"
-      },
-      {
-        "type": "government-reform-options",
-        "id": "serviceLaw_timed"
-      },
-      {
-        "type": "government-reform-options",
-        "id": "serviceLaw_totalMobilization"
       }
     ]
   },
