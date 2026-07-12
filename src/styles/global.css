@@ -133,8 +133,8 @@ code, kbd { font-family: var(--mono); }
 .directory-main code { margin-top: 3px; color: var(--text-muted); font-size: 9px; white-space: nowrap; }
 .directory-main small { display: -webkit-box; margin-top: 5px; color: var(--text-muted); font-size: 10px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .row-arrow { color: var(--border-strong); font-size: 22px; text-align: right; }
-.culture-directory .directory-row { grid-template-columns: 44px minmax(0, 1fr) auto 20px; }
-.row-effects { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; justify-self: end; min-width: 0; }
+.culture-directory .directory-row { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr) 20px; }
+.row-effects { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; justify-self: stretch; min-width: 0; }
 .row-effects .effect { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-muted); white-space: nowrap; }
 .row-effects .effect b { font-variant-numeric: tabular-nums; }
 .row-effects .effect.good b { color: var(--positive); }
