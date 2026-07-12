@@ -5,7 +5,8 @@ import curatedIndex from '../../data/curated/index.json';
 import modifiersData from '../../data/curated/modifiers.json';
 
 const index = curatedIndex as CuratedIndex;
-const modifiers = modifiersData as ModifierDefinition[];
+const modifierEntries = modifiersData as WikiEntry[];
+const modifiers = modifierEntries.map((entry) => entry.fields as unknown as ModifierDefinition);
 
 export function getIndex(): CuratedIndex {
   return index;

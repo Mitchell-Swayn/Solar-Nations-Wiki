@@ -23,7 +23,7 @@ Build an **auto-generated data encyclopedia** for Solar Nations 2 (Astro static 
 - Static site with category pages, detail pages, search, icons/flags
 - GitHub Actions deploy to Pages
 - `withBase()` fix for subpath 404s (committed as `311664f`)
-- **1,309 curated entries** generated from validated `.uexp` row identifiers
+- **1,310 curated entries** generated from validated `.uexp` row identifiers
 
 ### 2. Data pipeline
 
@@ -50,7 +50,7 @@ npm run build:local # data + astro build
 | technologies | 99 |
 | projects | 87 |
 | unit-components | 173 |
-| modifiers | 174 |
+| modifiers | 175 |
 | character-traits | 68 |
 | faction-variants | 18 |
 | government-reform-options | 56 |
@@ -64,7 +64,7 @@ npm run build:local # data + astro build
 | factions | 9 |
 | eras | 8 |
 | government-reforms | 12 |
-| **Total** | **1,309** |
+| **Total** | **1,310** |
 
 Counts are lower than earlier automated output because schema fields and cross-table values are no longer misclassified as rows.
 
@@ -273,7 +273,7 @@ git push
 |-----------|--------|
 | Wiki builds and deploys | Done |
 | Category/detail pages work on GitHub Pages | Done |
-| Validated row identifiers in wiki | Done locally (1,309) |
+| Validated row identifiers in wiki | Done locally (1,310) |
 | Real modifier keys on reforms | **Not done** — needs usmap or better parser |
 | Tech costs/prerequisites accurate | **Not done** |
 | Deposits category populated | Done (41 names/icons; structured fields remain) |

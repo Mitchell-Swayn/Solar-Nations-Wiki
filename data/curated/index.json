@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:19:23.975Z",
+  "generatedAt": "2026-07-12T06:22:03.016Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -15180,8 +15180,7 @@
       "type": "government-reform-options",
       "displayName": "Education Spending None",
       "fields": {
-        "Name": "educationSpending_none",
-        "Icon": "educationSpending_none"
+        "Name": "educationSpending_none"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -15786,8 +15785,7 @@
       "type": "government-reform-options",
       "displayName": "Spending None",
       "fields": {
-        "Name": "spending_none",
-        "Icon": "spending_none"
+        "Name": "spending_none"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -18202,8 +18200,7 @@
       "type": "resources",
       "displayName": "Industrial Capacity",
       "fields": {
-        "Name": "industry",
-        "Icon": "industry"
+        "Name": "industry"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25519,7 +25516,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "speed",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 1
@@ -25654,7 +25650,6 @@
         "Properties": {
           "project": false
         },
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0.25
@@ -25677,7 +25672,6 @@
         "Properties": {
           "project": false
         },
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": -10
@@ -25816,7 +25810,6 @@
         "Properties": {
           "project": false
         },
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -26430,7 +26423,6 @@
         "Properties": {
           "alignment": true
         },
-        "Icon": "alignment",
         "Scaler": "Linear",
         "AIWeights": {
           "1": 5,
@@ -26535,7 +26527,6 @@
         "Properties": {
           "project": false
         },
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "1": 0.25,
@@ -26557,7 +26548,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "education",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 5
@@ -26578,7 +26568,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "education",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 2
@@ -26659,7 +26648,6 @@
         "Properties": {
           "industry": false
         },
-        "Icon": "industry",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 10
@@ -26738,7 +26726,6 @@
         "Positivity": "neutral",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -26820,7 +26807,6 @@
           "damageType": true,
           "augmentorDamageType": false
         },
-        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27356,7 +27342,6 @@
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27377,7 +27362,6 @@
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27533,7 +27517,6 @@
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "diplomacy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27666,7 +27649,6 @@
         "Properties": {
           "edict": false
         },
-        "Icon": "edict",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27689,7 +27671,6 @@
         "Properties": {
           "edict": false
         },
-        "Icon": "edict",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27764,7 +27745,6 @@
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "influence",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27932,7 +27912,6 @@
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "influence",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27980,7 +27959,6 @@
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "unrest",
         "Scaler": "Linear",
         "AIWeights": {
           "base": -5
@@ -28274,7 +28252,6 @@
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28377,7 +28354,6 @@
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28398,7 +28374,6 @@
         "Positivity": "neutral",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28419,7 +28394,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28440,7 +28414,6 @@
         "Positivity": "boolean",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28591,7 +28564,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 1
@@ -28720,7 +28692,6 @@
         "Properties": {
           "deposit": false
         },
-        "Icon": "survey",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28741,7 +28712,6 @@
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "survey",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29037,7 +29007,6 @@
           "organizationType": true,
           "diploFlag": true
         },
-        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29116,7 +29085,6 @@
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29137,7 +29105,6 @@
         "Positivity": "boolean",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29288,7 +29255,6 @@
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29416,7 +29382,6 @@
         "Properties": {
           "project": false
         },
-        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29519,7 +29484,6 @@
         "Properties": {
           "unitDomain": true
         },
-        "Icon": "speed",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29647,7 +29611,6 @@
         "Properties": {
           "situation": true
         },
-        "Icon": "crisis",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29670,7 +29633,6 @@
         "Properties": {
           "situation": true
         },
-        "Icon": "crisis",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29747,7 +29709,6 @@
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
-        "Icon": "culturePower",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29768,7 +29729,6 @@
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
-        "Icon": "culturePower",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29833,6 +29793,33 @@
         {
           "type": "icon",
           "id": "political"
+        }
+      ]
+    },
+    "modifiers:characterQuality": {
+      "id": "characterQuality",
+      "type": "modifiers",
+      "displayName": "Character Quality",
+      "icon": "threeStar",
+      "fields": {
+        "Name": "characterQuality",
+        "Positivity": "positive",
+        "IsPercent": "Percentage",
+        "Properties": {},
+        "Icon": "threeStar",
+        "Scaler": "Linear",
+        "AIWeights": {
+          "base": 1
+        },
+        "GenerateIcons": false,
+        "IsEffect": false
+      },
+      "modifiers": [],
+      "prerequisites": [],
+      "references": [
+        {
+          "type": "icon",
+          "id": "threeStar"
         }
       ]
     },
@@ -31597,6 +31584,7 @@
       "modifiers:carryingCapacityMult",
       "modifiers:characterEffortAdd",
       "modifiers:characterLevelUpOptions",
+      "modifiers:characterQuality",
       "modifiers:colonialRange",
       "modifiers:colonialRangeLy",
       "modifiers:colonyProgressMult",

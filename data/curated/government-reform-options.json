@@ -310,8 +310,7 @@
     "type": "government-reform-options",
     "displayName": "Education Spending None",
     "fields": {
-      "Name": "educationSpending_none",
-      "Icon": "educationSpending_none"
+      "Name": "educationSpending_none"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -880,8 +879,7 @@
     "type": "government-reform-options",
     "displayName": "Spending None",
     "fields": {
-      "Name": "spending_none",
-      "Icon": "spending_none"
+      "Name": "spending_none"
     },
     "modifiers": [],
     "prerequisites": [],

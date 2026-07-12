@@ -341,6 +341,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
     const sourceName = resolveIconSource(entry.icon, entry.type);
     if (!sourceFiles.has(sourceName.toLowerCase())) {
       entry.icon = undefined;
+      delete entry.fields.Icon;
       entry.references = entry.references.filter((reference) => reference.type !== 'icon');
       removed++;
     }
@@ -399,6 +400,13 @@ function loadModifiers(modPath: string): WikiEntry[] {
   const path = join(modPath, 'modifiers.json');
   if (!existsSync(path)) return [];
   const data = parseJsonFile(path) as RawRecord[];
+  if (!data.some((record) => record.Name === 'characterQuality')) {
+    data.push({
+      Name: 'characterQuality', Positivity: 'positive', IsPercent: 'Percentage',
+      Properties: {}, Icon: 'threeStar', Scaler: 'Linear', AIWeights: { base: 1 },
+      GenerateIcons: false, IsEffect: false,
+    });
+  }
   return data.map((record) => {
     const id = record.Name as string;
     return {
