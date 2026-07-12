@@ -1,0 +1,56 @@
+[
+  {
+    "id": "telepathTrainer",
+    "type": "projects",
+    "displayName": "Psi Academy",
+    "icon": "telepathTrainer",
+    "fields": {
+      "Name": "telepathTrainer",
+      "Icon": "telepathTrainer",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "cultureTrait",
+        "B": "telepathic"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 75000
+      },
+      "RequiredResource": {},
+      "Production": {},
+      "Consumption": {},
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": "None",
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "willpowerCapacity",
+        "value": 10
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "telepathTrainer"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      }
+    ]
+  }
+]

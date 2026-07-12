@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCategories, getAllEntries } from '../lib/data';
+import { CATEGORY_BY_SLUG } from '../lib/categories';
+
+const categories = getCategories();
+const allEntries = getAllEntries();
+---
+
+<BaseLayout title="Solar Nations 2 Wiki" description="Data encyclopedia for Solar Nations 2">
+  <section class="hero">
+    <h1>Solar Nations 2 Wiki</h1>
+    <p class="subtitle">Auto-generated data reference for factions, technologies, resources, and more.</p>
+    <div class="search-box">
+      <input
+        type="search"
+        id="search"
+        placeholder="Search entries..."
+        autocomplete="off"
+      />
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-card">
+      <span class="stat-value">{allEntries.length}</span>
+      <span class="stat-label">Total entries</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value">{categories.length}</span>
+      <span class="stat-label">Categories</span>
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Categories</h2>
+    <div class="category-grid">
+      {categories.map((cat) => (
+        <a href={`/${cat.slug}/`} class="category-card" data-category={cat.slug}>
+          <h3>{cat.pluralLabel}</h3>
+          <p>{cat.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="all-entries" id="search-results" hidden>
+    <h2>Search Results</h2>
+    <ul class="entry-list" id="entry-list"></ul>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ entries: allEntries.map(e => ({ type: e.type, id: e.id, name: e.displayName, category: CATEGORY_BY_SLUG[e.type]?.pluralLabel ?? e.type })) }}>
+  const searchInput = document.getElementById('search');
+  const resultsSection = document.getElementById('search-results');
+  const entryList = document.getElementById('entry-list');
+
+  searchInput?.addEventListener('input', (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    if (!query) {
+      resultsSection.hidden = true;
+      return;
+    }
+
+    const matches = entries.filter(
+      (entry) =>
+        entry.name.toLowerCase().includes(query) ||
+        entry.id.toLowerCase().includes(query) ||
+        entry.type.toLowerCase().includes(query)
+    ).slice(0, 50);
+
+    entryList.innerHTML = matches
+      .map(
+        (entry) =>
+          `<li><a href="/${entry.type}/${entry.id}/"><strong>${entry.name}</strong> <span class="tag">${entry.category}</span></a></li>`
+      )
+      .join('');
+
+    resultsSection.hidden = matches.length === 0;
+  });
+</script>

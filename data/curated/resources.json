@@ -1,0 +1,40 @@
+[
+  {
+    "id": "industry",
+    "type": "resources",
+    "displayName": "Industry",
+    "icon": "industry",
+    "fields": {
+      "Name": "industry",
+      "Icon": "industry",
+      "BasePrice": 2,
+      "Tradeable": true,
+      "AlwaysVisible": true,
+      "Color": {
+        "R": 0,
+        "G": 0.091411,
+        "B": 0.517361,
+        "A": 1
+      },
+      "AIWeight": 320,
+      "MilitaryValue": 10
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 1
+      },
+      {
+        "key": "developmentGrowthMult",
+        "value": -2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industry"
+      }
+    ]
+  }
+]

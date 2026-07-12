@@ -1,0 +1,32 @@
+[
+  {
+    "id": "governRegion",
+    "type": "character-jobs",
+    "displayName": "Govern Region",
+    "icon": "charisma",
+    "fields": {
+      "Name": "governRegion",
+      "Icon": "charisma",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "Color": {
+        "R": 0.392104,
+        "G": 0.997,
+        "B": 0.425638,
+        "A": 1
+      },
+      "JobArchetype": "governRegion",
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
+      }
+    ]
+  }
+]

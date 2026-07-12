@@ -1,0 +1,58 @@
+---
+import type { Prerequisite } from '../lib/types';
+
+interface Props {
+  prerequisites: Prerequisite[];
+}
+
+const { prerequisites } = Astro.props;
+
+const TYPE_LABELS: Record<string, string> = {
+  technology: 'Technologies',
+  cultureTrait: 'Culture Traits',
+  situation: 'Situations',
+  reformOption: 'Reform Options',
+};
+
+const TYPE_SLUGS: Record<string, string> = {
+  technology: 'technologies',
+  cultureTrait: 'culture-traits',
+  situation: 'situations',
+  reformOption: 'government-reform-options',
+};
+---
+
+<ul class="prereq-list">
+  {prerequisites.map((prereq) => (
+    <li>
+      <span class="prereq-type">{TYPE_LABELS[prereq.type] ?? prereq.type}</span>
+      <a href={`/${TYPE_SLUGS[prereq.type] ?? prereq.type}/${prereq.id}/`}>
+        {prereq.id}
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .prereq-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .prereq-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .prereq-type {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+  }
+</style>

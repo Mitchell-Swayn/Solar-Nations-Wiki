@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bureaucracy",
+    "type": "factions",
+    "displayName": "Bureaucracy",
+    "icon": "bureaucracy",
+    "fields": {
+      "Name": "bureaucracy",
+      "Icon": "bureaucracy",
+      "Alignment": {
+        "R": 1,
+        "Theta": 180
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.5
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.5
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  }
+]

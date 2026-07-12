@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCategories, getEntriesByType } from '../../lib/data';
+import { CATEGORY_BY_SLUG } from '../../lib/categories';
+
+export function getStaticPaths() {
+  const categories = getCategories();
+  return categories.map((cat) => ({ params: { type: cat.slug } }));
+}
+
+const { type } = Astro.params;
+const category = CATEGORY_BY_SLUG[type!];
+const entries = getEntriesByType(type!);
+---
+
+<BaseLayout title={category.pluralLabel} description={category.description}>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / {category.pluralLabel}
+  </nav>
+
+  <header class="page-header">
+    <h1>{category.pluralLabel}</h1>
+    <p>{category.description}</p>
+    <span class="count">{entries.length} entries</span>
+  </header>
+
+  <div class="entry-grid">
+    {entries.map((entry) => (
+      <a href={`/${type}/${entry.id}/`} class="entry-card">
+        {entry.icon && (
+          <img
+            src={`/assets/icons/${entry.icon}.png`}
+            alt=""
+            class="entry-icon"
+            onerror="this.style.display='none'"
+          />
+        )}
+        <div class="entry-info">
+          <h2>{entry.displayName}</h2>
+          <code class="entry-id">{entry.id}</code>
+          {entry.description && <p>{entry.description}</p>}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

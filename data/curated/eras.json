@@ -1,0 +1,28 @@
+[
+  {
+    "id": "eraIndustrial",
+    "type": "eras",
+    "displayName": "Era Industrial",
+    "icon": "eraIndustrial",
+    "fields": {
+      "Name": "eraIndustrial",
+      "Icon": "eraIndustrial",
+      "StartYear": -2147483648,
+      "EndYear": 2000,
+      "Color": {
+        "R": 0.355903,
+        "G": 0.355903,
+        "B": 0.355903,
+        "A": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraIndustrial"
+      }
+    ]
+  }
+]

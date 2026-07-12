@@ -1,0 +1,26 @@
+---
+interface Props {
+  name: string;
+  size?: number;
+}
+
+const { name, size = 32 } = Astro.props;
+const src = `/assets/icons/${name}.png`;
+---
+
+<img
+  src={src}
+  alt=""
+  width={size}
+  height={size}
+  class="game-icon"
+  onerror="this.style.display='none'"
+/>
+
+<style>
+  .game-icon {
+    object-fit: contain;
+    vertical-align: middle;
+    border-radius: 4px;
+  }
+</style>

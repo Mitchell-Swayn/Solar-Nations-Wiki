@@ -1,0 +1,41 @@
+[
+  {
+    "id": "steel",
+    "type": "deposit-resources",
+    "displayName": "Steel",
+    "icon": "steel",
+    "fields": {
+      "Name": "steel",
+      "Icon": "steel",
+      "Color": {
+        "R": 0.053313,
+        "G": 0.067346,
+        "B": 0.232639,
+        "A": 1
+      },
+      "Value": 2,
+      "TradeValue": 1,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.02
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "steel"
+      }
+    ]
+  }
+]

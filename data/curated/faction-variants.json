@@ -1,0 +1,47 @@
+[
+  {
+    "id": "clergy_communist",
+    "type": "faction-variants",
+    "displayName": "Clergy Communist",
+    "icon": "communist",
+    "fields": {
+      "Name": "clergy_communist",
+      "Icon": "communist",
+      "BaseFaction": "clergy"
+    },
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [
+      {
+        "type": "reformOption",
+        "id": "clergy"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communist"
+      },
+      {
+        "type": "factions",
+        "id": "clergy"
+      }
+    ]
+  }
+]

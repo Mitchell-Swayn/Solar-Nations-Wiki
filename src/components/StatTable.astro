@@ -1,0 +1,77 @@
+---
+interface Props {
+  data: Record<string, unknown>;
+}
+
+const { data } = Astro.props;
+
+const SKIP_KEYS = new Set(['Name', 'Icon']);
+
+function formatValue(value: unknown, depth = 0): string {
+  if (value === null || value === undefined) return '—';
+  if (typeof value === 'boolean') return value ? 'Yes' : 'No';
+  if (typeof value === 'number') return String(value);
+  if (typeof value === 'string') return value;
+  if (Array.isArray(value)) {
+    if (value.length === 0) return '—';
+    if (typeof value[0] === 'string' || typeof value[0] === 'number') {
+      return value.join(', ');
+    }
+    return JSON.stringify(value, null, 2);
+  }
+  if (typeof value === 'object') {
+    if (depth > 1) return JSON.stringify(value);
+    const entries = Object.entries(value as Record<string, unknown>);
+    if (entries.length === 0) return '—';
+    return entries.map(([k, v]) => `${k}: ${formatValue(v, depth + 1)}`).join('; ');
+  }
+  return String(value);
+}
+
+function humanizeKey(key: string): string {
+  return key
+    .replace(/([A-Z])/g, ' $1')
+    .replace(/^./, (c) => c.toUpperCase())
+    .trim();
+}
+
+const rows = Object.entries(data).filter(([key]) => !SKIP_KEYS.has(key));
+---
+
+<table class="stat-table">
+  <tbody>
+    {rows.map(([key, value]) => (
+      <tr>
+        <th>{humanizeKey(key)}</th>
+        <td><pre class="value">{formatValue(value)}</pre></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+<style>
+  .stat-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .stat-table th,
+  .stat-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+  .stat-table th {
+    width: 30%;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .value {
+    margin: 0;
+    font-family: inherit;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+</style>

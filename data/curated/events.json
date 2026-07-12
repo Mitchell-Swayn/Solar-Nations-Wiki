@@ -1,0 +1,137 @@
+[
+  {
+    "id": "robotCountrySetup",
+    "type": "events",
+    "displayName": "robotCountrySetup_title",
+    "description": "robotCountrySetup_desc",
+    "fields": {
+      "Name": "robotCountrySetup",
+      "Title": "robotCountrySetup_title",
+      "Text": "robotCountrySetup_desc",
+      "Options": [
+        {
+          "Text": "robotCountrySetup_option1",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "destroySituations",
+              "Args": []
+            },
+            {
+              "Type": "setPrimaryCulture",
+              "Args": [
+                "robotCulture"
+              ]
+            },
+            {
+              "Type": "formCountry",
+              "Args": [
+                "robotCountry"
+              ]
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "robotCountrySituation"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "form",
+                "form_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "militaryDoctrine",
+                "militaryDoctrine_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "economySystem",
+                "economy_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "civilLiberties",
+                "civilLiberty_hivemind"
+              ]
+            },
+            {
+              "Type": "addTechnology",
+              "Args": [
+                "robotics"
+              ]
+            },
+            {
+              "Type": "spawnUnit",
+              "Args": [
+                "droidLandDefense",
+                "100000",
+                "3"
+              ]
+            },
+            {
+              "Type": "spawnUnit",
+              "Args": [
+                "droidLandAttack",
+                "50000",
+                "2"
+              ]
+            },
+            {
+              "Type": "addStability",
+              "Args": [
+                "80"
+              ]
+            },
+            {
+              "Type": "capitalEffect",
+              "Args": [
+                "addProject",
+                "hivemindCentralNodeProject",
+                "1"
+              ]
+            },
+            {
+              "Type": "regenLeaders",
+              "Args": []
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "separatistCrisis"
+              ]
+            },
+            {
+              "Type": "remakeDiplomacy",
+              "Args": []
+            },
+            {
+              "Type": "destroyAllSituations",
+              "Args": [
+                "robotCrisis"
+              ]
+            },
+            {
+              "Type": "addGlobalFlag",
+              "Args": [
+                "robotCountryGlobalFlag"
+              ]
+            }
+          ]
+        }
+      ],
+      "DefaultOption": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "economist",
+    "type": "character-traits",
+    "displayName": "Economist",
+    "icon": "economist",
+    "fields": {
+      "Name": "economist",
+      "Type": 0,
+      "Category": "management",
+      "Icon": "economist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economist"
+      }
+    ]
+  }
+]

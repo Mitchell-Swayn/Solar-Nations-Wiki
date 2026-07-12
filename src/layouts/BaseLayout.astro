@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description ?? 'Solar Nations 2 data encyclopedia'} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="site-logo">☀ Solar Nations 2 Wiki</a>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>Data auto-generated from Solar Nations 2 game files. Not affiliated with Flomgus Games.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

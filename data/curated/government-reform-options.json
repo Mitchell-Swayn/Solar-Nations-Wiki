@@ -1,0 +1,20 @@
+[
+  {
+    "id": "form_republic",
+    "type": "government-reform-options",
+    "displayName": "Form Republic",
+    "icon": "form_republic",
+    "fields": {
+      "Name": "form_republic",
+      "Icon": "form_republic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_republic"
+      }
+    ]
+  }
+]

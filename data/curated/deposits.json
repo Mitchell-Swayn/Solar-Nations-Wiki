@@ -1,0 +1,48 @@
+[
+  {
+    "id": "farmland",
+    "type": "deposits",
+    "displayName": "Farmland",
+    "icon": "farmland",
+    "fields": {
+      "Name": "farmland",
+      "Icon": "farmland",
+      "Color": {
+        "R": 0.550347,
+        "G": 0.446999,
+        "B": 0.111145,
+        "A": 1
+      },
+      "Special": false
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "openFarm",
+        "value": 1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "geneticMaterial",
+        "value": 0.05
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.02
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "farmland"
+      }
+    ]
+  }
+]

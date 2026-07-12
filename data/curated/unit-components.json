@@ -1,0 +1,79 @@
+[
+  {
+    "id": "smallArms_0",
+    "type": "unit-components",
+    "displayName": "Small Arms 0",
+    "icon": "smallArms0",
+    "fields": {
+      "Name": "smallArms_0",
+      "ID": 0,
+      "Icon": "smallArms0",
+      "Cost": {
+        "industry": 0.001,
+        "manpower": 0.001
+      },
+      "Size": 1,
+      "Domains": [
+        "Land"
+      ],
+      "Attributes": [
+        "infantry"
+      ],
+      "AttributeExclusion": [
+        "artillery",
+        "tank"
+      ],
+      "Upgrade": "smallArms_1",
+      "Limit": 1,
+      "Speed": 1,
+      "Manpower": 1,
+      "RequiredAttributes": [],
+      "RequiredNotAttributes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Archetype": "infantry",
+      "ArchetypeWeight": 1
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackAdd",
+        "value1": "landSoft",
+        "value": 2
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "health",
+        "value": 100
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "sizeLimit",
+        "value": 2
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "entrenchment",
+        "value": 40
+      },
+      {
+        "key": "unitAttackAdd",
+        "value1": "strategic",
+        "value": 0.2
+      },
+      {
+        "key": "unitQualityAdd",
+        "value1": "screenAbility",
+        "value": 2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms0"
+      }
+    ]
+  }
+]

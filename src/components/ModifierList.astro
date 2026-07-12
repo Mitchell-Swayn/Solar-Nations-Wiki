@@ -1,0 +1,83 @@
+---
+import type { ModifierRef } from '../lib/types';
+import { getModifierMap } from '../lib/data';
+import GameIcon from './GameIcon.astro';
+
+interface Props {
+  modifiers: ModifierRef[];
+}
+
+const { modifiers } = Astro.props;
+const modifierMap = getModifierMap();
+
+function formatValue(mod: ModifierRef): string {
+  const def = modifierMap.get(mod.key);
+  const val = mod.value;
+  if (typeof val !== 'number') return String(val);
+  if (def?.IsPercent === 'Percentage') {
+    return `${val >= 0 ? '+' : ''}${(val * 100).toFixed(1)}%`;
+  }
+  return `${val >= 0 ? '+' : ''}${val}`;
+}
+
+function formatTarget(mod: ModifierRef): string {
+  const parts = [mod.value1, mod.value2, mod.value3].filter(Boolean);
+  return parts.length ? ` (${parts.join(', ')})` : '';
+}
+---
+
+{modifiers.length > 0 ? (
+  <table class="modifier-table">
+    <thead>
+      <tr>
+        <th>Modifier</th>
+        <th>Value</th>
+        <th>Target</th>
+      </tr>
+    </thead>
+    <tbody>
+      {modifiers.map((mod) => {
+        const def = modifierMap.get(mod.key);
+        return (
+          <tr>
+            <td>
+              <span class="modifier-name">
+                {def?.Icon && <GameIcon name={def.Icon} size={20} />}
+                <a href={`/modifiers/${mod.key}/`}>{mod.key}</a>
+              </span>
+            </td>
+            <td class={def?.Positivity === 'positive' ? 'positive' : def?.Positivity === 'negative' ? 'negative' : ''}>
+              {formatValue(mod)}
+            </td>
+            <td class="target">{formatTarget(mod)}</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+) : (
+  <p class="empty">No modifiers.</p>
+)}
+
+<style>
+  .modifier-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .modifier-table th,
+  .modifier-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+  }
+  .modifier-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .positive { color: var(--positive); }
+  .negative { color: var(--negative); }
+  .target { color: var(--text-muted); font-size: 0.85rem; }
+  .empty { color: var(--text-muted); }
+</style>

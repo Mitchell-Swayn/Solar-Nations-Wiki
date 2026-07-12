@@ -1,0 +1,80 @@
+[
+  {
+    "id": "species_human",
+    "type": "culture-traits",
+    "displayName": "Species Human",
+    "icon": "speciesHuman",
+    "fields": {
+      "Name": "species_human",
+      "Icon": "speciesHuman",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "species",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "humanityAggression",
+          "PrimaryModifier": {
+            "(Key=\"unitAttackMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": {}
+        },
+        {
+          "Name": "humanityPsychology",
+          "PrimaryModifier": {
+            "(Key=\"warExhaustionMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+          },
+          "RegionModifier": {}
+        },
+        {
+          "Name": "humanityAdaptability",
+          "PrimaryModifier": {
+            "(Key=\"habitabilityAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": {}
+        },
+        {
+          "Name": "humanityTribalism",
+          "PrimaryModifier": {},
+          "RegionModifier": {
+            "(Key=\"popGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "humanityPolitics",
+          "PrimaryModifier": {
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": {}
+        },
+        {
+          "Name": "humanityInnovation",
+          "PrimaryModifier": {
+            "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": {}
+        },
+        {
+          "Name": "humanitySupremacy",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": {}
+        }
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "speciesHuman"
+      }
+    ]
+  }
+]

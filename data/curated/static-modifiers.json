@@ -1,0 +1,31 @@
+[
+  {
+    "id": "nonAcceptedCultureEffect",
+    "type": "static-modifiers",
+    "displayName": "Non Accepted Culture Effect",
+    "icon": "",
+    "fields": {
+      "Name": "nonAcceptedCultureEffect",
+      "Icon": "",
+      "Hidden": false
+    },
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.02
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "separatist",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

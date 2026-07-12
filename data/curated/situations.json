@@ -1,0 +1,235 @@
+[
+  {
+    "id": "mechanistCoalescence",
+    "type": "situations",
+    "displayName": "Mechanist Coalescence",
+    "icon": "mechanistCoalescence",
+    "description": "mechanistCoalescenceDesc",
+    "fields": {
+      "Name": "mechanistCoalescence",
+      "Description": "mechanistCoalescenceDesc",
+      "Icon": "mechanistCoalescence",
+      "ThemeColor": {
+        "B": 0,
+        "G": 55,
+        "R": 213,
+        "A": 255
+      },
+      "FinishVariable": "mechanist_progress",
+      "FinishEffect": [
+        {
+          "Type": "addStability",
+          "Args": [
+            "30"
+          ]
+        },
+        {
+          "Type": "formCountry",
+          "Args": [
+            "humanitarianUnion"
+          ]
+        }
+      ],
+      "FailEffect": [],
+      "FailVariable": "None",
+      "LocalVariableStart": {},
+      "SharedVariableStart": {
+        "mechanist_progress": {
+          "Name": "mechanist_progress",
+          "Icon": "mechanist_progress",
+          "DefaultValue": 0,
+          "DriftCenter": 0,
+          "DriftLerp": 0,
+          "ScalarModifier": {
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+          },
+          "Color": {
+            "R": 0.756944,
+            "G": 0.098967,
+            "B": 0,
+            "A": 1
+          },
+          "TwoSided": false,
+          "SideCenter": 0.5,
+          "ColorB": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": 1
+          },
+          "NameB": "",
+          "IconB": "",
+          "ModifierB": {}
+        },
+        "mechanist_17Support": {
+          "Name": "mechanist_17Support",
+          "Icon": "mechanist_17Support",
+          "DefaultValue": 0.5,
+          "DriftCenter": 0.5,
+          "DriftLerp": 0.05,
+          "ScalarModifier": {
+            "(Key=\"factionPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": -0.1,
+            "(Key=\"factionLoyaltyAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": -0.1
+          },
+          "Color": {
+            "R": 0.671875,
+            "G": 0.02492,
+            "B": 0,
+            "A": 1
+          },
+          "TwoSided": true,
+          "SideCenter": 0.5,
+          "ColorB": {
+            "R": 0.671875,
+            "G": 0.02492,
+            "B": 0,
+            "A": 1
+          },
+          "NameB": "",
+          "IconB": "",
+          "ModifierB": {
+            "(Key=\"factionPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.25
+          }
+        }
+      },
+      "Interactions": [
+        {
+          "Name": "mechanist_WEF",
+          "Icon": "mechanist_WEF",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "situationSharedVariableAdd",
+              "Args": [
+                "mechanistCoalescence",
+                "mechanist_17Support",
+                "0.2"
+              ]
+            }
+          ],
+          "Duration": 3600,
+          "DurationModifier": {
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+            "(Key=\"factionLoyaltyAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "Cooldown": 18000
+        },
+        {
+          "Name": "mechanist_NGO",
+          "Icon": "mechanist_NGO",
+          "Condition": [],
+          "Reward": [],
+          "Duration": 999999999999,
+          "DurationModifier": {
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.002,
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"budgetModifier\",Value1=\"population\",Value2=\"\",Value3=\"\")": -1
+          },
+          "Cooldown": 0
+        },
+        {
+          "Name": "mechanist_propaganda",
+          "Icon": "mechanist_propaganda",
+          "Condition": [],
+          "Reward": [],
+          "Duration": 999999999999,
+          "DurationModifier": {
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.005,
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.01,
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.4
+          },
+          "Cooldown": 0
+        },
+        {
+          "Name": "mechanist_massMigration",
+          "Icon": "mechanist_massMigration",
+          "Condition": [],
+          "Reward": [],
+          "Duration": 999999999999,
+          "DurationModifier": {
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.002,
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.01,
+            "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
+            "(Key=\"assimilationMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -1,
+            "(Key=\"popGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.33
+          },
+          "Cooldown": 0
+        },
+        {
+          "Name": "mechanist_allowMerit",
+          "Icon": "mechanist_allowMerit",
+          "Condition": [
+            {
+              "Type": "situationSharedVariable",
+              "Args": [
+                "mechanistCoalescence",
+                "mechanist_17Support",
+                ">",
+                "0.5"
+              ]
+            }
+          ],
+          "Reward": [],
+          "Duration": 3600,
+          "DurationModifier": {
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": -0.005,
+            "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1,
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+          },
+          "Cooldown": 3600
+        },
+        {
+          "Name": "mechanist_roboticization",
+          "Icon": "mechanist_roboticization",
+          "Condition": [
+            {
+              "Type": "situationSharedVariable",
+              "Args": [
+                "mechanistCoalescence",
+                "mechanist_17Support",
+                ">",
+                "0.5"
+              ]
+            }
+          ],
+          "Reward": [],
+          "Duration": 3600,
+          "DurationModifier": {
+            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": -0.005,
+            "(Key=\"unitMoraleDamageReduction\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+          },
+          "Cooldown": 3600
+        }
+      ],
+      "Type": "Local",
+      "Prerequisite": {
+        "A": "false",
+        "B": "None"
+      },
+      "CanAdd": false,
+      "AddCondition": [],
+      "Exclusives": [],
+      "IsCrisis": false,
+      "SpawnEffect": []
+    },
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.2
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mechanistCoalescence"
+      }
+    ]
+  }
+]

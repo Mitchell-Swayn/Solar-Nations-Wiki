@@ -1,0 +1,54 @@
+[
+  {
+    "id": "telepathicTech_1",
+    "type": "technologies",
+    "displayName": "Telepathic Tech 1",
+    "icon": "telepathicTech_1",
+    "fields": {
+      "Name": "telepathicTech_1",
+      "Type": 1,
+      "Icon": "telepathicTech_1",
+      "Year": 0,
+      "Cost": 6,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": -200,
+        "Y": -900
+      },
+      "Domain": [
+        "culture"
+      ],
+      "Categories": [
+        "industry"
+      ],
+      "Dangerous": false,
+      "HiddenPrerequisite": {
+        "A": "cultureTrait",
+        "B": "traitTelepathic"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [
+      {
+        "type": "cultureTrait",
+        "id": "traitTelepathic"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "telepathicTech_1"
+      },
+      {
+        "type": "domain",
+        "id": "culture"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      }
+    ]
+  }
+]

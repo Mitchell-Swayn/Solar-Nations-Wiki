@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StatTable from '../../components/StatTable.astro';
+import ModifierList from '../../components/ModifierList.astro';
+import PrerequisiteChain from '../../components/PrerequisiteChain.astro';
+import GameIcon from '../../components/GameIcon.astro';
+import { getCategories, getEntry, getEntriesByType } from '../../lib/data';
+import { CATEGORY_BY_SLUG } from '../../lib/categories';
+
+export function getStaticPaths() {
+  const categories = getCategories();
+  const paths = [];
+  for (const cat of categories) {
+    const entries = getEntriesByType(cat.slug);
+    for (const entry of entries) {
+      paths.push({ params: { type: cat.slug, id: entry.id } });
+    }
+  }
+  return paths;
+}
+
+const { type, id } = Astro.params;
+const entry = getEntry(type!, id!);
+const category = CATEGORY_BY_SLUG[type!];
+
+if (!entry) {
+  return Astro.redirect(`/${type}/`);
+}
+---
+
+<BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`}>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> / <a href={`/${type}/`}>{category.pluralLabel}</a> / {entry.displayName}
+  </nav>
+
+  <header class="detail-header">
+    <div class="detail-title">
+      {entry.icon && <GameIcon name={entry.icon} size={48} />}
+      <div>
+        <h1>{entry.displayName}</h1>
+        <code class="entry-id">{entry.id}</code>
+      </div>
+    </div>
+    {entry.description && <p class="detail-description">{entry.description}</p>}
+  </header>
+
+  {entry.prerequisites.length > 0 && (
+    <section class="detail-section">
+      <h2>Prerequisites</h2>
+      <PrerequisiteChain prerequisites={entry.prerequisites} />
+    </section>
+  )}
+
+  {entry.modifiers.length > 0 && (
+    <section class="detail-section">
+      <h2>Modifiers</h2>
+      <ModifierList modifiers={entry.modifiers} />
+    </section>
+  )}
+
+  <section class="detail-section">
+    <h2>Properties</h2>
+    <StatTable data={entry.fields} />
+  </section>
+</BaseLayout>

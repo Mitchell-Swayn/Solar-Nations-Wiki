@@ -1,0 +1,77 @@
+[
+  {
+    "id": "form",
+    "type": "government-reforms",
+    "displayName": "Form",
+    "fields": {
+      "Name": "form",
+      "Options": [
+        "form_republic",
+        "form_monarchy",
+        "form_empire",
+        "form_administration",
+        "form_algocracy",
+        "form_corporation",
+        "form_totality",
+        "form_oligarchy",
+        "form_hivemind"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "form_republic"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_monarchy"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_empire"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_administration"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_algocracy"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_corporation"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_totality"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_oligarchy"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_hivemind"
+      }
+    ]
+  }
+]
