@@ -8,7 +8,14 @@
       "Name": "airCavalry",
       "Icon": "airCavalry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "airSoft",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -26,7 +33,13 @@
       "Name": "airCommand",
       "Icon": "airCommand"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -44,7 +57,14 @@
       "Name": "airDesigning",
       "Icon": "airDesigning"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "aerodrome",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -62,7 +82,14 @@
       "Name": "airLandSupport",
       "Icon": "airLandSupport"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "closeAirSupport",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -80,7 +107,19 @@
       "Name": "airMastery",
       "Icon": "airMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "airCapacity",
+        "value": 0.33,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -98,7 +137,14 @@
       "Name": "airReconaissance",
       "Icon": "airReconaissance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -116,7 +162,14 @@
       "Name": "airSuperiority",
       "Icon": "airSuperiority"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "interceptor",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -134,7 +187,14 @@
       "Name": "americanAstrogation",
       "Icon": "americanAstrogation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "space",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -152,7 +212,20 @@
       "Name": "americanFreedom",
       "Icon": "americanFreedom"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceModifier",
+        "value1": "commerce",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -170,7 +243,13 @@
       "Name": "americanFrontierism",
       "Icon": "americanFrontierism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -188,7 +267,13 @@
       "Name": "americanHegemony",
       "Icon": "americanHegemony"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -206,7 +291,13 @@
       "Name": "americanIngenuity",
       "Icon": "americanIngenuity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -224,7 +315,20 @@
       "Name": "americanNavalPrimacy",
       "Icon": "americanNavalPrimacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "waterSoft",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "waterHard",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -242,7 +346,13 @@
       "Name": "americanWorkEthic",
       "Icon": "americanWorkEthic"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -260,7 +370,14 @@
       "Name": "aristocraticAmbition",
       "Icon": "aristocraticAmbition"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -278,7 +395,13 @@
       "Name": "aristocraticCulture",
       "Icon": "aristocraticCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -296,7 +419,18 @@
       "Name": "aristocraticEconomics",
       "Icon": "aristocraticEconomics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 10,
+        "scope": "Primary"
+      },
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -314,7 +448,13 @@
       "Name": "aristocraticLeadership",
       "Icon": "aristocraticLeadership"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -332,7 +472,14 @@
       "Name": "aristocraticLoyalty",
       "Icon": "aristocraticLoyalty"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -350,7 +497,14 @@
       "Name": "aristocraticMilitary",
       "Icon": "aristocraticMilitary"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "tank",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -368,7 +522,24 @@
       "Name": "aristocraticSupremacy",
       "Icon": "aristocraticSupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -386,7 +557,14 @@
       "Name": "assimilationistAutonomy",
       "Icon": "assimilationistAutonomy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "separatist",
+        "value": -0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -404,7 +582,13 @@
       "Name": "assimilationistControl",
       "Icon": "assimilationistControl"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -422,7 +606,13 @@
       "Name": "assimilationistCulture",
       "Icon": "assimilationistCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -440,7 +630,20 @@
       "Name": "assimilationistEthics",
       "Icon": "assimilationistEthics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -458,7 +661,18 @@
       "Name": "assimilationistMastery",
       "Icon": "assimilationistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -476,7 +690,13 @@
       "Name": "assimilationistMilitary",
       "Icon": "assimilationistMilitary"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -494,7 +714,13 @@
       "Name": "assimilationistPolitical",
       "Icon": "assimilationistPolitical"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.025,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -512,7 +738,18 @@
       "Name": "atheist",
       "Icon": "atheist"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -530,7 +767,13 @@
       "Name": "atheistEducation",
       "Icon": "atheistEducation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -548,7 +791,13 @@
       "Name": "atheistHumanism",
       "Icon": "atheistHumanism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -566,7 +815,14 @@
       "Name": "atheistMaterialism",
       "Icon": "atheistMaterialism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -584,7 +840,14 @@
       "Name": "atheistPolitics",
       "Icon": "atheistPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "middleClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -602,7 +865,18 @@
       "Name": "atheistScientism",
       "Icon": "atheistScientism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -620,7 +894,13 @@
       "Name": "atheistSkepticism",
       "Icon": "atheistSkepticism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -638,7 +918,14 @@
       "Name": "atheistWorldliness",
       "Icon": "atheistWorldliness"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "consumerGoods",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -656,7 +943,13 @@
       "Name": "britishAdministration",
       "Icon": "britishAdministration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "edictCostMult",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -674,7 +967,20 @@
       "Name": "britishAdventurism",
       "Icon": "britishAdventurism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "navyCapacity",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -692,7 +998,13 @@
       "Name": "britishIndustrialism",
       "Icon": "britishIndustrialism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -710,7 +1022,13 @@
       "Name": "britishInnovation",
       "Icon": "britishInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -728,7 +1046,13 @@
       "Name": "britishLegacy",
       "Icon": "britishLegacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -746,7 +1070,13 @@
       "Name": "britishPoliteness",
       "Icon": "britishPoliteness"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -764,7 +1094,13 @@
       "Name": "britishStoicism",
       "Icon": "britishStoicism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -782,7 +1118,20 @@
       "Name": "christian",
       "Icon": "christian"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_christian",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -800,7 +1149,13 @@
       "Name": "christianityConversions",
       "Icon": "christianityConversions"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -818,7 +1173,23 @@
       "Name": "christianityDeusVult",
       "Icon": "christianityDeusVult"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "siegeAbility",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -836,7 +1207,13 @@
       "Name": "christianityDevotion",
       "Icon": "christianityDevotion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -854,7 +1231,13 @@
       "Name": "christianityPiety",
       "Icon": "christianityPiety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -872,7 +1255,26 @@
       "Name": "christianityTithes",
       "Icon": "christianityTithes"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "clergy",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -890,7 +1292,18 @@
       "Name": "christianityUnity",
       "Icon": "christianityUnity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.2,
+        "scope": "Region"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -908,7 +1321,13 @@
       "Name": "christianityWorship",
       "Icon": "christianityWorship"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -926,7 +1345,21 @@
       "Name": "communist",
       "Icon": "communist"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_communist",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -944,7 +1377,20 @@
       "Name": "consumersBreadAndCircus",
       "Icon": "consumersBreadAndCircus"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -962,7 +1408,13 @@
       "Name": "consumersCommerce",
       "Icon": "consumersCommerce"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -980,7 +1432,14 @@
       "Name": "consumersEconomy",
       "Icon": "consumersEconomy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -998,7 +1457,13 @@
       "Name": "consumersExport",
       "Icon": "consumersExport"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1016,7 +1481,13 @@
       "Name": "consumersInnovation",
       "Icon": "consumersInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1034,7 +1505,14 @@
       "Name": "consumersMastery",
       "Icon": "consumersMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "consumerGoods",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1052,7 +1530,19 @@
       "Name": "consumersPolitics",
       "Icon": "consumersPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1070,7 +1560,14 @@
       "Name": "defensiveBattlements",
       "Icon": "defensiveBattlements"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1088,7 +1585,14 @@
       "Name": "defensiveFortification",
       "Icon": "defensiveFortification"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "fortifications",
+        "value": -0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1106,7 +1610,25 @@
       "Name": "defensiveMastery",
       "Icon": "defensiveMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 30,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1124,7 +1646,14 @@
       "Name": "defensiveMilitaryIndustry",
       "Icon": "defensiveMilitaryIndustry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "barracks",
+        "value": -0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1142,7 +1671,13 @@
       "Name": "defensivePsychology",
       "Icon": "defensivePsychology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1160,7 +1695,13 @@
       "Name": "defensiveResistance",
       "Icon": "defensiveResistance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1178,7 +1719,13 @@
       "Name": "defensiveUnits",
       "Icon": "defensiveUnits"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1196,7 +1743,13 @@
       "Name": "diligentConstruction",
       "Icon": "diligentConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1214,7 +1767,14 @@
       "Name": "diligentEntrepreneurship",
       "Icon": "diligentEntrepreneurship"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1232,7 +1792,13 @@
       "Name": "diligentExperience",
       "Icon": "diligentExperience"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1250,7 +1816,14 @@
       "Name": "diligentLeadership",
       "Icon": "diligentLeadership"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1268,7 +1841,18 @@
       "Name": "diligentMastery",
       "Icon": "diligentMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitExperienceGainMult",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "prestigeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1286,7 +1870,13 @@
       "Name": "diligentWorkEthic",
       "Icon": "diligentWorkEthic"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1304,7 +1894,13 @@
       "Name": "diligentWorkflow",
       "Icon": "diligentWorkflow"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1322,7 +1918,13 @@
       "Name": "diplomacyAlliances",
       "Icon": "diplomacyAlliances"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1340,7 +1942,13 @@
       "Name": "diplomacyConciliation",
       "Icon": "diplomacyConciliation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1358,7 +1966,13 @@
       "Name": "diplomacyEnvoys",
       "Icon": "diplomacyEnvoys"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1376,7 +1990,13 @@
       "Name": "diplomacyMastery",
       "Icon": "diplomacyMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 10,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1394,7 +2014,13 @@
       "Name": "diplomacyNetworking",
       "Icon": "diplomacyNetworking"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionRecoveryMult",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1412,7 +2038,19 @@
       "Name": "diplomacyUnderstanding",
       "Icon": "diplomacyUnderstanding"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "clergy",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.33,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1430,7 +2068,13 @@
       "Name": "diplomacyUnity",
       "Icon": "diplomacyUnity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1448,7 +2092,18 @@
       "Name": "easygoingAsceticism",
       "Icon": "easygoingAsceticism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1466,7 +2121,13 @@
       "Name": "easygoingCarefree",
       "Icon": "easygoingCarefree"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1484,7 +2145,13 @@
       "Name": "easygoingComplacency",
       "Icon": "easygoingComplacency"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.025,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1502,7 +2169,13 @@
       "Name": "easygoingCulture",
       "Icon": "easygoingCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1520,7 +2193,13 @@
       "Name": "easygoingMastery",
       "Icon": "easygoingMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1538,7 +2217,13 @@
       "Name": "easygoingPeace",
       "Icon": "easygoingPeace"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1556,7 +2241,14 @@
       "Name": "easygoingWorldview",
       "Icon": "easygoingWorldview"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1574,7 +2266,14 @@
       "Name": "eugenicistArmy",
       "Icon": "eugenicistArmy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value1": "geneticMaterial",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1592,7 +2291,13 @@
       "Name": "eugenicistBiologists",
       "Icon": "eugenicistBiologists"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1610,7 +2315,14 @@
       "Name": "eugenicistIndustry",
       "Icon": "eugenicistIndustry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "geneticMaterialFactory",
+        "value": -0.3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1628,7 +2340,13 @@
       "Name": "eugenicistManipulation",
       "Icon": "eugenicistManipulation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1646,7 +2364,14 @@
       "Name": "eugenicistMastery",
       "Icon": "eugenicistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "geneticMaterial",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1664,7 +2389,14 @@
       "Name": "eugenicistPolitics",
       "Icon": "eugenicistPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1682,7 +2414,14 @@
       "Name": "eugenicistResearch",
       "Icon": "eugenicistResearch"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value1": "genetics",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1700,7 +2439,14 @@
       "Name": "explorersAdvancement",
       "Icon": "explorersAdvancement"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "space",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1718,7 +2464,18 @@
       "Name": "explorersAdventure",
       "Icon": "explorersAdventure"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPull",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "immigrationPush",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1736,7 +2493,14 @@
       "Name": "explorersColonization",
       "Icon": "explorersColonization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1754,7 +2518,13 @@
       "Name": "explorersDaring",
       "Icon": "explorersDaring"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1772,7 +2542,13 @@
       "Name": "explorersEmpire",
       "Icon": "explorersEmpire"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1790,7 +2566,13 @@
       "Name": "explorersInterplanetary",
       "Icon": "explorersInterplanetary"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "colonialRange",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1808,7 +2590,18 @@
       "Name": "explorersMastery",
       "Icon": "explorersMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "interplanetaryCultureModifier",
+        "value": 1,
+        "scope": "Primary"
+      },
+      {
+        "key": "colonyProgressMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1826,7 +2619,13 @@
       "Name": "fascist",
       "Icon": "fascist"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1844,7 +2643,13 @@
       "Name": "firearmsConscription",
       "Icon": "firearmsConscription"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1862,7 +2667,14 @@
       "Name": "firearmsConsumption",
       "Icon": "firearmsConsumption"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1880,7 +2692,19 @@
       "Name": "firearmsMastery",
       "Icon": "firearmsMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "infantry",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1898,7 +2722,14 @@
       "Name": "firearmsOrganization",
       "Icon": "firearmsOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "land",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1916,7 +2747,13 @@
       "Name": "firearmsPractice",
       "Icon": "firearmsPractice"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1934,7 +2771,18 @@
       "Name": "firearmsResistance",
       "Icon": "firearmsResistance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.33,
+        "scope": "Region"
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 10,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1952,7 +2800,13 @@
       "Name": "firearmsTraining",
       "Icon": "firearmsTraining"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.15,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1970,7 +2824,18 @@
       "Name": "guiltAssimilation",
       "Icon": "guiltAssimilation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": -0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "integrationCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1988,7 +2853,19 @@
       "Name": "guiltAtonement",
       "Icon": "guiltAtonement"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2006,7 +2883,14 @@
       "Name": "guiltCompensation",
       "Icon": "guiltCompensation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2024,7 +2908,13 @@
       "Name": "guiltDiversity",
       "Icon": "guiltDiversity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2042,7 +2932,18 @@
       "Name": "guiltReparations",
       "Icon": "guiltReparations"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2060,7 +2961,18 @@
       "Name": "guiltSocialPrograms",
       "Icon": "guiltSocialPrograms"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2078,7 +2990,13 @@
       "Name": "guiltWelfare",
       "Icon": "guiltWelfare"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.02,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2096,7 +3014,13 @@
       "Name": "hegelianCulture",
       "Icon": "hegelianCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2114,7 +3038,13 @@
       "Name": "hegelianDialectics",
       "Icon": "hegelianDialectics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2132,7 +3062,18 @@
       "Name": "hegelianMastery",
       "Icon": "hegelianMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2150,7 +3091,14 @@
       "Name": "hegelianPolitics",
       "Icon": "hegelianPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2168,7 +3116,13 @@
       "Name": "hegelianSpiritualism",
       "Icon": "hegelianSpiritualism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2186,7 +3140,13 @@
       "Name": "hegelianSupremacy",
       "Icon": "hegelianSupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureIdeaCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2204,7 +3164,13 @@
       "Name": "hegelianWorldview",
       "Icon": "hegelianWorldview"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2222,7 +3188,19 @@
       "Name": "hinduismCastes",
       "Icon": "hinduismCastes"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2240,7 +3218,13 @@
       "Name": "hinduismCommunity",
       "Icon": "hinduismCommunity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2258,7 +3242,14 @@
       "Name": "hinduismCulture",
       "Icon": "hinduismCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "diplomacyCapacity",
+        "value": 50,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2276,7 +3267,19 @@
       "Name": "hinduismMastery",
       "Icon": "hinduismMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2294,7 +3297,13 @@
       "Name": "hinduismPolytheism",
       "Icon": "hinduismPolytheism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2312,7 +3321,13 @@
       "Name": "hinduismReincarnation",
       "Icon": "hinduismReincarnation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2330,7 +3345,13 @@
       "Name": "hinduismSpiritualism",
       "Icon": "hinduismSpiritualism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureIdeaCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2348,7 +3369,18 @@
       "Name": "humanityAdaptability",
       "Icon": "humanityAdaptability"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "habitabilityAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2366,7 +3398,13 @@
       "Name": "humanityAggression",
       "Icon": "humanityAggression"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2384,7 +3422,13 @@
       "Name": "humanityInnovation",
       "Icon": "humanityInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2402,7 +3446,13 @@
       "Name": "humanityPolitics",
       "Icon": "humanityPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2420,7 +3470,13 @@
       "Name": "humanityPsychology",
       "Icon": "humanityPsychology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2438,7 +3494,18 @@
       "Name": "humanitySupremacy",
       "Icon": "humanitySupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2456,7 +3523,13 @@
       "Name": "humanityTribalism",
       "Icon": "humanityTribalism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2474,7 +3547,14 @@
       "Name": "individualismAutonomy",
       "Icon": "individualismAutonomy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2492,7 +3572,14 @@
       "Name": "individualismEntrepreneurship",
       "Icon": "individualismEntrepreneurship"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "commerce",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2510,7 +3597,18 @@
       "Name": "individualismFreedom",
       "Icon": "individualismFreedom"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPull",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2528,7 +3626,14 @@
       "Name": "individualismInitiative",
       "Icon": "individualismInitiative"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "consumerGoodsFactory",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2546,7 +3651,13 @@
       "Name": "individualismInnovation",
       "Icon": "individualismInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2564,7 +3675,13 @@
       "Name": "individualismLiberty",
       "Icon": "individualismLiberty"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "reformCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2582,7 +3699,14 @@
       "Name": "individualismSelfReliance",
       "Icon": "individualismSelfReliance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2600,7 +3724,13 @@
       "Name": "industryConstruction",
       "Icon": "industryConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2618,7 +3748,14 @@
       "Name": "industryDiligence",
       "Icon": "industryDiligence"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value1": "land",
+        "value": 0.03,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2636,7 +3773,14 @@
       "Name": "industryMastery",
       "Icon": "industryMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "factory",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2654,7 +3798,13 @@
       "Name": "industryMechanization",
       "Icon": "industryMechanization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2672,7 +3822,13 @@
       "Name": "industryProduction",
       "Icon": "industryProduction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2690,7 +3846,20 @@
       "Name": "industryTrading",
       "Icon": "industryTrading"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2708,7 +3877,13 @@
       "Name": "industryWorking",
       "Icon": "industryWorking"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2726,7 +3901,13 @@
       "Name": "influenceAdministration",
       "Icon": "influenceAdministration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2744,7 +3925,18 @@
       "Name": "influenceMastery",
       "Icon": "influenceMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2762,7 +3954,19 @@
       "Name": "influenceMicromanagement",
       "Icon": "influenceMicromanagement"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2780,7 +3984,13 @@
       "Name": "influenceOrchestration",
       "Icon": "influenceOrchestration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2798,7 +4008,13 @@
       "Name": "influenceOrganization",
       "Icon": "influenceOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2816,7 +4032,14 @@
       "Name": "influencePolitics",
       "Icon": "influencePolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2834,7 +4057,13 @@
       "Name": "influencePsychology",
       "Icon": "influencePsychology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.025,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2852,7 +4081,13 @@
       "Name": "innovativeAdministration",
       "Icon": "innovativeAdministration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2870,7 +4105,13 @@
       "Name": "innovativeEngineering",
       "Icon": "innovativeEngineering"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2888,7 +4129,20 @@
       "Name": "innovativeFunding",
       "Icon": "innovativeFunding"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "university",
+        "value": -0.33,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2906,7 +4160,13 @@
       "Name": "innovativeLeadership",
       "Icon": "innovativeLeadership"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2924,7 +4184,13 @@
       "Name": "innovativeResearch",
       "Icon": "innovativeResearch"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2942,7 +4208,25 @@
       "Name": "innovativeStrategy",
       "Icon": "innovativeStrategy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitExperienceGainMult",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2960,7 +4244,13 @@
       "Name": "innovativeSupremacy",
       "Icon": "innovativeSupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2978,7 +4268,13 @@
       "Name": "insularAdaption",
       "Icon": "insularAdaption"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2996,7 +4292,18 @@
       "Name": "insularIsolation",
       "Icon": "insularIsolation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3014,7 +4321,18 @@
       "Name": "insularMastery",
       "Icon": "insularMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3032,7 +4350,19 @@
       "Name": "insularPolitics",
       "Icon": "insularPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3050,7 +4380,18 @@
       "Name": "insularSuperiority",
       "Icon": "insularSuperiority"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": -0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3068,7 +4409,13 @@
       "Name": "insularTraditions",
       "Icon": "insularTraditions"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3086,7 +4433,18 @@
       "Name": "insularUnity",
       "Icon": "insularUnity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3104,7 +4462,13 @@
       "Name": "intellectualismAcademia",
       "Icon": "intellectualismAcademia"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "characterQuality",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3122,7 +4486,20 @@
       "Name": "intellectualismElite",
       "Icon": "intellectualismElite"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3140,7 +4517,13 @@
       "Name": "intellectualismEnlightenment",
       "Icon": "intellectualismEnlightenment"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3158,7 +4541,14 @@
       "Name": "intellectualismMeritocracy",
       "Icon": "intellectualismMeritocracy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3176,7 +4566,13 @@
       "Name": "intellectualismProgress",
       "Icon": "intellectualismProgress"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3194,7 +4590,13 @@
       "Name": "intellectualismReason",
       "Icon": "intellectualismReason"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3212,7 +4614,14 @@
       "Name": "intellectualismScience",
       "Icon": "intellectualismScience"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3230,7 +4639,13 @@
       "Name": "irridentistAdministration",
       "Icon": "irridentistAdministration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3248,7 +4663,13 @@
       "Name": "irridentistColonization",
       "Icon": "irridentistColonization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3266,7 +4687,18 @@
       "Name": "irridentistCulture",
       "Icon": "irridentistCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3284,7 +4716,19 @@
       "Name": "irridentistDiplomacy",
       "Icon": "irridentistDiplomacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": -5,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3302,7 +4746,13 @@
       "Name": "irridentistExpansion",
       "Icon": "irridentistExpansion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3320,7 +4770,13 @@
       "Name": "irridentistMastery",
       "Icon": "irridentistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3338,7 +4794,13 @@
       "Name": "irridentistUnification",
       "Icon": "irridentistUnification"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3356,7 +4818,14 @@
       "Name": "islamFanaticism",
       "Icon": "islamFanaticism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3374,7 +4843,13 @@
       "Name": "islamGlobalIntifada",
       "Icon": "islamGlobalIntifada"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3392,7 +4867,13 @@
       "Name": "islamQuran",
       "Icon": "islamQuran"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3410,7 +4891,20 @@
       "Name": "islamSubmission",
       "Icon": "islamSubmission"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "middleClass",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "laborer",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3428,7 +4922,24 @@
       "Name": "islamTerror",
       "Icon": "islamTerror"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": -0.15,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3446,7 +4957,13 @@
       "Name": "islamUnification",
       "Icon": "islamUnification"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3464,7 +4981,13 @@
       "Name": "islamWorship",
       "Icon": "islamWorship"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3482,7 +5005,13 @@
       "Name": "isolationistDefense",
       "Icon": "isolationistDefense"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.3,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3500,7 +5029,13 @@
       "Name": "isolationistInsularity",
       "Icon": "isolationistInsularity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3518,7 +5053,13 @@
       "Name": "isolationistIntrospection",
       "Icon": "isolationistIntrospection"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3536,7 +5077,13 @@
       "Name": "isolationistMastery",
       "Icon": "isolationistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3554,7 +5101,13 @@
       "Name": "isolationistNationalism",
       "Icon": "isolationistNationalism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3572,7 +5125,13 @@
       "Name": "isolationistUnification",
       "Icon": "isolationistUnification"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3590,7 +5149,13 @@
       "Name": "isolationistUpwardConstruction",
       "Icon": "isolationistUpwardConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.3,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3608,7 +5173,21 @@
       "Name": "jewish",
       "Icon": "jewish"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_jewish",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3626,7 +5205,13 @@
       "Name": "judaismAncients",
       "Icon": "judaismAncients"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3644,7 +5229,18 @@
       "Name": "judaismChosen",
       "Icon": "judaismChosen"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3662,7 +5258,20 @@
       "Name": "judaismConviction",
       "Icon": "judaismConviction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.05,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3680,7 +5289,14 @@
       "Name": "judaismInternationalism",
       "Icon": "judaismInternationalism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "diplomacyCapacity",
+        "value": 100,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3698,7 +5314,18 @@
       "Name": "judaismMonotheism",
       "Icon": "judaismMonotheism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3716,7 +5343,13 @@
       "Name": "judaismOrganization",
       "Icon": "judaismOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3734,7 +5367,13 @@
       "Name": "judaismUsury",
       "Icon": "judaismUsury"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3752,7 +5391,14 @@
       "Name": "landArtillery",
       "Icon": "landArtillery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitQualityMult",
+        "value1": "artillery",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3770,7 +5416,14 @@
       "Name": "landCommander",
       "Icon": "landCommander"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3788,7 +5441,14 @@
       "Name": "landInfantry",
       "Icon": "landInfantry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitQualityMult",
+        "value1": "infantry",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3806,7 +5466,14 @@
       "Name": "landMastery",
       "Icon": "landMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "land",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3824,7 +5491,14 @@
       "Name": "landOrganization",
       "Icon": "landOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3842,7 +5516,14 @@
       "Name": "landReinforcement",
       "Icon": "landReinforcement"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value1": "land",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3860,7 +5541,14 @@
       "Name": "landTanks",
       "Icon": "landTanks"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitQualityMult",
+        "value1": "tank",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3878,7 +5566,13 @@
       "Name": "ludditeCrusade",
       "Icon": "ludditeCrusade"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3896,7 +5590,13 @@
       "Name": "ludditeCulture",
       "Icon": "ludditeCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3914,7 +5614,13 @@
       "Name": "ludditeImprovisation",
       "Icon": "ludditeImprovisation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3932,7 +5638,23 @@
       "Name": "ludditeMastery",
       "Icon": "ludditeMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unityMult",
+        "value": 1,
+        "scope": "Primary"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3950,7 +5672,13 @@
       "Name": "ludditePower",
       "Icon": "ludditePower"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3968,7 +5696,13 @@
       "Name": "ludditePurity",
       "Icon": "ludditePurity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -3986,7 +5720,13 @@
       "Name": "ludditeSupremacy",
       "Icon": "ludditeSupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4004,7 +5744,14 @@
       "Name": "mandateCommand",
       "Icon": "mandateCommand"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4022,7 +5769,13 @@
       "Name": "mandateEconomy",
       "Icon": "mandateEconomy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4040,7 +5793,13 @@
       "Name": "mandateMastery",
       "Icon": "mandateMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4058,7 +5817,13 @@
       "Name": "mandateObligations",
       "Icon": "mandateObligations"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4076,7 +5841,14 @@
       "Name": "mandatePolitics",
       "Icon": "mandatePolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4094,7 +5866,13 @@
       "Name": "mandateProsperity",
       "Icon": "mandateProsperity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4112,7 +5890,18 @@
       "Name": "mandateSuperiority",
       "Icon": "mandateSuperiority"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "edictCostMult",
+        "value": -0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4130,7 +5919,20 @@
       "Name": "marxismClassWar",
       "Icon": "marxismClassWar"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4148,7 +5950,14 @@
       "Name": "marxismEquity",
       "Icon": "marxismEquity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4166,7 +5975,14 @@
       "Name": "marxismInternationale",
       "Icon": "marxismInternationale"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "diplomacyCapacity",
+        "value": 75,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4184,7 +6000,19 @@
       "Name": "marxismMaterialism",
       "Icon": "marxismMaterialism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.33,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4202,7 +6030,13 @@
       "Name": "marxismPraxis",
       "Icon": "marxismPraxis"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4220,7 +6054,18 @@
       "Name": "marxismRevolution",
       "Icon": "marxismRevolution"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4238,7 +6083,23 @@
       "Name": "marxismStruggleSession",
       "Icon": "marxismStruggleSession"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.15,
+        "scope": "Primary"
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4256,7 +6117,13 @@
       "Name": "monumentalistConstruction",
       "Icon": "monumentalistConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4274,7 +6141,14 @@
       "Name": "monumentalistExpansion",
       "Icon": "monumentalistExpansion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "infrastructure",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4292,7 +6166,14 @@
       "Name": "monumentalistIndustry",
       "Icon": "monumentalistIndustry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4310,7 +6191,14 @@
       "Name": "monumentalistInfrastructure",
       "Icon": "monumentalistInfrastructure"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "infrastructure",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4328,7 +6216,13 @@
       "Name": "monumentalistMastery",
       "Icon": "monumentalistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4346,7 +6240,13 @@
       "Name": "monumentalistOrganization",
       "Icon": "monumentalistOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4364,7 +6264,18 @@
       "Name": "moralismCrusade",
       "Icon": "moralismCrusade"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "siegeAbility",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4382,7 +6293,13 @@
       "Name": "moralismDiscipline",
       "Icon": "moralismDiscipline"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4400,7 +6317,19 @@
       "Name": "moralismJustWar",
       "Icon": "moralismJustWar"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "infantry",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4418,7 +6347,18 @@
       "Name": "moralismOrder",
       "Icon": "moralismOrder"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4436,7 +6376,19 @@
       "Name": "moralismPiety",
       "Icon": "moralismPiety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.15,
+        "scope": "Region"
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4454,7 +6406,19 @@
       "Name": "moralismRighteousness",
       "Icon": "moralismRighteousness"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.15,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4472,7 +6436,18 @@
       "Name": "moralismVirtue",
       "Icon": "moralismVirtue"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4490,7 +6465,14 @@
       "Name": "moumentalistPsychology",
       "Icon": "moumentalistPsychology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4508,7 +6490,20 @@
       "Name": "navyAttack",
       "Icon": "navyAttack"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "waterSoft",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "waterHard",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4526,7 +6521,13 @@
       "Name": "navyCommand",
       "Icon": "navyCommand"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 20,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4544,7 +6545,13 @@
       "Name": "navyCommerce",
       "Icon": "navyCommerce"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4562,7 +6569,14 @@
       "Name": "navyMastery",
       "Icon": "navyMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "navyCapacity",
+        "value": 0.33,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4580,7 +6594,14 @@
       "Name": "navyMorale",
       "Icon": "navyMorale"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "water",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4598,7 +6619,13 @@
       "Name": "navyRecruitment",
       "Icon": "navyRecruitment"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4616,7 +6643,22 @@
       "Name": "navyTactics",
       "Icon": "navyTactics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value2": "screen",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value2": "capital",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4634,7 +6676,13 @@
       "Name": "nuclearFamilyCohesion",
       "Icon": "nuclearFamilyCohesion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4652,7 +6700,13 @@
       "Name": "nuclearFamilyCommunity",
       "Icon": "nuclearFamilyCommunity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4670,7 +6724,13 @@
       "Name": "nuclearFamilyMastery",
       "Icon": "nuclearFamilyMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureIdeaCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4688,7 +6748,13 @@
       "Name": "nuclearFamilyProsperity",
       "Icon": "nuclearFamilyProsperity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4706,7 +6772,13 @@
       "Name": "nuclearFamilyResourceful",
       "Icon": "nuclearFamilyResourceful"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4724,7 +6796,13 @@
       "Name": "nuclearFamilySociety",
       "Icon": "nuclearFamilySociety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4742,7 +6820,13 @@
       "Name": "nuclearFamilyTradition",
       "Icon": "nuclearFamilyTradition"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4760,7 +6844,18 @@
       "Name": "obliterationCollective",
       "Icon": "obliterationCollective"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Region"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4778,7 +6873,13 @@
       "Name": "obliterationConformity",
       "Icon": "obliterationConformity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4796,7 +6897,13 @@
       "Name": "obliterationDevotion",
       "Icon": "obliterationDevotion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4814,7 +6921,18 @@
       "Name": "obliterationObedience",
       "Icon": "obliterationObedience"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4832,7 +6950,13 @@
       "Name": "obliterationSacrifice",
       "Icon": "obliterationSacrifice"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4850,7 +6974,13 @@
       "Name": "obliterationSubmission",
       "Icon": "obliterationSubmission"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4868,7 +6998,14 @@
       "Name": "obliterationUnification",
       "Icon": "obliterationUnification"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4886,7 +7023,13 @@
       "Name": "occult",
       "Icon": "occult"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4904,7 +7047,14 @@
       "Name": "occultElitism",
       "Icon": "occultElitism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4922,7 +7072,14 @@
       "Name": "occultEvil",
       "Icon": "occultEvil"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "corporate",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4940,7 +7097,18 @@
       "Name": "occultForbiddenKnowledge",
       "Icon": "occultForbiddenKnowledge"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.33,
+        "scope": "Primary"
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4958,7 +7126,13 @@
       "Name": "occultIdeology",
       "Icon": "occultIdeology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4976,7 +7150,13 @@
       "Name": "occultMagic",
       "Icon": "occultMagic"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -4994,7 +7174,13 @@
       "Name": "occultRitual",
       "Icon": "occultRitual"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5012,7 +7198,13 @@
       "Name": "occultUnion",
       "Icon": "occultUnion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5030,7 +7222,13 @@
       "Name": "offensiveAttack",
       "Icon": "offensiveAttack"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5048,7 +7246,18 @@
       "Name": "offensiveLegions",
       "Icon": "offensiveLegions"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 20,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5066,7 +7275,20 @@
       "Name": "offensiveMastery",
       "Icon": "offensiveMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5084,7 +7306,13 @@
       "Name": "offensivePersistence",
       "Icon": "offensivePersistence"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5102,7 +7330,13 @@
       "Name": "offensiveSieges",
       "Icon": "offensiveSieges"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "siegeAbility",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5120,7 +7354,13 @@
       "Name": "offensiveSupply",
       "Icon": "offensiveSupply"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5138,7 +7378,14 @@
       "Name": "offensiveTraining",
       "Icon": "offensiveTraining"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5156,7 +7403,18 @@
       "Name": "passivistCommunalism",
       "Icon": "passivistCommunalism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.15,
+        "scope": "Primary"
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5174,7 +7432,20 @@
       "Name": "passivistDefense",
       "Icon": "passivistDefense"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5192,7 +7463,13 @@
       "Name": "passivistEthics",
       "Icon": "passivistEthics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5210,7 +7487,18 @@
       "Name": "passivistMastery",
       "Icon": "passivistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5228,7 +7516,19 @@
       "Name": "passivistPlacation",
       "Icon": "passivistPlacation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": -0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5246,7 +7546,20 @@
       "Name": "passivistPolitics",
       "Icon": "passivistPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5264,7 +7577,13 @@
       "Name": "passivistRhetoric",
       "Icon": "passivistRhetoric"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5282,7 +7601,13 @@
       "Name": "plutocraticFinancing",
       "Icon": "plutocraticFinancing"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "debtEffectMult",
+        "value": -0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5300,7 +7625,13 @@
       "Name": "plutocraticInvestment",
       "Icon": "plutocraticInvestment"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5318,7 +7649,13 @@
       "Name": "plutocraticLeadership",
       "Icon": "plutocraticLeadership"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5336,7 +7673,14 @@
       "Name": "plutocraticMaterialism",
       "Icon": "plutocraticMaterialism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "consumerGoodsFactory",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5354,7 +7698,19 @@
       "Name": "plutocraticMechanics",
       "Icon": "plutocraticMechanics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5372,7 +7728,13 @@
       "Name": "plutocraticMerit",
       "Icon": "plutocraticMerit"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5390,7 +7752,24 @@
       "Name": "plutocraticSupremacy",
       "Icon": "plutocraticSupremacy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3,
+        "scope": "Primary"
+      },
+      {
+        "key": "projectEfficiency",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5408,7 +7787,14 @@
       "Name": "polygamistChaos",
       "Icon": "polygamistChaos"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "laborer",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5426,7 +7812,13 @@
       "Name": "polygamistFamily",
       "Icon": "polygamistFamily"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5444,7 +7836,13 @@
       "Name": "polygamistHierarchy",
       "Icon": "polygamistHierarchy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5462,7 +7860,14 @@
       "Name": "polygamistManagement",
       "Icon": "polygamistManagement"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5480,7 +7885,18 @@
       "Name": "polygamistMastery",
       "Icon": "polygamistMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5498,7 +7914,13 @@
       "Name": "polygamistPsychology",
       "Icon": "polygamistPsychology"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5516,7 +7938,13 @@
       "Name": "polygamistSociety",
       "Icon": "polygamistSociety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5534,7 +7962,13 @@
       "Name": "pridefulAggression",
       "Icon": "pridefulAggression"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5552,7 +7986,13 @@
       "Name": "pridefulAmbition",
       "Icon": "pridefulAmbition"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5570,7 +8010,19 @@
       "Name": "pridefulArrogance",
       "Icon": "pridefulArrogance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": -5,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5588,7 +8040,13 @@
       "Name": "pridefulDictation",
       "Icon": "pridefulDictation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5606,7 +8064,13 @@
       "Name": "pridefulMastery",
       "Icon": "pridefulMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "privilegeGrantCost",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5624,7 +8088,14 @@
       "Name": "pridefulOrchestration",
       "Icon": "pridefulOrchestration"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5642,7 +8113,13 @@
       "Name": "pridefulUnity",
       "Icon": "pridefulUnity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5660,7 +8137,14 @@
       "Name": "prosperismAmbition",
       "Icon": "prosperismAmbition"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5678,7 +8162,13 @@
       "Name": "prosperismDevelopment",
       "Icon": "prosperismDevelopment"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5696,7 +8186,20 @@
       "Name": "prosperismGrowth",
       "Icon": "prosperismGrowth"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "factory",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5714,7 +8217,14 @@
       "Name": "prosperismIndustry",
       "Icon": "prosperismIndustry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value1": "factory",
+        "value": 0.15,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5732,7 +8242,18 @@
       "Name": "prosperismOpportunity",
       "Icon": "prosperismOpportunity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPull",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5750,7 +8271,13 @@
       "Name": "prosperismProgress",
       "Icon": "prosperismProgress"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5768,7 +8295,13 @@
       "Name": "prosperismWealth",
       "Icon": "prosperismWealth"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5786,7 +8319,13 @@
       "Name": "qualityCommand",
       "Icon": "qualityCommand"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5804,7 +8343,13 @@
       "Name": "qualityDiscipline",
       "Icon": "qualityDiscipline"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5822,7 +8367,18 @@
       "Name": "qualityElitism",
       "Icon": "qualityElitism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": -0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitMoraleDamageReduction",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5840,7 +8396,19 @@
       "Name": "qualityMastery",
       "Icon": "qualityMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.15,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5858,7 +8426,13 @@
       "Name": "qualityOrganization",
       "Icon": "qualityOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitExperienceBase",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5876,7 +8450,20 @@
       "Name": "qualityTactics",
       "Icon": "qualityTactics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5894,7 +8481,13 @@
       "Name": "qualityTraining",
       "Icon": "qualityTraining"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5912,7 +8505,13 @@
       "Name": "quantityCommand",
       "Icon": "quantityCommand"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 40,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5930,7 +8529,13 @@
       "Name": "quantityHumanWave",
       "Icon": "quantityHumanWave"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5948,7 +8553,24 @@
       "Name": "quantityMastery",
       "Icon": "quantityMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "size",
+        "value": -0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitCommandLimitAdd",
+        "value": 20,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5966,7 +8588,14 @@
       "Name": "quantityMilitarism",
       "Icon": "quantityMilitarism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "military",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -5984,7 +8613,18 @@
       "Name": "quantityOrganization",
       "Icon": "quantityOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": 0.25,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6002,7 +8642,13 @@
       "Name": "quantityOverwhelm",
       "Icon": "quantityOverwhelm"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6020,7 +8666,13 @@
       "Name": "quantityWarmachine",
       "Icon": "quantityWarmachine"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6038,7 +8690,14 @@
       "Name": "robophileArmy",
       "Icon": "robophileArmy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value1": "robots",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6056,7 +8715,13 @@
       "Name": "robophileConstruction",
       "Icon": "robophileConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6074,7 +8739,14 @@
       "Name": "robophileIndustry",
       "Icon": "robophileIndustry"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "robotFactory",
+        "value": -0.3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6092,7 +8764,14 @@
       "Name": "robophileMastery",
       "Icon": "robophileMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6110,7 +8789,14 @@
       "Name": "robophileMechanism",
       "Icon": "robophileMechanism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6128,7 +8814,14 @@
       "Name": "robophileRobotics",
       "Icon": "robophileRobotics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value1": "robotics",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6146,7 +8839,13 @@
       "Name": "robophileTechnicians",
       "Icon": "robophileTechnicians"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6164,7 +8863,13 @@
       "Name": "roboticAnalytics",
       "Icon": "roboticAnalytics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6182,7 +8887,13 @@
       "Name": "roboticComputation",
       "Icon": "roboticComputation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6200,7 +8911,14 @@
       "Name": "roboticEnigmatics",
       "Icon": "roboticEnigmatics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value1": "enigmatic",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6218,7 +8936,18 @@
       "Name": "roboticMastery",
       "Icon": "roboticMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -1,
+        "scope": "Primary"
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6236,7 +8965,13 @@
       "Name": "roboticMechanics",
       "Icon": "roboticMechanics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6254,7 +8989,23 @@
       "Name": "roboticMilitary",
       "Icon": "roboticMilitary"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": -0.2,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6272,7 +9023,13 @@
       "Name": "roboticWorkforce",
       "Icon": "roboticWorkforce"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "automatedWorkforceMult",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6290,7 +9047,13 @@
       "Name": "socialContractControl",
       "Icon": "socialContractControl"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6308,7 +9071,14 @@
       "Name": "socialContractLaw",
       "Icon": "socialContractLaw"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6326,7 +9096,13 @@
       "Name": "socialContractMastery",
       "Icon": "socialContractMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "privilegeGrantCost",
+        "value": -0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6344,7 +9120,13 @@
       "Name": "socialContractOrganization",
       "Icon": "socialContractOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6362,7 +9144,14 @@
       "Name": "socialContractPolitics",
       "Icon": "socialContractPolitics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "sliderMaxAdd",
+        "value1": "resourceTax",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6380,7 +9169,13 @@
       "Name": "socialContractSociety",
       "Icon": "socialContractSociety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6398,7 +9193,13 @@
       "Name": "socialContractStatism",
       "Icon": "socialContractStatism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6416,7 +9217,14 @@
       "Name": "spaceAttacking",
       "Icon": "spaceAttacking"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceSoft",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6434,7 +9242,26 @@
       "Name": "spaceDominance",
       "Icon": "spaceDominance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceHard",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceTracking",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.33,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6452,7 +9279,13 @@
       "Name": "spaceLogistics",
       "Icon": "spaceLogistics"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6470,7 +9303,14 @@
       "Name": "spaceMorale",
       "Icon": "spaceMorale"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value1": "space",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6488,7 +9328,14 @@
       "Name": "spaceRecruitment",
       "Icon": "spaceRecruitment"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": -0.33,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6506,7 +9353,13 @@
       "Name": "spaceResources",
       "Icon": "spaceResources"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6524,7 +9377,14 @@
       "Name": "spaceTraining",
       "Icon": "spaceTraining"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value1": "spaceport",
+        "value": -0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6560,7 +9420,26 @@
       "Name": "speciesRobot",
       "Icon": "speciesRobot"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": -5,
+        "scope": "Primary"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.5,
+        "scope": "Primary"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "laborer",
+        "value2": "laborer_automated",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6578,7 +9457,14 @@
       "Name": "statismAuthority",
       "Icon": "statismAuthority"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6596,7 +9482,19 @@
       "Name": "statismBureaucracy",
       "Icon": "statismBureaucracy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6614,7 +9512,13 @@
       "Name": "statismCentralization",
       "Icon": "statismCentralization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6632,7 +9536,13 @@
       "Name": "statismControl",
       "Icon": "statismControl"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6650,7 +9560,13 @@
       "Name": "statismMobilization",
       "Icon": "statismMobilization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6668,7 +9584,13 @@
       "Name": "statismOrder",
       "Icon": "statismOrder"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6686,7 +9608,14 @@
       "Name": "statismPlanning",
       "Icon": "statismPlanning"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6704,7 +9633,13 @@
       "Name": "stoicismDefiance",
       "Icon": "stoicismDefiance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 10,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6722,7 +9657,13 @@
       "Name": "stoicismDiscipline",
       "Icon": "stoicismDiscipline"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6740,7 +9681,18 @@
       "Name": "stoicismEndurance",
       "Icon": "stoicismEndurance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.15,
+        "scope": "Region"
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 10,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6758,7 +9710,13 @@
       "Name": "stoicismFortitude",
       "Icon": "stoicismFortitude"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6776,7 +9734,18 @@
       "Name": "stoicismPerseverance",
       "Icon": "stoicismPerseverance"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.15,
+        "scope": "Primary"
+      },
+      {
+        "key": "warExhaustionRecoveryMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6794,7 +9763,14 @@
       "Name": "stoicismResilience",
       "Icon": "stoicismResilience"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6812,7 +9788,13 @@
       "Name": "stoicismStolidness",
       "Icon": "stoicismStolidness"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6830,7 +9812,14 @@
       "Name": "thriftyCommerce",
       "Icon": "thriftyCommerce"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "consumerGoodsFactory",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6848,7 +9837,13 @@
       "Name": "thriftyExpansion",
       "Icon": "thriftyExpansion"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6866,7 +9861,14 @@
       "Name": "thriftyExploitation",
       "Icon": "thriftyExploitation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "extraction",
+        "value": 0.5,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6884,7 +9886,13 @@
       "Name": "thriftyInnovation",
       "Icon": "thriftyInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6902,7 +9910,13 @@
       "Name": "thriftyMastery",
       "Icon": "thriftyMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value": 1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6920,7 +9934,13 @@
       "Name": "thriftyResources",
       "Icon": "thriftyResources"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6938,7 +9958,19 @@
       "Name": "thriftySociety",
       "Icon": "thriftySociety"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6956,7 +9988,14 @@
       "Name": "traditionalismAncestors",
       "Icon": "traditionalismAncestors"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6974,7 +10013,19 @@
       "Name": "traditionalismConservatism",
       "Icon": "traditionalismConservatism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionPowerAdd",
+        "value1": "upperClass",
+        "value": 0.1,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -6992,7 +10043,13 @@
       "Name": "traditionalismContinuity",
       "Icon": "traditionalismContinuity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7010,7 +10067,13 @@
       "Name": "traditionalismCulture",
       "Icon": "traditionalismCulture"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.15,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7028,7 +10091,19 @@
       "Name": "traditionalismHierarchy",
       "Icon": "traditionalismHierarchy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.05,
+        "scope": "Region"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7046,7 +10121,14 @@
       "Name": "traditionalismRituals",
       "Icon": "traditionalismRituals"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7064,7 +10146,13 @@
       "Name": "traditionalismStability",
       "Icon": "traditionalismStability"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.25,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7082,7 +10170,13 @@
       "Name": "transformationChange",
       "Icon": "transformationChange"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7100,7 +10194,13 @@
       "Name": "transformationEvolution",
       "Icon": "transformationEvolution"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7118,7 +10218,14 @@
       "Name": "transformationFuturism",
       "Icon": "transformationFuturism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7136,7 +10243,13 @@
       "Name": "transformationInnovation",
       "Icon": "transformationInnovation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "reformCostMult",
+        "value": -0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7154,7 +10267,13 @@
       "Name": "transformationNewWorld",
       "Icon": "transformationNewWorld"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "colonialRange",
+        "value": 3,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7172,7 +10291,13 @@
       "Name": "transformationProgress",
       "Icon": "transformationProgress"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7190,7 +10315,13 @@
       "Name": "transformationVision",
       "Icon": "transformationVision"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7208,7 +10339,14 @@
       "Name": "tribalismClans",
       "Icon": "tribalismClans"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7226,7 +10364,14 @@
       "Name": "tribalismFerocity",
       "Icon": "tribalismFerocity"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "infantry",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7244,7 +10389,18 @@
       "Name": "tribalismKinship",
       "Icon": "tribalismKinship"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.15,
+        "scope": "Region"
+      },
+      {
+        "key": "assimilationMult",
+        "value": -0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7262,7 +10418,14 @@
       "Name": "tribalismLoyalty",
       "Icon": "tribalismLoyalty"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "military",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7280,7 +10443,13 @@
       "Name": "tribalismRaiding",
       "Icon": "tribalismRaiding"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7298,7 +10467,18 @@
       "Name": "tribalismTradition",
       "Icon": "tribalismTradition"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7316,7 +10496,18 @@
       "Name": "tribalismWarriors",
       "Icon": "tribalismWarriors"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationAdd",
+        "value": 0.01,
+        "scope": "Primary"
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7334,7 +10525,14 @@
       "Name": "urbanophileConstruction",
       "Icon": "urbanophileConstruction"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "infrastructure",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7352,7 +10550,14 @@
       "Name": "urbanophileGrowth",
       "Icon": "urbanophileGrowth"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "steel",
+        "value": 2,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7370,7 +10575,13 @@
       "Name": "urbanophileInfrastructure",
       "Icon": "urbanophileInfrastructure"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7388,7 +10599,13 @@
       "Name": "urbanophileMastery",
       "Icon": "urbanophileMastery"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": -0.2,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7406,7 +10623,14 @@
       "Name": "urbanophileMonuments",
       "Icon": "urbanophileMonuments"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7424,7 +10648,13 @@
       "Name": "urbanophileOrganization",
       "Icon": "urbanophileOrganization"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7442,7 +10672,13 @@
       "Name": "urbanophilePopulation",
       "Icon": "urbanophilePopulation"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.25,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7460,7 +10696,14 @@
       "Name": "utopianismCollectivism",
       "Icon": "utopianismCollectivism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7478,7 +10721,13 @@
       "Name": "utopianismDreams",
       "Icon": "utopianismDreams"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7496,7 +10745,19 @@
       "Name": "utopianismEquality",
       "Icon": "utopianismEquality"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": 0.05,
+        "scope": "Primary"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7514,7 +10775,13 @@
       "Name": "utopianismReform",
       "Icon": "utopianismReform"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "reformCostMult",
+        "value": -0.05,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7532,7 +10799,13 @@
       "Name": "utopianismSocialism",
       "Icon": "utopianismSocialism"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7550,7 +10823,13 @@
       "Name": "utopianismVision",
       "Icon": "utopianismVision"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.15,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -7568,7 +10847,13 @@
       "Name": "utopianismZeal",
       "Icon": "utopianismZeal"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1,
+        "scope": "Primary"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

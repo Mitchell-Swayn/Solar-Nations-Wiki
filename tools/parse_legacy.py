@@ -474,12 +474,58 @@ def parse_projects() -> list[dict]:
     )
 
 
+def parse_culture_modifier_collection(data: bytes, cursor: int, count: int, name_map: list[str]) -> tuple[dict, int]:
+    modifiers: dict[str, float] = {}
+    parameter_lengths = {0x0E: 7, 0x0C: 15, 0x0A: 15, 0x08: 23}
+    for _ in range(count):
+        if data[cursor : cursor + 2] != b"\x80\x09":
+            raise ValueError(f"Culture trait modifier marker missing at {cursor}")
+        flag = data[cursor + 2]
+        parameter_length = parameter_lengths.get(flag)
+        if parameter_length is None:
+            raise ValueError(f"Unknown culture trait modifier flag 0x{flag:02x} at {cursor}")
+
+        key_index = data[cursor + 3] + 1  # Legacy name map omits implicit None from `strings` output.
+        if key_index >= len(name_map):
+            raise ValueError(f"Culture trait modifier name index {key_index} is out of range")
+        cursor += 4
+
+        parameter_data = data[cursor : cursor + parameter_length]
+        targets = [name_map[value + 1] for value in parameter_data if value and value + 1 < len(name_map)]
+        cursor += parameter_length
+        value = struct.unpack_from("<d", data, cursor)[0]
+        cursor += 8
+
+        padded_targets = (targets + ["", "", ""])[:3]
+        modifiers[modifier_key(name_map[key_index], *padded_targets)] = round(value, 10)
+    return modifiers, cursor
+
+
 def parse_culture_traits() -> list[dict]:
-    return parse_name_list(
-        "CultureTraits.json",
-        "CultureTraits.uasset",
-        filter_fn=lambda n: len(n) >= 6 and ("Trait" in n or "species" in n or "christian" in n or "american" in n or "british" in n or "trait" in n or n[0].islower()),
-    )
+    export_path = uexp_path("CultureTraits.uexp")
+    asset_path = uexp_path("CultureTraits.uasset")
+    if not export_path.exists() or not asset_path.exists():
+        return []
+
+    data = read_bytes(export_path)
+    name_map = strings_from_file(asset_path)
+    names = unique_identifiers(extract_ascii_strings(data))
+    names = [
+        name for name in names
+        if len(name) >= 6 and ("Trait" in name or "species" in name or "christian" in name or "american" in name or "british" in name or "trait" in name or name[0].islower())
+    ]
+
+    records: list[dict] = []
+    for name in names:
+        position = data.find(name.encode() + b"\x00")
+        cursor = position + len(name) + 1 + 4
+        primary_count = struct.unpack_from("<I", data, cursor)[0]
+        primary, cursor = parse_culture_modifier_collection(data, cursor + 4, primary_count, name_map)
+        cursor += 4
+        region_count = struct.unpack_from("<I", data, cursor)[0]
+        region, _ = parse_culture_modifier_collection(data, cursor + 4, region_count, name_map)
+        records.append({"Name": name, "Icon": name, "PrimaryModifier": primary, "RegionModifier": region})
+    return records
 
 
 def parse_character_jobs() -> list[dict]:

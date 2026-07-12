@@ -36,6 +36,8 @@ Current automated output: **1,095 verified define rows**, including 41 deposits,
 - **Deposits** currently include row names and icons, but their structured modifiers, colors, and special flags still require property mappings
 - **Row identity is validated**, but complete structured values still require a compatible `.usmap`; the parser intentionally omits fields it cannot identify reliably
 
+Culture idea effects are decoded directly from the legacy name map and serialized modifier records. The parser preserves modifier keys, numeric values, up to three targets, and whether each effect is primary or regional.
+
 For pixel-perfect parity with in-game JSON, use FModel + `.usmap` (see below).
 
 ## Full extraction with FModel (best quality)

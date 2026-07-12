@@ -21,6 +21,7 @@ export interface ModifierRef {
   value1?: string;
   value2?: string;
   value3?: string;
+  scope?: string;
 }
 
 export interface WikiEntry {

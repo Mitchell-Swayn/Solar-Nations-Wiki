@@ -48,7 +48,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.2
+        "value": 0.2,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -108,7 +109,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.007813
+        "value": 0.007813,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -168,7 +170,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.2
+        "value": 0.2,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -284,7 +287,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.007812
+        "value": 0.007812,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -344,7 +348,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.007813
+        "value": 0.007813,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -404,7 +409,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.007813
+        "value": 0.007813,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -464,7 +470,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 1
+        "value": 1,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -524,7 +531,8 @@
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": -2
+        "value": -2,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],

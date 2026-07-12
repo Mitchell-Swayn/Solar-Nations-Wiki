@@ -10,6 +10,7 @@ interface Props {
 
 const { modifiers } = Astro.props;
 const modifierMap = getModifierMap();
+const showScope = modifiers.some((modifier) => modifier.scope);
 
 function formatValue(mod: ModifierRef): string {
   const def = modifierMap.get(mod.key);
@@ -34,6 +35,7 @@ function formatTarget(mod: ModifierRef): string {
         <th>Modifier</th>
         <th>Value</th>
         <th>Target</th>
+        {showScope && <th>Scope</th>}
       </tr>
     </thead>
     <tbody>
@@ -51,6 +53,7 @@ function formatTarget(mod: ModifierRef): string {
               {formatValue(mod)}
             </td>
             <td class="target">{formatTarget(mod)}</td>
+            {showScope && <td class="scope">{mod.scope ?? 'General'}</td>}
           </tr>
         );
       })}
@@ -80,5 +83,6 @@ function formatTarget(mod: ModifierRef): string {
   .positive { color: var(--positive); }
   .negative { color: var(--negative); }
   .target { color: var(--text-muted); font-size: 0.85rem; }
+  .scope { color: var(--text-muted); font-size: 0.78rem; font-weight: 600; text-transform: uppercase; }
   .empty { color: var(--text-muted); }
 </style>

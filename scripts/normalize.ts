@@ -81,6 +81,7 @@ function collectModifierFields(record: RawRecord): ModifierRef[] {
     'Modifier',
     'Modifiers',
     'PositiveModifier',
+    'PrimaryModifier',
     'NegativeModifier',
     'RegionModifier',
     'EmpireModifier',
@@ -95,7 +96,12 @@ function collectModifierFields(record: RawRecord): ModifierRef[] {
     'BigModifier',
     'InitialModifier',
   ];
-  return fields.flatMap((field) => extractModifiers(record[field]));
+  const scopes: Record<string, string> = {
+    PrimaryModifier: 'Primary', RegionModifier: 'Region', EmpireModifier: 'Empire',
+    PopModifier: 'Population', JobModifier: 'Job', CharacterModifiers: 'Character',
+    DepositModifier: 'Deposit', SurplusModifier: 'Surplus', ShortageModifier: 'Shortage',
+  };
+  return fields.flatMap((field) => extractModifiers(record[field]).map((modifier) => ({ ...modifier, scope: scopes[field] })));
 }
 
 function parsePrerequisite(raw: unknown): Prerequisite | null {
@@ -241,6 +247,7 @@ function buildEntry(
         'Modifier',
         'Modifiers',
         'PositiveModifier',
+        'PrimaryModifier',
         'NegativeModifier',
         'RegionModifier',
         'EmpireModifier',
