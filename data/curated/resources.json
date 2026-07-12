@@ -129,17 +129,17 @@
     "id": "industry",
     "type": "resources",
     "displayName": "Industrial Capacity",
-    "icon": "industry",
+    "icon": "machineParts",
     "fields": {
       "Name": "industry",
-      "Icon": "industry"
+      "Icon": "machineParts"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "industry"
+        "id": "machineParts"
       }
     ]
   },

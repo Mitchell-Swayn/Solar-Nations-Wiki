@@ -450,8 +450,19 @@ def parse_technologies() -> list[dict]:
     return records
 
 
+RESOURCE_ICON_OVERRIDES = {
+    # The game UI uses the machine-parts texture for Industrial Capacity.
+    # Resource rows do not serialize an icon name, so parse_name_list's
+    # same-name default needs to be corrected here.
+    "industry": "machineParts",
+}
+
+
 def parse_resources() -> list[dict]:
-    return parse_name_list("Resources.json", "resources.uasset")
+    records = parse_name_list("Resources.json", "resources.uasset")
+    for record in records:
+        record["Icon"] = RESOURCE_ICON_OVERRIDES.get(record["Name"], record["Icon"])
+    return records
 
 
 def parse_deposits() -> list[dict]:

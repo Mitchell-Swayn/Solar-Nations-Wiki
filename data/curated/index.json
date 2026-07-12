@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T07:28:06.017Z",
+  "generatedAt": "2026-07-12T11:31:51.266Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -2622,10 +2622,10 @@
       "id": "judaismUsury",
       "type": "culture-traits",
       "displayName": "Divine Economics",
-      "icon": "industry",
+      "icon": "jewish",
       "fields": {
         "Name": "judaismUsury",
-        "Icon": "industry"
+        "Icon": "jewish"
       },
       "modifiers": [
         {
@@ -2638,7 +2638,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "jewish"
         }
       ]
     },
@@ -4053,10 +4053,10 @@
       "id": "prosperismWealth",
       "type": "culture-traits",
       "displayName": "Wealth Accumulation",
-      "icon": "industry",
+      "icon": "economic",
       "fields": {
         "Name": "prosperismWealth",
-        "Icon": "industry"
+        "Icon": "economic"
       },
       "modifiers": [
         {
@@ -4069,7 +4069,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "economic"
         }
       ]
     },
@@ -6018,10 +6018,10 @@
       "id": "nuclearFamilyProsperity",
       "type": "culture-traits",
       "displayName": "Organized Prosperity",
-      "icon": "industry",
+      "icon": "cultural",
       "fields": {
         "Name": "nuclearFamilyProsperity",
-        "Icon": "industry"
+        "Icon": "cultural"
       },
       "modifiers": [
         {
@@ -6034,7 +6034,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "cultural"
         }
       ]
     },
@@ -8318,10 +8318,10 @@
       "id": "mandateObligations",
       "type": "culture-traits",
       "displayName": "Obligations of the Leader",
-      "icon": "industry",
+      "icon": "management",
       "fields": {
         "Name": "mandateObligations",
-        "Icon": "industry"
+        "Icon": "management"
       },
       "modifiers": [
         {
@@ -8334,7 +8334,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "management"
         }
       ]
     },
@@ -8785,10 +8785,10 @@
       "id": "polygamistPsychology",
       "type": "culture-traits",
       "displayName": "Psychological Domination",
-      "icon": "industry",
+      "icon": "cultural",
       "fields": {
         "Name": "polygamistPsychology",
-        "Icon": "industry"
+        "Icon": "cultural"
       },
       "modifiers": [
         {
@@ -8801,7 +8801,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "cultural"
         }
       ]
     },
@@ -8910,10 +8910,10 @@
       "id": "easygoingAsceticism",
       "type": "culture-traits",
       "displayName": "Asceticism",
-      "icon": "industry",
+      "icon": "political",
       "fields": {
         "Name": "easygoingAsceticism",
-        "Icon": "industry"
+        "Icon": "political"
       },
       "modifiers": [
         {
@@ -8931,7 +8931,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "political"
         }
       ]
     },
@@ -11685,10 +11685,10 @@
       "id": "industryWorking",
       "type": "culture-traits",
       "displayName": "Industry of Labor",
-      "icon": "industry",
+      "icon": "economic",
       "fields": {
         "Name": "industryWorking",
-        "Icon": "industry"
+        "Icon": "economic"
       },
       "modifiers": [
         {
@@ -11701,7 +11701,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "economic"
         }
       ]
     },
@@ -18199,17 +18199,17 @@
       "id": "industry",
       "type": "resources",
       "displayName": "Industrial Capacity",
-      "icon": "industry",
+      "icon": "machineParts",
       "fields": {
         "Name": "industry",
-        "Icon": "industry"
+        "Icon": "machineParts"
       },
       "modifiers": [],
       "prerequisites": [],
       "references": [
         {
           "type": "icon",
-          "id": "industry"
+          "id": "machineParts"
         }
       ]
     },
@@ -26697,7 +26697,6 @@
       "id": "baseEconomicOutputMult",
       "type": "modifiers",
       "displayName": "Tax Base",
-      "icon": "industry",
       "fields": {
         "Name": "baseEconomicOutputMult",
         "Positivity": "positive",
@@ -26705,7 +26704,6 @@
         "Properties": {
           "industry": false
         },
-        "Icon": "industry",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 10
@@ -26716,12 +26714,7 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": [
-        {
-          "type": "icon",
-          "id": "industry"
-        }
-      ]
+      "references": []
     },
     "modifiers:maxPrivilegesAdd": {
       "id": "maxPrivilegesAdd",
