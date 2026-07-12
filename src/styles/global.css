@@ -144,6 +144,7 @@ code, kbd { font-family: var(--mono); }
 .reform-option-group > header h2 { margin: 0; font-size: 18px; }
 .reform-option-group > header > a { padding-bottom: 2px; font-size: 10px; font-weight: 600; }
 .reform-option-group .entry-directory { margin-top: 0; border-top: 0; }
+.group-empty { margin: 0; padding: 16px 2px; color: var(--text-muted); border-bottom: 1px solid var(--border); font-size: 11px; }
 .culture-domain { margin-bottom: 48px; }
 .culture-domain > header { margin-bottom: 18px; padding-bottom: 10px; border-bottom: 3px solid var(--ink-2); }
 .culture-domain > header .eyebrow { margin-bottom: 4px; }

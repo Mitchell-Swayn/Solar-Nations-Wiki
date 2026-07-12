@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:16:52.738Z",
+  "generatedAt": "2026-07-12T06:19:23.975Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -13846,14 +13846,24 @@
       "icon": "bureaucracy_hivemind",
       "fields": {
         "Name": "bureaucracy_hivemind",
-        "Icon": "bureaucracy_hivemind"
+        "Icon": "bureaucracy_hivemind",
+        "BaseFaction": "bureaucracy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "bureaucracy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "bureaucracy_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "bureaucracy"
         }
       ]
     },
@@ -13864,14 +13874,24 @@
       "icon": "clergy_atheist",
       "fields": {
         "Name": "clergy_atheist",
-        "Icon": "clergy_atheist"
+        "Icon": "clergy_atheist",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_atheist"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13882,14 +13902,24 @@
       "icon": "clergy_christian",
       "fields": {
         "Name": "clergy_christian",
-        "Icon": "clergy_christian"
+        "Icon": "clergy_christian",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_christian"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13900,14 +13930,24 @@
       "icon": "clergy_communist",
       "fields": {
         "Name": "clergy_communist",
-        "Icon": "clergy_communist"
+        "Icon": "clergy_communist",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_communist"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13918,14 +13958,24 @@
       "icon": "clergy_fascist",
       "fields": {
         "Name": "clergy_fascist",
-        "Icon": "clergy_fascist"
+        "Icon": "clergy_fascist",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_fascist"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13936,14 +13986,24 @@
       "icon": "clergy_hindu",
       "fields": {
         "Name": "clergy_hindu",
-        "Icon": "clergy_hindu"
+        "Icon": "clergy_hindu",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_hindu"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13954,14 +14014,24 @@
       "icon": "clergy_hivemind",
       "fields": {
         "Name": "clergy_hivemind",
-        "Icon": "clergy_hivemind"
+        "Icon": "clergy_hivemind",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13972,14 +14042,24 @@
       "icon": "clergy_islamic",
       "fields": {
         "Name": "clergy_islamic",
-        "Icon": "clergy_islamic"
+        "Icon": "clergy_islamic",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_islamic"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -13990,14 +14070,24 @@
       "icon": "clergy_jewish",
       "fields": {
         "Name": "clergy_jewish",
-        "Icon": "clergy_jewish"
+        "Icon": "clergy_jewish",
+        "BaseFaction": "clergy"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "clergy"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "clergy_jewish"
+        },
+        {
+          "type": "factions",
+          "id": "clergy"
         }
       ]
     },
@@ -14008,14 +14098,24 @@
       "icon": "corporate_hivemind",
       "fields": {
         "Name": "corporate_hivemind",
-        "Icon": "corporate_hivemind"
+        "Icon": "corporate_hivemind",
+        "BaseFaction": "corporate"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "corporate"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "corporate_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "corporate"
         }
       ]
     },
@@ -14026,14 +14126,24 @@
       "icon": "laborer_hivemind",
       "fields": {
         "Name": "laborer_hivemind",
-        "Icon": "laborer_hivemind"
+        "Icon": "laborer_hivemind",
+        "BaseFaction": "laborer"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "laborer"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "laborer_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "laborer"
         }
       ]
     },
@@ -14044,14 +14154,24 @@
       "icon": "laborer_proletariat",
       "fields": {
         "Name": "laborer_proletariat",
-        "Icon": "laborer_proletariat"
+        "Icon": "laborer_proletariat",
+        "BaseFaction": "laborer"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "laborer"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "laborer_proletariat"
+        },
+        {
+          "type": "factions",
+          "id": "laborer"
         }
       ]
     },
@@ -14062,14 +14182,24 @@
       "icon": "middleClass_hivemind",
       "fields": {
         "Name": "middleClass_hivemind",
-        "Icon": "middleClass_hivemind"
+        "Icon": "middleClass_hivemind",
+        "BaseFaction": "middleClass"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "middleClass"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "middleClass_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "middleClass"
         }
       ]
     },
@@ -14080,14 +14210,24 @@
       "icon": "militaryIndustrialComplex",
       "fields": {
         "Name": "militaryIndustrialComplex",
-        "Icon": "militaryIndustrialComplex"
+        "Icon": "militaryIndustrialComplex",
+        "BaseFaction": "military"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "military"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "militaryIndustrialComplex"
+        },
+        {
+          "type": "factions",
+          "id": "military"
         }
       ]
     },
@@ -14098,14 +14238,24 @@
       "icon": "military_conscript",
       "fields": {
         "Name": "military_conscript",
-        "Icon": "military_conscript"
+        "Icon": "military_conscript",
+        "BaseFaction": "military"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "military"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "military_conscript"
+        },
+        {
+          "type": "factions",
+          "id": "military"
         }
       ]
     },
@@ -14116,14 +14266,24 @@
       "icon": "military_hivemind",
       "fields": {
         "Name": "military_hivemind",
-        "Icon": "military_hivemind"
+        "Icon": "military_hivemind",
+        "BaseFaction": "military"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "military"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "military_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "military"
         }
       ]
     },
@@ -14134,14 +14294,24 @@
       "icon": "military_mercenary",
       "fields": {
         "Name": "military_mercenary",
-        "Icon": "military_mercenary"
+        "Icon": "military_mercenary",
+        "BaseFaction": "military"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "military"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "military_mercenary"
+        },
+        {
+          "type": "factions",
+          "id": "military"
         }
       ]
     },
@@ -14152,14 +14322,24 @@
       "icon": "upperClass_hivemind",
       "fields": {
         "Name": "upperClass_hivemind",
-        "Icon": "upperClass_hivemind"
+        "Icon": "upperClass_hivemind",
+        "BaseFaction": "upperClass"
       },
       "modifiers": [],
-      "prerequisites": [],
+      "prerequisites": [
+        {
+          "type": "reformOption",
+          "id": "upperClass"
+        }
+      ],
       "references": [
         {
           "type": "icon",
           "id": "upperClass_hivemind"
+        },
+        {
+          "type": "factions",
+          "id": "upperClass"
         }
       ]
     },

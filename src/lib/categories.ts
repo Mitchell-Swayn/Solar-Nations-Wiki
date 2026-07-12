@@ -51,6 +51,7 @@ export const CATEGORIES: CategoryMeta[] = [
     defineFile: 'FactionVariants.json',
     priority: 5,
     group: 'society',
+    mergedInto: 'factions',
   },
   {
     slug: 'government-reforms',

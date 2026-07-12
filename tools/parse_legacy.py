@@ -569,7 +569,14 @@ def parse_faction_variants() -> list[dict]:
         or name.endswith("_hivemind")
         or name == "militaryIndustrialComplex"
     ]
-    return [{"Name": name, "Icon": name} for name in sorted(set(variants))]
+    records = []
+    faction_ids = {"military", "bureaucracy", "clergy", "corporate", "upperClass", "laborer", "middleClass"}
+    for name in sorted(set(variants)):
+        base_faction = "military" if name == "militaryIndustrialComplex" else next(
+            (faction for faction in faction_ids if name == f"{faction}_hivemind" or name.startswith(f"{faction}_")), None
+        )
+        records.append({"Name": name, "Icon": name, "BaseFaction": base_faction})
+    return records
 
 
 def parse_events() -> list[dict]:

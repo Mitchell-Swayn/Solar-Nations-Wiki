@@ -21,6 +21,11 @@ const reformGroups = reforms.map((reform) => {
   const optionIds = Array.isArray(reform.fields.Options) ? reform.fields.Options.filter((id): id is string => typeof id === 'string') : [];
   return { reform, options: optionIds.map((id) => reformOptionEntries.find((entry) => entry.id === id)).filter((entry) => entry !== undefined) };
 });
+const factionVariants = type === 'factions' ? getEntriesByType('faction-variants').sort((a, b) => a.displayName.localeCompare(b.displayName)) : [];
+const factionGroups = type === 'factions' ? entries.map((faction) => ({
+  faction,
+  variants: factionVariants.filter((variant) => variant.fields.BaseFaction === faction.id),
+})) : [];
 const cultureGroups = type === 'culture-traits' ? Object.values(entries.reduce((groups, entry) => {
   const meta = getCultureTraitGroup(entry.id);
   groups[meta.id] ??= { meta, entries: [] };
@@ -31,6 +36,7 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
   domain,
   groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
 })).filter((domain) => domain.groups.length > 0);
+const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length : entries.length;
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -38,7 +44,7 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
 
   <header class="collection-header">
     <div><p class="eyebrow">{group?.label}</p><h1>{category.pluralLabel}</h1><p>{category.description}</p></div>
-    <div class="collection-count"><strong>{reformGroups.length > 0 ? reformOptionEntries.length : entries.length}</strong><span>{reformGroups.length > 0 ? `${reforms.length} reforms` : 'Entries'}</span></div>
+    <div class="collection-count"><strong>{directoryCount}</strong><span>{reformGroups.length > 0 ? `${reforms.length} reforms` : factionGroups.length > 0 ? `${entries.length} factions` : 'Entries'}</span></div>
   </header>
 
   <div class="collection-tools">
@@ -46,7 +52,7 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
     <div class="view-switch" aria-label="View density">
       <button type="button" class="active" data-view="comfortable">List</button><button type="button" data-view="compact">Compact</button>
     </div>
-    <span id="visible-count">Showing {entries.length}</span>
+    <span id="visible-count">Showing {directoryCount}</span>
   </div>
 
   {reformGroups.length > 0 ? (
@@ -63,6 +69,23 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
               </a>
             ))}
           </div>
+        </section>
+      ))}
+    </div>
+  ) : factionGroups.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {factionGroups.map(({ faction, variants }) => (
+        <section class="reform-option-group entry-group">
+          <header><div class="culture-family-title">{faction.icon && <GameIcon name={faction.icon} size={30} />}<div><p class="eyebrow">Political Faction</p><h2>{faction.displayName}</h2></div></div><a href={withBase(`/factions/${faction.id}/`)}>View faction</a></header>
+          {variants.length > 0 ? <div class="entry-directory">
+            {variants.map((variant) => (
+              <a href={withBase(`/faction-variants/${variant.id}/`)} class="directory-row" data-search={`${faction.displayName} ${variant.displayName} ${variant.id}`.toLowerCase()}>
+                <span class="directory-icon">{variant.icon ? <GameIcon name={variant.icon} size={34} /> : <span>{variant.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{variant.displayName}</strong><code>{variant.id}</code>{variant.description && <small>{variant.description}</small>}</span>
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div> : <p class="group-empty">No extracted variants.</p>}
         </section>
       ))}
     </div>
