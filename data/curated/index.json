@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T12:07:25.235Z",
+  "generatedAt": "2026-07-12T12:43:09.685Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -1955,10 +1955,10 @@
       "id": "speciesRobot",
       "type": "culture-traits",
       "displayName": "Species Robot",
-      "icon": "manpower",
+      "icon": "speciesRobot",
       "fields": {
         "Name": "speciesRobot",
-        "Icon": "manpower"
+        "Icon": "speciesRobot"
       },
       "modifiers": [
         {
@@ -1984,7 +1984,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "manpower"
+          "id": "speciesRobot"
         }
       ]
     },
@@ -2176,10 +2176,10 @@
       "id": "christian",
       "type": "culture-traits",
       "displayName": "Christian",
-      "icon": "stability",
+      "icon": "christian",
       "fields": {
         "Name": "christian",
-        "Icon": "stability"
+        "Icon": "christian"
       },
       "modifiers": [
         {
@@ -2199,7 +2199,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "stability"
+          "id": "christian"
         }
       ]
     },
@@ -2730,10 +2730,10 @@
       "id": "judaismInternationalism",
       "type": "culture-traits",
       "displayName": "International Faith Networks",
-      "icon": "jewish",
+      "icon": "diplomacyCapacity",
       "fields": {
         "Name": "judaismInternationalism",
-        "Icon": "jewish"
+        "Icon": "diplomacyCapacity"
       },
       "modifiers": [
         {
@@ -2747,7 +2747,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "jewish"
+          "id": "diplomacyCapacity"
         }
       ]
     },
@@ -2949,10 +2949,10 @@
       "id": "marxismInternationale",
       "type": "culture-traits",
       "displayName": "International Struggle",
-      "icon": "communist",
+      "icon": "diplomacyCapacity",
       "fields": {
         "Name": "marxismInternationale",
-        "Icon": "communist"
+        "Icon": "diplomacyCapacity"
       },
       "modifiers": [
         {
@@ -2966,7 +2966,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "communist"
+          "id": "diplomacyCapacity"
         }
       ]
     },
@@ -3038,10 +3038,10 @@
       "id": "occult",
       "type": "culture-traits",
       "displayName": "Occult",
-      "icon": "culture",
+      "icon": "occult",
       "fields": {
         "Name": "occult",
-        "Icon": "culture"
+        "Icon": "occult"
       },
       "modifiers": [
         {
@@ -3054,7 +3054,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "culture"
+          "id": "occult"
         }
       ]
     },
@@ -3237,10 +3237,10 @@
       "id": "atheist",
       "type": "culture-traits",
       "displayName": "Atheist",
-      "icon": "stability",
+      "icon": "atheist",
       "fields": {
         "Name": "atheist",
-        "Icon": "stability"
+        "Icon": "atheist"
       },
       "modifiers": [
         {
@@ -3258,7 +3258,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "stability"
+          "id": "atheist"
         }
       ]
     },
@@ -3290,10 +3290,10 @@
       "id": "atheistMaterialism",
       "type": "culture-traits",
       "displayName": "Materialistic Worldview",
-      "icon": "atheist",
+      "icon": "machineParts",
       "fields": {
         "Name": "atheistMaterialism",
-        "Icon": "atheist"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -3307,7 +3307,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "atheist"
+          "id": "machineParts"
         }
       ]
     },
@@ -3340,10 +3340,10 @@
       "id": "atheistWorldliness",
       "type": "culture-traits",
       "displayName": "Worldly Understanding",
-      "icon": "currency",
+      "icon": "consumerGoods",
       "fields": {
         "Name": "atheistWorldliness",
-        "Icon": "currency"
+        "Icon": "consumerGoods"
       },
       "modifiers": [
         {
@@ -3357,7 +3357,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "currency"
+          "id": "consumerGoods"
         }
       ]
     },
@@ -3442,10 +3442,10 @@
       "id": "fascist",
       "type": "culture-traits",
       "displayName": "Fascist",
-      "icon": "military",
+      "icon": "fascist",
       "fields": {
         "Name": "fascist",
-        "Icon": "military"
+        "Icon": "fascist"
       },
       "modifiers": [
         {
@@ -3458,7 +3458,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "military"
+          "id": "fascist"
         }
       ]
     },
@@ -3742,10 +3742,10 @@
       "id": "hinduismCulture",
       "type": "culture-traits",
       "displayName": "Culture of Karma",
-      "icon": "hindu",
+      "icon": "diplomacyCapacity",
       "fields": {
         "Name": "hinduismCulture",
-        "Icon": "hindu"
+        "Icon": "diplomacyCapacity"
       },
       "modifiers": [
         {
@@ -3759,7 +3759,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "hindu"
+          "id": "diplomacyCapacity"
         }
       ]
     },
@@ -4022,10 +4022,10 @@
       "id": "prosperismGrowth",
       "type": "culture-traits",
       "displayName": "Growth Maximization",
-      "icon": "industrial",
+      "icon": "machineParts",
       "fields": {
         "Name": "prosperismGrowth",
-        "Icon": "industrial"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -4045,7 +4045,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "industrial"
+          "id": "machineParts"
         }
       ]
     },
@@ -4307,10 +4307,10 @@
       "id": "individualismEntrepreneurship",
       "type": "culture-traits",
       "displayName": "Entrepreneurial Economy",
-      "icon": "currency",
+      "icon": "commerce",
       "fields": {
         "Name": "individualismEntrepreneurship",
-        "Icon": "currency"
+        "Icon": "commerce"
       },
       "modifiers": [
         {
@@ -4324,7 +4324,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "currency"
+          "id": "commerce"
         }
       ]
     },
@@ -5295,10 +5295,10 @@
       "id": "statismBureaucracy",
       "type": "culture-traits",
       "displayName": "Mega Bureaucracy",
-      "icon": "unrest",
+      "icon": "management",
       "fields": {
         "Name": "statismBureaucracy",
-        "Icon": "unrest"
+        "Icon": "management"
       },
       "modifiers": [
         {
@@ -5317,7 +5317,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "unrest"
+          "id": "management"
         }
       ]
     },
@@ -5373,10 +5373,10 @@
       "id": "statismPlanning",
       "type": "culture-traits",
       "displayName": "Central Planning",
-      "icon": "management",
+      "icon": "machineParts",
       "fields": {
         "Name": "statismPlanning",
-        "Icon": "management"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -5390,7 +5390,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "machineParts"
         }
       ]
     },
@@ -5657,10 +5657,10 @@
       "id": "traditionalismHierarchy",
       "type": "culture-traits",
       "displayName": "Just Hierarchy",
-      "icon": "political",
+      "icon": "cultural",
       "fields": {
         "Name": "traditionalismHierarchy",
-        "Icon": "political"
+        "Icon": "cultural"
       },
       "modifiers": [
         {
@@ -5679,7 +5679,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "political"
+          "id": "cultural"
         }
       ]
     },
@@ -6239,10 +6239,10 @@
       "id": "explorersColonization",
       "type": "culture-traits",
       "displayName": "Colonial Spirit",
-      "icon": "strategy",
+      "icon": "spaceCapacity",
       "fields": {
         "Name": "explorersColonization",
-        "Icon": "strategy"
+        "Icon": "spaceCapacity"
       },
       "modifiers": [
         {
@@ -6256,7 +6256,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "spaceCapacity"
         }
       ]
     },
@@ -6313,10 +6313,10 @@
       "id": "explorersMastery",
       "type": "culture-traits",
       "displayName": "Universal Exploration",
-      "icon": "colony",
+      "icon": "strategy",
       "fields": {
         "Name": "explorersMastery",
-        "Icon": "colony"
+        "Icon": "strategy"
       },
       "modifiers": [
         {
@@ -6334,7 +6334,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "colony"
+          "id": "strategy"
         }
       ]
     },
@@ -6366,10 +6366,10 @@
       "id": "firearmsConsumption",
       "type": "culture-traits",
       "displayName": "Consumption of Firearms",
-      "icon": "strategy",
+      "icon": "machineParts",
       "fields": {
         "Name": "firearmsConsumption",
-        "Icon": "strategy"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -6383,7 +6383,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "machineParts"
         }
       ]
     },
@@ -6681,10 +6681,10 @@
       "id": "consumersMastery",
       "type": "culture-traits",
       "displayName": "Mass Consumerism",
-      "icon": "currency",
+      "icon": "consumerGoods",
       "fields": {
         "Name": "consumersMastery",
-        "Icon": "currency"
+        "Icon": "consumerGoods"
       },
       "modifiers": [
         {
@@ -6698,7 +6698,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "currency"
+          "id": "consumerGoods"
         }
       ]
     },
@@ -7001,10 +7001,10 @@
       "id": "assimilationistEthics",
       "type": "culture-traits",
       "displayName": "Ethos of Assimilation",
-      "icon": "charisma",
+      "icon": "machineParts",
       "fields": {
         "Name": "assimilationistEthics",
-        "Icon": "charisma"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -7024,7 +7024,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "machineParts"
         }
       ]
     },
@@ -7401,10 +7401,10 @@
       "id": "urbanophileGrowth",
       "type": "culture-traits",
       "displayName": "Urban Adaptation",
-      "icon": "currency",
+      "icon": "steel",
       "fields": {
         "Name": "urbanophileGrowth",
-        "Icon": "currency"
+        "Icon": "steel"
       },
       "modifiers": [
         {
@@ -7418,7 +7418,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "currency"
+          "id": "steel"
         }
       ]
     },
@@ -7748,10 +7748,10 @@
       "id": "robophileArmy",
       "type": "culture-traits",
       "displayName": "Roboticized Army",
-      "icon": "military",
+      "icon": "robots",
       "fields": {
         "Name": "robophileArmy",
-        "Icon": "military"
+        "Icon": "robots"
       },
       "modifiers": [
         {
@@ -7765,7 +7765,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "military"
+          "id": "robots"
         }
       ]
     },
@@ -7773,10 +7773,10 @@
       "id": "robophileMastery",
       "type": "culture-traits",
       "displayName": "Mechanical Mastery",
-      "icon": "economic",
+      "icon": "robots",
       "fields": {
         "Name": "robophileMastery",
-        "Icon": "economic"
+        "Icon": "robots"
       },
       "modifiers": [
         {
@@ -7790,7 +7790,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "robots"
         }
       ]
     },
@@ -7921,10 +7921,10 @@
       "id": "eugenicistArmy",
       "type": "culture-traits",
       "displayName": "Eugenic Army",
-      "icon": "military",
+      "icon": "geneticMaterial",
       "fields": {
         "Name": "eugenicistArmy",
-        "Icon": "military"
+        "Icon": "geneticMaterial"
       },
       "modifiers": [
         {
@@ -7938,7 +7938,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "military"
+          "id": "geneticMaterial"
         }
       ]
     },
@@ -7946,10 +7946,10 @@
       "id": "eugenicistMastery",
       "type": "culture-traits",
       "displayName": "Genetic Supremacy",
-      "icon": "cultural",
+      "icon": "geneticMaterial",
       "fields": {
         "Name": "eugenicistMastery",
-        "Icon": "cultural"
+        "Icon": "geneticMaterial"
       },
       "modifiers": [
         {
@@ -7963,7 +7963,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "geneticMaterial"
         }
       ]
     },
@@ -8963,10 +8963,10 @@
       "id": "easygoingWorldview",
       "type": "culture-traits",
       "displayName": "Easygoing Organization",
-      "icon": "cultural",
+      "icon": "diplomacyCapacity",
       "fields": {
         "Name": "easygoingWorldview",
-        "Icon": "cultural"
+        "Icon": "diplomacyCapacity"
       },
       "modifiers": [
         {
@@ -8980,7 +8980,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "diplomacyCapacity"
         }
       ]
     },
@@ -9414,10 +9414,10 @@
       "id": "monumentalistIndustry",
       "type": "culture-traits",
       "displayName": "Monumental Industry",
-      "icon": "cultural",
+      "icon": "machineParts",
       "fields": {
         "Name": "monumentalistIndustry",
-        "Icon": "cultural"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -9431,7 +9431,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "machineParts"
         }
       ]
     },
@@ -9951,10 +9951,10 @@
       "id": "aristocraticAmbition",
       "type": "culture-traits",
       "displayName": "Ambitious Nobility",
-      "icon": "management",
+      "icon": "machineParts",
       "fields": {
         "Name": "aristocraticAmbition",
-        "Icon": "management"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -9968,7 +9968,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "machineParts"
         }
       ]
     },
@@ -11357,10 +11357,10 @@
       "id": "navyMastery",
       "type": "culture-traits",
       "displayName": "Ocean Mastery",
-      "icon": "strategy",
+      "icon": "navyCapacity",
       "fields": {
         "Name": "navyMastery",
-        "Icon": "strategy"
+        "Icon": "navyCapacity"
       },
       "modifiers": [
         {
@@ -11374,7 +11374,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "navyCapacity"
         }
       ]
     },
@@ -11482,10 +11482,10 @@
       "id": "landOrganization",
       "type": "culture-traits",
       "displayName": "Army Organization",
-      "icon": "strategy",
+      "icon": "machineParts",
       "fields": {
         "Name": "landOrganization",
-        "Icon": "strategy"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -11499,7 +11499,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "machineParts"
         }
       ]
     },
@@ -11630,10 +11630,10 @@
       "id": "industryTrading",
       "type": "culture-traits",
       "displayName": "Trading Industry",
-      "icon": "economic",
+      "icon": "machineParts",
       "fields": {
         "Name": "industryTrading",
-        "Icon": "economic"
+        "Icon": "machineParts"
       },
       "modifiers": [
         {
@@ -11653,7 +11653,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "machineParts"
         }
       ]
     },
@@ -12495,10 +12495,10 @@
       "id": "britishAdventurism",
       "type": "culture-traits",
       "displayName": "British Adventurism",
-      "icon": "cultural",
+      "icon": "navyCapacity",
       "fields": {
         "Name": "britishAdventurism",
-        "Icon": "cultural"
+        "Icon": "navyCapacity"
       },
       "modifiers": [
         {
@@ -12518,7 +12518,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "navyCapacity"
         }
       ]
     },
@@ -25495,7 +25495,7 @@
     "modifiers:unitReinforceRateMult": {
       "id": "unitReinforceRateMult",
       "type": "modifiers",
-      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Reinforce Rate",
       "icon": "manpower",
       "fields": {
         "Name": "unitReinforceRateMult",
@@ -25509,7 +25509,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": false,
-        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+        "DisplayName": "Reinforce Rate"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27551,7 +27551,7 @@
     "modifiers:recruitablePopulationAdd": {
       "id": "recruitablePopulationAdd",
       "type": "modifiers",
-      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Recruitable Population Add",
       "icon": "manpower",
       "fields": {
         "Name": "recruitablePopulationAdd",
@@ -27565,7 +27565,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": false,
-        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+        "DisplayName": "Recruitable Population Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27579,7 +27579,7 @@
     "modifiers:recruitablePopulationMult": {
       "id": "recruitablePopulationMult",
       "type": "modifiers",
-      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Recruitable Population Mult",
       "icon": "manpower",
       "fields": {
         "Name": "recruitablePopulationMult",
@@ -27593,7 +27593,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": false,
-        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+        "DisplayName": "Recruitable Population Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27607,7 +27607,7 @@
     "modifiers:manpowerRecoveryRate": {
       "id": "manpowerRecoveryRate",
       "type": "modifiers",
-      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Manpower Recovery Rate",
       "icon": "manpower",
       "fields": {
         "Name": "manpowerRecoveryRate",
@@ -27621,7 +27621,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": false,
-        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+        "DisplayName": "Manpower Recovery Rate"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27977,7 +27977,7 @@
     "modifiers:manpowerGainEffect": {
       "id": "manpowerGainEffect",
       "type": "modifiers",
-      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Manpower Gain Effect",
       "icon": "manpower",
       "fields": {
         "Name": "manpowerGainEffect",
@@ -27991,7 +27991,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": true,
-        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+        "DisplayName": "Manpower Gain Effect"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29868,7 +29868,7 @@
     "modifiers:unitTransportSpeedAdd": {
       "id": "unitTransportSpeedAdd",
       "type": "modifiers",
-      "displayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
+      "displayName": "Unit Transport Speed Add",
       "icon": "speed",
       "fields": {
         "Name": "unitTransportSpeedAdd",
@@ -29884,7 +29884,7 @@
         },
         "GenerateIcons": false,
         "IsEffect": false,
-        "DisplayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component."
+        "DisplayName": "Unit Transport Speed Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -32074,11 +32074,8 @@
       "modifiers:leaderSkillMult",
       "modifiers:leaderXPGain",
       "modifiers:allResourceCapacityMult",
-      "modifiers:unitReinforceRateMult",
-      "modifiers:recruitablePopulationAdd",
-      "modifiers:recruitablePopulationMult",
-      "modifiers:manpowerRecoveryRate",
       "modifiers:manpowerGainEffect",
+      "modifiers:manpowerRecoveryRate",
       "modifiers:maxPrivilegesAdd",
       "modifiers:maxRulingFactionsAdd",
       "modifiers:unitAttackMult",
@@ -32121,9 +32118,12 @@
       "modifiers:projectUpgradeLimit",
       "modifiers:projectUpkeepMult",
       "modifiers:rangedAttackMult",
+      "modifiers:recruitablePopulationAdd",
+      "modifiers:recruitablePopulationMult",
       "modifiers:reformLocked",
       "modifiers:regionRangedDefense",
       "modifiers:regionVulnAdd",
+      "modifiers:unitReinforceRateMult",
       "modifiers:researchMult",
       "modifiers:researchCostMult",
       "modifiers:organizationResearchCollaboration",
@@ -32141,7 +32141,6 @@
       "modifiers:siegeAbility",
       "modifiers:siphonManpowerTooltipModifier",
       "modifiers:situationVariableAdd",
-      "modifiers:unitTransportSpeedAdd",
       "modifiers:stabilityOffset",
       "modifiers:stabilityGainFromFactions",
       "modifiers:warExhaustionRecoveryMult",
@@ -32171,6 +32170,7 @@
       "modifiers:unitQualityMult",
       "modifiers:unitStatAdd",
       "modifiers:unitStatMult",
+      "modifiers:unitTransportSpeedAdd",
       "modifiers:unitUpkeepMult",
       "modifiers:unitVulnAdd",
       "modifiers:unitVulnMult",

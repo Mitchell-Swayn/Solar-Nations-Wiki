@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameIcon from '../../components/GameIcon.astro';
-import { getCategories, getEntriesByType, getModifierMap, getModifierTargetIcon } from '../../lib/data';
-import type { ModifierRef } from '../../lib/types';
+import ModifierBadges from '../../components/ModifierBadges.astro';
+import { getCategories, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
 import { withBase } from '../../lib/base';
@@ -37,30 +37,27 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
   domain,
   groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
 })).filter((domain) => domain.groups.length > 0);
-const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length + entries.length : entries.length;
-const modifierMap = getModifierMap();
-function formatEffects(modifiers: ModifierRef[]) {
-  return modifiers.map((mod) => {
-    const def = modifierMap.get(mod.key);
-    const numeric = typeof mod.value === 'number' ? mod.value : undefined;
-    const value = numeric === undefined ? String(mod.value)
-      : def?.IsPercent === 'Percentage' ? `${numeric >= 0 ? '+' : ''}${(numeric * 100).toFixed(1).replace(/\.0$/, '')}%`
-      : `${numeric >= 0 ? '+' : ''}${numeric}`;
-    const rawLabel = def?.DisplayName ?? mod.key;
-    let label = rawLabel
-      .replace(/:?\s*\{val\}/g, '')
-      .replace(/\{1\}/g, mod.value1 ?? '')
-      .replace(/\{2\}/g, mod.value2 ?? '')
-      .replace(/\{3\}/g, mod.value3 ?? '')
-      .trim() || mod.key;
-    if (!rawLabel.includes('{1}') && mod.value1) label += ` (${mod.value1})`;
-    const tone = numeric === undefined || !def ? ''
-      : def.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
-      : def.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')
-      : '';
-    return { value, icon: getModifierTargetIcon(mod.value1) ?? def?.Icon, label, tone };
-  });
+const CULTURE_TECHNOLOGIES = new Set([
+  'commerceZones', 'eraInterplanetary', 'eraUnification', 'futureSociety',
+  'militaryDoctrine_mobile', 'solarFederation', 'warExpansion',
+]);
+const MILITARY_TECHNOLOGY = /^(airplanes|armor|artillery|autocannon|empTurret|engine|laserTurret|missile|radiator|smallArms|spaceHull|tank|turret)\d+$|^(biohazard|colossalCommandCenter|flyingFortress|magneticShield|polarizedArmor|spacedArmor)$/;
+const technologyDomains = type === 'technologies' ? [
+  { id: 'defaultDomain', label: 'Technology', entries: entries.filter((entry) => !CULTURE_TECHNOLOGIES.has(entry.id) && !MILITARY_TECHNOLOGY.test(entry.id)) },
+  { id: 'militaryTech', label: 'Military Technology', entries: entries.filter((entry) => MILITARY_TECHNOLOGY.test(entry.id)) },
+  { id: 'culture', label: 'Culture', entries: entries.filter((entry) => CULTURE_TECHNOLOGIES.has(entry.id)) },
+].filter((domain) => domain.entries.length > 0) : [];
+function componentFamilyLabel(id: string) {
+  const label = id.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, (character) => character.toUpperCase());
+  return label.replace(/\b(Apc|Atgm|Emp)\b/g, (acronym) => acronym.toUpperCase());
 }
+const componentFamilies = type === 'unit-components' ? Object.values(entries.reduce((families, entry) => {
+  const id = entry.id.replace(/_?\d+$/, '');
+  families[id] ??= { id, label: componentFamilyLabel(id), entries: [] };
+  families[id].entries.push(entry);
+  return families;
+}, {} as Record<string, { id: string; label: string; entries: typeof entries }>)).sort((a, b) => a.label.localeCompare(b.label)) : [];
+const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length + entries.length : entries.length;
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -86,9 +83,10 @@ function formatEffects(modifiers: ModifierRef[]) {
           <header><div><p class="eyebrow">Government Reform</p><h2>{reform.displayName}</h2></div><a href={withBase(`/government-reforms/${reform.id}/`)}>View reform</a></header>
           <div class="entry-directory">
             {options.map((entry) => (
-              <a href={withBase(`/government-reform-options/${entry.id}/`)} class="directory-row" data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+              <a href={withBase(`/government-reform-options/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
                 <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
                 <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <ModifierBadges modifiers={entry.modifiers} />
                 <span class="row-arrow" aria-hidden="true">›</span>
               </a>
             ))}
@@ -102,15 +100,53 @@ function formatEffects(modifiers: ModifierRef[]) {
         <section class="reform-option-group entry-group">
           <header><div class="culture-family-title">{faction.icon && <GameIcon name={faction.icon} size={30} />}<div><p class="eyebrow">Political Faction</p><h2>{faction.displayName}</h2></div></div><a href={withBase(`/factions/${faction.id}/`)}>View faction</a></header>
           <div class="entry-directory">
-            <a href={withBase(`/factions/${faction.id}/`)} class="directory-row" data-search={`${faction.displayName} ${faction.id}`.toLowerCase()}>
+            <a href={withBase(`/factions/${faction.id}/`)} class:list={['directory-row', { 'with-effects': faction.modifiers.length > 0 }]} data-search={`${faction.displayName} ${faction.id}`.toLowerCase()}>
               <span class="directory-icon">{faction.icon ? <GameIcon name={faction.icon} size={34} /> : <span>{faction.displayName.charAt(0)}</span>}</span>
               <span class="directory-main"><strong>{faction.displayName}</strong><code>{faction.id}</code>{faction.description && <small>{faction.description}</small>}</span>
+              <ModifierBadges modifiers={faction.modifiers} />
               <span class="row-arrow" aria-hidden="true">›</span>
             </a>
             {variants.map((variant) => (
-              <a href={withBase(`/faction-variants/${variant.id}/`)} class="directory-row" data-search={`${faction.displayName} ${variant.displayName} ${variant.id}`.toLowerCase()}>
+              <a href={withBase(`/faction-variants/${variant.id}/`)} class:list={['directory-row', { 'with-effects': variant.modifiers.length > 0 }]} data-search={`${faction.displayName} ${variant.displayName} ${variant.id}`.toLowerCase()}>
                 <span class="directory-icon">{variant.icon ? <GameIcon name={variant.icon} size={34} /> : <span>{variant.displayName.charAt(0)}</span>}</span>
                 <span class="directory-main"><strong>{variant.displayName}</strong><code>{variant.id}</code>{variant.description && <small>{variant.description}</small>}</span>
+                <ModifierBadges modifiers={variant.modifiers} />
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  ) : componentFamilies.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {componentFamilies.map((family) => (
+        <section class="reform-option-group entry-group">
+          <header><div><p class="eyebrow">Component Family</p><h2>{family.label}</h2></div><span>{family.entries.length} component{family.entries.length === 1 ? '' : 's'}</span></header>
+          <div class="entry-directory">
+            {family.entries.map((entry) => (
+              <a href={withBase(`/unit-components/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${family.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <ModifierBadges modifiers={entry.modifiers} />
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  ) : technologyDomains.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {technologyDomains.map((domain) => (
+        <section class="reform-option-group entry-group">
+          <header><div><p class="eyebrow">Technology Domain</p><h2>{domain.label}</h2></div></header>
+          <div class="entry-directory">
+            {domain.entries.map((entry) => (
+              <a href={withBase(`/technologies/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${domain.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <ModifierBadges modifiers={entry.modifiers} />
                 <span class="row-arrow" aria-hidden="true">›</span>
               </a>
             ))}
@@ -128,18 +164,10 @@ function formatEffects(modifiers: ModifierRef[]) {
               <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a></header>
               <div class="entry-directory">
                 {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))).map((entry) => (
-                  <a href={withBase(`/culture-traits/${meta.id}/#${entry.id}`)} class="directory-row" data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
-                    <span class="directory-icon"><GameIcon name={meta.icon} size={34} /></span>
+                  <a href={withBase(`/culture-traits/${meta.id}/#${entry.id}`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                    <span class="directory-icon"><GameIcon name={entry.icon ?? meta.icon} size={34} /></span>
                     <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
-                    <span class="row-effects">
-                      {formatEffects(entry.modifiers).map((effect) => (
-                        <span class:list={['effect', effect.tone]}>
-                          <b>{effect.value}</b>
-                          {effect.icon && <GameIcon name={effect.icon} size={16} />}
-                          <span>{effect.label}</span>
-                        </span>
-                      ))}
-                    </span>
+                    <ModifierBadges modifiers={entry.modifiers} />
                     <span class="row-arrow" aria-hidden="true">›</span>
                   </a>
                 ))}
@@ -152,9 +180,10 @@ function formatEffects(modifiers: ModifierRef[]) {
   ) : (
     <div class="entry-directory" id="entry-directory">
       {entries.map((entry) => (
-        <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
+        <a href={withBase(`/${type}/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
           <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
           <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+          <ModifierBadges modifiers={entry.modifiers} />
           <span class="row-arrow" aria-hidden="true">›</span>
         </a>
       ))}

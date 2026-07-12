@@ -11,7 +11,7 @@ import {
   getTutorialModPath,
 } from './paths.ts';
 import { DEFINE_FILE_TO_SLUG } from '../src/lib/categories.ts';
-import { getCultureTraitGroup } from '../src/lib/culture.ts';
+import { getCultureTraitGroup, isCultureFamilyRoot } from '../src/lib/culture.ts';
 import type {
   CuratedIndex,
   ModifierRef,
@@ -439,12 +439,22 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
       .filter((modifier) => modifier.icon)
       .map((modifier) => [modifier.id, modifier.icon as string]),
   );
+  const resourceIcons = new Map(
+    entries
+      .filter((entry) => (entry.type === 'resources' || entry.type === 'deposit-resources') && entry.icon)
+      .map((entry) => [entry.id, entry.icon as string]),
+  );
   for (const entry of entries) {
     if (entry.type !== 'culture-traits') continue;
-    const candidates = [
-      ...entry.modifiers.map((modifier) => modifierIcons.get(modifier.key)),
-      getCultureTraitGroup(entry.id).icon,
-    ];
+    const familyIcon = getCultureTraitGroup(entry.id).icon;
+    const firstModifier = entry.modifiers[0];
+    const candidates = isCultureFamilyRoot(entry.id)
+      ? [familyIcon]
+      : [
+          resourceIcons.get(firstModifier?.value1 ?? ''),
+          modifierIcons.get(firstModifier?.key ?? ''),
+          familyIcon,
+        ];
     const icon = candidates.find(available);
     entry.references = entry.references.filter((reference) => reference.type !== 'icon');
     if (!icon) {
@@ -486,7 +496,10 @@ function loadDefines(modPath: string, localization: Record<string, string>) {
 function localizedModifierName(record: RawRecord, localization: Record<string, string>): string {
   const id = String(record.Name);
   const lookup = new Map(Object.entries(localization).map(([key, value]) => [key.toLowerCase(), value]));
-  const candidates = [id];
+  const localizationOverrides: Record<string, string> = {
+    unitReinforceRateMult: 'reinforceRate',
+  };
+  const candidates = [localizationOverrides[id], id].filter((candidate): candidate is string => Boolean(candidate));
   let base = id;
   const suffixes = ['TooltipModifier', 'PopulationMult', 'Population', 'CurrencyAdd', 'Interplanetary', 'Modifier', 'Effect', 'Override', 'Mult', 'Add', 'Max', 'Cost', 'Cap'];
   for (let i = 0; i < 4; i++) {
@@ -496,10 +509,16 @@ function localizedModifierName(record: RawRecord, localization: Record<string, s
     candidates.push(base);
   }
   const genericIcons = new Set(['political', 'military', 'industrial', 'defense', 'war', 'planet']);
-  if (typeof record.Icon === 'string' && !genericIcons.has(record.Icon)) candidates.push(record.Icon);
   for (const candidate of candidates) {
     const localized = lookup.get(candidate.toLowerCase());
     if (localized) return cleanGameText(localized);
+  }
+  if (typeof record.Icon === 'string' && !genericIcons.has(record.Icon)) {
+    const localized = lookup.get(record.Icon.toLowerCase());
+    if (localized) {
+      const cleaned = cleanGameText(localized);
+      if (cleaned.length <= 80 && !/[.!?]\s/.test(cleaned)) return cleaned;
+    }
   }
   return humanizeId(id);
 }

@@ -23,6 +23,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; background: var(--paper); color: var(--text); font-family: var(--font); line-height: 1.55; }
 body { margin: 0; min-width: 320px; min-height: 100vh; }
 button, input { font: inherit; }
@@ -133,7 +134,7 @@ code, kbd { font-family: var(--mono); }
 .directory-main code { margin-top: 3px; color: var(--text-muted); font-size: 9px; white-space: nowrap; }
 .directory-main small { display: -webkit-box; margin-top: 5px; color: var(--text-muted); font-size: 10px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .row-arrow { color: var(--border-strong); font-size: 22px; text-align: right; }
-.culture-directory .directory-row { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr) 20px; }
+.directory-row.with-effects { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr) 20px; }
 .row-effects { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; justify-self: stretch; min-width: 0; }
 .row-effects .effect { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-muted); white-space: nowrap; }
 .row-effects .effect b { font-variant-numeric: tabular-nums; }

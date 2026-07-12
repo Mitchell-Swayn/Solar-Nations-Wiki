@@ -1,0 +1,44 @@
+---
+import GameIcon from './GameIcon.astro';
+import { getModifierMap, getModifierTargetIcon } from '../lib/data';
+import type { ModifierRef } from '../lib/types';
+
+interface Props {
+  modifiers: ModifierRef[];
+}
+
+const { modifiers } = Astro.props;
+const modifierMap = getModifierMap();
+const effects = modifiers.map((modifier) => {
+  const definition = modifierMap.get(modifier.key);
+  const numeric = typeof modifier.value === 'number' ? modifier.value : undefined;
+  const value = numeric === undefined ? String(modifier.value)
+    : definition?.IsPercent === 'Percentage' ? `${numeric >= 0 ? '+' : ''}${(numeric * 100).toFixed(1).replace(/\.0$/, '')}%`
+    : `${numeric >= 0 ? '+' : ''}${numeric}`;
+  const rawLabel = definition?.DisplayName ?? modifier.key;
+  let label = rawLabel
+    .replace(/:?\s*\{val\}/g, '')
+    .replace(/\{1\}/g, modifier.value1 ?? '')
+    .replace(/\{2\}/g, modifier.value2 ?? '')
+    .replace(/\{3\}/g, modifier.value3 ?? '')
+    .trim() || modifier.key;
+  if (!rawLabel.includes('{1}') && modifier.value1) label += ` (${modifier.value1})`;
+  const tone = numeric === undefined || !definition ? ''
+    : definition.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
+    : definition.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')
+    : '';
+  return { value, icon: getModifierTargetIcon(modifier.value1) ?? definition?.Icon, label, tone };
+});
+---
+
+{effects.length > 0 && (
+  <span class="row-effects">
+    {effects.map((effect) => (
+      <span class:list={['effect', effect.tone]}>
+        <b>{effect.value}</b>
+        {effect.icon && <GameIcon name={effect.icon} size={16} />}
+        <span>{effect.label}</span>
+      </span>
+    ))}
+  </span>
+)}

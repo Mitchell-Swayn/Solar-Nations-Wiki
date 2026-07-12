@@ -366,10 +366,10 @@
     "id": "aristocraticAmbition",
     "type": "culture-traits",
     "displayName": "Ambitious Nobility",
-    "icon": "management",
+    "icon": "machineParts",
     "fields": {
       "Name": "aristocraticAmbition",
-      "Icon": "management"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -383,7 +383,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "management"
+        "id": "machineParts"
       }
     ]
   },
@@ -682,10 +682,10 @@
     "id": "landOrganization",
     "type": "culture-traits",
     "displayName": "Army Organization",
-    "icon": "strategy",
+    "icon": "machineParts",
     "fields": {
       "Name": "landOrganization",
-      "Icon": "strategy"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -699,7 +699,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "strategy"
+        "id": "machineParts"
       }
     ]
   },
@@ -947,10 +947,10 @@
     "id": "atheist",
     "type": "culture-traits",
     "displayName": "Atheist",
-    "icon": "stability",
+    "icon": "atheist",
     "fields": {
       "Name": "atheist",
-      "Icon": "stability"
+      "Icon": "atheist"
     },
     "modifiers": [
       {
@@ -968,7 +968,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "stability"
+        "id": "atheist"
       }
     ]
   },
@@ -1256,10 +1256,10 @@
     "id": "britishAdventurism",
     "type": "culture-traits",
     "displayName": "British Adventurism",
-    "icon": "cultural",
+    "icon": "navyCapacity",
     "fields": {
       "Name": "britishAdventurism",
-      "Icon": "cultural"
+      "Icon": "navyCapacity"
     },
     "modifiers": [
       {
@@ -1279,7 +1279,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "navyCapacity"
       }
     ]
   },
@@ -1485,10 +1485,10 @@
     "id": "statismPlanning",
     "type": "culture-traits",
     "displayName": "Central Planning",
-    "icon": "management",
+    "icon": "machineParts",
     "fields": {
       "Name": "statismPlanning",
-      "Icon": "management"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -1502,7 +1502,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "management"
+        "id": "machineParts"
       }
     ]
   },
@@ -1635,10 +1635,10 @@
     "id": "christian",
     "type": "culture-traits",
     "displayName": "Christian",
-    "icon": "stability",
+    "icon": "christian",
     "fields": {
       "Name": "christian",
-      "Icon": "stability"
+      "Icon": "christian"
     },
     "modifiers": [
       {
@@ -1658,7 +1658,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "stability"
+        "id": "christian"
       }
     ]
   },
@@ -1795,10 +1795,10 @@
     "id": "explorersColonization",
     "type": "culture-traits",
     "displayName": "Colonial Spirit",
-    "icon": "strategy",
+    "icon": "spaceCapacity",
     "fields": {
       "Name": "explorersColonization",
-      "Icon": "strategy"
+      "Icon": "spaceCapacity"
     },
     "modifiers": [
       {
@@ -1812,7 +1812,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "strategy"
+        "id": "spaceCapacity"
       }
     ]
   },
@@ -2286,10 +2286,10 @@
     "id": "firearmsConsumption",
     "type": "culture-traits",
     "displayName": "Consumption of Firearms",
-    "icon": "strategy",
+    "icon": "machineParts",
     "fields": {
       "Name": "firearmsConsumption",
-      "Icon": "strategy"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -2303,7 +2303,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "strategy"
+        "id": "machineParts"
       }
     ]
   },
@@ -2647,10 +2647,10 @@
     "id": "hinduismCulture",
     "type": "culture-traits",
     "displayName": "Culture of Karma",
-    "icon": "hindu",
+    "icon": "diplomacyCapacity",
     "fields": {
       "Name": "hinduismCulture",
-      "Icon": "hindu"
+      "Icon": "diplomacyCapacity"
     },
     "modifiers": [
       {
@@ -2664,7 +2664,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "hindu"
+        "id": "diplomacyCapacity"
       }
     ]
   },
@@ -3142,10 +3142,10 @@
     "id": "easygoingWorldview",
     "type": "culture-traits",
     "displayName": "Easygoing Organization",
-    "icon": "cultural",
+    "icon": "diplomacyCapacity",
     "fields": {
       "Name": "easygoingWorldview",
-      "Icon": "cultural"
+      "Icon": "diplomacyCapacity"
     },
     "modifiers": [
       {
@@ -3159,7 +3159,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "diplomacyCapacity"
       }
     ]
   },
@@ -3372,10 +3372,10 @@
     "id": "individualismEntrepreneurship",
     "type": "culture-traits",
     "displayName": "Entrepreneurial Economy",
-    "icon": "currency",
+    "icon": "commerce",
     "fields": {
       "Name": "individualismEntrepreneurship",
-      "Icon": "currency"
+      "Icon": "commerce"
     },
     "modifiers": [
       {
@@ -3389,7 +3389,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "currency"
+        "id": "commerce"
       }
     ]
   },
@@ -3559,10 +3559,10 @@
     "id": "assimilationistEthics",
     "type": "culture-traits",
     "displayName": "Ethos of Assimilation",
-    "icon": "charisma",
+    "icon": "machineParts",
     "fields": {
       "Name": "assimilationistEthics",
-      "Icon": "charisma"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -3582,7 +3582,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "charisma"
+        "id": "machineParts"
       }
     ]
   },
@@ -3590,10 +3590,10 @@
     "id": "eugenicistArmy",
     "type": "culture-traits",
     "displayName": "Eugenic Army",
-    "icon": "military",
+    "icon": "geneticMaterial",
     "fields": {
       "Name": "eugenicistArmy",
-      "Icon": "military"
+      "Icon": "geneticMaterial"
     },
     "modifiers": [
       {
@@ -3607,7 +3607,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "geneticMaterial"
       }
     ]
   },
@@ -3886,10 +3886,10 @@
     "id": "fascist",
     "type": "culture-traits",
     "displayName": "Fascist",
-    "icon": "military",
+    "icon": "fascist",
     "fields": {
       "Name": "fascist",
-      "Icon": "military"
+      "Icon": "fascist"
     },
     "modifiers": [
       {
@@ -3902,7 +3902,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "fascist"
       }
     ]
   },
@@ -4192,10 +4192,10 @@
     "id": "eugenicistMastery",
     "type": "culture-traits",
     "displayName": "Genetic Supremacy",
-    "icon": "cultural",
+    "icon": "geneticMaterial",
     "fields": {
       "Name": "eugenicistMastery",
-      "Icon": "cultural"
+      "Icon": "geneticMaterial"
     },
     "modifiers": [
       {
@@ -4209,7 +4209,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "geneticMaterial"
       }
     ]
   },
@@ -4266,10 +4266,10 @@
     "id": "prosperismGrowth",
     "type": "culture-traits",
     "displayName": "Growth Maximization",
-    "icon": "industrial",
+    "icon": "machineParts",
     "fields": {
       "Name": "prosperismGrowth",
-      "Icon": "industrial"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -4289,7 +4289,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "machineParts"
       }
     ]
   },
@@ -4916,10 +4916,10 @@
     "id": "judaismInternationalism",
     "type": "culture-traits",
     "displayName": "International Faith Networks",
-    "icon": "jewish",
+    "icon": "diplomacyCapacity",
     "fields": {
       "Name": "judaismInternationalism",
-      "Icon": "jewish"
+      "Icon": "diplomacyCapacity"
     },
     "modifiers": [
       {
@@ -4933,7 +4933,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "jewish"
+        "id": "diplomacyCapacity"
       }
     ]
   },
@@ -4941,10 +4941,10 @@
     "id": "marxismInternationale",
     "type": "culture-traits",
     "displayName": "International Struggle",
-    "icon": "communist",
+    "icon": "diplomacyCapacity",
     "fields": {
       "Name": "marxismInternationale",
-      "Icon": "communist"
+      "Icon": "diplomacyCapacity"
     },
     "modifiers": [
       {
@@ -4958,7 +4958,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "communist"
+        "id": "diplomacyCapacity"
       }
     ]
   },
@@ -5128,10 +5128,10 @@
     "id": "traditionalismHierarchy",
     "type": "culture-traits",
     "displayName": "Just Hierarchy",
-    "icon": "political",
+    "icon": "cultural",
     "fields": {
       "Name": "traditionalismHierarchy",
-      "Icon": "political"
+      "Icon": "cultural"
     },
     "modifiers": [
       {
@@ -5150,7 +5150,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "cultural"
       }
     ]
   },
@@ -5582,10 +5582,10 @@
     "id": "consumersMastery",
     "type": "culture-traits",
     "displayName": "Mass Consumerism",
-    "icon": "currency",
+    "icon": "consumerGoods",
     "fields": {
       "Name": "consumersMastery",
-      "Icon": "currency"
+      "Icon": "consumerGoods"
     },
     "modifiers": [
       {
@@ -5599,7 +5599,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "currency"
+        "id": "consumerGoods"
       }
     ]
   },
@@ -5916,10 +5916,10 @@
     "id": "atheistMaterialism",
     "type": "culture-traits",
     "displayName": "Materialistic Worldview",
-    "icon": "atheist",
+    "icon": "machineParts",
     "fields": {
       "Name": "atheistMaterialism",
-      "Icon": "atheist"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -5933,7 +5933,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "atheist"
+        "id": "machineParts"
       }
     ]
   },
@@ -5941,10 +5941,10 @@
     "id": "robophileMastery",
     "type": "culture-traits",
     "displayName": "Mechanical Mastery",
-    "icon": "economic",
+    "icon": "robots",
     "fields": {
       "Name": "robophileMastery",
-      "Icon": "economic"
+      "Icon": "robots"
     },
     "modifiers": [
       {
@@ -5958,7 +5958,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "economic"
+        "id": "robots"
       }
     ]
   },
@@ -6069,10 +6069,10 @@
     "id": "statismBureaucracy",
     "type": "culture-traits",
     "displayName": "Mega Bureaucracy",
-    "icon": "unrest",
+    "icon": "management",
     "fields": {
       "Name": "statismBureaucracy",
-      "Icon": "unrest"
+      "Icon": "management"
     },
     "modifiers": [
       {
@@ -6091,7 +6091,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "unrest"
+        "id": "management"
       }
     ]
   },
@@ -6228,10 +6228,10 @@
     "id": "monumentalistIndustry",
     "type": "culture-traits",
     "displayName": "Monumental Industry",
-    "icon": "cultural",
+    "icon": "machineParts",
     "fields": {
       "Name": "monumentalistIndustry",
-      "Icon": "cultural"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -6245,7 +6245,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "machineParts"
       }
     ]
   },
@@ -6546,10 +6546,10 @@
     "id": "occult",
     "type": "culture-traits",
     "displayName": "Occult",
-    "icon": "culture",
+    "icon": "occult",
     "fields": {
       "Name": "occult",
-      "Icon": "culture"
+      "Icon": "occult"
     },
     "modifiers": [
       {
@@ -6562,7 +6562,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "culture"
+        "id": "occult"
       }
     ]
   },
@@ -6570,10 +6570,10 @@
     "id": "navyMastery",
     "type": "culture-traits",
     "displayName": "Ocean Mastery",
-    "icon": "strategy",
+    "icon": "navyCapacity",
     "fields": {
       "Name": "navyMastery",
-      "Icon": "strategy"
+      "Icon": "navyCapacity"
     },
     "modifiers": [
       {
@@ -6587,7 +6587,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "strategy"
+        "id": "navyCapacity"
       }
     ]
   },
@@ -8448,10 +8448,10 @@
     "id": "robophileArmy",
     "type": "culture-traits",
     "displayName": "Roboticized Army",
-    "icon": "military",
+    "icon": "robots",
     "fields": {
       "Name": "robophileArmy",
-      "Icon": "military"
+      "Icon": "robots"
     },
     "modifiers": [
       {
@@ -8465,7 +8465,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "robots"
       }
     ]
   },
@@ -8993,10 +8993,10 @@
     "id": "speciesRobot",
     "type": "culture-traits",
     "displayName": "Species Robot",
-    "icon": "manpower",
+    "icon": "speciesRobot",
     "fields": {
       "Name": "speciesRobot",
-      "Icon": "manpower"
+      "Icon": "speciesRobot"
     },
     "modifiers": [
       {
@@ -9022,7 +9022,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "manpower"
+        "id": "speciesRobot"
       }
     ]
   },
@@ -9692,10 +9692,10 @@
     "id": "industryTrading",
     "type": "culture-traits",
     "displayName": "Trading Industry",
-    "icon": "economic",
+    "icon": "machineParts",
     "fields": {
       "Name": "industryTrading",
-      "Icon": "economic"
+      "Icon": "machineParts"
     },
     "modifiers": [
       {
@@ -9715,7 +9715,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "economic"
+        "id": "machineParts"
       }
     ]
   },
@@ -10211,10 +10211,10 @@
     "id": "explorersMastery",
     "type": "culture-traits",
     "displayName": "Universal Exploration",
-    "icon": "colony",
+    "icon": "strategy",
     "fields": {
       "Name": "explorersMastery",
-      "Icon": "colony"
+      "Icon": "strategy"
     },
     "modifiers": [
       {
@@ -10232,7 +10232,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "colony"
+        "id": "strategy"
       }
     ]
   },
@@ -10385,10 +10385,10 @@
     "id": "urbanophileGrowth",
     "type": "culture-traits",
     "displayName": "Urban Adaptation",
-    "icon": "currency",
+    "icon": "steel",
     "fields": {
       "Name": "urbanophileGrowth",
-      "Icon": "currency"
+      "Icon": "steel"
     },
     "modifiers": [
       {
@@ -10402,7 +10402,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "currency"
+        "id": "steel"
       }
     ]
   },
@@ -10769,10 +10769,10 @@
     "id": "atheistWorldliness",
     "type": "culture-traits",
     "displayName": "Worldly Understanding",
-    "icon": "currency",
+    "icon": "consumerGoods",
     "fields": {
       "Name": "atheistWorldliness",
-      "Icon": "currency"
+      "Icon": "consumerGoods"
     },
     "modifiers": [
       {
@@ -10786,7 +10786,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "currency"
+        "id": "consumerGoods"
       }
     ]
   },

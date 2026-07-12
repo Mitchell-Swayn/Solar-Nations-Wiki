@@ -1996,121 +1996,9 @@
     ]
   },
   {
-    "id": "unitReinforceRateMult",
-    "type": "modifiers",
-    "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "unitReinforceRateMult",
-      "Positivity": "positive",
-      "IsPercent": "Percentage",
-      "Properties": {},
-      "Icon": "manpower",
-      "Scaler": "Linear",
-      "AIWeights": {
-        "base": 2
-      },
-      "GenerateIcons": false,
-      "IsEffect": false,
-      "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
-    "id": "recruitablePopulationAdd",
-    "type": "modifiers",
-    "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "recruitablePopulationAdd",
-      "Positivity": "neutral",
-      "IsPercent": "Percentage",
-      "Properties": {},
-      "Icon": "manpower",
-      "Scaler": "Linear",
-      "AIWeights": {
-        "base": 10
-      },
-      "GenerateIcons": false,
-      "IsEffect": false,
-      "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
-    "id": "recruitablePopulationMult",
-    "type": "modifiers",
-    "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "recruitablePopulationMult",
-      "Positivity": "neutral",
-      "IsPercent": "Multiplier",
-      "Properties": {},
-      "Icon": "manpower",
-      "Scaler": "Linear",
-      "AIWeights": {
-        "base": 10
-      },
-      "GenerateIcons": false,
-      "IsEffect": false,
-      "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
-    "id": "manpowerRecoveryRate",
-    "type": "modifiers",
-    "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "manpowerRecoveryRate",
-      "Positivity": "positive",
-      "IsPercent": "Percentage",
-      "Properties": {},
-      "Icon": "manpower",
-      "Scaler": "Linear",
-      "AIWeights": {
-        "base": 10
-      },
-      "GenerateIcons": false,
-      "IsEffect": false,
-      "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
     "id": "manpowerGainEffect",
     "type": "modifiers",
-    "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+    "displayName": "Manpower Gain Effect",
     "icon": "manpower",
     "fields": {
       "Name": "manpowerGainEffect",
@@ -2124,7 +2012,35 @@
       },
       "GenerateIcons": false,
       "IsEffect": true,
-      "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
+      "DisplayName": "Manpower Gain Effect"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "manpowerRecoveryRate",
+    "type": "modifiers",
+    "displayName": "Manpower Recovery Rate",
+    "icon": "manpower",
+    "fields": {
+      "Name": "manpowerRecoveryRate",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {},
+      "Icon": "manpower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 10
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Manpower Recovery Rate"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -3342,6 +3258,62 @@
     ]
   },
   {
+    "id": "recruitablePopulationAdd",
+    "type": "modifiers",
+    "displayName": "Recruitable Population Add",
+    "icon": "manpower",
+    "fields": {
+      "Name": "recruitablePopulationAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {},
+      "Icon": "manpower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 10
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Recruitable Population Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "recruitablePopulationMult",
+    "type": "modifiers",
+    "displayName": "Recruitable Population Mult",
+    "icon": "manpower",
+    "fields": {
+      "Name": "recruitablePopulationMult",
+      "Positivity": "neutral",
+      "IsPercent": "Multiplier",
+      "Properties": {},
+      "Icon": "manpower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 10
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Recruitable Population Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
     "id": "reformLocked",
     "type": "modifiers",
     "displayName": "Reform Locked",
@@ -3427,6 +3399,34 @@
       {
         "type": "icon",
         "id": "defense"
+      }
+    ]
+  },
+  {
+    "id": "unitReinforceRateMult",
+    "type": "modifiers",
+    "displayName": "Reinforce Rate",
+    "icon": "manpower",
+    "fields": {
+      "Name": "unitReinforceRateMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {},
+      "Icon": "manpower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 2
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Reinforce Rate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
       }
     ]
   },
@@ -3878,36 +3878,6 @@
     "modifiers": [],
     "prerequisites": [],
     "references": []
-  },
-  {
-    "id": "unitTransportSpeedAdd",
-    "type": "modifiers",
-    "displayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
-    "icon": "speed",
-    "fields": {
-      "Name": "unitTransportSpeedAdd",
-      "Positivity": "positive",
-      "IsPercent": "Numeric",
-      "Properties": {
-        "unitDomain": true
-      },
-      "Icon": "speed",
-      "Scaler": "Linear",
-      "AIWeights": {
-        "base": 0
-      },
-      "GenerateIcons": false,
-      "IsEffect": false,
-      "DisplayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component."
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "speed"
-      }
-    ]
   },
   {
     "id": "stabilityOffset",
@@ -4708,6 +4678,36 @@
       {
         "type": "icon",
         "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "unitTransportSpeedAdd",
+    "type": "modifiers",
+    "displayName": "Unit Transport Speed Add",
+    "icon": "speed",
+    "fields": {
+      "Name": "unitTransportSpeedAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "unitDomain": true
+      },
+      "Icon": "speed",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Unit Transport Speed Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "speed"
       }
     ]
   },
