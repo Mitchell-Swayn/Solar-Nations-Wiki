@@ -3952,6 +3952,7 @@
     "id": "baseEconomicOutputMult",
     "type": "modifiers",
     "displayName": "Tax Base",
+    "icon": "industry",
     "fields": {
       "Name": "baseEconomicOutputMult",
       "Positivity": "positive",
@@ -3959,6 +3960,7 @@
       "Properties": {
         "industry": false
       },
+      "Icon": "industry",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 10
@@ -3969,7 +3971,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industry"
+      }
+    ]
   },
   {
     "id": "tooltipModifier",

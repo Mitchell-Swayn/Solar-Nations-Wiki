@@ -320,6 +320,17 @@ const ICON_SOURCE_OVERRIDES: Record<string, string> = {
   research: 'Resources/research.png',
 };
 
+// Repo-tracked icons decoded from packed textures that are missing from Saved/Icons.
+const EXTRA_ICONS_DIR = join(PROJECT_ROOT, 'data/icons-extra');
+
+function indexIconSources(gameRoot: string): Map<string, string> {
+  const files = indexPngFiles(getIconsPath(gameRoot));
+  for (const [key, path] of indexPngFiles(EXTRA_ICONS_DIR)) {
+    if (!files.has(key)) files.set(key, path);
+  }
+  return files;
+}
+
 function indexPngFiles(root: string): Map<string, string> {
   const files = new Map<string, string>();
   const walk = (dir: string) => {
@@ -342,7 +353,7 @@ function indexPngFiles(root: string): Map<string, string> {
 }
 
 function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[]) {
-  const sourceFiles = indexPngFiles(getIconsPath(gameRoot));
+  const sourceFiles = indexIconSources(gameRoot);
   let removed = 0;
   for (const entry of entries) {
     if (!entry.icon) continue;
@@ -360,7 +371,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
 function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const sourceRoot = getIconsPath(gameRoot);
   const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
-  const sourceFiles = indexPngFiles(sourceRoot);
+  const sourceFiles = indexIconSources(gameRoot);
   const requested = new Set(entries.map((entry) => entry.icon).filter((icon): icon is string => Boolean(icon)));
   for (const entry of entries) {
     if (entry.type === 'culture-traits') requested.add(getCultureTraitGroup(entry.id).icon);
@@ -398,11 +409,14 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
     }
   };
   if (existsSync(sourceRoot)) walk(sourceRoot);
+  for (const [key, path] of indexPngFiles(EXTRA_ICONS_DIR)) {
+    if (sourceFiles.get(key) === path) write(path, basename(path));
+  }
   console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
 }
 
 function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry[], gameRoot: string) {
-  const sourceFiles = indexPngFiles(getIconsPath(gameRoot));
+  const sourceFiles = indexIconSources(gameRoot);
   const available = (icon: string | undefined): icon is string =>
     Boolean(icon && sourceFiles.has(resolveIconSource(icon).toLowerCase()));
   const modifierIcons = new Map(

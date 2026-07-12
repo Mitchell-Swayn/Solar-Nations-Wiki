@@ -762,10 +762,10 @@
     "id": "easygoingAsceticism",
     "type": "culture-traits",
     "displayName": "Asceticism",
-    "icon": "political",
+    "icon": "industry",
     "fields": {
       "Name": "easygoingAsceticism",
-      "Icon": "political"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -783,7 +783,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "industry"
       }
     ]
   },
@@ -3060,10 +3060,10 @@
     "id": "judaismUsury",
     "type": "culture-traits",
     "displayName": "Divine Economics",
-    "icon": "jewish",
+    "icon": "industry",
     "fields": {
       "Name": "judaismUsury",
-      "Icon": "jewish"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -3076,7 +3076,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "jewish"
+        "id": "industry"
       }
     ]
   },
@@ -4637,10 +4637,10 @@
     "id": "industryWorking",
     "type": "culture-traits",
     "displayName": "Industry of Labor",
-    "icon": "economic",
+    "icon": "industry",
     "fields": {
       "Name": "industryWorking",
-      "Icon": "economic"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -4653,7 +4653,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "economic"
+        "id": "industry"
       }
     ]
   },
@@ -6522,10 +6522,10 @@
     "id": "mandateObligations",
     "type": "culture-traits",
     "displayName": "Obligations of the Leader",
-    "icon": "management",
+    "icon": "industry",
     "fields": {
       "Name": "mandateObligations",
-      "Icon": "management"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -6538,7 +6538,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "management"
+        "id": "industry"
       }
     ]
   },
@@ -6825,10 +6825,10 @@
     "id": "nuclearFamilyProsperity",
     "type": "culture-traits",
     "displayName": "Organized Prosperity",
-    "icon": "cultural",
+    "icon": "industry",
     "fields": {
       "Name": "nuclearFamilyProsperity",
-      "Icon": "cultural"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -6841,7 +6841,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "industry"
       }
     ]
   },
@@ -7697,10 +7697,10 @@
     "id": "polygamistPsychology",
     "type": "culture-traits",
     "displayName": "Psychological Domination",
-    "icon": "cultural",
+    "icon": "industry",
     "fields": {
       "Name": "polygamistPsychology",
-      "Icon": "cultural"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -7713,7 +7713,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "industry"
       }
     ]
   },
@@ -10649,10 +10649,10 @@
     "id": "prosperismWealth",
     "type": "culture-traits",
     "displayName": "Wealth Accumulation",
-    "icon": "economic",
+    "icon": "industry",
     "fields": {
       "Name": "prosperismWealth",
-      "Icon": "economic"
+      "Icon": "industry"
     },
     "modifiers": [
       {
@@ -10665,7 +10665,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "economic"
+        "id": "industry"
       }
     ]
   },
