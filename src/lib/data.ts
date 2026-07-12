@@ -21,6 +21,12 @@ export function getEntriesByType(type: string): WikiEntry[] {
   return ids.map((id) => index.entries[id]).filter(Boolean);
 }
 
+// Icon for a modifier's target when it names a resource (e.g. resourceCapacityMult -> robots).
+export function getModifierTargetIcon(target?: string): string | undefined {
+  if (!target) return undefined;
+  return getEntry('resources', target)?.icon ?? getEntry('deposit-resources', target)?.icon ?? undefined;
+}
+
 export function getEntry(type: string, id: string): WikiEntry | undefined {
   const entry = index.entries[`${type}:${id}`];
   if (entry) return entry;
