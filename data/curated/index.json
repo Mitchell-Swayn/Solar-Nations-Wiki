@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T11:31:51.266Z",
+  "generatedAt": "2026-07-12T11:42:03.830Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -1902,10 +1902,10 @@
       "id": "humanityInnovation",
       "type": "culture-traits",
       "displayName": "Science and Innovation",
-      "icon": "speciesHuman",
+      "icon": "education",
       "fields": {
         "Name": "humanityInnovation",
-        "Icon": "speciesHuman"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -1918,7 +1918,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "speciesHuman"
+          "id": "education"
         }
       ]
     },
@@ -2098,10 +2098,10 @@
       "id": "roboticMechanics",
       "type": "culture-traits",
       "displayName": "Mechanificence",
-      "icon": "speciesRobot",
+      "icon": "industrial",
       "fields": {
         "Name": "roboticMechanics",
-        "Icon": "speciesRobot"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -2114,7 +2114,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "speciesRobot"
+          "id": "industrial"
         }
       ]
     },
@@ -2279,10 +2279,10 @@
       "id": "christianityUnity",
       "type": "culture-traits",
       "displayName": "United Christendom",
-      "icon": "culture",
+      "icon": "education",
       "fields": {
         "Name": "christianityUnity",
-        "Icon": "culture"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -2300,7 +2300,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "culture"
+          "id": "education"
         }
       ]
     },
@@ -2542,10 +2542,10 @@
       "id": "islamUnification",
       "type": "culture-traits",
       "displayName": "Islamic Brotherhood",
-      "icon": "islam",
+      "icon": "speed",
       "fields": {
         "Name": "islamUnification",
-        "Icon": "islam"
+        "Icon": "speed"
       },
       "modifiers": [
         {
@@ -2558,7 +2558,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "islam"
+          "id": "speed"
         }
       ]
     },
@@ -2622,10 +2622,10 @@
       "id": "judaismUsury",
       "type": "culture-traits",
       "displayName": "Divine Economics",
-      "icon": "jewish",
+      "icon": "industry",
       "fields": {
         "Name": "judaismUsury",
-        "Icon": "jewish"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -2638,7 +2638,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "jewish"
+          "id": "industry"
         }
       ]
     },
@@ -2974,10 +2974,10 @@
       "id": "marxismMaterialism",
       "type": "culture-traits",
       "displayName": "Historical Materialism",
-      "icon": "communist",
+      "icon": "education",
       "fields": {
         "Name": "marxismMaterialism",
-        "Icon": "communist"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -2996,7 +2996,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "communist"
+          "id": "education"
         }
       ]
     },
@@ -3208,10 +3208,10 @@
       "id": "occultForbiddenKnowledge",
       "type": "culture-traits",
       "displayName": "Forbidden Knowledge",
-      "icon": "stability",
+      "icon": "education",
       "fields": {
         "Name": "occultForbiddenKnowledge",
-        "Icon": "stability"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -3229,7 +3229,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "stability"
+          "id": "education"
         }
       ]
     },
@@ -3365,10 +3365,10 @@
       "id": "atheistEducation",
       "type": "culture-traits",
       "displayName": "Education Primacy",
-      "icon": "atheist",
+      "icon": "education",
       "fields": {
         "Name": "atheistEducation",
-        "Icon": "atheist"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -3381,7 +3381,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "atheist"
+          "id": "education"
         }
       ]
     },
@@ -3539,10 +3539,10 @@
       "id": "hegelianDialectics",
       "type": "culture-traits",
       "displayName": "Dialectics",
-      "icon": "fascist",
+      "icon": "education",
       "fields": {
         "Name": "hegelianDialectics",
-        "Icon": "fascist"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -3555,7 +3555,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "fascist"
+          "id": "education"
         }
       ]
     },
@@ -3934,10 +3934,10 @@
       "id": "moralismPiety",
       "type": "culture-traits",
       "displayName": "Pious Culture",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "moralismPiety",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -3956,7 +3956,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -4022,10 +4022,10 @@
       "id": "prosperismGrowth",
       "type": "culture-traits",
       "displayName": "Growth Maximization",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "prosperismGrowth",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4045,7 +4045,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -4053,10 +4053,10 @@
       "id": "prosperismWealth",
       "type": "culture-traits",
       "displayName": "Wealth Accumulation",
-      "icon": "economic",
+      "icon": "industry",
       "fields": {
         "Name": "prosperismWealth",
-        "Icon": "economic"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -4069,7 +4069,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industry"
         }
       ]
     },
@@ -4131,10 +4131,10 @@
       "id": "prosperismIndustry",
       "type": "culture-traits",
       "displayName": "Relentless Industrialization",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "prosperismIndustry",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4148,7 +4148,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -4180,10 +4180,10 @@
       "id": "prosperismProgress",
       "type": "culture-traits",
       "displayName": "Towards a Land of Plenty",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "prosperismProgress",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4196,7 +4196,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -4233,10 +4233,10 @@
       "id": "individualismInitiative",
       "type": "culture-traits",
       "displayName": "Individual Initiative",
-      "icon": "management",
+      "icon": "industrial",
       "fields": {
         "Name": "individualismInitiative",
-        "Icon": "management"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4250,7 +4250,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "industrial"
         }
       ]
     },
@@ -4381,10 +4381,10 @@
       "id": "intellectualismReason",
       "type": "culture-traits",
       "displayName": "Rational Primacy",
-      "icon": "cultural",
+      "icon": "education",
       "fields": {
         "Name": "intellectualismReason",
-        "Icon": "cultural"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -4397,7 +4397,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "education"
         }
       ]
     },
@@ -4405,10 +4405,10 @@
       "id": "intellectualismScience",
       "type": "culture-traits",
       "displayName": "Scientific Pursuit",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "intellectualismScience",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4422,7 +4422,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -4485,10 +4485,10 @@
       "id": "intellectualismEnlightenment",
       "type": "culture-traits",
       "displayName": "Enlightened Philosophy",
-      "icon": "cultural",
+      "icon": "education",
       "fields": {
         "Name": "intellectualismEnlightenment",
-        "Icon": "cultural"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -4501,7 +4501,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "education"
         }
       ]
     },
@@ -4684,10 +4684,10 @@
       "id": "utopianismSocialism",
       "type": "culture-traits",
       "displayName": "Socialist Morality",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "utopianismSocialism",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4700,7 +4700,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -4947,10 +4947,10 @@
       "id": "transformationFuturism",
       "type": "culture-traits",
       "displayName": "Futuristic Orientation",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "transformationFuturism",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -4964,7 +4964,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -5020,10 +5020,10 @@
       "id": "transformationEvolution",
       "type": "culture-traits",
       "displayName": "Evolutionary Society",
-      "icon": "cultural",
+      "icon": "education",
       "fields": {
         "Name": "transformationEvolution",
-        "Icon": "cultural"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -5036,7 +5036,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "education"
         }
       ]
     },
@@ -5559,10 +5559,10 @@
       "id": "tribalismRaiding",
       "type": "culture-traits",
       "displayName": "Ethnocentrism",
-      "icon": "cultural",
+      "icon": "speed",
       "fields": {
         "Name": "tribalismRaiding",
-        "Icon": "cultural"
+        "Icon": "speed"
       },
       "modifiers": [
         {
@@ -5575,7 +5575,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "speed"
         }
       ]
     },
@@ -5766,10 +5766,10 @@
       "id": "traditionalismRituals",
       "type": "culture-traits",
       "displayName": "Rites of Passage",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "traditionalismRituals",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -5783,7 +5783,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -6018,10 +6018,10 @@
       "id": "nuclearFamilyProsperity",
       "type": "culture-traits",
       "displayName": "Organized Prosperity",
-      "icon": "cultural",
+      "icon": "industry",
       "fields": {
         "Name": "nuclearFamilyProsperity",
-        "Icon": "cultural"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -6034,7 +6034,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industry"
         }
       ]
     },
@@ -6114,10 +6114,10 @@
       "id": "nuclearFamilyCommunity",
       "type": "culture-traits",
       "displayName": "General Communities",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "nuclearFamilyCommunity",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -6130,7 +6130,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -6547,10 +6547,10 @@
       "id": "consumersPolitics",
       "type": "culture-traits",
       "displayName": "Politics of Consumption",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "consumersPolitics",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -6569,7 +6569,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -6706,10 +6706,10 @@
       "id": "passivistEthics",
       "type": "culture-traits",
       "displayName": "Passive Ethos",
-      "icon": "cultural",
+      "icon": "opinion",
       "fields": {
         "Name": "passivistEthics",
-        "Icon": "cultural"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -6722,7 +6722,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "opinion"
         }
       ]
     },
@@ -7143,10 +7143,10 @@
       "id": "insularUnity",
       "type": "culture-traits",
       "displayName": "Unity of Focus",
-      "icon": "culture",
+      "icon": "education",
       "fields": {
         "Name": "insularUnity",
-        "Icon": "culture"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -7164,7 +7164,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "culture"
+          "id": "education"
         }
       ]
     },
@@ -7279,10 +7279,10 @@
       "id": "urbanophileInfrastructure",
       "type": "culture-traits",
       "displayName": "Urban Infrastructure",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "urbanophileInfrastructure",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7295,7 +7295,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7327,10 +7327,10 @@
       "id": "urbanophileConstruction",
       "type": "culture-traits",
       "displayName": "Mass Construction",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "urbanophileConstruction",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7344,7 +7344,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7352,10 +7352,10 @@
       "id": "urbanophileMonuments",
       "type": "culture-traits",
       "displayName": "Urban Monumentalism",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "urbanophileMonuments",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7369,7 +7369,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7426,10 +7426,10 @@
       "id": "urbanophileMastery",
       "type": "culture-traits",
       "displayName": "Concrete Jungles",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "urbanophileMastery",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7442,7 +7442,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7450,10 +7450,10 @@
       "id": "pridefulArrogance",
       "type": "culture-traits",
       "displayName": "Arrogance",
-      "icon": "cultural",
+      "icon": "opinion",
       "fields": {
         "Name": "pridefulArrogance",
-        "Icon": "cultural"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -7472,7 +7472,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "opinion"
         }
       ]
     },
@@ -7650,10 +7650,10 @@
       "id": "robophileTechnicians",
       "type": "culture-traits",
       "displayName": "Technical Specialization",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "robophileTechnicians",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -7666,7 +7666,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -7699,10 +7699,10 @@
       "id": "robophileIndustry",
       "type": "culture-traits",
       "displayName": "Industrial Mechanization",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "robophileIndustry",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7716,7 +7716,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7724,10 +7724,10 @@
       "id": "robophileConstruction",
       "type": "culture-traits",
       "displayName": "Automatic Construction",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "robophileConstruction",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7740,7 +7740,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -7823,10 +7823,10 @@
       "id": "eugenicistBiologists",
       "type": "culture-traits",
       "displayName": "Biotechnical Research",
-      "icon": "cultural",
+      "icon": "education",
       "fields": {
         "Name": "eugenicistBiologists",
-        "Icon": "cultural"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -7839,7 +7839,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "education"
         }
       ]
     },
@@ -7872,10 +7872,10 @@
       "id": "eugenicistIndustry",
       "type": "culture-traits",
       "displayName": "Industrial Geneticism",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "eugenicistIndustry",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -7889,7 +7889,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -8019,10 +8019,10 @@
       "id": "irridentistDiplomacy",
       "type": "culture-traits",
       "displayName": "Imposing Diplomacy",
-      "icon": "charisma",
+      "icon": "opinion",
       "fields": {
         "Name": "irridentistDiplomacy",
-        "Icon": "charisma"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -8041,7 +8041,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "opinion"
         }
       ]
     },
@@ -8222,10 +8222,10 @@
       "id": "isolationistIntrospection",
       "type": "culture-traits",
       "displayName": "Introspection",
-      "icon": "charisma",
+      "icon": "education",
       "fields": {
         "Name": "isolationistIntrospection",
-        "Icon": "charisma"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -8238,7 +8238,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "education"
         }
       ]
     },
@@ -8246,10 +8246,10 @@
       "id": "isolationistUpwardConstruction",
       "type": "culture-traits",
       "displayName": "Upward not Outward",
-      "icon": "charisma",
+      "icon": "industrial",
       "fields": {
         "Name": "isolationistUpwardConstruction",
-        "Icon": "charisma"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -8262,7 +8262,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "industrial"
         }
       ]
     },
@@ -8318,10 +8318,10 @@
       "id": "mandateObligations",
       "type": "culture-traits",
       "displayName": "Obligations of the Leader",
-      "icon": "management",
+      "icon": "industry",
       "fields": {
         "Name": "mandateObligations",
-        "Icon": "management"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -8334,7 +8334,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "industry"
         }
       ]
     },
@@ -8371,10 +8371,10 @@
       "id": "mandateEconomy",
       "type": "culture-traits",
       "displayName": "Prosperous Economy",
-      "icon": "management",
+      "icon": "industrial",
       "fields": {
         "Name": "mandateEconomy",
-        "Icon": "management"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -8387,7 +8387,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "industrial"
         }
       ]
     },
@@ -8615,10 +8615,10 @@
       "id": "socialContractOrganization",
       "type": "culture-traits",
       "displayName": "Organized State",
-      "icon": "management",
+      "icon": "industrial",
       "fields": {
         "Name": "socialContractOrganization",
-        "Icon": "management"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -8631,7 +8631,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "industrial"
         }
       ]
     },
@@ -8785,10 +8785,10 @@
       "id": "polygamistPsychology",
       "type": "culture-traits",
       "displayName": "Psychological Domination",
-      "icon": "cultural",
+      "icon": "industry",
       "fields": {
         "Name": "polygamistPsychology",
-        "Icon": "cultural"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -8801,7 +8801,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industry"
         }
       ]
     },
@@ -8910,10 +8910,10 @@
       "id": "easygoingAsceticism",
       "type": "culture-traits",
       "displayName": "Asceticism",
-      "icon": "political",
+      "icon": "industry",
       "fields": {
         "Name": "easygoingAsceticism",
-        "Icon": "political"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -8931,7 +8931,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "political"
+          "id": "industry"
         }
       ]
     },
@@ -8939,10 +8939,10 @@
       "id": "easygoingPeace",
       "type": "culture-traits",
       "displayName": "Peace and Prosperity",
-      "icon": "cultural",
+      "icon": "opinion",
       "fields": {
         "Name": "easygoingPeace",
-        "Icon": "cultural"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -8955,7 +8955,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "opinion"
         }
       ]
     },
@@ -9085,10 +9085,10 @@
       "id": "diligentWorkflow",
       "type": "culture-traits",
       "displayName": "Superior Workflows",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "diligentWorkflow",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -9101,7 +9101,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -9134,10 +9134,10 @@
       "id": "diligentConstruction",
       "type": "culture-traits",
       "displayName": "Work Construction",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "diligentConstruction",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9150,7 +9150,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -9259,10 +9259,10 @@
       "id": "ludditeImprovisation",
       "type": "culture-traits",
       "displayName": "Workful Improvisation",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "ludditeImprovisation",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9275,7 +9275,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -9365,10 +9365,10 @@
       "id": "monumentalistConstruction",
       "type": "culture-traits",
       "displayName": "Building of Monuments",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "monumentalistConstruction",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9381,7 +9381,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -9389,10 +9389,10 @@
       "id": "monumentalistExpansion",
       "type": "culture-traits",
       "displayName": "Constant Construction",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "monumentalistExpansion",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9406,7 +9406,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -9439,10 +9439,10 @@
       "id": "monumentalistInfrastructure",
       "type": "culture-traits",
       "displayName": "Macroscopic Infrastructure",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "monumentalistInfrastructure",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9456,7 +9456,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -9513,10 +9513,10 @@
       "id": "monumentalistMastery",
       "type": "culture-traits",
       "displayName": "Mastery of Monuments",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "monumentalistMastery",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9529,7 +9529,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -9537,10 +9537,10 @@
       "id": "offensiveSupply",
       "type": "culture-traits",
       "displayName": "Rapid Resupply",
-      "icon": "strategy",
+      "icon": "speed",
       "fields": {
         "Name": "offensiveSupply",
-        "Icon": "strategy"
+        "Icon": "speed"
       },
       "modifiers": [
         {
@@ -9553,7 +9553,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "speed"
         }
       ]
     },
@@ -9718,10 +9718,10 @@
       "id": "defensiveFortification",
       "type": "culture-traits",
       "displayName": "Fortified Defence",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "defensiveFortification",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9735,7 +9735,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -9840,10 +9840,10 @@
       "id": "defensiveMilitaryIndustry",
       "type": "culture-traits",
       "displayName": "Military Fortification State",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "defensiveMilitaryIndustry",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -9857,7 +9857,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -10142,10 +10142,10 @@
       "id": "plutocraticMaterialism",
       "type": "culture-traits",
       "displayName": "Material Definition",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "plutocraticMaterialism",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10159,7 +10159,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -10191,10 +10191,10 @@
       "id": "plutocraticInvestment",
       "type": "culture-traits",
       "displayName": "Rapid Reinvestment",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "plutocraticInvestment",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10207,7 +10207,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -10239,10 +10239,10 @@
       "id": "plutocraticSupremacy",
       "type": "culture-traits",
       "displayName": "Plutocratic Domination",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "plutocraticSupremacy",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -10266,7 +10266,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -10274,10 +10274,10 @@
       "id": "innovativeResearch",
       "type": "culture-traits",
       "displayName": "Innovative Research",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "innovativeResearch",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -10290,7 +10290,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -10298,10 +10298,10 @@
       "id": "innovativeFunding",
       "type": "culture-traits",
       "displayName": "Novel Financing",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "innovativeFunding",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10321,7 +10321,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -10329,10 +10329,10 @@
       "id": "innovativeEngineering",
       "type": "culture-traits",
       "displayName": "Research Engineering",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "innovativeEngineering",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10345,7 +10345,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -10832,10 +10832,10 @@
       "id": "spaceTraining",
       "type": "culture-traits",
       "displayName": "Astronautical Training",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "spaceTraining",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10849,7 +10849,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -10882,10 +10882,10 @@
       "id": "spaceLogistics",
       "type": "culture-traits",
       "displayName": "Advanced Spaceport Networks",
-      "icon": "strategy",
+      "icon": "speed",
       "fields": {
         "Name": "spaceLogistics",
-        "Icon": "strategy"
+        "Icon": "speed"
       },
       "modifiers": [
         {
@@ -10898,7 +10898,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "speed"
         }
       ]
     },
@@ -10906,10 +10906,10 @@
       "id": "spaceRecruitment",
       "type": "culture-traits",
       "displayName": "Astronaut Recruitment Drive",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "spaceRecruitment",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -10923,7 +10923,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -11017,10 +11017,10 @@
       "id": "airDesigning",
       "type": "culture-traits",
       "displayName": "Superior Airframes",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "airDesigning",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11034,7 +11034,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -11166,10 +11166,10 @@
       "id": "airMastery",
       "type": "culture-traits",
       "displayName": "Conquest of the Skies",
-      "icon": "strategy",
+      "icon": "speed",
       "fields": {
         "Name": "airMastery",
-        "Icon": "strategy"
+        "Icon": "speed"
       },
       "modifiers": [
         {
@@ -11188,7 +11188,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "speed"
         }
       ]
     },
@@ -11269,10 +11269,10 @@
       "id": "navyRecruitment",
       "type": "culture-traits",
       "displayName": "Sailor Recruitment",
-      "icon": "strategy",
+      "icon": "industrial",
       "fields": {
         "Name": "navyRecruitment",
-        "Icon": "strategy"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11285,7 +11285,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "strategy"
+          "id": "industrial"
         }
       ]
     },
@@ -11606,10 +11606,10 @@
       "id": "industryConstruction",
       "type": "culture-traits",
       "displayName": "Construction Focus",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "industryConstruction",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11622,7 +11622,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -11661,10 +11661,10 @@
       "id": "industryMechanization",
       "type": "culture-traits",
       "displayName": "Mechanized Economy",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "industryMechanization",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11677,7 +11677,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -11685,10 +11685,10 @@
       "id": "industryWorking",
       "type": "culture-traits",
       "displayName": "Industry of Labor",
-      "icon": "economic",
+      "icon": "industry",
       "fields": {
         "Name": "industryWorking",
-        "Icon": "economic"
+        "Icon": "industry"
       },
       "modifiers": [
         {
@@ -11701,7 +11701,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industry"
         }
       ]
     },
@@ -11709,10 +11709,10 @@
       "id": "industryMastery",
       "type": "culture-traits",
       "displayName": "Mass Industrialization",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "industryMastery",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11726,7 +11726,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -11734,10 +11734,10 @@
       "id": "thriftyCommerce",
       "type": "culture-traits",
       "displayName": "Commercial Focus",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "thriftyCommerce",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11751,7 +11751,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -11813,10 +11813,10 @@
       "id": "thriftyExploitation",
       "type": "culture-traits",
       "displayName": "Mass Exploitation",
-      "icon": "economic",
+      "icon": "industrial",
       "fields": {
         "Name": "thriftyExploitation",
-        "Icon": "economic"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -11830,7 +11830,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "industrial"
         }
       ]
     },
@@ -11862,10 +11862,10 @@
       "id": "thriftyInnovation",
       "type": "culture-traits",
       "displayName": "Commercial Innovation",
-      "icon": "economic",
+      "icon": "education",
       "fields": {
         "Name": "thriftyInnovation",
-        "Icon": "economic"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -11878,7 +11878,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "economic"
+          "id": "education"
         }
       ]
     },
@@ -12090,10 +12090,10 @@
       "id": "diplomacyEnvoys",
       "type": "culture-traits",
       "displayName": "Charismatic Envoys",
-      "icon": "charisma",
+      "icon": "opinion",
       "fields": {
         "Name": "diplomacyEnvoys",
-        "Icon": "charisma"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -12106,7 +12106,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "opinion"
         }
       ]
     },
@@ -12240,10 +12240,10 @@
       "id": "diplomacyMastery",
       "type": "culture-traits",
       "displayName": "Master of Diplomancy",
-      "icon": "charisma",
+      "icon": "opinion",
       "fields": {
         "Name": "diplomacyMastery",
-        "Icon": "charisma"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -12256,7 +12256,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "opinion"
         }
       ]
     },
@@ -12471,10 +12471,10 @@
       "id": "britishPoliteness",
       "type": "culture-traits",
       "displayName": "British Politeness",
-      "icon": "cultural",
+      "icon": "opinion",
       "fields": {
         "Name": "britishPoliteness",
-        "Icon": "cultural"
+        "Icon": "opinion"
       },
       "modifiers": [
         {
@@ -12487,7 +12487,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "opinion"
         }
       ]
     },
@@ -12526,10 +12526,10 @@
       "id": "britishIndustrialism",
       "type": "culture-traits",
       "displayName": "British Industrialism",
-      "icon": "cultural",
+      "icon": "industrial",
       "fields": {
         "Name": "britishIndustrialism",
-        "Icon": "cultural"
+        "Icon": "industrial"
       },
       "modifiers": [
         {
@@ -12542,7 +12542,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "industrial"
         }
       ]
     },
@@ -12574,10 +12574,10 @@
       "id": "britishInnovation",
       "type": "culture-traits",
       "displayName": "British Innovation",
-      "icon": "cultural",
+      "icon": "education",
       "fields": {
         "Name": "britishInnovation",
-        "Icon": "cultural"
+        "Icon": "education"
       },
       "modifiers": [
         {
@@ -12590,7 +12590,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "education"
         }
       ]
     },
@@ -12598,10 +12598,10 @@
       "id": "britishAdministration",
       "type": "culture-traits",
       "displayName": "British Administration",
-      "icon": "cultural",
+      "icon": "edict",
       "fields": {
         "Name": "britishAdministration",
-        "Icon": "cultural"
+        "Icon": "edict"
       },
       "modifiers": [
         {
@@ -12614,7 +12614,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "edict"
         }
       ]
     },
@@ -25524,11 +25524,13 @@
       "id": "unitSpeedMult",
       "type": "modifiers",
       "displayName": "Military Speed",
+      "icon": "speed",
       "fields": {
         "Name": "unitSpeedMult",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "speed",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 1
@@ -25539,7 +25541,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "speed"
+        }
+      ]
     },
     "modifiers:unitOccupationSpeedMult": {
       "id": "unitOccupationSpeedMult",
@@ -25661,6 +25668,7 @@
       "id": "projectBuildSpeedMult",
       "type": "modifiers",
       "displayName": "Project Build Speed",
+      "icon": "industrial",
       "fields": {
         "Name": "projectBuildSpeedMult",
         "Positivity": "positive",
@@ -25668,6 +25676,7 @@
         "Properties": {
           "project": false
         },
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0.25
@@ -25678,12 +25687,18 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:projectBuildCostMult": {
       "id": "projectBuildCostMult",
       "type": "modifiers",
       "displayName": "Project Cost",
+      "icon": "industrial",
       "fields": {
         "Name": "projectBuildCostMult",
         "Positivity": "negative",
@@ -25691,6 +25706,7 @@
         "Properties": {
           "project": false
         },
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": -10
@@ -25701,7 +25717,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:budgetModifier": {
       "id": "budgetModifier",
@@ -25827,6 +25848,7 @@
       "id": "projectUpgradeLimit",
       "type": "modifiers",
       "displayName": "Project Upgrade Limit",
+      "icon": "industrial",
       "fields": {
         "Name": "projectUpgradeLimit",
         "Positivity": "positive",
@@ -25834,6 +25856,7 @@
         "Properties": {
           "project": false
         },
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -25844,7 +25867,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:unitStatAdd": {
       "id": "unitStatAdd",
@@ -26571,6 +26599,7 @@
       "id": "projectUpkeepMult",
       "type": "modifiers",
       "displayName": "Project Upkeep",
+      "icon": "industrial",
       "fields": {
         "Name": "projectUpkeepMult",
         "Positivity": "negative",
@@ -26578,6 +26607,7 @@
         "Properties": {
           "project": false
         },
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "1": 0.25,
@@ -26589,17 +26619,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:educationModifier": {
       "id": "educationModifier",
       "type": "modifiers",
       "displayName": "Education",
+      "icon": "education",
       "fields": {
         "Name": "educationModifier",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "education",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 5
@@ -26610,17 +26647,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "education"
+        }
+      ]
     },
     "modifiers:educationEfficiency": {
       "id": "educationEfficiency",
       "type": "modifiers",
       "displayName": "Education",
+      "icon": "education",
       "fields": {
         "Name": "educationEfficiency",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "education",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 2
@@ -26631,7 +26675,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "education"
+        }
+      ]
     },
     "modifiers:characterLevelUpOptions": {
       "id": "characterLevelUpOptions",
@@ -26697,6 +26746,7 @@
       "id": "baseEconomicOutputMult",
       "type": "modifiers",
       "displayName": "Tax Base",
+      "icon": "industry",
       "fields": {
         "Name": "baseEconomicOutputMult",
         "Positivity": "positive",
@@ -26704,6 +26754,7 @@
         "Properties": {
           "industry": false
         },
+        "Icon": "industry",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 10
@@ -26714,7 +26765,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industry"
+        }
+      ]
     },
     "modifiers:maxPrivilegesAdd": {
       "id": "maxPrivilegesAdd",
@@ -26780,11 +26836,13 @@
       "id": "opinionModifier",
       "type": "modifiers",
       "displayName": "Opinion",
+      "icon": "opinion",
       "fields": {
         "Name": "opinionModifier",
         "Positivity": "neutral",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -26795,7 +26853,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "opinion"
+        }
+      ]
     },
     "modifiers:unitVulnAdd": {
       "id": "unitVulnAdd",
@@ -26861,6 +26924,7 @@
       "id": "unitAttackAdd",
       "type": "modifiers",
       "displayName": "Military Aggression",
+      "icon": "accuracy",
       "fields": {
         "Name": "unitAttackAdd",
         "Positivity": "positive",
@@ -26869,6 +26933,7 @@
           "damageType": true,
           "augmentorDamageType": false
         },
+        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -26879,7 +26944,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "accuracy"
+        }
+      ]
     },
     "modifiers:moraleRecoveryMult": {
       "id": "moraleRecoveryMult",
@@ -27419,11 +27489,13 @@
       "id": "exportTariff",
       "type": "modifiers",
       "displayName": "Trade",
+      "icon": "trade",
       "fields": {
         "Name": "exportTariff",
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27434,17 +27506,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "trade"
+        }
+      ]
     },
     "modifiers:importTariff": {
       "id": "importTariff",
       "type": "modifiers",
       "displayName": "Trade",
+      "icon": "trade",
       "fields": {
         "Name": "importTariff",
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27455,7 +27534,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "trade"
+        }
+      ]
     },
     "modifiers:recruitablePopulationAdd": {
       "id": "recruitablePopulationAdd",
@@ -27601,11 +27685,13 @@
       "id": "joinOrgCost",
       "type": "modifiers",
       "displayName": "Join Org Cost",
+      "icon": "diplomacy",
       "fields": {
         "Name": "joinOrgCost",
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "diplomacy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27616,7 +27702,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacy"
+        }
+      ]
     },
     "modifiers:debtEffectMult": {
       "id": "debtEffectMult",
@@ -27736,6 +27827,7 @@
       "id": "edictCostMult",
       "type": "modifiers",
       "displayName": "Edict Cost",
+      "icon": "edict",
       "fields": {
         "Name": "edictCostMult",
         "Positivity": "negative",
@@ -27743,6 +27835,7 @@
         "Properties": {
           "edict": false
         },
+        "Icon": "edict",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27753,12 +27846,18 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "edict"
+        }
+      ]
     },
     "modifiers:edictBenefitMult": {
       "id": "edictBenefitMult",
       "type": "modifiers",
       "displayName": "Edict Benefit",
+      "icon": "edict",
       "fields": {
         "Name": "edictBenefitMult",
         "Positivity": "positive",
@@ -27766,6 +27865,7 @@
         "Properties": {
           "edict": false
         },
+        "Icon": "edict",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27776,7 +27876,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "edict"
+        }
+      ]
     },
     "modifiers:budgetModifierPopulation": {
       "id": "budgetModifierPopulation",
@@ -27838,11 +27943,13 @@
       "id": "influenceGainEffect",
       "type": "modifiers",
       "displayName": "Influence Region",
+      "icon": "influence",
       "fields": {
         "Name": "influenceGainEffect",
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "influence",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -27853,7 +27960,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influence"
+        }
+      ]
     },
     "modifiers:manpowerGainEffect": {
       "id": "manpowerGainEffect",
@@ -28012,11 +28124,13 @@
       "id": "rootOutInfluenceEffect",
       "type": "modifiers",
       "displayName": "Combat Foreign Influence",
+      "icon": "influence",
       "fields": {
         "Name": "rootOutInfluenceEffect",
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "influence",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28027,7 +28141,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influence"
+        }
+      ]
     },
     "modifiers:controllingFactionLoyalty": {
       "id": "controllingFactionLoyalty",
@@ -28366,11 +28485,13 @@
       "id": "tradeBarriersAdd",
       "type": "modifiers",
       "displayName": "Trade",
+      "icon": "trade",
       "fields": {
         "Name": "tradeBarriersAdd",
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28381,7 +28502,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "trade"
+        }
+      ]
     },
     "modifiers:politicalPowerAdd": {
       "id": "politicalPowerAdd",
@@ -28472,11 +28598,13 @@
       "id": "deployRangeModifier",
       "type": "modifiers",
       "displayName": "Deploy Range",
+      "icon": "accuracy",
       "fields": {
         "Name": "deployRangeModifier",
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28487,17 +28615,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "accuracy"
+        }
+      ]
     },
     "modifiers:deployRangeAdd": {
       "id": "deployRangeAdd",
       "type": "modifiers",
       "displayName": "Deploy Range",
+      "icon": "accuracy",
       "fields": {
         "Name": "deployRangeAdd",
         "Positivity": "neutral",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28508,17 +28643,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "accuracy"
+        }
+      ]
     },
     "modifiers:deployRangeMult": {
       "id": "deployRangeMult",
       "type": "modifiers",
       "displayName": "Deploy Range",
+      "icon": "accuracy",
       "fields": {
         "Name": "deployRangeMult",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28529,17 +28671,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "accuracy"
+        }
+      ]
     },
     "modifiers:deployRangeInterplanetary": {
       "id": "deployRangeInterplanetary",
       "type": "modifiers",
       "displayName": "Deploy Range",
+      "icon": "accuracy",
       "fields": {
         "Name": "deployRangeInterplanetary",
         "Positivity": "boolean",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "accuracy",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28550,7 +28699,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "accuracy"
+        }
+      ]
     },
     "modifiers:regionRangedDefense": {
       "id": "regionRangedDefense",
@@ -28691,11 +28845,13 @@
       "id": "projectEfficiency",
       "type": "modifiers",
       "displayName": "Project Efficiency",
+      "icon": "industrial",
       "fields": {
         "Name": "projectEfficiency",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 1
@@ -28706,7 +28862,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:factionVariant": {
       "id": "factionVariant",
@@ -28822,6 +28983,7 @@
       "id": "surveyEfficiency",
       "type": "modifiers",
       "displayName": "Survey Efficiency",
+      "icon": "survey",
       "fields": {
         "Name": "surveyEfficiency",
         "Positivity": "positive",
@@ -28829,6 +28991,7 @@
         "Properties": {
           "deposit": false
         },
+        "Icon": "survey",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28839,17 +29002,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "survey"
+        }
+      ]
     },
     "modifiers:surveyCost": {
       "id": "surveyCost",
       "type": "modifiers",
       "displayName": "Survey Cost",
+      "icon": "survey",
       "fields": {
         "Name": "surveyCost",
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "survey",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -28860,7 +29030,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "survey"
+        }
+      ]
     },
     "modifiers:taxRateAdd": {
       "id": "taxRateAdd",
@@ -29148,6 +29323,7 @@
       "id": "diploFlagAdd",
       "type": "modifiers",
       "displayName": "Opinion",
+      "icon": "opinion",
       "fields": {
         "Name": "diploFlagAdd",
         "Positivity": "boolean",
@@ -29156,6 +29332,7 @@
           "organizationType": true,
           "diploFlag": true
         },
+        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29166,7 +29343,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "opinion"
+        }
+      ]
     },
     "modifiers:organizationResearchCollaboration": {
       "id": "organizationResearchCollaboration",
@@ -29232,11 +29414,13 @@
       "id": "organizationTradeBarrierModifier",
       "type": "modifiers",
       "displayName": "Trade",
+      "icon": "trade",
       "fields": {
         "Name": "organizationTradeBarrierModifier",
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "trade",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29247,17 +29431,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "trade"
+        }
+      ]
     },
     "modifiers:leaderJoinsMemberDefensive": {
       "id": "leaderJoinsMemberDefensive",
       "type": "modifiers",
       "displayName": "Opinion",
+      "icon": "opinion",
       "fields": {
         "Name": "leaderJoinsMemberDefensive",
         "Positivity": "boolean",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29268,7 +29459,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "opinion"
+        }
+      ]
     },
     "modifiers:stabilityGainFromFactions": {
       "id": "stabilityGainFromFactions",
@@ -29409,11 +29605,13 @@
       "id": "aiInterventionChance",
       "type": "modifiers",
       "displayName": "AI Modifier: Intervention Chance: {val}",
+      "icon": "opinion",
       "fields": {
         "Name": "aiInterventionChance",
         "Positivity": "neutral",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "opinion",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29424,7 +29622,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "opinion"
+        }
+      ]
     },
     "modifiers:cultureTraitMaxAdd": {
       "id": "cultureTraitMaxAdd",
@@ -29539,6 +29742,7 @@
       "id": "projectCountCostMult",
       "type": "modifiers",
       "displayName": "Project Count Cost Mult",
+      "icon": "industrial",
       "fields": {
         "Name": "projectCountCostMult",
         "Positivity": "negative",
@@ -29546,6 +29750,7 @@
         "Properties": {
           "project": false
         },
+        "Icon": "industrial",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29556,7 +29761,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industrial"
+        }
+      ]
     },
     "modifiers:developmentGrowthAdd": {
       "id": "developmentGrowthAdd",
@@ -29645,6 +29855,7 @@
       "id": "unitTransportSpeedAdd",
       "type": "modifiers",
       "displayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
+      "icon": "speed",
       "fields": {
         "Name": "unitTransportSpeedAdd",
         "Positivity": "positive",
@@ -29652,6 +29863,7 @@
         "Properties": {
           "unitDomain": true
         },
+        "Icon": "speed",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29662,7 +29874,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "speed"
+        }
+      ]
     },
     "modifiers:canColonizeOverride": {
       "id": "canColonizeOverride",
@@ -29881,11 +30098,13 @@
       "id": "culturePowerAdd",
       "type": "modifiers",
       "displayName": "Culture Power Add",
+      "icon": "culturePower",
       "fields": {
         "Name": "culturePowerAdd",
         "Positivity": "positive",
         "IsPercent": "Numeric",
         "Properties": {},
+        "Icon": "culturePower",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29896,17 +30115,24 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "culturePower"
+        }
+      ]
     },
     "modifiers:culturePowerMult": {
       "id": "culturePowerMult",
       "type": "modifiers",
       "displayName": "Culture Power Mult",
+      "icon": "culturePower",
       "fields": {
         "Name": "culturePowerMult",
         "Positivity": "positive",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "culturePower",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -29917,7 +30143,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "culturePower"
+        }
+      ]
     },
     "modifiers:budgetModifierCostMult": {
       "id": "budgetModifierCostMult",

@@ -117,11 +117,13 @@
     "id": "aiInterventionChance",
     "type": "modifiers",
     "displayName": "AI Modifier: Intervention Chance: {val}",
+    "icon": "opinion",
     "fields": {
       "Name": "aiInterventionChance",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -132,7 +134,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "opinion"
+      }
+    ]
   },
   {
     "id": "alignmentAdd",
@@ -531,11 +538,13 @@
     "id": "rootOutInfluenceEffect",
     "type": "modifiers",
     "displayName": "Combat Foreign Influence",
+    "icon": "influence",
     "fields": {
       "Name": "rootOutInfluenceEffect",
       "Positivity": "positive",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "influence",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -546,7 +555,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "influence"
+      }
+    ]
   },
   {
     "id": "controllingFactionLoyalty",
@@ -714,11 +728,13 @@
     "id": "culturePowerAdd",
     "type": "modifiers",
     "displayName": "Culture Power Add",
+    "icon": "culturePower",
     "fields": {
       "Name": "culturePowerAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "culturePower",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -729,17 +745,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "culturePower"
+      }
+    ]
   },
   {
     "id": "culturePowerMult",
     "type": "modifiers",
     "displayName": "Culture Power Mult",
+    "icon": "culturePower",
     "fields": {
       "Name": "culturePowerMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "culturePower",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -750,7 +773,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "culturePower"
+      }
+    ]
   },
   {
     "id": "resourceModifier",
@@ -984,11 +1012,13 @@
     "id": "deployRangeModifier",
     "type": "modifiers",
     "displayName": "Deploy Range",
+    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeModifier",
       "Positivity": "positive",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -999,17 +1029,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
   },
   {
     "id": "deployRangeAdd",
     "type": "modifiers",
     "displayName": "Deploy Range",
+    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeAdd",
       "Positivity": "neutral",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1020,17 +1057,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
   },
   {
     "id": "deployRangeMult",
     "type": "modifiers",
     "displayName": "Deploy Range",
+    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1041,17 +1085,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
   },
   {
     "id": "deployRangeInterplanetary",
     "type": "modifiers",
     "displayName": "Deploy Range",
+    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeInterplanetary",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1062,7 +1113,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
   },
   {
     "id": "developmentMult",
@@ -1240,6 +1296,7 @@
     "id": "edictBenefitMult",
     "type": "modifiers",
     "displayName": "Edict Benefit",
+    "icon": "edict",
     "fields": {
       "Name": "edictBenefitMult",
       "Positivity": "positive",
@@ -1247,6 +1304,7 @@
       "Properties": {
         "edict": false
       },
+      "Icon": "edict",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1257,12 +1315,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "edict"
+      }
+    ]
   },
   {
     "id": "edictCostMult",
     "type": "modifiers",
     "displayName": "Edict Cost",
+    "icon": "edict",
     "fields": {
       "Name": "edictCostMult",
       "Positivity": "negative",
@@ -1270,6 +1334,7 @@
       "Properties": {
         "edict": false
       },
+      "Icon": "edict",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1280,17 +1345,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "edict"
+      }
+    ]
   },
   {
     "id": "educationModifier",
     "type": "modifiers",
     "displayName": "Education",
+    "icon": "education",
     "fields": {
       "Name": "educationModifier",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "education",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 5
@@ -1301,17 +1373,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "education"
+      }
+    ]
   },
   {
     "id": "educationEfficiency",
     "type": "modifiers",
     "displayName": "Education",
+    "icon": "education",
     "fields": {
       "Name": "educationEfficiency",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "education",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 2
@@ -1322,7 +1401,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "education"
+      }
+    ]
   },
   {
     "id": "siphonMoneyTooltipModifier",
@@ -1653,11 +1737,13 @@
     "id": "influenceGainEffect",
     "type": "modifiers",
     "displayName": "Influence Region",
+    "icon": "influence",
     "fields": {
       "Name": "influenceGainEffect",
       "Positivity": "positive",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "influence",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1668,7 +1754,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "influence"
+      }
+    ]
   },
   {
     "id": "integrationCostMult",
@@ -1725,11 +1816,13 @@
     "id": "joinOrgCost",
     "type": "modifiers",
     "displayName": "Join Org Cost",
+    "icon": "diplomacy",
     "fields": {
       "Name": "joinOrgCost",
       "Positivity": "negative",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "diplomacy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -1740,7 +1833,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
   },
   {
     "id": "leaderLifeSpanAdd",
@@ -2110,6 +2208,7 @@
     "id": "unitAttackAdd",
     "type": "modifiers",
     "displayName": "Military Aggression",
+    "icon": "accuracy",
     "fields": {
       "Name": "unitAttackAdd",
       "Positivity": "positive",
@@ -2118,6 +2217,7 @@
         "damageType": true,
         "augmentorDamageType": false
       },
+      "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -2128,7 +2228,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
   },
   {
     "id": "unitMoraleAdd",
@@ -2190,11 +2295,13 @@
     "id": "unitSpeedMult",
     "type": "modifiers",
     "displayName": "Military Speed",
+    "icon": "speed",
     "fields": {
       "Name": "unitSpeedMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "speed",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 1
@@ -2205,7 +2312,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "speed"
+      }
+    ]
   },
   {
     "id": "moraleRecoveryMult",
@@ -2239,11 +2351,13 @@
     "id": "opinionModifier",
     "type": "modifiers",
     "displayName": "Opinion",
+    "icon": "opinion",
     "fields": {
       "Name": "opinionModifier",
       "Positivity": "neutral",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -2254,12 +2368,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "opinion"
+      }
+    ]
   },
   {
     "id": "diploFlagAdd",
     "type": "modifiers",
     "displayName": "Opinion",
+    "icon": "opinion",
     "fields": {
       "Name": "diploFlagAdd",
       "Positivity": "boolean",
@@ -2268,6 +2388,7 @@
         "organizationType": true,
         "diploFlag": true
       },
+      "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -2278,17 +2399,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "opinion"
+      }
+    ]
   },
   {
     "id": "leaderJoinsMemberDefensive",
     "type": "modifiers",
     "displayName": "Opinion",
+    "icon": "opinion",
     "fields": {
       "Name": "leaderJoinsMemberDefensive",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
       "Properties": {},
+      "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -2299,7 +2427,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "opinion"
+      }
+    ]
   },
   {
     "id": "planetMagneticFieldModifier",
@@ -2984,6 +3117,7 @@
     "id": "projectBuildSpeedMult",
     "type": "modifiers",
     "displayName": "Project Build Speed",
+    "icon": "industrial",
     "fields": {
       "Name": "projectBuildSpeedMult",
       "Positivity": "positive",
@@ -2991,6 +3125,7 @@
       "Properties": {
         "project": false
       },
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0.25
@@ -3001,12 +3136,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "projectBuildCostMult",
     "type": "modifiers",
     "displayName": "Project Cost",
+    "icon": "industrial",
     "fields": {
       "Name": "projectBuildCostMult",
       "Positivity": "negative",
@@ -3014,6 +3155,7 @@
       "Properties": {
         "project": false
       },
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "base": -10
@@ -3024,12 +3166,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "projectCountCostMult",
     "type": "modifiers",
     "displayName": "Project Count Cost Mult",
+    "icon": "industrial",
     "fields": {
       "Name": "projectCountCostMult",
       "Positivity": "negative",
@@ -3037,6 +3185,7 @@
       "Properties": {
         "project": false
       },
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -3047,17 +3196,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "projectEfficiency",
     "type": "modifiers",
     "displayName": "Project Efficiency",
+    "icon": "industrial",
     "fields": {
       "Name": "projectEfficiency",
       "Positivity": "positive",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 1
@@ -3068,12 +3224,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "projectUpgradeLimit",
     "type": "modifiers",
     "displayName": "Project Upgrade Limit",
+    "icon": "industrial",
     "fields": {
       "Name": "projectUpgradeLimit",
       "Positivity": "positive",
@@ -3081,6 +3243,7 @@
       "Properties": {
         "project": false
       },
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -3091,12 +3254,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "projectUpkeepMult",
     "type": "modifiers",
     "displayName": "Project Upkeep",
+    "icon": "industrial",
     "fields": {
       "Name": "projectUpkeepMult",
       "Positivity": "negative",
@@ -3104,6 +3273,7 @@
       "Properties": {
         "project": false
       },
+      "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
         "1": 0.25,
@@ -3115,7 +3285,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "rangedAttackMult",
@@ -3687,6 +3862,7 @@
     "id": "unitTransportSpeedAdd",
     "type": "modifiers",
     "displayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
+    "icon": "speed",
     "fields": {
       "Name": "unitTransportSpeedAdd",
       "Positivity": "positive",
@@ -3694,6 +3870,7 @@
       "Properties": {
         "unitDomain": true
       },
+      "Icon": "speed",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -3704,7 +3881,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "speed"
+      }
+    ]
   },
   {
     "id": "stabilityOffset",
@@ -3908,11 +4090,13 @@
     "id": "surveyCost",
     "type": "modifiers",
     "displayName": "Survey Cost",
+    "icon": "survey",
     "fields": {
       "Name": "surveyCost",
       "Positivity": "negative",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "survey",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -3923,12 +4107,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "survey"
+      }
+    ]
   },
   {
     "id": "surveyEfficiency",
     "type": "modifiers",
     "displayName": "Survey Efficiency",
+    "icon": "survey",
     "fields": {
       "Name": "surveyEfficiency",
       "Positivity": "positive",
@@ -3936,6 +4126,7 @@
       "Properties": {
         "deposit": false
       },
+      "Icon": "survey",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -3946,12 +4137,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "survey"
+      }
+    ]
   },
   {
     "id": "baseEconomicOutputMult",
     "type": "modifiers",
     "displayName": "Tax Base",
+    "icon": "industry",
     "fields": {
       "Name": "baseEconomicOutputMult",
       "Positivity": "positive",
@@ -3959,6 +4156,7 @@
       "Properties": {
         "industry": false
       },
+      "Icon": "industry",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 10
@@ -3969,7 +4167,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "industry"
+      }
+    ]
   },
   {
     "id": "tooltipModifier",
@@ -3998,11 +4201,13 @@
     "id": "exportTariff",
     "type": "modifiers",
     "displayName": "Trade",
+    "icon": "trade",
     "fields": {
       "Name": "exportTariff",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -4013,17 +4218,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
   },
   {
     "id": "importTariff",
     "type": "modifiers",
     "displayName": "Trade",
+    "icon": "trade",
     "fields": {
       "Name": "importTariff",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -4034,17 +4246,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
   },
   {
     "id": "tradeBarriersAdd",
     "type": "modifiers",
     "displayName": "Trade",
+    "icon": "trade",
     "fields": {
       "Name": "tradeBarriersAdd",
       "Positivity": "negative",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -4055,17 +4274,24 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
   },
   {
     "id": "organizationTradeBarrierModifier",
     "type": "modifiers",
     "displayName": "Trade",
+    "icon": "trade",
     "fields": {
       "Name": "organizationTradeBarrierModifier",
       "Positivity": "negative",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -4076,7 +4302,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
   },
   {
     "id": "unitCommandLimitAdd",

@@ -34,7 +34,9 @@ const ICON_ALIASES: Record<string, string> = {
   metaverseServer: 'holonet', northernSpaceport: 'spaceport2', redSquare: 'monument',
   bioweaponSituation: 'unleashBioweaponSituation', marsSituation: 'planet',
   mechanistCoalescence_migrantSituation: 'mechanistCoalescence',
-  attack: 'smallArms0', entrenchment: 'fortifications', recon: 'activeRecon', truck: 'logistics',
+  attack: 'smallArms0', entrenchment: 'fortifications', truck: 'logistics',
+  culturePower: 'cultureHex', edict: 'edictGeneric', industrial: 'constructHex',
+  industry: 'machineParts', speed: 'moveSpeed',
 };
 
 function resolveIconSource(icon: string): string {
@@ -355,10 +357,12 @@ function indexPngFiles(root: string): Map<string, string> {
 function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[]) {
   const sourceFiles = indexIconSources(gameRoot);
   let removed = 0;
+  const missing = new Set<string>();
   for (const entry of entries) {
     if (!entry.icon) continue;
     const sourceName = resolveIconSource(entry.icon);
     if (!sourceFiles.has(sourceName.toLowerCase())) {
+      missing.add(sourceName);
       entry.icon = undefined;
       delete entry.fields.Icon;
       entry.references = entry.references.filter((reference) => reference.type !== 'icon');
@@ -366,6 +370,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
     }
   }
   console.log(`Icon references: ${removed} unavailable references removed`);
+  if (missing.size > 0) console.log(`  Missing: ${[...missing].sort().join(', ')}`);
 }
 
 function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
@@ -384,7 +389,12 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const missing: string[] = [];
   // Bundle every game icon, mirroring the source folder layout.
   const bundleRelPath = (path: string) =>
-    (path.startsWith(sourceRoot) ? relative(sourceRoot, path) : basename(path)).split(sep).join('/');
+    (path.startsWith(sourceRoot)
+      ? relative(sourceRoot, path)
+      : path.startsWith(EXTRA_ICONS_DIR)
+        ? relative(EXTRA_ICONS_DIR, path)
+        : basename(path)
+    ).split(sep).join('/');
   const walk = (dir: string) => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       const path = join(dir, entry.name);

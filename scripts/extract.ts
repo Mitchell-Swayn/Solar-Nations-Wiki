@@ -6,11 +6,21 @@ import { DATA_RAW, PROJECT_ROOT, getGameRoot, getPaksPath } from './paths.ts';
 const LEGACY_ROOT = join(DATA_RAW, 'legacy-all');
 const UNPACKED_ROOT = join(DATA_RAW, 'unpacked');
 const PARSE_SCRIPT = join(PROJECT_ROOT, 'tools/parse_legacy.py');
+const ICON_SCRIPT = join(PROJECT_ROOT, 'tools/extract_packed_icons.py');
 const RETOC = join(PROJECT_ROOT, 'tools/retoc_cli-aarch64-apple-darwin/retoc');
 
 function runParseLegacy() {
   console.log('Parsing legacy UE exports into Defines JSON...');
   execSync(`python3 "${PARSE_SCRIPT}"`, {
+    stdio: 'inherit',
+    cwd: PROJECT_ROOT,
+  });
+}
+
+function extractPackedIcons() {
+  if (!existsSync(UNPACKED_ROOT)) return;
+  console.log('Decoding packed icons missing from Saved/Icons...');
+  execSync(`python3 "${ICON_SCRIPT}"`, {
     stdio: 'inherit',
     cwd: PROJECT_ROOT,
   });
@@ -91,6 +101,7 @@ function main() {
 
   ensureUnpacked(gameRoot);
   ensureLegacy(gameRoot);
+  extractPackedIcons();
   runParseLegacy();
 
   console.log('\nExtraction complete. Run npm run normalize to update data/curated/.');
