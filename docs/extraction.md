@@ -27,13 +27,14 @@ This runs:
 3. **`tools/parse_legacy.py`** — parses binary exports into `data/raw/Defines/*.json` and `data/raw/Localization/en.json`
 4. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
 
-Current automated output: **2,590 define records**, including 41 deposits, and **4,000+ localization keys** (vs. 231 tutorialMod samples). Normalization adds tutorial modifier and mission-component definitions for **2,804 wiki entries** total.
+Current automated output: **1,091 verified define rows**, including 41 deposits, and **4,000+ localization keys**. Normalization adds tutorial modifier and mission-component definitions for **1,305 wiki entries** total. Earlier versions reported larger counts because schema fields and cross-table references were incorrectly treated as rows.
 
 ### Limitations of automated extraction
 
 - **Modifier keys** on reform options and some complex types use indexed keys (`modifier_0`, `modifier_1`) until a `.usmap` mappings file is available
 - **Numeric fields** (tech cost, prerequisites, coordinates) are not fully decoded without UE property mappings
 - **Deposits** currently include row names and icons, but their structured modifiers, colors, and special flags still require property mappings
+- **Row identity is validated**, but complete structured values still require a compatible `.usmap`; the parser intentionally omits fields it cannot identify reliably
 
 For pixel-perfect parity with in-game JSON, use FModel + `.usmap` (see below).
 

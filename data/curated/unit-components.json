@@ -108,42 +108,6 @@
     ]
   },
   {
-    "id": "ammunition",
-    "type": "unit-components",
-    "displayName": "Ammunition",
-    "icon": "ammunition",
-    "fields": {
-      "Name": "ammunition",
-      "Icon": "ammunition"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ammunition"
-      }
-    ]
-  },
-  {
-    "id": "antimatter",
-    "type": "unit-components",
-    "displayName": "Antimatter",
-    "icon": "antimatter",
-    "fields": {
-      "Name": "antimatter",
-      "Icon": "antimatter"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "antimatter"
-      }
-    ]
-  },
-  {
     "id": "apc0",
     "type": "unit-components",
     "displayName": "Apc0",
@@ -738,24 +702,6 @@
     ]
   },
   {
-    "id": "biohazard",
-    "type": "unit-components",
-    "displayName": "Biohazard",
-    "icon": "biohazard",
-    "fields": {
-      "Name": "biohazard",
-      "Icon": "biohazard"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "biohazard"
-      }
-    ]
-  },
-  {
     "id": "blitz",
     "type": "unit-components",
     "displayName": "Blitz",
@@ -860,60 +806,6 @@
       {
         "type": "icon",
         "id": "colossalCommandCenter"
-      }
-    ]
-  },
-  {
-    "id": "communism",
-    "type": "unit-components",
-    "displayName": "Communism",
-    "icon": "communism",
-    "fields": {
-      "Name": "communism",
-      "Icon": "communism"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "communism"
-      }
-    ]
-  },
-  {
-    "id": "computers",
-    "type": "unit-components",
-    "displayName": "Computers",
-    "icon": "computers",
-    "fields": {
-      "Name": "computers",
-      "Icon": "computers"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "computers"
-      }
-    ]
-  },
-  {
-    "id": "conservative",
-    "type": "unit-components",
-    "displayName": "Conservative",
-    "icon": "conservative",
-    "fields": {
-      "Name": "conservative",
-      "Icon": "conservative"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "conservative"
       }
     ]
   },
@@ -1040,24 +932,6 @@
       {
         "type": "icon",
         "id": "dropPod"
-      }
-    ]
-  },
-  {
-    "id": "electronics",
-    "type": "unit-components",
-    "displayName": "Electronics",
-    "icon": "electronics",
-    "fields": {
-      "Name": "electronics",
-      "Icon": "electronics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "electronics"
       }
     ]
   },
@@ -1404,24 +1278,6 @@
     ]
   },
   {
-    "id": "experience",
-    "type": "unit-components",
-    "displayName": "Experience",
-    "icon": "experience",
-    "fields": {
-      "Name": "experience",
-      "Icon": "experience"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "experience"
-      }
-    ]
-  },
-  {
     "id": "extraFuel",
     "type": "unit-components",
     "displayName": "Extra Fuel",
@@ -1440,96 +1296,6 @@
     ]
   },
   {
-    "id": "fXQ2",
-    "type": "unit-components",
-    "displayName": "F XQ2",
-    "icon": "fXQ2",
-    "fields": {
-      "Name": "fXQ2",
-      "Icon": "fXQ2"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "fXQ2"
-      }
-    ]
-  },
-  {
-    "id": "f0d",
-    "type": "unit-components",
-    "displayName": "F0d",
-    "icon": "f0d",
-    "fields": {
-      "Name": "f0d",
-      "Icon": "f0d"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "f0d"
-      }
-    ]
-  },
-  {
-    "id": "f3o",
-    "type": "unit-components",
-    "displayName": "F3o",
-    "icon": "f3o",
-    "fields": {
-      "Name": "f3o",
-      "Icon": "f3o"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "f3o"
-      }
-    ]
-  },
-  {
-    "id": "f8w",
-    "type": "unit-components",
-    "displayName": "F8w",
-    "icon": "f8w",
-    "fields": {
-      "Name": "f8w",
-      "Icon": "f8w"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "f8w"
-      }
-    ]
-  },
-  {
-    "id": "fascism",
-    "type": "unit-components",
-    "displayName": "Fascism",
-    "icon": "fascism",
-    "fields": {
-      "Name": "fascism",
-      "Icon": "fascism"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "fascism"
-      }
-    ]
-  },
-  {
     "id": "flyingFortress",
     "type": "unit-components",
     "displayName": "Flying Fortress",
@@ -1544,42 +1310,6 @@
       {
         "type": "icon",
         "id": "flyingFortress"
-      }
-    ]
-  },
-  {
-    "id": "geneticMaterial",
-    "type": "unit-components",
-    "displayName": "Genetic Material",
-    "icon": "geneticMaterial",
-    "fields": {
-      "Name": "geneticMaterial",
-      "Icon": "geneticMaterial"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "geneticMaterial"
-      }
-    ]
-  },
-  {
-    "id": "gjr",
-    "type": "unit-components",
-    "displayName": "Gjr",
-    "icon": "gjr",
-    "fields": {
-      "Name": "gjr",
-      "Icon": "gjr"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "gjr"
       }
     ]
   },
@@ -1634,43 +1364,6 @@
       {
         "type": "icon",
         "id": "grayGoo"
-      }
-    ]
-  },
-  {
-    "id": "hGUX",
-    "type": "unit-components",
-    "displayName": "H GUX",
-    "icon": "hGUX",
-    "fields": {
-      "Name": "hGUX",
-      "Icon": "hGUX"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "hGUX"
-      }
-    ]
-  },
-  {
-    "id": "health",
-    "type": "unit-components",
-    "displayName": "Health",
-    "icon": "health",
-    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
       }
     ]
   },
@@ -1743,42 +1436,6 @@
       {
         "type": "icon",
         "id": "irregularInfantryEquipment"
-      }
-    ]
-  },
-  {
-    "id": "k3d",
-    "type": "unit-components",
-    "displayName": "K3d",
-    "icon": "k3d",
-    "fields": {
-      "Name": "k3d",
-      "Icon": "k3d"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "k3d"
-      }
-    ]
-  },
-  {
-    "id": "lG8",
-    "type": "unit-components",
-    "displayName": "L G8",
-    "icon": "lG8",
-    "fields": {
-      "Name": "lG8",
-      "Icon": "lG8"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "lG8"
       }
     ]
   },
@@ -1905,60 +1562,6 @@
       {
         "type": "icon",
         "id": "laserTurret6"
-      }
-    ]
-  },
-  {
-    "id": "leader",
-    "type": "unit-components",
-    "displayName": "Leader",
-    "icon": "leader",
-    "fields": {
-      "Name": "leader",
-      "Icon": "leader"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "leader"
-      }
-    ]
-  },
-  {
-    "id": "liberal",
-    "type": "unit-components",
-    "displayName": "Liberal",
-    "icon": "liberal",
-    "fields": {
-      "Name": "liberal",
-      "Icon": "liberal"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "liberal"
-      }
-    ]
-  },
-  {
-    "id": "logistics",
-    "type": "unit-components",
-    "displayName": "Logistics Capacity",
-    "icon": "logistics",
-    "fields": {
-      "Name": "logistics",
-      "Icon": "logistics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "logistics"
       }
     ]
   },
@@ -2359,42 +1962,6 @@
     ]
   },
   {
-    "id": "neuralNetworks",
-    "type": "unit-components",
-    "displayName": "Neural Networks",
-    "icon": "neuralNetworks",
-    "fields": {
-      "Name": "neuralNetworks",
-      "Icon": "neuralNetworks"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "neuralNetworks"
-      }
-    ]
-  },
-  {
-    "id": "nuclearFuels",
-    "type": "unit-components",
-    "displayName": "Nuclear Fuels",
-    "icon": "nuclearFuels",
-    "fields": {
-      "Name": "nuclearFuels",
-      "Icon": "nuclearFuels"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "nuclearFuels"
-      }
-    ]
-  },
-  {
     "id": "polarizedArmor",
     "type": "unit-components",
     "displayName": "Polarized Armor",
@@ -2409,42 +1976,6 @@
       {
         "type": "icon",
         "id": "polarizedArmor"
-      }
-    ]
-  },
-  {
-    "id": "progressive",
-    "type": "unit-components",
-    "displayName": "Progressive",
-    "icon": "progressive",
-    "fields": {
-      "Name": "progressive",
-      "Icon": "progressive"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "progressive"
-      }
-    ]
-  },
-  {
-    "id": "qKg",
-    "type": "unit-components",
-    "displayName": "Q Kg",
-    "icon": "qKg",
-    "fields": {
-      "Name": "qKg",
-      "Icon": "qKg"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "qKg"
       }
     ]
   },
@@ -3313,24 +2844,6 @@
     ]
   },
   {
-    "id": "threeStar",
-    "type": "unit-components",
-    "displayName": "Three Star",
-    "icon": "threeStar",
-    "fields": {
-      "Name": "threeStar",
-      "Icon": "threeStar"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "threeStar"
-      }
-    ]
-  },
-  {
     "id": "torpedo0",
     "type": "unit-components",
     "displayName": "Torpedo0",
@@ -3435,24 +2948,6 @@
       {
         "type": "icon",
         "id": "torpedo5"
-      }
-    ]
-  },
-  {
-    "id": "traditional",
-    "type": "unit-components",
-    "displayName": "Traditional",
-    "icon": "traditional",
-    "fields": {
-      "Name": "traditional",
-      "Icon": "traditional"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "traditional"
       }
     ]
   },
@@ -3583,42 +3078,6 @@
     ]
   },
   {
-    "id": "uiE3j",
-    "type": "unit-components",
-    "displayName": "Ui E3j",
-    "icon": "uiE3j",
-    "fields": {
-      "Name": "uiE3j",
-      "Icon": "uiE3j"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "uiE3j"
-      }
-    ]
-  },
-  {
-    "id": "wHU",
-    "type": "unit-components",
-    "displayName": "W HU",
-    "icon": "wHU",
-    "fields": {
-      "Name": "wHU",
-      "Icon": "wHU"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "wHU"
-      }
-    ]
-  },
-  {
     "id": "warpDrive",
     "type": "unit-components",
     "displayName": "Warp Drive",
@@ -3651,42 +3110,6 @@
       {
         "type": "icon",
         "id": "warpDrive_1"
-      }
-    ]
-  },
-  {
-    "id": "water",
-    "type": "unit-components",
-    "displayName": "Water",
-    "icon": "water",
-    "fields": {
-      "Name": "water",
-      "Icon": "water"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "water"
-      }
-    ]
-  },
-  {
-    "id": "yul1",
-    "type": "unit-components",
-    "displayName": "Yul1",
-    "icon": "yul1",
-    "fields": {
-      "Name": "yul1",
-      "Icon": "yul1"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "yul1"
       }
     ]
   }

@@ -36,24 +36,6 @@
     ]
   },
   {
-    "id": "algorator",
-    "type": "character-traits",
-    "displayName": "Algorator",
-    "icon": "algorator",
-    "fields": {
-      "Name": "algorator",
-      "Icon": "algorator"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "algorator"
-      }
-    ]
-  },
-  {
     "id": "arbitrary",
     "type": "character-traits",
     "displayName": "Arbitrary",
@@ -90,115 +72,6 @@
     ]
   },
   {
-    "id": "artillery",
-    "type": "character-traits",
-    "displayName": "Artillery",
-    "icon": "artillery",
-    "fields": {
-      "Name": "artillery",
-      "Icon": "artillery"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "artillery"
-      }
-    ]
-  },
-  {
-    "id": "assimilationMult",
-    "type": "character-traits",
-    "displayName": "Assimilation Mult",
-    "icon": "assimilationMult",
-    "fields": {
-      "Name": "assimilationMult",
-      "Icon": "assimilationMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "assimilationMult"
-      }
-    ]
-  },
-  {
-    "id": "baseEconomicOutputMult",
-    "type": "character-traits",
-    "displayName": "Base Economic Output Mult",
-    "icon": "baseEconomicOutputMult",
-    "fields": {
-      "Name": "baseEconomicOutputMult",
-      "Icon": "baseEconomicOutputMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "baseEconomicOutputMult"
-      }
-    ]
-  },
-  {
-    "id": "battleAdvantageAdd",
-    "type": "character-traits",
-    "displayName": "Battle Advantage Add",
-    "icon": "battleAdvantageAdd",
-    "fields": {
-      "Name": "battleAdvantageAdd",
-      "Icon": "battleAdvantageAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "battleAdvantageAdd"
-      }
-    ]
-  },
-  {
-    "id": "breakthrough",
-    "type": "character-traits",
-    "displayName": "Breakthrough",
-    "icon": "breakthrough",
-    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
-    "fields": {
-      "Name": "breakthrough",
-      "Icon": "breakthrough"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "breakthrough"
-      }
-    ]
-  },
-  {
-    "id": "capital",
-    "type": "character-traits",
-    "displayName": "Capital",
-    "icon": "capital",
-    "fields": {
-      "Name": "capital",
-      "Icon": "capital"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "capital"
-      }
-    ]
-  },
-  {
     "id": "carrier_commander",
     "type": "character-traits",
     "displayName": "Carrier Commander",
@@ -231,24 +104,6 @@
       {
         "type": "icon",
         "id": "cautious"
-      }
-    ]
-  },
-  {
-    "id": "characterEffortAdd",
-    "type": "character-traits",
-    "displayName": "Character Effort Add",
-    "icon": "characterEffortAdd",
-    "fields": {
-      "Name": "characterEffortAdd",
-      "Icon": "characterEffortAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "characterEffortAdd"
       }
     ]
   },
@@ -343,24 +198,6 @@
     ]
   },
   {
-    "id": "diplomacyCapacity",
-    "type": "character-traits",
-    "displayName": "Diplomacy Capacity",
-    "icon": "diplomacyCapacity",
-    "fields": {
-      "Name": "diplomacyCapacity",
-      "Icon": "diplomacyCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "diplomacyCapacity"
-      }
-    ]
-  },
-  {
     "id": "diplomat",
     "type": "character-traits",
     "displayName": "Diplomat",
@@ -415,24 +252,6 @@
     ]
   },
   {
-    "id": "educationEfficiency",
-    "type": "character-traits",
-    "displayName": "Education Efficiency",
-    "icon": "educationEfficiency",
-    "fields": {
-      "Name": "educationEfficiency",
-      "Icon": "educationEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "educationEfficiency"
-      }
-    ]
-  },
-  {
     "id": "educator",
     "type": "character-traits",
     "displayName": "Educator",
@@ -447,24 +266,6 @@
       {
         "type": "icon",
         "id": "educator"
-      }
-    ]
-  },
-  {
-    "id": "electronicsFactory",
-    "type": "character-traits",
-    "displayName": "Electronics Factory",
-    "icon": "electronicsFactory",
-    "fields": {
-      "Name": "electronicsFactory",
-      "Icon": "electronicsFactory"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "electronicsFactory"
       }
     ]
   },
@@ -501,24 +302,6 @@
       {
         "type": "icon",
         "id": "networker_experienced"
-      }
-    ]
-  },
-  {
-    "id": "factionLoyaltyAdd",
-    "type": "character-traits",
-    "displayName": "Faction Loyalty Add",
-    "icon": "factionLoyaltyAdd",
-    "fields": {
-      "Name": "factionLoyaltyAdd",
-      "Icon": "factionLoyaltyAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "factionLoyaltyAdd"
       }
     ]
   },
@@ -609,24 +392,6 @@
       {
         "type": "icon",
         "id": "general"
-      }
-    ]
-  },
-  {
-    "id": "governRegion",
-    "type": "character-traits",
-    "displayName": "Govern Region",
-    "icon": "governRegion",
-    "fields": {
-      "Name": "governRegion",
-      "Icon": "governRegion"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "governRegion"
       }
     ]
   },
@@ -739,25 +504,6 @@
     ]
   },
   {
-    "id": "health",
-    "type": "character-traits",
-    "displayName": "Health",
-    "icon": "health",
-    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
-      }
-    ]
-  },
-  {
     "id": "hedonist",
     "type": "character-traits",
     "displayName": "Hedonist",
@@ -830,24 +576,6 @@
     ]
   },
   {
-    "id": "infantry",
-    "type": "character-traits",
-    "displayName": "Infantry",
-    "icon": "infantry",
-    "fields": {
-      "Name": "infantry",
-      "Icon": "infantry"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "infantry"
-      }
-    ]
-  },
-  {
     "id": "infantry_leader",
     "type": "character-traits",
     "displayName": "Infantry Leader",
@@ -884,24 +612,6 @@
     ]
   },
   {
-    "id": "integrationCostMult",
-    "type": "character-traits",
-    "displayName": "Integration Cost Mult",
-    "icon": "integrationCostMult",
-    "fields": {
-      "Name": "integrationCostMult",
-      "Icon": "integrationCostMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "integrationCostMult"
-      }
-    ]
-  },
-  {
     "id": "intelligent",
     "type": "character-traits",
     "displayName": "Intelligent",
@@ -916,42 +626,6 @@
       {
         "type": "icon",
         "id": "intelligent"
-      }
-    ]
-  },
-  {
-    "id": "interceptor",
-    "type": "character-traits",
-    "displayName": "Interceptor",
-    "icon": "interceptor",
-    "fields": {
-      "Name": "interceptor",
-      "Icon": "interceptor"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "interceptor"
-      }
-    ]
-  },
-  {
-    "id": "interiorMinister",
-    "type": "character-traits",
-    "displayName": "Interior Minister",
-    "icon": "interiorMinister",
-    "fields": {
-      "Name": "interiorMinister",
-      "Icon": "interiorMinister"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "interiorMinister"
       }
     ]
   },
@@ -1006,96 +680,6 @@
       {
         "type": "icon",
         "id": "irritable"
-      }
-    ]
-  },
-  {
-    "id": "ji2",
-    "type": "character-traits",
-    "displayName": "Ji2",
-    "icon": "ji2",
-    "fields": {
-      "Name": "ji2",
-      "Icon": "ji2"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ji2"
-      }
-    ]
-  },
-  {
-    "id": "kbPpO",
-    "type": "character-traits",
-    "displayName": "Kb Pp O",
-    "icon": "kbPpO",
-    "fields": {
-      "Name": "kbPpO",
-      "Icon": "kbPpO"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "kbPpO"
-      }
-    ]
-  },
-  {
-    "id": "leaderLifeSpanAdd",
-    "type": "character-traits",
-    "displayName": "Leader Life Span Add",
-    "icon": "leaderLifeSpanAdd",
-    "fields": {
-      "Name": "leaderLifeSpanAdd",
-      "Icon": "leaderLifeSpanAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "leaderLifeSpanAdd"
-      }
-    ]
-  },
-  {
-    "id": "leaderSkillAdd",
-    "type": "character-traits",
-    "displayName": "Leader Skill Add",
-    "icon": "leaderSkillAdd",
-    "fields": {
-      "Name": "leaderSkillAdd",
-      "Icon": "leaderSkillAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "leaderSkillAdd"
-      }
-    ]
-  },
-  {
-    "id": "leaderXPGain",
-    "type": "character-traits",
-    "displayName": "Leader XPGain",
-    "icon": "leaderXPGain",
-    "fields": {
-      "Name": "leaderXPGain",
-      "Icon": "leaderXPGain"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "leaderXPGain"
       }
     ]
   },
@@ -1172,24 +756,6 @@
     ]
   },
   {
-    "id": "management",
-    "type": "character-traits",
-    "displayName": "Management",
-    "icon": "management",
-    "fields": {
-      "Name": "management",
-      "Icon": "management"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "management"
-      }
-    ]
-  },
-  {
     "id": "investor_master",
     "type": "character-traits",
     "displayName": "Master Investor",
@@ -1258,24 +824,6 @@
       {
         "type": "icon",
         "id": "networker"
-      }
-    ]
-  },
-  {
-    "id": "oW7",
-    "type": "character-traits",
-    "displayName": "O W7",
-    "icon": "oW7",
-    "fields": {
-      "Name": "oW7",
-      "Icon": "oW7"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "oW7"
       }
     ]
   },
@@ -1424,42 +972,6 @@
     ]
   },
   {
-    "id": "projectBuildCostMult",
-    "type": "character-traits",
-    "displayName": "Project Build Cost Mult",
-    "icon": "projectBuildCostMult",
-    "fields": {
-      "Name": "projectBuildCostMult",
-      "Icon": "projectBuildCostMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectBuildCostMult"
-      }
-    ]
-  },
-  {
-    "id": "projectEfficiency",
-    "type": "character-traits",
-    "displayName": "Project Efficiency",
-    "icon": "projectEfficiency",
-    "fields": {
-      "Name": "projectEfficiency",
-      "Icon": "projectEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectEfficiency"
-      }
-    ]
-  },
-  {
     "id": "quickLearner",
     "type": "character-traits",
     "displayName": "Quick Learner",
@@ -1478,78 +990,6 @@
     ]
   },
   {
-    "id": "rangedAttackMult",
-    "type": "character-traits",
-    "displayName": "Ranged Attack Mult",
-    "icon": "rangedAttackMult",
-    "fields": {
-      "Name": "rangedAttackMult",
-      "Icon": "rangedAttackMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "rangedAttackMult"
-      }
-    ]
-  },
-  {
-    "id": "reformCostMult",
-    "type": "character-traits",
-    "displayName": "Reform Cost Mult",
-    "icon": "reformCostMult",
-    "fields": {
-      "Name": "reformCostMult",
-      "Icon": "reformCostMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "reformCostMult"
-      }
-    ]
-  },
-  {
-    "id": "research",
-    "type": "character-traits",
-    "displayName": "Research",
-    "icon": "research",
-    "fields": {
-      "Name": "research",
-      "Icon": "research"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "research"
-      }
-    ]
-  },
-  {
-    "id": "researchMult",
-    "type": "character-traits",
-    "displayName": "Research Mult",
-    "icon": "researchMult",
-    "fields": {
-      "Name": "researchMult",
-      "Icon": "researchMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "researchMult"
-      }
-    ]
-  },
-  {
     "id": "resilient",
     "type": "character-traits",
     "displayName": "Resilient",
@@ -1564,78 +1004,6 @@
       {
         "type": "icon",
         "id": "resilient"
-      }
-    ]
-  },
-  {
-    "id": "resourceCapacityMult",
-    "type": "character-traits",
-    "displayName": "Resource Capacity Mult",
-    "icon": "resourceCapacityMult",
-    "fields": {
-      "Name": "resourceCapacityMult",
-      "Icon": "resourceCapacityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceCapacityMult"
-      }
-    ]
-  },
-  {
-    "id": "resourceModifier",
-    "type": "character-traits",
-    "displayName": "Resource Modifier",
-    "icon": "resourceModifier",
-    "fields": {
-      "Name": "resourceModifier",
-      "Icon": "resourceModifier"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceModifier"
-      }
-    ]
-  },
-  {
-    "id": "resourceMult",
-    "type": "character-traits",
-    "displayName": "Resource Mult",
-    "icon": "resourceMult",
-    "fields": {
-      "Name": "resourceMult",
-      "Icon": "resourceMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceMult"
-      }
-    ]
-  },
-  {
-    "id": "ruler",
-    "type": "character-traits",
-    "displayName": "Ruler",
-    "icon": "ruler",
-    "fields": {
-      "Name": "ruler",
-      "Icon": "ruler"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ruler"
       }
     ]
   },
@@ -1676,42 +1044,6 @@
     ]
   },
   {
-    "id": "screen",
-    "type": "character-traits",
-    "displayName": "Screen",
-    "icon": "screen",
-    "fields": {
-      "Name": "screen",
-      "Icon": "screen"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "screen"
-      }
-    ]
-  },
-  {
-    "id": "silver_tongue",
-    "type": "character-traits",
-    "displayName": "Silver Tongue",
-    "icon": "silver_tongue",
-    "fields": {
-      "Name": "silver_tongue",
-      "Icon": "silver_tongue"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "silver_tongue"
-      }
-    ]
-  },
-  {
     "id": "socialite",
     "type": "character-traits",
     "displayName": "Socialite",
@@ -1748,24 +1080,6 @@
     ]
   },
   {
-    "id": "stabilityGainAdd",
-    "type": "character-traits",
-    "displayName": "Stability Gain Add",
-    "icon": "stabilityGainAdd",
-    "fields": {
-      "Name": "stabilityGainAdd",
-      "Icon": "stabilityGainAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "stabilityGainAdd"
-      }
-    ]
-  },
-  {
     "id": "strategist",
     "type": "character-traits",
     "displayName": "Strategist",
@@ -1780,24 +1094,6 @@
       {
         "type": "icon",
         "id": "strategist"
-      }
-    ]
-  },
-  {
-    "id": "strategy",
-    "type": "character-traits",
-    "displayName": "Strategy",
-    "icon": "strategy",
-    "fields": {
-      "Name": "strategy",
-      "Icon": "strategy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "strategy"
       }
     ]
   },
@@ -1820,24 +1116,6 @@
     ]
   },
   {
-    "id": "subversive",
-    "type": "character-traits",
-    "displayName": "Subversion",
-    "icon": "subversive",
-    "fields": {
-      "Name": "subversive",
-      "Icon": "subversive"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "subversive"
-      }
-    ]
-  },
-  {
     "id": "superior",
     "type": "character-traits",
     "displayName": "Superior",
@@ -1852,24 +1130,6 @@
       {
         "type": "icon",
         "id": "superior"
-      }
-    ]
-  },
-  {
-    "id": "tank",
-    "type": "character-traits",
-    "displayName": "Tank",
-    "icon": "tank",
-    "fields": {
-      "Name": "tank",
-      "Icon": "tank"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "tank"
       }
     ]
   },
@@ -1946,186 +1206,6 @@
     ]
   },
   {
-    "id": "u3Vaj",
-    "type": "character-traits",
-    "displayName": "U3Vaj",
-    "icon": "u3Vaj",
-    "fields": {
-      "Name": "u3Vaj",
-      "Icon": "u3Vaj"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "u3Vaj"
-      }
-    ]
-  },
-  {
-    "id": "unitAttackMult",
-    "type": "character-traits",
-    "displayName": "Unit Attack Mult",
-    "icon": "unitAttackMult",
-    "fields": {
-      "Name": "unitAttackMult",
-      "Icon": "unitAttackMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitAttackMult"
-      }
-    ]
-  },
-  {
-    "id": "unitCommander",
-    "type": "character-traits",
-    "displayName": "Unit Commander",
-    "icon": "unitCommander",
-    "fields": {
-      "Name": "unitCommander",
-      "Icon": "unitCommander"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitCommander"
-      }
-    ]
-  },
-  {
-    "id": "unitMoraleMult",
-    "type": "character-traits",
-    "displayName": "Unit Morale Mult",
-    "icon": "unitMoraleMult",
-    "fields": {
-      "Name": "unitMoraleMult",
-      "Icon": "unitMoraleMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitMoraleMult"
-      }
-    ]
-  },
-  {
-    "id": "unitReinforceRateMult",
-    "type": "character-traits",
-    "displayName": "Unit Reinforce Rate Mult",
-    "icon": "unitReinforceRateMult",
-    "fields": {
-      "Name": "unitReinforceRateMult",
-      "Icon": "unitReinforceRateMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitReinforceRateMult"
-      }
-    ]
-  },
-  {
-    "id": "unitSpeedMult",
-    "type": "character-traits",
-    "displayName": "Unit Speed Mult",
-    "icon": "unitSpeedMult",
-    "fields": {
-      "Name": "unitSpeedMult",
-      "Icon": "unitSpeedMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitSpeedMult"
-      }
-    ]
-  },
-  {
-    "id": "unitStatMult",
-    "type": "character-traits",
-    "displayName": "Unit Stat Mult",
-    "icon": "unitStatMult",
-    "fields": {
-      "Name": "unitStatMult",
-      "Icon": "unitStatMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitStatMult"
-      }
-    ]
-  },
-  {
-    "id": "unityMult",
-    "type": "character-traits",
-    "displayName": "Unity Mult",
-    "icon": "unityMult",
-    "fields": {
-      "Name": "unityMult",
-      "Icon": "unityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unityMult"
-      }
-    ]
-  },
-  {
-    "id": "university",
-    "type": "character-traits",
-    "displayName": "University",
-    "icon": "university",
-    "fields": {
-      "Name": "university",
-      "Icon": "university"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "university"
-      }
-    ]
-  },
-  {
-    "id": "unrestChangeAdd",
-    "type": "character-traits",
-    "displayName": "Unrest Change Add",
-    "icon": "unrestChangeAdd",
-    "fields": {
-      "Name": "unrestChangeAdd",
-      "Icon": "unrestChangeAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unrestChangeAdd"
-      }
-    ]
-  },
-  {
     "id": "warmaster",
     "type": "character-traits",
     "displayName": "Warmaster",
@@ -2140,42 +1220,6 @@
       {
         "type": "icon",
         "id": "warmaster"
-      }
-    ]
-  },
-  {
-    "id": "wypl",
-    "type": "character-traits",
-    "displayName": "Wypl",
-    "icon": "wypl",
-    "fields": {
-      "Name": "wypl",
-      "Icon": "wypl"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "wypl"
-      }
-    ]
-  },
-  {
-    "id": "zRk",
-    "type": "character-traits",
-    "displayName": "Z Rk",
-    "icon": "zRk",
-    "fields": {
-      "Name": "zRk",
-      "Icon": "zRk"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "zRk"
       }
     ]
   }

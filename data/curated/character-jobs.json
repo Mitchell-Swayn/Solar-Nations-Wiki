@@ -46,29 +46,6 @@
     ]
   },
   {
-    "id": "algorator",
-    "type": "character-jobs",
-    "displayName": "Algorator",
-    "icon": "algorator",
-    "fields": {
-      "Name": "algorator",
-      "Icon": "algorator",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "algorator"
-      }
-    ]
-  },
-  {
     "id": "economy_algorithmic",
     "type": "character-jobs",
     "displayName": "Algorithmic",
@@ -115,29 +92,6 @@
     ]
   },
   {
-    "id": "bureaucracy",
-    "type": "character-jobs",
-    "displayName": "Bureaucracy",
-    "icon": "bureaucracy",
-    "fields": {
-      "Name": "bureaucracy",
-      "Icon": "bureaucracy",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "bureaucracy"
-      }
-    ]
-  },
-  {
     "id": "charisma",
     "type": "character-jobs",
     "displayName": "Charisma",
@@ -161,13 +115,13 @@
     ]
   },
   {
-    "id": "clergy",
+    "id": "civilLiberty_hypocritical",
     "type": "character-jobs",
-    "displayName": "Clergy",
-    "icon": "clergy",
+    "displayName": "Civil Liberty Hypocritical",
+    "icon": "civilLiberty_hypocritical",
     "fields": {
-      "Name": "clergy",
-      "Icon": "clergy",
+      "Name": "civilLiberty_hypocritical",
+      "Icon": "civilLiberty_hypocritical",
       "EffortCost": 1,
       "ExperienceGain": 1,
       "Term": 999999,
@@ -179,18 +133,18 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy"
+        "id": "civilLiberty_hypocritical"
       }
     ]
   },
   {
-    "id": "corporate",
+    "id": "civilLiberty_liberal",
     "type": "character-jobs",
-    "displayName": "Corporate",
-    "icon": "corporate",
+    "displayName": "Civil Liberty Liberal",
+    "icon": "civilLiberty_liberal",
     "fields": {
-      "Name": "corporate",
-      "Icon": "corporate",
+      "Name": "civilLiberty_liberal",
+      "Icon": "civilLiberty_liberal",
       "EffortCost": 1,
       "ExperienceGain": 1,
       "Term": 999999,
@@ -202,7 +156,76 @@
     "references": [
       {
         "type": "icon",
-        "id": "corporate"
+        "id": "civilLiberty_liberal"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_neutral",
+    "type": "character-jobs",
+    "displayName": "Civil Liberty Neutral",
+    "icon": "civilLiberty_neutral",
+    "fields": {
+      "Name": "civilLiberty_neutral",
+      "Icon": "civilLiberty_neutral",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_neutral"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_restricted",
+    "type": "character-jobs",
+    "displayName": "Civil Liberty Restricted",
+    "icon": "civilLiberty_restricted",
+    "fields": {
+      "Name": "civilLiberty_restricted",
+      "Icon": "civilLiberty_restricted",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_restricted"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_totalitarian",
+    "type": "character-jobs",
+    "displayName": "Civil Liberty Totalitarian",
+    "icon": "civilLiberty_totalitarian",
+    "fields": {
+      "Name": "civilLiberty_totalitarian",
+      "Icon": "civilLiberty_totalitarian",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_totalitarian"
       }
     ]
   },
@@ -253,13 +276,13 @@
     ]
   },
   {
-    "id": "emperor",
+    "id": "economy_lassezFaire",
     "type": "character-jobs",
-    "displayName": "Emperor",
-    "icon": "emperor",
+    "displayName": "Economy Lassez Faire",
+    "icon": "economy_lassezFaire",
     "fields": {
-      "Name": "emperor",
-      "Icon": "emperor",
+      "Name": "economy_lassezFaire",
+      "Icon": "economy_lassezFaire",
       "EffortCost": 1,
       "ExperienceGain": 1,
       "Term": 999999,
@@ -271,7 +294,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "emperor"
+        "id": "economy_lassezFaire"
       }
     ]
   },
@@ -295,29 +318,6 @@
       {
         "type": "icon",
         "id": "espionage"
-      }
-    ]
-  },
-  {
-    "id": "friendly",
-    "type": "character-jobs",
-    "displayName": "Friendly",
-    "icon": "friendly",
-    "fields": {
-      "Name": "friendly",
-      "Icon": "friendly",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "friendly"
       }
     ]
   },
@@ -364,75 +364,6 @@
       {
         "type": "icon",
         "id": "economy_interventionism"
-      }
-    ]
-  },
-  {
-    "id": "macromanager",
-    "type": "character-jobs",
-    "displayName": "Macromanager",
-    "icon": "macromanager",
-    "fields": {
-      "Name": "macromanager",
-      "Icon": "macromanager",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "macromanager"
-      }
-    ]
-  },
-  {
-    "id": "management",
-    "type": "character-jobs",
-    "displayName": "Management",
-    "icon": "management",
-    "fields": {
-      "Name": "management",
-      "Icon": "management",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "management"
-      }
-    ]
-  },
-  {
-    "id": "monarch",
-    "type": "character-jobs",
-    "displayName": "Monarch",
-    "icon": "monarch",
-    "fields": {
-      "Name": "monarch",
-      "Icon": "monarch",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "monarch"
       }
     ]
   },
@@ -529,52 +460,6 @@
     ]
   },
   {
-    "id": "premier",
-    "type": "character-jobs",
-    "displayName": "Premier",
-    "icon": "premier",
-    "fields": {
-      "Name": "premier",
-      "Icon": "premier",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "premier"
-      }
-    ]
-  },
-  {
-    "id": "president",
-    "type": "character-jobs",
-    "displayName": "President",
-    "icon": "president",
-    "fields": {
-      "Name": "president",
-      "Icon": "president",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "president"
-      }
-    ]
-  },
-  {
     "id": "form_republic",
     "type": "character-jobs",
     "displayName": "Republic",
@@ -594,52 +479,6 @@
       {
         "type": "icon",
         "id": "form_republic"
-      }
-    ]
-  },
-  {
-    "id": "ruler",
-    "type": "character-jobs",
-    "displayName": "Ruler",
-    "icon": "ruler",
-    "fields": {
-      "Name": "ruler",
-      "Icon": "ruler",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ruler"
-      }
-    ]
-  },
-  {
-    "id": "spymaster",
-    "type": "character-jobs",
-    "displayName": "Spymaster",
-    "icon": "spymaster",
-    "fields": {
-      "Name": "spymaster",
-      "Icon": "spymaster",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spymaster"
       }
     ]
   },
@@ -686,29 +525,6 @@
       {
         "type": "icon",
         "id": "form_algocracy"
-      }
-    ]
-  },
-  {
-    "id": "wypl",
-    "type": "character-jobs",
-    "displayName": "Wypl",
-    "icon": "wypl",
-    "fields": {
-      "Name": "wypl",
-      "Icon": "wypl",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "wypl"
       }
     ]
   }

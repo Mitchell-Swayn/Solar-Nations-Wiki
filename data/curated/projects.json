@@ -1,59 +1,5 @@
 [
   {
-    "id": "adminEfficiencyAdd",
-    "type": "projects",
-    "displayName": "Admin Efficiency Add",
-    "icon": "adminEfficiencyAdd",
-    "fields": {
-      "Name": "adminEfficiencyAdd",
-      "Icon": "adminEfficiencyAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "adminEfficiencyAdd"
-      }
-    ]
-  },
-  {
-    "id": "aerodrome",
-    "type": "projects",
-    "displayName": "Aerodrome",
-    "icon": "aerodrome",
-    "fields": {
-      "Name": "aerodrome",
-      "Icon": "aerodrome"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "aerodrome"
-      }
-    ]
-  },
-  {
-    "id": "grain",
-    "type": "projects",
-    "displayName": "Agriculture",
-    "icon": "grain",
-    "fields": {
-      "Name": "grain",
-      "Icon": "grain"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "grain"
-      }
-    ]
-  },
-  {
     "id": "aiLogistics",
     "type": "projects",
     "displayName": "Ai Logistics",
@@ -68,24 +14,6 @@
       {
         "type": "icon",
         "id": "aiLogistics"
-      }
-    ]
-  },
-  {
-    "id": "airCapacity",
-    "type": "projects",
-    "displayName": "Air Capacity",
-    "icon": "airCapacity",
-    "fields": {
-      "Name": "airCapacity",
-      "Icon": "airCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "airCapacity"
       }
     ]
   },
@@ -108,60 +36,6 @@
     ]
   },
   {
-    "id": "allResourceCapacityMult",
-    "type": "projects",
-    "displayName": "All Resource Capacity Mult",
-    "icon": "allResourceCapacityMult",
-    "fields": {
-      "Name": "allResourceCapacityMult",
-      "Icon": "allResourceCapacityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "allResourceCapacityMult"
-      }
-    ]
-  },
-  {
-    "id": "antimatter",
-    "type": "projects",
-    "displayName": "Antimatter",
-    "icon": "antimatter",
-    "fields": {
-      "Name": "antimatter",
-      "Icon": "antimatter"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "antimatter"
-      }
-    ]
-  },
-  {
-    "id": "antimatterAdvancement",
-    "type": "projects",
-    "displayName": "Antimatter Advancement",
-    "icon": "antimatterAdvancement",
-    "fields": {
-      "Name": "antimatterAdvancement",
-      "Icon": "antimatterAdvancement"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "antimatterAdvancement"
-      }
-    ]
-  },
-  {
     "id": "antimatterFactory",
     "type": "projects",
     "displayName": "Antimatter Factory",
@@ -176,42 +50,6 @@
       {
         "type": "icon",
         "id": "antimatterFactory"
-      }
-    ]
-  },
-  {
-    "id": "antimatterHarvester",
-    "type": "projects",
-    "displayName": "Antimatter Harvester",
-    "icon": "antimatterHarvester",
-    "fields": {
-      "Name": "antimatterHarvester",
-      "Icon": "antimatterHarvester"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "antimatterHarvester"
-      }
-    ]
-  },
-  {
-    "id": "antimatterPower",
-    "type": "projects",
-    "displayName": "Antimatter Power",
-    "icon": "antimatterPower",
-    "fields": {
-      "Name": "antimatterPower",
-      "Icon": "antimatterPower"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "antimatterPower"
       }
     ]
   },
@@ -288,96 +126,6 @@
     ]
   },
   {
-    "id": "artificialIntelligence",
-    "type": "projects",
-    "displayName": "Artificial Intelligence",
-    "icon": "artificialIntelligence",
-    "fields": {
-      "Name": "artificialIntelligence",
-      "Icon": "artificialIntelligence"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "artificialIntelligence"
-      }
-    ]
-  },
-  {
-    "id": "ascendedAi",
-    "type": "projects",
-    "displayName": "Ascended Ai",
-    "icon": "ascendedAi",
-    "fields": {
-      "Name": "ascendedAi",
-      "Icon": "ascendedAi"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ascendedAi"
-      }
-    ]
-  },
-  {
-    "id": "ascendedVirtual",
-    "type": "projects",
-    "displayName": "Ascended Virtual",
-    "icon": "ascendedVirtual",
-    "fields": {
-      "Name": "ascendedVirtual",
-      "Icon": "ascendedVirtual"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "ascendedVirtual"
-      }
-    ]
-  },
-  {
-    "id": "assimilationMult",
-    "type": "projects",
-    "displayName": "Assimilation Mult",
-    "icon": "assimilationMult",
-    "fields": {
-      "Name": "assimilationMult",
-      "Icon": "assimilationMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "assimilationMult"
-      }
-    ]
-  },
-  {
-    "id": "asteroidDensity",
-    "type": "projects",
-    "displayName": "Asteroid Density",
-    "icon": "asteroidDensity",
-    "fields": {
-      "Name": "asteroidDensity",
-      "Icon": "asteroidDensity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "asteroidDensity"
-      }
-    ]
-  },
-  {
     "id": "asteroidHarvester",
     "type": "projects",
     "displayName": "Asteroid Harvester",
@@ -392,24 +140,6 @@
       {
         "type": "icon",
         "id": "asteroidHarvester"
-      }
-    ]
-  },
-  {
-    "id": "atmosformer",
-    "type": "projects",
-    "displayName": "Atmosformer",
-    "icon": "atmosformer",
-    "fields": {
-      "Name": "atmosformer",
-      "Icon": "atmosformer"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "atmosformer"
       }
     ]
   },
@@ -432,42 +162,6 @@
     ]
   },
   {
-    "id": "automatedWorkforceAdd",
-    "type": "projects",
-    "displayName": "Automated Workforce Add",
-    "icon": "automatedWorkforceAdd",
-    "fields": {
-      "Name": "automatedWorkforceAdd",
-      "Icon": "automatedWorkforceAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "automatedWorkforceAdd"
-      }
-    ]
-  },
-  {
-    "id": "barracks",
-    "type": "projects",
-    "displayName": "Barracks",
-    "icon": "barracks",
-    "fields": {
-      "Name": "barracks",
-      "Icon": "barracks"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "barracks"
-      }
-    ]
-  },
-  {
     "id": "bigBen",
     "type": "projects",
     "displayName": "Big Ben",
@@ -486,74 +180,20 @@
     ]
   },
   {
-    "id": "bioformer",
+    "id": "biologySchool",
     "type": "projects",
-    "displayName": "Bioformer",
-    "icon": "bioformer",
+    "displayName": "Biology School",
+    "icon": "biologySchool",
     "fields": {
-      "Name": "bioformer",
-      "Icon": "bioformer"
+      "Name": "biologySchool",
+      "Icon": "biologySchool"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "bioformer"
-      }
-    ]
-  },
-  {
-    "id": "biological",
-    "type": "projects",
-    "displayName": "Biological Damage",
-    "icon": "biological",
-    "fields": {
-      "Name": "biological",
-      "Icon": "biological"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "biological"
-      }
-    ]
-  },
-  {
-    "id": "biotech",
-    "type": "projects",
-    "displayName": "Biotechnology",
-    "icon": "biotech",
-    "fields": {
-      "Name": "biotech",
-      "Icon": "biotech"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "biotech"
-      }
-    ]
-  },
-  {
-    "id": "biowarfare",
-    "type": "projects",
-    "displayName": "Biowarfare",
-    "icon": "biowarfare",
-    "fields": {
-      "Name": "biowarfare",
-      "Icon": "biowarfare"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "biowarfare"
+        "id": "biologySchool"
       }
     ]
   },
@@ -594,78 +234,6 @@
     ]
   },
   {
-    "id": "bureaucracy",
-    "type": "projects",
-    "displayName": "Bureaucracy",
-    "icon": "bureaucracy",
-    "fields": {
-      "Name": "bureaucracy",
-      "Icon": "bureaucracy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "bureaucracy"
-      }
-    ]
-  },
-  {
-    "id": "carryingCapacityMult",
-    "type": "projects",
-    "displayName": "Carrying Capacity Mult",
-    "icon": "carryingCapacityMult",
-    "fields": {
-      "Name": "carryingCapacityMult",
-      "Icon": "carryingCapacityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "carryingCapacityMult"
-      }
-    ]
-  },
-  {
-    "id": "chromiteTech",
-    "type": "projects",
-    "displayName": "Chromite Tech",
-    "icon": "chromiteTech",
-    "fields": {
-      "Name": "chromiteTech",
-      "Icon": "chromiteTech"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "chromiteTech"
-      }
-    ]
-  },
-  {
-    "id": "clergy",
-    "type": "projects",
-    "displayName": "Clergy",
-    "icon": "clergy",
-    "fields": {
-      "Name": "clergy",
-      "Icon": "clergy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "clergy"
-      }
-    ]
-  },
-  {
     "id": "cloneVats",
     "type": "projects",
     "displayName": "Clone Vats",
@@ -680,24 +248,6 @@
       {
         "type": "icon",
         "id": "cloneVats"
-      }
-    ]
-  },
-  {
-    "id": "coastal",
-    "type": "projects",
-    "displayName": "Coastal",
-    "icon": "coastal",
-    "fields": {
-      "Name": "coastal",
-      "Icon": "coastal"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "coastal"
       }
     ]
   },
@@ -738,24 +288,6 @@
     ]
   },
   {
-    "id": "commerce",
-    "type": "projects",
-    "displayName": "Commerce",
-    "icon": "commerce",
-    "fields": {
-      "Name": "commerce",
-      "Icon": "commerce"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "commerce"
-      }
-    ]
-  },
-  {
     "id": "commerceZones",
     "type": "projects",
     "displayName": "Commerce Zones",
@@ -774,74 +306,38 @@
     ]
   },
   {
-    "id": "commercialZones",
+    "id": "computingSchool",
     "type": "projects",
-    "displayName": "Commercial Zones",
-    "icon": "commercialZones",
+    "displayName": "Computing School",
+    "icon": "computingSchool",
     "fields": {
-      "Name": "commercialZones",
-      "Icon": "commercialZones"
+      "Name": "computingSchool",
+      "Icon": "computingSchool"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "commercialZones"
+        "id": "computingSchool"
       }
     ]
   },
   {
-    "id": "consumerGoods",
+    "id": "consumerGoodsFactory",
     "type": "projects",
-    "displayName": "Consumer Goods",
-    "icon": "consumerGoods",
+    "displayName": "Consumer Goods Factory",
+    "icon": "consumerGoodsFactory",
     "fields": {
-      "Name": "consumerGoods",
-      "Icon": "consumerGoods"
+      "Name": "consumerGoodsFactory",
+      "Icon": "consumerGoodsFactory"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "consumerGoods"
-      }
-    ]
-  },
-  {
-    "id": "controllingFactionLoyalty",
-    "type": "projects",
-    "displayName": "Controlling Faction Loyalty",
-    "icon": "controllingFactionLoyalty",
-    "fields": {
-      "Name": "controllingFactionLoyalty",
-      "Icon": "controllingFactionLoyalty"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "controllingFactionLoyalty"
-      }
-    ]
-  },
-  {
-    "id": "corporate",
-    "type": "projects",
-    "displayName": "Corporate",
-    "icon": "corporate",
-    "fields": {
-      "Name": "corporate",
-      "Icon": "corporate"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "corporate"
+        "id": "consumerGoodsFactory"
       }
     ]
   },
@@ -864,42 +360,6 @@
     ]
   },
   {
-    "id": "cryoOrganics",
-    "type": "projects",
-    "displayName": "Cryo Organics",
-    "icon": "cryoOrganics",
-    "fields": {
-      "Name": "cryoOrganics",
-      "Icon": "cryoOrganics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "cryoOrganics"
-      }
-    ]
-  },
-  {
-    "id": "cybernetics",
-    "type": "projects",
-    "displayName": "Cybernetics",
-    "icon": "cybernetics",
-    "fields": {
-      "Name": "cybernetics",
-      "Icon": "cybernetics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "cybernetics"
-      }
-    ]
-  },
-  {
     "id": "cyborgFactory",
     "type": "projects",
     "displayName": "Cyborg Factory",
@@ -918,60 +378,6 @@
     ]
   },
   {
-    "id": "defenderAdvantageAdd",
-    "type": "projects",
-    "displayName": "Defender Advantage Add",
-    "icon": "defenderAdvantageAdd",
-    "fields": {
-      "Name": "defenderAdvantageAdd",
-      "Icon": "defenderAdvantageAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "defenderAdvantageAdd"
-      }
-    ]
-  },
-  {
-    "id": "digitalAssembly",
-    "type": "projects",
-    "displayName": "Digital Assembly",
-    "icon": "digitalAssembly",
-    "fields": {
-      "Name": "digitalAssembly",
-      "Icon": "digitalAssembly"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "digitalAssembly"
-      }
-    ]
-  },
-  {
-    "id": "digitalFactory",
-    "type": "projects",
-    "displayName": "Digital Factory",
-    "icon": "digitalFactory",
-    "fields": {
-      "Name": "digitalFactory",
-      "Icon": "digitalFactory"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "digitalFactory"
-      }
-    ]
-  },
-  {
     "id": "dysonSwarm",
     "type": "projects",
     "displayName": "Dyson Swarm",
@@ -986,60 +392,6 @@
       {
         "type": "icon",
         "id": "dysonSwarm"
-      }
-    ]
-  },
-  {
-    "id": "economicOutputMult",
-    "type": "projects",
-    "displayName": "Economic Output Mult",
-    "icon": "economicOutputMult",
-    "fields": {
-      "Name": "economicOutputMult",
-      "Icon": "economicOutputMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economicOutputMult"
-      }
-    ]
-  },
-  {
-    "id": "educationEfficiency",
-    "type": "projects",
-    "displayName": "Education Efficiency",
-    "icon": "educationEfficiency",
-    "fields": {
-      "Name": "educationEfficiency",
-      "Icon": "educationEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "educationEfficiency"
-      }
-    ]
-  },
-  {
-    "id": "educationTech",
-    "type": "projects",
-    "displayName": "Education Tech",
-    "icon": "educationTech",
-    "fields": {
-      "Name": "educationTech",
-      "Icon": "educationTech"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "educationTech"
       }
     ]
   },
@@ -1098,38 +450,20 @@
     ]
   },
   {
-    "id": "empTech",
+    "id": "engineeringSchool",
     "type": "projects",
-    "displayName": "Emp Tech",
-    "icon": "empTech",
+    "displayName": "Engineering School",
+    "icon": "engineeringSchool",
     "fields": {
-      "Name": "empTech",
-      "Icon": "empTech"
+      "Name": "engineeringSchool",
+      "Icon": "engineeringSchool"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "empTech"
-      }
-    ]
-  },
-  {
-    "id": "energy",
-    "type": "projects",
-    "displayName": "Energy",
-    "icon": "energy",
-    "fields": {
-      "Name": "energy",
-      "Icon": "energy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "energy"
+        "id": "engineeringSchool"
       }
     ]
   },
@@ -1152,24 +486,6 @@
     ]
   },
   {
-    "id": "exoticMatter",
-    "type": "projects",
-    "displayName": "Exotic Matter",
-    "icon": "exoticMatter",
-    "fields": {
-      "Name": "exoticMatter",
-      "Icon": "exoticMatter"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "exoticMatter"
-      }
-    ]
-  },
-  {
     "id": "exoticMatterFactory",
     "type": "projects",
     "displayName": "Exotic Matter Factory",
@@ -1188,20 +504,20 @@
     ]
   },
   {
-    "id": "fXQ2",
+    "id": "factory",
     "type": "projects",
-    "displayName": "F XQ2",
-    "icon": "fXQ2",
+    "displayName": "Factory",
+    "icon": "factory",
     "fields": {
-      "Name": "fXQ2",
-      "Icon": "fXQ2"
+      "Name": "factory",
+      "Icon": "factory"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "fXQ2"
+        "id": "factory"
       }
     ]
   },
@@ -1242,24 +558,6 @@
     ]
   },
   {
-    "id": "farmland",
-    "type": "projects",
-    "displayName": "Farmland",
-    "icon": "farmland",
-    "fields": {
-      "Name": "farmland",
-      "Icon": "farmland"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "farmland"
-      }
-    ]
-  },
-  {
     "id": "forbiddenCity",
     "type": "projects",
     "displayName": "Forbidden City",
@@ -1274,24 +572,6 @@
       {
         "type": "icon",
         "id": "forbiddenCity"
-      }
-    ]
-  },
-  {
-    "id": "fortDefense",
-    "type": "projects",
-    "displayName": "Fort Defense",
-    "icon": "fortDefense",
-    "fields": {
-      "Name": "fortDefense",
-      "Icon": "fortDefense"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "fortDefense"
       }
     ]
   },
@@ -1350,24 +630,6 @@
     ]
   },
   {
-    "id": "geneClinics",
-    "type": "projects",
-    "displayName": "Gene Clinics",
-    "icon": "geneClinics",
-    "fields": {
-      "Name": "geneClinics",
-      "Icon": "geneClinics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "geneClinics"
-      }
-    ]
-  },
-  {
     "id": "genePurifier",
     "type": "projects",
     "displayName": "Gene Purifier",
@@ -1404,42 +666,6 @@
     ]
   },
   {
-    "id": "geneticEngineering",
-    "type": "projects",
-    "displayName": "Genetic Engineering",
-    "icon": "geneticEngineering",
-    "fields": {
-      "Name": "geneticEngineering",
-      "Icon": "geneticEngineering"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "geneticEngineering"
-      }
-    ]
-  },
-  {
-    "id": "geneticMaterial",
-    "type": "projects",
-    "displayName": "Genetic Material",
-    "icon": "geneticMaterial",
-    "fields": {
-      "Name": "geneticMaterial",
-      "Icon": "geneticMaterial"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "geneticMaterial"
-      }
-    ]
-  },
-  {
     "id": "geneticMaterialFactory",
     "type": "projects",
     "displayName": "Genetic Material Factory",
@@ -1454,24 +680,6 @@
       {
         "type": "icon",
         "id": "geneticMaterialFactory"
-      }
-    ]
-  },
-  {
-    "id": "geneticSequencing",
-    "type": "projects",
-    "displayName": "Genetic Sequencing",
-    "icon": "geneticSequencing",
-    "fields": {
-      "Name": "geneticSequencing",
-      "Icon": "geneticSequencing"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "geneticSequencing"
       }
     ]
   },
@@ -1494,24 +702,6 @@
     ]
   },
   {
-    "id": "gravitonManipulation",
-    "type": "projects",
-    "displayName": "Graviton Manipulation",
-    "icon": "gravitonManipulation",
-    "fields": {
-      "Name": "gravitonManipulation",
-      "Icon": "gravitonManipulation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "gravitonManipulation"
-      }
-    ]
-  },
-  {
     "id": "gravityManipulator",
     "type": "projects",
     "displayName": "Gravity Manipulator",
@@ -1526,42 +716,6 @@
       {
         "type": "icon",
         "id": "gravityManipulator"
-      }
-    ]
-  },
-  {
-    "id": "grayGooReplicator",
-    "type": "projects",
-    "displayName": "Gray Goo Replicator",
-    "icon": "grayGooReplicator",
-    "fields": {
-      "Name": "grayGooReplicator",
-      "Icon": "grayGooReplicator"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "grayGooReplicator"
-      }
-    ]
-  },
-  {
-    "id": "habitabilityAdd",
-    "type": "projects",
-    "displayName": "Habitability Add",
-    "icon": "habitabilityAdd",
-    "fields": {
-      "Name": "habitabilityAdd",
-      "Icon": "habitabilityAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "habitabilityAdd"
       }
     ]
   },
@@ -1602,42 +756,6 @@
     ]
   },
   {
-    "id": "heavyIndustry",
-    "type": "projects",
-    "displayName": "Heavy Industry",
-    "icon": "heavyIndustry",
-    "fields": {
-      "Name": "heavyIndustry",
-      "Icon": "heavyIndustry"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "heavyIndustry"
-      }
-    ]
-  },
-  {
-    "id": "helium3",
-    "type": "projects",
-    "displayName": "Helium-3",
-    "icon": "helium3",
-    "fields": {
-      "Name": "helium3",
-      "Icon": "helium3"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "helium3"
-      }
-    ]
-  },
-  {
     "id": "hivemindCentralNodeProject",
     "type": "projects",
     "displayName": "Hivemind Central Node Project",
@@ -1652,24 +770,6 @@
       {
         "type": "icon",
         "id": "hivemindCentralNodeProject"
-      }
-    ]
-  },
-  {
-    "id": "hydroformer",
-    "type": "projects",
-    "displayName": "Hydroformer",
-    "icon": "hydroformer",
-    "fields": {
-      "Name": "hydroformer",
-      "Icon": "hydroformer"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "hydroformer"
       }
     ]
   },
@@ -1692,42 +792,6 @@
     ]
   },
   {
-    "id": "hydroponics",
-    "type": "projects",
-    "displayName": "Hydroponics Farming",
-    "icon": "hydroponics",
-    "fields": {
-      "Name": "hydroponics",
-      "Icon": "hydroponics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "hydroponics"
-      }
-    ]
-  },
-  {
-    "id": "hypercomputation",
-    "type": "projects",
-    "displayName": "Hypercomputation",
-    "icon": "hypercomputation",
-    "fields": {
-      "Name": "hypercomputation",
-      "Icon": "hypercomputation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "hypercomputation"
-      }
-    ]
-  },
-  {
     "id": "hyperdimensionalLab",
     "type": "projects",
     "displayName": "Hyperdimensional Lab",
@@ -1742,114 +806,6 @@
       {
         "type": "icon",
         "id": "hyperdimensionalLab"
-      }
-    ]
-  },
-  {
-    "id": "hyperphysics",
-    "type": "projects",
-    "displayName": "Hyperspace Theory",
-    "icon": "hyperphysics",
-    "fields": {
-      "Name": "hyperphysics",
-      "Icon": "hyperphysics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "hyperphysics"
-      }
-    ]
-  },
-  {
-    "id": "iceNine",
-    "type": "projects",
-    "displayName": "Ice Nine",
-    "icon": "iceNine",
-    "fields": {
-      "Name": "iceNine",
-      "Icon": "iceNine"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "iceNine"
-      }
-    ]
-  },
-  {
-    "id": "immigrationPull",
-    "type": "projects",
-    "displayName": "Immigration Pull",
-    "icon": "immigrationPull",
-    "fields": {
-      "Name": "immigrationPull",
-      "Icon": "immigrationPull"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "immigrationPull"
-      }
-    ]
-  },
-  {
-    "id": "industrialAutomation",
-    "type": "projects",
-    "displayName": "Industrial Automation",
-    "icon": "industrialAutomation",
-    "fields": {
-      "Name": "industrialAutomation",
-      "Icon": "industrialAutomation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrialAutomation"
-      }
-    ]
-  },
-  {
-    "id": "industrialReplication",
-    "type": "projects",
-    "displayName": "Industrial Replication",
-    "icon": "industrialReplication",
-    "fields": {
-      "Name": "industrialReplication",
-      "Icon": "industrialReplication"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrialReplication"
-      }
-    ]
-  },
-  {
-    "id": "industrialization",
-    "type": "projects",
-    "displayName": "Industrialization",
-    "icon": "industrialization",
-    "fields": {
-      "Name": "industrialization",
-      "Icon": "industrialization"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrialization"
       }
     ]
   },
@@ -1872,60 +828,6 @@
     ]
   },
   {
-    "id": "interplanetaryColonization",
-    "type": "projects",
-    "displayName": "Interplanetary Colonization",
-    "icon": "interplanetaryColonization",
-    "fields": {
-      "Name": "interplanetaryColonization",
-      "Icon": "interplanetaryColonization"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "interplanetaryColonization"
-      }
-    ]
-  },
-  {
-    "id": "interplanetaryTrade",
-    "type": "projects",
-    "displayName": "Interplanetary Trade",
-    "icon": "interplanetaryTrade",
-    "fields": {
-      "Name": "interplanetaryTrade",
-      "Icon": "interplanetaryTrade"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "interplanetaryTrade"
-      }
-    ]
-  },
-  {
-    "id": "lifeSpanAdd",
-    "type": "projects",
-    "displayName": "Life Span Add",
-    "icon": "lifeSpanAdd",
-    "fields": {
-      "Name": "lifeSpanAdd",
-      "Icon": "lifeSpanAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "lifeSpanAdd"
-      }
-    ]
-  },
-  {
     "id": "logisticsHub",
     "type": "projects",
     "displayName": "Logistics Hub",
@@ -1940,42 +842,6 @@
       {
         "type": "icon",
         "id": "logisticsHub"
-      }
-    ]
-  },
-  {
-    "id": "lowSolarOrbit",
-    "type": "projects",
-    "displayName": "Low Solar Orbit",
-    "icon": "lowSolarOrbit",
-    "fields": {
-      "Name": "lowSolarOrbit",
-      "Icon": "lowSolarOrbit"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "lowSolarOrbit"
-      }
-    ]
-  },
-  {
-    "id": "magneticAntimatter",
-    "type": "projects",
-    "displayName": "Magnetic Antimatter",
-    "icon": "magneticAntimatter",
-    "fields": {
-      "Name": "magneticAntimatter",
-      "Icon": "magneticAntimatter"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "magneticAntimatter"
       }
     ]
   },
@@ -1998,132 +864,6 @@
     ]
   },
   {
-    "id": "massCasting",
-    "type": "projects",
-    "displayName": "Mass Casting",
-    "icon": "massCasting",
-    "fields": {
-      "Name": "massCasting",
-      "Icon": "massCasting"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "massCasting"
-      }
-    ]
-  },
-  {
-    "id": "massGeneticGrowth",
-    "type": "projects",
-    "displayName": "Mass Genetic Growth",
-    "icon": "massGeneticGrowth",
-    "fields": {
-      "Name": "massGeneticGrowth",
-      "Icon": "massGeneticGrowth"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "massGeneticGrowth"
-      }
-    ]
-  },
-  {
-    "id": "massManufacturing",
-    "type": "projects",
-    "displayName": "Mass Manufacturing",
-    "icon": "massManufacturing",
-    "fields": {
-      "Name": "massManufacturing",
-      "Icon": "massManufacturing"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "massManufacturing"
-      }
-    ]
-  },
-  {
-    "id": "massMechanization",
-    "type": "projects",
-    "displayName": "Mass Mechanization",
-    "icon": "massMechanization",
-    "fields": {
-      "Name": "massMechanization",
-      "Icon": "massMechanization"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "massMechanization"
-      }
-    ]
-  },
-  {
-    "id": "massProduction",
-    "type": "projects",
-    "displayName": "Mass Production",
-    "icon": "massProduction",
-    "fields": {
-      "Name": "massProduction",
-      "Icon": "massProduction"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "massProduction"
-      }
-    ]
-  },
-  {
-    "id": "matterEngergyCovalence",
-    "type": "projects",
-    "displayName": "Matter Engergy Covalence",
-    "icon": "matterEngergyCovalence",
-    "fields": {
-      "Name": "matterEngergyCovalence",
-      "Icon": "matterEngergyCovalence"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "matterEngergyCovalence"
-      }
-    ]
-  },
-  {
-    "id": "metalAdvance",
-    "type": "projects",
-    "displayName": "Metal Advance",
-    "icon": "metalAdvance",
-    "fields": {
-      "Name": "metalAdvance",
-      "Icon": "metalAdvance"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "metalAdvance"
-      }
-    ]
-  },
-  {
     "id": "metaverseServer",
     "type": "projects",
     "displayName": "Metaverse Server",
@@ -2142,60 +882,6 @@
     ]
   },
   {
-    "id": "microCooling",
-    "type": "projects",
-    "displayName": "Micro Cooling",
-    "icon": "microCooling",
-    "fields": {
-      "Name": "microCooling",
-      "Icon": "microCooling"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "microCooling"
-      }
-    ]
-  },
-  {
-    "id": "middleClass",
-    "type": "projects",
-    "displayName": "Middle Class",
-    "icon": "middleClass",
-    "fields": {
-      "Name": "middleClass",
-      "Icon": "middleClass"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "middleClass"
-      }
-    ]
-  },
-  {
-    "id": "military",
-    "type": "projects",
-    "displayName": "Military",
-    "icon": "military",
-    "fields": {
-      "Name": "military",
-      "Icon": "military"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "military"
-      }
-    ]
-  },
-  {
     "id": "missileSilo",
     "type": "projects",
     "displayName": "Missile Silo",
@@ -2210,6 +896,24 @@
       {
         "type": "icon",
         "id": "missileSilo"
+      }
+    ]
+  },
+  {
+    "id": "monument",
+    "type": "projects",
+    "displayName": "Monument",
+    "icon": "monument",
+    "fields": {
+      "Name": "monument",
+      "Icon": "monument"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "monument"
       }
     ]
   },
@@ -2286,42 +990,6 @@
     ]
   },
   {
-    "id": "navalPort",
-    "type": "projects",
-    "displayName": "Naval Port",
-    "icon": "navalPort",
-    "fields": {
-      "Name": "navalPort",
-      "Icon": "navalPort"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "navalPort"
-      }
-    ]
-  },
-  {
-    "id": "navyCapacity",
-    "type": "projects",
-    "displayName": "Navy Capacity",
-    "icon": "navyCapacity",
-    "fields": {
-      "Name": "navyCapacity",
-      "Icon": "navyCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "navyCapacity"
-      }
-    ]
-  },
-  {
     "id": "neuralEngine",
     "type": "projects",
     "displayName": "Neural Engine",
@@ -2336,24 +1004,6 @@
       {
         "type": "icon",
         "id": "neuralEngine"
-      }
-    ]
-  },
-  {
-    "id": "neuralHarvester",
-    "type": "projects",
-    "displayName": "Neural Harvester",
-    "icon": "neuralHarvester",
-    "fields": {
-      "Name": "neuralHarvester",
-      "Icon": "neuralHarvester"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "neuralHarvester"
       }
     ]
   },
@@ -2376,42 +1026,6 @@
     ]
   },
   {
-    "id": "neuralNetworks",
-    "type": "projects",
-    "displayName": "Neural Networks",
-    "icon": "neuralNetworks",
-    "fields": {
-      "Name": "neuralNetworks",
-      "Icon": "neuralNetworks"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "neuralNetworks"
-      }
-    ]
-  },
-  {
-    "id": "neuralNetworksTech",
-    "type": "projects",
-    "displayName": "Neural Networks Tech",
-    "icon": "neuralNetworksTech",
-    "fields": {
-      "Name": "neuralNetworksTech",
-      "Icon": "neuralNetworksTech"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "neuralNetworksTech"
-      }
-    ]
-  },
-  {
     "id": "northernSpaceport",
     "type": "projects",
     "displayName": "Northern Spaceport",
@@ -2426,60 +1040,6 @@
       {
         "type": "icon",
         "id": "northernSpaceport"
-      }
-    ]
-  },
-  {
-    "id": "nuclearFusion",
-    "type": "projects",
-    "displayName": "Nuclear Fusion",
-    "icon": "nuclearFusion",
-    "fields": {
-      "Name": "nuclearFusion",
-      "Icon": "nuclearFusion"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "nuclearFusion"
-      }
-    ]
-  },
-  {
-    "id": "nuclearPhysics",
-    "type": "projects",
-    "displayName": "Nuclear Physics",
-    "icon": "nuclearPhysics",
-    "fields": {
-      "Name": "nuclearPhysics",
-      "Icon": "nuclearPhysics"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "nuclearPhysics"
-      }
-    ]
-  },
-  {
-    "id": "nuclearReactor",
-    "type": "projects",
-    "displayName": "Nuclear Reactor",
-    "icon": "nuclearReactor",
-    "fields": {
-      "Name": "nuclearReactor",
-      "Icon": "nuclearReactor"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "nuclearReactor"
       }
     ]
   },
@@ -2502,24 +1062,6 @@
     ]
   },
   {
-    "id": "oilApplication",
-    "type": "projects",
-    "displayName": "Oil Application",
-    "icon": "oilApplication",
-    "fields": {
-      "Name": "oilApplication",
-      "Icon": "oilApplication"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "oilApplication"
-      }
-    ]
-  },
-  {
     "id": "oilRefinery",
     "type": "projects",
     "displayName": "Oil Refinery",
@@ -2534,168 +1076,6 @@
       {
         "type": "icon",
         "id": "oilRefinery"
-      }
-    ]
-  },
-  {
-    "id": "openFarm",
-    "type": "projects",
-    "displayName": "Open Farm",
-    "icon": "openFarm",
-    "fields": {
-      "Name": "openFarm",
-      "Icon": "openFarm"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "openFarm"
-      }
-    ]
-  },
-  {
-    "id": "oxygen",
-    "type": "projects",
-    "displayName": "Oxygen",
-    "icon": "oxygen",
-    "fields": {
-      "Name": "oxygen",
-      "Icon": "oxygen"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "oxygen"
-      }
-    ]
-  },
-  {
-    "id": "palladium",
-    "type": "projects",
-    "displayName": "Palladium",
-    "icon": "palladium",
-    "fields": {
-      "Name": "palladium",
-      "Icon": "palladium"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "palladium"
-      }
-    ]
-  },
-  {
-    "id": "pharmaceuticals",
-    "type": "projects",
-    "displayName": "Pharmaceuticals",
-    "icon": "pharmaceuticals",
-    "fields": {
-      "Name": "pharmaceuticals",
-      "Icon": "pharmaceuticals"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "pharmaceuticals"
-      }
-    ]
-  },
-  {
-    "id": "pointDefense",
-    "type": "projects",
-    "displayName": "Point Defense",
-    "icon": "pointDefense",
-    "fields": {
-      "Name": "pointDefense",
-      "Icon": "pointDefense"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "pointDefense"
-      }
-    ]
-  },
-  {
-    "id": "politicalPowerAdd",
-    "type": "projects",
-    "displayName": "Political Power Add",
-    "icon": "politicalPowerAdd",
-    "fields": {
-      "Name": "politicalPowerAdd",
-      "Icon": "politicalPowerAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "politicalPowerAdd"
-      }
-    ]
-  },
-  {
-    "id": "polymetals",
-    "type": "projects",
-    "displayName": "Polymetals",
-    "icon": "polymetals",
-    "fields": {
-      "Name": "polymetals",
-      "Icon": "polymetals"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "polymetals"
-      }
-    ]
-  },
-  {
-    "id": "popAttrition",
-    "type": "projects",
-    "displayName": "Pop Attrition",
-    "icon": "popAttrition",
-    "fields": {
-      "Name": "popAttrition",
-      "Icon": "popAttrition"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "popAttrition"
-      }
-    ]
-  },
-  {
-    "id": "popGrowthMult",
-    "type": "projects",
-    "displayName": "Pop Growth Mult",
-    "icon": "popGrowthMult",
-    "fields": {
-      "Name": "popGrowthMult",
-      "Icon": "popGrowthMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "popGrowthMult"
       }
     ]
   },
@@ -2754,96 +1134,6 @@
     ]
   },
   {
-    "id": "projectBuildCostMult",
-    "type": "projects",
-    "displayName": "Project Build Cost Mult",
-    "icon": "projectBuildCostMult",
-    "fields": {
-      "Name": "projectBuildCostMult",
-      "Icon": "projectBuildCostMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectBuildCostMult"
-      }
-    ]
-  },
-  {
-    "id": "projectBuildSpeedMult",
-    "type": "projects",
-    "displayName": "Project Build Speed Mult",
-    "icon": "projectBuildSpeedMult",
-    "fields": {
-      "Name": "projectBuildSpeedMult",
-      "Icon": "projectBuildSpeedMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectBuildSpeedMult"
-      }
-    ]
-  },
-  {
-    "id": "projectEfficiency",
-    "type": "projects",
-    "displayName": "Project Efficiency",
-    "icon": "projectEfficiency",
-    "fields": {
-      "Name": "projectEfficiency",
-      "Icon": "projectEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectEfficiency"
-      }
-    ]
-  },
-  {
-    "id": "projectUpkeepMult",
-    "type": "projects",
-    "displayName": "Project Upkeep Mult",
-    "icon": "projectUpkeepMult",
-    "fields": {
-      "Name": "projectUpkeepMult",
-      "Icon": "projectUpkeepMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectUpkeepMult"
-      }
-    ]
-  },
-  {
-    "id": "qjXS",
-    "type": "projects",
-    "displayName": "Qj XS",
-    "icon": "qjXS",
-    "fields": {
-      "Name": "qjXS",
-      "Icon": "qjXS"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "qjXS"
-      }
-    ]
-  },
-  {
     "id": "quantumComputers",
     "type": "projects",
     "displayName": "Quantum Computers",
@@ -2858,24 +1148,6 @@
       {
         "type": "icon",
         "id": "quantumComputers"
-      }
-    ]
-  },
-  {
-    "id": "quantumComputing",
-    "type": "projects",
-    "displayName": "Quantum Computing",
-    "icon": "quantumComputing",
-    "fields": {
-      "Name": "quantumComputing",
-      "Icon": "quantumComputing"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "quantumComputing"
       }
     ]
   },
@@ -2898,24 +1170,6 @@
     ]
   },
   {
-    "id": "recruitablePopulationMult",
-    "type": "projects",
-    "displayName": "Recruitable Population Mult",
-    "icon": "recruitablePopulationMult",
-    "fields": {
-      "Name": "recruitablePopulationMult",
-      "Icon": "recruitablePopulationMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "recruitablePopulationMult"
-      }
-    ]
-  },
-  {
     "id": "redSquare",
     "type": "projects",
     "displayName": "Red Square",
@@ -2934,42 +1188,6 @@
     ]
   },
   {
-    "id": "steel",
-    "type": "projects",
-    "displayName": "Refining",
-    "icon": "steel",
-    "fields": {
-      "Name": "steel",
-      "Icon": "steel"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "steel"
-      }
-    ]
-  },
-  {
-    "id": "regionRangedDefense",
-    "type": "projects",
-    "displayName": "Region Ranged Defense",
-    "icon": "regionRangedDefense",
-    "fields": {
-      "Name": "regionRangedDefense",
-      "Icon": "regionRangedDefense"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "regionRangedDefense"
-      }
-    ]
-  },
-  {
     "id": "regionShield",
     "type": "projects",
     "displayName": "Region Shield",
@@ -2984,24 +1202,6 @@
       {
         "type": "icon",
         "id": "regionShield"
-      }
-    ]
-  },
-  {
-    "id": "regionVulnAdd",
-    "type": "projects",
-    "displayName": "Region Vuln Add",
-    "icon": "regionVulnAdd",
-    "fields": {
-      "Name": "regionVulnAdd",
-      "Icon": "regionVulnAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "regionVulnAdd"
       }
     ]
   },
@@ -3042,96 +1242,6 @@
     ]
   },
   {
-    "id": "research",
-    "type": "projects",
-    "displayName": "Research",
-    "icon": "research",
-    "fields": {
-      "Name": "research",
-      "Icon": "research"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "research"
-      }
-    ]
-  },
-  {
-    "id": "researchIndustry",
-    "type": "projects",
-    "displayName": "Research Industry",
-    "icon": "researchIndustry",
-    "fields": {
-      "Name": "researchIndustry",
-      "Icon": "researchIndustry"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "researchIndustry"
-      }
-    ]
-  },
-  {
-    "id": "researchMult",
-    "type": "projects",
-    "displayName": "Research Mult",
-    "icon": "researchMult",
-    "fields": {
-      "Name": "researchMult",
-      "Icon": "researchMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "researchMult"
-      }
-    ]
-  },
-  {
-    "id": "resourceCapacityAdd",
-    "type": "projects",
-    "displayName": "Resource Capacity Add",
-    "icon": "resourceCapacityAdd",
-    "fields": {
-      "Name": "resourceCapacityAdd",
-      "Icon": "resourceCapacityAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceCapacityAdd"
-      }
-    ]
-  },
-  {
-    "id": "resourceCapacityMult",
-    "type": "projects",
-    "displayName": "Resource Capacity Mult",
-    "icon": "resourceCapacityMult",
-    "fields": {
-      "Name": "resourceCapacityMult",
-      "Icon": "resourceCapacityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceCapacityMult"
-      }
-    ]
-  },
-  {
     "id": "extraction",
     "type": "projects",
     "displayName": "Resource Extraction",
@@ -3146,114 +1256,6 @@
       {
         "type": "icon",
         "id": "extraction"
-      }
-    ]
-  },
-  {
-    "id": "resourceModifier",
-    "type": "projects",
-    "displayName": "Resource Modifier",
-    "icon": "resourceModifier",
-    "fields": {
-      "Name": "resourceModifier",
-      "Icon": "resourceModifier"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceModifier"
-      }
-    ]
-  },
-  {
-    "id": "resourceMult",
-    "type": "projects",
-    "displayName": "Resource Mult",
-    "icon": "resourceMult",
-    "fields": {
-      "Name": "resourceMult",
-      "Icon": "resourceMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceMult"
-      }
-    ]
-  },
-  {
-    "id": "resourceProduction",
-    "type": "projects",
-    "displayName": "Resource Production",
-    "icon": "resourceProduction",
-    "fields": {
-      "Name": "resourceProduction",
-      "Icon": "resourceProduction"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceProduction"
-      }
-    ]
-  },
-  {
-    "id": "resourceUsageAdd",
-    "type": "projects",
-    "displayName": "Resource Usage Add",
-    "icon": "resourceUsageAdd",
-    "fields": {
-      "Name": "resourceUsageAdd",
-      "Icon": "resourceUsageAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceUsageAdd"
-      }
-    ]
-  },
-  {
-    "id": "resourceUsagePopulation",
-    "type": "projects",
-    "displayName": "Resource Usage Population",
-    "icon": "resourceUsagePopulation",
-    "fields": {
-      "Name": "resourceUsagePopulation",
-      "Icon": "resourceUsagePopulation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceUsagePopulation"
-      }
-    ]
-  },
-  {
-    "id": "robotCountrySituation",
-    "type": "projects",
-    "displayName": "Robot Country Situation",
-    "icon": "robotCountrySituation",
-    "fields": {
-      "Name": "robotCountrySituation",
-      "Icon": "robotCountrySituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "robotCountrySituation"
       }
     ]
   },
@@ -3312,182 +1314,20 @@
     ]
   },
   {
-    "id": "robotics",
+    "id": "shipyard",
     "type": "projects",
-    "displayName": "Robotics",
-    "icon": "robotics",
+    "displayName": "Shipyard",
+    "icon": "shipyard",
     "fields": {
-      "Name": "robotics",
-      "Icon": "robotics"
+      "Name": "shipyard",
+      "Icon": "shipyard"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "robotics"
-      }
-    ]
-  },
-  {
-    "id": "roboticsCrisis",
-    "type": "projects",
-    "displayName": "Robotics Crisis",
-    "icon": "roboticsCrisis",
-    "fields": {
-      "Name": "roboticsCrisis",
-      "Icon": "roboticsCrisis"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "roboticsCrisis"
-      }
-    ]
-  },
-  {
-    "id": "roboticsCrisis_intensity",
-    "type": "projects",
-    "displayName": "Robotics Crisis Intensity",
-    "icon": "roboticsCrisis_intensity",
-    "fields": {
-      "Name": "roboticsCrisis_intensity",
-      "Icon": "roboticsCrisis_intensity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "roboticsCrisis_intensity"
-      }
-    ]
-  },
-  {
-    "id": "laborer",
-    "type": "projects",
-    "displayName": "Rural Laborers",
-    "icon": "laborer",
-    "fields": {
-      "Name": "laborer",
-      "Icon": "laborer"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "laborer"
-      }
-    ]
-  },
-  {
-    "id": "sapientMachines",
-    "type": "projects",
-    "displayName": "Sapient Machines",
-    "icon": "sapientMachines",
-    "fields": {
-      "Name": "sapientMachines",
-      "Icon": "sapientMachines"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "sapientMachines"
-      }
-    ]
-  },
-  {
-    "id": "serviceIndustry",
-    "type": "projects",
-    "displayName": "Service Industry",
-    "icon": "serviceIndustry",
-    "fields": {
-      "Name": "serviceIndustry",
-      "Icon": "serviceIndustry"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "serviceIndustry"
-      }
-    ]
-  },
-  {
-    "id": "situation",
-    "type": "projects",
-    "displayName": "Situation",
-    "icon": "situation",
-    "fields": {
-      "Name": "situation",
-      "Icon": "situation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "situation"
-      }
-    ]
-  },
-  {
-    "id": "situationVariableAdd",
-    "type": "projects",
-    "displayName": "Situation Variable Add",
-    "icon": "situationVariableAdd",
-    "fields": {
-      "Name": "situationVariableAdd",
-      "Icon": "situationVariableAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "situationVariableAdd"
-      }
-    ]
-  },
-  {
-    "id": "spaceCapacity",
-    "type": "projects",
-    "displayName": "Space Capacity",
-    "icon": "spaceCapacity",
-    "fields": {
-      "Name": "spaceCapacity",
-      "Icon": "spaceCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spaceCapacity"
-      }
-    ]
-  },
-  {
-    "id": "spaceColonies",
-    "type": "projects",
-    "displayName": "Space Colonies",
-    "icon": "spaceColonies",
-    "fields": {
-      "Name": "spaceColonies",
-      "Icon": "spaceColonies"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spaceColonies"
+        "id": "shipyard"
       }
     ]
   },
@@ -3528,60 +1368,6 @@
     ]
   },
   {
-    "id": "spaceStation",
-    "type": "projects",
-    "displayName": "Space Station",
-    "icon": "spaceStation",
-    "fields": {
-      "Name": "spaceStation",
-      "Icon": "spaceStation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spaceStation"
-      }
-    ]
-  },
-  {
-    "id": "spaceport",
-    "type": "projects",
-    "displayName": "Spaceport",
-    "icon": "spaceport",
-    "fields": {
-      "Name": "spaceport",
-      "Icon": "spaceport"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spaceport"
-      }
-    ]
-  },
-  {
-    "id": "spaceports",
-    "type": "projects",
-    "displayName": "Spaceports",
-    "icon": "spaceports",
-    "fields": {
-      "Name": "spaceports",
-      "Icon": "spaceports"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spaceports"
-      }
-    ]
-  },
-  {
     "id": "statueOfLiberty",
     "type": "projects",
     "displayName": "Statue Of Liberty",
@@ -3614,96 +1400,6 @@
       {
         "type": "icon",
         "id": "steelFactory"
-      }
-    ]
-  },
-  {
-    "id": "steelRefinery",
-    "type": "projects",
-    "displayName": "Steel Refinery",
-    "icon": "steelRefinery",
-    "fields": {
-      "Name": "steelRefinery",
-      "Icon": "steelRefinery"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "steelRefinery"
-      }
-    ]
-  },
-  {
-    "id": "strategicCapacity",
-    "type": "projects",
-    "displayName": "Strategic Capacity",
-    "icon": "strategicCapacity",
-    "fields": {
-      "Name": "strategicCapacity",
-      "Icon": "strategicCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "strategicCapacity"
-      }
-    ]
-  },
-  {
-    "id": "strategic",
-    "type": "projects",
-    "displayName": "Strategic Damage",
-    "icon": "strategic",
-    "fields": {
-      "Name": "strategic",
-      "Icon": "strategic"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "strategic"
-      }
-    ]
-  },
-  {
-    "id": "supermaterials",
-    "type": "projects",
-    "displayName": "Super Materials",
-    "icon": "supermaterials",
-    "fields": {
-      "Name": "supermaterials",
-      "Icon": "supermaterials"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "supermaterials"
-      }
-    ]
-  },
-  {
-    "id": "superSteel",
-    "type": "projects",
-    "displayName": "Super Steel",
-    "icon": "superSteel",
-    "fields": {
-      "Name": "superSteel",
-      "Icon": "superSteel"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "superSteel"
       }
     ]
   },
@@ -3762,38 +1458,20 @@
     ]
   },
   {
-    "id": "superhumanCrisis",
+    "id": "superconstruction",
     "type": "projects",
-    "displayName": "Superhuman Crisis",
-    "icon": "superhumanCrisis",
+    "displayName": "Superconstruction",
+    "icon": "superconstruction",
     "fields": {
-      "Name": "superhumanCrisis",
-      "Icon": "superhumanCrisis"
+      "Name": "superconstruction",
+      "Icon": "superconstruction"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "superhumanCrisis"
-      }
-    ]
-  },
-  {
-    "id": "superhumanCrisis_intensity",
-    "type": "projects",
-    "displayName": "Superhuman Crisis Intensity",
-    "icon": "superhumanCrisis_intensity",
-    "fields": {
-      "Name": "superhumanCrisis_intensity",
-      "Icon": "superhumanCrisis_intensity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "superhumanCrisis_intensity"
+        "id": "superconstruction"
       }
     ]
   },
@@ -3816,78 +1494,6 @@
     ]
   },
   {
-    "id": "technology",
-    "type": "projects",
-    "displayName": "Technology",
-    "icon": "technology",
-    "fields": {
-      "Name": "technology",
-      "Icon": "technology"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "technology"
-      }
-    ]
-  },
-  {
-    "id": "terrain",
-    "type": "projects",
-    "displayName": "Terrain",
-    "icon": "terrain",
-    "fields": {
-      "Name": "terrain",
-      "Icon": "terrain"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "terrain"
-      }
-    ]
-  },
-  {
-    "id": "thorium",
-    "type": "projects",
-    "displayName": "Thorium",
-    "icon": "thorium",
-    "fields": {
-      "Name": "thorium",
-      "Icon": "thorium"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "thorium"
-      }
-    ]
-  },
-  {
-    "id": "titaniumAlloy",
-    "type": "projects",
-    "displayName": "Titanium Alloy",
-    "icon": "titaniumAlloy",
-    "fields": {
-      "Name": "titaniumAlloy",
-      "Icon": "titaniumAlloy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "titaniumAlloy"
-      }
-    ]
-  },
-  {
     "id": "ultracomputer",
     "type": "projects",
     "displayName": "Ultracomputer",
@@ -3902,60 +1508,6 @@
       {
         "type": "icon",
         "id": "ultracomputer"
-      }
-    ]
-  },
-  {
-    "id": "unitReinforceRateMult",
-    "type": "projects",
-    "displayName": "Unit Reinforce Rate Mult",
-    "icon": "unitReinforceRateMult",
-    "fields": {
-      "Name": "unitReinforceRateMult",
-      "Icon": "unitReinforceRateMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitReinforceRateMult"
-      }
-    ]
-  },
-  {
-    "id": "unitSpeedMult",
-    "type": "projects",
-    "displayName": "Unit Speed Mult",
-    "icon": "unitSpeedMult",
-    "fields": {
-      "Name": "unitSpeedMult",
-      "Icon": "unitSpeedMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitSpeedMult"
-      }
-    ]
-  },
-  {
-    "id": "unityMult",
-    "type": "projects",
-    "displayName": "Unity Mult",
-    "icon": "unityMult",
-    "fields": {
-      "Name": "unityMult",
-      "Icon": "unityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unityMult"
       }
     ]
   },
@@ -3978,60 +1530,6 @@
     ]
   },
   {
-    "id": "unrestAdd",
-    "type": "projects",
-    "displayName": "Unrest Add",
-    "icon": "unrestAdd",
-    "fields": {
-      "Name": "unrestAdd",
-      "Icon": "unrestAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unrestAdd"
-      }
-    ]
-  },
-  {
-    "id": "unrestChangeAdd",
-    "type": "projects",
-    "displayName": "Unrest Change Add",
-    "icon": "unrestChangeAdd",
-    "fields": {
-      "Name": "unrestChangeAdd",
-      "Icon": "unrestChangeAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unrestChangeAdd"
-      }
-    ]
-  },
-  {
-    "id": "upperClass",
-    "type": "projects",
-    "displayName": "Upper Class",
-    "icon": "upperClass",
-    "fields": {
-      "Name": "upperClass",
-      "Icon": "upperClass"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "upperClass"
-      }
-    ]
-  },
-  {
     "id": "urbanization",
     "type": "projects",
     "displayName": "Urbanization",
@@ -4050,24 +1548,6 @@
     ]
   },
   {
-    "id": "water",
-    "type": "projects",
-    "displayName": "Water",
-    "icon": "water",
-    "fields": {
-      "Name": "water",
-      "Icon": "water"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "water"
-      }
-    ]
-  },
-  {
     "id": "waystation",
     "type": "projects",
     "displayName": "Waystation",
@@ -4082,60 +1562,6 @@
       {
         "type": "icon",
         "id": "waystation"
-      }
-    ]
-  },
-  {
-    "id": "willpowerCapacity",
-    "type": "projects",
-    "displayName": "Willpower Capacity",
-    "icon": "willpowerCapacity",
-    "fields": {
-      "Name": "willpowerCapacity",
-      "Icon": "willpowerCapacity"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "willpowerCapacity"
-      }
-    ]
-  },
-  {
-    "id": "wonder",
-    "type": "projects",
-    "displayName": "Wonder",
-    "icon": "wonder",
-    "fields": {
-      "Name": "wonder",
-      "Icon": "wonder"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "wonder"
-      }
-    ]
-  },
-  {
-    "id": "zyW2",
-    "type": "projects",
-    "displayName": "Zy W2",
-    "icon": "zyW2",
-    "fields": {
-      "Name": "zyW2",
-      "Icon": "zyW2"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "zyW2"
       }
     ]
   }

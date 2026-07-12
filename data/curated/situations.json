@@ -1,23 +1,5 @@
 [
   {
-    "id": "addSituation",
-    "type": "situations",
-    "displayName": "Add Situation",
-    "icon": "addSituation",
-    "fields": {
-      "Name": "addSituation",
-      "Icon": "addSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "addSituation"
-      }
-    ]
-  },
-  {
     "id": "bioweaponSituation",
     "type": "situations",
     "displayName": "Bioweapon Situation",
@@ -288,24 +270,6 @@
     ]
   },
   {
-    "id": "removeSituation",
-    "type": "situations",
-    "displayName": "Remove Situation",
-    "icon": "removeSituation",
-    "fields": {
-      "Name": "removeSituation",
-      "Icon": "removeSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "removeSituation"
-      }
-    ]
-  },
-  {
     "id": "robotCountrySituation",
     "type": "situations",
     "displayName": "Robot Country Situation",
@@ -428,60 +392,6 @@
       {
         "type": "icon",
         "id": "shadowEmpireSituation"
-      }
-    ]
-  },
-  {
-    "id": "situationSharedVariable",
-    "type": "situations",
-    "displayName": "Situation Shared Variable",
-    "icon": "situationSharedVariable",
-    "fields": {
-      "Name": "situationSharedVariable",
-      "Icon": "situationSharedVariable"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "situationSharedVariable"
-      }
-    ]
-  },
-  {
-    "id": "situationSharedVariableAdd",
-    "type": "situations",
-    "displayName": "Situation Shared Variable Add",
-    "icon": "situationSharedVariableAdd",
-    "fields": {
-      "Name": "situationSharedVariableAdd",
-      "Icon": "situationSharedVariableAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "situationSharedVariableAdd"
-      }
-    ]
-  },
-  {
-    "id": "situationVariableAdd",
-    "type": "situations",
-    "displayName": "Situation Variable Add",
-    "icon": "situationVariableAdd",
-    "fields": {
-      "Name": "situationVariableAdd",
-      "Icon": "situationVariableAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "situationVariableAdd"
       }
     ]
   },
@@ -644,24 +554,6 @@
       {
         "type": "icon",
         "id": "venusCIASituation"
-      }
-    ]
-  },
-  {
-    "id": "venusRussiaSituation",
-    "type": "situations",
-    "displayName": "Venus Russia Situation",
-    "icon": "venusRussiaSituation",
-    "fields": {
-      "Name": "venusRussiaSituation",
-      "Icon": "venusRussiaSituation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "venusRussiaSituation"
       }
     ]
   },

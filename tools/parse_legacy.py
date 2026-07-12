@@ -95,6 +95,17 @@ TECH_DENY = {
     "enactDecision",
 }
 
+FORBIDDEN_ROWS: dict[str, set[str]] = {
+    "Resources.json": {
+        "baseEconomicOutputMult", "developmentGrowthMult", "educationEfficiency",
+        "factionLoyaltyAdd", "habitabilityAdd", "health", "popGrowthMult",
+        "projectBuildCostMult", "projectEfficiency", "resourceCapacityMult",
+        "stabilityGainAdd", "unitMoraleMult", "unitReinforceRateMult",
+        "unitSpeedMult", "unitStatMult", "unityMult", "university",
+    },
+    "Events.json": {"true", "false", "option1", "option2", "option3"},
+}
+
 
 def read_bytes(path: Path) -> bytes:
     return path.read_bytes()
@@ -165,6 +176,18 @@ def modifier_key(key: str, value1: str = "", value2: str = "", value3: str = "")
 def write_json(path: Path, data: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+
+
+def validate_records(filename: str, records: list[dict]) -> None:
+    names = [record.get("Name") for record in records]
+    if any(not isinstance(name, str) or not re.fullmatch(r"[A-Za-z][A-Za-z0-9_]*", name) for name in names):
+        raise ValueError(f"{filename}: invalid row identifier")
+    if len(names) != len(set(names)):
+        raise ValueError(f"{filename}: duplicate row identifiers")
+    leaked = set(names) & FORBIDDEN_ROWS.get(filename, set())
+    leaked.update(name for name in names if filename == "Events.json" and name.endswith(("_title", "_desc")))
+    if leaked:
+        raise ValueError(f"{filename}: non-row identifiers leaked into output: {sorted(leaked)}")
 
 
 def uasset_path(name: str) -> Path:
@@ -377,10 +400,19 @@ def parse_government_reforms(option_ids: list[str]) -> list[dict]:
 
 
 def parse_name_list(output_name: str, uasset_name: str, uexp_name: str | None = None, filter_fn=None) -> list[dict]:
+    """Extract candidate row identifiers, preferring serialized table payloads.
+
+    The uasset name table contains schema fields, modifier keys, and imports in
+    addition to row names. Those strings must only be used as a last-resort
+    fallback when retoc did not produce a uexp payload.
+    """
     names: list[str] = []
-    for path in [uasset_path(uasset_name), uexp_path(uexp_name or uasset_name)]:
-        if path.exists():
-            names.extend(unique_identifiers(strings_from_file(path) + extract_ascii_strings(read_bytes(path))))
+    export_name = uexp_name or str(Path(uasset_name).with_suffix(".uexp"))
+    export_path = uexp_path(export_name)
+    asset_path = uasset_path(uasset_name)
+    path = export_path if export_path.exists() else asset_path
+    if path.exists():
+        names.extend(unique_identifiers(extract_ascii_strings(read_bytes(path))))
 
     if filter_fn:
         names = [n for n in names if filter_fn(n)]
@@ -429,10 +461,12 @@ def parse_deposits() -> list[dict]:
 
 
 def parse_projects() -> list[dict]:
+    resource_ids = {record["Name"] for record in parse_resources()}
+    resource_ids.update(record["Name"] for record in parse_simple("", "DepositResources.uasset"))
     return parse_name_list(
         "Projects.json",
         "Projects.uasset",
-        filter_fn=lambda n: len(n) >= 4 and n not in TECH_DENY and not n.endswith("School"),
+        filter_fn=lambda n: len(n) >= 4 and n not in resource_ids and n not in {"oxygen", "water"},
     )
 
 
@@ -448,7 +482,7 @@ def parse_character_jobs() -> list[dict]:
     jobs = parse_name_list(
         "CharacterJobs.json",
         "CharacterJobs.uasset",
-        filter_fn=lambda n: n.islower() and len(n) >= 4 and not n.endswith("Tech"),
+        filter_fn=lambda n: len(n) >= 4 and not n.endswith("Tech"),
     )
     for record in jobs:
         record.update({"EffortCost": 1, "ExperienceGain": 1, "Term": 999999, "ElectionType": 0, "MajorJob": False})
@@ -457,6 +491,44 @@ def parse_character_jobs() -> list[dict]:
 
 def parse_simple(name: str, uasset_name: str, uexp_name: str | None = None) -> list[dict]:
     return parse_name_list(name, uasset_name, uexp_name)
+
+
+def parse_unit_components() -> list[dict]:
+    reference_ids = {
+        "ammunition", "antimatter", "biohazard", "communism", "computers",
+        "conservative", "electronics", "experience", "fascism", "geneticMaterial",
+        "health", "leader", "liberal", "logistics", "neuralNetworks", "nuclearFuels",
+        "progressive", "threeStar", "traditional", "water",
+    }
+    return parse_name_list(
+        "UnitComponents.json",
+        "UnitDesigner/UnitComponents.uasset",
+        "UnitDesigner/UnitComponents.uexp",
+        filter_fn=lambda name: name not in reference_ids,
+    )
+
+
+def parse_faction_variants() -> list[dict]:
+    path = uexp_path("FactionVariants.uasset")
+    if not path.exists():
+        return []
+    names = unique_identifiers(extract_ascii_strings(read_bytes(path)))
+    variants = [
+        name for name in names
+        if re.match(r"^(clergy|laborer|military)_[A-Za-z0-9_]+$", name)
+        or name.endswith("_hivemind")
+        or name == "militaryIndustrialComplex"
+    ]
+    return [{"Name": name, "Icon": name} for name in sorted(set(variants))]
+
+
+def parse_events() -> list[dict]:
+    path = uexp_path("Situation/Events.uexp")
+    if not path.exists():
+        return []
+    strings = unique_identifiers(extract_ascii_strings(read_bytes(path)))
+    event_ids = sorted({name.removesuffix("_title") for name in strings if name.endswith("_title")})
+    return [{"Name": name, "Icon": name} for name in event_ids]
 
 
 def extract_localization() -> dict[str, str]:
@@ -556,12 +628,12 @@ def main() -> int:
         ("CharacterJobs.json", parse_character_jobs),
         ("Eras.json", parse_eras),
         ("CharacterTraits.json", lambda: parse_simple("CharacterTraits.json", "CharacterTraits.uasset")),
-        ("FactionVariants.json", lambda: parse_simple("FactionVariants.json", "FactionVariants.uasset")),
+        ("FactionVariants.json", parse_faction_variants),
         ("DepositResources.json", lambda: parse_simple("DepositResources.json", "DepositResources.uasset")),
         ("StaticModifiers.json", lambda: parse_simple("StaticModifiers.json", "StaticModifiers.uasset")),
-        ("UnitComponents.json", lambda: parse_simple("UnitComponents.json", "UnitDesigner/UnitComponents.uasset", "UnitDesigner/UnitComponents.uexp")),
+        ("UnitComponents.json", parse_unit_components),
         ("Situations.json", parse_situations),
-        ("Events.json", lambda: parse_simple("Events.json", "Situation/Events.uasset", "Situation/Events.uexp")),
+        ("Events.json", parse_events),
         ("Deposits.json", parse_deposits),
     ]
 
@@ -569,6 +641,7 @@ def main() -> int:
 
     for filename, parser in parsers:
         records = parser()
+        validate_records(filename, records)
         write_json(OUTPUT_DEFINES / filename, records)
         summary[filename] = len(records)
         print(f"  {filename}: {len(records)} records")
@@ -589,7 +662,7 @@ def main() -> int:
         "legacyRoot": str(LEGACY_ROOT),
         "unpackedRoot": str(UNPACKED_ROOT),
         "defineCounts": summary,
-        "note": "Full modifier keys require .usmap; reform option modifiers use indexed keys where needed.",
+        "note": "Row IDs come from serialized uexp payloads. Full property names and structured fields still require .usmap; reform option modifiers use indexed keys where needed.",
     }
     write_json(PROJECT_ROOT / "data/raw/extraction-manifest.json", manifest)
 

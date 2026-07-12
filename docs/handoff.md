@@ -23,7 +23,7 @@ Build an **auto-generated data encyclopedia** for Solar Nations 2 (Astro static 
 - Static site with category pages, detail pages, search, icons/flags
 - GitHub Actions deploy to Pages
 - `withBase()` fix for subpath 404s (committed as `311664f`)
-- **2,804 curated entries** generated locally (not yet pushed)
+- **1,305 curated entries** generated from validated `.uexp` row identifiers
 
 ### 2. Data pipeline
 
@@ -45,28 +45,28 @@ npm run build:local # data + astro build
 
 | Category | Count |
 |----------|------:|
-| static-modifiers | 776 |
-| culture-traits | 617 |
-| technologies | 258 |
-| projects | 230 |
-| unit-components | 205 |
+| static-modifiers | 12 |
+| culture-traits | 421 |
+| technologies | 99 |
+| projects | 87 |
+| unit-components | 173 |
 | modifiers | 174 |
-| character-traits | 121 |
-| faction-variants | 66 |
+| character-traits | 68 |
+| faction-variants | 18 |
 | government-reform-options | 56 |
-| deposit-resources | 48 |
+| deposit-resources | 17 |
 | deposits | 41 |
-| events | 41 |
+| events | 3 |
 | mission-components | 40 |
-| situations | 38 |
-| resources | 37 |
-| character-jobs | 31 |
+| situations | 32 |
+| resources | 16 |
+| character-jobs | 23 |
 | factions | 9 |
 | eras | 8 |
 | government-reforms | 8 |
-| **Total** | **2,804** |
+| **Total** | **1,305** |
 
-Up from **231** tutorialMod samples.
+Counts are lower than earlier automated output because schema fields and cross-table values are no longer misclassified as rows.
 
 ### 4. Documentation
 
@@ -208,11 +208,11 @@ export SN2_GAME_PATH="/path/to/twilightModernity"
 
 ```
 Branch: main (tracking origin/main)
-Last pushed commit: 311664f — GitHub Pages base URL fix
+Last pushed commit before this parser correction: 4f9cd1c
 
 Uncommitted:
   - Modified: README.md, docs/extraction.md, scripts/extract.ts
-  - Modified: all data/curated/*.json (2,804 entries)
+  - Modified: parser, documentation, curated JSON, and generated wiki icon bundle
   - Untracked: tools/ (retoc, parse_legacy.py, extractor, ue4ss, jmap, etc.)
 ```
 
@@ -273,7 +273,7 @@ git push
 |-----------|--------|
 | Wiki builds and deploys | Done |
 | Category/detail pages work on GitHub Pages | Done |
-| >2000 game entries in wiki | Done locally (2,804) |
+| Validated row identifiers in wiki | Done locally (1,305) |
 | Real modifier keys on reforms | **Not done** — needs usmap or better parser |
 | Tech costs/prerequisites accurate | **Not done** |
 | Deposits category populated | Done (41 names/icons; structured fields remain) |

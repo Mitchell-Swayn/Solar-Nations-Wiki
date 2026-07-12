@@ -1,23 +1,5 @@
 [
   {
-    "id": "air",
-    "type": "resources",
-    "displayName": "Air",
-    "icon": "air",
-    "fields": {
-      "Name": "air",
-      "Icon": "air"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "air"
-      }
-    ]
-  },
-  {
     "id": "airCapacity",
     "type": "resources",
     "displayName": "Air Capacity",
@@ -54,60 +36,6 @@
     ]
   },
   {
-    "id": "bPpO",
-    "type": "resources",
-    "displayName": "B Pp O",
-    "icon": "bPpO",
-    "fields": {
-      "Name": "bPpO",
-      "Icon": "bPpO"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "bPpO"
-      }
-    ]
-  },
-  {
-    "id": "baseEconomicOutputMult",
-    "type": "resources",
-    "displayName": "Base Economic Output Mult",
-    "icon": "baseEconomicOutputMult",
-    "fields": {
-      "Name": "baseEconomicOutputMult",
-      "Icon": "baseEconomicOutputMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "baseEconomicOutputMult"
-      }
-    ]
-  },
-  {
-    "id": "developmentGrowthMult",
-    "type": "resources",
-    "displayName": "Development Growth Mult",
-    "icon": "developmentGrowthMult",
-    "fields": {
-      "Name": "developmentGrowthMult",
-      "Icon": "developmentGrowthMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "developmentGrowthMult"
-      }
-    ]
-  },
-  {
     "id": "diplomacyCapacity",
     "type": "resources",
     "displayName": "Diplomacy Capacity",
@@ -126,24 +54,6 @@
     ]
   },
   {
-    "id": "educationEfficiency",
-    "type": "resources",
-    "displayName": "Education Efficiency",
-    "icon": "educationEfficiency",
-    "fields": {
-      "Name": "educationEfficiency",
-      "Icon": "educationEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "educationEfficiency"
-      }
-    ]
-  },
-  {
     "id": "exoticMatter",
     "type": "resources",
     "displayName": "Exotic Matter",
@@ -158,24 +68,6 @@
       {
         "type": "icon",
         "id": "exoticMatter"
-      }
-    ]
-  },
-  {
-    "id": "factionLoyaltyAdd",
-    "type": "resources",
-    "displayName": "Faction Loyalty Add",
-    "icon": "factionLoyaltyAdd",
-    "fields": {
-      "Name": "factionLoyaltyAdd",
-      "Icon": "factionLoyaltyAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "factionLoyaltyAdd"
       }
     ]
   },
@@ -212,43 +104,6 @@
       {
         "type": "icon",
         "id": "gravitons"
-      }
-    ]
-  },
-  {
-    "id": "habitabilityAdd",
-    "type": "resources",
-    "displayName": "Habitability Add",
-    "icon": "habitabilityAdd",
-    "fields": {
-      "Name": "habitabilityAdd",
-      "Icon": "habitabilityAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "habitabilityAdd"
-      }
-    ]
-  },
-  {
-    "id": "health",
-    "type": "resources",
-    "displayName": "Health",
-    "icon": "health",
-    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
       }
     ]
   },
@@ -344,78 +199,6 @@
     ]
   },
   {
-    "id": "popGrowthMult",
-    "type": "resources",
-    "displayName": "Pop Growth Mult",
-    "icon": "popGrowthMult",
-    "fields": {
-      "Name": "popGrowthMult",
-      "Icon": "popGrowthMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "popGrowthMult"
-      }
-    ]
-  },
-  {
-    "id": "projectBuildCostMult",
-    "type": "resources",
-    "displayName": "Project Build Cost Mult",
-    "icon": "projectBuildCostMult",
-    "fields": {
-      "Name": "projectBuildCostMult",
-      "Icon": "projectBuildCostMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectBuildCostMult"
-      }
-    ]
-  },
-  {
-    "id": "projectEfficiency",
-    "type": "resources",
-    "displayName": "Project Efficiency",
-    "icon": "projectEfficiency",
-    "fields": {
-      "Name": "projectEfficiency",
-      "Icon": "projectEfficiency"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "projectEfficiency"
-      }
-    ]
-  },
-  {
-    "id": "resourceCapacityMult",
-    "type": "resources",
-    "displayName": "Resource Capacity Mult",
-    "icon": "resourceCapacityMult",
-    "fields": {
-      "Name": "resourceCapacityMult",
-      "Icon": "resourceCapacityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "resourceCapacityMult"
-      }
-    ]
-  },
-  {
     "id": "robots",
     "type": "resources",
     "displayName": "Robots",
@@ -434,24 +217,6 @@
     ]
   },
   {
-    "id": "space",
-    "type": "resources",
-    "displayName": "Space",
-    "icon": "space",
-    "fields": {
-      "Name": "space",
-      "Icon": "space"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "space"
-      }
-    ]
-  },
-  {
     "id": "spaceCapacity",
     "type": "resources",
     "displayName": "Space Capacity",
@@ -466,24 +231,6 @@
       {
         "type": "icon",
         "id": "spaceCapacity"
-      }
-    ]
-  },
-  {
-    "id": "stabilityGainAdd",
-    "type": "resources",
-    "displayName": "Stability Gain Add",
-    "icon": "stabilityGainAdd",
-    "fields": {
-      "Name": "stabilityGainAdd",
-      "Icon": "stabilityGainAdd"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "stabilityGainAdd"
       }
     ]
   },
@@ -520,132 +267,6 @@
       {
         "type": "icon",
         "id": "superSteel"
-      }
-    ]
-  },
-  {
-    "id": "unitMoraleMult",
-    "type": "resources",
-    "displayName": "Unit Morale Mult",
-    "icon": "unitMoraleMult",
-    "fields": {
-      "Name": "unitMoraleMult",
-      "Icon": "unitMoraleMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitMoraleMult"
-      }
-    ]
-  },
-  {
-    "id": "unitReinforceRateMult",
-    "type": "resources",
-    "displayName": "Unit Reinforce Rate Mult",
-    "icon": "unitReinforceRateMult",
-    "fields": {
-      "Name": "unitReinforceRateMult",
-      "Icon": "unitReinforceRateMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitReinforceRateMult"
-      }
-    ]
-  },
-  {
-    "id": "unitSpeedMult",
-    "type": "resources",
-    "displayName": "Unit Speed Mult",
-    "icon": "unitSpeedMult",
-    "fields": {
-      "Name": "unitSpeedMult",
-      "Icon": "unitSpeedMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitSpeedMult"
-      }
-    ]
-  },
-  {
-    "id": "unitStatMult",
-    "type": "resources",
-    "displayName": "Unit Stat Mult",
-    "icon": "unitStatMult",
-    "fields": {
-      "Name": "unitStatMult",
-      "Icon": "unitStatMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unitStatMult"
-      }
-    ]
-  },
-  {
-    "id": "unityMult",
-    "type": "resources",
-    "displayName": "Unity Mult",
-    "icon": "unityMult",
-    "fields": {
-      "Name": "unityMult",
-      "Icon": "unityMult"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unityMult"
-      }
-    ]
-  },
-  {
-    "id": "university",
-    "type": "resources",
-    "displayName": "University",
-    "icon": "university",
-    "fields": {
-      "Name": "university",
-      "Icon": "university"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "university"
-      }
-    ]
-  },
-  {
-    "id": "water",
-    "type": "resources",
-    "displayName": "Water",
-    "icon": "water",
-    "fields": {
-      "Name": "water",
-      "Icon": "water"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "water"
       }
     ]
   },
