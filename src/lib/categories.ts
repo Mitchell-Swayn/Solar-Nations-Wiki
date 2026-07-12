@@ -69,6 +69,7 @@ export const CATEGORIES: CategoryMeta[] = [
     defineFile: 'GovernmentReformOptions.json',
     priority: 7,
     group: 'society',
+    mergedInto: 'government-reforms',
   },
   {
     slug: 'projects',

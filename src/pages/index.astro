@@ -4,7 +4,7 @@ import { getCategories, getAllEntries, getEntriesByType } from '../lib/data';
 import { CATEGORY_GROUPS } from '../lib/categories';
 import { withBase } from '../lib/base';
 
-const categories = getCategories();
+const categories = getCategories().filter((category) => !category.mergedInto);
 const allEntries = getAllEntries();
 const featured = ['technologies', 'government-reforms', 'projects', 'factions', 'unit-components', 'resources'];
 ---

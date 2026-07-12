@@ -43,6 +43,7 @@ export interface CategoryMeta {
   defineFile?: string;
   priority: number;
   group: 'core' | 'society' | 'military' | 'reference';
+  mergedInto?: string;
 }
 
 export interface CuratedIndex {

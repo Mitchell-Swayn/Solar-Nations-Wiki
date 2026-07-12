@@ -27,8 +27,8 @@ const detailFields = Object.fromEntries(Object.entries(entry.fields).filter(([ke
 const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'].includes(key)).length;
 ---
 
-<BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`} description={entry.description} activeType={type}>
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><a href={withBase(`/${type}/`)}>{category.pluralLabel}</a><span>/</span><strong>{entry.displayName}</strong></nav>
+<BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`} description={entry.description} activeType={category.mergedInto ?? type}>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><a href={withBase(`/${category.mergedInto ?? type}/`)}>{category.mergedInto ? 'Government Reforms' : category.pluralLabel}</a><span>/</span><strong>{entry.displayName}</strong></nav>
 
   <article class="article-layout">
     <div class="article-main">

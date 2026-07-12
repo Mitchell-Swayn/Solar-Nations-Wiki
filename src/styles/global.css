@@ -144,6 +144,15 @@ code, kbd { font-family: var(--mono); }
 .reform-option-group > header h2 { margin: 0; font-size: 18px; }
 .reform-option-group > header > a { padding-bottom: 2px; font-size: 10px; font-weight: 600; }
 .reform-option-group .entry-directory { margin-top: 0; border-top: 0; }
+.culture-domain { margin-bottom: 48px; }
+.culture-domain > header { margin-bottom: 18px; padding-bottom: 10px; border-bottom: 3px solid var(--ink-2); }
+.culture-domain > header .eyebrow { margin-bottom: 4px; }
+.culture-domain > header h2 { margin: 0; font-size: 22px; }
+.culture-family { margin: 0 0 28px; }
+.culture-family > header { border-bottom-width: 1px; }
+.culture-family-title { display: flex; align-items: center; gap: 11px; }
+.culture-family-title h3 { margin: 0; font-size: 16px; }
+.culture-family > header > span { color: var(--text-muted); font-family: var(--mono); font-size: 9px; text-transform: uppercase; }
 
 .article-layout { display: grid; grid-template-columns: minmax(0, 850px) 220px; gap: clamp(38px, 6vw, 86px); align-items: start; }
 .article-header { padding: 8px 0 30px; border-bottom: 1px solid var(--border-strong); }

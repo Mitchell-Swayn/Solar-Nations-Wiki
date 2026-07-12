@@ -11,6 +11,7 @@ import {
   getTutorialModPath,
 } from './paths.ts';
 import { DEFINE_FILE_TO_SLUG } from '../src/lib/categories.ts';
+import { getCultureTraitGroup } from '../src/lib/culture.ts';
 import type {
   CuratedIndex,
   ModifierRef,
@@ -36,17 +37,9 @@ const ICON_ALIASES: Record<string, string> = {
   attack: 'smallArms0', entrenchment: 'fortifications', recon: 'activeRecon', truck: 'logistics',
 };
 
-const CULTURE_ICON_PREFIXES: Array<[string, string]> = [
-  ['humanity', 'speciesHuman'], ['robotic', 'speciesRobot'], ['christianity', 'christian'],
-  ['islam', 'islam'], ['judaism', 'jewish'], ['marxism', 'communist'], ['occult', 'occult'],
-  ['atheist', 'atheist'], ['hegelian', 'fascist'], ['hinduism', 'hindu'],
-];
-
 function resolveIconSource(icon: string, type: string): string {
   if (ICON_ALIASES[icon]) return ICON_ALIASES[icon];
-  if (type === 'culture-traits') {
-    return CULTURE_ICON_PREFIXES.find(([prefix]) => icon.startsWith(prefix))?.[1] ?? icon;
-  }
+  if (type === 'culture-traits') return getCultureTraitGroup(icon).icon ?? icon;
   return icon;
 }
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:06:40.684Z",
+  "generatedAt": "2026-07-12T06:09:11.975Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -1759,337 +1759,505 @@
       "id": "airCavalry",
       "type": "culture-traits",
       "displayName": "Air Cavalry",
+      "icon": "airCavalry",
       "fields": {
         "Name": "airCavalry",
         "Icon": "airCavalry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airCavalry"
+        }
+      ]
     },
     "culture-traits:airCommand": {
       "id": "airCommand",
       "type": "culture-traits",
       "displayName": "Air Command",
+      "icon": "airCommand",
       "fields": {
         "Name": "airCommand",
         "Icon": "airCommand"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airCommand"
+        }
+      ]
     },
     "culture-traits:airDesigning": {
       "id": "airDesigning",
       "type": "culture-traits",
       "displayName": "Air Designing",
+      "icon": "airDesigning",
       "fields": {
         "Name": "airDesigning",
         "Icon": "airDesigning"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airDesigning"
+        }
+      ]
     },
     "culture-traits:airLandSupport": {
       "id": "airLandSupport",
       "type": "culture-traits",
       "displayName": "Air Land Support",
+      "icon": "airLandSupport",
       "fields": {
         "Name": "airLandSupport",
         "Icon": "airLandSupport"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airLandSupport"
+        }
+      ]
     },
     "culture-traits:airMastery": {
       "id": "airMastery",
       "type": "culture-traits",
       "displayName": "Air Mastery",
+      "icon": "airMastery",
       "fields": {
         "Name": "airMastery",
         "Icon": "airMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airMastery"
+        }
+      ]
     },
     "culture-traits:airReconaissance": {
       "id": "airReconaissance",
       "type": "culture-traits",
       "displayName": "Air Reconaissance",
+      "icon": "airReconaissance",
       "fields": {
         "Name": "airReconaissance",
         "Icon": "airReconaissance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airReconaissance"
+        }
+      ]
     },
     "culture-traits:airSuperiority": {
       "id": "airSuperiority",
       "type": "culture-traits",
       "displayName": "Air Superiority",
+      "icon": "airSuperiority",
       "fields": {
         "Name": "airSuperiority",
         "Icon": "airSuperiority"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "airSuperiority"
+        }
+      ]
     },
     "culture-traits:americanAstrogation": {
       "id": "americanAstrogation",
       "type": "culture-traits",
       "displayName": "American Astrogation",
+      "icon": "americanAstrogation",
       "fields": {
         "Name": "americanAstrogation",
         "Icon": "americanAstrogation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanAstrogation"
+        }
+      ]
     },
     "culture-traits:americanFreedom": {
       "id": "americanFreedom",
       "type": "culture-traits",
       "displayName": "American Freedom",
+      "icon": "americanFreedom",
       "fields": {
         "Name": "americanFreedom",
         "Icon": "americanFreedom"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanFreedom"
+        }
+      ]
     },
     "culture-traits:americanFrontierism": {
       "id": "americanFrontierism",
       "type": "culture-traits",
       "displayName": "American Frontierism",
+      "icon": "americanFrontierism",
       "fields": {
         "Name": "americanFrontierism",
         "Icon": "americanFrontierism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanFrontierism"
+        }
+      ]
     },
     "culture-traits:americanHegemony": {
       "id": "americanHegemony",
       "type": "culture-traits",
       "displayName": "American Hegemony",
+      "icon": "americanHegemony",
       "fields": {
         "Name": "americanHegemony",
         "Icon": "americanHegemony"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanHegemony"
+        }
+      ]
     },
     "culture-traits:americanIngenuity": {
       "id": "americanIngenuity",
       "type": "culture-traits",
       "displayName": "American Ingenuity",
+      "icon": "americanIngenuity",
       "fields": {
         "Name": "americanIngenuity",
         "Icon": "americanIngenuity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanIngenuity"
+        }
+      ]
     },
     "culture-traits:americanNavalPrimacy": {
       "id": "americanNavalPrimacy",
       "type": "culture-traits",
       "displayName": "American Naval Primacy",
+      "icon": "americanNavalPrimacy",
       "fields": {
         "Name": "americanNavalPrimacy",
         "Icon": "americanNavalPrimacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanNavalPrimacy"
+        }
+      ]
     },
     "culture-traits:americanWorkEthic": {
       "id": "americanWorkEthic",
       "type": "culture-traits",
       "displayName": "American Work Ethic",
+      "icon": "americanWorkEthic",
       "fields": {
         "Name": "americanWorkEthic",
         "Icon": "americanWorkEthic"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "americanWorkEthic"
+        }
+      ]
     },
     "culture-traits:aristocraticAmbition": {
       "id": "aristocraticAmbition",
       "type": "culture-traits",
       "displayName": "Aristocratic Ambition",
+      "icon": "aristocraticAmbition",
       "fields": {
         "Name": "aristocraticAmbition",
         "Icon": "aristocraticAmbition"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticAmbition"
+        }
+      ]
     },
     "culture-traits:aristocraticCulture": {
       "id": "aristocraticCulture",
       "type": "culture-traits",
       "displayName": "Aristocratic Culture",
+      "icon": "aristocraticCulture",
       "fields": {
         "Name": "aristocraticCulture",
         "Icon": "aristocraticCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticCulture"
+        }
+      ]
     },
     "culture-traits:aristocraticEconomics": {
       "id": "aristocraticEconomics",
       "type": "culture-traits",
       "displayName": "Aristocratic Economics",
+      "icon": "aristocraticEconomics",
       "fields": {
         "Name": "aristocraticEconomics",
         "Icon": "aristocraticEconomics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticEconomics"
+        }
+      ]
     },
     "culture-traits:aristocraticLeadership": {
       "id": "aristocraticLeadership",
       "type": "culture-traits",
       "displayName": "Aristocratic Leadership",
+      "icon": "aristocraticLeadership",
       "fields": {
         "Name": "aristocraticLeadership",
         "Icon": "aristocraticLeadership"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticLeadership"
+        }
+      ]
     },
     "culture-traits:aristocraticLoyalty": {
       "id": "aristocraticLoyalty",
       "type": "culture-traits",
       "displayName": "Aristocratic Loyalty",
+      "icon": "aristocraticLoyalty",
       "fields": {
         "Name": "aristocraticLoyalty",
         "Icon": "aristocraticLoyalty"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticLoyalty"
+        }
+      ]
     },
     "culture-traits:aristocraticMilitary": {
       "id": "aristocraticMilitary",
       "type": "culture-traits",
       "displayName": "Aristocratic Military",
+      "icon": "aristocraticMilitary",
       "fields": {
         "Name": "aristocraticMilitary",
         "Icon": "aristocraticMilitary"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticMilitary"
+        }
+      ]
     },
     "culture-traits:aristocraticSupremacy": {
       "id": "aristocraticSupremacy",
       "type": "culture-traits",
       "displayName": "Aristocratic Supremacy",
+      "icon": "aristocraticSupremacy",
       "fields": {
         "Name": "aristocraticSupremacy",
         "Icon": "aristocraticSupremacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "aristocraticSupremacy"
+        }
+      ]
     },
     "culture-traits:assimilationistAutonomy": {
       "id": "assimilationistAutonomy",
       "type": "culture-traits",
       "displayName": "Assimilationist Autonomy",
+      "icon": "assimilationistAutonomy",
       "fields": {
         "Name": "assimilationistAutonomy",
         "Icon": "assimilationistAutonomy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistAutonomy"
+        }
+      ]
     },
     "culture-traits:assimilationistControl": {
       "id": "assimilationistControl",
       "type": "culture-traits",
       "displayName": "Assimilationist Control",
+      "icon": "assimilationistControl",
       "fields": {
         "Name": "assimilationistControl",
         "Icon": "assimilationistControl"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistControl"
+        }
+      ]
     },
     "culture-traits:assimilationistCulture": {
       "id": "assimilationistCulture",
       "type": "culture-traits",
       "displayName": "Assimilationist Culture",
+      "icon": "assimilationistCulture",
       "fields": {
         "Name": "assimilationistCulture",
         "Icon": "assimilationistCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistCulture"
+        }
+      ]
     },
     "culture-traits:assimilationistEthics": {
       "id": "assimilationistEthics",
       "type": "culture-traits",
       "displayName": "Assimilationist Ethics",
+      "icon": "assimilationistEthics",
       "fields": {
         "Name": "assimilationistEthics",
         "Icon": "assimilationistEthics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistEthics"
+        }
+      ]
     },
     "culture-traits:assimilationistMastery": {
       "id": "assimilationistMastery",
       "type": "culture-traits",
       "displayName": "Assimilationist Mastery",
+      "icon": "assimilationistMastery",
       "fields": {
         "Name": "assimilationistMastery",
         "Icon": "assimilationistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistMastery"
+        }
+      ]
     },
     "culture-traits:assimilationistMilitary": {
       "id": "assimilationistMilitary",
       "type": "culture-traits",
       "displayName": "Assimilationist Military",
+      "icon": "assimilationistMilitary",
       "fields": {
         "Name": "assimilationistMilitary",
         "Icon": "assimilationistMilitary"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistMilitary"
+        }
+      ]
     },
     "culture-traits:assimilationistPolitical": {
       "id": "assimilationistPolitical",
       "type": "culture-traits",
       "displayName": "Assimilationist Political",
+      "icon": "assimilationistPolitical",
       "fields": {
         "Name": "assimilationistPolitical",
         "Icon": "assimilationistPolitical"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "assimilationistPolitical"
+        }
+      ]
     },
     "culture-traits:atheist": {
       "id": "atheist",
@@ -2239,85 +2407,127 @@
       "id": "britishAdministration",
       "type": "culture-traits",
       "displayName": "British Administration",
+      "icon": "britishAdministration",
       "fields": {
         "Name": "britishAdministration",
         "Icon": "britishAdministration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishAdministration"
+        }
+      ]
     },
     "culture-traits:britishAdventurism": {
       "id": "britishAdventurism",
       "type": "culture-traits",
       "displayName": "British Adventurism",
+      "icon": "britishAdventurism",
       "fields": {
         "Name": "britishAdventurism",
         "Icon": "britishAdventurism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishAdventurism"
+        }
+      ]
     },
     "culture-traits:britishIndustrialism": {
       "id": "britishIndustrialism",
       "type": "culture-traits",
       "displayName": "British Industrialism",
+      "icon": "britishIndustrialism",
       "fields": {
         "Name": "britishIndustrialism",
         "Icon": "britishIndustrialism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishIndustrialism"
+        }
+      ]
     },
     "culture-traits:britishInnovation": {
       "id": "britishInnovation",
       "type": "culture-traits",
       "displayName": "British Innovation",
+      "icon": "britishInnovation",
       "fields": {
         "Name": "britishInnovation",
         "Icon": "britishInnovation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishInnovation"
+        }
+      ]
     },
     "culture-traits:britishLegacy": {
       "id": "britishLegacy",
       "type": "culture-traits",
       "displayName": "British Legacy",
+      "icon": "britishLegacy",
       "fields": {
         "Name": "britishLegacy",
         "Icon": "britishLegacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishLegacy"
+        }
+      ]
     },
     "culture-traits:britishPoliteness": {
       "id": "britishPoliteness",
       "type": "culture-traits",
       "displayName": "British Politeness",
+      "icon": "britishPoliteness",
       "fields": {
         "Name": "britishPoliteness",
         "Icon": "britishPoliteness"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishPoliteness"
+        }
+      ]
     },
     "culture-traits:britishStoicism": {
       "id": "britishStoicism",
       "type": "culture-traits",
       "displayName": "British Stoicism",
+      "icon": "britishStoicism",
       "fields": {
         "Name": "britishStoicism",
         "Icon": "britishStoicism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "britishStoicism"
+        }
+      ]
     },
     "culture-traits:christian": {
       "id": "christian",
@@ -2485,589 +2695,883 @@
       "id": "consumersBreadAndCircus",
       "type": "culture-traits",
       "displayName": "Consumers Bread And Circus",
+      "icon": "consumersBreadAndCircus",
       "fields": {
         "Name": "consumersBreadAndCircus",
         "Icon": "consumersBreadAndCircus"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersBreadAndCircus"
+        }
+      ]
     },
     "culture-traits:consumersCommerce": {
       "id": "consumersCommerce",
       "type": "culture-traits",
       "displayName": "Consumers Commerce",
+      "icon": "consumersCommerce",
       "fields": {
         "Name": "consumersCommerce",
         "Icon": "consumersCommerce"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersCommerce"
+        }
+      ]
     },
     "culture-traits:consumersEconomy": {
       "id": "consumersEconomy",
       "type": "culture-traits",
       "displayName": "Consumers Economy",
+      "icon": "consumersEconomy",
       "fields": {
         "Name": "consumersEconomy",
         "Icon": "consumersEconomy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersEconomy"
+        }
+      ]
     },
     "culture-traits:consumersExport": {
       "id": "consumersExport",
       "type": "culture-traits",
       "displayName": "Consumers Export",
+      "icon": "consumersExport",
       "fields": {
         "Name": "consumersExport",
         "Icon": "consumersExport"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersExport"
+        }
+      ]
     },
     "culture-traits:consumersInnovation": {
       "id": "consumersInnovation",
       "type": "culture-traits",
       "displayName": "Consumers Innovation",
+      "icon": "consumersInnovation",
       "fields": {
         "Name": "consumersInnovation",
         "Icon": "consumersInnovation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersInnovation"
+        }
+      ]
     },
     "culture-traits:consumersMastery": {
       "id": "consumersMastery",
       "type": "culture-traits",
       "displayName": "Consumers Mastery",
+      "icon": "consumersMastery",
       "fields": {
         "Name": "consumersMastery",
         "Icon": "consumersMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersMastery"
+        }
+      ]
     },
     "culture-traits:consumersPolitics": {
       "id": "consumersPolitics",
       "type": "culture-traits",
       "displayName": "Consumers Politics",
+      "icon": "consumersPolitics",
       "fields": {
         "Name": "consumersPolitics",
         "Icon": "consumersPolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "consumersPolitics"
+        }
+      ]
     },
     "culture-traits:defensiveBattlements": {
       "id": "defensiveBattlements",
       "type": "culture-traits",
       "displayName": "Defensive Battlements",
+      "icon": "defensiveBattlements",
       "fields": {
         "Name": "defensiveBattlements",
         "Icon": "defensiveBattlements"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveBattlements"
+        }
+      ]
     },
     "culture-traits:defensiveFortification": {
       "id": "defensiveFortification",
       "type": "culture-traits",
       "displayName": "Defensive Fortification",
+      "icon": "defensiveFortification",
       "fields": {
         "Name": "defensiveFortification",
         "Icon": "defensiveFortification"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveFortification"
+        }
+      ]
     },
     "culture-traits:defensiveMastery": {
       "id": "defensiveMastery",
       "type": "culture-traits",
       "displayName": "Defensive Mastery",
+      "icon": "defensiveMastery",
       "fields": {
         "Name": "defensiveMastery",
         "Icon": "defensiveMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveMastery"
+        }
+      ]
     },
     "culture-traits:defensiveMilitaryIndustry": {
       "id": "defensiveMilitaryIndustry",
       "type": "culture-traits",
       "displayName": "Defensive Military Industry",
+      "icon": "defensiveMilitaryIndustry",
       "fields": {
         "Name": "defensiveMilitaryIndustry",
         "Icon": "defensiveMilitaryIndustry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveMilitaryIndustry"
+        }
+      ]
     },
     "culture-traits:defensivePsychology": {
       "id": "defensivePsychology",
       "type": "culture-traits",
       "displayName": "Defensive Psychology",
+      "icon": "defensivePsychology",
       "fields": {
         "Name": "defensivePsychology",
         "Icon": "defensivePsychology"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensivePsychology"
+        }
+      ]
     },
     "culture-traits:defensiveResistance": {
       "id": "defensiveResistance",
       "type": "culture-traits",
       "displayName": "Defensive Resistance",
+      "icon": "defensiveResistance",
       "fields": {
         "Name": "defensiveResistance",
         "Icon": "defensiveResistance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveResistance"
+        }
+      ]
     },
     "culture-traits:defensiveUnits": {
       "id": "defensiveUnits",
       "type": "culture-traits",
       "displayName": "Defensive Units",
+      "icon": "defensiveUnits",
       "fields": {
         "Name": "defensiveUnits",
         "Icon": "defensiveUnits"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "defensiveUnits"
+        }
+      ]
     },
     "culture-traits:diligentConstruction": {
       "id": "diligentConstruction",
       "type": "culture-traits",
       "displayName": "Diligent Construction",
+      "icon": "diligentConstruction",
       "fields": {
         "Name": "diligentConstruction",
         "Icon": "diligentConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentConstruction"
+        }
+      ]
     },
     "culture-traits:diligentEntrepreneurship": {
       "id": "diligentEntrepreneurship",
       "type": "culture-traits",
       "displayName": "Diligent Entrepreneurship",
+      "icon": "diligentEntrepreneurship",
       "fields": {
         "Name": "diligentEntrepreneurship",
         "Icon": "diligentEntrepreneurship"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentEntrepreneurship"
+        }
+      ]
     },
     "culture-traits:diligentExperience": {
       "id": "diligentExperience",
       "type": "culture-traits",
       "displayName": "Diligent Experience",
+      "icon": "diligentExperience",
       "fields": {
         "Name": "diligentExperience",
         "Icon": "diligentExperience"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentExperience"
+        }
+      ]
     },
     "culture-traits:diligentLeadership": {
       "id": "diligentLeadership",
       "type": "culture-traits",
       "displayName": "Diligent Leadership",
+      "icon": "diligentLeadership",
       "fields": {
         "Name": "diligentLeadership",
         "Icon": "diligentLeadership"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentLeadership"
+        }
+      ]
     },
     "culture-traits:diligentMastery": {
       "id": "diligentMastery",
       "type": "culture-traits",
       "displayName": "Diligent Mastery",
+      "icon": "diligentMastery",
       "fields": {
         "Name": "diligentMastery",
         "Icon": "diligentMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentMastery"
+        }
+      ]
     },
     "culture-traits:diligentWorkEthic": {
       "id": "diligentWorkEthic",
       "type": "culture-traits",
       "displayName": "Diligent Work Ethic",
+      "icon": "diligentWorkEthic",
       "fields": {
         "Name": "diligentWorkEthic",
         "Icon": "diligentWorkEthic"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentWorkEthic"
+        }
+      ]
     },
     "culture-traits:diligentWorkflow": {
       "id": "diligentWorkflow",
       "type": "culture-traits",
       "displayName": "Diligent Workflow",
+      "icon": "diligentWorkflow",
       "fields": {
         "Name": "diligentWorkflow",
         "Icon": "diligentWorkflow"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diligentWorkflow"
+        }
+      ]
     },
     "culture-traits:diplomacyAlliances": {
       "id": "diplomacyAlliances",
       "type": "culture-traits",
       "displayName": "Diplomacy Alliances",
+      "icon": "diplomacyAlliances",
       "fields": {
         "Name": "diplomacyAlliances",
         "Icon": "diplomacyAlliances"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyAlliances"
+        }
+      ]
     },
     "culture-traits:diplomacyConciliation": {
       "id": "diplomacyConciliation",
       "type": "culture-traits",
       "displayName": "Diplomacy Conciliation",
+      "icon": "diplomacyConciliation",
       "fields": {
         "Name": "diplomacyConciliation",
         "Icon": "diplomacyConciliation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyConciliation"
+        }
+      ]
     },
     "culture-traits:diplomacyEnvoys": {
       "id": "diplomacyEnvoys",
       "type": "culture-traits",
       "displayName": "Diplomacy Envoys",
+      "icon": "diplomacyEnvoys",
       "fields": {
         "Name": "diplomacyEnvoys",
         "Icon": "diplomacyEnvoys"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyEnvoys"
+        }
+      ]
     },
     "culture-traits:diplomacyMastery": {
       "id": "diplomacyMastery",
       "type": "culture-traits",
       "displayName": "Diplomacy Mastery",
+      "icon": "diplomacyMastery",
       "fields": {
         "Name": "diplomacyMastery",
         "Icon": "diplomacyMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyMastery"
+        }
+      ]
     },
     "culture-traits:diplomacyNetworking": {
       "id": "diplomacyNetworking",
       "type": "culture-traits",
       "displayName": "Diplomacy Networking",
+      "icon": "diplomacyNetworking",
       "fields": {
         "Name": "diplomacyNetworking",
         "Icon": "diplomacyNetworking"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyNetworking"
+        }
+      ]
     },
     "culture-traits:diplomacyUnderstanding": {
       "id": "diplomacyUnderstanding",
       "type": "culture-traits",
       "displayName": "Diplomacy Understanding",
+      "icon": "diplomacyUnderstanding",
       "fields": {
         "Name": "diplomacyUnderstanding",
         "Icon": "diplomacyUnderstanding"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyUnderstanding"
+        }
+      ]
     },
     "culture-traits:diplomacyUnity": {
       "id": "diplomacyUnity",
       "type": "culture-traits",
       "displayName": "Diplomacy Unity",
+      "icon": "diplomacyUnity",
       "fields": {
         "Name": "diplomacyUnity",
         "Icon": "diplomacyUnity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "diplomacyUnity"
+        }
+      ]
     },
     "culture-traits:easygoingAsceticism": {
       "id": "easygoingAsceticism",
       "type": "culture-traits",
       "displayName": "Easygoing Asceticism",
+      "icon": "easygoingAsceticism",
       "fields": {
         "Name": "easygoingAsceticism",
         "Icon": "easygoingAsceticism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingAsceticism"
+        }
+      ]
     },
     "culture-traits:easygoingCarefree": {
       "id": "easygoingCarefree",
       "type": "culture-traits",
       "displayName": "Easygoing Carefree",
+      "icon": "easygoingCarefree",
       "fields": {
         "Name": "easygoingCarefree",
         "Icon": "easygoingCarefree"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingCarefree"
+        }
+      ]
     },
     "culture-traits:easygoingComplacency": {
       "id": "easygoingComplacency",
       "type": "culture-traits",
       "displayName": "Easygoing Complacency",
+      "icon": "easygoingComplacency",
       "fields": {
         "Name": "easygoingComplacency",
         "Icon": "easygoingComplacency"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingComplacency"
+        }
+      ]
     },
     "culture-traits:easygoingCulture": {
       "id": "easygoingCulture",
       "type": "culture-traits",
       "displayName": "Easygoing Culture",
+      "icon": "easygoingCulture",
       "fields": {
         "Name": "easygoingCulture",
         "Icon": "easygoingCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingCulture"
+        }
+      ]
     },
     "culture-traits:easygoingMastery": {
       "id": "easygoingMastery",
       "type": "culture-traits",
       "displayName": "Easygoing Mastery",
+      "icon": "easygoingMastery",
       "fields": {
         "Name": "easygoingMastery",
         "Icon": "easygoingMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingMastery"
+        }
+      ]
     },
     "culture-traits:easygoingPeace": {
       "id": "easygoingPeace",
       "type": "culture-traits",
       "displayName": "Easygoing Peace",
+      "icon": "easygoingPeace",
       "fields": {
         "Name": "easygoingPeace",
         "Icon": "easygoingPeace"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingPeace"
+        }
+      ]
     },
     "culture-traits:easygoingWorldview": {
       "id": "easygoingWorldview",
       "type": "culture-traits",
       "displayName": "Easygoing Worldview",
+      "icon": "easygoingWorldview",
       "fields": {
         "Name": "easygoingWorldview",
         "Icon": "easygoingWorldview"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "easygoingWorldview"
+        }
+      ]
     },
     "culture-traits:eugenicistArmy": {
       "id": "eugenicistArmy",
       "type": "culture-traits",
       "displayName": "Eugenicist Army",
+      "icon": "eugenicistArmy",
       "fields": {
         "Name": "eugenicistArmy",
         "Icon": "eugenicistArmy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistArmy"
+        }
+      ]
     },
     "culture-traits:eugenicistBiologists": {
       "id": "eugenicistBiologists",
       "type": "culture-traits",
       "displayName": "Eugenicist Biologists",
+      "icon": "eugenicistBiologists",
       "fields": {
         "Name": "eugenicistBiologists",
         "Icon": "eugenicistBiologists"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistBiologists"
+        }
+      ]
     },
     "culture-traits:eugenicistIndustry": {
       "id": "eugenicistIndustry",
       "type": "culture-traits",
       "displayName": "Eugenicist Industry",
+      "icon": "eugenicistIndustry",
       "fields": {
         "Name": "eugenicistIndustry",
         "Icon": "eugenicistIndustry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistIndustry"
+        }
+      ]
     },
     "culture-traits:eugenicistManipulation": {
       "id": "eugenicistManipulation",
       "type": "culture-traits",
       "displayName": "Eugenicist Manipulation",
+      "icon": "eugenicistManipulation",
       "fields": {
         "Name": "eugenicistManipulation",
         "Icon": "eugenicistManipulation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistManipulation"
+        }
+      ]
     },
     "culture-traits:eugenicistMastery": {
       "id": "eugenicistMastery",
       "type": "culture-traits",
       "displayName": "Eugenicist Mastery",
+      "icon": "eugenicistMastery",
       "fields": {
         "Name": "eugenicistMastery",
         "Icon": "eugenicistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistMastery"
+        }
+      ]
     },
     "culture-traits:eugenicistPolitics": {
       "id": "eugenicistPolitics",
       "type": "culture-traits",
       "displayName": "Eugenicist Politics",
+      "icon": "eugenicistPolitics",
       "fields": {
         "Name": "eugenicistPolitics",
         "Icon": "eugenicistPolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistPolitics"
+        }
+      ]
     },
     "culture-traits:eugenicistResearch": {
       "id": "eugenicistResearch",
       "type": "culture-traits",
       "displayName": "Eugenicist Research",
+      "icon": "eugenicistResearch",
       "fields": {
         "Name": "eugenicistResearch",
         "Icon": "eugenicistResearch"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "eugenicistResearch"
+        }
+      ]
     },
     "culture-traits:explorersAdvancement": {
       "id": "explorersAdvancement",
       "type": "culture-traits",
       "displayName": "Explorers Advancement",
+      "icon": "explorersAdvancement",
       "fields": {
         "Name": "explorersAdvancement",
         "Icon": "explorersAdvancement"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersAdvancement"
+        }
+      ]
     },
     "culture-traits:explorersAdventure": {
       "id": "explorersAdventure",
       "type": "culture-traits",
       "displayName": "Explorers Adventure",
+      "icon": "explorersAdventure",
       "fields": {
         "Name": "explorersAdventure",
         "Icon": "explorersAdventure"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersAdventure"
+        }
+      ]
     },
     "culture-traits:explorersColonization": {
       "id": "explorersColonization",
       "type": "culture-traits",
       "displayName": "Explorers Colonization",
+      "icon": "explorersColonization",
       "fields": {
         "Name": "explorersColonization",
         "Icon": "explorersColonization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersColonization"
+        }
+      ]
     },
     "culture-traits:explorersDaring": {
       "id": "explorersDaring",
       "type": "culture-traits",
       "displayName": "Explorers Daring",
+      "icon": "explorersDaring",
       "fields": {
         "Name": "explorersDaring",
         "Icon": "explorersDaring"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersDaring"
+        }
+      ]
     },
     "culture-traits:explorersEmpire": {
       "id": "explorersEmpire",
       "type": "culture-traits",
       "displayName": "Explorers Empire",
+      "icon": "explorersEmpire",
       "fields": {
         "Name": "explorersEmpire",
         "Icon": "explorersEmpire"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersEmpire"
+        }
+      ]
     },
     "culture-traits:explorersInterplanetary": {
       "id": "explorersInterplanetary",
       "type": "culture-traits",
       "displayName": "Explorers Interplanetary",
+      "icon": "explorersInterplanetary",
       "fields": {
         "Name": "explorersInterplanetary",
         "Icon": "explorersInterplanetary"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersInterplanetary"
+        }
+      ]
     },
     "culture-traits:explorersMastery": {
       "id": "explorersMastery",
       "type": "culture-traits",
       "displayName": "Explorers Mastery",
+      "icon": "explorersMastery",
       "fields": {
         "Name": "explorersMastery",
         "Icon": "explorersMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "explorersMastery"
+        }
+      ]
     },
     "culture-traits:fascist": {
       "id": "fascist",
@@ -3091,169 +3595,253 @@
       "id": "firearmsConscription",
       "type": "culture-traits",
       "displayName": "Firearms Conscription",
+      "icon": "firearmsConscription",
       "fields": {
         "Name": "firearmsConscription",
         "Icon": "firearmsConscription"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsConscription"
+        }
+      ]
     },
     "culture-traits:firearmsConsumption": {
       "id": "firearmsConsumption",
       "type": "culture-traits",
       "displayName": "Firearms Consumption",
+      "icon": "firearmsConsumption",
       "fields": {
         "Name": "firearmsConsumption",
         "Icon": "firearmsConsumption"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsConsumption"
+        }
+      ]
     },
     "culture-traits:firearmsMastery": {
       "id": "firearmsMastery",
       "type": "culture-traits",
       "displayName": "Firearms Mastery",
+      "icon": "firearmsMastery",
       "fields": {
         "Name": "firearmsMastery",
         "Icon": "firearmsMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsMastery"
+        }
+      ]
     },
     "culture-traits:firearmsOrganization": {
       "id": "firearmsOrganization",
       "type": "culture-traits",
       "displayName": "Firearms Organization",
+      "icon": "firearmsOrganization",
       "fields": {
         "Name": "firearmsOrganization",
         "Icon": "firearmsOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsOrganization"
+        }
+      ]
     },
     "culture-traits:firearmsPractice": {
       "id": "firearmsPractice",
       "type": "culture-traits",
       "displayName": "Firearms Practice",
+      "icon": "firearmsPractice",
       "fields": {
         "Name": "firearmsPractice",
         "Icon": "firearmsPractice"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsPractice"
+        }
+      ]
     },
     "culture-traits:firearmsResistance": {
       "id": "firearmsResistance",
       "type": "culture-traits",
       "displayName": "Firearms Resistance",
+      "icon": "firearmsResistance",
       "fields": {
         "Name": "firearmsResistance",
         "Icon": "firearmsResistance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsResistance"
+        }
+      ]
     },
     "culture-traits:firearmsTraining": {
       "id": "firearmsTraining",
       "type": "culture-traits",
       "displayName": "Firearms Training",
+      "icon": "firearmsTraining",
       "fields": {
         "Name": "firearmsTraining",
         "Icon": "firearmsTraining"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "firearmsTraining"
+        }
+      ]
     },
     "culture-traits:guiltAssimilation": {
       "id": "guiltAssimilation",
       "type": "culture-traits",
       "displayName": "Guilt Assimilation",
+      "icon": "guiltAssimilation",
       "fields": {
         "Name": "guiltAssimilation",
         "Icon": "guiltAssimilation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltAssimilation"
+        }
+      ]
     },
     "culture-traits:guiltAtonement": {
       "id": "guiltAtonement",
       "type": "culture-traits",
       "displayName": "Guilt Atonement",
+      "icon": "guiltAtonement",
       "fields": {
         "Name": "guiltAtonement",
         "Icon": "guiltAtonement"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltAtonement"
+        }
+      ]
     },
     "culture-traits:guiltCompensation": {
       "id": "guiltCompensation",
       "type": "culture-traits",
       "displayName": "Guilt Compensation",
+      "icon": "guiltCompensation",
       "fields": {
         "Name": "guiltCompensation",
         "Icon": "guiltCompensation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltCompensation"
+        }
+      ]
     },
     "culture-traits:guiltDiversity": {
       "id": "guiltDiversity",
       "type": "culture-traits",
       "displayName": "Guilt Diversity",
+      "icon": "guiltDiversity",
       "fields": {
         "Name": "guiltDiversity",
         "Icon": "guiltDiversity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltDiversity"
+        }
+      ]
     },
     "culture-traits:guiltReparations": {
       "id": "guiltReparations",
       "type": "culture-traits",
       "displayName": "Guilt Reparations",
+      "icon": "guiltReparations",
       "fields": {
         "Name": "guiltReparations",
         "Icon": "guiltReparations"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltReparations"
+        }
+      ]
     },
     "culture-traits:guiltSocialPrograms": {
       "id": "guiltSocialPrograms",
       "type": "culture-traits",
       "displayName": "Guilt Social Programs",
+      "icon": "guiltSocialPrograms",
       "fields": {
         "Name": "guiltSocialPrograms",
         "Icon": "guiltSocialPrograms"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltSocialPrograms"
+        }
+      ]
     },
     "culture-traits:guiltWelfare": {
       "id": "guiltWelfare",
       "type": "culture-traits",
       "displayName": "Guilt Welfare",
+      "icon": "guiltWelfare",
       "fields": {
         "Name": "guiltWelfare",
         "Icon": "guiltWelfare"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "guiltWelfare"
+        }
+      ]
     },
     "culture-traits:hegelianCulture": {
       "id": "hegelianCulture",
@@ -3637,589 +4225,883 @@
       "id": "individualismAutonomy",
       "type": "culture-traits",
       "displayName": "Individualism Autonomy",
+      "icon": "individualismAutonomy",
       "fields": {
         "Name": "individualismAutonomy",
         "Icon": "individualismAutonomy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismAutonomy"
+        }
+      ]
     },
     "culture-traits:individualismEntrepreneurship": {
       "id": "individualismEntrepreneurship",
       "type": "culture-traits",
       "displayName": "Individualism Entrepreneurship",
+      "icon": "individualismEntrepreneurship",
       "fields": {
         "Name": "individualismEntrepreneurship",
         "Icon": "individualismEntrepreneurship"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismEntrepreneurship"
+        }
+      ]
     },
     "culture-traits:individualismFreedom": {
       "id": "individualismFreedom",
       "type": "culture-traits",
       "displayName": "Individualism Freedom",
+      "icon": "individualismFreedom",
       "fields": {
         "Name": "individualismFreedom",
         "Icon": "individualismFreedom"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismFreedom"
+        }
+      ]
     },
     "culture-traits:individualismInitiative": {
       "id": "individualismInitiative",
       "type": "culture-traits",
       "displayName": "Individualism Initiative",
+      "icon": "individualismInitiative",
       "fields": {
         "Name": "individualismInitiative",
         "Icon": "individualismInitiative"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismInitiative"
+        }
+      ]
     },
     "culture-traits:individualismInnovation": {
       "id": "individualismInnovation",
       "type": "culture-traits",
       "displayName": "Individualism Innovation",
+      "icon": "individualismInnovation",
       "fields": {
         "Name": "individualismInnovation",
         "Icon": "individualismInnovation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismInnovation"
+        }
+      ]
     },
     "culture-traits:individualismLiberty": {
       "id": "individualismLiberty",
       "type": "culture-traits",
       "displayName": "Individualism Liberty",
+      "icon": "individualismLiberty",
       "fields": {
         "Name": "individualismLiberty",
         "Icon": "individualismLiberty"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismLiberty"
+        }
+      ]
     },
     "culture-traits:individualismSelfReliance": {
       "id": "individualismSelfReliance",
       "type": "culture-traits",
       "displayName": "Individualism Self Reliance",
+      "icon": "individualismSelfReliance",
       "fields": {
         "Name": "individualismSelfReliance",
         "Icon": "individualismSelfReliance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "individualismSelfReliance"
+        }
+      ]
     },
     "culture-traits:industryConstruction": {
       "id": "industryConstruction",
       "type": "culture-traits",
       "displayName": "Industry Construction",
+      "icon": "industryConstruction",
       "fields": {
         "Name": "industryConstruction",
         "Icon": "industryConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryConstruction"
+        }
+      ]
     },
     "culture-traits:industryDiligence": {
       "id": "industryDiligence",
       "type": "culture-traits",
       "displayName": "Industry Diligence",
+      "icon": "industryDiligence",
       "fields": {
         "Name": "industryDiligence",
         "Icon": "industryDiligence"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryDiligence"
+        }
+      ]
     },
     "culture-traits:industryMastery": {
       "id": "industryMastery",
       "type": "culture-traits",
       "displayName": "Industry Mastery",
+      "icon": "industryMastery",
       "fields": {
         "Name": "industryMastery",
         "Icon": "industryMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryMastery"
+        }
+      ]
     },
     "culture-traits:industryMechanization": {
       "id": "industryMechanization",
       "type": "culture-traits",
       "displayName": "Industry Mechanization",
+      "icon": "industryMechanization",
       "fields": {
         "Name": "industryMechanization",
         "Icon": "industryMechanization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryMechanization"
+        }
+      ]
     },
     "culture-traits:industryProduction": {
       "id": "industryProduction",
       "type": "culture-traits",
       "displayName": "Industry Production",
+      "icon": "industryProduction",
       "fields": {
         "Name": "industryProduction",
         "Icon": "industryProduction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryProduction"
+        }
+      ]
     },
     "culture-traits:industryTrading": {
       "id": "industryTrading",
       "type": "culture-traits",
       "displayName": "Industry Trading",
+      "icon": "industryTrading",
       "fields": {
         "Name": "industryTrading",
         "Icon": "industryTrading"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryTrading"
+        }
+      ]
     },
     "culture-traits:industryWorking": {
       "id": "industryWorking",
       "type": "culture-traits",
       "displayName": "Industry Working",
+      "icon": "industryWorking",
       "fields": {
         "Name": "industryWorking",
         "Icon": "industryWorking"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "industryWorking"
+        }
+      ]
     },
     "culture-traits:influenceAdministration": {
       "id": "influenceAdministration",
       "type": "culture-traits",
       "displayName": "Influence Administration",
+      "icon": "influenceAdministration",
       "fields": {
         "Name": "influenceAdministration",
         "Icon": "influenceAdministration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influenceAdministration"
+        }
+      ]
     },
     "culture-traits:influenceMastery": {
       "id": "influenceMastery",
       "type": "culture-traits",
       "displayName": "Influence Mastery",
+      "icon": "influenceMastery",
       "fields": {
         "Name": "influenceMastery",
         "Icon": "influenceMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influenceMastery"
+        }
+      ]
     },
     "culture-traits:influenceMicromanagement": {
       "id": "influenceMicromanagement",
       "type": "culture-traits",
       "displayName": "Influence Micromanagement",
+      "icon": "influenceMicromanagement",
       "fields": {
         "Name": "influenceMicromanagement",
         "Icon": "influenceMicromanagement"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influenceMicromanagement"
+        }
+      ]
     },
     "culture-traits:influenceOrchestration": {
       "id": "influenceOrchestration",
       "type": "culture-traits",
       "displayName": "Influence Orchestration",
+      "icon": "influenceOrchestration",
       "fields": {
         "Name": "influenceOrchestration",
         "Icon": "influenceOrchestration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influenceOrchestration"
+        }
+      ]
     },
     "culture-traits:influenceOrganization": {
       "id": "influenceOrganization",
       "type": "culture-traits",
       "displayName": "Influence Organization",
+      "icon": "influenceOrganization",
       "fields": {
         "Name": "influenceOrganization",
         "Icon": "influenceOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influenceOrganization"
+        }
+      ]
     },
     "culture-traits:influencePolitics": {
       "id": "influencePolitics",
       "type": "culture-traits",
       "displayName": "Influence Politics",
+      "icon": "influencePolitics",
       "fields": {
         "Name": "influencePolitics",
         "Icon": "influencePolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influencePolitics"
+        }
+      ]
     },
     "culture-traits:influencePsychology": {
       "id": "influencePsychology",
       "type": "culture-traits",
       "displayName": "Influence Psychology",
+      "icon": "influencePsychology",
       "fields": {
         "Name": "influencePsychology",
         "Icon": "influencePsychology"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "influencePsychology"
+        }
+      ]
     },
     "culture-traits:innovativeAdministration": {
       "id": "innovativeAdministration",
       "type": "culture-traits",
       "displayName": "Innovative Administration",
+      "icon": "innovativeAdministration",
       "fields": {
         "Name": "innovativeAdministration",
         "Icon": "innovativeAdministration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeAdministration"
+        }
+      ]
     },
     "culture-traits:innovativeEngineering": {
       "id": "innovativeEngineering",
       "type": "culture-traits",
       "displayName": "Innovative Engineering",
+      "icon": "innovativeEngineering",
       "fields": {
         "Name": "innovativeEngineering",
         "Icon": "innovativeEngineering"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeEngineering"
+        }
+      ]
     },
     "culture-traits:innovativeFunding": {
       "id": "innovativeFunding",
       "type": "culture-traits",
       "displayName": "Innovative Funding",
+      "icon": "innovativeFunding",
       "fields": {
         "Name": "innovativeFunding",
         "Icon": "innovativeFunding"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeFunding"
+        }
+      ]
     },
     "culture-traits:innovativeLeadership": {
       "id": "innovativeLeadership",
       "type": "culture-traits",
       "displayName": "Innovative Leadership",
+      "icon": "innovativeLeadership",
       "fields": {
         "Name": "innovativeLeadership",
         "Icon": "innovativeLeadership"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeLeadership"
+        }
+      ]
     },
     "culture-traits:innovativeResearch": {
       "id": "innovativeResearch",
       "type": "culture-traits",
       "displayName": "Innovative Research",
+      "icon": "innovativeResearch",
       "fields": {
         "Name": "innovativeResearch",
         "Icon": "innovativeResearch"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeResearch"
+        }
+      ]
     },
     "culture-traits:innovativeStrategy": {
       "id": "innovativeStrategy",
       "type": "culture-traits",
       "displayName": "Innovative Strategy",
+      "icon": "innovativeStrategy",
       "fields": {
         "Name": "innovativeStrategy",
         "Icon": "innovativeStrategy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeStrategy"
+        }
+      ]
     },
     "culture-traits:innovativeSupremacy": {
       "id": "innovativeSupremacy",
       "type": "culture-traits",
       "displayName": "Innovative Supremacy",
+      "icon": "innovativeSupremacy",
       "fields": {
         "Name": "innovativeSupremacy",
         "Icon": "innovativeSupremacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "innovativeSupremacy"
+        }
+      ]
     },
     "culture-traits:insularAdaption": {
       "id": "insularAdaption",
       "type": "culture-traits",
       "displayName": "Insular Adaption",
+      "icon": "insularAdaption",
       "fields": {
         "Name": "insularAdaption",
         "Icon": "insularAdaption"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularAdaption"
+        }
+      ]
     },
     "culture-traits:insularIsolation": {
       "id": "insularIsolation",
       "type": "culture-traits",
       "displayName": "Insular Isolation",
+      "icon": "insularIsolation",
       "fields": {
         "Name": "insularIsolation",
         "Icon": "insularIsolation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularIsolation"
+        }
+      ]
     },
     "culture-traits:insularMastery": {
       "id": "insularMastery",
       "type": "culture-traits",
       "displayName": "Insular Mastery",
+      "icon": "insularMastery",
       "fields": {
         "Name": "insularMastery",
         "Icon": "insularMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularMastery"
+        }
+      ]
     },
     "culture-traits:insularPolitics": {
       "id": "insularPolitics",
       "type": "culture-traits",
       "displayName": "Insular Politics",
+      "icon": "insularPolitics",
       "fields": {
         "Name": "insularPolitics",
         "Icon": "insularPolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularPolitics"
+        }
+      ]
     },
     "culture-traits:insularSuperiority": {
       "id": "insularSuperiority",
       "type": "culture-traits",
       "displayName": "Insular Superiority",
+      "icon": "insularSuperiority",
       "fields": {
         "Name": "insularSuperiority",
         "Icon": "insularSuperiority"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularSuperiority"
+        }
+      ]
     },
     "culture-traits:insularTraditions": {
       "id": "insularTraditions",
       "type": "culture-traits",
       "displayName": "Insular Traditions",
+      "icon": "insularTraditions",
       "fields": {
         "Name": "insularTraditions",
         "Icon": "insularTraditions"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularTraditions"
+        }
+      ]
     },
     "culture-traits:insularUnity": {
       "id": "insularUnity",
       "type": "culture-traits",
       "displayName": "Insular Unity",
+      "icon": "insularUnity",
       "fields": {
         "Name": "insularUnity",
         "Icon": "insularUnity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "insularUnity"
+        }
+      ]
     },
     "culture-traits:intellectualismAcademia": {
       "id": "intellectualismAcademia",
       "type": "culture-traits",
       "displayName": "Intellectualism Academia",
+      "icon": "intellectualismAcademia",
       "fields": {
         "Name": "intellectualismAcademia",
         "Icon": "intellectualismAcademia"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismAcademia"
+        }
+      ]
     },
     "culture-traits:intellectualismElite": {
       "id": "intellectualismElite",
       "type": "culture-traits",
       "displayName": "Intellectualism Elite",
+      "icon": "intellectualismElite",
       "fields": {
         "Name": "intellectualismElite",
         "Icon": "intellectualismElite"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismElite"
+        }
+      ]
     },
     "culture-traits:intellectualismEnlightenment": {
       "id": "intellectualismEnlightenment",
       "type": "culture-traits",
       "displayName": "Intellectualism Enlightenment",
+      "icon": "intellectualismEnlightenment",
       "fields": {
         "Name": "intellectualismEnlightenment",
         "Icon": "intellectualismEnlightenment"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismEnlightenment"
+        }
+      ]
     },
     "culture-traits:intellectualismMeritocracy": {
       "id": "intellectualismMeritocracy",
       "type": "culture-traits",
       "displayName": "Intellectualism Meritocracy",
+      "icon": "intellectualismMeritocracy",
       "fields": {
         "Name": "intellectualismMeritocracy",
         "Icon": "intellectualismMeritocracy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismMeritocracy"
+        }
+      ]
     },
     "culture-traits:intellectualismProgress": {
       "id": "intellectualismProgress",
       "type": "culture-traits",
       "displayName": "Intellectualism Progress",
+      "icon": "intellectualismProgress",
       "fields": {
         "Name": "intellectualismProgress",
         "Icon": "intellectualismProgress"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismProgress"
+        }
+      ]
     },
     "culture-traits:intellectualismReason": {
       "id": "intellectualismReason",
       "type": "culture-traits",
       "displayName": "Intellectualism Reason",
+      "icon": "intellectualismReason",
       "fields": {
         "Name": "intellectualismReason",
         "Icon": "intellectualismReason"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismReason"
+        }
+      ]
     },
     "culture-traits:intellectualismScience": {
       "id": "intellectualismScience",
       "type": "culture-traits",
       "displayName": "Intellectualism Science",
+      "icon": "intellectualismScience",
       "fields": {
         "Name": "intellectualismScience",
         "Icon": "intellectualismScience"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "intellectualismScience"
+        }
+      ]
     },
     "culture-traits:irridentistAdministration": {
       "id": "irridentistAdministration",
       "type": "culture-traits",
       "displayName": "Irridentist Administration",
+      "icon": "irridentistAdministration",
       "fields": {
         "Name": "irridentistAdministration",
         "Icon": "irridentistAdministration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistAdministration"
+        }
+      ]
     },
     "culture-traits:irridentistColonization": {
       "id": "irridentistColonization",
       "type": "culture-traits",
       "displayName": "Irridentist Colonization",
+      "icon": "irridentistColonization",
       "fields": {
         "Name": "irridentistColonization",
         "Icon": "irridentistColonization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistColonization"
+        }
+      ]
     },
     "culture-traits:irridentistCulture": {
       "id": "irridentistCulture",
       "type": "culture-traits",
       "displayName": "Irridentist Culture",
+      "icon": "irridentistCulture",
       "fields": {
         "Name": "irridentistCulture",
         "Icon": "irridentistCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistCulture"
+        }
+      ]
     },
     "culture-traits:irridentistDiplomacy": {
       "id": "irridentistDiplomacy",
       "type": "culture-traits",
       "displayName": "Irridentist Diplomacy",
+      "icon": "irridentistDiplomacy",
       "fields": {
         "Name": "irridentistDiplomacy",
         "Icon": "irridentistDiplomacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistDiplomacy"
+        }
+      ]
     },
     "culture-traits:irridentistExpansion": {
       "id": "irridentistExpansion",
       "type": "culture-traits",
       "displayName": "Irridentist Expansion",
+      "icon": "irridentistExpansion",
       "fields": {
         "Name": "irridentistExpansion",
         "Icon": "irridentistExpansion"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistExpansion"
+        }
+      ]
     },
     "culture-traits:irridentistMastery": {
       "id": "irridentistMastery",
       "type": "culture-traits",
       "displayName": "Irridentist Mastery",
+      "icon": "irridentistMastery",
       "fields": {
         "Name": "irridentistMastery",
         "Icon": "irridentistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistMastery"
+        }
+      ]
     },
     "culture-traits:irridentistUnification": {
       "id": "irridentistUnification",
       "type": "culture-traits",
       "displayName": "Irridentist Unification",
+      "icon": "irridentistUnification",
       "fields": {
         "Name": "irridentistUnification",
         "Icon": "irridentistUnification"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "irridentistUnification"
+        }
+      ]
     },
     "culture-traits:islamFanaticism": {
       "id": "islamFanaticism",
@@ -4351,85 +5233,127 @@
       "id": "isolationistDefense",
       "type": "culture-traits",
       "displayName": "Isolationist Defense",
+      "icon": "isolationistDefense",
       "fields": {
         "Name": "isolationistDefense",
         "Icon": "isolationistDefense"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistDefense"
+        }
+      ]
     },
     "culture-traits:isolationistInsularity": {
       "id": "isolationistInsularity",
       "type": "culture-traits",
       "displayName": "Isolationist Insularity",
+      "icon": "isolationistInsularity",
       "fields": {
         "Name": "isolationistInsularity",
         "Icon": "isolationistInsularity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistInsularity"
+        }
+      ]
     },
     "culture-traits:isolationistIntrospection": {
       "id": "isolationistIntrospection",
       "type": "culture-traits",
       "displayName": "Isolationist Introspection",
+      "icon": "isolationistIntrospection",
       "fields": {
         "Name": "isolationistIntrospection",
         "Icon": "isolationistIntrospection"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistIntrospection"
+        }
+      ]
     },
     "culture-traits:isolationistMastery": {
       "id": "isolationistMastery",
       "type": "culture-traits",
       "displayName": "Isolationist Mastery",
+      "icon": "isolationistMastery",
       "fields": {
         "Name": "isolationistMastery",
         "Icon": "isolationistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistMastery"
+        }
+      ]
     },
     "culture-traits:isolationistNationalism": {
       "id": "isolationistNationalism",
       "type": "culture-traits",
       "displayName": "Isolationist Nationalism",
+      "icon": "isolationistNationalism",
       "fields": {
         "Name": "isolationistNationalism",
         "Icon": "isolationistNationalism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistNationalism"
+        }
+      ]
     },
     "culture-traits:isolationistUnification": {
       "id": "isolationistUnification",
       "type": "culture-traits",
       "displayName": "Isolationist Unification",
+      "icon": "isolationistUnification",
       "fields": {
         "Name": "isolationistUnification",
         "Icon": "isolationistUnification"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistUnification"
+        }
+      ]
     },
     "culture-traits:isolationistUpwardConstruction": {
       "id": "isolationistUpwardConstruction",
       "type": "culture-traits",
       "displayName": "Isolationist Upward Construction",
+      "icon": "isolationistUpwardConstruction",
       "fields": {
         "Name": "isolationistUpwardConstruction",
         "Icon": "isolationistUpwardConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "isolationistUpwardConstruction"
+        }
+      ]
     },
     "culture-traits:jewish": {
       "id": "jewish",
@@ -4579,253 +5503,379 @@
       "id": "landArtillery",
       "type": "culture-traits",
       "displayName": "Land Artillery",
+      "icon": "landArtillery",
       "fields": {
         "Name": "landArtillery",
         "Icon": "landArtillery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landArtillery"
+        }
+      ]
     },
     "culture-traits:landCommander": {
       "id": "landCommander",
       "type": "culture-traits",
       "displayName": "Land Commander",
+      "icon": "landCommander",
       "fields": {
         "Name": "landCommander",
         "Icon": "landCommander"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landCommander"
+        }
+      ]
     },
     "culture-traits:landInfantry": {
       "id": "landInfantry",
       "type": "culture-traits",
       "displayName": "Land Infantry",
+      "icon": "landInfantry",
       "fields": {
         "Name": "landInfantry",
         "Icon": "landInfantry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landInfantry"
+        }
+      ]
     },
     "culture-traits:landMastery": {
       "id": "landMastery",
       "type": "culture-traits",
       "displayName": "Land Mastery",
+      "icon": "landMastery",
       "fields": {
         "Name": "landMastery",
         "Icon": "landMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landMastery"
+        }
+      ]
     },
     "culture-traits:landOrganization": {
       "id": "landOrganization",
       "type": "culture-traits",
       "displayName": "Land Organization",
+      "icon": "landOrganization",
       "fields": {
         "Name": "landOrganization",
         "Icon": "landOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landOrganization"
+        }
+      ]
     },
     "culture-traits:landReinforcement": {
       "id": "landReinforcement",
       "type": "culture-traits",
       "displayName": "Land Reinforcement",
+      "icon": "landReinforcement",
       "fields": {
         "Name": "landReinforcement",
         "Icon": "landReinforcement"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landReinforcement"
+        }
+      ]
     },
     "culture-traits:landTanks": {
       "id": "landTanks",
       "type": "culture-traits",
       "displayName": "Land Tanks",
+      "icon": "landTanks",
       "fields": {
         "Name": "landTanks",
         "Icon": "landTanks"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "landTanks"
+        }
+      ]
     },
     "culture-traits:ludditeCrusade": {
       "id": "ludditeCrusade",
       "type": "culture-traits",
       "displayName": "Luddite Crusade",
+      "icon": "ludditeCrusade",
       "fields": {
         "Name": "ludditeCrusade",
         "Icon": "ludditeCrusade"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditeCrusade"
+        }
+      ]
     },
     "culture-traits:ludditeCulture": {
       "id": "ludditeCulture",
       "type": "culture-traits",
       "displayName": "Luddite Culture",
+      "icon": "ludditeCulture",
       "fields": {
         "Name": "ludditeCulture",
         "Icon": "ludditeCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditeCulture"
+        }
+      ]
     },
     "culture-traits:ludditeImprovisation": {
       "id": "ludditeImprovisation",
       "type": "culture-traits",
       "displayName": "Luddite Improvisation",
+      "icon": "ludditeImprovisation",
       "fields": {
         "Name": "ludditeImprovisation",
         "Icon": "ludditeImprovisation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditeImprovisation"
+        }
+      ]
     },
     "culture-traits:ludditeMastery": {
       "id": "ludditeMastery",
       "type": "culture-traits",
       "displayName": "Luddite Mastery",
+      "icon": "ludditeMastery",
       "fields": {
         "Name": "ludditeMastery",
         "Icon": "ludditeMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditeMastery"
+        }
+      ]
     },
     "culture-traits:ludditePower": {
       "id": "ludditePower",
       "type": "culture-traits",
       "displayName": "Luddite Power",
+      "icon": "ludditePower",
       "fields": {
         "Name": "ludditePower",
         "Icon": "ludditePower"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditePower"
+        }
+      ]
     },
     "culture-traits:ludditePurity": {
       "id": "ludditePurity",
       "type": "culture-traits",
       "displayName": "Luddite Purity",
+      "icon": "ludditePurity",
       "fields": {
         "Name": "ludditePurity",
         "Icon": "ludditePurity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditePurity"
+        }
+      ]
     },
     "culture-traits:ludditeSupremacy": {
       "id": "ludditeSupremacy",
       "type": "culture-traits",
       "displayName": "Luddite Supremacy",
+      "icon": "ludditeSupremacy",
       "fields": {
         "Name": "ludditeSupremacy",
         "Icon": "ludditeSupremacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "ludditeSupremacy"
+        }
+      ]
     },
     "culture-traits:mandateCommand": {
       "id": "mandateCommand",
       "type": "culture-traits",
       "displayName": "Mandate Command",
+      "icon": "mandateCommand",
       "fields": {
         "Name": "mandateCommand",
         "Icon": "mandateCommand"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateCommand"
+        }
+      ]
     },
     "culture-traits:mandateEconomy": {
       "id": "mandateEconomy",
       "type": "culture-traits",
       "displayName": "Mandate Economy",
+      "icon": "mandateEconomy",
       "fields": {
         "Name": "mandateEconomy",
         "Icon": "mandateEconomy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateEconomy"
+        }
+      ]
     },
     "culture-traits:mandateMastery": {
       "id": "mandateMastery",
       "type": "culture-traits",
       "displayName": "Mandate Mastery",
+      "icon": "mandateMastery",
       "fields": {
         "Name": "mandateMastery",
         "Icon": "mandateMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateMastery"
+        }
+      ]
     },
     "culture-traits:mandateObligations": {
       "id": "mandateObligations",
       "type": "culture-traits",
       "displayName": "Mandate Obligations",
+      "icon": "mandateObligations",
       "fields": {
         "Name": "mandateObligations",
         "Icon": "mandateObligations"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateObligations"
+        }
+      ]
     },
     "culture-traits:mandatePolitics": {
       "id": "mandatePolitics",
       "type": "culture-traits",
       "displayName": "Mandate Politics",
+      "icon": "mandatePolitics",
       "fields": {
         "Name": "mandatePolitics",
         "Icon": "mandatePolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandatePolitics"
+        }
+      ]
     },
     "culture-traits:mandateProsperity": {
       "id": "mandateProsperity",
       "type": "culture-traits",
       "displayName": "Mandate Prosperity",
+      "icon": "mandateProsperity",
       "fields": {
         "Name": "mandateProsperity",
         "Icon": "mandateProsperity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateProsperity"
+        }
+      ]
     },
     "culture-traits:mandateSuperiority": {
       "id": "mandateSuperiority",
       "type": "culture-traits",
       "displayName": "Mandate Superiority",
+      "icon": "mandateSuperiority",
       "fields": {
         "Name": "mandateSuperiority",
         "Icon": "mandateSuperiority"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "mandateSuperiority"
+        }
+      ]
     },
     "culture-traits:marxismClassWar": {
       "id": "marxismClassWar",
@@ -4957,421 +6007,631 @@
       "id": "monumentalistConstruction",
       "type": "culture-traits",
       "displayName": "Monumentalist Construction",
+      "icon": "monumentalistConstruction",
       "fields": {
         "Name": "monumentalistConstruction",
         "Icon": "monumentalistConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistConstruction"
+        }
+      ]
     },
     "culture-traits:monumentalistExpansion": {
       "id": "monumentalistExpansion",
       "type": "culture-traits",
       "displayName": "Monumentalist Expansion",
+      "icon": "monumentalistExpansion",
       "fields": {
         "Name": "monumentalistExpansion",
         "Icon": "monumentalistExpansion"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistExpansion"
+        }
+      ]
     },
     "culture-traits:monumentalistIndustry": {
       "id": "monumentalistIndustry",
       "type": "culture-traits",
       "displayName": "Monumentalist Industry",
+      "icon": "monumentalistIndustry",
       "fields": {
         "Name": "monumentalistIndustry",
         "Icon": "monumentalistIndustry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistIndustry"
+        }
+      ]
     },
     "culture-traits:monumentalistInfrastructure": {
       "id": "monumentalistInfrastructure",
       "type": "culture-traits",
       "displayName": "Monumentalist Infrastructure",
+      "icon": "monumentalistInfrastructure",
       "fields": {
         "Name": "monumentalistInfrastructure",
         "Icon": "monumentalistInfrastructure"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistInfrastructure"
+        }
+      ]
     },
     "culture-traits:monumentalistMastery": {
       "id": "monumentalistMastery",
       "type": "culture-traits",
       "displayName": "Monumentalist Mastery",
+      "icon": "monumentalistMastery",
       "fields": {
         "Name": "monumentalistMastery",
         "Icon": "monumentalistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistMastery"
+        }
+      ]
     },
     "culture-traits:monumentalistOrganization": {
       "id": "monumentalistOrganization",
       "type": "culture-traits",
       "displayName": "Monumentalist Organization",
+      "icon": "monumentalistOrganization",
       "fields": {
         "Name": "monumentalistOrganization",
         "Icon": "monumentalistOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "monumentalistOrganization"
+        }
+      ]
     },
     "culture-traits:moralismCrusade": {
       "id": "moralismCrusade",
       "type": "culture-traits",
       "displayName": "Moralism Crusade",
+      "icon": "moralismCrusade",
       "fields": {
         "Name": "moralismCrusade",
         "Icon": "moralismCrusade"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismCrusade"
+        }
+      ]
     },
     "culture-traits:moralismDiscipline": {
       "id": "moralismDiscipline",
       "type": "culture-traits",
       "displayName": "Moralism Discipline",
+      "icon": "moralismDiscipline",
       "fields": {
         "Name": "moralismDiscipline",
         "Icon": "moralismDiscipline"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismDiscipline"
+        }
+      ]
     },
     "culture-traits:moralismJustWar": {
       "id": "moralismJustWar",
       "type": "culture-traits",
       "displayName": "Moralism Just War",
+      "icon": "moralismJustWar",
       "fields": {
         "Name": "moralismJustWar",
         "Icon": "moralismJustWar"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismJustWar"
+        }
+      ]
     },
     "culture-traits:moralismOrder": {
       "id": "moralismOrder",
       "type": "culture-traits",
       "displayName": "Moralism Order",
+      "icon": "moralismOrder",
       "fields": {
         "Name": "moralismOrder",
         "Icon": "moralismOrder"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismOrder"
+        }
+      ]
     },
     "culture-traits:moralismPiety": {
       "id": "moralismPiety",
       "type": "culture-traits",
       "displayName": "Moralism Piety",
+      "icon": "moralismPiety",
       "fields": {
         "Name": "moralismPiety",
         "Icon": "moralismPiety"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismPiety"
+        }
+      ]
     },
     "culture-traits:moralismRighteousness": {
       "id": "moralismRighteousness",
       "type": "culture-traits",
       "displayName": "Moralism Righteousness",
+      "icon": "moralismRighteousness",
       "fields": {
         "Name": "moralismRighteousness",
         "Icon": "moralismRighteousness"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismRighteousness"
+        }
+      ]
     },
     "culture-traits:moralismVirtue": {
       "id": "moralismVirtue",
       "type": "culture-traits",
       "displayName": "Moralism Virtue",
+      "icon": "moralismVirtue",
       "fields": {
         "Name": "moralismVirtue",
         "Icon": "moralismVirtue"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moralismVirtue"
+        }
+      ]
     },
     "culture-traits:moumentalistPsychology": {
       "id": "moumentalistPsychology",
       "type": "culture-traits",
       "displayName": "Moumentalist Psychology",
+      "icon": "moumentalistPsychology",
       "fields": {
         "Name": "moumentalistPsychology",
         "Icon": "moumentalistPsychology"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "moumentalistPsychology"
+        }
+      ]
     },
     "culture-traits:navyAttack": {
       "id": "navyAttack",
       "type": "culture-traits",
       "displayName": "Navy Attack",
+      "icon": "navyAttack",
       "fields": {
         "Name": "navyAttack",
         "Icon": "navyAttack"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyAttack"
+        }
+      ]
     },
     "culture-traits:navyCommand": {
       "id": "navyCommand",
       "type": "culture-traits",
       "displayName": "Navy Command",
+      "icon": "navyCommand",
       "fields": {
         "Name": "navyCommand",
         "Icon": "navyCommand"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyCommand"
+        }
+      ]
     },
     "culture-traits:navyCommerce": {
       "id": "navyCommerce",
       "type": "culture-traits",
       "displayName": "Navy Commerce",
+      "icon": "navyCommerce",
       "fields": {
         "Name": "navyCommerce",
         "Icon": "navyCommerce"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyCommerce"
+        }
+      ]
     },
     "culture-traits:navyMastery": {
       "id": "navyMastery",
       "type": "culture-traits",
       "displayName": "Navy Mastery",
+      "icon": "navyMastery",
       "fields": {
         "Name": "navyMastery",
         "Icon": "navyMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyMastery"
+        }
+      ]
     },
     "culture-traits:navyMorale": {
       "id": "navyMorale",
       "type": "culture-traits",
       "displayName": "Navy Morale",
+      "icon": "navyMorale",
       "fields": {
         "Name": "navyMorale",
         "Icon": "navyMorale"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyMorale"
+        }
+      ]
     },
     "culture-traits:navyRecruitment": {
       "id": "navyRecruitment",
       "type": "culture-traits",
       "displayName": "Navy Recruitment",
+      "icon": "navyRecruitment",
       "fields": {
         "Name": "navyRecruitment",
         "Icon": "navyRecruitment"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyRecruitment"
+        }
+      ]
     },
     "culture-traits:navyTactics": {
       "id": "navyTactics",
       "type": "culture-traits",
       "displayName": "Navy Tactics",
+      "icon": "navyTactics",
       "fields": {
         "Name": "navyTactics",
         "Icon": "navyTactics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "navyTactics"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyCohesion": {
       "id": "nuclearFamilyCohesion",
       "type": "culture-traits",
       "displayName": "Nuclear Family Cohesion",
+      "icon": "nuclearFamilyCohesion",
       "fields": {
         "Name": "nuclearFamilyCohesion",
         "Icon": "nuclearFamilyCohesion"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyCohesion"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyCommunity": {
       "id": "nuclearFamilyCommunity",
       "type": "culture-traits",
       "displayName": "Nuclear Family Community",
+      "icon": "nuclearFamilyCommunity",
       "fields": {
         "Name": "nuclearFamilyCommunity",
         "Icon": "nuclearFamilyCommunity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyCommunity"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyMastery": {
       "id": "nuclearFamilyMastery",
       "type": "culture-traits",
       "displayName": "Nuclear Family Mastery",
+      "icon": "nuclearFamilyMastery",
       "fields": {
         "Name": "nuclearFamilyMastery",
         "Icon": "nuclearFamilyMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyMastery"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyProsperity": {
       "id": "nuclearFamilyProsperity",
       "type": "culture-traits",
       "displayName": "Nuclear Family Prosperity",
+      "icon": "nuclearFamilyProsperity",
       "fields": {
         "Name": "nuclearFamilyProsperity",
         "Icon": "nuclearFamilyProsperity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyProsperity"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyResourceful": {
       "id": "nuclearFamilyResourceful",
       "type": "culture-traits",
       "displayName": "Nuclear Family Resourceful",
+      "icon": "nuclearFamilyResourceful",
       "fields": {
         "Name": "nuclearFamilyResourceful",
         "Icon": "nuclearFamilyResourceful"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyResourceful"
+        }
+      ]
     },
     "culture-traits:nuclearFamilySociety": {
       "id": "nuclearFamilySociety",
       "type": "culture-traits",
       "displayName": "Nuclear Family Society",
+      "icon": "nuclearFamilySociety",
       "fields": {
         "Name": "nuclearFamilySociety",
         "Icon": "nuclearFamilySociety"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilySociety"
+        }
+      ]
     },
     "culture-traits:nuclearFamilyTradition": {
       "id": "nuclearFamilyTradition",
       "type": "culture-traits",
       "displayName": "Nuclear Family Tradition",
+      "icon": "nuclearFamilyTradition",
       "fields": {
         "Name": "nuclearFamilyTradition",
         "Icon": "nuclearFamilyTradition"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "nuclearFamilyTradition"
+        }
+      ]
     },
     "culture-traits:obliterationCollective": {
       "id": "obliterationCollective",
       "type": "culture-traits",
       "displayName": "Obliteration Collective",
+      "icon": "obliterationCollective",
       "fields": {
         "Name": "obliterationCollective",
         "Icon": "obliterationCollective"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationCollective"
+        }
+      ]
     },
     "culture-traits:obliterationConformity": {
       "id": "obliterationConformity",
       "type": "culture-traits",
       "displayName": "Obliteration Conformity",
+      "icon": "obliterationConformity",
       "fields": {
         "Name": "obliterationConformity",
         "Icon": "obliterationConformity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationConformity"
+        }
+      ]
     },
     "culture-traits:obliterationDevotion": {
       "id": "obliterationDevotion",
       "type": "culture-traits",
       "displayName": "Obliteration Devotion",
+      "icon": "obliterationDevotion",
       "fields": {
         "Name": "obliterationDevotion",
         "Icon": "obliterationDevotion"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationDevotion"
+        }
+      ]
     },
     "culture-traits:obliterationObedience": {
       "id": "obliterationObedience",
       "type": "culture-traits",
       "displayName": "Obliteration Obedience",
+      "icon": "obliterationObedience",
       "fields": {
         "Name": "obliterationObedience",
         "Icon": "obliterationObedience"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationObedience"
+        }
+      ]
     },
     "culture-traits:obliterationSacrifice": {
       "id": "obliterationSacrifice",
       "type": "culture-traits",
       "displayName": "Obliteration Sacrifice",
+      "icon": "obliterationSacrifice",
       "fields": {
         "Name": "obliterationSacrifice",
         "Icon": "obliterationSacrifice"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationSacrifice"
+        }
+      ]
     },
     "culture-traits:obliterationSubmission": {
       "id": "obliterationSubmission",
       "type": "culture-traits",
       "displayName": "Obliteration Submission",
+      "icon": "obliterationSubmission",
       "fields": {
         "Name": "obliterationSubmission",
         "Icon": "obliterationSubmission"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationSubmission"
+        }
+      ]
     },
     "culture-traits:obliterationUnification": {
       "id": "obliterationUnification",
       "type": "culture-traits",
       "displayName": "Obliteration Unification",
+      "icon": "obliterationUnification",
       "fields": {
         "Name": "obliterationUnification",
         "Icon": "obliterationUnification"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "obliterationUnification"
+        }
+      ]
     },
     "culture-traits:occult": {
       "id": "occult",
@@ -5521,757 +6781,1135 @@
       "id": "offensiveAttack",
       "type": "culture-traits",
       "displayName": "Offensive Attack",
+      "icon": "offensiveAttack",
       "fields": {
         "Name": "offensiveAttack",
         "Icon": "offensiveAttack"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveAttack"
+        }
+      ]
     },
     "culture-traits:offensiveLegions": {
       "id": "offensiveLegions",
       "type": "culture-traits",
       "displayName": "Offensive Legions",
+      "icon": "offensiveLegions",
       "fields": {
         "Name": "offensiveLegions",
         "Icon": "offensiveLegions"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveLegions"
+        }
+      ]
     },
     "culture-traits:offensiveMastery": {
       "id": "offensiveMastery",
       "type": "culture-traits",
       "displayName": "Offensive Mastery",
+      "icon": "offensiveMastery",
       "fields": {
         "Name": "offensiveMastery",
         "Icon": "offensiveMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveMastery"
+        }
+      ]
     },
     "culture-traits:offensivePersistence": {
       "id": "offensivePersistence",
       "type": "culture-traits",
       "displayName": "Offensive Persistence",
+      "icon": "offensivePersistence",
       "fields": {
         "Name": "offensivePersistence",
         "Icon": "offensivePersistence"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensivePersistence"
+        }
+      ]
     },
     "culture-traits:offensiveSieges": {
       "id": "offensiveSieges",
       "type": "culture-traits",
       "displayName": "Offensive Sieges",
+      "icon": "offensiveSieges",
       "fields": {
         "Name": "offensiveSieges",
         "Icon": "offensiveSieges"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveSieges"
+        }
+      ]
     },
     "culture-traits:offensiveSupply": {
       "id": "offensiveSupply",
       "type": "culture-traits",
       "displayName": "Offensive Supply",
+      "icon": "offensiveSupply",
       "fields": {
         "Name": "offensiveSupply",
         "Icon": "offensiveSupply"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveSupply"
+        }
+      ]
     },
     "culture-traits:offensiveTraining": {
       "id": "offensiveTraining",
       "type": "culture-traits",
       "displayName": "Offensive Training",
+      "icon": "offensiveTraining",
       "fields": {
         "Name": "offensiveTraining",
         "Icon": "offensiveTraining"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "offensiveTraining"
+        }
+      ]
     },
     "culture-traits:passivistCommunalism": {
       "id": "passivistCommunalism",
       "type": "culture-traits",
       "displayName": "Passivist Communalism",
+      "icon": "passivistCommunalism",
       "fields": {
         "Name": "passivistCommunalism",
         "Icon": "passivistCommunalism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistCommunalism"
+        }
+      ]
     },
     "culture-traits:passivistDefense": {
       "id": "passivistDefense",
       "type": "culture-traits",
       "displayName": "Passivist Defense",
+      "icon": "passivistDefense",
       "fields": {
         "Name": "passivistDefense",
         "Icon": "passivistDefense"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistDefense"
+        }
+      ]
     },
     "culture-traits:passivistEthics": {
       "id": "passivistEthics",
       "type": "culture-traits",
       "displayName": "Passivist Ethics",
+      "icon": "passivistEthics",
       "fields": {
         "Name": "passivistEthics",
         "Icon": "passivistEthics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistEthics"
+        }
+      ]
     },
     "culture-traits:passivistMastery": {
       "id": "passivistMastery",
       "type": "culture-traits",
       "displayName": "Passivist Mastery",
+      "icon": "passivistMastery",
       "fields": {
         "Name": "passivistMastery",
         "Icon": "passivistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistMastery"
+        }
+      ]
     },
     "culture-traits:passivistPlacation": {
       "id": "passivistPlacation",
       "type": "culture-traits",
       "displayName": "Passivist Placation",
+      "icon": "passivistPlacation",
       "fields": {
         "Name": "passivistPlacation",
         "Icon": "passivistPlacation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistPlacation"
+        }
+      ]
     },
     "culture-traits:passivistPolitics": {
       "id": "passivistPolitics",
       "type": "culture-traits",
       "displayName": "Passivist Politics",
+      "icon": "passivistPolitics",
       "fields": {
         "Name": "passivistPolitics",
         "Icon": "passivistPolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistPolitics"
+        }
+      ]
     },
     "culture-traits:passivistRhetoric": {
       "id": "passivistRhetoric",
       "type": "culture-traits",
       "displayName": "Passivist Rhetoric",
+      "icon": "passivistRhetoric",
       "fields": {
         "Name": "passivistRhetoric",
         "Icon": "passivistRhetoric"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "passivistRhetoric"
+        }
+      ]
     },
     "culture-traits:plutocraticFinancing": {
       "id": "plutocraticFinancing",
       "type": "culture-traits",
       "displayName": "Plutocratic Financing",
+      "icon": "plutocraticFinancing",
       "fields": {
         "Name": "plutocraticFinancing",
         "Icon": "plutocraticFinancing"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticFinancing"
+        }
+      ]
     },
     "culture-traits:plutocraticInvestment": {
       "id": "plutocraticInvestment",
       "type": "culture-traits",
       "displayName": "Plutocratic Investment",
+      "icon": "plutocraticInvestment",
       "fields": {
         "Name": "plutocraticInvestment",
         "Icon": "plutocraticInvestment"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticInvestment"
+        }
+      ]
     },
     "culture-traits:plutocraticLeadership": {
       "id": "plutocraticLeadership",
       "type": "culture-traits",
       "displayName": "Plutocratic Leadership",
+      "icon": "plutocraticLeadership",
       "fields": {
         "Name": "plutocraticLeadership",
         "Icon": "plutocraticLeadership"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticLeadership"
+        }
+      ]
     },
     "culture-traits:plutocraticMaterialism": {
       "id": "plutocraticMaterialism",
       "type": "culture-traits",
       "displayName": "Plutocratic Materialism",
+      "icon": "plutocraticMaterialism",
       "fields": {
         "Name": "plutocraticMaterialism",
         "Icon": "plutocraticMaterialism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticMaterialism"
+        }
+      ]
     },
     "culture-traits:plutocraticMechanics": {
       "id": "plutocraticMechanics",
       "type": "culture-traits",
       "displayName": "Plutocratic Mechanics",
+      "icon": "plutocraticMechanics",
       "fields": {
         "Name": "plutocraticMechanics",
         "Icon": "plutocraticMechanics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticMechanics"
+        }
+      ]
     },
     "culture-traits:plutocraticMerit": {
       "id": "plutocraticMerit",
       "type": "culture-traits",
       "displayName": "Plutocratic Merit",
+      "icon": "plutocraticMerit",
       "fields": {
         "Name": "plutocraticMerit",
         "Icon": "plutocraticMerit"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticMerit"
+        }
+      ]
     },
     "culture-traits:plutocraticSupremacy": {
       "id": "plutocraticSupremacy",
       "type": "culture-traits",
       "displayName": "Plutocratic Supremacy",
+      "icon": "plutocraticSupremacy",
       "fields": {
         "Name": "plutocraticSupremacy",
         "Icon": "plutocraticSupremacy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "plutocraticSupremacy"
+        }
+      ]
     },
     "culture-traits:polygamistChaos": {
       "id": "polygamistChaos",
       "type": "culture-traits",
       "displayName": "Polygamist Chaos",
+      "icon": "polygamistChaos",
       "fields": {
         "Name": "polygamistChaos",
         "Icon": "polygamistChaos"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistChaos"
+        }
+      ]
     },
     "culture-traits:polygamistFamily": {
       "id": "polygamistFamily",
       "type": "culture-traits",
       "displayName": "Polygamist Family",
+      "icon": "polygamistFamily",
       "fields": {
         "Name": "polygamistFamily",
         "Icon": "polygamistFamily"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistFamily"
+        }
+      ]
     },
     "culture-traits:polygamistHierarchy": {
       "id": "polygamistHierarchy",
       "type": "culture-traits",
       "displayName": "Polygamist Hierarchy",
+      "icon": "polygamistHierarchy",
       "fields": {
         "Name": "polygamistHierarchy",
         "Icon": "polygamistHierarchy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistHierarchy"
+        }
+      ]
     },
     "culture-traits:polygamistManagement": {
       "id": "polygamistManagement",
       "type": "culture-traits",
       "displayName": "Polygamist Management",
+      "icon": "polygamistManagement",
       "fields": {
         "Name": "polygamistManagement",
         "Icon": "polygamistManagement"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistManagement"
+        }
+      ]
     },
     "culture-traits:polygamistMastery": {
       "id": "polygamistMastery",
       "type": "culture-traits",
       "displayName": "Polygamist Mastery",
+      "icon": "polygamistMastery",
       "fields": {
         "Name": "polygamistMastery",
         "Icon": "polygamistMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistMastery"
+        }
+      ]
     },
     "culture-traits:polygamistPsychology": {
       "id": "polygamistPsychology",
       "type": "culture-traits",
       "displayName": "Polygamist Psychology",
+      "icon": "polygamistPsychology",
       "fields": {
         "Name": "polygamistPsychology",
         "Icon": "polygamistPsychology"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistPsychology"
+        }
+      ]
     },
     "culture-traits:polygamistSociety": {
       "id": "polygamistSociety",
       "type": "culture-traits",
       "displayName": "Polygamist Society",
+      "icon": "polygamistSociety",
       "fields": {
         "Name": "polygamistSociety",
         "Icon": "polygamistSociety"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "polygamistSociety"
+        }
+      ]
     },
     "culture-traits:pridefulAggression": {
       "id": "pridefulAggression",
       "type": "culture-traits",
       "displayName": "Prideful Aggression",
+      "icon": "pridefulAggression",
       "fields": {
         "Name": "pridefulAggression",
         "Icon": "pridefulAggression"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulAggression"
+        }
+      ]
     },
     "culture-traits:pridefulAmbition": {
       "id": "pridefulAmbition",
       "type": "culture-traits",
       "displayName": "Prideful Ambition",
+      "icon": "pridefulAmbition",
       "fields": {
         "Name": "pridefulAmbition",
         "Icon": "pridefulAmbition"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulAmbition"
+        }
+      ]
     },
     "culture-traits:pridefulArrogance": {
       "id": "pridefulArrogance",
       "type": "culture-traits",
       "displayName": "Prideful Arrogance",
+      "icon": "pridefulArrogance",
       "fields": {
         "Name": "pridefulArrogance",
         "Icon": "pridefulArrogance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulArrogance"
+        }
+      ]
     },
     "culture-traits:pridefulDictation": {
       "id": "pridefulDictation",
       "type": "culture-traits",
       "displayName": "Prideful Dictation",
+      "icon": "pridefulDictation",
       "fields": {
         "Name": "pridefulDictation",
         "Icon": "pridefulDictation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulDictation"
+        }
+      ]
     },
     "culture-traits:pridefulMastery": {
       "id": "pridefulMastery",
       "type": "culture-traits",
       "displayName": "Prideful Mastery",
+      "icon": "pridefulMastery",
       "fields": {
         "Name": "pridefulMastery",
         "Icon": "pridefulMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulMastery"
+        }
+      ]
     },
     "culture-traits:pridefulOrchestration": {
       "id": "pridefulOrchestration",
       "type": "culture-traits",
       "displayName": "Prideful Orchestration",
+      "icon": "pridefulOrchestration",
       "fields": {
         "Name": "pridefulOrchestration",
         "Icon": "pridefulOrchestration"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulOrchestration"
+        }
+      ]
     },
     "culture-traits:pridefulUnity": {
       "id": "pridefulUnity",
       "type": "culture-traits",
       "displayName": "Prideful Unity",
+      "icon": "pridefulUnity",
       "fields": {
         "Name": "pridefulUnity",
         "Icon": "pridefulUnity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "pridefulUnity"
+        }
+      ]
     },
     "culture-traits:prosperismAmbition": {
       "id": "prosperismAmbition",
       "type": "culture-traits",
       "displayName": "Prosperism Ambition",
+      "icon": "prosperismAmbition",
       "fields": {
         "Name": "prosperismAmbition",
         "Icon": "prosperismAmbition"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismAmbition"
+        }
+      ]
     },
     "culture-traits:prosperismDevelopment": {
       "id": "prosperismDevelopment",
       "type": "culture-traits",
       "displayName": "Prosperism Development",
+      "icon": "prosperismDevelopment",
       "fields": {
         "Name": "prosperismDevelopment",
         "Icon": "prosperismDevelopment"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismDevelopment"
+        }
+      ]
     },
     "culture-traits:prosperismGrowth": {
       "id": "prosperismGrowth",
       "type": "culture-traits",
       "displayName": "Prosperism Growth",
+      "icon": "prosperismGrowth",
       "fields": {
         "Name": "prosperismGrowth",
         "Icon": "prosperismGrowth"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismGrowth"
+        }
+      ]
     },
     "culture-traits:prosperismIndustry": {
       "id": "prosperismIndustry",
       "type": "culture-traits",
       "displayName": "Prosperism Industry",
+      "icon": "prosperismIndustry",
       "fields": {
         "Name": "prosperismIndustry",
         "Icon": "prosperismIndustry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismIndustry"
+        }
+      ]
     },
     "culture-traits:prosperismOpportunity": {
       "id": "prosperismOpportunity",
       "type": "culture-traits",
       "displayName": "Prosperism Opportunity",
+      "icon": "prosperismOpportunity",
       "fields": {
         "Name": "prosperismOpportunity",
         "Icon": "prosperismOpportunity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismOpportunity"
+        }
+      ]
     },
     "culture-traits:prosperismProgress": {
       "id": "prosperismProgress",
       "type": "culture-traits",
       "displayName": "Prosperism Progress",
+      "icon": "prosperismProgress",
       "fields": {
         "Name": "prosperismProgress",
         "Icon": "prosperismProgress"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismProgress"
+        }
+      ]
     },
     "culture-traits:prosperismWealth": {
       "id": "prosperismWealth",
       "type": "culture-traits",
       "displayName": "Prosperism Wealth",
+      "icon": "prosperismWealth",
       "fields": {
         "Name": "prosperismWealth",
         "Icon": "prosperismWealth"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "prosperismWealth"
+        }
+      ]
     },
     "culture-traits:qualityCommand": {
       "id": "qualityCommand",
       "type": "culture-traits",
       "displayName": "Quality Command",
+      "icon": "qualityCommand",
       "fields": {
         "Name": "qualityCommand",
         "Icon": "qualityCommand"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityCommand"
+        }
+      ]
     },
     "culture-traits:qualityDiscipline": {
       "id": "qualityDiscipline",
       "type": "culture-traits",
       "displayName": "Quality Discipline",
+      "icon": "qualityDiscipline",
       "fields": {
         "Name": "qualityDiscipline",
         "Icon": "qualityDiscipline"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityDiscipline"
+        }
+      ]
     },
     "culture-traits:qualityElitism": {
       "id": "qualityElitism",
       "type": "culture-traits",
       "displayName": "Quality Elitism",
+      "icon": "qualityElitism",
       "fields": {
         "Name": "qualityElitism",
         "Icon": "qualityElitism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityElitism"
+        }
+      ]
     },
     "culture-traits:qualityMastery": {
       "id": "qualityMastery",
       "type": "culture-traits",
       "displayName": "Quality Mastery",
+      "icon": "qualityMastery",
       "fields": {
         "Name": "qualityMastery",
         "Icon": "qualityMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityMastery"
+        }
+      ]
     },
     "culture-traits:qualityOrganization": {
       "id": "qualityOrganization",
       "type": "culture-traits",
       "displayName": "Quality Organization",
+      "icon": "qualityOrganization",
       "fields": {
         "Name": "qualityOrganization",
         "Icon": "qualityOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityOrganization"
+        }
+      ]
     },
     "culture-traits:qualityTactics": {
       "id": "qualityTactics",
       "type": "culture-traits",
       "displayName": "Quality Tactics",
+      "icon": "qualityTactics",
       "fields": {
         "Name": "qualityTactics",
         "Icon": "qualityTactics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityTactics"
+        }
+      ]
     },
     "culture-traits:qualityTraining": {
       "id": "qualityTraining",
       "type": "culture-traits",
       "displayName": "Quality Training",
+      "icon": "qualityTraining",
       "fields": {
         "Name": "qualityTraining",
         "Icon": "qualityTraining"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "qualityTraining"
+        }
+      ]
     },
     "culture-traits:quantityCommand": {
       "id": "quantityCommand",
       "type": "culture-traits",
       "displayName": "Quantity Command",
+      "icon": "quantityCommand",
       "fields": {
         "Name": "quantityCommand",
         "Icon": "quantityCommand"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityCommand"
+        }
+      ]
     },
     "culture-traits:quantityHumanWave": {
       "id": "quantityHumanWave",
       "type": "culture-traits",
       "displayName": "Quantity Human Wave",
+      "icon": "quantityHumanWave",
       "fields": {
         "Name": "quantityHumanWave",
         "Icon": "quantityHumanWave"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityHumanWave"
+        }
+      ]
     },
     "culture-traits:quantityMastery": {
       "id": "quantityMastery",
       "type": "culture-traits",
       "displayName": "Quantity Mastery",
+      "icon": "quantityMastery",
       "fields": {
         "Name": "quantityMastery",
         "Icon": "quantityMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityMastery"
+        }
+      ]
     },
     "culture-traits:quantityMilitarism": {
       "id": "quantityMilitarism",
       "type": "culture-traits",
       "displayName": "Quantity Militarism",
+      "icon": "quantityMilitarism",
       "fields": {
         "Name": "quantityMilitarism",
         "Icon": "quantityMilitarism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityMilitarism"
+        }
+      ]
     },
     "culture-traits:quantityOrganization": {
       "id": "quantityOrganization",
       "type": "culture-traits",
       "displayName": "Quantity Organization",
+      "icon": "quantityOrganization",
       "fields": {
         "Name": "quantityOrganization",
         "Icon": "quantityOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityOrganization"
+        }
+      ]
     },
     "culture-traits:quantityOverwhelm": {
       "id": "quantityOverwhelm",
       "type": "culture-traits",
       "displayName": "Quantity Overwhelm",
+      "icon": "quantityOverwhelm",
       "fields": {
         "Name": "quantityOverwhelm",
         "Icon": "quantityOverwhelm"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityOverwhelm"
+        }
+      ]
     },
     "culture-traits:quantityWarmachine": {
       "id": "quantityWarmachine",
       "type": "culture-traits",
       "displayName": "Quantity Warmachine",
+      "icon": "quantityWarmachine",
       "fields": {
         "Name": "quantityWarmachine",
         "Icon": "quantityWarmachine"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "quantityWarmachine"
+        }
+      ]
     },
     "culture-traits:robophileArmy": {
       "id": "robophileArmy",
       "type": "culture-traits",
       "displayName": "Robophile Army",
+      "icon": "robophileArmy",
       "fields": {
         "Name": "robophileArmy",
         "Icon": "robophileArmy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileArmy"
+        }
+      ]
     },
     "culture-traits:robophileConstruction": {
       "id": "robophileConstruction",
       "type": "culture-traits",
       "displayName": "Robophile Construction",
+      "icon": "robophileConstruction",
       "fields": {
         "Name": "robophileConstruction",
         "Icon": "robophileConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileConstruction"
+        }
+      ]
     },
     "culture-traits:robophileIndustry": {
       "id": "robophileIndustry",
       "type": "culture-traits",
       "displayName": "Robophile Industry",
+      "icon": "robophileIndustry",
       "fields": {
         "Name": "robophileIndustry",
         "Icon": "robophileIndustry"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileIndustry"
+        }
+      ]
     },
     "culture-traits:robophileMastery": {
       "id": "robophileMastery",
       "type": "culture-traits",
       "displayName": "Robophile Mastery",
+      "icon": "robophileMastery",
       "fields": {
         "Name": "robophileMastery",
         "Icon": "robophileMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileMastery"
+        }
+      ]
     },
     "culture-traits:robophileMechanism": {
       "id": "robophileMechanism",
       "type": "culture-traits",
       "displayName": "Robophile Mechanism",
+      "icon": "robophileMechanism",
       "fields": {
         "Name": "robophileMechanism",
         "Icon": "robophileMechanism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileMechanism"
+        }
+      ]
     },
     "culture-traits:robophileRobotics": {
       "id": "robophileRobotics",
       "type": "culture-traits",
       "displayName": "Robophile Robotics",
+      "icon": "robophileRobotics",
       "fields": {
         "Name": "robophileRobotics",
         "Icon": "robophileRobotics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileRobotics"
+        }
+      ]
     },
     "culture-traits:robophileTechnicians": {
       "id": "robophileTechnicians",
       "type": "culture-traits",
       "displayName": "Robophile Technicians",
+      "icon": "robophileTechnicians",
       "fields": {
         "Name": "robophileTechnicians",
         "Icon": "robophileTechnicians"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "robophileTechnicians"
+        }
+      ]
     },
     "culture-traits:roboticAnalytics": {
       "id": "roboticAnalytics",
@@ -6403,169 +8041,253 @@
       "id": "socialContractControl",
       "type": "culture-traits",
       "displayName": "Social Contract Control",
+      "icon": "socialContractControl",
       "fields": {
         "Name": "socialContractControl",
         "Icon": "socialContractControl"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractControl"
+        }
+      ]
     },
     "culture-traits:socialContractLaw": {
       "id": "socialContractLaw",
       "type": "culture-traits",
       "displayName": "Social Contract Law",
+      "icon": "socialContractLaw",
       "fields": {
         "Name": "socialContractLaw",
         "Icon": "socialContractLaw"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractLaw"
+        }
+      ]
     },
     "culture-traits:socialContractMastery": {
       "id": "socialContractMastery",
       "type": "culture-traits",
       "displayName": "Social Contract Mastery",
+      "icon": "socialContractMastery",
       "fields": {
         "Name": "socialContractMastery",
         "Icon": "socialContractMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractMastery"
+        }
+      ]
     },
     "culture-traits:socialContractOrganization": {
       "id": "socialContractOrganization",
       "type": "culture-traits",
       "displayName": "Social Contract Organization",
+      "icon": "socialContractOrganization",
       "fields": {
         "Name": "socialContractOrganization",
         "Icon": "socialContractOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractOrganization"
+        }
+      ]
     },
     "culture-traits:socialContractPolitics": {
       "id": "socialContractPolitics",
       "type": "culture-traits",
       "displayName": "Social Contract Politics",
+      "icon": "socialContractPolitics",
       "fields": {
         "Name": "socialContractPolitics",
         "Icon": "socialContractPolitics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractPolitics"
+        }
+      ]
     },
     "culture-traits:socialContractSociety": {
       "id": "socialContractSociety",
       "type": "culture-traits",
       "displayName": "Social Contract Society",
+      "icon": "socialContractSociety",
       "fields": {
         "Name": "socialContractSociety",
         "Icon": "socialContractSociety"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractSociety"
+        }
+      ]
     },
     "culture-traits:socialContractStatism": {
       "id": "socialContractStatism",
       "type": "culture-traits",
       "displayName": "Social Contract Statism",
+      "icon": "socialContractStatism",
       "fields": {
         "Name": "socialContractStatism",
         "Icon": "socialContractStatism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "socialContractStatism"
+        }
+      ]
     },
     "culture-traits:spaceAttacking": {
       "id": "spaceAttacking",
       "type": "culture-traits",
       "displayName": "Space Attacking",
+      "icon": "spaceAttacking",
       "fields": {
         "Name": "spaceAttacking",
         "Icon": "spaceAttacking"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceAttacking"
+        }
+      ]
     },
     "culture-traits:spaceDominance": {
       "id": "spaceDominance",
       "type": "culture-traits",
       "displayName": "Space Dominance",
+      "icon": "spaceDominance",
       "fields": {
         "Name": "spaceDominance",
         "Icon": "spaceDominance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceDominance"
+        }
+      ]
     },
     "culture-traits:spaceLogistics": {
       "id": "spaceLogistics",
       "type": "culture-traits",
       "displayName": "Space Logistics",
+      "icon": "spaceLogistics",
       "fields": {
         "Name": "spaceLogistics",
         "Icon": "spaceLogistics"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceLogistics"
+        }
+      ]
     },
     "culture-traits:spaceMorale": {
       "id": "spaceMorale",
       "type": "culture-traits",
       "displayName": "Space Morale",
+      "icon": "spaceMorale",
       "fields": {
         "Name": "spaceMorale",
         "Icon": "spaceMorale"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceMorale"
+        }
+      ]
     },
     "culture-traits:spaceRecruitment": {
       "id": "spaceRecruitment",
       "type": "culture-traits",
       "displayName": "Space Recruitment",
+      "icon": "spaceRecruitment",
       "fields": {
         "Name": "spaceRecruitment",
         "Icon": "spaceRecruitment"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceRecruitment"
+        }
+      ]
     },
     "culture-traits:spaceResources": {
       "id": "spaceResources",
       "type": "culture-traits",
       "displayName": "Space Resources",
+      "icon": "spaceResources",
       "fields": {
         "Name": "spaceResources",
         "Icon": "spaceResources"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceResources"
+        }
+      ]
     },
     "culture-traits:spaceTraining": {
       "id": "spaceTraining",
       "type": "culture-traits",
       "displayName": "Space Training",
+      "icon": "spaceTraining",
       "fields": {
         "Name": "spaceTraining",
         "Icon": "spaceTraining"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "spaceTraining"
+        }
+      ]
     },
     "culture-traits:speciesHuman": {
       "id": "speciesHuman",
@@ -6607,673 +8329,1009 @@
       "id": "statismAuthority",
       "type": "culture-traits",
       "displayName": "Statism Authority",
+      "icon": "statismAuthority",
       "fields": {
         "Name": "statismAuthority",
         "Icon": "statismAuthority"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismAuthority"
+        }
+      ]
     },
     "culture-traits:statismBureaucracy": {
       "id": "statismBureaucracy",
       "type": "culture-traits",
       "displayName": "Statism Bureaucracy",
+      "icon": "statismBureaucracy",
       "fields": {
         "Name": "statismBureaucracy",
         "Icon": "statismBureaucracy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismBureaucracy"
+        }
+      ]
     },
     "culture-traits:statismCentralization": {
       "id": "statismCentralization",
       "type": "culture-traits",
       "displayName": "Statism Centralization",
+      "icon": "statismCentralization",
       "fields": {
         "Name": "statismCentralization",
         "Icon": "statismCentralization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismCentralization"
+        }
+      ]
     },
     "culture-traits:statismControl": {
       "id": "statismControl",
       "type": "culture-traits",
       "displayName": "Statism Control",
+      "icon": "statismControl",
       "fields": {
         "Name": "statismControl",
         "Icon": "statismControl"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismControl"
+        }
+      ]
     },
     "culture-traits:statismMobilization": {
       "id": "statismMobilization",
       "type": "culture-traits",
       "displayName": "Statism Mobilization",
+      "icon": "statismMobilization",
       "fields": {
         "Name": "statismMobilization",
         "Icon": "statismMobilization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismMobilization"
+        }
+      ]
     },
     "culture-traits:statismOrder": {
       "id": "statismOrder",
       "type": "culture-traits",
       "displayName": "Statism Order",
+      "icon": "statismOrder",
       "fields": {
         "Name": "statismOrder",
         "Icon": "statismOrder"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismOrder"
+        }
+      ]
     },
     "culture-traits:statismPlanning": {
       "id": "statismPlanning",
       "type": "culture-traits",
       "displayName": "Statism Planning",
+      "icon": "statismPlanning",
       "fields": {
         "Name": "statismPlanning",
         "Icon": "statismPlanning"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "statismPlanning"
+        }
+      ]
     },
     "culture-traits:stoicismDefiance": {
       "id": "stoicismDefiance",
       "type": "culture-traits",
       "displayName": "Stoicism Defiance",
+      "icon": "stoicismDefiance",
       "fields": {
         "Name": "stoicismDefiance",
         "Icon": "stoicismDefiance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismDefiance"
+        }
+      ]
     },
     "culture-traits:stoicismDiscipline": {
       "id": "stoicismDiscipline",
       "type": "culture-traits",
       "displayName": "Stoicism Discipline",
+      "icon": "stoicismDiscipline",
       "fields": {
         "Name": "stoicismDiscipline",
         "Icon": "stoicismDiscipline"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismDiscipline"
+        }
+      ]
     },
     "culture-traits:stoicismEndurance": {
       "id": "stoicismEndurance",
       "type": "culture-traits",
       "displayName": "Stoicism Endurance",
+      "icon": "stoicismEndurance",
       "fields": {
         "Name": "stoicismEndurance",
         "Icon": "stoicismEndurance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismEndurance"
+        }
+      ]
     },
     "culture-traits:stoicismFortitude": {
       "id": "stoicismFortitude",
       "type": "culture-traits",
       "displayName": "Stoicism Fortitude",
+      "icon": "stoicismFortitude",
       "fields": {
         "Name": "stoicismFortitude",
         "Icon": "stoicismFortitude"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismFortitude"
+        }
+      ]
     },
     "culture-traits:stoicismPerseverance": {
       "id": "stoicismPerseverance",
       "type": "culture-traits",
       "displayName": "Stoicism Perseverance",
+      "icon": "stoicismPerseverance",
       "fields": {
         "Name": "stoicismPerseverance",
         "Icon": "stoicismPerseverance"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismPerseverance"
+        }
+      ]
     },
     "culture-traits:stoicismResilience": {
       "id": "stoicismResilience",
       "type": "culture-traits",
       "displayName": "Stoicism Resilience",
+      "icon": "stoicismResilience",
       "fields": {
         "Name": "stoicismResilience",
         "Icon": "stoicismResilience"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismResilience"
+        }
+      ]
     },
     "culture-traits:stoicismStolidness": {
       "id": "stoicismStolidness",
       "type": "culture-traits",
       "displayName": "Stoicism Stolidness",
+      "icon": "stoicismStolidness",
       "fields": {
         "Name": "stoicismStolidness",
         "Icon": "stoicismStolidness"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "stoicismStolidness"
+        }
+      ]
     },
     "culture-traits:thriftyCommerce": {
       "id": "thriftyCommerce",
       "type": "culture-traits",
       "displayName": "Thrifty Commerce",
+      "icon": "thriftyCommerce",
       "fields": {
         "Name": "thriftyCommerce",
         "Icon": "thriftyCommerce"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyCommerce"
+        }
+      ]
     },
     "culture-traits:thriftyExpansion": {
       "id": "thriftyExpansion",
       "type": "culture-traits",
       "displayName": "Thrifty Expansion",
+      "icon": "thriftyExpansion",
       "fields": {
         "Name": "thriftyExpansion",
         "Icon": "thriftyExpansion"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyExpansion"
+        }
+      ]
     },
     "culture-traits:thriftyExploitation": {
       "id": "thriftyExploitation",
       "type": "culture-traits",
       "displayName": "Thrifty Exploitation",
+      "icon": "thriftyExploitation",
       "fields": {
         "Name": "thriftyExploitation",
         "Icon": "thriftyExploitation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyExploitation"
+        }
+      ]
     },
     "culture-traits:thriftyInnovation": {
       "id": "thriftyInnovation",
       "type": "culture-traits",
       "displayName": "Thrifty Innovation",
+      "icon": "thriftyInnovation",
       "fields": {
         "Name": "thriftyInnovation",
         "Icon": "thriftyInnovation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyInnovation"
+        }
+      ]
     },
     "culture-traits:thriftyMastery": {
       "id": "thriftyMastery",
       "type": "culture-traits",
       "displayName": "Thrifty Mastery",
+      "icon": "thriftyMastery",
       "fields": {
         "Name": "thriftyMastery",
         "Icon": "thriftyMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyMastery"
+        }
+      ]
     },
     "culture-traits:thriftyResources": {
       "id": "thriftyResources",
       "type": "culture-traits",
       "displayName": "Thrifty Resources",
+      "icon": "thriftyResources",
       "fields": {
         "Name": "thriftyResources",
         "Icon": "thriftyResources"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftyResources"
+        }
+      ]
     },
     "culture-traits:thriftySociety": {
       "id": "thriftySociety",
       "type": "culture-traits",
       "displayName": "Thrifty Society",
+      "icon": "thriftySociety",
       "fields": {
         "Name": "thriftySociety",
         "Icon": "thriftySociety"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "thriftySociety"
+        }
+      ]
     },
     "culture-traits:traditionalismAncestors": {
       "id": "traditionalismAncestors",
       "type": "culture-traits",
       "displayName": "Traditionalism Ancestors",
+      "icon": "traditionalismAncestors",
       "fields": {
         "Name": "traditionalismAncestors",
         "Icon": "traditionalismAncestors"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismAncestors"
+        }
+      ]
     },
     "culture-traits:traditionalismConservatism": {
       "id": "traditionalismConservatism",
       "type": "culture-traits",
       "displayName": "Traditionalism Conservatism",
+      "icon": "traditionalismConservatism",
       "fields": {
         "Name": "traditionalismConservatism",
         "Icon": "traditionalismConservatism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismConservatism"
+        }
+      ]
     },
     "culture-traits:traditionalismContinuity": {
       "id": "traditionalismContinuity",
       "type": "culture-traits",
       "displayName": "Traditionalism Continuity",
+      "icon": "traditionalismContinuity",
       "fields": {
         "Name": "traditionalismContinuity",
         "Icon": "traditionalismContinuity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismContinuity"
+        }
+      ]
     },
     "culture-traits:traditionalismCulture": {
       "id": "traditionalismCulture",
       "type": "culture-traits",
       "displayName": "Traditionalism Culture",
+      "icon": "traditionalismCulture",
       "fields": {
         "Name": "traditionalismCulture",
         "Icon": "traditionalismCulture"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismCulture"
+        }
+      ]
     },
     "culture-traits:traditionalismHierarchy": {
       "id": "traditionalismHierarchy",
       "type": "culture-traits",
       "displayName": "Traditionalism Hierarchy",
+      "icon": "traditionalismHierarchy",
       "fields": {
         "Name": "traditionalismHierarchy",
         "Icon": "traditionalismHierarchy"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismHierarchy"
+        }
+      ]
     },
     "culture-traits:traditionalismRituals": {
       "id": "traditionalismRituals",
       "type": "culture-traits",
       "displayName": "Traditionalism Rituals",
+      "icon": "traditionalismRituals",
       "fields": {
         "Name": "traditionalismRituals",
         "Icon": "traditionalismRituals"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismRituals"
+        }
+      ]
     },
     "culture-traits:traditionalismStability": {
       "id": "traditionalismStability",
       "type": "culture-traits",
       "displayName": "Traditionalism Stability",
+      "icon": "traditionalismStability",
       "fields": {
         "Name": "traditionalismStability",
         "Icon": "traditionalismStability"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "traditionalismStability"
+        }
+      ]
     },
     "culture-traits:transformationChange": {
       "id": "transformationChange",
       "type": "culture-traits",
       "displayName": "Transformation Change",
+      "icon": "transformationChange",
       "fields": {
         "Name": "transformationChange",
         "Icon": "transformationChange"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationChange"
+        }
+      ]
     },
     "culture-traits:transformationEvolution": {
       "id": "transformationEvolution",
       "type": "culture-traits",
       "displayName": "Transformation Evolution",
+      "icon": "transformationEvolution",
       "fields": {
         "Name": "transformationEvolution",
         "Icon": "transformationEvolution"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationEvolution"
+        }
+      ]
     },
     "culture-traits:transformationFuturism": {
       "id": "transformationFuturism",
       "type": "culture-traits",
       "displayName": "Transformation Futurism",
+      "icon": "transformationFuturism",
       "fields": {
         "Name": "transformationFuturism",
         "Icon": "transformationFuturism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationFuturism"
+        }
+      ]
     },
     "culture-traits:transformationInnovation": {
       "id": "transformationInnovation",
       "type": "culture-traits",
       "displayName": "Transformation Innovation",
+      "icon": "transformationInnovation",
       "fields": {
         "Name": "transformationInnovation",
         "Icon": "transformationInnovation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationInnovation"
+        }
+      ]
     },
     "culture-traits:transformationNewWorld": {
       "id": "transformationNewWorld",
       "type": "culture-traits",
       "displayName": "Transformation New World",
+      "icon": "transformationNewWorld",
       "fields": {
         "Name": "transformationNewWorld",
         "Icon": "transformationNewWorld"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationNewWorld"
+        }
+      ]
     },
     "culture-traits:transformationProgress": {
       "id": "transformationProgress",
       "type": "culture-traits",
       "displayName": "Transformation Progress",
+      "icon": "transformationProgress",
       "fields": {
         "Name": "transformationProgress",
         "Icon": "transformationProgress"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationProgress"
+        }
+      ]
     },
     "culture-traits:transformationVision": {
       "id": "transformationVision",
       "type": "culture-traits",
       "displayName": "Transformation Vision",
+      "icon": "transformationVision",
       "fields": {
         "Name": "transformationVision",
         "Icon": "transformationVision"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "transformationVision"
+        }
+      ]
     },
     "culture-traits:tribalismClans": {
       "id": "tribalismClans",
       "type": "culture-traits",
       "displayName": "Tribalism Clans",
+      "icon": "tribalismClans",
       "fields": {
         "Name": "tribalismClans",
         "Icon": "tribalismClans"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismClans"
+        }
+      ]
     },
     "culture-traits:tribalismFerocity": {
       "id": "tribalismFerocity",
       "type": "culture-traits",
       "displayName": "Tribalism Ferocity",
+      "icon": "tribalismFerocity",
       "fields": {
         "Name": "tribalismFerocity",
         "Icon": "tribalismFerocity"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismFerocity"
+        }
+      ]
     },
     "culture-traits:tribalismKinship": {
       "id": "tribalismKinship",
       "type": "culture-traits",
       "displayName": "Tribalism Kinship",
+      "icon": "tribalismKinship",
       "fields": {
         "Name": "tribalismKinship",
         "Icon": "tribalismKinship"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismKinship"
+        }
+      ]
     },
     "culture-traits:tribalismLoyalty": {
       "id": "tribalismLoyalty",
       "type": "culture-traits",
       "displayName": "Tribalism Loyalty",
+      "icon": "tribalismLoyalty",
       "fields": {
         "Name": "tribalismLoyalty",
         "Icon": "tribalismLoyalty"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismLoyalty"
+        }
+      ]
     },
     "culture-traits:tribalismRaiding": {
       "id": "tribalismRaiding",
       "type": "culture-traits",
       "displayName": "Tribalism Raiding",
+      "icon": "tribalismRaiding",
       "fields": {
         "Name": "tribalismRaiding",
         "Icon": "tribalismRaiding"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismRaiding"
+        }
+      ]
     },
     "culture-traits:tribalismTradition": {
       "id": "tribalismTradition",
       "type": "culture-traits",
       "displayName": "Tribalism Tradition",
+      "icon": "tribalismTradition",
       "fields": {
         "Name": "tribalismTradition",
         "Icon": "tribalismTradition"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismTradition"
+        }
+      ]
     },
     "culture-traits:tribalismWarriors": {
       "id": "tribalismWarriors",
       "type": "culture-traits",
       "displayName": "Tribalism Warriors",
+      "icon": "tribalismWarriors",
       "fields": {
         "Name": "tribalismWarriors",
         "Icon": "tribalismWarriors"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "tribalismWarriors"
+        }
+      ]
     },
     "culture-traits:urbanophileConstruction": {
       "id": "urbanophileConstruction",
       "type": "culture-traits",
       "displayName": "Urbanophile Construction",
+      "icon": "urbanophileConstruction",
       "fields": {
         "Name": "urbanophileConstruction",
         "Icon": "urbanophileConstruction"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileConstruction"
+        }
+      ]
     },
     "culture-traits:urbanophileGrowth": {
       "id": "urbanophileGrowth",
       "type": "culture-traits",
       "displayName": "Urbanophile Growth",
+      "icon": "urbanophileGrowth",
       "fields": {
         "Name": "urbanophileGrowth",
         "Icon": "urbanophileGrowth"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileGrowth"
+        }
+      ]
     },
     "culture-traits:urbanophileInfrastructure": {
       "id": "urbanophileInfrastructure",
       "type": "culture-traits",
       "displayName": "Urbanophile Infrastructure",
+      "icon": "urbanophileInfrastructure",
       "fields": {
         "Name": "urbanophileInfrastructure",
         "Icon": "urbanophileInfrastructure"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileInfrastructure"
+        }
+      ]
     },
     "culture-traits:urbanophileMastery": {
       "id": "urbanophileMastery",
       "type": "culture-traits",
       "displayName": "Urbanophile Mastery",
+      "icon": "urbanophileMastery",
       "fields": {
         "Name": "urbanophileMastery",
         "Icon": "urbanophileMastery"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileMastery"
+        }
+      ]
     },
     "culture-traits:urbanophileMonuments": {
       "id": "urbanophileMonuments",
       "type": "culture-traits",
       "displayName": "Urbanophile Monuments",
+      "icon": "urbanophileMonuments",
       "fields": {
         "Name": "urbanophileMonuments",
         "Icon": "urbanophileMonuments"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileMonuments"
+        }
+      ]
     },
     "culture-traits:urbanophileOrganization": {
       "id": "urbanophileOrganization",
       "type": "culture-traits",
       "displayName": "Urbanophile Organization",
+      "icon": "urbanophileOrganization",
       "fields": {
         "Name": "urbanophileOrganization",
         "Icon": "urbanophileOrganization"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophileOrganization"
+        }
+      ]
     },
     "culture-traits:urbanophilePopulation": {
       "id": "urbanophilePopulation",
       "type": "culture-traits",
       "displayName": "Urbanophile Population",
+      "icon": "urbanophilePopulation",
       "fields": {
         "Name": "urbanophilePopulation",
         "Icon": "urbanophilePopulation"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "urbanophilePopulation"
+        }
+      ]
     },
     "culture-traits:utopianismCollectivism": {
       "id": "utopianismCollectivism",
       "type": "culture-traits",
       "displayName": "Utopianism Collectivism",
+      "icon": "utopianismCollectivism",
       "fields": {
         "Name": "utopianismCollectivism",
         "Icon": "utopianismCollectivism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismCollectivism"
+        }
+      ]
     },
     "culture-traits:utopianismDreams": {
       "id": "utopianismDreams",
       "type": "culture-traits",
       "displayName": "Utopianism Dreams",
+      "icon": "utopianismDreams",
       "fields": {
         "Name": "utopianismDreams",
         "Icon": "utopianismDreams"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismDreams"
+        }
+      ]
     },
     "culture-traits:utopianismEquality": {
       "id": "utopianismEquality",
       "type": "culture-traits",
       "displayName": "Utopianism Equality",
+      "icon": "utopianismEquality",
       "fields": {
         "Name": "utopianismEquality",
         "Icon": "utopianismEquality"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismEquality"
+        }
+      ]
     },
     "culture-traits:utopianismReform": {
       "id": "utopianismReform",
       "type": "culture-traits",
       "displayName": "Utopianism Reform",
+      "icon": "utopianismReform",
       "fields": {
         "Name": "utopianismReform",
         "Icon": "utopianismReform"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismReform"
+        }
+      ]
     },
     "culture-traits:utopianismSocialism": {
       "id": "utopianismSocialism",
       "type": "culture-traits",
       "displayName": "Utopianism Socialism",
+      "icon": "utopianismSocialism",
       "fields": {
         "Name": "utopianismSocialism",
         "Icon": "utopianismSocialism"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismSocialism"
+        }
+      ]
     },
     "culture-traits:utopianismVision": {
       "id": "utopianismVision",
       "type": "culture-traits",
       "displayName": "Utopianism Vision",
+      "icon": "utopianismVision",
       "fields": {
         "Name": "utopianismVision",
         "Icon": "utopianismVision"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismVision"
+        }
+      ]
     },
     "culture-traits:utopianismZeal": {
       "id": "utopianismZeal",
       "type": "culture-traits",
       "displayName": "Utopianism Zeal",
+      "icon": "utopianismZeal",
       "fields": {
         "Name": "utopianismZeal",
         "Icon": "utopianismZeal"
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "utopianismZeal"
+        }
+      ]
     },
     "deposit-resources:commerce": {
       "id": "commerce",

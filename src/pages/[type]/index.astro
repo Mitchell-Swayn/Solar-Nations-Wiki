@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameIcon from '../../components/GameIcon.astro';
 import { getCategories, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
+import { getCultureTraitGroup } from '../../lib/culture';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -11,13 +12,25 @@ export function getStaticPaths() {
 
 const { type } = Astro.params;
 const category = CATEGORY_BY_SLUG[type!];
+if (category.mergedInto) return Astro.redirect(withBase(`/${category.mergedInto}/`));
 const entries = getEntriesByType(type!).sort((a, b) => a.displayName.localeCompare(b.displayName));
 const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
-const reforms = type === 'government-reform-options' ? getEntriesByType('government-reforms') : [];
+const reforms = type === 'government-reforms' ? entries : [];
+const reformOptionEntries = type === 'government-reforms' ? getEntriesByType('government-reform-options').sort((a, b) => a.displayName.localeCompare(b.displayName)) : [];
 const reformGroups = reforms.map((reform) => {
   const optionIds = Array.isArray(reform.fields.Options) ? reform.fields.Options.filter((id): id is string => typeof id === 'string') : [];
-  return { reform, options: optionIds.map((id) => entries.find((entry) => entry.id === id)).filter((entry) => entry !== undefined) };
+  return { reform, options: optionIds.map((id) => reformOptionEntries.find((entry) => entry.id === id)).filter((entry) => entry !== undefined) };
 });
+const cultureGroups = type === 'culture-traits' ? Object.values(entries.reduce((groups, entry) => {
+  const meta = getCultureTraitGroup(entry.id);
+  groups[meta.id] ??= { meta, entries: [] };
+  groups[meta.id].entries.push(entry);
+  return groups;
+}, {} as Record<string, { meta: ReturnType<typeof getCultureTraitGroup>; entries: typeof entries }>)) : [];
+const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic', 'Administrative', 'Military'].map((domain) => ({
+  domain,
+  groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
+})).filter((domain) => domain.groups.length > 0);
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -25,7 +38,7 @@ const reformGroups = reforms.map((reform) => {
 
   <header class="collection-header">
     <div><p class="eyebrow">{group?.label}</p><h1>{category.pluralLabel}</h1><p>{category.description}</p></div>
-    <div class="collection-count"><strong>{entries.length}</strong><span>Entries</span></div>
+    <div class="collection-count"><strong>{reformGroups.length > 0 ? reformOptionEntries.length : entries.length}</strong><span>{reformGroups.length > 0 ? `${reforms.length} reforms` : 'Entries'}</span></div>
   </header>
 
   <div class="collection-tools">
@@ -39,17 +52,39 @@ const reformGroups = reforms.map((reform) => {
   {reformGroups.length > 0 ? (
     <div class="grouped-directory" id="entry-directory">
       {reformGroups.map(({ reform, options }) => (
-        <section class="reform-option-group">
+        <section class="reform-option-group entry-group">
           <header><div><p class="eyebrow">Government Reform</p><h2>{reform.displayName}</h2></div><a href={withBase(`/government-reforms/${reform.id}/`)}>View reform</a></header>
           <div class="entry-directory">
             {options.map((entry) => (
-              <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+              <a href={withBase(`/government-reform-options/${entry.id}/`)} class="directory-row" data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
                 <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
                 <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
                 <span class="row-arrow" aria-hidden="true">›</span>
               </a>
             ))}
           </div>
+        </section>
+      ))}
+    </div>
+  ) : cultureDomains.length > 0 ? (
+    <div class="grouped-directory culture-directory" id="entry-directory">
+      {cultureDomains.map(({ domain, groups }) => (
+        <section class="culture-domain">
+          <header><p class="eyebrow">Culture Domain</p><h2>{domain}</h2></header>
+          {groups.map(({ meta, entries: familyEntries }) => (
+            <section class="reform-option-group culture-family entry-group">
+              <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><span>{familyEntries.length} ideas</span></header>
+              <div class="entry-directory">
+                {familyEntries.map((entry) => (
+                  <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                    <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                    <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                    <span class="row-arrow" aria-hidden="true">›</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
         </section>
       ))}
     </div>
@@ -77,7 +112,8 @@ const reformGroups = reforms.map((reform) => {
     const query = filter.value.trim().toLowerCase();
     let visible = 0;
     rows.forEach((row) => { const show = row.dataset.search?.includes(query) ?? false; row.hidden = !show; if (show) visible++; });
-    document.querySelectorAll<HTMLElement>('.reform-option-group').forEach((group) => { group.hidden = !group.querySelector('.directory-row:not([hidden])'); });
+    document.querySelectorAll<HTMLElement>('.entry-group').forEach((group) => { group.hidden = !group.querySelector('.directory-row:not([hidden])'); });
+    document.querySelectorAll<HTMLElement>('.culture-domain').forEach((domain) => { domain.hidden = !domain.querySelector('.entry-group:not([hidden])'); });
     if (count) count.textContent = `Showing ${visible}`;
     if (empty) empty.hidden = visible > 0;
   });

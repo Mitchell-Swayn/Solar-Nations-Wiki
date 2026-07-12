@@ -11,7 +11,7 @@ interface Props {
 
 const { title, description, activeType } = Astro.props;
 const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
-const categories = getCategories();
+const categories = getCategories().filter((category) => !category.mergedInto);
 const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getIndex().byType[category.slug]?.length ?? 0]));
 const searchEntries = getAllEntries().map((entry) => ({
   type: entry.type,
