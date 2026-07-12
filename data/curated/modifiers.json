@@ -84,7 +84,6 @@
     "id": "aiInterventionChance",
     "type": "modifiers",
     "displayName": "Ai Intervention Chance",
-    "icon": "opinion",
     "fields": {
       "Name": "aiInterventionChance",
       "Positivity": "neutral",
@@ -100,18 +99,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "opinion"
-      }
-    ]
+    "references": []
   },
   {
     "id": "alignmentAdd",
     "type": "modifiers",
     "displayName": "Alignment Add",
-    "icon": "alignment",
     "fields": {
       "Name": "alignmentAdd",
       "Positivity": "positive",
@@ -130,12 +123,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "alignment"
-      }
-    ]
+    "references": []
   },
   {
     "id": "allLeaderSkillsMult",
@@ -330,7 +318,6 @@
     "id": "baseEconomicOutputMult",
     "type": "modifiers",
     "displayName": "Base Economic Output Mult",
-    "icon": "industry",
     "fields": {
       "Name": "baseEconomicOutputMult",
       "Positivity": "positive",
@@ -348,12 +335,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industry"
-      }
-    ]
+    "references": []
   },
   {
     "id": "battleAdvantageAdd",
@@ -715,7 +697,6 @@
     "id": "crisisSpawnChanceAdd",
     "type": "modifiers",
     "displayName": "Crisis Spawn Chance Add",
-    "icon": "crisis",
     "fields": {
       "Name": "crisisSpawnChanceAdd",
       "Positivity": "negative",
@@ -733,18 +714,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "crisis"
-      }
-    ]
+    "references": []
   },
   {
     "id": "crisisSpawnChanceMult",
     "type": "modifiers",
     "displayName": "Crisis Spawn Chance Mult",
-    "icon": "crisis",
     "fields": {
       "Name": "crisisSpawnChanceMult",
       "Positivity": "negative",
@@ -762,12 +737,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "crisis"
-      }
-    ]
+    "references": []
   },
   {
     "id": "cultureIdeaCostMult",
@@ -800,7 +770,6 @@
     "id": "culturePowerAdd",
     "type": "modifiers",
     "displayName": "Culture Power Add",
-    "icon": "culturePower",
     "fields": {
       "Name": "culturePowerAdd",
       "Positivity": "positive",
@@ -816,18 +785,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "culturePower"
-      }
-    ]
+    "references": []
   },
   {
     "id": "culturePowerMult",
     "type": "modifiers",
     "displayName": "Culture Power Mult",
-    "icon": "culturePower",
     "fields": {
       "Name": "culturePowerMult",
       "Positivity": "positive",
@@ -843,12 +806,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "culturePower"
-      }
-    ]
+    "references": []
   },
   {
     "id": "cultureTraitChangeCostMult",
@@ -1018,7 +976,6 @@
     "id": "deployRangeAdd",
     "type": "modifiers",
     "displayName": "Deploy Range Add",
-    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeAdd",
       "Positivity": "neutral",
@@ -1034,18 +991,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "accuracy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "deployRangeInterplanetary",
     "type": "modifiers",
     "displayName": "Deploy Range Interplanetary",
-    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeInterplanetary",
       "Positivity": "boolean",
@@ -1061,18 +1012,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "accuracy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "deployRangeModifier",
     "type": "modifiers",
     "displayName": "Deploy Range Modifier",
-    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeModifier",
       "Positivity": "positive",
@@ -1088,18 +1033,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "accuracy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "deployRangeMult",
     "type": "modifiers",
     "displayName": "Deploy Range Mult",
-    "icon": "accuracy",
     "fields": {
       "Name": "deployRangeMult",
       "Positivity": "positive",
@@ -1115,12 +1054,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "accuracy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "depositMult",
@@ -1236,7 +1170,6 @@
     "id": "diploFlagAdd",
     "type": "modifiers",
     "displayName": "Diplo Flag Add",
-    "icon": "opinion",
     "fields": {
       "Name": "diploFlagAdd",
       "Positivity": "boolean",
@@ -1255,12 +1188,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "opinion"
-      }
-    ]
+    "references": []
   },
   {
     "id": "duplicatePolicyOptionsAdd",
@@ -1322,7 +1250,6 @@
     "id": "edictBenefitMult",
     "type": "modifiers",
     "displayName": "Edict Benefit Mult",
-    "icon": "edict",
     "fields": {
       "Name": "edictBenefitMult",
       "Positivity": "positive",
@@ -1340,18 +1267,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "edict"
-      }
-    ]
+    "references": []
   },
   {
     "id": "edictCostMult",
     "type": "modifiers",
     "displayName": "Edict Cost Mult",
-    "icon": "edict",
     "fields": {
       "Name": "edictCostMult",
       "Positivity": "negative",
@@ -1369,18 +1290,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "edict"
-      }
-    ]
+    "references": []
   },
   {
     "id": "educationEfficiency",
     "type": "modifiers",
     "displayName": "Education Efficiency",
-    "icon": "education",
     "fields": {
       "Name": "educationEfficiency",
       "Positivity": "positive",
@@ -1396,18 +1311,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "education"
-      }
-    ]
+    "references": []
   },
   {
     "id": "educationModifier",
     "type": "modifiers",
     "displayName": "Education Modifier",
-    "icon": "education",
     "fields": {
       "Name": "educationModifier",
       "Positivity": "positive",
@@ -1423,12 +1332,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "education"
-      }
-    ]
+    "references": []
   },
   {
     "id": "executiveTerm",
@@ -1461,7 +1365,6 @@
     "id": "exportTariff",
     "type": "modifiers",
     "displayName": "Export Tariff",
-    "icon": "trade",
     "fields": {
       "Name": "exportTariff",
       "Positivity": "neutral",
@@ -1477,12 +1380,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade"
-      }
-    ]
+    "references": []
   },
   {
     "id": "factionEffectMult",
@@ -1859,7 +1757,6 @@
     "id": "importTariff",
     "type": "modifiers",
     "displayName": "Import Tariff",
-    "icon": "trade",
     "fields": {
       "Name": "importTariff",
       "Positivity": "neutral",
@@ -1875,18 +1772,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade"
-      }
-    ]
+    "references": []
   },
   {
     "id": "influenceGainEffect",
     "type": "modifiers",
     "displayName": "Influence Gain Effect",
-    "icon": "influence",
     "fields": {
       "Name": "influenceGainEffect",
       "Positivity": "positive",
@@ -1902,12 +1793,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "influence"
-      }
-    ]
+    "references": []
   },
   {
     "id": "integrationCostMult",
@@ -1989,7 +1875,6 @@
     "id": "joinOrgCost",
     "type": "modifiers",
     "displayName": "Join Org Cost",
-    "icon": "diplomacy",
     "fields": {
       "Name": "joinOrgCost",
       "Positivity": "negative",
@@ -2005,18 +1890,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "diplomacy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "leaderJoinsMemberDefensive",
     "type": "modifiers",
     "displayName": "Leader Joins Member Defensive",
-    "icon": "opinion",
     "fields": {
       "Name": "leaderJoinsMemberDefensive",
       "Positivity": "boolean",
@@ -2032,12 +1911,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "opinion"
-      }
-    ]
+    "references": []
   },
   {
     "id": "leaderLifeSpanAdd",
@@ -2309,7 +2183,6 @@
     "id": "opinionModifier",
     "type": "modifiers",
     "displayName": "Opinion Modifier",
-    "icon": "opinion",
     "fields": {
       "Name": "opinionModifier",
       "Positivity": "neutral",
@@ -2325,12 +2198,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "opinion"
-      }
-    ]
+    "references": []
   },
   {
     "id": "organizationResearchCollaboration",
@@ -2365,7 +2233,6 @@
     "id": "organizationTradeBarrierModifier",
     "type": "modifiers",
     "displayName": "Organization Trade Barrier Modifier",
-    "icon": "trade",
     "fields": {
       "Name": "organizationTradeBarrierModifier",
       "Positivity": "negative",
@@ -2381,12 +2248,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade"
-      }
-    ]
+    "references": []
   },
   {
     "id": "organizationUnityCollaboration",
@@ -2641,7 +2503,6 @@
     "id": "projectBuildCostMult",
     "type": "modifiers",
     "displayName": "Project Build Cost Mult",
-    "icon": "industrial",
     "fields": {
       "Name": "projectBuildCostMult",
       "Positivity": "negative",
@@ -2659,18 +2520,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "projectBuildSpeedMult",
     "type": "modifiers",
     "displayName": "Project Build Speed Mult",
-    "icon": "industrial",
     "fields": {
       "Name": "projectBuildSpeedMult",
       "Positivity": "positive",
@@ -2688,18 +2543,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "projectCountCostMult",
     "type": "modifiers",
     "displayName": "Project Count Cost Mult",
-    "icon": "industrial",
     "fields": {
       "Name": "projectCountCostMult",
       "Positivity": "negative",
@@ -2717,18 +2566,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "projectEfficiency",
     "type": "modifiers",
     "displayName": "Project Efficiency",
-    "icon": "industrial",
     "fields": {
       "Name": "projectEfficiency",
       "Positivity": "positive",
@@ -2744,18 +2587,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "projectUpgradeLimit",
     "type": "modifiers",
     "displayName": "Project Upgrade Limit",
-    "icon": "industrial",
     "fields": {
       "Name": "projectUpgradeLimit",
       "Positivity": "positive",
@@ -2773,18 +2610,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "projectUpkeepMult",
     "type": "modifiers",
     "displayName": "Project Upkeep Mult",
-    "icon": "industrial",
     "fields": {
       "Name": "projectUpkeepMult",
       "Positivity": "negative",
@@ -2803,12 +2634,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industrial"
-      }
-    ]
+    "references": []
   },
   {
     "id": "protectorateAdmin",
@@ -3398,7 +3224,6 @@
     "id": "rootOutInfluenceEffect",
     "type": "modifiers",
     "displayName": "Root Out Influence Effect",
-    "icon": "influence",
     "fields": {
       "Name": "rootOutInfluenceEffect",
       "Positivity": "positive",
@@ -3414,12 +3239,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "influence"
-      }
-    ]
+    "references": []
   },
   {
     "id": "rotationEarthlikenessModifier",
@@ -3738,7 +3558,6 @@
     "id": "surveyCost",
     "type": "modifiers",
     "displayName": "Survey Cost",
-    "icon": "survey",
     "fields": {
       "Name": "surveyCost",
       "Positivity": "negative",
@@ -3754,18 +3573,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "survey"
-      }
-    ]
+    "references": []
   },
   {
     "id": "surveyEfficiency",
     "type": "modifiers",
     "displayName": "Survey Efficiency",
-    "icon": "survey",
     "fields": {
       "Name": "surveyEfficiency",
       "Positivity": "positive",
@@ -3783,12 +3596,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "survey"
-      }
-    ]
+    "references": []
   },
   {
     "id": "taxRateAdd",
@@ -3874,7 +3682,6 @@
     "id": "tradeBarriersAdd",
     "type": "modifiers",
     "displayName": "Trade Barriers Add",
-    "icon": "trade",
     "fields": {
       "Name": "tradeBarriersAdd",
       "Positivity": "negative",
@@ -3890,18 +3697,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade"
-      }
-    ]
+    "references": []
   },
   {
     "id": "unitAttackAdd",
     "type": "modifiers",
     "displayName": "Unit Attack Add",
-    "icon": "accuracy",
     "fields": {
       "Name": "unitAttackAdd",
       "Positivity": "positive",
@@ -3920,12 +3721,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "accuracy"
-      }
-    ]
+    "references": []
   },
   {
     "id": "unitAttackMult",
@@ -4378,7 +4174,6 @@
     "id": "unitSpeedMult",
     "type": "modifiers",
     "displayName": "Unit Speed Mult",
-    "icon": "speed",
     "fields": {
       "Name": "unitSpeedMult",
       "Positivity": "positive",
@@ -4394,12 +4189,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "speed"
-      }
-    ]
+    "references": []
   },
   {
     "id": "unitStatAdd",
@@ -4464,7 +4254,6 @@
     "id": "unitTransportSpeedAdd",
     "type": "modifiers",
     "displayName": "Unit Transport Speed Add",
-    "icon": "speed",
     "fields": {
       "Name": "unitTransportSpeedAdd",
       "Positivity": "positive",
@@ -4482,12 +4271,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "speed"
-      }
-    ]
+    "references": []
   },
   {
     "id": "unitUpkeepMult",
@@ -4605,7 +4389,6 @@
     "id": "unrestChangeAdd",
     "type": "modifiers",
     "displayName": "Unrest Change Add",
-    "icon": "unrest",
     "fields": {
       "Name": "unrestChangeAdd",
       "Positivity": "negative",
@@ -4621,12 +4404,7 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "unrest"
-      }
-    ]
+    "references": []
   },
   {
     "id": "warExhaustionMult",

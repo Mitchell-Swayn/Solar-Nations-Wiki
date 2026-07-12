@@ -21,6 +21,35 @@ import type {
 
 type RawRecord = Record<string, unknown>;
 
+const ICON_ALIASES: Record<string, string> = {
+  rareMetals: 'rareMetalsMine', titanium: 'titaniumMine',
+  clergy_atheist: 'atheist', clergy_christian: 'christian', clergy_communist: 'communist',
+  clergy_fascist: 'fascist', clergy_hindu: 'hindu', clergy_islamic: 'islam', clergy_jewish: 'jewish',
+  laborer_proletariat: 'communist', military_conscript: 'conscript', military_mercenary: 'mercenary',
+  civilLiberty_hivemind: 'form_hivemind', economy_hivemind: 'form_hivemind', militaryDoctrine_hivemind: 'form_hivemind',
+  educationSpending_high: 'spending_high', educationSpending_medium: 'spending_medium', educationSpending_low: 'spending_low',
+  unitTraining_default: 'militaryEducation', unitTraining_elite: 'threeStar',
+  aresColonySite: 'colony', bigBen: 'monument', colloseum: 'monument', generationShip: 'spaceHabitation',
+  metaverseServer: 'holonet', northernSpaceport: 'spaceport2', redSquare: 'monument',
+  bioweaponSituation: 'unleashBioweaponSituation', marsSituation: 'planet',
+  mechanistCoalescence_migrantSituation: 'mechanistCoalescence',
+  attack: 'smallArms0', entrenchment: 'fortifications', recon: 'activeRecon', truck: 'logistics',
+};
+
+const CULTURE_ICON_PREFIXES: Array<[string, string]> = [
+  ['humanity', 'speciesHuman'], ['robotic', 'speciesRobot'], ['christianity', 'christian'],
+  ['islam', 'islam'], ['judaism', 'jewish'], ['marxism', 'communist'], ['occult', 'occult'],
+  ['atheist', 'atheist'], ['hegelian', 'fascist'], ['hinduism', 'hindu'],
+];
+
+function resolveIconSource(icon: string, type: string): string {
+  if (ICON_ALIASES[icon]) return ICON_ALIASES[icon];
+  if (type === 'culture-traits') {
+    return CULTURE_ICON_PREFIXES.find(([prefix]) => icon.startsWith(prefix))?.[1] ?? icon;
+  }
+  return icon;
+}
+
 function stripJsonComments(text: string): string {
   return text.replace(/\/\/.*$/gm, '').replace(/,\s*([}\]])/g, '$1');
 }
@@ -304,6 +333,21 @@ function indexPngFiles(root: string): Map<string, string> {
   return files;
 }
 
+function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[]) {
+  const sourceFiles = indexPngFiles(getIconsPath(gameRoot));
+  let removed = 0;
+  for (const entry of entries) {
+    if (!entry.icon) continue;
+    const sourceName = resolveIconSource(entry.icon, entry.type);
+    if (!sourceFiles.has(sourceName.toLowerCase())) {
+      entry.icon = undefined;
+      entry.references = entry.references.filter((reference) => reference.type !== 'icon');
+      removed++;
+    }
+  }
+  console.log(`Icon references: ${removed} unavailable references removed`);
+}
+
 function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const sourceRoot = getIconsPath(gameRoot);
   const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
@@ -316,7 +360,9 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   let copied = 0;
   const missing: string[] = [];
   for (const icon of [...requested].sort()) {
-    const source = sourceFiles.get(icon.toLowerCase());
+    const entry = entries.find((candidate) => candidate.icon === icon);
+    const sourceName = resolveIconSource(icon, entry?.type ?? '');
+    const source = sourceFiles.get(sourceName.toLowerCase());
     if (!source) { missing.push(icon); continue; }
     cpSync(source, join(outputRoot, `${icon}.png`));
     copied++;
@@ -473,6 +519,7 @@ function main() {
     ? 'data/raw extracted Defines + tutorialMod modifiers'
     : 'tutorialMod Defines + modifiers + mission components';
 
+  removeUnavailableIconReferences(gameRoot, allEntries);
   const index = buildIndex(allEntries, source);
   const modifierDefs = parseJsonFile(join(modPath, 'modifiers.json')) as RawRecord[];
 

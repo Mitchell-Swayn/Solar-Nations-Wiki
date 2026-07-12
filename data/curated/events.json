@@ -3,54 +3,33 @@
     "id": "robotCountrySetup",
     "type": "events",
     "displayName": "Robot Country Setup",
-    "icon": "robotCountrySetup",
     "fields": {
-      "Name": "robotCountrySetup",
-      "Icon": "robotCountrySetup"
+      "Name": "robotCountrySetup"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "robotCountrySetup"
-      }
-    ]
+    "references": []
   },
   {
     "id": "roboticsCrisisEvent",
     "type": "events",
     "displayName": "Robotics Crisis Event",
-    "icon": "roboticsCrisisEvent",
     "fields": {
-      "Name": "roboticsCrisisEvent",
-      "Icon": "roboticsCrisisEvent"
+      "Name": "roboticsCrisisEvent"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "roboticsCrisisEvent"
-      }
-    ]
+    "references": []
   },
   {
     "id": "superhumanCountrySetup",
     "type": "events",
     "displayName": "Superhuman Country Setup",
-    "icon": "superhumanCountrySetup",
     "fields": {
-      "Name": "superhumanCountrySetup",
-      "Icon": "superhumanCountrySetup"
+      "Name": "superhumanCountrySetup"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "superhumanCountrySetup"
-      }
-    ]
+    "references": []
   }
 ]

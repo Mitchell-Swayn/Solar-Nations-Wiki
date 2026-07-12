@@ -528,7 +528,7 @@ def parse_events() -> list[dict]:
         return []
     strings = unique_identifiers(extract_ascii_strings(read_bytes(path)))
     event_ids = sorted({name.removesuffix("_title") for name in strings if name.endswith("_title")})
-    return [{"Name": name, "Icon": name} for name in event_ids]
+    return [{"Name": name} for name in event_ids]
 
 
 def extract_localization() -> dict[str, str]:

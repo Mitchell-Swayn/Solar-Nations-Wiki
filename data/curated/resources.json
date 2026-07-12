@@ -111,19 +111,13 @@
     "id": "industry",
     "type": "resources",
     "displayName": "Industrial Capacity",
-    "icon": "industry",
     "fields": {
       "Name": "industry",
       "Icon": "industry"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "industry"
-      }
-    ]
+    "references": []
   },
   {
     "id": "logistics",

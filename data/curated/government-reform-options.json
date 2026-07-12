@@ -309,19 +309,13 @@
     "id": "educationSpending_none",
     "type": "government-reform-options",
     "displayName": "Education Spending None",
-    "icon": "educationSpending_none",
     "fields": {
       "Name": "educationSpending_none",
       "Icon": "educationSpending_none"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "educationSpending_none"
-      }
-    ]
+    "references": []
   },
   {
     "id": "espionagePolicy_defense",
@@ -885,19 +879,13 @@
     "id": "spending_none",
     "type": "government-reform-options",
     "displayName": "Spending None",
-    "icon": "spending_none",
     "fields": {
       "Name": "spending_none",
       "Icon": "spending_none"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "spending_none"
-      }
-    ]
+    "references": []
   },
   {
     "id": "form_algocracy",
