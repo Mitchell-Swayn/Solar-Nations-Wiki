@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../lib/base';
+import manifest from '../../data/curated/icon-manifest.json';
 
 interface Props {
   name: string;
@@ -7,7 +8,8 @@ interface Props {
 }
 
 const { name, size = 32 } = Astro.props;
-const src = withBase(`/wiki-icons/${name}.png`);
+const path = (manifest as Record<string, string>)[name.toLowerCase()] ?? `${name}.png`;
+const src = withBase(`/wiki-icons/${path}`);
 ---
 
 <img

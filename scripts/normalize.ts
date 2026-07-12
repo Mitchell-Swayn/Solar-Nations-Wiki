@@ -382,36 +382,32 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
 
   let copied = 0;
   const missing: string[] = [];
-  const written = new Set<string>();
-  const write = (source: string, target: string) => {
-    if (written.has(target.toLowerCase())) return;
-    cpSync(source, join(outputRoot, target));
-    written.add(target.toLowerCase());
-    copied++;
-  };
-  for (const icon of [...requested].sort()) {
-    const sourceName = resolveIconSource(icon);
-    const source = sourceFiles.get(sourceName.toLowerCase());
-    if (!source) { missing.push(icon); continue; }
-    write(source, `${icon}.png`);
-  }
-  // Bundle every remaining game icon so unreferenced art stays available.
-  // Names that lose a duplicate-name collision get a directory prefix.
+  // Bundle every game icon, mirroring the source folder layout.
+  const bundleRelPath = (path: string) =>
+    (path.startsWith(sourceRoot) ? relative(sourceRoot, path) : basename(path)).split(sep).join('/');
   const walk = (dir: string) => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       const path = join(dir, entry.name);
       if (entry.isDirectory()) { walk(path); continue; }
       if (!entry.name.toLowerCase().endsWith('.png')) continue;
-      const key = basename(entry.name, '.png').toLowerCase();
-      if (sourceFiles.get(key) === path) { write(path, entry.name); continue; }
-      const prefix = relative(sourceRoot, dirname(path)).split(sep).join('_');
-      write(path, `${prefix}_${entry.name}`);
+      const target = join(outputRoot, ...bundleRelPath(path).split('/'));
+      mkdirSync(dirname(target), { recursive: true });
+      cpSync(path, target);
+      copied++;
     }
   };
   if (existsSync(sourceRoot)) walk(sourceRoot);
-  for (const [key, path] of indexPngFiles(EXTRA_ICONS_DIR)) {
-    if (sourceFiles.get(key) === path) write(path, basename(path));
+  if (existsSync(EXTRA_ICONS_DIR)) walk(EXTRA_ICONS_DIR);
+  // Manifest maps lowercased icon names (and aliases) to bundle paths.
+  const manifest: Record<string, string> = {};
+  for (const [key, path] of sourceFiles) manifest[key] = bundleRelPath(path);
+  for (const icon of [...requested].sort()) {
+    const source = sourceFiles.get(resolveIconSource(icon).toLowerCase());
+    if (!source) { missing.push(icon); continue; }
+    manifest[icon.toLowerCase()] = bundleRelPath(source);
   }
+  mkdirSync(DATA_CURATED, { recursive: true });
+  writeFileSync(join(DATA_CURATED, 'icon-manifest.json'), JSON.stringify(manifest, null, 2));
   console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
 }
 
