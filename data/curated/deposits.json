@@ -1,47 +1,739 @@
 [
   {
+    "id": "antimatter",
+    "type": "deposits",
+    "displayName": "Antimatter",
+    "icon": "antimatter",
+    "fields": {
+      "Name": "antimatter",
+      "Icon": "antimatter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatter"
+      }
+    ]
+  },
+  {
+    "id": "apollo11Site",
+    "type": "deposits",
+    "displayName": "Apollo11Site",
+    "icon": "apollo11Site",
+    "fields": {
+      "Name": "apollo11Site",
+      "Icon": "apollo11Site"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apollo11Site"
+      }
+    ]
+  },
+  {
+    "id": "asteroids",
+    "type": "deposits",
+    "displayName": "Asteroids",
+    "icon": "asteroids",
+    "fields": {
+      "Name": "asteroids",
+      "Icon": "asteroids"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "asteroids"
+      }
+    ]
+  },
+  {
+    "id": "atmosphere",
+    "type": "deposits",
+    "displayName": "Atmosphere",
+    "icon": "atmosphere",
+    "fields": {
+      "Name": "atmosphere",
+      "Icon": "atmosphere"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atmosphere"
+      }
+    ]
+  },
+  {
+    "id": "biohazard",
+    "type": "deposits",
+    "displayName": "Biohazard",
+    "icon": "biohazard",
+    "fields": {
+      "Name": "biohazard",
+      "Icon": "biohazard"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biohazard"
+      }
+    ]
+  },
+  {
+    "id": "carbon",
+    "type": "deposits",
+    "displayName": "Carbon",
+    "icon": "carbon",
+    "fields": {
+      "Name": "carbon",
+      "Icon": "carbon"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carbon"
+      }
+    ]
+  },
+  {
+    "id": "colonizableOcean",
+    "type": "deposits",
+    "displayName": "Colonizable Ocean",
+    "icon": "colonizableOcean",
+    "fields": {
+      "Name": "colonizableOcean",
+      "Icon": "colonizableOcean"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colonizableOcean"
+      }
+    ]
+  },
+  {
+    "id": "cryoOrganics",
+    "type": "deposits",
+    "displayName": "Cryo Organics",
+    "icon": "cryoOrganics",
+    "fields": {
+      "Name": "cryoOrganics",
+      "Icon": "cryoOrganics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cryoOrganics"
+      }
+    ]
+  },
+  {
+    "id": "curiosities",
+    "type": "deposits",
+    "displayName": "Curiosities",
+    "icon": "curiosities",
+    "fields": {
+      "Name": "curiosities",
+      "Icon": "curiosities"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "curiosities"
+      }
+    ]
+  },
+  {
+    "id": "exoticGasses",
+    "type": "deposits",
+    "displayName": "Exotic Gasses",
+    "icon": "exoticGasses",
+    "fields": {
+      "Name": "exoticGasses",
+      "Icon": "exoticGasses"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "exoticGasses"
+      }
+    ]
+  },
+  {
     "id": "farmland",
     "type": "deposits",
     "displayName": "Farmland",
     "icon": "farmland",
     "fields": {
       "Name": "farmland",
-      "Icon": "farmland",
-      "Color": {
-        "R": 0.550347,
-        "G": 0.446999,
-        "B": 0.111145,
-        "A": 1
-      },
-      "Special": false
+      "Icon": "farmland"
     },
-    "modifiers": [
-      {
-        "key": "projectEfficiency",
-        "value1": "openFarm",
-        "value": 1
-      },
-      {
-        "key": "resourceCapacityMult",
-        "value1": "geneticMaterial",
-        "value": 0.05
-      },
-      {
-        "key": "politicalPowerAdd",
-        "value1": "upperClass",
-        "value": 0.02
-      },
-      {
-        "key": "politicalPowerAdd",
-        "value1": "laborer",
-        "value": 0.01
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "farmland"
+      }
+    ]
+  },
+  {
+    "id": "gravityEarthlike",
+    "type": "deposits",
+    "displayName": "Gravity Earthlike",
+    "icon": "gravityEarthlike",
+    "fields": {
+      "Name": "gravityEarthlike",
+      "Icon": "gravityEarthlike"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravityEarthlike"
+      }
+    ]
+  },
+  {
+    "id": "gravityHigh",
+    "type": "deposits",
+    "displayName": "Gravity High",
+    "icon": "gravityHigh",
+    "fields": {
+      "Name": "gravityHigh",
+      "Icon": "gravityHigh"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravityHigh"
+      }
+    ]
+  },
+  {
+    "id": "gravityInsignificant",
+    "type": "deposits",
+    "displayName": "Gravity Insignificant",
+    "icon": "gravityInsignificant",
+    "fields": {
+      "Name": "gravityInsignificant",
+      "Icon": "gravityInsignificant"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravityInsignificant"
+      }
+    ]
+  },
+  {
+    "id": "gravityLow",
+    "type": "deposits",
+    "displayName": "Gravity Low",
+    "icon": "gravityLow",
+    "fields": {
+      "Name": "gravityLow",
+      "Icon": "gravityLow"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravityLow"
+      }
+    ]
+  },
+  {
+    "id": "groundStability",
+    "type": "deposits",
+    "displayName": "Ground Stability",
+    "icon": "groundStability",
+    "fields": {
+      "Name": "groundStability",
+      "Icon": "groundStability"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "groundStability"
+      }
+    ]
+  },
+  {
+    "id": "helium3",
+    "type": "deposits",
+    "displayName": "Helium-3",
+    "icon": "helium3",
+    "fields": {
+      "Name": "helium3",
+      "Icon": "helium3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "helium3"
+      }
+    ]
+  },
+  {
+    "id": "iceNine",
+    "type": "deposits",
+    "displayName": "Ice Nine",
+    "icon": "iceNine",
+    "fields": {
+      "Name": "iceNine",
+      "Icon": "iceNine"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "iceNine"
+      }
+    ]
+  },
+  {
+    "id": "iron",
+    "type": "deposits",
+    "displayName": "Iron",
+    "icon": "iron",
+    "fields": {
+      "Name": "iron",
+      "Icon": "iron"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "iron"
+      }
+    ]
+  },
+  {
+    "id": "letheTreasure",
+    "type": "deposits",
+    "displayName": "Lethe Treasure",
+    "icon": "letheTreasure",
+    "fields": {
+      "Name": "letheTreasure",
+      "Icon": "letheTreasure"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "letheTreasure"
+      }
+    ]
+  },
+  {
+    "id": "lithium",
+    "type": "deposits",
+    "displayName": "Lithium",
+    "icon": "lithium",
+    "fields": {
+      "Name": "lithium",
+      "Icon": "lithium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lithium"
+      }
+    ]
+  },
+  {
+    "id": "lowSolarOrbit",
+    "type": "deposits",
+    "displayName": "Low Solar Orbit",
+    "icon": "lowSolarOrbit",
+    "fields": {
+      "Name": "lowSolarOrbit",
+      "Icon": "lowSolarOrbit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lowSolarOrbit"
+      }
+    ]
+  },
+  {
+    "id": "lqdMethane",
+    "type": "deposits",
+    "displayName": "Lqd Methane",
+    "icon": "lqdMethane",
+    "fields": {
+      "Name": "lqdMethane",
+      "Icon": "lqdMethane"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lqdMethane"
+      }
+    ]
+  },
+  {
+    "id": "noAtmosphere",
+    "type": "deposits",
+    "displayName": "No Atmosphere",
+    "icon": "noAtmosphere",
+    "fields": {
+      "Name": "noAtmosphere",
+      "Icon": "noAtmosphere"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "noAtmosphere"
+      }
+    ]
+  },
+  {
+    "id": "noSunlight",
+    "type": "deposits",
+    "displayName": "No Sunlight",
+    "icon": "noSunlight",
+    "fields": {
+      "Name": "noSunlight",
+      "Icon": "noSunlight"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "noSunlight"
+      }
+    ]
+  },
+  {
+    "id": "nuclearFuels",
+    "type": "deposits",
+    "displayName": "Nuclear Fuels",
+    "icon": "nuclearFuels",
+    "fields": {
+      "Name": "nuclearFuels",
+      "Icon": "nuclearFuels"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearFuels"
+      }
+    ]
+  },
+  {
+    "id": "oil",
+    "type": "deposits",
+    "displayName": "Oil",
+    "icon": "oil",
+    "fields": {
+      "Name": "oil",
+      "Icon": "oil"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "oil"
+      }
+    ]
+  },
+  {
+    "id": "olympusMons",
+    "type": "deposits",
+    "displayName": "Olympus Mons",
+    "icon": "olympusMons",
+    "fields": {
+      "Name": "olympusMons",
+      "Icon": "olympusMons"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "olympusMons"
+      }
+    ]
+  },
+  {
+    "id": "oxygen",
+    "type": "deposits",
+    "displayName": "Oxygen",
+    "icon": "oxygen",
+    "fields": {
+      "Name": "oxygen",
+      "Icon": "oxygen"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "oxygen"
+      }
+    ]
+  },
+  {
+    "id": "palladium",
+    "type": "deposits",
+    "displayName": "Palladium",
+    "icon": "palladium",
+    "fields": {
+      "Name": "palladium",
+      "Icon": "palladium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "palladium"
+      }
+    ]
+  },
+  {
+    "id": "placidGiant",
+    "type": "deposits",
+    "displayName": "Placid Giant",
+    "icon": "placidGiant",
+    "fields": {
+      "Name": "placidGiant",
+      "Icon": "placidGiant"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "placidGiant"
+      }
+    ]
+  },
+  {
+    "id": "rareMetals",
+    "type": "deposits",
+    "displayName": "Rare Metals",
+    "icon": "rareMetals",
+    "fields": {
+      "Name": "rareMetals",
+      "Icon": "rareMetals"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rareMetals"
+      }
+    ]
+  },
+  {
+    "id": "shipyard",
+    "type": "deposits",
+    "displayName": "Shipyard",
+    "icon": "shipyard",
+    "fields": {
+      "Name": "shipyard",
+      "Icon": "shipyard"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shipyard"
+      }
+    ]
+  },
+  {
+    "id": "subsurfaceOcean",
+    "type": "deposits",
+    "displayName": "Subsurface Ocean",
+    "icon": "subsurfaceOcean",
+    "fields": {
+      "Name": "subsurfaceOcean",
+      "Icon": "subsurfaceOcean"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "subsurfaceOcean"
+      }
+    ]
+  },
+  {
+    "id": "sunlight",
+    "type": "deposits",
+    "displayName": "Sun-baked",
+    "icon": "sunlight",
+    "fields": {
+      "Name": "sunlight",
+      "Icon": "sunlight"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sunlight"
+      }
+    ]
+  },
+  {
+    "id": "superAtmosphere",
+    "type": "deposits",
+    "displayName": "Super Atmosphere",
+    "icon": "superAtmosphere",
+    "fields": {
+      "Name": "superAtmosphere",
+      "Icon": "superAtmosphere"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superAtmosphere"
+      }
+    ]
+  },
+  {
+    "id": "thorium",
+    "type": "deposits",
+    "displayName": "Thorium",
+    "icon": "thorium",
+    "fields": {
+      "Name": "thorium",
+      "Icon": "thorium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "thorium"
+      }
+    ]
+  },
+  {
+    "id": "tidallyLocked",
+    "type": "deposits",
+    "displayName": "Tidally Locked",
+    "icon": "tidallyLocked",
+    "fields": {
+      "Name": "tidallyLocked",
+      "Icon": "tidallyLocked"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tidallyLocked"
+      }
+    ]
+  },
+  {
+    "id": "titanium",
+    "type": "deposits",
+    "displayName": "Titanium",
+    "icon": "titanium",
+    "fields": {
+      "Name": "titanium",
+      "Icon": "titanium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "titanium"
+      }
+    ]
+  },
+  {
+    "id": "vallisMarinaris",
+    "type": "deposits",
+    "displayName": "Vallis Marinaris",
+    "icon": "vallisMarinaris",
+    "fields": {
+      "Name": "vallisMarinaris",
+      "Icon": "vallisMarinaris"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "vallisMarinaris"
+      }
+    ]
+  },
+  {
+    "id": "water",
+    "type": "deposits",
+    "displayName": "Water",
+    "icon": "water",
+    "fields": {
+      "Name": "water",
+      "Icon": "water"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "water"
       }
     ]
   }

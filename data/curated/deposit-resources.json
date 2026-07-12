@@ -1,40 +1,865 @@
 [
   {
+    "id": "health",
+    "type": "deposit-resources",
+    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "icon": "health",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
+    "id": "grain",
+    "type": "deposit-resources",
+    "displayName": "Agriculture",
+    "icon": "grain",
+    "fields": {
+      "Name": "grain",
+      "Icon": "grain"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "grain"
+      }
+    ]
+  },
+  {
+    "id": "artificialIntelligence",
+    "type": "deposit-resources",
+    "displayName": "Artificial Intelligence",
+    "icon": "artificialIntelligence",
+    "fields": {
+      "Name": "artificialIntelligence",
+      "Icon": "artificialIntelligence"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artificialIntelligence"
+      }
+    ]
+  },
+  {
+    "id": "battleAdvantageAdd",
+    "type": "deposit-resources",
+    "displayName": "Battle Advantage Add",
+    "icon": "battleAdvantageAdd",
+    "fields": {
+      "Name": "battleAdvantageAdd",
+      "Icon": "battleAdvantageAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "battleAdvantageAdd"
+      }
+    ]
+  },
+  {
+    "id": "commerce",
+    "type": "deposit-resources",
+    "displayName": "Commerce",
+    "icon": "commerce",
+    "fields": {
+      "Name": "commerce",
+      "Icon": "commerce"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "commerce"
+      }
+    ]
+  },
+  {
+    "id": "consumerGoods",
+    "type": "deposit-resources",
+    "displayName": "Consumer Goods",
+    "icon": "consumerGoods",
+    "fields": {
+      "Name": "consumerGoods",
+      "Icon": "consumerGoods"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "consumerGoods"
+      }
+    ]
+  },
+  {
+    "id": "cryoOrganics",
+    "type": "deposit-resources",
+    "displayName": "Cryo Organics",
+    "icon": "cryoOrganics",
+    "fields": {
+      "Name": "cryoOrganics",
+      "Icon": "cryoOrganics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cryoOrganics"
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "type": "deposit-resources",
+    "displayName": "Culture",
+    "icon": "culture",
+    "fields": {
+      "Name": "culture",
+      "Icon": "culture"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "culture"
+      }
+    ]
+  },
+  {
+    "id": "desert",
+    "type": "deposit-resources",
+    "displayName": "Desert",
+    "icon": "desert",
+    "fields": {
+      "Name": "desert",
+      "Icon": "desert"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "desert"
+      }
+    ]
+  },
+  {
+    "id": "economicOutputMult",
+    "type": "deposit-resources",
+    "displayName": "Economic Output Mult",
+    "icon": "economicOutputMult",
+    "fields": {
+      "Name": "economicOutputMult",
+      "Icon": "economicOutputMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economicOutputMult"
+      }
+    ]
+  },
+  {
+    "id": "educationEfficiency",
+    "type": "deposit-resources",
+    "displayName": "Education Efficiency",
+    "icon": "educationEfficiency",
+    "fields": {
+      "Name": "educationEfficiency",
+      "Icon": "educationEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "electronics",
+    "type": "deposit-resources",
+    "displayName": "Electronics",
+    "icon": "electronics",
+    "fields": {
+      "Name": "electronics",
+      "Icon": "electronics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "electronics"
+      }
+    ]
+  },
+  {
+    "id": "emp",
+    "type": "deposit-resources",
+    "displayName": "Emp",
+    "icon": "emp",
+    "fields": {
+      "Name": "emp",
+      "Icon": "emp"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "emp"
+      }
+    ]
+  },
+  {
+    "id": "energy",
+    "type": "deposit-resources",
+    "displayName": "Energy",
+    "icon": "energy",
+    "fields": {
+      "Name": "energy",
+      "Icon": "energy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "energy"
+      }
+    ]
+  },
+  {
+    "id": "exoticGasses",
+    "type": "deposit-resources",
+    "displayName": "Exotic Gasses",
+    "icon": "exoticGasses",
+    "fields": {
+      "Name": "exoticGasses",
+      "Icon": "exoticGasses"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "exoticGasses"
+      }
+    ]
+  },
+  {
+    "id": "factionLoyaltyAdd",
+    "type": "deposit-resources",
+    "displayName": "Faction Loyalty Add",
+    "icon": "factionLoyaltyAdd",
+    "fields": {
+      "Name": "factionLoyaltyAdd",
+      "Icon": "factionLoyaltyAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionLoyaltyAdd"
+      }
+    ]
+  },
+  {
+    "id": "fzbPpO",
+    "type": "deposit-resources",
+    "displayName": "Fzb Pp O",
+    "icon": "fzbPpO",
+    "fields": {
+      "Name": "fzbPpO",
+      "Icon": "fzbPpO"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fzbPpO"
+      }
+    ]
+  },
+  {
+    "id": "helium3",
+    "type": "deposit-resources",
+    "displayName": "Helium-3",
+    "icon": "helium3",
+    "fields": {
+      "Name": "helium3",
+      "Icon": "helium3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "helium3"
+      }
+    ]
+  },
+  {
+    "id": "hydroponics",
+    "type": "deposit-resources",
+    "displayName": "Hydroponics Farming",
+    "icon": "hydroponics",
+    "fields": {
+      "Name": "hydroponics",
+      "Icon": "hydroponics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hydroponics"
+      }
+    ]
+  },
+  {
+    "id": "iceNine",
+    "type": "deposit-resources",
+    "displayName": "Ice Nine",
+    "icon": "iceNine",
+    "fields": {
+      "Name": "iceNine",
+      "Icon": "iceNine"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "iceNine"
+      }
+    ]
+  },
+  {
+    "id": "industry",
+    "type": "deposit-resources",
+    "displayName": "Industrial Capacity",
+    "icon": "industry",
+    "fields": {
+      "Name": "industry",
+      "Icon": "industry"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industry"
+      }
+    ]
+  },
+  {
+    "id": "industrialization",
+    "type": "deposit-resources",
+    "displayName": "Industrialization",
+    "icon": "industrialization",
+    "fields": {
+      "Name": "industrialization",
+      "Icon": "industrialization"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrialization"
+      }
+    ]
+  },
+  {
+    "id": "interplanetaryTrade",
+    "type": "deposit-resources",
+    "displayName": "Interplanetary Trade",
+    "icon": "interplanetaryTrade",
+    "fields": {
+      "Name": "interplanetaryTrade",
+      "Icon": "interplanetaryTrade"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interplanetaryTrade"
+      }
+    ]
+  },
+  {
+    "id": "jungle",
+    "type": "deposit-resources",
+    "displayName": "Jungle",
+    "icon": "jungle",
+    "fields": {
+      "Name": "jungle",
+      "Icon": "jungle"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "jungle"
+      }
+    ]
+  },
+  {
+    "id": "letheTreasure",
+    "type": "deposit-resources",
+    "displayName": "Lethe Treasure",
+    "icon": "letheTreasure",
+    "fields": {
+      "Name": "letheTreasure",
+      "Icon": "letheTreasure"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "letheTreasure"
+      }
+    ]
+  },
+  {
+    "id": "lifeSpanAdd",
+    "type": "deposit-resources",
+    "displayName": "Life Span Add",
+    "icon": "lifeSpanAdd",
+    "fields": {
+      "Name": "lifeSpanAdd",
+      "Icon": "lifeSpanAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lifeSpanAdd"
+      }
+    ]
+  },
+  {
+    "id": "lqdMethane",
+    "type": "deposit-resources",
+    "displayName": "Lqd Methane",
+    "icon": "lqdMethane",
+    "fields": {
+      "Name": "lqdMethane",
+      "Icon": "lqdMethane"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lqdMethane"
+      }
+    ]
+  },
+  {
+    "id": "mountain",
+    "type": "deposit-resources",
+    "displayName": "Mountain",
+    "icon": "mountain",
+    "fields": {
+      "Name": "mountain",
+      "Icon": "mountain"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mountain"
+      }
+    ]
+  },
+  {
+    "id": "nanocomposites",
+    "type": "deposit-resources",
+    "displayName": "Nanomanufacturing",
+    "icon": "nanocomposites",
+    "fields": {
+      "Name": "nanocomposites",
+      "Icon": "nanocomposites"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nanocomposites"
+      }
+    ]
+  },
+  {
+    "id": "ocean",
+    "type": "deposit-resources",
+    "displayName": "Ocean",
+    "icon": "ocean",
+    "fields": {
+      "Name": "ocean",
+      "Icon": "ocean"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ocean"
+      }
+    ]
+  },
+  {
+    "id": "palladium",
+    "type": "deposit-resources",
+    "displayName": "Palladium",
+    "icon": "palladium",
+    "fields": {
+      "Name": "palladium",
+      "Icon": "palladium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "palladium"
+      }
+    ]
+  },
+  {
+    "id": "plains",
+    "type": "deposit-resources",
+    "displayName": "Plains",
+    "icon": "plains",
+    "fields": {
+      "Name": "plains",
+      "Icon": "plains"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "plains"
+      }
+    ]
+  },
+  {
+    "id": "popGrowthMult",
+    "type": "deposit-resources",
+    "displayName": "Pop Growth Mult",
+    "icon": "popGrowthMult",
+    "fields": {
+      "Name": "popGrowthMult",
+      "Icon": "popGrowthMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "popGrowthMult"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildCostMult",
+    "type": "deposit-resources",
+    "displayName": "Project Build Cost Mult",
+    "icon": "projectBuildCostMult",
+    "fields": {
+      "Name": "projectBuildCostMult",
+      "Icon": "projectBuildCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildCostMult"
+      }
+    ]
+  },
+  {
+    "id": "projectEfficiency",
+    "type": "deposit-resources",
+    "displayName": "Project Efficiency",
+    "icon": "projectEfficiency",
+    "fields": {
+      "Name": "projectEfficiency",
+      "Icon": "projectEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectEfficiency"
+      }
+    ]
+  },
+  {
     "id": "steel",
     "type": "deposit-resources",
-    "displayName": "Steel",
+    "displayName": "Refining",
     "icon": "steel",
     "fields": {
       "Name": "steel",
-      "Icon": "steel",
-      "Color": {
-        "R": 0.053313,
-        "G": 0.067346,
-        "B": 0.232639,
-        "A": 1
-      },
-      "Value": 2,
-      "TradeValue": 1,
-      "Prerequisite": {
-        "A": "None",
-        "B": "None"
-      }
+      "Icon": "steel"
     },
-    "modifiers": [
-      {
-        "key": "projectBuildCostMult",
-        "value": -0.01
-      },
-      {
-        "key": "economicOutputMult",
-        "value": 0.02
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "steel"
+      }
+    ]
+  },
+  {
+    "id": "research",
+    "type": "deposit-resources",
+    "displayName": "Research",
+    "icon": "research",
+    "fields": {
+      "Name": "research",
+      "Icon": "research"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  },
+  {
+    "id": "researchMult",
+    "type": "deposit-resources",
+    "displayName": "Research Mult",
+    "icon": "researchMult",
+    "fields": {
+      "Name": "researchMult",
+      "Icon": "researchMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "researchMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceCapacityMult",
+    "type": "deposit-resources",
+    "displayName": "Resource Capacity Mult",
+    "icon": "resourceCapacityMult",
+    "fields": {
+      "Name": "resourceCapacityMult",
+      "Icon": "resourceCapacityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceIncomeMult",
+    "type": "deposit-resources",
+    "displayName": "Resource Income Mult",
+    "icon": "resourceIncomeMult",
+    "fields": {
+      "Name": "resourceIncomeMult",
+      "Icon": "resourceIncomeMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceIncomeMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceModifier",
+    "type": "deposit-resources",
+    "displayName": "Resource Modifier",
+    "icon": "resourceModifier",
+    "fields": {
+      "Name": "resourceModifier",
+      "Icon": "resourceModifier"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceModifier"
+      }
+    ]
+  },
+  {
+    "id": "spaceCapacity",
+    "type": "deposit-resources",
+    "displayName": "Space Capacity",
+    "icon": "spaceCapacity",
+    "fields": {
+      "Name": "spaceCapacity",
+      "Icon": "spaceCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceCapacity"
+      }
+    ]
+  },
+  {
+    "id": "stabilityGainAdd",
+    "type": "deposit-resources",
+    "displayName": "Stability Gain Add",
+    "icon": "stabilityGainAdd",
+    "fields": {
+      "Name": "stabilityGainAdd",
+      "Icon": "stabilityGainAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stabilityGainAdd"
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "type": "deposit-resources",
+    "displayName": "Technology",
+    "icon": "technology",
+    "fields": {
+      "Name": "technology",
+      "Icon": "technology"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "technology"
+      }
+    ]
+  },
+  {
+    "id": "thorium",
+    "type": "deposit-resources",
+    "displayName": "Thorium",
+    "icon": "thorium",
+    "fields": {
+      "Name": "thorium",
+      "Icon": "thorium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "thorium"
+      }
+    ]
+  },
+  {
+    "id": "unitStatMult",
+    "type": "deposit-resources",
+    "displayName": "Unit Stat Mult",
+    "icon": "unitStatMult",
+    "fields": {
+      "Name": "unitStatMult",
+      "Icon": "unitStatMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitStatMult"
+      }
+    ]
+  },
+  {
+    "id": "unitVulnAdd",
+    "type": "deposit-resources",
+    "displayName": "Unit Vuln Add",
+    "icon": "unitVulnAdd",
+    "fields": {
+      "Name": "unitVulnAdd",
+      "Icon": "unitVulnAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitVulnAdd"
+      }
+    ]
+  },
+  {
+    "id": "unityMult",
+    "type": "deposit-resources",
+    "displayName": "Unity Mult",
+    "icon": "unityMult",
+    "fields": {
+      "Name": "unityMult",
+      "Icon": "unityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unityMult"
       }
     ]
   }

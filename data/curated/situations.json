@@ -1,234 +1,685 @@
 [
   {
-    "id": "mechanistCoalescence",
+    "id": "addSituation",
     "type": "situations",
-    "displayName": "Mechanist Coalescence",
-    "icon": "mechanistCoalescence",
-    "description": "mechanistCoalescenceDesc",
+    "displayName": "Add Situation",
+    "icon": "addSituation",
     "fields": {
-      "Name": "mechanistCoalescence",
-      "Description": "mechanistCoalescenceDesc",
-      "Icon": "mechanistCoalescence",
-      "ThemeColor": {
-        "B": 0,
-        "G": 55,
-        "R": 213,
-        "A": 255
-      },
-      "FinishVariable": "mechanist_progress",
-      "FinishEffect": [
-        {
-          "Type": "addStability",
-          "Args": [
-            "30"
-          ]
-        },
-        {
-          "Type": "formCountry",
-          "Args": [
-            "humanitarianUnion"
-          ]
-        }
-      ],
-      "FailEffect": [],
-      "FailVariable": "None",
-      "LocalVariableStart": {},
-      "SharedVariableStart": {
-        "mechanist_progress": {
-          "Name": "mechanist_progress",
-          "Icon": "mechanist_progress",
-          "DefaultValue": 0,
-          "DriftCenter": 0,
-          "DriftLerp": 0,
-          "ScalarModifier": {
-            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-          },
-          "Color": {
-            "R": 0.756944,
-            "G": 0.098967,
-            "B": 0,
-            "A": 1
-          },
-          "TwoSided": false,
-          "SideCenter": 0.5,
-          "ColorB": {
-            "R": 0,
-            "G": 0,
-            "B": 0,
-            "A": 1
-          },
-          "NameB": "",
-          "IconB": "",
-          "ModifierB": {}
-        },
-        "mechanist_17Support": {
-          "Name": "mechanist_17Support",
-          "Icon": "mechanist_17Support",
-          "DefaultValue": 0.5,
-          "DriftCenter": 0.5,
-          "DriftLerp": 0.05,
-          "ScalarModifier": {
-            "(Key=\"factionPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": -0.1,
-            "(Key=\"factionLoyaltyAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": -0.1
-          },
-          "Color": {
-            "R": 0.671875,
-            "G": 0.02492,
-            "B": 0,
-            "A": 1
-          },
-          "TwoSided": true,
-          "SideCenter": 0.5,
-          "ColorB": {
-            "R": 0.671875,
-            "G": 0.02492,
-            "B": 0,
-            "A": 1
-          },
-          "NameB": "",
-          "IconB": "",
-          "ModifierB": {
-            "(Key=\"factionPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.25
-          }
-        }
-      },
-      "Interactions": [
-        {
-          "Name": "mechanist_WEF",
-          "Icon": "mechanist_WEF",
-          "Condition": [],
-          "Reward": [
-            {
-              "Type": "situationSharedVariableAdd",
-              "Args": [
-                "mechanistCoalescence",
-                "mechanist_17Support",
-                "0.2"
-              ]
-            }
-          ],
-          "Duration": 3600,
-          "DurationModifier": {
-            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-            "(Key=\"factionLoyaltyAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.1
-          },
-          "Cooldown": 18000
-        },
-        {
-          "Name": "mechanist_NGO",
-          "Icon": "mechanist_NGO",
-          "Condition": [],
-          "Reward": [],
-          "Duration": 999999999999,
-          "DurationModifier": {
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.002,
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.05,
-            "(Key=\"budgetModifier\",Value1=\"population\",Value2=\"\",Value3=\"\")": -1
-          },
-          "Cooldown": 0
-        },
-        {
-          "Name": "mechanist_propaganda",
-          "Icon": "mechanist_propaganda",
-          "Condition": [],
-          "Reward": [],
-          "Duration": 999999999999,
-          "DurationModifier": {
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.005,
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.01,
-            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.4
-          },
-          "Cooldown": 0
-        },
-        {
-          "Name": "mechanist_massMigration",
-          "Icon": "mechanist_massMigration",
-          "Condition": [],
-          "Reward": [],
-          "Duration": 999999999999,
-          "DurationModifier": {
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": 0.002,
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_17Support\",Value2=\"\",Value3=\"\")": 0.01,
-            "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
-            "(Key=\"assimilationMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -1,
-            "(Key=\"popGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.33
-          },
-          "Cooldown": 0
-        },
-        {
-          "Name": "mechanist_allowMerit",
-          "Icon": "mechanist_allowMerit",
-          "Condition": [
-            {
-              "Type": "situationSharedVariable",
-              "Args": [
-                "mechanistCoalescence",
-                "mechanist_17Support",
-                ">",
-                "0.5"
-              ]
-            }
-          ],
-          "Reward": [],
-          "Duration": 3600,
-          "DurationModifier": {
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": -0.005,
-            "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1,
-            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-          },
-          "Cooldown": 3600
-        },
-        {
-          "Name": "mechanist_roboticization",
-          "Icon": "mechanist_roboticization",
-          "Condition": [
-            {
-              "Type": "situationSharedVariable",
-              "Args": [
-                "mechanistCoalescence",
-                "mechanist_17Support",
-                ">",
-                "0.5"
-              ]
-            }
-          ],
-          "Reward": [],
-          "Duration": 3600,
-          "DurationModifier": {
-            "(Key=\"situationVariableAdd\",Value1=\"mechanist_progress\",Value2=\"\",Value3=\"\")": -0.005,
-            "(Key=\"unitMoraleDamageReduction\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-          },
-          "Cooldown": 3600
-        }
-      ],
-      "Type": "Local",
-      "Prerequisite": {
-        "A": "false",
-        "B": "None"
-      },
-      "CanAdd": false,
-      "AddCondition": [],
-      "Exclusives": [],
-      "IsCrisis": false,
-      "SpawnEffect": []
+      "Name": "addSituation",
+      "Icon": "addSituation"
     },
-    "modifiers": [
-      {
-        "key": "stabilityGainAdd",
-        "value": -0.2
-      },
-      {
-        "key": "resourceCapacityMult",
-        "value1": "industry",
-        "value": 0.2
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "mechanistCoalescence"
+        "id": "addSituation"
+      }
+    ]
+  },
+  {
+    "id": "bioweaponSituation",
+    "type": "situations",
+    "displayName": "Bioweapon Situation",
+    "icon": "bioweaponSituation",
+    "fields": {
+      "Name": "bioweaponSituation",
+      "Icon": "bioweaponSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bioweaponSituation"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracyCrisis",
+    "type": "situations",
+    "displayName": "Bureaucracy Crisis",
+    "icon": "bureaucracyCrisis",
+    "fields": {
+      "Name": "bureaucracyCrisis",
+      "Icon": "bureaucracyCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracyCrisis"
+      }
+    ]
+  },
+  {
+    "id": "clergyCrisis",
+    "type": "situations",
+    "displayName": "Clergy Crisis",
+    "icon": "clergyCrisis",
+    "fields": {
+      "Name": "clergyCrisis",
+      "Icon": "clergyCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergyCrisis"
+      }
+    ]
+  },
+  {
+    "id": "corporateCrisis",
+    "type": "situations",
+    "displayName": "Corporate Crisis",
+    "icon": "corporateCrisis",
+    "fields": {
+      "Name": "corporateCrisis",
+      "Icon": "corporateCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporateCrisis"
+      }
+    ]
+  },
+  {
+    "id": "demographicCrisis",
+    "type": "situations",
+    "displayName": "Demographic Crisis",
+    "icon": "demographicCrisis",
+    "fields": {
+      "Name": "demographicCrisis",
+      "Icon": "demographicCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "demographicCrisis"
+      }
+    ]
+  },
+  {
+    "id": "enterpriseZonesSituation",
+    "type": "situations",
+    "displayName": "Enterprise Zones Situation",
+    "icon": "enterpriseZonesSituation",
+    "fields": {
+      "Name": "enterpriseZonesSituation",
+      "Icon": "enterpriseZonesSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "enterpriseZonesSituation"
+      }
+    ]
+  },
+  {
+    "id": "jehovaSituation",
+    "type": "situations",
+    "displayName": "Jehova Situation",
+    "icon": "jehovaSituation",
+    "fields": {
+      "Name": "jehovaSituation",
+      "Icon": "jehovaSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "jehovaSituation"
+      }
+    ]
+  },
+  {
+    "id": "laborerCrisis",
+    "type": "situations",
+    "displayName": "Laborer Crisis",
+    "icon": "laborerCrisis",
+    "fields": {
+      "Name": "laborerCrisis",
+      "Icon": "laborerCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborerCrisis"
+      }
+    ]
+  },
+  {
+    "id": "marsSituation",
+    "type": "situations",
+    "displayName": "Mars Situation",
+    "icon": "marsSituation",
+    "fields": {
+      "Name": "marsSituation",
+      "Icon": "marsSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "marsSituation"
+      }
+    ]
+  },
+  {
+    "id": "mechanistCoalescence_migrantSituation",
+    "type": "situations",
+    "displayName": "Mechanist Coalescence Migrant Situation",
+    "icon": "mechanistCoalescence_migrantSituation",
+    "fields": {
+      "Name": "mechanistCoalescence_migrantSituation",
+      "Icon": "mechanistCoalescence_migrantSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mechanistCoalescence_migrantSituation"
+      }
+    ]
+  },
+  {
+    "id": "middleClassCrisis",
+    "type": "situations",
+    "displayName": "Middle Class Crisis",
+    "icon": "middleClassCrisis",
+    "fields": {
+      "Name": "middleClassCrisis",
+      "Icon": "middleClassCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClassCrisis"
+      }
+    ]
+  },
+  {
+    "id": "militaryCrisis",
+    "type": "situations",
+    "displayName": "Military Crisis",
+    "icon": "militaryCrisis",
+    "fields": {
+      "Name": "militaryCrisis",
+      "Icon": "militaryCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryCrisis"
+      }
+    ]
+  },
+  {
+    "id": "perfectionSituation",
+    "type": "situations",
+    "displayName": "Perfection Situation",
+    "icon": "perfectionSituation",
+    "fields": {
+      "Name": "perfectionSituation",
+      "Icon": "perfectionSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "perfectionSituation"
+      }
+    ]
+  },
+  {
+    "id": "pirateRepublicSituation",
+    "type": "situations",
+    "displayName": "Pirate Republic Situation",
+    "icon": "pirateRepublicSituation",
+    "fields": {
+      "Name": "pirateRepublicSituation",
+      "Icon": "pirateRepublicSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "pirateRepublicSituation"
+      }
+    ]
+  },
+  {
+    "id": "redArmyOrgSituation",
+    "type": "situations",
+    "displayName": "Red Army Org Situation",
+    "icon": "redArmyOrgSituation",
+    "fields": {
+      "Name": "redArmyOrgSituation",
+      "Icon": "redArmyOrgSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "redArmyOrgSituation"
+      }
+    ]
+  },
+  {
+    "id": "removeSituation",
+    "type": "situations",
+    "displayName": "Remove Situation",
+    "icon": "removeSituation",
+    "fields": {
+      "Name": "removeSituation",
+      "Icon": "removeSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "removeSituation"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySituation",
+    "type": "situations",
+    "displayName": "Robot Country Situation",
+    "icon": "robotCountrySituation",
+    "fields": {
+      "Name": "robotCountrySituation",
+      "Icon": "robotCountrySituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySituation"
+      }
+    ]
+  },
+  {
+    "id": "robotRevolutionSituation",
+    "type": "situations",
+    "displayName": "Robot Revolution Situation",
+    "icon": "robotRevolutionSituation",
+    "fields": {
+      "Name": "robotRevolutionSituation",
+      "Icon": "robotRevolutionSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotRevolutionSituation"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisis",
+    "type": "situations",
+    "displayName": "Robotics Crisis",
+    "icon": "roboticsCrisis",
+    "fields": {
+      "Name": "roboticsCrisis",
+      "Icon": "roboticsCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisis"
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation",
+    "type": "situations",
+    "displayName": "Russia Situation",
+    "icon": "russiaSituation",
+    "fields": {
+      "Name": "russiaSituation",
+      "Icon": "russiaSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "russiaSituation"
+      }
+    ]
+  },
+  {
+    "id": "saturnSituation",
+    "type": "situations",
+    "displayName": "Saturn Situation",
+    "icon": "saturnSituation",
+    "fields": {
+      "Name": "saturnSituation",
+      "Icon": "saturnSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "saturnSituation"
+      }
+    ]
+  },
+  {
+    "id": "separatistCrisis",
+    "type": "situations",
+    "displayName": "Separatist Crisis",
+    "icon": "separatistCrisis",
+    "fields": {
+      "Name": "separatistCrisis",
+      "Icon": "separatistCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "separatistCrisis"
+      }
+    ]
+  },
+  {
+    "id": "shadowEmpireSituation",
+    "type": "situations",
+    "displayName": "Shadow Empire Situation",
+    "icon": "shadowEmpireSituation",
+    "fields": {
+      "Name": "shadowEmpireSituation",
+      "Icon": "shadowEmpireSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shadowEmpireSituation"
+      }
+    ]
+  },
+  {
+    "id": "situationSharedVariable",
+    "type": "situations",
+    "displayName": "Situation Shared Variable",
+    "icon": "situationSharedVariable",
+    "fields": {
+      "Name": "situationSharedVariable",
+      "Icon": "situationSharedVariable"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "situationSharedVariable"
+      }
+    ]
+  },
+  {
+    "id": "situationSharedVariableAdd",
+    "type": "situations",
+    "displayName": "Situation Shared Variable Add",
+    "icon": "situationSharedVariableAdd",
+    "fields": {
+      "Name": "situationSharedVariableAdd",
+      "Icon": "situationSharedVariableAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "situationSharedVariableAdd"
+      }
+    ]
+  },
+  {
+    "id": "situationVariableAdd",
+    "type": "situations",
+    "displayName": "Situation Variable Add",
+    "icon": "situationVariableAdd",
+    "fields": {
+      "Name": "situationVariableAdd",
+      "Icon": "situationVariableAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "situationVariableAdd"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountrySituation",
+    "type": "situations",
+    "displayName": "Superhuman Country Situation",
+    "icon": "superhumanCountrySituation",
+    "fields": {
+      "Name": "superhumanCountrySituation",
+      "Icon": "superhumanCountrySituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountrySituation"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCrisis",
+    "type": "situations",
+    "displayName": "Superhuman Crisis",
+    "icon": "superhumanCrisis",
+    "fields": {
+      "Name": "superhumanCrisis",
+      "Icon": "superhumanCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCrisis"
+      }
+    ]
+  },
+  {
+    "id": "thuleSituation",
+    "type": "situations",
+    "displayName": "Thule Situation",
+    "icon": "thuleSituation",
+    "fields": {
+      "Name": "thuleSituation",
+      "Icon": "thuleSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "thuleSituation"
+      }
+    ]
+  },
+  {
+    "id": "unitedColoniesSituation",
+    "type": "situations",
+    "displayName": "United Colonies Situation",
+    "icon": "unitedColoniesSituation",
+    "fields": {
+      "Name": "unitedColoniesSituation",
+      "Icon": "unitedColoniesSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitedColoniesSituation"
+      }
+    ]
+  },
+  {
+    "id": "unleashBioweaponSituation",
+    "type": "situations",
+    "displayName": "Unleash Bioweapon Situation",
+    "icon": "unleashBioweaponSituation",
+    "fields": {
+      "Name": "unleashBioweaponSituation",
+      "Icon": "unleashBioweaponSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashBioweaponSituation"
+      }
+    ]
+  },
+  {
+    "id": "unleashMemeticVirusSituation",
+    "type": "situations",
+    "displayName": "Unleash Memetic Virus Situation",
+    "icon": "unleashMemeticVirusSituation",
+    "fields": {
+      "Name": "unleashMemeticVirusSituation",
+      "Icon": "unleashMemeticVirusSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashMemeticVirusSituation"
+      }
+    ]
+  },
+  {
+    "id": "unleashScrapCodeSituation",
+    "type": "situations",
+    "displayName": "Unleash Scrap Code Situation",
+    "icon": "unleashScrapCodeSituation",
+    "fields": {
+      "Name": "unleashScrapCodeSituation",
+      "Icon": "unleashScrapCodeSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashScrapCodeSituation"
+      }
+    ]
+  },
+  {
+    "id": "upperClassCrisis",
+    "type": "situations",
+    "displayName": "Upper Class Crisis",
+    "icon": "upperClassCrisis",
+    "fields": {
+      "Name": "upperClassCrisis",
+      "Icon": "upperClassCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClassCrisis"
+      }
+    ]
+  },
+  {
+    "id": "venusCIASituation",
+    "type": "situations",
+    "displayName": "Venus CIASituation",
+    "icon": "venusCIASituation",
+    "fields": {
+      "Name": "venusCIASituation",
+      "Icon": "venusCIASituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "venusCIASituation"
+      }
+    ]
+  },
+  {
+    "id": "venusRussiaSituation",
+    "type": "situations",
+    "displayName": "Venus Russia Situation",
+    "icon": "venusRussiaSituation",
+    "fields": {
+      "Name": "venusRussiaSituation",
+      "Icon": "venusRussiaSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "venusRussiaSituation"
+      }
+    ]
+  },
+  {
+    "id": "venusSituation",
+    "type": "situations",
+    "displayName": "Venus Situation",
+    "icon": "venusSituation",
+    "fields": {
+      "Name": "venusSituation",
+      "Icon": "venusSituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "venusSituation"
       }
     ]
   }

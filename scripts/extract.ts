@@ -1,95 +1,99 @@
 import { execSync } from 'node:child_process';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { DATA_RAW, getGameRoot, getPaksPath } from './paths.ts';
-import { DEFINE_FILE_TO_SLUG } from '../src/lib/categories.ts';
+import { DATA_RAW, PROJECT_ROOT, getGameRoot, getPaksPath } from './paths.ts';
 
-/**
- * Attempts to extract readable strings from UE5 pak/utoc files.
- * Full Defines JSON requires FModel — see docs/extraction.md.
- */
-function extractStringsFromFile(filePath: string): string[] {
-  try {
-    const output = execSync(`strings "${filePath}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 50 * 1024 * 1024,
-    });
-    return output.split('\n').filter((line: string) => line.trim().length > 0);
-  } catch {
-    return [];
-  }
+const LEGACY_ROOT = join(DATA_RAW, 'legacy-all');
+const UNPACKED_ROOT = join(DATA_RAW, 'unpacked');
+const PARSE_SCRIPT = join(PROJECT_ROOT, 'tools/parse_legacy.py');
+const RETOC = join(PROJECT_ROOT, 'tools/retoc_cli-aarch64-apple-darwin/retoc');
+
+function runParseLegacy() {
+  console.log('Parsing legacy UE exports into Defines JSON...');
+  execSync(`python3 "${PARSE_SCRIPT}"`, {
+    stdio: 'inherit',
+    cwd: PROJECT_ROOT,
+  });
 }
 
-function findLocalizationStrings(strings: string[]): Record<string, string> {
-  const loc: Record<string, string> = {};
-  for (const line of strings) {
-    // UE localization entries often appear as key/value pairs in string tables
-    if (line.includes('_title') || line.includes('_desc')) {
-      loc[line] = line;
-    }
+function ensureUnpacked(gameRoot: string) {
+  if (existsSync(UNPACKED_ROOT)) {
+    console.log(`Using unpacked assets at ${UNPACKED_ROOT}`);
+    return;
   }
-  return loc;
+
+  if (!existsSync(RETOC)) {
+    console.log('retoc not found — skipping unpack step.');
+    return;
+  }
+
+  const paksPath = getPaksPath(gameRoot);
+  console.log('Unpacking IoStore containers (first run only)...');
+  mkdirSync(UNPACKED_ROOT, { recursive: true });
+  execSync(`"${RETOC}" unpack "${paksPath}" "${UNPACKED_ROOT}"`, {
+    stdio: 'inherit',
+  });
+}
+
+function ensureLegacy(gameRoot: string) {
+  const definesUexp = join(
+    LEGACY_ROOT,
+    'twilightModernity/Content/Blueprints/Struct/Defines/Factions.uexp',
+  );
+  if (existsSync(definesUexp)) {
+    console.log(`Using legacy exports at ${LEGACY_ROOT}`);
+    return;
+  }
+
+  if (!existsSync(RETOC)) {
+    console.log('retoc not found — skipping to-legacy conversion.');
+    return;
+  }
+
+  const paksPath = getPaksPath(gameRoot);
+  mkdirSync(LEGACY_ROOT, { recursive: true });
+  console.log('Converting define assets to legacy format...');
+  const targets = [
+    'Factions',
+    'Technologies',
+    'resources',
+    'Projects',
+    'Events',
+    'Eras',
+    'CultureTraits',
+    'CharacterTraits',
+    'CharacterJobs',
+    'GovernmentReforms',
+    'GovernmentReformOptions',
+    'UnitComponents',
+    'Deposit',
+    'DepositResources',
+    'Situations',
+    'StaticModifiers',
+    'FactionVariants',
+  ];
+
+  for (const target of targets) {
+    execSync(
+      `"${RETOC}" to-legacy --version UE5_6 -f "${target}" "${paksPath}" "${LEGACY_ROOT}"`,
+      { stdio: 'pipe' },
+    );
+  }
 }
 
 function main() {
   const gameRoot = getGameRoot();
-  const paksPath = getPaksPath(gameRoot);
   const definesDir = join(DATA_RAW, 'Defines');
   const locDir = join(DATA_RAW, 'Localization');
 
   mkdirSync(definesDir, { recursive: true });
   mkdirSync(locDir, { recursive: true });
 
-  const utocPath = join(paksPath, 'twilightModernity-Windows.utoc');
-  if (!existsSync(utocPath)) {
-    console.log('No utoc file found — skipping automated extraction.');
-    console.log('Use FModel per docs/extraction.md for full Defines export.');
-    return;
-  }
+  ensureUnpacked(gameRoot);
+  ensureLegacy(gameRoot);
+  runParseLegacy();
 
-  console.log('Scanning UE5 asset index for define types...');
-  const strings = extractStringsFromFile(utocPath);
-  const defineStructs = strings.filter((s) => s.endsWith('DefineStruct.uasset'));
-  console.log(`Found ${defineStructs.length} DefineStruct assets in utoc index.`);
-
-  const defineFiles = Object.keys(DEFINE_FILE_TO_SLUG);
-  const foundDefines = defineFiles.filter((f) =>
-    strings.some((s) => s.includes(basenameWithoutExt(f))),
-  );
-  console.log(`Matched define types: ${foundDefines.join(', ') || 'none as loose JSON'}`);
-
-  const locStrings = findLocalizationStrings(strings);
-  if (Object.keys(locStrings).length > 0) {
-    writeFileSync(
-      join(locDir, 'en-strings-preview.json'),
-      JSON.stringify(locStrings, null, 2),
-    );
-    console.log(`Wrote ${Object.keys(locStrings).length} localization string previews.`);
-  }
-
-  writeFileSync(
-    join(DATA_RAW, 'extraction-manifest.json'),
-    JSON.stringify(
-      {
-        extractedAt: new Date().toISOString(),
-        gameRoot,
-        defineStructs,
-        foundDefines,
-        note: 'Full JSON Defines require manual FModel export to data/raw/Defines/',
-      },
-      null,
-      2,
-    ),
-  );
-
-  console.log('\nAutomated extraction is limited for UE5 IoStore packs.');
-  console.log('For full base-game data, export Defines/*.json via FModel to:');
-  console.log(`  ${definesDir}/`);
-  console.log('Then re-run: npm run normalize');
-}
-
-function basenameWithoutExt(filename: string): string {
-  return filename.replace(/\.json$/, '');
+  console.log('\nExtraction complete. Run npm run normalize to update data/curated/.');
 }
 
 main();

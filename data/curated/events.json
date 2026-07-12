@@ -1,137 +1,740 @@
 [
   {
-    "id": "robotCountrySetup",
+    "id": "addProject",
     "type": "events",
-    "displayName": "robotCountrySetup_title",
-    "description": "robotCountrySetup_desc",
+    "displayName": "Add Project",
+    "icon": "addProject",
     "fields": {
-      "Name": "robotCountrySetup",
-      "Title": "robotCountrySetup_title",
-      "Text": "robotCountrySetup_desc",
-      "Options": [
-        {
-          "Text": "robotCountrySetup_option1",
-          "Condition": [],
-          "Reward": [
-            {
-              "Type": "destroySituations",
-              "Args": []
-            },
-            {
-              "Type": "setPrimaryCulture",
-              "Args": [
-                "robotCulture"
-              ]
-            },
-            {
-              "Type": "formCountry",
-              "Args": [
-                "robotCountry"
-              ]
-            },
-            {
-              "Type": "addSituation",
-              "Args": [
-                "robotCountrySituation"
-              ]
-            },
-            {
-              "Type": "setReform",
-              "Args": [
-                "form",
-                "form_hivemind"
-              ]
-            },
-            {
-              "Type": "setReform",
-              "Args": [
-                "militaryDoctrine",
-                "militaryDoctrine_hivemind"
-              ]
-            },
-            {
-              "Type": "setReform",
-              "Args": [
-                "economySystem",
-                "economy_hivemind"
-              ]
-            },
-            {
-              "Type": "setReform",
-              "Args": [
-                "civilLiberties",
-                "civilLiberty_hivemind"
-              ]
-            },
-            {
-              "Type": "addTechnology",
-              "Args": [
-                "robotics"
-              ]
-            },
-            {
-              "Type": "spawnUnit",
-              "Args": [
-                "droidLandDefense",
-                "100000",
-                "3"
-              ]
-            },
-            {
-              "Type": "spawnUnit",
-              "Args": [
-                "droidLandAttack",
-                "50000",
-                "2"
-              ]
-            },
-            {
-              "Type": "addStability",
-              "Args": [
-                "80"
-              ]
-            },
-            {
-              "Type": "capitalEffect",
-              "Args": [
-                "addProject",
-                "hivemindCentralNodeProject",
-                "1"
-              ]
-            },
-            {
-              "Type": "regenLeaders",
-              "Args": []
-            },
-            {
-              "Type": "addSituation",
-              "Args": [
-                "separatistCrisis"
-              ]
-            },
-            {
-              "Type": "remakeDiplomacy",
-              "Args": []
-            },
-            {
-              "Type": "destroyAllSituations",
-              "Args": [
-                "robotCrisis"
-              ]
-            },
-            {
-              "Type": "addGlobalFlag",
-              "Args": [
-                "robotCountryGlobalFlag"
-              ]
-            }
-          ]
-        }
-      ],
-      "DefaultOption": 0
+      "Name": "addProject",
+      "Icon": "addProject"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "addProject"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberties",
+    "type": "events",
+    "displayName": "Civil Liberties",
+    "icon": "civilLiberties",
+    "fields": {
+      "Name": "civilLiberties",
+      "Icon": "civilLiberties"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberties"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_hivemind",
+    "type": "events",
+    "displayName": "Civil Liberty Hivemind",
+    "icon": "civilLiberty_hivemind",
+    "fields": {
+      "Name": "civilLiberty_hivemind",
+      "Icon": "civilLiberty_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "droidLandAttack",
+    "type": "events",
+    "displayName": "Droid Land Attack",
+    "icon": "droidLandAttack",
+    "fields": {
+      "Name": "droidLandAttack",
+      "Icon": "droidLandAttack"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "droidLandAttack"
+      }
+    ]
+  },
+  {
+    "id": "droidLandDefense",
+    "type": "events",
+    "displayName": "Droid Land Defense",
+    "icon": "droidLandDefense",
+    "fields": {
+      "Name": "droidLandDefense",
+      "Icon": "droidLandDefense"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "droidLandDefense"
+      }
+    ]
+  },
+  {
+    "id": "economy_hivemind",
+    "type": "events",
+    "displayName": "Economic Organ",
+    "icon": "economy_hivemind",
+    "fields": {
+      "Name": "economy_hivemind",
+      "Icon": "economy_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "economySystem",
+    "type": "events",
+    "displayName": "Economy System",
+    "icon": "economySystem",
+    "fields": {
+      "Name": "economySystem",
+      "Icon": "economySystem"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economySystem"
+      }
+    ]
+  },
+  {
+    "id": "false",
+    "type": "events",
+    "displayName": "False",
+    "icon": "false",
+    "fields": {
+      "Name": "false",
+      "Icon": "false"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "false"
+      }
+    ]
+  },
+  {
+    "id": "form_hivemind",
+    "type": "events",
+    "displayName": "Gestalt Consciousness",
+    "icon": "form_hivemind",
+    "fields": {
+      "Name": "form_hivemind",
+      "Icon": "form_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "type": "events",
+    "displayName": "Government Form",
+    "icon": "form",
+    "fields": {
+      "Name": "form",
+      "Icon": "form"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form"
+      }
+    ]
+  },
+  {
+    "id": "hivemindCentralNodeProject",
+    "type": "events",
+    "displayName": "Hivemind Central Node Project",
+    "icon": "hivemindCentralNodeProject",
+    "fields": {
+      "Name": "hivemindCentralNodeProject",
+      "Icon": "hivemindCentralNodeProject"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hivemindCentralNodeProject"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine",
+    "type": "events",
+    "displayName": "Military Doctrine",
+    "icon": "militaryDoctrine",
+    "fields": {
+      "Name": "militaryDoctrine",
+      "Icon": "militaryDoctrine"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_hivemind",
+    "type": "events",
+    "displayName": "Military Doctrine Hivemind",
+    "icon": "militaryDoctrine_hivemind",
+    "fields": {
+      "Name": "militaryDoctrine_hivemind",
+      "Icon": "militaryDoctrine_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "option1",
+    "type": "events",
+    "displayName": "Option1",
+    "icon": "option1",
+    "fields": {
+      "Name": "option1",
+      "Icon": "option1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "option1"
+      }
+    ]
+  },
+  {
+    "id": "option2",
+    "type": "events",
+    "displayName": "Option2",
+    "icon": "option2",
+    "fields": {
+      "Name": "option2",
+      "Icon": "option2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "option2"
+      }
+    ]
+  },
+  {
+    "id": "option3",
+    "type": "events",
+    "displayName": "Option3",
+    "icon": "option3",
+    "fields": {
+      "Name": "option3",
+      "Icon": "option3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "option3"
+      }
+    ]
+  },
+  {
+    "id": "robotCountry",
+    "type": "events",
+    "displayName": "Robot Country",
+    "icon": "robotCountry",
+    "fields": {
+      "Name": "robotCountry",
+      "Icon": "robotCountry"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountry"
+      }
+    ]
+  },
+  {
+    "id": "robotCountryGlobalFlag",
+    "type": "events",
+    "displayName": "Robot Country Global Flag",
+    "icon": "robotCountryGlobalFlag",
+    "fields": {
+      "Name": "robotCountryGlobalFlag",
+      "Icon": "robotCountryGlobalFlag"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountryGlobalFlag"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySetup",
+    "type": "events",
+    "displayName": "Robot Country Setup",
+    "icon": "robotCountrySetup",
+    "fields": {
+      "Name": "robotCountrySetup",
+      "Icon": "robotCountrySetup"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySetup"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySetup_desc",
+    "type": "events",
+    "displayName": "Robot Country Setup Desc",
+    "icon": "robotCountrySetup_desc",
+    "fields": {
+      "Name": "robotCountrySetup_desc",
+      "Icon": "robotCountrySetup_desc"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySetup_desc"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySetup_option1",
+    "type": "events",
+    "displayName": "Robot Country Setup Option1",
+    "icon": "robotCountrySetup_option1",
+    "fields": {
+      "Name": "robotCountrySetup_option1",
+      "Icon": "robotCountrySetup_option1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySetup_option1"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySetup_title",
+    "type": "events",
+    "displayName": "Robot Country Setup Title",
+    "icon": "robotCountrySetup_title",
+    "fields": {
+      "Name": "robotCountrySetup_title",
+      "Icon": "robotCountrySetup_title"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySetup_title"
+      }
+    ]
+  },
+  {
+    "id": "robotCountrySituation",
+    "type": "events",
+    "displayName": "Robot Country Situation",
+    "icon": "robotCountrySituation",
+    "fields": {
+      "Name": "robotCountrySituation",
+      "Icon": "robotCountrySituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCountrySituation"
+      }
+    ]
+  },
+  {
+    "id": "robotCrisis",
+    "type": "events",
+    "displayName": "Robot Crisis",
+    "icon": "robotCrisis",
+    "fields": {
+      "Name": "robotCrisis",
+      "Icon": "robotCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCrisis"
+      }
+    ]
+  },
+  {
+    "id": "robotCrisisEffect",
+    "type": "events",
+    "displayName": "Robot Crisis Effect",
+    "icon": "robotCrisisEffect",
+    "fields": {
+      "Name": "robotCrisisEffect",
+      "Icon": "robotCrisisEffect"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCrisisEffect"
+      }
+    ]
+  },
+  {
+    "id": "robotCulture",
+    "type": "events",
+    "displayName": "Robot Culture",
+    "icon": "robotCulture",
+    "fields": {
+      "Name": "robotCulture",
+      "Icon": "robotCulture"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotCulture"
+      }
+    ]
+  },
+  {
+    "id": "robotics",
+    "type": "events",
+    "displayName": "Robotics",
+    "icon": "robotics",
+    "fields": {
+      "Name": "robotics",
+      "Icon": "robotics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotics"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisis_embrace",
+    "type": "events",
+    "displayName": "Robotics Crisis Embrace",
+    "icon": "roboticsCrisis_embrace",
+    "fields": {
+      "Name": "roboticsCrisis_embrace",
+      "Icon": "roboticsCrisis_embrace"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisis_embrace"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisisEvent_desc",
+    "type": "events",
+    "displayName": "Robotics Crisis Event Desc",
+    "icon": "roboticsCrisisEvent_desc",
+    "fields": {
+      "Name": "roboticsCrisisEvent_desc",
+      "Icon": "roboticsCrisisEvent_desc"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisisEvent_desc"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisisEvent_title",
+    "type": "events",
+    "displayName": "Robotics Crisis Event Title",
+    "icon": "roboticsCrisisEvent_title",
+    "fields": {
+      "Name": "roboticsCrisisEvent_title",
+      "Icon": "roboticsCrisisEvent_title"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisisEvent_title"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisis_reject",
+    "type": "events",
+    "displayName": "Robotics Crisis Reject",
+    "icon": "roboticsCrisis_reject",
+    "fields": {
+      "Name": "roboticsCrisis_reject",
+      "Icon": "roboticsCrisis_reject"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisis_reject"
+      }
+    ]
+  },
+  {
+    "id": "separatistCrisis",
+    "type": "events",
+    "displayName": "Separatist Crisis",
+    "icon": "separatistCrisis",
+    "fields": {
+      "Name": "separatistCrisis",
+      "Icon": "separatistCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "separatistCrisis"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountry",
+    "type": "events",
+    "displayName": "Superhuman Country",
+    "icon": "superhumanCountry",
+    "fields": {
+      "Name": "superhumanCountry",
+      "Icon": "superhumanCountry"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountry"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountryGlobalFlag",
+    "type": "events",
+    "displayName": "Superhuman Country Global Flag",
+    "icon": "superhumanCountryGlobalFlag",
+    "fields": {
+      "Name": "superhumanCountryGlobalFlag",
+      "Icon": "superhumanCountryGlobalFlag"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountryGlobalFlag"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountrySetup_desc",
+    "type": "events",
+    "displayName": "Superhuman Country Setup Desc",
+    "icon": "superhumanCountrySetup_desc",
+    "fields": {
+      "Name": "superhumanCountrySetup_desc",
+      "Icon": "superhumanCountrySetup_desc"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountrySetup_desc"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountrySetup_option1",
+    "type": "events",
+    "displayName": "Superhuman Country Setup Option1",
+    "icon": "superhumanCountrySetup_option1",
+    "fields": {
+      "Name": "superhumanCountrySetup_option1",
+      "Icon": "superhumanCountrySetup_option1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountrySetup_option1"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountrySetup_title",
+    "type": "events",
+    "displayName": "Superhuman Country Setup Title",
+    "icon": "superhumanCountrySetup_title",
+    "fields": {
+      "Name": "superhumanCountrySetup_title",
+      "Icon": "superhumanCountrySetup_title"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountrySetup_title"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCountrySituation",
+    "type": "events",
+    "displayName": "Superhuman Country Situation",
+    "icon": "superhumanCountrySituation",
+    "fields": {
+      "Name": "superhumanCountrySituation",
+      "Icon": "superhumanCountrySituation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCountrySituation"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCrisis",
+    "type": "events",
+    "displayName": "Superhuman Crisis",
+    "icon": "superhumanCrisis",
+    "fields": {
+      "Name": "superhumanCrisis",
+      "Icon": "superhumanCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCrisis"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCulture",
+    "type": "events",
+    "displayName": "Superhuman Culture",
+    "icon": "superhumanCulture",
+    "fields": {
+      "Name": "superhumanCulture",
+      "Icon": "superhumanCulture"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCulture"
+      }
+    ]
+  },
+  {
+    "id": "true",
+    "type": "events",
+    "displayName": "True",
+    "icon": "true",
+    "fields": {
+      "Name": "true",
+      "Icon": "true"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "true"
+      }
+    ]
   }
 ]

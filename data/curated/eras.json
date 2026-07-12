@@ -1,20 +1,66 @@
 [
   {
+    "id": "eraAbomination",
+    "type": "eras",
+    "displayName": "Era Abomination",
+    "icon": "eraAbomination",
+    "fields": {
+      "Name": "eraAbomination",
+      "Icon": "eraAbomination"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraAbomination"
+      }
+    ]
+  },
+  {
+    "id": "eraBeyond",
+    "type": "eras",
+    "displayName": "Era Beyond",
+    "icon": "eraBeyond",
+    "fields": {
+      "Name": "eraBeyond",
+      "Icon": "eraBeyond"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraBeyond"
+      }
+    ]
+  },
+  {
+    "id": "eraDarkCentury",
+    "type": "eras",
+    "displayName": "Era Dark Century",
+    "icon": "eraDarkCentury",
+    "fields": {
+      "Name": "eraDarkCentury",
+      "Icon": "eraDarkCentury"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraDarkCentury"
+      }
+    ]
+  },
+  {
     "id": "eraIndustrial",
     "type": "eras",
     "displayName": "Era Industrial",
     "icon": "eraIndustrial",
     "fields": {
       "Name": "eraIndustrial",
-      "Icon": "eraIndustrial",
-      "StartYear": -2147483648,
-      "EndYear": 2000,
-      "Color": {
-        "R": 0.355903,
-        "G": 0.355903,
-        "B": 0.355903,
-        "A": 1
-      }
+      "Icon": "eraIndustrial"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -22,6 +68,78 @@
       {
         "type": "icon",
         "id": "eraIndustrial"
+      }
+    ]
+  },
+  {
+    "id": "eraInformation",
+    "type": "eras",
+    "displayName": "Era Information",
+    "icon": "eraInformation",
+    "fields": {
+      "Name": "eraInformation",
+      "Icon": "eraInformation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraInformation"
+      }
+    ]
+  },
+  {
+    "id": "eraInterplanetary",
+    "type": "eras",
+    "displayName": "Era Interplanetary",
+    "icon": "eraInterplanetary",
+    "fields": {
+      "Name": "eraInterplanetary",
+      "Icon": "eraInterplanetary"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraInterplanetary"
+      }
+    ]
+  },
+  {
+    "id": "eraUnification",
+    "type": "eras",
+    "displayName": "Era Unification",
+    "icon": "eraUnification",
+    "fields": {
+      "Name": "eraUnification",
+      "Icon": "eraUnification"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraUnification"
+      }
+    ]
+  },
+  {
+    "id": "eraUnraveling",
+    "type": "eras",
+    "displayName": "Era Unraveling",
+    "icon": "eraUnraveling",
+    "fields": {
+      "Name": "eraUnraveling",
+      "Icon": "eraUnraveling"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraUnraveling"
       }
     ]
   }

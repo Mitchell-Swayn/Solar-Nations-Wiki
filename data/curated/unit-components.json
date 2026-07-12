@@ -1,78 +1,3691 @@
 [
   {
-    "id": "smallArms_0",
+    "id": "health",
     "type": "unit-components",
-    "displayName": "Small Arms 0",
+    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "icon": "health",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
+    "id": "airplanes0",
+    "type": "unit-components",
+    "displayName": "Airplanes0",
+    "icon": "airplanes0",
+    "fields": {
+      "Name": "airplanes0",
+      "Icon": "airplanes0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes0"
+      }
+    ]
+  },
+  {
+    "id": "airplanes1",
+    "type": "unit-components",
+    "displayName": "Airplanes1",
+    "icon": "airplanes1",
+    "fields": {
+      "Name": "airplanes1",
+      "Icon": "airplanes1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes1"
+      }
+    ]
+  },
+  {
+    "id": "airplanes2",
+    "type": "unit-components",
+    "displayName": "Airplanes2",
+    "icon": "airplanes2",
+    "fields": {
+      "Name": "airplanes2",
+      "Icon": "airplanes2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes2"
+      }
+    ]
+  },
+  {
+    "id": "airplanes3",
+    "type": "unit-components",
+    "displayName": "Airplanes3",
+    "icon": "airplanes3",
+    "fields": {
+      "Name": "airplanes3",
+      "Icon": "airplanes3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes3"
+      }
+    ]
+  },
+  {
+    "id": "airplanes4",
+    "type": "unit-components",
+    "displayName": "Airplanes4",
+    "icon": "airplanes4",
+    "fields": {
+      "Name": "airplanes4",
+      "Icon": "airplanes4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes4"
+      }
+    ]
+  },
+  {
+    "id": "airplanes5",
+    "type": "unit-components",
+    "displayName": "Airplanes5",
+    "icon": "airplanes5",
+    "fields": {
+      "Name": "airplanes5",
+      "Icon": "airplanes5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes5"
+      }
+    ]
+  },
+  {
+    "id": "ammunition",
+    "type": "unit-components",
+    "displayName": "Ammunition",
+    "icon": "ammunition",
+    "fields": {
+      "Name": "ammunition",
+      "Icon": "ammunition"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ammunition"
+      }
+    ]
+  },
+  {
+    "id": "antimatter",
+    "type": "unit-components",
+    "displayName": "Antimatter",
+    "icon": "antimatter",
+    "fields": {
+      "Name": "antimatter",
+      "Icon": "antimatter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatter"
+      }
+    ]
+  },
+  {
+    "id": "apc0",
+    "type": "unit-components",
+    "displayName": "Apc0",
+    "icon": "apc0",
+    "fields": {
+      "Name": "apc0",
+      "Icon": "apc0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc0"
+      }
+    ]
+  },
+  {
+    "id": "apc1",
+    "type": "unit-components",
+    "displayName": "Apc1",
+    "icon": "apc1",
+    "fields": {
+      "Name": "apc1",
+      "Icon": "apc1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc1"
+      }
+    ]
+  },
+  {
+    "id": "apc2",
+    "type": "unit-components",
+    "displayName": "Apc2",
+    "icon": "apc2",
+    "fields": {
+      "Name": "apc2",
+      "Icon": "apc2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc2"
+      }
+    ]
+  },
+  {
+    "id": "apc3",
+    "type": "unit-components",
+    "displayName": "Apc3",
+    "icon": "apc3",
+    "fields": {
+      "Name": "apc3",
+      "Icon": "apc3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc3"
+      }
+    ]
+  },
+  {
+    "id": "apc4",
+    "type": "unit-components",
+    "displayName": "Apc4",
+    "icon": "apc4",
+    "fields": {
+      "Name": "apc4",
+      "Icon": "apc4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc4"
+      }
+    ]
+  },
+  {
+    "id": "apc5",
+    "type": "unit-components",
+    "displayName": "Apc5",
+    "icon": "apc5",
+    "fields": {
+      "Name": "apc5",
+      "Icon": "apc5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc5"
+      }
+    ]
+  },
+  {
+    "id": "armor0",
+    "type": "unit-components",
+    "displayName": "Armor0",
+    "icon": "armor0",
+    "fields": {
+      "Name": "armor0",
+      "Icon": "armor0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor0"
+      }
+    ]
+  },
+  {
+    "id": "armor1",
+    "type": "unit-components",
+    "displayName": "Armor1",
+    "icon": "armor1",
+    "fields": {
+      "Name": "armor1",
+      "Icon": "armor1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor1"
+      }
+    ]
+  },
+  {
+    "id": "armor2",
+    "type": "unit-components",
+    "displayName": "Armor2",
+    "icon": "armor2",
+    "fields": {
+      "Name": "armor2",
+      "Icon": "armor2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor2"
+      }
+    ]
+  },
+  {
+    "id": "armor3",
+    "type": "unit-components",
+    "displayName": "Armor3",
+    "icon": "armor3",
+    "fields": {
+      "Name": "armor3",
+      "Icon": "armor3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor3"
+      }
+    ]
+  },
+  {
+    "id": "armor4",
+    "type": "unit-components",
+    "displayName": "Armor4",
+    "icon": "armor4",
+    "fields": {
+      "Name": "armor4",
+      "Icon": "armor4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor4"
+      }
+    ]
+  },
+  {
+    "id": "armor5",
+    "type": "unit-components",
+    "displayName": "Armor5",
+    "icon": "armor5",
+    "fields": {
+      "Name": "armor5",
+      "Icon": "armor5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor5"
+      }
+    ]
+  },
+  {
+    "id": "armor6",
+    "type": "unit-components",
+    "displayName": "Armor6",
+    "icon": "armor6",
+    "fields": {
+      "Name": "armor6",
+      "Icon": "armor6"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor6"
+      }
+    ]
+  },
+  {
+    "id": "artificialGravityGenerator",
+    "type": "unit-components",
+    "displayName": "Artificial Gravity Generator",
+    "icon": "artificialGravityGenerator",
+    "fields": {
+      "Name": "artificialGravityGenerator",
+      "Icon": "artificialGravityGenerator"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artificialGravityGenerator"
+      }
+    ]
+  },
+  {
+    "id": "artillery0",
+    "type": "unit-components",
+    "displayName": "Artillery0",
+    "icon": "artillery0",
+    "fields": {
+      "Name": "artillery0",
+      "Icon": "artillery0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery0"
+      }
+    ]
+  },
+  {
+    "id": "artillery1",
+    "type": "unit-components",
+    "displayName": "Artillery1",
+    "icon": "artillery1",
+    "fields": {
+      "Name": "artillery1",
+      "Icon": "artillery1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery1"
+      }
+    ]
+  },
+  {
+    "id": "artillery2",
+    "type": "unit-components",
+    "displayName": "Artillery2",
+    "icon": "artillery2",
+    "fields": {
+      "Name": "artillery2",
+      "Icon": "artillery2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery2"
+      }
+    ]
+  },
+  {
+    "id": "artillery3",
+    "type": "unit-components",
+    "displayName": "Artillery3",
+    "icon": "artillery3",
+    "fields": {
+      "Name": "artillery3",
+      "Icon": "artillery3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery3"
+      }
+    ]
+  },
+  {
+    "id": "artillery4",
+    "type": "unit-components",
+    "displayName": "Artillery4",
+    "icon": "artillery4",
+    "fields": {
+      "Name": "artillery4",
+      "Icon": "artillery4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery4"
+      }
+    ]
+  },
+  {
+    "id": "artillery5",
+    "type": "unit-components",
+    "displayName": "Artillery5",
+    "icon": "artillery5",
+    "fields": {
+      "Name": "artillery5",
+      "Icon": "artillery5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery5"
+      }
+    ]
+  },
+  {
+    "id": "atgm0",
+    "type": "unit-components",
+    "displayName": "Atgm0",
+    "icon": "atgm0",
+    "fields": {
+      "Name": "atgm0",
+      "Icon": "atgm0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm0"
+      }
+    ]
+  },
+  {
+    "id": "atgm1",
+    "type": "unit-components",
+    "displayName": "Atgm1",
+    "icon": "atgm1",
+    "fields": {
+      "Name": "atgm1",
+      "Icon": "atgm1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm1"
+      }
+    ]
+  },
+  {
+    "id": "atgm2",
+    "type": "unit-components",
+    "displayName": "Atgm2",
+    "icon": "atgm2",
+    "fields": {
+      "Name": "atgm2",
+      "Icon": "atgm2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm2"
+      }
+    ]
+  },
+  {
+    "id": "atgm3",
+    "type": "unit-components",
+    "displayName": "Atgm3",
+    "icon": "atgm3",
+    "fields": {
+      "Name": "atgm3",
+      "Icon": "atgm3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm3"
+      }
+    ]
+  },
+  {
+    "id": "atgm4",
+    "type": "unit-components",
+    "displayName": "Atgm4",
+    "icon": "atgm4",
+    "fields": {
+      "Name": "atgm4",
+      "Icon": "atgm4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm4"
+      }
+    ]
+  },
+  {
+    "id": "atgm5",
+    "type": "unit-components",
+    "displayName": "Atgm5",
+    "icon": "atgm5",
+    "fields": {
+      "Name": "atgm5",
+      "Icon": "atgm5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atgm5"
+      }
+    ]
+  },
+  {
+    "id": "autocannon0",
+    "type": "unit-components",
+    "displayName": "Autocannon0",
+    "icon": "autocannon0",
+    "fields": {
+      "Name": "autocannon0",
+      "Icon": "autocannon0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon0"
+      }
+    ]
+  },
+  {
+    "id": "autocannon1",
+    "type": "unit-components",
+    "displayName": "Autocannon1",
+    "icon": "autocannon1",
+    "fields": {
+      "Name": "autocannon1",
+      "Icon": "autocannon1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon1"
+      }
+    ]
+  },
+  {
+    "id": "autocannon2",
+    "type": "unit-components",
+    "displayName": "Autocannon2",
+    "icon": "autocannon2",
+    "fields": {
+      "Name": "autocannon2",
+      "Icon": "autocannon2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon2"
+      }
+    ]
+  },
+  {
+    "id": "autocannon3",
+    "type": "unit-components",
+    "displayName": "Autocannon3",
+    "icon": "autocannon3",
+    "fields": {
+      "Name": "autocannon3",
+      "Icon": "autocannon3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon3"
+      }
+    ]
+  },
+  {
+    "id": "autocannon4",
+    "type": "unit-components",
+    "displayName": "Autocannon4",
+    "icon": "autocannon4",
+    "fields": {
+      "Name": "autocannon4",
+      "Icon": "autocannon4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon4"
+      }
+    ]
+  },
+  {
+    "id": "autocannon5",
+    "type": "unit-components",
+    "displayName": "Autocannon5",
+    "icon": "autocannon5",
+    "fields": {
+      "Name": "autocannon5",
+      "Icon": "autocannon5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon5"
+      }
+    ]
+  },
+  {
+    "id": "battleDroid",
+    "type": "unit-components",
+    "displayName": "Battle Droid",
+    "icon": "battleDroid",
+    "fields": {
+      "Name": "battleDroid",
+      "Icon": "battleDroid"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "battleDroid"
+      }
+    ]
+  },
+  {
+    "id": "biohazard",
+    "type": "unit-components",
+    "displayName": "Biohazard",
+    "icon": "biohazard",
+    "fields": {
+      "Name": "biohazard",
+      "Icon": "biohazard"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biohazard"
+      }
+    ]
+  },
+  {
+    "id": "blitz",
+    "type": "unit-components",
+    "displayName": "Blitz",
+    "icon": "blitz",
+    "fields": {
+      "Name": "blitz",
+      "Icon": "blitz"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "blitz"
+      }
+    ]
+  },
+  {
+    "id": "capitalCommandCenter",
+    "type": "unit-components",
+    "displayName": "Capital Command Center",
+    "icon": "capitalCommandCenter",
+    "fields": {
+      "Name": "capitalCommandCenter",
+      "Icon": "capitalCommandCenter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "capitalCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "carrierDeck",
+    "type": "unit-components",
+    "displayName": "Carrier Deck",
+    "icon": "carrierDeck",
+    "fields": {
+      "Name": "carrierDeck",
+      "Icon": "carrierDeck"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carrierDeck"
+      }
+    ]
+  },
+  {
+    "id": "civSpaceHull",
+    "type": "unit-components",
+    "displayName": "Civ Space Hull",
+    "icon": "civSpaceHull",
+    "fields": {
+      "Name": "civSpaceHull",
+      "Icon": "civSpaceHull"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civSpaceHull"
+      }
+    ]
+  },
+  {
+    "id": "cockpit",
+    "type": "unit-components",
+    "displayName": "Cockpit",
+    "icon": "cockpit",
+    "fields": {
+      "Name": "cockpit",
+      "Icon": "cockpit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cockpit"
+      }
+    ]
+  },
+  {
+    "id": "colossalCommandCenter",
+    "type": "unit-components",
+    "displayName": "Colossal Command Center",
+    "icon": "colossalCommandCenter",
+    "fields": {
+      "Name": "colossalCommandCenter",
+      "Icon": "colossalCommandCenter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colossalCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "communism",
+    "type": "unit-components",
+    "displayName": "Communism",
+    "icon": "communism",
+    "fields": {
+      "Name": "communism",
+      "Icon": "communism"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communism"
+      }
+    ]
+  },
+  {
+    "id": "computers",
+    "type": "unit-components",
+    "displayName": "Computers",
+    "icon": "computers",
+    "fields": {
+      "Name": "computers",
+      "Icon": "computers"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "computers"
+      }
+    ]
+  },
+  {
+    "id": "conservative",
+    "type": "unit-components",
+    "displayName": "Conservative",
+    "icon": "conservative",
+    "fields": {
+      "Name": "conservative",
+      "Icon": "conservative"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "conservative"
+      }
+    ]
+  },
+  {
+    "id": "crusierCommandCenter",
+    "type": "unit-components",
+    "displayName": "Crusier Command Center",
+    "icon": "crusierCommandCenter",
+    "fields": {
+      "Name": "crusierCommandCenter",
+      "Icon": "crusierCommandCenter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "crusierCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "cyberneticImplants",
+    "type": "unit-components",
+    "displayName": "Cybernetic Implants",
+    "icon": "cyberneticImplants",
+    "fields": {
+      "Name": "cyberneticImplants",
+      "Icon": "cyberneticImplants"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cyberneticImplants"
+      }
+    ]
+  },
+  {
+    "id": "deployRange",
+    "type": "unit-components",
+    "displayName": "Deploy Range",
+    "icon": "deployRange",
+    "fields": {
+      "Name": "deployRange",
+      "Icon": "deployRange"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "deployRange"
+      }
+    ]
+  },
+  {
+    "id": "destroyerCommandCenter",
+    "type": "unit-components",
+    "displayName": "Destroyer Command Center",
+    "icon": "destroyerCommandCenter",
+    "fields": {
+      "Name": "destroyerCommandCenter",
+      "Icon": "destroyerCommandCenter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "destroyerCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "droidCommandCore",
+    "type": "unit-components",
+    "displayName": "Droid Command Core",
+    "icon": "droidCommandCore",
+    "fields": {
+      "Name": "droidCommandCore",
+      "Icon": "droidCommandCore"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "droidCommandCore"
+      }
+    ]
+  },
+  {
+    "id": "droneCore",
+    "type": "unit-components",
+    "displayName": "Drone Core",
+    "icon": "droneCore",
+    "fields": {
+      "Name": "droneCore",
+      "Icon": "droneCore"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "droneCore"
+      }
+    ]
+  },
+  {
+    "id": "dropPod",
+    "type": "unit-components",
+    "displayName": "Drop Pod",
+    "icon": "dropPod",
+    "fields": {
+      "Name": "dropPod",
+      "Icon": "dropPod"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "dropPod"
+      }
+    ]
+  },
+  {
+    "id": "electronics",
+    "type": "unit-components",
+    "displayName": "Electronics",
+    "icon": "electronics",
+    "fields": {
+      "Name": "electronics",
+      "Icon": "electronics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "electronics"
+      }
+    ]
+  },
+  {
+    "id": "emp",
+    "type": "unit-components",
+    "displayName": "Emp",
+    "icon": "emp",
+    "fields": {
+      "Name": "emp",
+      "Icon": "emp"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "emp"
+      }
+    ]
+  },
+  {
+    "id": "empDefense0",
+    "type": "unit-components",
+    "displayName": "Emp Defense0",
+    "icon": "empDefense0",
+    "fields": {
+      "Name": "empDefense0",
+      "Icon": "empDefense0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense0"
+      }
+    ]
+  },
+  {
+    "id": "empDefense1",
+    "type": "unit-components",
+    "displayName": "Emp Defense1",
+    "icon": "empDefense1",
+    "fields": {
+      "Name": "empDefense1",
+      "Icon": "empDefense1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense1"
+      }
+    ]
+  },
+  {
+    "id": "empDefense2",
+    "type": "unit-components",
+    "displayName": "Emp Defense2",
+    "icon": "empDefense2",
+    "fields": {
+      "Name": "empDefense2",
+      "Icon": "empDefense2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense2"
+      }
+    ]
+  },
+  {
+    "id": "empDefense3",
+    "type": "unit-components",
+    "displayName": "Emp Defense3",
+    "icon": "empDefense3",
+    "fields": {
+      "Name": "empDefense3",
+      "Icon": "empDefense3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense3"
+      }
+    ]
+  },
+  {
+    "id": "empDefense4",
+    "type": "unit-components",
+    "displayName": "Emp Defense4",
+    "icon": "empDefense4",
+    "fields": {
+      "Name": "empDefense4",
+      "Icon": "empDefense4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense4"
+      }
+    ]
+  },
+  {
+    "id": "empDefense5",
+    "type": "unit-components",
+    "displayName": "Emp Defense5",
+    "icon": "empDefense5",
+    "fields": {
+      "Name": "empDefense5",
+      "Icon": "empDefense5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empDefense5"
+      }
+    ]
+  },
+  {
+    "id": "empGrenade",
+    "type": "unit-components",
+    "displayName": "Emp Grenade",
+    "icon": "empGrenade",
+    "fields": {
+      "Name": "empGrenade",
+      "Icon": "empGrenade"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empGrenade"
+      }
+    ]
+  },
+  {
+    "id": "empTurret1",
+    "type": "unit-components",
+    "displayName": "Emp Turret1",
+    "icon": "empTurret1",
+    "fields": {
+      "Name": "empTurret1",
+      "Icon": "empTurret1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret1"
+      }
+    ]
+  },
+  {
+    "id": "empTurret2",
+    "type": "unit-components",
+    "displayName": "Emp Turret2",
+    "icon": "empTurret2",
+    "fields": {
+      "Name": "empTurret2",
+      "Icon": "empTurret2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret2"
+      }
+    ]
+  },
+  {
+    "id": "empTurret3",
+    "type": "unit-components",
+    "displayName": "Emp Turret3",
+    "icon": "empTurret3",
+    "fields": {
+      "Name": "empTurret3",
+      "Icon": "empTurret3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret3"
+      }
+    ]
+  },
+  {
+    "id": "engineBooster",
+    "type": "unit-components",
+    "displayName": "Engine Booster",
+    "icon": "engineBooster",
+    "fields": {
+      "Name": "engineBooster",
+      "Icon": "engineBooster"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engineBooster"
+      }
+    ]
+  },
+  {
+    "id": "engine0",
+    "type": "unit-components",
+    "displayName": "Engine0",
+    "icon": "engine0",
+    "fields": {
+      "Name": "engine0",
+      "Icon": "engine0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine0"
+      }
+    ]
+  },
+  {
+    "id": "engine1",
+    "type": "unit-components",
+    "displayName": "Engine1",
+    "icon": "engine1",
+    "fields": {
+      "Name": "engine1",
+      "Icon": "engine1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine1"
+      }
+    ]
+  },
+  {
+    "id": "engine2",
+    "type": "unit-components",
+    "displayName": "Engine2",
+    "icon": "engine2",
+    "fields": {
+      "Name": "engine2",
+      "Icon": "engine2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine2"
+      }
+    ]
+  },
+  {
+    "id": "engine3",
+    "type": "unit-components",
+    "displayName": "Engine3",
+    "icon": "engine3",
+    "fields": {
+      "Name": "engine3",
+      "Icon": "engine3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine3"
+      }
+    ]
+  },
+  {
+    "id": "engine4",
+    "type": "unit-components",
+    "displayName": "Engine4",
+    "icon": "engine4",
+    "fields": {
+      "Name": "engine4",
+      "Icon": "engine4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine4"
+      }
+    ]
+  },
+  {
+    "id": "engine5",
+    "type": "unit-components",
+    "displayName": "Engine5",
+    "icon": "engine5",
+    "fields": {
+      "Name": "engine5",
+      "Icon": "engine5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine5"
+      }
+    ]
+  },
+  {
+    "id": "expandedDeckCrew",
+    "type": "unit-components",
+    "displayName": "Expanded Deck Crew",
+    "icon": "expandedDeckCrew",
+    "fields": {
+      "Name": "expandedDeckCrew",
+      "Icon": "expandedDeckCrew"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "expandedDeckCrew"
+      }
+    ]
+  },
+  {
+    "id": "experience",
+    "type": "unit-components",
+    "displayName": "Experience",
+    "icon": "experience",
+    "fields": {
+      "Name": "experience",
+      "Icon": "experience"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "experience"
+      }
+    ]
+  },
+  {
+    "id": "extraFuel",
+    "type": "unit-components",
+    "displayName": "Extra Fuel",
+    "icon": "extraFuel",
+    "fields": {
+      "Name": "extraFuel",
+      "Icon": "extraFuel"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "extraFuel"
+      }
+    ]
+  },
+  {
+    "id": "fXQ2",
+    "type": "unit-components",
+    "displayName": "F XQ2",
+    "icon": "fXQ2",
+    "fields": {
+      "Name": "fXQ2",
+      "Icon": "fXQ2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fXQ2"
+      }
+    ]
+  },
+  {
+    "id": "f0d",
+    "type": "unit-components",
+    "displayName": "F0d",
+    "icon": "f0d",
+    "fields": {
+      "Name": "f0d",
+      "Icon": "f0d"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "f0d"
+      }
+    ]
+  },
+  {
+    "id": "f3o",
+    "type": "unit-components",
+    "displayName": "F3o",
+    "icon": "f3o",
+    "fields": {
+      "Name": "f3o",
+      "Icon": "f3o"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "f3o"
+      }
+    ]
+  },
+  {
+    "id": "f8w",
+    "type": "unit-components",
+    "displayName": "F8w",
+    "icon": "f8w",
+    "fields": {
+      "Name": "f8w",
+      "Icon": "f8w"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "f8w"
+      }
+    ]
+  },
+  {
+    "id": "fascism",
+    "type": "unit-components",
+    "displayName": "Fascism",
+    "icon": "fascism",
+    "fields": {
+      "Name": "fascism",
+      "Icon": "fascism"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fascism"
+      }
+    ]
+  },
+  {
+    "id": "flyingFortress",
+    "type": "unit-components",
+    "displayName": "Flying Fortress",
+    "icon": "flyingFortress",
+    "fields": {
+      "Name": "flyingFortress",
+      "Icon": "flyingFortress"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "flyingFortress"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterial",
+    "type": "unit-components",
+    "displayName": "Genetic Material",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "geneticMaterial",
+      "Icon": "geneticMaterial"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "gjr",
+    "type": "unit-components",
+    "displayName": "Gjr",
+    "icon": "gjr",
+    "fields": {
+      "Name": "gjr",
+      "Icon": "gjr"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gjr"
+      }
+    ]
+  },
+  {
+    "id": "gravitonBeam",
+    "type": "unit-components",
+    "displayName": "Graviton Beam",
+    "icon": "gravitonBeam",
+    "fields": {
+      "Name": "gravitonBeam",
+      "Icon": "gravitonBeam"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravitonBeam"
+      }
+    ]
+  },
+  {
+    "id": "gravitonShield",
+    "type": "unit-components",
+    "displayName": "Graviton Shield",
+    "icon": "gravitonShield",
+    "fields": {
+      "Name": "gravitonShield",
+      "Icon": "gravitonShield"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravitonShield"
+      }
+    ]
+  },
+  {
+    "id": "grayGoo",
+    "type": "unit-components",
+    "displayName": "Gray Goo",
+    "icon": "grayGoo",
+    "fields": {
+      "Name": "grayGoo",
+      "Icon": "grayGoo"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "grayGoo"
+      }
+    ]
+  },
+  {
+    "id": "hGUX",
+    "type": "unit-components",
+    "displayName": "H GUX",
+    "icon": "hGUX",
+    "fields": {
+      "Name": "hGUX",
+      "Icon": "hGUX"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hGUX"
+      }
+    ]
+  },
+  {
+    "id": "helicopter0",
+    "type": "unit-components",
+    "displayName": "Helicopter0",
+    "icon": "helicopter0",
+    "fields": {
+      "Name": "helicopter0",
+      "Icon": "helicopter0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "helicopter0"
+      }
+    ]
+  },
+  {
+    "id": "hypersonic",
+    "type": "unit-components",
+    "displayName": "Hypersonic",
+    "icon": "hypersonic",
+    "fields": {
+      "Name": "hypersonic",
+      "Icon": "hypersonic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hypersonic"
+      }
+    ]
+  },
+  {
+    "id": "infantryPowerSuit",
+    "type": "unit-components",
+    "displayName": "Infantry Power Suit",
+    "icon": "infantryPowerSuit",
+    "fields": {
+      "Name": "infantryPowerSuit",
+      "Icon": "infantryPowerSuit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infantryPowerSuit"
+      }
+    ]
+  },
+  {
+    "id": "irregularInfantryEquipment",
+    "type": "unit-components",
+    "displayName": "Irregular Infantry Equipment",
+    "icon": "irregularInfantryEquipment",
+    "fields": {
+      "Name": "irregularInfantryEquipment",
+      "Icon": "irregularInfantryEquipment"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "irregularInfantryEquipment"
+      }
+    ]
+  },
+  {
+    "id": "k3d",
+    "type": "unit-components",
+    "displayName": "K3d",
+    "icon": "k3d",
+    "fields": {
+      "Name": "k3d",
+      "Icon": "k3d"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "k3d"
+      }
+    ]
+  },
+  {
+    "id": "lG8",
+    "type": "unit-components",
+    "displayName": "L G8",
+    "icon": "lG8",
+    "fields": {
+      "Name": "lG8",
+      "Icon": "lG8"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lG8"
+      }
+    ]
+  },
+  {
+    "id": "landCruiser",
+    "type": "unit-components",
+    "displayName": "Land Cruiser",
+    "icon": "landCruiser",
+    "fields": {
+      "Name": "landCruiser",
+      "Icon": "landCruiser"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landCruiser"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret1",
+    "type": "unit-components",
+    "displayName": "Laser Turret1",
+    "icon": "laserTurret1",
+    "fields": {
+      "Name": "laserTurret1",
+      "Icon": "laserTurret1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret1"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret2",
+    "type": "unit-components",
+    "displayName": "Laser Turret2",
+    "icon": "laserTurret2",
+    "fields": {
+      "Name": "laserTurret2",
+      "Icon": "laserTurret2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret2"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret3",
+    "type": "unit-components",
+    "displayName": "Laser Turret3",
+    "icon": "laserTurret3",
+    "fields": {
+      "Name": "laserTurret3",
+      "Icon": "laserTurret3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret3"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret4",
+    "type": "unit-components",
+    "displayName": "Laser Turret4",
+    "icon": "laserTurret4",
+    "fields": {
+      "Name": "laserTurret4",
+      "Icon": "laserTurret4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret4"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret5",
+    "type": "unit-components",
+    "displayName": "Laser Turret5",
+    "icon": "laserTurret5",
+    "fields": {
+      "Name": "laserTurret5",
+      "Icon": "laserTurret5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret5"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret6",
+    "type": "unit-components",
+    "displayName": "Laser Turret6",
+    "icon": "laserTurret6",
+    "fields": {
+      "Name": "laserTurret6",
+      "Icon": "laserTurret6"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret6"
+      }
+    ]
+  },
+  {
+    "id": "leader",
+    "type": "unit-components",
+    "displayName": "Leader",
+    "icon": "leader",
+    "fields": {
+      "Name": "leader",
+      "Icon": "leader"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leader"
+      }
+    ]
+  },
+  {
+    "id": "liberal",
+    "type": "unit-components",
+    "displayName": "Liberal",
+    "icon": "liberal",
+    "fields": {
+      "Name": "liberal",
+      "Icon": "liberal"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "liberal"
+      }
+    ]
+  },
+  {
+    "id": "logistics",
+    "type": "unit-components",
+    "displayName": "Logistics Capacity",
+    "icon": "logistics",
+    "fields": {
+      "Name": "logistics",
+      "Icon": "logistics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logistics"
+      }
+    ]
+  },
+  {
+    "id": "magneticShield",
+    "type": "unit-components",
+    "displayName": "Magnetic Shield",
+    "icon": "magneticShield",
+    "fields": {
+      "Name": "magneticShield",
+      "Icon": "magneticShield"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "magneticShield"
+      }
+    ]
+  },
+  {
+    "id": "mech",
+    "type": "unit-components",
+    "displayName": "Mech",
+    "icon": "mech",
+    "fields": {
+      "Name": "mech",
+      "Icon": "mech"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mech"
+      }
+    ]
+  },
+  {
+    "id": "missileAutoloader",
+    "type": "unit-components",
+    "displayName": "Missile Autoloader",
+    "icon": "missileAutoloader",
+    "fields": {
+      "Name": "missileAutoloader",
+      "Icon": "missileAutoloader"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missileAutoloader"
+      }
+    ]
+  },
+  {
+    "id": "missileSaturation",
+    "type": "unit-components",
+    "displayName": "Missile Saturation",
+    "icon": "missileSaturation",
+    "fields": {
+      "Name": "missileSaturation",
+      "Icon": "missileSaturation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missileSaturation"
+      }
+    ]
+  },
+  {
+    "id": "missile0",
+    "type": "unit-components",
+    "displayName": "Missile0",
+    "icon": "missile0",
+    "fields": {
+      "Name": "missile0",
+      "Icon": "missile0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile0"
+      }
+    ]
+  },
+  {
+    "id": "missile1",
+    "type": "unit-components",
+    "displayName": "Missile1",
+    "icon": "missile1",
+    "fields": {
+      "Name": "missile1",
+      "Icon": "missile1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile1"
+      }
+    ]
+  },
+  {
+    "id": "missile2",
+    "type": "unit-components",
+    "displayName": "Missile2",
+    "icon": "missile2",
+    "fields": {
+      "Name": "missile2",
+      "Icon": "missile2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile2"
+      }
+    ]
+  },
+  {
+    "id": "missile3",
+    "type": "unit-components",
+    "displayName": "Missile3",
+    "icon": "missile3",
+    "fields": {
+      "Name": "missile3",
+      "Icon": "missile3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile3"
+      }
+    ]
+  },
+  {
+    "id": "missile4",
+    "type": "unit-components",
+    "displayName": "Missile4",
+    "icon": "missile4",
+    "fields": {
+      "Name": "missile4",
+      "Icon": "missile4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile4"
+      }
+    ]
+  },
+  {
+    "id": "missile5",
+    "type": "unit-components",
+    "displayName": "Missile5",
+    "icon": "missile5",
+    "fields": {
+      "Name": "missile5",
+      "Icon": "missile5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile5"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefenderMissile0",
+    "type": "unit-components",
+    "displayName": "Munition Defender Missile0",
+    "icon": "munitionDefenderMissile0",
+    "fields": {
+      "Name": "munitionDefenderMissile0",
+      "Icon": "munitionDefenderMissile0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefenderMissile0"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefenderMissile1",
+    "type": "unit-components",
+    "displayName": "Munition Defender Missile1",
+    "icon": "munitionDefenderMissile1",
+    "fields": {
+      "Name": "munitionDefenderMissile1",
+      "Icon": "munitionDefenderMissile1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefenderMissile1"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefenderMissile2",
+    "type": "unit-components",
+    "displayName": "Munition Defender Missile2",
+    "icon": "munitionDefenderMissile2",
+    "fields": {
+      "Name": "munitionDefenderMissile2",
+      "Icon": "munitionDefenderMissile2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefenderMissile2"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefenderMissile3",
+    "type": "unit-components",
+    "displayName": "Munition Defender Missile3",
+    "icon": "munitionDefenderMissile3",
+    "fields": {
+      "Name": "munitionDefenderMissile3",
+      "Icon": "munitionDefenderMissile3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefenderMissile3"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefenseEnhancement",
+    "type": "unit-components",
+    "displayName": "Munition Defense Enhancement",
+    "icon": "munitionDefenseEnhancement",
+    "fields": {
+      "Name": "munitionDefenseEnhancement",
+      "Icon": "munitionDefenseEnhancement"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefenseEnhancement"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense0",
+    "type": "unit-components",
+    "displayName": "Munition Defense0",
+    "icon": "munitionDefense0",
+    "fields": {
+      "Name": "munitionDefense0",
+      "Icon": "munitionDefense0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense0"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense1",
+    "type": "unit-components",
+    "displayName": "Munition Defense1",
+    "icon": "munitionDefense1",
+    "fields": {
+      "Name": "munitionDefense1",
+      "Icon": "munitionDefense1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense1"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense2",
+    "type": "unit-components",
+    "displayName": "Munition Defense2",
+    "icon": "munitionDefense2",
+    "fields": {
+      "Name": "munitionDefense2",
+      "Icon": "munitionDefense2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense2"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense3",
+    "type": "unit-components",
+    "displayName": "Munition Defense3",
+    "icon": "munitionDefense3",
+    "fields": {
+      "Name": "munitionDefense3",
+      "Icon": "munitionDefense3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense3"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense4",
+    "type": "unit-components",
+    "displayName": "Munition Defense4",
+    "icon": "munitionDefense4",
+    "fields": {
+      "Name": "munitionDefense4",
+      "Icon": "munitionDefense4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense4"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense5",
+    "type": "unit-components",
+    "displayName": "Munition Defense5",
+    "icon": "munitionDefense5",
+    "fields": {
+      "Name": "munitionDefense5",
+      "Icon": "munitionDefense5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense5"
+      }
+    ]
+  },
+  {
+    "id": "neuralEngine",
+    "type": "unit-components",
+    "displayName": "Neural Engine",
+    "icon": "neuralEngine",
+    "fields": {
+      "Name": "neuralEngine",
+      "Icon": "neuralEngine"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralEngine"
+      }
+    ]
+  },
+  {
+    "id": "neuralNetworks",
+    "type": "unit-components",
+    "displayName": "Neural Networks",
+    "icon": "neuralNetworks",
+    "fields": {
+      "Name": "neuralNetworks",
+      "Icon": "neuralNetworks"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworks"
+      }
+    ]
+  },
+  {
+    "id": "nuclearFuels",
+    "type": "unit-components",
+    "displayName": "Nuclear Fuels",
+    "icon": "nuclearFuels",
+    "fields": {
+      "Name": "nuclearFuels",
+      "Icon": "nuclearFuels"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearFuels"
+      }
+    ]
+  },
+  {
+    "id": "polarizedArmor",
+    "type": "unit-components",
+    "displayName": "Polarized Armor",
+    "icon": "polarizedArmor",
+    "fields": {
+      "Name": "polarizedArmor",
+      "Icon": "polarizedArmor"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "polarizedArmor"
+      }
+    ]
+  },
+  {
+    "id": "progressive",
+    "type": "unit-components",
+    "displayName": "Progressive",
+    "icon": "progressive",
+    "fields": {
+      "Name": "progressive",
+      "Icon": "progressive"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "progressive"
+      }
+    ]
+  },
+  {
+    "id": "qKg",
+    "type": "unit-components",
+    "displayName": "Q Kg",
+    "icon": "qKg",
+    "fields": {
+      "Name": "qKg",
+      "Icon": "qKg"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "qKg"
+      }
+    ]
+  },
+  {
+    "id": "radiator0",
+    "type": "unit-components",
+    "displayName": "Radiator0",
+    "icon": "radiator0",
+    "fields": {
+      "Name": "radiator0",
+      "Icon": "radiator0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator0"
+      }
+    ]
+  },
+  {
+    "id": "radiator1",
+    "type": "unit-components",
+    "displayName": "Radiator1",
+    "icon": "radiator1",
+    "fields": {
+      "Name": "radiator1",
+      "Icon": "radiator1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator1"
+      }
+    ]
+  },
+  {
+    "id": "radiator2",
+    "type": "unit-components",
+    "displayName": "Radiator2",
+    "icon": "radiator2",
+    "fields": {
+      "Name": "radiator2",
+      "Icon": "radiator2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator2"
+      }
+    ]
+  },
+  {
+    "id": "radiator3",
+    "type": "unit-components",
+    "displayName": "Radiator3",
+    "icon": "radiator3",
+    "fields": {
+      "Name": "radiator3",
+      "Icon": "radiator3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator3"
+      }
+    ]
+  },
+  {
+    "id": "radiator4",
+    "type": "unit-components",
+    "displayName": "Radiator4",
+    "icon": "radiator4",
+    "fields": {
+      "Name": "radiator4",
+      "Icon": "radiator4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator4"
+      }
+    ]
+  },
+  {
+    "id": "radiator5",
+    "type": "unit-components",
+    "displayName": "Radiator5",
+    "icon": "radiator5",
+    "fields": {
+      "Name": "radiator5",
+      "Icon": "radiator5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator5"
+      }
+    ]
+  },
+  {
+    "id": "railgunTurret1",
+    "type": "unit-components",
+    "displayName": "Railgun Turret1",
+    "icon": "railgunTurret1",
+    "fields": {
+      "Name": "railgunTurret1",
+      "Icon": "railgunTurret1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "railgunTurret1"
+      }
+    ]
+  },
+  {
+    "id": "railgunTurret2",
+    "type": "unit-components",
+    "displayName": "Railgun Turret2",
+    "icon": "railgunTurret2",
+    "fields": {
+      "Name": "railgunTurret2",
+      "Icon": "railgunTurret2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "railgunTurret2"
+      }
+    ]
+  },
+  {
+    "id": "railgunTurret3",
+    "type": "unit-components",
+    "displayName": "Railgun Turret3",
+    "icon": "railgunTurret3",
+    "fields": {
+      "Name": "railgunTurret3",
+      "Icon": "railgunTurret3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "railgunTurret3"
+      }
+    ]
+  },
+  {
+    "id": "railgunTurret4",
+    "type": "unit-components",
+    "displayName": "Railgun Turret4",
+    "icon": "railgunTurret4",
+    "fields": {
+      "Name": "railgunTurret4",
+      "Icon": "railgunTurret4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "railgunTurret4"
+      }
+    ]
+  },
+  {
+    "id": "railgunTurret5",
+    "type": "unit-components",
+    "displayName": "Railgun Turret5",
+    "icon": "railgunTurret5",
+    "fields": {
+      "Name": "railgunTurret5",
+      "Icon": "railgunTurret5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "railgunTurret5"
+      }
+    ]
+  },
+  {
+    "id": "rapidRecycler",
+    "type": "unit-components",
+    "displayName": "Rapid Recycler",
+    "icon": "rapidRecycler",
+    "fields": {
+      "Name": "rapidRecycler",
+      "Icon": "rapidRecycler"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rapidRecycler"
+      }
+    ]
+  },
+  {
+    "id": "reactiveArmor",
+    "type": "unit-components",
+    "displayName": "Reactive Armor",
+    "icon": "reactiveArmor",
+    "fields": {
+      "Name": "reactiveArmor",
+      "Icon": "reactiveArmor"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reactiveArmor"
+      }
+    ]
+  },
+  {
+    "id": "reactor1",
+    "type": "unit-components",
+    "displayName": "Reactor1",
+    "icon": "reactor1",
+    "fields": {
+      "Name": "reactor1",
+      "Icon": "reactor1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reactor1"
+      }
+    ]
+  },
+  {
+    "id": "reactor2",
+    "type": "unit-components",
+    "displayName": "Reactor2",
+    "icon": "reactor2",
+    "fields": {
+      "Name": "reactor2",
+      "Icon": "reactor2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reactor2"
+      }
+    ]
+  },
+  {
+    "id": "reactor3",
+    "type": "unit-components",
+    "displayName": "Reactor3",
+    "icon": "reactor3",
+    "fields": {
+      "Name": "reactor3",
+      "Icon": "reactor3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reactor3"
+      }
+    ]
+  },
+  {
+    "id": "reactor4",
+    "type": "unit-components",
+    "displayName": "Reactor4",
+    "icon": "reactor4",
+    "fields": {
+      "Name": "reactor4",
+      "Icon": "reactor4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reactor4"
+      }
+    ]
+  },
+  {
+    "id": "recon",
+    "type": "unit-components",
+    "displayName": "Recon",
+    "icon": "recon",
+    "fields": {
+      "Name": "recon",
+      "Icon": "recon"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "recon"
+      }
+    ]
+  },
+  {
+    "id": "reinforcedBulkheads",
+    "type": "unit-components",
+    "displayName": "Reinforced Bulkheads",
+    "icon": "reinforcedBulkheads",
+    "fields": {
+      "Name": "reinforcedBulkheads",
+      "Icon": "reinforcedBulkheads"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reinforcedBulkheads"
+      }
+    ]
+  },
+  {
+    "id": "shield0",
+    "type": "unit-components",
+    "displayName": "Shield0",
+    "icon": "shield0",
+    "fields": {
+      "Name": "shield0",
+      "Icon": "shield0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shield0"
+      }
+    ]
+  },
+  {
+    "id": "shield1",
+    "type": "unit-components",
+    "displayName": "Shield1",
+    "icon": "shield1",
+    "fields": {
+      "Name": "shield1",
+      "Icon": "shield1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shield1"
+      }
+    ]
+  },
+  {
+    "id": "smallArms0",
+    "type": "unit-components",
+    "displayName": "Small Arms0",
     "icon": "smallArms0",
     "fields": {
-      "Name": "smallArms_0",
-      "ID": 0,
-      "Icon": "smallArms0",
-      "Cost": {
-        "industry": 0.001,
-        "manpower": 0.001
-      },
-      "Size": 1,
-      "Domains": [
-        "Land"
-      ],
-      "Attributes": [
-        "infantry"
-      ],
-      "AttributeExclusion": [
-        "artillery",
-        "tank"
-      ],
-      "Upgrade": "smallArms_1",
-      "Limit": 1,
-      "Speed": 1,
-      "Manpower": 1,
-      "RequiredAttributes": [],
-      "RequiredNotAttributes": [],
-      "Prerequisite": {
-        "A": "None",
-        "B": "None"
-      },
-      "Archetype": "infantry",
-      "ArchetypeWeight": 1
+      "Name": "smallArms0",
+      "Icon": "smallArms0"
     },
-    "modifiers": [
-      {
-        "key": "unitAttackAdd",
-        "value1": "landSoft",
-        "value": 2
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "health",
-        "value": 100
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "sizeLimit",
-        "value": 2
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "entrenchment",
-        "value": 40
-      },
-      {
-        "key": "unitAttackAdd",
-        "value1": "strategic",
-        "value": 0.2
-      },
-      {
-        "key": "unitQualityAdd",
-        "value1": "screenAbility",
-        "value": 2
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "smallArms0"
+      }
+    ]
+  },
+  {
+    "id": "smallArms1",
+    "type": "unit-components",
+    "displayName": "Small Arms1",
+    "icon": "smallArms1",
+    "fields": {
+      "Name": "smallArms1",
+      "Icon": "smallArms1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms1"
+      }
+    ]
+  },
+  {
+    "id": "smallArms2",
+    "type": "unit-components",
+    "displayName": "Small Arms2",
+    "icon": "smallArms2",
+    "fields": {
+      "Name": "smallArms2",
+      "Icon": "smallArms2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms2"
+      }
+    ]
+  },
+  {
+    "id": "smallArms3",
+    "type": "unit-components",
+    "displayName": "Small Arms3",
+    "icon": "smallArms3",
+    "fields": {
+      "Name": "smallArms3",
+      "Icon": "smallArms3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms3"
+      }
+    ]
+  },
+  {
+    "id": "smallArms4",
+    "type": "unit-components",
+    "displayName": "Small Arms4",
+    "icon": "smallArms4",
+    "fields": {
+      "Name": "smallArms4",
+      "Icon": "smallArms4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms4"
+      }
+    ]
+  },
+  {
+    "id": "smallArms5",
+    "type": "unit-components",
+    "displayName": "Small Arms5",
+    "icon": "smallArms5",
+    "fields": {
+      "Name": "smallArms5",
+      "Icon": "smallArms5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms5"
+      }
+    ]
+  },
+  {
+    "id": "smallArms6",
+    "type": "unit-components",
+    "displayName": "Small Arms6",
+    "icon": "smallArms6",
+    "fields": {
+      "Name": "smallArms6",
+      "Icon": "smallArms6"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms6"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull0",
+    "type": "unit-components",
+    "displayName": "Space Hull0",
+    "icon": "spaceHull0",
+    "fields": {
+      "Name": "spaceHull0",
+      "Icon": "spaceHull0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull0"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull1",
+    "type": "unit-components",
+    "displayName": "Space Hull1",
+    "icon": "spaceHull1",
+    "fields": {
+      "Name": "spaceHull1",
+      "Icon": "spaceHull1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull1"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull2",
+    "type": "unit-components",
+    "displayName": "Space Hull2",
+    "icon": "spaceHull2",
+    "fields": {
+      "Name": "spaceHull2",
+      "Icon": "spaceHull2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull2"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull3",
+    "type": "unit-components",
+    "displayName": "Space Hull3",
+    "icon": "spaceHull3",
+    "fields": {
+      "Name": "spaceHull3",
+      "Icon": "spaceHull3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull3"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull4",
+    "type": "unit-components",
+    "displayName": "Space Hull4",
+    "icon": "spaceHull4",
+    "fields": {
+      "Name": "spaceHull4",
+      "Icon": "spaceHull4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull4"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull5",
+    "type": "unit-components",
+    "displayName": "Space Hull5",
+    "icon": "spaceHull5",
+    "fields": {
+      "Name": "spaceHull5",
+      "Icon": "spaceHull5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull5"
+      }
+    ]
+  },
+  {
+    "id": "spacedArmor",
+    "type": "unit-components",
+    "displayName": "Spaced Armor",
+    "icon": "spacedArmor",
+    "fields": {
+      "Name": "spacedArmor",
+      "Icon": "spacedArmor"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spacedArmor"
+      }
+    ]
+  },
+  {
+    "id": "stealthTech",
+    "type": "unit-components",
+    "displayName": "Stealth Tech",
+    "icon": "stealthTech",
+    "fields": {
+      "Name": "stealthTech",
+      "Icon": "stealthTech"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stealthTech"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft0",
+    "type": "unit-components",
+    "displayName": "Strike Craft0",
+    "icon": "strikeCraft0",
+    "fields": {
+      "Name": "strikeCraft0",
+      "Icon": "strikeCraft0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft0"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft1",
+    "type": "unit-components",
+    "displayName": "Strike Craft1",
+    "icon": "strikeCraft1",
+    "fields": {
+      "Name": "strikeCraft1",
+      "Icon": "strikeCraft1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft1"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft2",
+    "type": "unit-components",
+    "displayName": "Strike Craft2",
+    "icon": "strikeCraft2",
+    "fields": {
+      "Name": "strikeCraft2",
+      "Icon": "strikeCraft2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft2"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft3",
+    "type": "unit-components",
+    "displayName": "Strike Craft3",
+    "icon": "strikeCraft3",
+    "fields": {
+      "Name": "strikeCraft3",
+      "Icon": "strikeCraft3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft3"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft4",
+    "type": "unit-components",
+    "displayName": "Strike Craft4",
+    "icon": "strikeCraft4",
+    "fields": {
+      "Name": "strikeCraft4",
+      "Icon": "strikeCraft4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft4"
+      }
+    ]
+  },
+  {
+    "id": "strikeCraft5",
+    "type": "unit-components",
+    "displayName": "Strike Craft5",
+    "icon": "strikeCraft5",
+    "fields": {
+      "Name": "strikeCraft5",
+      "Icon": "strikeCraft5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft5"
+      }
+    ]
+  },
+  {
+    "id": "tank0",
+    "type": "unit-components",
+    "displayName": "Tank0",
+    "icon": "tank0",
+    "fields": {
+      "Name": "tank0",
+      "Icon": "tank0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank0"
+      }
+    ]
+  },
+  {
+    "id": "tank1",
+    "type": "unit-components",
+    "displayName": "Tank1",
+    "icon": "tank1",
+    "fields": {
+      "Name": "tank1",
+      "Icon": "tank1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank1"
+      }
+    ]
+  },
+  {
+    "id": "tank2",
+    "type": "unit-components",
+    "displayName": "Tank2",
+    "icon": "tank2",
+    "fields": {
+      "Name": "tank2",
+      "Icon": "tank2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank2"
+      }
+    ]
+  },
+  {
+    "id": "tank3",
+    "type": "unit-components",
+    "displayName": "Tank3",
+    "icon": "tank3",
+    "fields": {
+      "Name": "tank3",
+      "Icon": "tank3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank3"
+      }
+    ]
+  },
+  {
+    "id": "tank4",
+    "type": "unit-components",
+    "displayName": "Tank4",
+    "icon": "tank4",
+    "fields": {
+      "Name": "tank4",
+      "Icon": "tank4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank4"
+      }
+    ]
+  },
+  {
+    "id": "tank5",
+    "type": "unit-components",
+    "displayName": "Tank5",
+    "icon": "tank5",
+    "fields": {
+      "Name": "tank5",
+      "Icon": "tank5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank5"
+      }
+    ]
+  },
+  {
+    "id": "threeStar",
+    "type": "unit-components",
+    "displayName": "Three Star",
+    "icon": "threeStar",
+    "fields": {
+      "Name": "threeStar",
+      "Icon": "threeStar"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "threeStar"
+      }
+    ]
+  },
+  {
+    "id": "torpedo0",
+    "type": "unit-components",
+    "displayName": "Torpedo0",
+    "icon": "torpedo0",
+    "fields": {
+      "Name": "torpedo0",
+      "Icon": "torpedo0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo0"
+      }
+    ]
+  },
+  {
+    "id": "torpedo1",
+    "type": "unit-components",
+    "displayName": "Torpedo1",
+    "icon": "torpedo1",
+    "fields": {
+      "Name": "torpedo1",
+      "Icon": "torpedo1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo1"
+      }
+    ]
+  },
+  {
+    "id": "torpedo2",
+    "type": "unit-components",
+    "displayName": "Torpedo2",
+    "icon": "torpedo2",
+    "fields": {
+      "Name": "torpedo2",
+      "Icon": "torpedo2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo2"
+      }
+    ]
+  },
+  {
+    "id": "torpedo3",
+    "type": "unit-components",
+    "displayName": "Torpedo3",
+    "icon": "torpedo3",
+    "fields": {
+      "Name": "torpedo3",
+      "Icon": "torpedo3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo3"
+      }
+    ]
+  },
+  {
+    "id": "torpedo4",
+    "type": "unit-components",
+    "displayName": "Torpedo4",
+    "icon": "torpedo4",
+    "fields": {
+      "Name": "torpedo4",
+      "Icon": "torpedo4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo4"
+      }
+    ]
+  },
+  {
+    "id": "torpedo5",
+    "type": "unit-components",
+    "displayName": "Torpedo5",
+    "icon": "torpedo5",
+    "fields": {
+      "Name": "torpedo5",
+      "Icon": "torpedo5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo5"
+      }
+    ]
+  },
+  {
+    "id": "traditional",
+    "type": "unit-components",
+    "displayName": "Traditional",
+    "icon": "traditional",
+    "fields": {
+      "Name": "traditional",
+      "Icon": "traditional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  },
+  {
+    "id": "truck",
+    "type": "unit-components",
+    "displayName": "Truck",
+    "icon": "truck",
+    "fields": {
+      "Name": "truck",
+      "Icon": "truck"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "truck"
+      }
+    ]
+  },
+  {
+    "id": "turret0",
+    "type": "unit-components",
+    "displayName": "Turret0",
+    "icon": "turret0",
+    "fields": {
+      "Name": "turret0",
+      "Icon": "turret0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret0"
+      }
+    ]
+  },
+  {
+    "id": "turret1",
+    "type": "unit-components",
+    "displayName": "Turret1",
+    "icon": "turret1",
+    "fields": {
+      "Name": "turret1",
+      "Icon": "turret1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret1"
+      }
+    ]
+  },
+  {
+    "id": "turret2",
+    "type": "unit-components",
+    "displayName": "Turret2",
+    "icon": "turret2",
+    "fields": {
+      "Name": "turret2",
+      "Icon": "turret2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret2"
+      }
+    ]
+  },
+  {
+    "id": "turret3",
+    "type": "unit-components",
+    "displayName": "Turret3",
+    "icon": "turret3",
+    "fields": {
+      "Name": "turret3",
+      "Icon": "turret3"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret3"
+      }
+    ]
+  },
+  {
+    "id": "turret4",
+    "type": "unit-components",
+    "displayName": "Turret4",
+    "icon": "turret4",
+    "fields": {
+      "Name": "turret4",
+      "Icon": "turret4"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret4"
+      }
+    ]
+  },
+  {
+    "id": "turret5",
+    "type": "unit-components",
+    "displayName": "Turret5",
+    "icon": "turret5",
+    "fields": {
+      "Name": "turret5",
+      "Icon": "turret5"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret5"
+      }
+    ]
+  },
+  {
+    "id": "uiE3j",
+    "type": "unit-components",
+    "displayName": "Ui E3j",
+    "icon": "uiE3j",
+    "fields": {
+      "Name": "uiE3j",
+      "Icon": "uiE3j"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "uiE3j"
+      }
+    ]
+  },
+  {
+    "id": "wHU",
+    "type": "unit-components",
+    "displayName": "W HU",
+    "icon": "wHU",
+    "fields": {
+      "Name": "wHU",
+      "Icon": "wHU"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "wHU"
+      }
+    ]
+  },
+  {
+    "id": "warpDrive",
+    "type": "unit-components",
+    "displayName": "Warp Drive",
+    "icon": "warpDrive",
+    "fields": {
+      "Name": "warpDrive",
+      "Icon": "warpDrive"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive"
+      }
+    ]
+  },
+  {
+    "id": "warpDrive_1",
+    "type": "unit-components",
+    "displayName": "Warp Drive 1",
+    "icon": "warpDrive_1",
+    "fields": {
+      "Name": "warpDrive_1",
+      "Icon": "warpDrive_1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive_1"
+      }
+    ]
+  },
+  {
+    "id": "water",
+    "type": "unit-components",
+    "displayName": "Water",
+    "icon": "water",
+    "fields": {
+      "Name": "water",
+      "Icon": "water"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "water"
+      }
+    ]
+  },
+  {
+    "id": "yul1",
+    "type": "unit-components",
+    "displayName": "Yul1",
+    "icon": "yul1",
+    "fields": {
+      "Name": "yul1",
+      "Icon": "yul1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "yul1"
       }
     ]
   }

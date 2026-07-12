@@ -28,3 +28,13 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Local reverse-engineering tools and generated build output
+tools/__pycache__/
+tools/*.zip
+tools/*.tar.xz
+tools/retoc_cli-*/
+tools/ue4ss/
+tools/jmap_dumper/
+tools/extractor/**/bin/
+tools/extractor/**/obj/

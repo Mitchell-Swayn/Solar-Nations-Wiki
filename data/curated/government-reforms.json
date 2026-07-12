@@ -1,20 +1,17 @@
 [
   {
-    "id": "form",
+    "id": "civilLiberties",
     "type": "government-reforms",
-    "displayName": "Form",
+    "displayName": "Civil Liberties",
     "fields": {
-      "Name": "form",
+      "Name": "civilLiberties",
       "Options": [
-        "form_republic",
-        "form_monarchy",
-        "form_empire",
-        "form_administration",
-        "form_algocracy",
-        "form_corporation",
-        "form_totality",
-        "form_oligarchy",
-        "form_hivemind"
+        "civilLiberty_hivemind",
+        "civilLiberty_hypocritical",
+        "civilLiberty_liberal",
+        "civilLiberty_neutral",
+        "civilLiberty_restricted",
+        "civilLiberty_totalitarian"
       ],
       "Variants": [
         "default",
@@ -38,16 +35,272 @@
     "references": [
       {
         "type": "government-reform-options",
-        "id": "form_republic"
+        "id": "civilLiberty_hivemind"
       },
       {
         "type": "government-reform-options",
-        "id": "form_monarchy"
+        "id": "civilLiberty_hypocritical"
       },
       {
         "type": "government-reform-options",
-        "id": "form_empire"
+        "id": "civilLiberty_liberal"
       },
+      {
+        "type": "government-reform-options",
+        "id": "civilLiberty_neutral"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "civilLiberty_restricted"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "civilLiberty_totalitarian"
+      }
+    ]
+  },
+  {
+    "id": "economySystem",
+    "type": "government-reforms",
+    "displayName": "Economy System",
+    "fields": {
+      "Name": "economySystem",
+      "Options": [
+        "economy_agrarian",
+        "economy_algorithmic",
+        "economy_corporatism",
+        "economy_hivemind",
+        "economy_interventionism",
+        "economy_lassezFaire",
+        "economy_planned"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "economy_agrarian"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_algorithmic"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_corporatism"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_hivemind"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_interventionism"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_lassezFaire"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "economy_planned"
+      }
+    ]
+  },
+  {
+    "id": "educationSpending",
+    "type": "government-reforms",
+    "displayName": "Education Spending",
+    "fields": {
+      "Name": "educationSpending",
+      "Options": [
+        "educationSpending_high",
+        "educationSpending_low",
+        "educationSpending_medium",
+        "educationSpending_none"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "educationSpending_high"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "educationSpending_low"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "educationSpending_medium"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "educationSpending_none"
+      }
+    ]
+  },
+  {
+    "id": "espionagePolicy",
+    "type": "government-reforms",
+    "displayName": "Espionage Policy",
+    "fields": {
+      "Name": "espionagePolicy",
+      "Options": [
+        "espionagePolicy_defense",
+        "espionagePolicy_offense"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "espionagePolicy_defense"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "espionagePolicy_offense"
+      }
+    ]
+  },
+  {
+    "id": "fiscalPolicy",
+    "type": "government-reforms",
+    "displayName": "Fiscal Policy",
+    "fields": {
+      "Name": "fiscalPolicy",
+      "Options": [
+        "fiscalPolicy_austerity",
+        "fiscalPolicy_hyperinflation",
+        "fiscalPolicy_inflation",
+        "fiscalPolicy_neutral"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "fiscalPolicy_austerity"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "fiscalPolicy_hyperinflation"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "fiscalPolicy_inflation"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "fiscalPolicy_neutral"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "type": "government-reforms",
+    "displayName": "Government Form",
+    "fields": {
+      "Name": "form",
+      "Options": [
+        "form_administration",
+        "form_algocracy",
+        "form_corporation",
+        "form_empire",
+        "form_hivemind",
+        "form_monarchy",
+        "form_oligarchy",
+        "form_republic",
+        "form_totality"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
         "type": "government-reform-options",
         "id": "form_administration"
@@ -62,7 +315,15 @@
       },
       {
         "type": "government-reform-options",
-        "id": "form_totality"
+        "id": "form_empire"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_hivemind"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_monarchy"
       },
       {
         "type": "government-reform-options",
@@ -70,7 +331,121 @@
       },
       {
         "type": "government-reform-options",
-        "id": "form_hivemind"
+        "id": "form_republic"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "form_totality"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine",
+    "type": "government-reforms",
+    "displayName": "Military Doctrine",
+    "fields": {
+      "Name": "militaryDoctrine",
+      "Options": [
+        "militaryDoctrine_combinedArms",
+        "militaryDoctrine_defensive",
+        "militaryDoctrine_hivemind",
+        "militaryDoctrine_massAssault",
+        "militaryDoctrine_mobile",
+        "militaryDoctrine_softPower"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_combinedArms"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_defensive"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_hivemind"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_massAssault"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_mobile"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "militaryDoctrine_softPower"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw",
+    "type": "government-reforms",
+    "displayName": "Service Law",
+    "fields": {
+      "Name": "serviceLaw",
+      "Options": [
+        "serviceLaw_conscription",
+        "serviceLaw_disarmed",
+        "serviceLaw_timed",
+        "serviceLaw_totalMobilization"
+      ],
+      "Variants": [
+        "default",
+        "genetics",
+        "cyberneticsTech",
+        "virtualReality",
+        "futuristic"
+      ],
+      "Cost": 20,
+      "Cooldown": 3600,
+      "DefaultIndex": 1,
+      "Sequential": false,
+      "IsPolitical": 0,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_conscription"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_disarmed"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_timed"
+      },
+      {
+        "type": "government-reform-options",
+        "id": "serviceLaw_totalMobilization"
       }
     ]
   }

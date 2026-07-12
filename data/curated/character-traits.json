@@ -1,31 +1,2179 @@
 [
   {
+    "id": "health",
+    "type": "character-traits",
+    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "icon": "health",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
+    "id": "activist",
+    "type": "character-traits",
+    "displayName": "Activist",
+    "icon": "activist",
+    "fields": {
+      "Name": "activist",
+      "Icon": "activist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "activist"
+      }
+    ]
+  },
+  {
+    "id": "admiral",
+    "type": "character-traits",
+    "displayName": "Admiral",
+    "icon": "admiral",
+    "fields": {
+      "Name": "admiral",
+      "Icon": "admiral"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "admiral"
+      }
+    ]
+  },
+  {
+    "id": "algorator",
+    "type": "character-traits",
+    "displayName": "Algorator",
+    "icon": "algorator",
+    "fields": {
+      "Name": "algorator",
+      "Icon": "algorator"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "algorator"
+      }
+    ]
+  },
+  {
+    "id": "arbitrary",
+    "type": "character-traits",
+    "displayName": "Arbitrary",
+    "icon": "arbitrary",
+    "fields": {
+      "Name": "arbitrary",
+      "Icon": "arbitrary"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "arbitrary"
+      }
+    ]
+  },
+  {
+    "id": "artillerist",
+    "type": "character-traits",
+    "displayName": "Artillerist",
+    "icon": "artillerist",
+    "fields": {
+      "Name": "artillerist",
+      "Icon": "artillerist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillerist"
+      }
+    ]
+  },
+  {
+    "id": "artillery",
+    "type": "character-traits",
+    "displayName": "Artillery",
+    "icon": "artillery",
+    "fields": {
+      "Name": "artillery",
+      "Icon": "artillery"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery"
+      }
+    ]
+  },
+  {
+    "id": "assimilationMult",
+    "type": "character-traits",
+    "displayName": "Assimilation Mult",
+    "icon": "assimilationMult",
+    "fields": {
+      "Name": "assimilationMult",
+      "Icon": "assimilationMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "assimilationMult"
+      }
+    ]
+  },
+  {
+    "id": "baseEconomicOutputMult",
+    "type": "character-traits",
+    "displayName": "Base Economic Output Mult",
+    "icon": "baseEconomicOutputMult",
+    "fields": {
+      "Name": "baseEconomicOutputMult",
+      "Icon": "baseEconomicOutputMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "baseEconomicOutputMult"
+      }
+    ]
+  },
+  {
+    "id": "battleAdvantageAdd",
+    "type": "character-traits",
+    "displayName": "Battle Advantage Add",
+    "icon": "battleAdvantageAdd",
+    "fields": {
+      "Name": "battleAdvantageAdd",
+      "Icon": "battleAdvantageAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "battleAdvantageAdd"
+      }
+    ]
+  },
+  {
+    "id": "capital",
+    "type": "character-traits",
+    "displayName": "Capital",
+    "icon": "capital",
+    "fields": {
+      "Name": "capital",
+      "Icon": "capital"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "capital"
+      }
+    ]
+  },
+  {
+    "id": "carrier_commander",
+    "type": "character-traits",
+    "displayName": "Carrier Commander",
+    "icon": "carrier_commander",
+    "fields": {
+      "Name": "carrier_commander",
+      "Icon": "carrier_commander"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carrier_commander"
+      }
+    ]
+  },
+  {
+    "id": "cautious",
+    "type": "character-traits",
+    "displayName": "Cautious",
+    "icon": "cautious",
+    "fields": {
+      "Name": "cautious",
+      "Icon": "cautious"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cautious"
+      }
+    ]
+  },
+  {
+    "id": "characterEffortAdd",
+    "type": "character-traits",
+    "displayName": "Character Effort Add",
+    "icon": "characterEffortAdd",
+    "fields": {
+      "Name": "characterEffortAdd",
+      "Icon": "characterEffortAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "characterEffortAdd"
+      }
+    ]
+  },
+  {
+    "id": "charisma",
+    "type": "character-traits",
+    "displayName": "Charisma",
+    "icon": "charisma",
+    "fields": {
+      "Name": "charisma",
+      "Icon": "charisma"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "commander",
+    "type": "character-traits",
+    "displayName": "Commander",
+    "icon": "commander",
+    "fields": {
+      "Name": "commander",
+      "Icon": "commander"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "commander"
+      }
+    ]
+  },
+  {
+    "id": "commerce_raider",
+    "type": "character-traits",
+    "displayName": "Commerce Raider",
+    "icon": "commerce_raider",
+    "fields": {
+      "Name": "commerce_raider",
+      "Icon": "commerce_raider"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "commerce_raider"
+      }
+    ]
+  },
+  {
+    "id": "creative",
+    "type": "character-traits",
+    "displayName": "Creative",
+    "icon": "creative",
+    "fields": {
+      "Name": "creative",
+      "Icon": "creative"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "creative"
+      }
+    ]
+  },
+  {
+    "id": "determined",
+    "type": "character-traits",
+    "displayName": "Determined",
+    "icon": "determined",
+    "fields": {
+      "Name": "determined",
+      "Icon": "determined"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "determined"
+      }
+    ]
+  },
+  {
+    "id": "diplomacyCapacity",
+    "type": "character-traits",
+    "displayName": "Diplomacy Capacity",
+    "icon": "diplomacyCapacity",
+    "fields": {
+      "Name": "diplomacyCapacity",
+      "Icon": "diplomacyCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacyCapacity"
+      }
+    ]
+  },
+  {
+    "id": "diplomat",
+    "type": "character-traits",
+    "displayName": "Diplomat",
+    "icon": "diplomat",
+    "fields": {
+      "Name": "diplomat",
+      "Icon": "diplomat"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomat"
+      }
+    ]
+  },
+  {
+    "id": "duelist",
+    "type": "character-traits",
+    "displayName": "Duelist",
+    "icon": "duelist",
+    "fields": {
+      "Name": "duelist",
+      "Icon": "duelist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "duelist"
+      }
+    ]
+  },
+  {
     "id": "economist",
     "type": "character-traits",
     "displayName": "Economist",
     "icon": "economist",
     "fields": {
       "Name": "economist",
-      "Type": 0,
-      "Category": "management",
-      "Icon": "economist",
-      "TechPrerequisite": {
-        "A": "None",
-        "B": "None"
-      }
+      "Icon": "economist"
     },
-    "modifiers": [
-      {
-        "key": "leaderSkillAdd",
-        "value1": "management",
-        "value": 1
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "economist"
+      }
+    ]
+  },
+  {
+    "id": "educationEfficiency",
+    "type": "character-traits",
+    "displayName": "Education Efficiency",
+    "icon": "educationEfficiency",
+    "fields": {
+      "Name": "educationEfficiency",
+      "Icon": "educationEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "educator",
+    "type": "character-traits",
+    "displayName": "Educator",
+    "icon": "educator",
+    "fields": {
+      "Name": "educator",
+      "Icon": "educator"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educator"
+      }
+    ]
+  },
+  {
+    "id": "electronicsFactory",
+    "type": "character-traits",
+    "displayName": "Electronics Factory",
+    "icon": "electronicsFactory",
+    "fields": {
+      "Name": "electronicsFactory",
+      "Icon": "electronicsFactory"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "electronicsFactory"
+      }
+    ]
+  },
+  {
+    "id": "investor_experienced",
+    "type": "character-traits",
+    "displayName": "Experienced Investor",
+    "icon": "investor_experienced",
+    "fields": {
+      "Name": "investor_experienced",
+      "Icon": "investor_experienced"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "investor_experienced"
+      }
+    ]
+  },
+  {
+    "id": "networker_experienced",
+    "type": "character-traits",
+    "displayName": "Experienced Networker",
+    "icon": "networker_experienced",
+    "fields": {
+      "Name": "networker_experienced",
+      "Icon": "networker_experienced"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "networker_experienced"
+      }
+    ]
+  },
+  {
+    "id": "factionLoyaltyAdd",
+    "type": "character-traits",
+    "displayName": "Faction Loyalty Add",
+    "icon": "factionLoyaltyAdd",
+    "fields": {
+      "Name": "factionLoyaltyAdd",
+      "Icon": "factionLoyaltyAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionLoyaltyAdd"
+      }
+    ]
+  },
+  {
+    "id": "field_marshal",
+    "type": "character-traits",
+    "displayName": "Field Marshal",
+    "icon": "field_marshal",
+    "fields": {
+      "Name": "field_marshal",
+      "Icon": "field_marshal"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "field_marshal"
+      }
+    ]
+  },
+  {
+    "id": "air_ace",
+    "type": "character-traits",
+    "displayName": "Fighter Ace",
+    "icon": "air_ace",
+    "fields": {
+      "Name": "air_ace",
+      "Icon": "air_ace"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "air_ace"
+      }
+    ]
+  },
+  {
+    "id": "fleet_commander",
+    "type": "character-traits",
+    "displayName": "Fleet Commander",
+    "icon": "fleet_commander",
+    "fields": {
+      "Name": "fleet_commander",
+      "Icon": "fleet_commander"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fleet_commander"
+      }
+    ]
+  },
+  {
+    "id": "gamer",
+    "type": "character-traits",
+    "displayName": "Gamer",
+    "icon": "gamer",
+    "fields": {
+      "Name": "gamer",
+      "Icon": "gamer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gamer"
+      }
+    ]
+  },
+  {
+    "id": "general",
+    "type": "character-traits",
+    "displayName": "General",
+    "icon": "general",
+    "fields": {
+      "Name": "general",
+      "Icon": "general"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "general"
+      }
+    ]
+  },
+  {
+    "id": "governRegion",
+    "type": "character-traits",
+    "displayName": "Govern Region",
+    "icon": "governRegion",
+    "fields": {
+      "Name": "governRegion",
+      "Icon": "governRegion"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "governRegion"
+      }
+    ]
+  },
+  {
+    "id": "greatBusinessman",
+    "type": "character-traits",
+    "displayName": "Great Businessman",
+    "icon": "greatBusinessman",
+    "fields": {
+      "Name": "greatBusinessman",
+      "Icon": "greatBusinessman"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greatBusinessman"
+      }
+    ]
+  },
+  {
+    "id": "greatConqueror",
+    "type": "character-traits",
+    "displayName": "Great Conqueror",
+    "icon": "greatConqueror",
+    "fields": {
+      "Name": "greatConqueror",
+      "Icon": "greatConqueror"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greatConqueror"
+      }
+    ]
+  },
+  {
+    "id": "greatScientist",
+    "type": "character-traits",
+    "displayName": "Great Scientist",
+    "icon": "greatScientist",
+    "fields": {
+      "Name": "greatScientist",
+      "Icon": "greatScientist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greatScientist"
+      }
+    ]
+  },
+  {
+    "id": "greatStatesman",
+    "type": "character-traits",
+    "displayName": "Great Statesman",
+    "icon": "greatStatesman",
+    "fields": {
+      "Name": "greatStatesman",
+      "Icon": "greatStatesman"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greatStatesman"
+      }
+    ]
+  },
+  {
+    "id": "greedy",
+    "type": "character-traits",
+    "displayName": "Greedy",
+    "icon": "greedy",
+    "fields": {
+      "Name": "greedy",
+      "Icon": "greedy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greedy"
+      }
+    ]
+  },
+  {
+    "id": "hacker",
+    "type": "character-traits",
+    "displayName": "Hacker",
+    "icon": "hacker",
+    "fields": {
+      "Name": "hacker",
+      "Icon": "hacker"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hacker"
+      }
+    ]
+  },
+  {
+    "id": "hedonist",
+    "type": "character-traits",
+    "displayName": "Hedonist",
+    "icon": "hedonist",
+    "fields": {
+      "Name": "hedonist",
+      "Icon": "hedonist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hedonist"
+      }
+    ]
+  },
+  {
+    "id": "honest",
+    "type": "character-traits",
+    "displayName": "Honest",
+    "icon": "honest",
+    "fields": {
+      "Name": "honest",
+      "Icon": "honest"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "honest"
+      }
+    ]
+  },
+  {
+    "id": "imbecile",
+    "type": "character-traits",
+    "displayName": "Imbecile",
+    "icon": "imbecile",
+    "fields": {
+      "Name": "imbecile",
+      "Icon": "imbecile"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "imbecile"
+      }
+    ]
+  },
+  {
+    "id": "incompetent",
+    "type": "character-traits",
+    "displayName": "Incompetent",
+    "icon": "incompetent",
+    "fields": {
+      "Name": "incompetent",
+      "Icon": "incompetent"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "incompetent"
+      }
+    ]
+  },
+  {
+    "id": "infantry",
+    "type": "character-traits",
+    "displayName": "Infantry",
+    "icon": "infantry",
+    "fields": {
+      "Name": "infantry",
+      "Icon": "infantry"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infantry"
+      }
+    ]
+  },
+  {
+    "id": "infantry_leader",
+    "type": "character-traits",
+    "displayName": "Infantry Leader",
+    "icon": "infantry_leader",
+    "fields": {
+      "Name": "infantry_leader",
+      "Icon": "infantry_leader"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infantry_leader"
+      }
+    ]
+  },
+  {
+    "id": "influencer",
+    "type": "character-traits",
+    "displayName": "Influencer",
+    "icon": "influencer",
+    "fields": {
+      "Name": "influencer",
+      "Icon": "influencer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "influencer"
+      }
+    ]
+  },
+  {
+    "id": "integrationCostMult",
+    "type": "character-traits",
+    "displayName": "Integration Cost Mult",
+    "icon": "integrationCostMult",
+    "fields": {
+      "Name": "integrationCostMult",
+      "Icon": "integrationCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "integrationCostMult"
+      }
+    ]
+  },
+  {
+    "id": "intelligent",
+    "type": "character-traits",
+    "displayName": "Intelligent",
+    "icon": "intelligent",
+    "fields": {
+      "Name": "intelligent",
+      "Icon": "intelligent"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "intelligent"
+      }
+    ]
+  },
+  {
+    "id": "interceptor",
+    "type": "character-traits",
+    "displayName": "Interceptor",
+    "icon": "interceptor",
+    "fields": {
+      "Name": "interceptor",
+      "Icon": "interceptor"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interceptor"
+      }
+    ]
+  },
+  {
+    "id": "interiorMinister",
+    "type": "character-traits",
+    "displayName": "Interior Minister",
+    "icon": "interiorMinister",
+    "fields": {
+      "Name": "interiorMinister",
+      "Icon": "interiorMinister"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interiorMinister"
+      }
+    ]
+  },
+  {
+    "id": "introvert",
+    "type": "character-traits",
+    "displayName": "Introvert",
+    "icon": "introvert",
+    "fields": {
+      "Name": "introvert",
+      "Icon": "introvert"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "introvert"
+      }
+    ]
+  },
+  {
+    "id": "investor",
+    "type": "character-traits",
+    "displayName": "Investor",
+    "icon": "investor",
+    "fields": {
+      "Name": "investor",
+      "Icon": "investor"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "investor"
+      }
+    ]
+  },
+  {
+    "id": "irritable",
+    "type": "character-traits",
+    "displayName": "Irritable",
+    "icon": "irritable",
+    "fields": {
+      "Name": "irritable",
+      "Icon": "irritable"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "irritable"
+      }
+    ]
+  },
+  {
+    "id": "ji2",
+    "type": "character-traits",
+    "displayName": "Ji2",
+    "icon": "ji2",
+    "fields": {
+      "Name": "ji2",
+      "Icon": "ji2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ji2"
+      }
+    ]
+  },
+  {
+    "id": "kbPpO",
+    "type": "character-traits",
+    "displayName": "Kb Pp O",
+    "icon": "kbPpO",
+    "fields": {
+      "Name": "kbPpO",
+      "Icon": "kbPpO"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "kbPpO"
+      }
+    ]
+  },
+  {
+    "id": "leaderLifeSpanAdd",
+    "type": "character-traits",
+    "displayName": "Leader Life Span Add",
+    "icon": "leaderLifeSpanAdd",
+    "fields": {
+      "Name": "leaderLifeSpanAdd",
+      "Icon": "leaderLifeSpanAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leaderLifeSpanAdd"
+      }
+    ]
+  },
+  {
+    "id": "leaderSkillAdd",
+    "type": "character-traits",
+    "displayName": "Leader Skill Add",
+    "icon": "leaderSkillAdd",
+    "fields": {
+      "Name": "leaderSkillAdd",
+      "Icon": "leaderSkillAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leaderSkillAdd"
+      }
+    ]
+  },
+  {
+    "id": "leaderXPGain",
+    "type": "character-traits",
+    "displayName": "Leader XPGain",
+    "icon": "leaderXPGain",
+    "fields": {
+      "Name": "leaderXPGain",
+      "Icon": "leaderXPGain"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leaderXPGain"
+      }
+    ]
+  },
+  {
+    "id": "logical",
+    "type": "character-traits",
+    "displayName": "Logical",
+    "icon": "logical",
+    "fields": {
+      "Name": "logical",
+      "Icon": "logical"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logical"
+      }
+    ]
+  },
+  {
+    "id": "logistician",
+    "type": "character-traits",
+    "displayName": "Logistician",
+    "icon": "logistician",
+    "fields": {
+      "Name": "logistician",
+      "Icon": "logistician"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logistician"
+      }
+    ]
+  },
+  {
+    "id": "mad_scientist",
+    "type": "character-traits",
+    "displayName": "Mad Scientist",
+    "icon": "mad_scientist",
+    "fields": {
+      "Name": "mad_scientist",
+      "Icon": "mad_scientist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mad_scientist"
+      }
+    ]
+  },
+  {
+    "id": "maganate",
+    "type": "character-traits",
+    "displayName": "Maganate",
+    "icon": "maganate",
+    "fields": {
+      "Name": "maganate",
+      "Icon": "maganate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "maganate"
+      }
+    ]
+  },
+  {
+    "id": "management",
+    "type": "character-traits",
+    "displayName": "Management",
+    "icon": "management",
+    "fields": {
+      "Name": "management",
+      "Icon": "management"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "investor_master",
+    "type": "character-traits",
+    "displayName": "Master Investor",
+    "icon": "investor_master",
+    "fields": {
+      "Name": "investor_master",
+      "Icon": "investor_master"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "investor_master"
+      }
+    ]
+  },
+  {
+    "id": "masterful",
+    "type": "character-traits",
+    "displayName": "Masterful",
+    "icon": "masterful",
+    "fields": {
+      "Name": "masterful",
+      "Icon": "masterful"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "masterful"
+      }
+    ]
+  },
+  {
+    "id": "meticulous",
+    "type": "character-traits",
+    "displayName": "Meticulous",
+    "icon": "meticulous",
+    "fields": {
+      "Name": "meticulous",
+      "Icon": "meticulous"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "meticulous"
+      }
+    ]
+  },
+  {
+    "id": "networker",
+    "type": "character-traits",
+    "displayName": "Networker",
+    "icon": "networker",
+    "fields": {
+      "Name": "networker",
+      "Icon": "networker"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "networker"
+      }
+    ]
+  },
+  {
+    "id": "oW7",
+    "type": "character-traits",
+    "displayName": "O W7",
+    "icon": "oW7",
+    "fields": {
+      "Name": "oW7",
+      "Icon": "oW7"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "oW7"
+      }
+    ]
+  },
+  {
+    "id": "optimist",
+    "type": "character-traits",
+    "displayName": "Optimist",
+    "icon": "optimist",
+    "fields": {
+      "Name": "optimist",
+      "Icon": "optimist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "optimist"
+      }
+    ]
+  },
+  {
+    "id": "organized",
+    "type": "character-traits",
+    "displayName": "Organized",
+    "icon": "organized",
+    "fields": {
+      "Name": "organized",
+      "Icon": "organized"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "organized"
+      }
+    ]
+  },
+  {
+    "id": "overseer",
+    "type": "character-traits",
+    "displayName": "Overseer",
+    "icon": "overseer",
+    "fields": {
+      "Name": "overseer",
+      "Icon": "overseer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "overseer"
+      }
+    ]
+  },
+  {
+    "id": "paragon",
+    "type": "character-traits",
+    "displayName": "Paragon",
+    "icon": "paragon",
+    "fields": {
+      "Name": "paragon",
+      "Icon": "paragon"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "paragon"
+      }
+    ]
+  },
+  {
+    "id": "paranoid",
+    "type": "character-traits",
+    "displayName": "Paranoid",
+    "icon": "paranoid",
+    "fields": {
+      "Name": "paranoid",
+      "Icon": "paranoid"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "paranoid"
+      }
+    ]
+  },
+  {
+    "id": "politician",
+    "type": "character-traits",
+    "displayName": "Politician",
+    "icon": "politician",
+    "fields": {
+      "Name": "politician",
+      "Icon": "politician"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "politician"
+      }
+    ]
+  },
+  {
+    "id": "powermonger",
+    "type": "character-traits",
+    "displayName": "Powermonger",
+    "icon": "powermonger",
+    "fields": {
+      "Name": "powermonger",
+      "Icon": "powermonger"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "powermonger"
+      }
+    ]
+  },
+  {
+    "id": "pretty",
+    "type": "character-traits",
+    "displayName": "Pretty",
+    "icon": "pretty",
+    "fields": {
+      "Name": "pretty",
+      "Icon": "pretty"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "pretty"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildCostMult",
+    "type": "character-traits",
+    "displayName": "Project Build Cost Mult",
+    "icon": "projectBuildCostMult",
+    "fields": {
+      "Name": "projectBuildCostMult",
+      "Icon": "projectBuildCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildCostMult"
+      }
+    ]
+  },
+  {
+    "id": "projectEfficiency",
+    "type": "character-traits",
+    "displayName": "Project Efficiency",
+    "icon": "projectEfficiency",
+    "fields": {
+      "Name": "projectEfficiency",
+      "Icon": "projectEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "quickLearner",
+    "type": "character-traits",
+    "displayName": "Quick Learner",
+    "icon": "quickLearner",
+    "fields": {
+      "Name": "quickLearner",
+      "Icon": "quickLearner"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "quickLearner"
+      }
+    ]
+  },
+  {
+    "id": "rangedAttackMult",
+    "type": "character-traits",
+    "displayName": "Ranged Attack Mult",
+    "icon": "rangedAttackMult",
+    "fields": {
+      "Name": "rangedAttackMult",
+      "Icon": "rangedAttackMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rangedAttackMult"
+      }
+    ]
+  },
+  {
+    "id": "reformCostMult",
+    "type": "character-traits",
+    "displayName": "Reform Cost Mult",
+    "icon": "reformCostMult",
+    "fields": {
+      "Name": "reformCostMult",
+      "Icon": "reformCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reformCostMult"
+      }
+    ]
+  },
+  {
+    "id": "research",
+    "type": "character-traits",
+    "displayName": "Research",
+    "icon": "research",
+    "fields": {
+      "Name": "research",
+      "Icon": "research"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  },
+  {
+    "id": "researchMult",
+    "type": "character-traits",
+    "displayName": "Research Mult",
+    "icon": "researchMult",
+    "fields": {
+      "Name": "researchMult",
+      "Icon": "researchMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "researchMult"
+      }
+    ]
+  },
+  {
+    "id": "resilient",
+    "type": "character-traits",
+    "displayName": "Resilient",
+    "icon": "resilient",
+    "fields": {
+      "Name": "resilient",
+      "Icon": "resilient"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resilient"
+      }
+    ]
+  },
+  {
+    "id": "resourceCapacityMult",
+    "type": "character-traits",
+    "displayName": "Resource Capacity Mult",
+    "icon": "resourceCapacityMult",
+    "fields": {
+      "Name": "resourceCapacityMult",
+      "Icon": "resourceCapacityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceModifier",
+    "type": "character-traits",
+    "displayName": "Resource Modifier",
+    "icon": "resourceModifier",
+    "fields": {
+      "Name": "resourceModifier",
+      "Icon": "resourceModifier"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceModifier"
+      }
+    ]
+  },
+  {
+    "id": "resourceMult",
+    "type": "character-traits",
+    "displayName": "Resource Mult",
+    "icon": "resourceMult",
+    "fields": {
+      "Name": "resourceMult",
+      "Icon": "resourceMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceMult"
+      }
+    ]
+  },
+  {
+    "id": "ruler",
+    "type": "character-traits",
+    "displayName": "Ruler",
+    "icon": "ruler",
+    "fields": {
+      "Name": "ruler",
+      "Icon": "ruler"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ruler"
+      }
+    ]
+  },
+  {
+    "id": "sapper",
+    "type": "character-traits",
+    "displayName": "Sapper",
+    "icon": "sapper",
+    "fields": {
+      "Name": "sapper",
+      "Icon": "sapper"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sapper"
+      }
+    ]
+  },
+  {
+    "id": "scientist",
+    "type": "character-traits",
+    "displayName": "Scientist",
+    "icon": "scientist",
+    "fields": {
+      "Name": "scientist",
+      "Icon": "scientist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "scientist"
+      }
+    ]
+  },
+  {
+    "id": "screen",
+    "type": "character-traits",
+    "displayName": "Screen",
+    "icon": "screen",
+    "fields": {
+      "Name": "screen",
+      "Icon": "screen"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "screen"
+      }
+    ]
+  },
+  {
+    "id": "silver_tongue",
+    "type": "character-traits",
+    "displayName": "Silver Tongue",
+    "icon": "silver_tongue",
+    "fields": {
+      "Name": "silver_tongue",
+      "Icon": "silver_tongue"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "silver_tongue"
+      }
+    ]
+  },
+  {
+    "id": "socialite",
+    "type": "character-traits",
+    "displayName": "Socialite",
+    "icon": "socialite",
+    "fields": {
+      "Name": "socialite",
+      "Icon": "socialite"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "socialite"
+      }
+    ]
+  },
+  {
+    "id": "software_engineer",
+    "type": "character-traits",
+    "displayName": "Software Engineer",
+    "icon": "software_engineer",
+    "fields": {
+      "Name": "software_engineer",
+      "Icon": "software_engineer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "software_engineer"
+      }
+    ]
+  },
+  {
+    "id": "stabilityGainAdd",
+    "type": "character-traits",
+    "displayName": "Stability Gain Add",
+    "icon": "stabilityGainAdd",
+    "fields": {
+      "Name": "stabilityGainAdd",
+      "Icon": "stabilityGainAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stabilityGainAdd"
+      }
+    ]
+  },
+  {
+    "id": "strategist",
+    "type": "character-traits",
+    "displayName": "Strategist",
+    "icon": "strategist",
+    "fields": {
+      "Name": "strategist",
+      "Icon": "strategist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategist"
+      }
+    ]
+  },
+  {
+    "id": "strategy",
+    "type": "character-traits",
+    "displayName": "Strategy",
+    "icon": "strategy",
+    "fields": {
+      "Name": "strategy",
+      "Icon": "strategy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "stupid",
+    "type": "character-traits",
+    "displayName": "Stupid",
+    "icon": "stupid",
+    "fields": {
+      "Name": "stupid",
+      "Icon": "stupid"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stupid"
+      }
+    ]
+  },
+  {
+    "id": "subversive",
+    "type": "character-traits",
+    "displayName": "Subversion",
+    "icon": "subversive",
+    "fields": {
+      "Name": "subversive",
+      "Icon": "subversive"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "superior",
+    "type": "character-traits",
+    "displayName": "Superior",
+    "icon": "superior",
+    "fields": {
+      "Name": "superior",
+      "Icon": "superior"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superior"
+      }
+    ]
+  },
+  {
+    "id": "tank",
+    "type": "character-traits",
+    "displayName": "Tank",
+    "icon": "tank",
+    "fields": {
+      "Name": "tank",
+      "Icon": "tank"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank"
+      }
+    ]
+  },
+  {
+    "id": "tank_commander",
+    "type": "character-traits",
+    "displayName": "Tank Commander",
+    "icon": "tank_commander",
+    "fields": {
+      "Name": "tank_commander",
+      "Icon": "tank_commander"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank_commander"
+      }
+    ]
+  },
+  {
+    "id": "taskmaster",
+    "type": "character-traits",
+    "displayName": "Taskmaster",
+    "icon": "taskmaster",
+    "fields": {
+      "Name": "taskmaster",
+      "Icon": "taskmaster"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "taskmaster"
+      }
+    ]
+  },
+  {
+    "id": "technologist",
+    "type": "character-traits",
+    "displayName": "Technologist",
+    "icon": "technologist",
+    "fields": {
+      "Name": "technologist",
+      "Icon": "technologist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "technologist"
+      }
+    ]
+  },
+  {
+    "id": "trickster",
+    "type": "character-traits",
+    "displayName": "Trickster",
+    "icon": "trickster",
+    "fields": {
+      "Name": "trickster",
+      "Icon": "trickster"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trickster"
+      }
+    ]
+  },
+  {
+    "id": "u3Vaj",
+    "type": "character-traits",
+    "displayName": "U3Vaj",
+    "icon": "u3Vaj",
+    "fields": {
+      "Name": "u3Vaj",
+      "Icon": "u3Vaj"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "u3Vaj"
+      }
+    ]
+  },
+  {
+    "id": "unitAttackMult",
+    "type": "character-traits",
+    "displayName": "Unit Attack Mult",
+    "icon": "unitAttackMult",
+    "fields": {
+      "Name": "unitAttackMult",
+      "Icon": "unitAttackMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitAttackMult"
+      }
+    ]
+  },
+  {
+    "id": "unitCommander",
+    "type": "character-traits",
+    "displayName": "Unit Commander",
+    "icon": "unitCommander",
+    "fields": {
+      "Name": "unitCommander",
+      "Icon": "unitCommander"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitCommander"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleMult",
+    "type": "character-traits",
+    "displayName": "Unit Morale Mult",
+    "icon": "unitMoraleMult",
+    "fields": {
+      "Name": "unitMoraleMult",
+      "Icon": "unitMoraleMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleMult"
+      }
+    ]
+  },
+  {
+    "id": "unitReinforceRateMult",
+    "type": "character-traits",
+    "displayName": "Unit Reinforce Rate Mult",
+    "icon": "unitReinforceRateMult",
+    "fields": {
+      "Name": "unitReinforceRateMult",
+      "Icon": "unitReinforceRateMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitReinforceRateMult"
+      }
+    ]
+  },
+  {
+    "id": "unitSpeedMult",
+    "type": "character-traits",
+    "displayName": "Unit Speed Mult",
+    "icon": "unitSpeedMult",
+    "fields": {
+      "Name": "unitSpeedMult",
+      "Icon": "unitSpeedMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitSpeedMult"
+      }
+    ]
+  },
+  {
+    "id": "unitStatMult",
+    "type": "character-traits",
+    "displayName": "Unit Stat Mult",
+    "icon": "unitStatMult",
+    "fields": {
+      "Name": "unitStatMult",
+      "Icon": "unitStatMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitStatMult"
+      }
+    ]
+  },
+  {
+    "id": "unityMult",
+    "type": "character-traits",
+    "displayName": "Unity Mult",
+    "icon": "unityMult",
+    "fields": {
+      "Name": "unityMult",
+      "Icon": "unityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unityMult"
+      }
+    ]
+  },
+  {
+    "id": "university",
+    "type": "character-traits",
+    "displayName": "University",
+    "icon": "university",
+    "fields": {
+      "Name": "university",
+      "Icon": "university"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "university"
+      }
+    ]
+  },
+  {
+    "id": "unrestChangeAdd",
+    "type": "character-traits",
+    "displayName": "Unrest Change Add",
+    "icon": "unrestChangeAdd",
+    "fields": {
+      "Name": "unrestChangeAdd",
+      "Icon": "unrestChangeAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unrestChangeAdd"
+      }
+    ]
+  },
+  {
+    "id": "warmaster",
+    "type": "character-traits",
+    "displayName": "Warmaster",
+    "icon": "warmaster",
+    "fields": {
+      "Name": "warmaster",
+      "Icon": "warmaster"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warmaster"
+      }
+    ]
+  },
+  {
+    "id": "breakthrough",
+    "type": "character-traits",
+    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+    "icon": "breakthrough",
+    "fields": {
+      "Name": "breakthrough",
+      "Icon": "breakthrough"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breakthrough"
+      }
+    ]
+  },
+  {
+    "id": "wypl",
+    "type": "character-traits",
+    "displayName": "Wypl",
+    "icon": "wypl",
+    "fields": {
+      "Name": "wypl",
+      "Icon": "wypl"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "wypl"
+      }
+    ]
+  },
+  {
+    "id": "zRk",
+    "type": "character-traits",
+    "displayName": "Z Rk",
+    "icon": "zRk",
+    "fields": {
+      "Name": "zRk",
+      "Icon": "zRk"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "zRk"
       }
     ]
   }

@@ -1,8 +1,746 @@
 [
   {
+    "id": "form_administration",
+    "type": "government-reform-options",
+    "displayName": "Administration",
+    "icon": "form_administration",
+    "fields": {
+      "Name": "form_administration",
+      "Icon": "form_administration"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_administration"
+      }
+    ]
+  },
+  {
+    "id": "economy_agrarian",
+    "type": "government-reform-options",
+    "displayName": "Agrarian",
+    "icon": "economy_agrarian",
+    "fields": {
+      "Name": "economy_agrarian",
+      "Icon": "economy_agrarian"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_agrarian"
+      }
+    ]
+  },
+  {
+    "id": "economy_algorithmic",
+    "type": "government-reform-options",
+    "displayName": "Algorithmic",
+    "icon": "economy_algorithmic",
+    "fields": {
+      "Name": "economy_algorithmic",
+      "Icon": "economy_algorithmic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_algorithmic"
+      }
+    ]
+  },
+  {
+    "id": "form_empire",
+    "type": "government-reform-options",
+    "displayName": "Autocracy",
+    "icon": "form_empire",
+    "fields": {
+      "Name": "form_empire",
+      "Icon": "form_empire"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_empire"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_hivemind",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Hivemind",
+    "icon": "civilLiberty_hivemind",
+    "fields": {
+      "Name": "civilLiberty_hivemind",
+      "Icon": "civilLiberty_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_hypocritical",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Hypocritical",
+    "icon": "civilLiberty_hypocritical",
+    "fields": {
+      "Name": "civilLiberty_hypocritical",
+      "Icon": "civilLiberty_hypocritical"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_hypocritical"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_liberal",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Liberal",
+    "icon": "civilLiberty_liberal",
+    "fields": {
+      "Name": "civilLiberty_liberal",
+      "Icon": "civilLiberty_liberal"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_liberal"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_neutral",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Neutral",
+    "icon": "civilLiberty_neutral",
+    "fields": {
+      "Name": "civilLiberty_neutral",
+      "Icon": "civilLiberty_neutral"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_neutral"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_restricted",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Restricted",
+    "icon": "civilLiberty_restricted",
+    "fields": {
+      "Name": "civilLiberty_restricted",
+      "Icon": "civilLiberty_restricted"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_restricted"
+      }
+    ]
+  },
+  {
+    "id": "civilLiberty_totalitarian",
+    "type": "government-reform-options",
+    "displayName": "Civil Liberty Totalitarian",
+    "icon": "civilLiberty_totalitarian",
+    "fields": {
+      "Name": "civilLiberty_totalitarian",
+      "Icon": "civilLiberty_totalitarian"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_totalitarian"
+      }
+    ]
+  },
+  {
+    "id": "form_corporation",
+    "type": "government-reform-options",
+    "displayName": "Corporation",
+    "icon": "form_corporation",
+    "fields": {
+      "Name": "form_corporation",
+      "Icon": "form_corporation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_corporation"
+      }
+    ]
+  },
+  {
+    "id": "economy_corporatism",
+    "type": "government-reform-options",
+    "displayName": "Corporatism",
+    "icon": "economy_corporatism",
+    "fields": {
+      "Name": "economy_corporatism",
+      "Icon": "economy_corporatism"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_corporatism"
+      }
+    ]
+  },
+  {
+    "id": "economy_hivemind",
+    "type": "government-reform-options",
+    "displayName": "Economic Organ",
+    "icon": "economy_hivemind",
+    "fields": {
+      "Name": "economy_hivemind",
+      "Icon": "economy_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "economy_lassezFaire",
+    "type": "government-reform-options",
+    "displayName": "Economy Lassez Faire",
+    "icon": "economy_lassezFaire",
+    "fields": {
+      "Name": "economy_lassezFaire",
+      "Icon": "economy_lassezFaire"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_lassezFaire"
+      }
+    ]
+  },
+  {
+    "id": "educationSpending_high",
+    "type": "government-reform-options",
+    "displayName": "Education Spending High",
+    "icon": "educationSpending_high",
+    "fields": {
+      "Name": "educationSpending_high",
+      "Icon": "educationSpending_high"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationSpending_high"
+      }
+    ]
+  },
+  {
+    "id": "educationSpending_low",
+    "type": "government-reform-options",
+    "displayName": "Education Spending Low",
+    "icon": "educationSpending_low",
+    "fields": {
+      "Name": "educationSpending_low",
+      "Icon": "educationSpending_low"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationSpending_low"
+      }
+    ]
+  },
+  {
+    "id": "educationSpending_medium",
+    "type": "government-reform-options",
+    "displayName": "Education Spending Medium",
+    "icon": "educationSpending_medium",
+    "fields": {
+      "Name": "educationSpending_medium",
+      "Icon": "educationSpending_medium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationSpending_medium"
+      }
+    ]
+  },
+  {
+    "id": "educationSpending_none",
+    "type": "government-reform-options",
+    "displayName": "Education Spending None",
+    "icon": "educationSpending_none",
+    "fields": {
+      "Name": "educationSpending_none",
+      "Icon": "educationSpending_none"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationSpending_none"
+      }
+    ]
+  },
+  {
+    "id": "espionagePolicy_defense",
+    "type": "government-reform-options",
+    "displayName": "Espionage Policy Defense",
+    "icon": "espionagePolicy_defense",
+    "fields": {
+      "Name": "espionagePolicy_defense",
+      "Icon": "espionagePolicy_defense"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePolicy_defense"
+      }
+    ]
+  },
+  {
+    "id": "espionagePolicy_offense",
+    "type": "government-reform-options",
+    "displayName": "Espionage Policy Offense",
+    "icon": "espionagePolicy_offense",
+    "fields": {
+      "Name": "espionagePolicy_offense",
+      "Icon": "espionagePolicy_offense"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePolicy_offense"
+      }
+    ]
+  },
+  {
+    "id": "fiscalPolicy_austerity",
+    "type": "government-reform-options",
+    "displayName": "Fiscal Policy Austerity",
+    "icon": "fiscalPolicy_austerity",
+    "fields": {
+      "Name": "fiscalPolicy_austerity",
+      "Icon": "fiscalPolicy_austerity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fiscalPolicy_austerity"
+      }
+    ]
+  },
+  {
+    "id": "fiscalPolicy_hyperinflation",
+    "type": "government-reform-options",
+    "displayName": "Fiscal Policy Hyperinflation",
+    "icon": "fiscalPolicy_hyperinflation",
+    "fields": {
+      "Name": "fiscalPolicy_hyperinflation",
+      "Icon": "fiscalPolicy_hyperinflation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fiscalPolicy_hyperinflation"
+      }
+    ]
+  },
+  {
+    "id": "fiscalPolicy_inflation",
+    "type": "government-reform-options",
+    "displayName": "Fiscal Policy Inflation",
+    "icon": "fiscalPolicy_inflation",
+    "fields": {
+      "Name": "fiscalPolicy_inflation",
+      "Icon": "fiscalPolicy_inflation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fiscalPolicy_inflation"
+      }
+    ]
+  },
+  {
+    "id": "fiscalPolicy_neutral",
+    "type": "government-reform-options",
+    "displayName": "Fiscal Policy Neutral",
+    "icon": "fiscalPolicy_neutral",
+    "fields": {
+      "Name": "fiscalPolicy_neutral",
+      "Icon": "fiscalPolicy_neutral"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fiscalPolicy_neutral"
+      }
+    ]
+  },
+  {
+    "id": "focus_construction",
+    "type": "government-reform-options",
+    "displayName": "Focus Construction",
+    "icon": "focus_construction",
+    "fields": {
+      "Name": "focus_construction",
+      "Icon": "focus_construction"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_construction"
+      }
+    ]
+  },
+  {
+    "id": "focus_expansion",
+    "type": "government-reform-options",
+    "displayName": "Focus Expansion",
+    "icon": "focus_expansion",
+    "fields": {
+      "Name": "focus_expansion",
+      "Icon": "focus_expansion"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_expansion"
+      }
+    ]
+  },
+  {
+    "id": "focus_innovation",
+    "type": "government-reform-options",
+    "displayName": "Focus Innovation",
+    "icon": "focus_innovation",
+    "fields": {
+      "Name": "focus_innovation",
+      "Icon": "focus_innovation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_innovation"
+      }
+    ]
+  },
+  {
+    "id": "focus_politics",
+    "type": "government-reform-options",
+    "displayName": "Focus Politics",
+    "icon": "focus_politics",
+    "fields": {
+      "Name": "focus_politics",
+      "Icon": "focus_politics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_politics"
+      }
+    ]
+  },
+  {
+    "id": "focus_recruitment",
+    "type": "government-reform-options",
+    "displayName": "Focus Recruitment",
+    "icon": "focus_recruitment",
+    "fields": {
+      "Name": "focus_recruitment",
+      "Icon": "focus_recruitment"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_recruitment"
+      }
+    ]
+  },
+  {
+    "id": "form_hivemind",
+    "type": "government-reform-options",
+    "displayName": "Gestalt Consciousness",
+    "icon": "form_hivemind",
+    "fields": {
+      "Name": "form_hivemind",
+      "Icon": "form_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "economy_interventionism",
+    "type": "government-reform-options",
+    "displayName": "Interventionism",
+    "icon": "economy_interventionism",
+    "fields": {
+      "Name": "economy_interventionism",
+      "Icon": "economy_interventionism"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_interventionism"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_combinedArms",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Combined Arms",
+    "icon": "militaryDoctrine_combinedArms",
+    "fields": {
+      "Name": "militaryDoctrine_combinedArms",
+      "Icon": "militaryDoctrine_combinedArms"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_combinedArms"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_defensive",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Defensive",
+    "icon": "militaryDoctrine_defensive",
+    "fields": {
+      "Name": "militaryDoctrine_defensive",
+      "Icon": "militaryDoctrine_defensive"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_defensive"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_hivemind",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Hivemind",
+    "icon": "militaryDoctrine_hivemind",
+    "fields": {
+      "Name": "militaryDoctrine_hivemind",
+      "Icon": "militaryDoctrine_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_massAssault",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Mass Assault",
+    "icon": "militaryDoctrine_massAssault",
+    "fields": {
+      "Name": "militaryDoctrine_massAssault",
+      "Icon": "militaryDoctrine_massAssault"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_massAssault"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_mobile",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Mobile",
+    "icon": "militaryDoctrine_mobile",
+    "fields": {
+      "Name": "militaryDoctrine_mobile",
+      "Icon": "militaryDoctrine_mobile"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_mobile"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_softPower",
+    "type": "government-reform-options",
+    "displayName": "Military Doctrine Soft Power",
+    "icon": "militaryDoctrine_softPower",
+    "fields": {
+      "Name": "militaryDoctrine_softPower",
+      "Icon": "militaryDoctrine_softPower"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_softPower"
+      }
+    ]
+  },
+  {
+    "id": "form_monarchy",
+    "type": "government-reform-options",
+    "displayName": "Monarchy",
+    "icon": "form_monarchy",
+    "fields": {
+      "Name": "form_monarchy",
+      "Icon": "form_monarchy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_monarchy"
+      }
+    ]
+  },
+  {
+    "id": "form_oligarchy",
+    "type": "government-reform-options",
+    "displayName": "Oligarchy",
+    "icon": "form_oligarchy",
+    "fields": {
+      "Name": "form_oligarchy",
+      "Icon": "form_oligarchy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_oligarchy"
+      }
+    ]
+  },
+  {
+    "id": "form_totality",
+    "type": "government-reform-options",
+    "displayName": "One-Party State",
+    "icon": "form_totality",
+    "fields": {
+      "Name": "form_totality",
+      "Icon": "form_totality"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_totality"
+      }
+    ]
+  },
+  {
+    "id": "economy_planned",
+    "type": "government-reform-options",
+    "displayName": "Planned Economy",
+    "icon": "economy_planned",
+    "fields": {
+      "Name": "economy_planned",
+      "Icon": "economy_planned"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_planned"
+      }
+    ]
+  },
+  {
     "id": "form_republic",
     "type": "government-reform-options",
-    "displayName": "Form Republic",
+    "displayName": "Republic",
     "icon": "form_republic",
     "fields": {
       "Name": "form_republic",
@@ -14,6 +752,258 @@
       {
         "type": "icon",
         "id": "form_republic"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw_conscription",
+    "type": "government-reform-options",
+    "displayName": "Service Law Conscription",
+    "icon": "serviceLaw_conscription",
+    "fields": {
+      "Name": "serviceLaw_conscription",
+      "Icon": "serviceLaw_conscription"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "serviceLaw_conscription"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw_disarmed",
+    "type": "government-reform-options",
+    "displayName": "Service Law Disarmed",
+    "icon": "serviceLaw_disarmed",
+    "fields": {
+      "Name": "serviceLaw_disarmed",
+      "Icon": "serviceLaw_disarmed"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "serviceLaw_disarmed"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw_timed",
+    "type": "government-reform-options",
+    "displayName": "Service Law Timed",
+    "icon": "serviceLaw_timed",
+    "fields": {
+      "Name": "serviceLaw_timed",
+      "Icon": "serviceLaw_timed"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "serviceLaw_timed"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw_totalMobilization",
+    "type": "government-reform-options",
+    "displayName": "Service Law Total Mobilization",
+    "icon": "serviceLaw_totalMobilization",
+    "fields": {
+      "Name": "serviceLaw_totalMobilization",
+      "Icon": "serviceLaw_totalMobilization"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "serviceLaw_totalMobilization"
+      }
+    ]
+  },
+  {
+    "id": "spending_high",
+    "type": "government-reform-options",
+    "displayName": "Spending High",
+    "icon": "spending_high",
+    "fields": {
+      "Name": "spending_high",
+      "Icon": "spending_high"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_high"
+      }
+    ]
+  },
+  {
+    "id": "spending_low",
+    "type": "government-reform-options",
+    "displayName": "Spending Low",
+    "icon": "spending_low",
+    "fields": {
+      "Name": "spending_low",
+      "Icon": "spending_low"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_low"
+      }
+    ]
+  },
+  {
+    "id": "spending_medium",
+    "type": "government-reform-options",
+    "displayName": "Spending Medium",
+    "icon": "spending_medium",
+    "fields": {
+      "Name": "spending_medium",
+      "Icon": "spending_medium"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_medium"
+      }
+    ]
+  },
+  {
+    "id": "spending_none",
+    "type": "government-reform-options",
+    "displayName": "Spending None",
+    "icon": "spending_none",
+    "fields": {
+      "Name": "spending_none",
+      "Icon": "spending_none"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_none"
+      }
+    ]
+  },
+  {
+    "id": "form_algocracy",
+    "type": "government-reform-options",
+    "displayName": "Technocracy",
+    "icon": "form_algocracy",
+    "fields": {
+      "Name": "form_algocracy",
+      "Icon": "form_algocracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_algocracy"
+      }
+    ]
+  },
+  {
+    "id": "trade_autarky",
+    "type": "government-reform-options",
+    "displayName": "Trade Autarky",
+    "icon": "trade_autarky",
+    "fields": {
+      "Name": "trade_autarky",
+      "Icon": "trade_autarky"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_autarky"
+      }
+    ]
+  },
+  {
+    "id": "trade_inverted",
+    "type": "government-reform-options",
+    "displayName": "Trade Inverted",
+    "icon": "trade_inverted",
+    "fields": {
+      "Name": "trade_inverted",
+      "Icon": "trade_inverted"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_inverted"
+      }
+    ]
+  },
+  {
+    "id": "trade_protectionism",
+    "type": "government-reform-options",
+    "displayName": "Trade Protectionism",
+    "icon": "trade_protectionism",
+    "fields": {
+      "Name": "trade_protectionism",
+      "Icon": "trade_protectionism"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_protectionism"
+      }
+    ]
+  },
+  {
+    "id": "unitTraining_default",
+    "type": "government-reform-options",
+    "displayName": "Unit Training Default",
+    "icon": "unitTraining_default",
+    "fields": {
+      "Name": "unitTraining_default",
+      "Icon": "unitTraining_default"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitTraining_default"
+      }
+    ]
+  },
+  {
+    "id": "unitTraining_elite",
+    "type": "government-reform-options",
+    "displayName": "Unit Training Elite",
+    "icon": "unitTraining_elite",
+    "fields": {
+      "Name": "unitTraining_elite",
+      "Icon": "unitTraining_elite"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitTraining_elite"
       }
     ]
   }

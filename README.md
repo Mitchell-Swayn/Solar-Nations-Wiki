@@ -37,7 +37,7 @@ Default install path:
 ~/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/steamapps/common/Solar Nations 2/Windows/twilightModernity/
 ```
 
-See [docs/extraction.md](docs/extraction.md) for full base-game extraction via FModel.
+See [docs/extraction.md](docs/extraction.md) for full base-game extraction. On macOS, `npm run data` uses **retoc** + a legacy binary parser (~2,500+ entries). For complete modifier keys and numeric fields, export via **FModel** with a `.usmap` mappings file.
 
 ## Project structure
 
@@ -68,7 +68,7 @@ src/
 | `tutorialMod/missioncomponents.json` | 40 mission components |
 | `Saved/Flags/` | ~502 country flags |
 | `Saved/Icons/` | Game icons |
-| `data/raw/Defines/` | Full base-game export (via FModel) |
+| `data/raw/Defines/` | Base-game export via `npm run data` (retoc + parser) or FModel |
 
 ## Deploy to GitHub Pages
 

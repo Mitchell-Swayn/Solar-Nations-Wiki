@@ -1,46 +1,1189 @@
 [
   {
-    "id": "clergy_communist",
+    "id": "adminEfficiencyAdd",
     "type": "faction-variants",
-    "displayName": "Clergy Communist",
-    "icon": "communist",
+    "displayName": "Admin Efficiency Add",
+    "icon": "adminEfficiencyAdd",
     "fields": {
-      "Name": "clergy_communist",
-      "Icon": "communist",
-      "BaseFaction": "clergy"
+      "Name": "adminEfficiencyAdd",
+      "Icon": "adminEfficiencyAdd"
     },
-    "modifiers": [
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
-        "key": "unityMult",
-        "value": 1
-      },
-      {
-        "key": "projectBuildCostMult",
-        "value": -0.1
-      },
-      {
-        "key": "unityMult",
-        "value": -1
-      },
-      {
-        "key": "unrestChangeAdd",
-        "value": 0.1
+        "type": "icon",
+        "id": "adminEfficiencyAdd"
       }
-    ],
-    "prerequisites": [
+    ]
+  },
+  {
+    "id": "bureaucracy_hivemind",
+    "type": "faction-variants",
+    "displayName": "Administrative Node",
+    "icon": "bureaucracy_hivemind",
+    "fields": {
+      "Name": "bureaucracy_hivemind",
+      "Icon": "bureaucracy_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
-        "type": "reformOption",
+        "type": "icon",
+        "id": "bureaucracy_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "allResourceCapacityMult",
+    "type": "faction-variants",
+    "displayName": "All Resource Capacity Mult",
+    "icon": "allResourceCapacityMult",
+    "fields": {
+      "Name": "allResourceCapacityMult",
+      "Icon": "allResourceCapacityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "allResourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "atheist",
+    "type": "faction-variants",
+    "displayName": "Atheist",
+    "icon": "atheist",
+    "fields": {
+      "Name": "atheist",
+      "Icon": "atheist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atheist"
+      }
+    ]
+  },
+  {
+    "id": "bPpO",
+    "type": "faction-variants",
+    "displayName": "B Pp O",
+    "icon": "bPpO",
+    "fields": {
+      "Name": "bPpO",
+      "Icon": "bPpO"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bPpO"
+      }
+    ]
+  },
+  {
+    "id": "clergy_hindu",
+    "type": "faction-variants",
+    "displayName": "Brahmins",
+    "icon": "clergy_hindu",
+    "fields": {
+      "Name": "clergy_hindu",
+      "Icon": "clergy_hindu"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_hindu"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy",
+    "type": "faction-variants",
+    "displayName": "Bureaucracy",
+    "icon": "bureaucracy",
+    "fields": {
+      "Name": "bureaucracy",
+      "Icon": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracyCrisis",
+    "type": "faction-variants",
+    "displayName": "Bureaucracy Crisis",
+    "icon": "bureaucracyCrisis",
+    "fields": {
+      "Name": "bureaucracyCrisis",
+      "Icon": "bureaucracyCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracyCrisis"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracyCrisis_intensity",
+    "type": "faction-variants",
+    "displayName": "Bureaucracy Crisis Intensity",
+    "icon": "bureaucracyCrisis_intensity",
+    "fields": {
+      "Name": "bureaucracyCrisis_intensity",
+      "Icon": "bureaucracyCrisis_intensity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracyCrisis_intensity"
+      }
+    ]
+  },
+  {
+    "id": "casteSystem_rigidity",
+    "type": "faction-variants",
+    "displayName": "Caste System Rigidity",
+    "icon": "casteSystem_rigidity",
+    "fields": {
+      "Name": "casteSystem_rigidity",
+      "Icon": "casteSystem_rigidity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "casteSystem_rigidity"
+      }
+    ]
+  },
+  {
+    "id": "christian",
+    "type": "faction-variants",
+    "displayName": "Christian",
+    "icon": "christian",
+    "fields": {
+      "Name": "christian",
+      "Icon": "christian"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "christian"
+      }
+    ]
+  },
+  {
+    "id": "clergy_christian",
+    "type": "faction-variants",
+    "displayName": "Christian Theocrats",
+    "icon": "clergy_christian",
+    "fields": {
+      "Name": "clergy_christian",
+      "Icon": "clergy_christian"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_christian"
+      }
+    ]
+  },
+  {
+    "id": "clergy",
+    "type": "faction-variants",
+    "displayName": "Clergy",
+    "icon": "clergy",
+    "fields": {
+      "Name": "clergy",
+      "Icon": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
         "id": "clergy"
       }
-    ],
+    ]
+  },
+  {
+    "id": "clergy_atheist",
+    "type": "faction-variants",
+    "displayName": "Clergy Atheist",
+    "icon": "clergy_atheist",
+    "fields": {
+      "Name": "clergy_atheist",
+      "Icon": "clergy_atheist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_atheist"
+      }
+    ]
+  },
+  {
+    "id": "clergyCrisis",
+    "type": "faction-variants",
+    "displayName": "Clergy Crisis",
+    "icon": "clergyCrisis",
+    "fields": {
+      "Name": "clergyCrisis",
+      "Icon": "clergyCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergyCrisis"
+      }
+    ]
+  },
+  {
+    "id": "clergyCrisis_intensity",
+    "type": "faction-variants",
+    "displayName": "Clergy Crisis Intensity",
+    "icon": "clergyCrisis_intensity",
+    "fields": {
+      "Name": "clergyCrisis_intensity",
+      "Icon": "clergyCrisis_intensity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergyCrisis_intensity"
+      }
+    ]
+  },
+  {
+    "id": "communist",
+    "type": "faction-variants",
+    "displayName": "Communist",
+    "icon": "communist",
+    "fields": {
+      "Name": "communist",
+      "Icon": "communist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "communist"
-      },
+      }
+    ]
+  },
+  {
+    "id": "corporate",
+    "type": "faction-variants",
+    "displayName": "Corporate",
+    "icon": "corporate",
+    "fields": {
+      "Name": "corporate",
+      "Icon": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
-        "type": "factions",
-        "id": "clergy"
+        "type": "icon",
+        "id": "corporate"
+      }
+    ]
+  },
+  {
+    "id": "corporateCrisis",
+    "type": "faction-variants",
+    "displayName": "Corporate Crisis",
+    "icon": "corporateCrisis",
+    "fields": {
+      "Name": "corporateCrisis",
+      "Icon": "corporateCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporateCrisis"
+      }
+    ]
+  },
+  {
+    "id": "corporateCrisis_intensity",
+    "type": "faction-variants",
+    "displayName": "Corporate Crisis Intensity",
+    "icon": "corporateCrisis_intensity",
+    "fields": {
+      "Name": "corporateCrisis_intensity",
+      "Icon": "corporateCrisis_intensity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporateCrisis_intensity"
+      }
+    ]
+  },
+  {
+    "id": "crisisSpawnChanceAdd",
+    "type": "faction-variants",
+    "displayName": "Crisis Spawn Chance Add",
+    "icon": "crisisSpawnChanceAdd",
+    "fields": {
+      "Name": "crisisSpawnChanceAdd",
+      "Icon": "crisisSpawnChanceAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "crisisSpawnChanceAdd"
+      }
+    ]
+  },
+  {
+    "id": "debtEffectMult",
+    "type": "faction-variants",
+    "displayName": "Debt Effect Mult",
+    "icon": "debtEffectMult",
+    "fields": {
+      "Name": "debtEffectMult",
+      "Icon": "debtEffectMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "debtEffectMult"
+      }
+    ]
+  },
+  {
+    "id": "economicOutputMult",
+    "type": "faction-variants",
+    "displayName": "Economic Output Mult",
+    "icon": "economicOutputMult",
+    "fields": {
+      "Name": "economicOutputMult",
+      "Icon": "economicOutputMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economicOutputMult"
+      }
+    ]
+  },
+  {
+    "id": "educationEfficiency",
+    "type": "faction-variants",
+    "displayName": "Education Efficiency",
+    "icon": "educationEfficiency",
+    "fields": {
+      "Name": "educationEfficiency",
+      "Icon": "educationEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "factionLoyaltyAdd",
+    "type": "faction-variants",
+    "displayName": "Faction Loyalty Add",
+    "icon": "factionLoyaltyAdd",
+    "fields": {
+      "Name": "factionLoyaltyAdd",
+      "Icon": "factionLoyaltyAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionLoyaltyAdd"
+      }
+    ]
+  },
+  {
+    "id": "factionPowerAdd",
+    "type": "faction-variants",
+    "displayName": "Faction Power Add",
+    "icon": "factionPowerAdd",
+    "fields": {
+      "Name": "factionPowerAdd",
+      "Icon": "factionPowerAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionPowerAdd"
+      }
+    ]
+  },
+  {
+    "id": "fascist",
+    "type": "faction-variants",
+    "displayName": "Fascist",
+    "icon": "fascist",
+    "fields": {
+      "Name": "fascist",
+      "Icon": "fascist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fascist"
+      }
+    ]
+  },
+  {
+    "id": "clergy_fascist",
+    "type": "faction-variants",
+    "displayName": "Fascist Ideocrats",
+    "icon": "clergy_fascist",
+    "fields": {
+      "Name": "clergy_fascist",
+      "Icon": "clergy_fascist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_fascist"
+      }
+    ]
+  },
+  {
+    "id": "hindu",
+    "type": "faction-variants",
+    "displayName": "Hindu",
+    "icon": "hindu",
+    "fields": {
+      "Name": "hindu",
+      "Icon": "hindu"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hindu"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax",
+    "type": "faction-variants",
+    "displayName": "Income Tax",
+    "icon": "incomeTax",
+    "fields": {
+      "Name": "incomeTax",
+      "Icon": "incomeTax"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "incomeTax"
+      }
+    ]
+  },
+  {
+    "id": "corporate_hivemind",
+    "type": "faction-variants",
+    "displayName": "Industrial Node",
+    "icon": "corporate_hivemind",
+    "fields": {
+      "Name": "corporate_hivemind",
+      "Icon": "corporate_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporate_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "infantry",
+    "type": "faction-variants",
+    "displayName": "Infantry",
+    "icon": "infantry",
+    "fields": {
+      "Name": "infantry",
+      "Icon": "infantry"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infantry"
+      }
+    ]
+  },
+  {
+    "id": "islam",
+    "type": "faction-variants",
+    "displayName": "Islam",
+    "icon": "islam",
+    "fields": {
+      "Name": "islam",
+      "Icon": "islam"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "islam"
+      }
+    ]
+  },
+  {
+    "id": "jewish",
+    "type": "faction-variants",
+    "displayName": "Jewish",
+    "icon": "jewish",
+    "fields": {
+      "Name": "jewish",
+      "Icon": "jewish"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "jewish"
+      }
+    ]
+  },
+  {
+    "id": "clergy_jewish",
+    "type": "faction-variants",
+    "displayName": "Jewish Elders",
+    "icon": "clergy_jewish",
+    "fields": {
+      "Name": "clergy_jewish",
+      "Icon": "clergy_jewish"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_jewish"
+      }
+    ]
+  },
+  {
+    "id": "k8T",
+    "type": "faction-variants",
+    "displayName": "K8T",
+    "icon": "k8T",
+    "fields": {
+      "Name": "k8T",
+      "Icon": "k8T"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "k8T"
+      }
+    ]
+  },
+  {
+    "id": "laborer_proletariat",
+    "type": "faction-variants",
+    "displayName": "Laborer Proletariat",
+    "icon": "laborer_proletariat",
+    "fields": {
+      "Name": "laborer_proletariat",
+      "Icon": "laborer_proletariat"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborer_proletariat"
+      }
+    ]
+  },
+  {
+    "id": "laborer_hivemind",
+    "type": "faction-variants",
+    "displayName": "Menial Drones",
+    "icon": "laborer_hivemind",
+    "fields": {
+      "Name": "laborer_hivemind",
+      "Icon": "laborer_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborer_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "middleClass",
+    "type": "faction-variants",
+    "displayName": "Middle Class",
+    "icon": "middleClass",
+    "fields": {
+      "Name": "middleClass",
+      "Icon": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass"
+      }
+    ]
+  },
+  {
+    "id": "middleClass_hivemind",
+    "type": "faction-variants",
+    "displayName": "Middle Class Hivemind",
+    "icon": "middleClass_hivemind",
+    "fields": {
+      "Name": "middleClass_hivemind",
+      "Icon": "middleClass_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "military",
+    "type": "faction-variants",
+    "displayName": "Military",
+    "icon": "military",
+    "fields": {
+      "Name": "military",
+      "Icon": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "military_conscript",
+    "type": "faction-variants",
+    "displayName": "Military Conscript",
+    "icon": "military_conscript",
+    "fields": {
+      "Name": "military_conscript",
+      "Icon": "military_conscript"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military_conscript"
+      }
+    ]
+  },
+  {
+    "id": "militaryIndustrialComplex",
+    "type": "faction-variants",
+    "displayName": "Military Industrial Complex",
+    "icon": "militaryIndustrialComplex",
+    "fields": {
+      "Name": "militaryIndustrialComplex",
+      "Icon": "militaryIndustrialComplex"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryIndustrialComplex"
+      }
+    ]
+  },
+  {
+    "id": "military_mercenary",
+    "type": "faction-variants",
+    "displayName": "Military Mercenary",
+    "icon": "military_mercenary",
+    "fields": {
+      "Name": "military_mercenary",
+      "Icon": "military_mercenary"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military_mercenary"
+      }
+    ]
+  },
+  {
+    "id": "clergy_hivemind",
+    "type": "faction-variants",
+    "displayName": "Morality Node",
+    "icon": "clergy_hivemind",
+    "fields": {
+      "Name": "clergy_hivemind",
+      "Icon": "clergy_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildCostMult",
+    "type": "faction-variants",
+    "displayName": "Project Build Cost Mult",
+    "icon": "projectBuildCostMult",
+    "fields": {
+      "Name": "projectBuildCostMult",
+      "Icon": "projectBuildCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildCostMult"
+      }
+    ]
+  },
+  {
+    "id": "projectEfficiency",
+    "type": "faction-variants",
+    "displayName": "Project Efficiency",
+    "icon": "projectEfficiency",
+    "fields": {
+      "Name": "projectEfficiency",
+      "Icon": "projectEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "clergy_communist",
+    "type": "faction-variants",
+    "displayName": "Radical Activists",
+    "icon": "clergy_communist",
+    "fields": {
+      "Name": "clergy_communist",
+      "Icon": "clergy_communist"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_communist"
+      }
+    ]
+  },
+  {
+    "id": "recruitablePopulationMult",
+    "type": "faction-variants",
+    "displayName": "Recruitable Population Mult",
+    "icon": "recruitablePopulationMult",
+    "fields": {
+      "Name": "recruitablePopulationMult",
+      "Icon": "recruitablePopulationMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "recruitablePopulationMult"
+      }
+    ]
+  },
+  {
+    "id": "researchMult",
+    "type": "faction-variants",
+    "displayName": "Research Mult",
+    "icon": "researchMult",
+    "fields": {
+      "Name": "researchMult",
+      "Icon": "researchMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "researchMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceIncomeMult",
+    "type": "faction-variants",
+    "displayName": "Resource Income Mult",
+    "icon": "resourceIncomeMult",
+    "fields": {
+      "Name": "resourceIncomeMult",
+      "Icon": "resourceIncomeMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceIncomeMult"
+      }
+    ]
+  },
+  {
+    "id": "laborer",
+    "type": "faction-variants",
+    "displayName": "Rural Laborers",
+    "icon": "laborer",
+    "fields": {
+      "Name": "laborer",
+      "Icon": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborer"
+      }
+    ]
+  },
+  {
+    "id": "clergy_islamic",
+    "type": "faction-variants",
+    "displayName": "Sharia Hardliners",
+    "icon": "clergy_islamic",
+    "fields": {
+      "Name": "clergy_islamic",
+      "Icon": "clergy_islamic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy_islamic"
+      }
+    ]
+  },
+  {
+    "id": "situationVariableAdd",
+    "type": "faction-variants",
+    "displayName": "Situation Variable Add",
+    "icon": "situationVariableAdd",
+    "fields": {
+      "Name": "situationVariableAdd",
+      "Icon": "situationVariableAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "situationVariableAdd"
+      }
+    ]
+  },
+  {
+    "id": "sliderMaxAdd",
+    "type": "faction-variants",
+    "displayName": "Slider Max Add",
+    "icon": "sliderMaxAdd",
+    "fields": {
+      "Name": "sliderMaxAdd",
+      "Icon": "sliderMaxAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sliderMaxAdd"
+      }
+    ]
+  },
+  {
+    "id": "unitAttackMult",
+    "type": "faction-variants",
+    "displayName": "Unit Attack Mult",
+    "icon": "unitAttackMult",
+    "fields": {
+      "Name": "unitAttackMult",
+      "Icon": "unitAttackMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitAttackMult"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleMult",
+    "type": "faction-variants",
+    "displayName": "Unit Morale Mult",
+    "icon": "unitMoraleMult",
+    "fields": {
+      "Name": "unitMoraleMult",
+      "Icon": "unitMoraleMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleMult"
+      }
+    ]
+  },
+  {
+    "id": "unitQualityMult",
+    "type": "faction-variants",
+    "displayName": "Unit Quality Mult",
+    "icon": "unitQualityMult",
+    "fields": {
+      "Name": "unitQualityMult",
+      "Icon": "unitQualityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitQualityMult"
+      }
+    ]
+  },
+  {
+    "id": "unityMult",
+    "type": "faction-variants",
+    "displayName": "Unity Mult",
+    "icon": "unityMult",
+    "fields": {
+      "Name": "unityMult",
+      "Icon": "unityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unityMult"
+      }
+    ]
+  },
+  {
+    "id": "unrestChangeAdd",
+    "type": "faction-variants",
+    "displayName": "Unrest Change Add",
+    "icon": "unrestChangeAdd",
+    "fields": {
+      "Name": "unrestChangeAdd",
+      "Icon": "unrestChangeAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unrestChangeAdd"
+      }
+    ]
+  },
+  {
+    "id": "upperClass",
+    "type": "faction-variants",
+    "displayName": "Upper Class",
+    "icon": "upperClass",
+    "fields": {
+      "Name": "upperClass",
+      "Icon": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClass"
+      }
+    ]
+  },
+  {
+    "id": "upperClassCrisis",
+    "type": "faction-variants",
+    "displayName": "Upper Class Crisis",
+    "icon": "upperClassCrisis",
+    "fields": {
+      "Name": "upperClassCrisis",
+      "Icon": "upperClassCrisis"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClassCrisis"
+      }
+    ]
+  },
+  {
+    "id": "upperClassCrisis_intensity",
+    "type": "faction-variants",
+    "displayName": "Upper Class Crisis Intensity",
+    "icon": "upperClassCrisis_intensity",
+    "fields": {
+      "Name": "upperClassCrisis_intensity",
+      "Icon": "upperClassCrisis_intensity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClassCrisis_intensity"
+      }
+    ]
+  },
+  {
+    "id": "upperClass_hivemind",
+    "type": "faction-variants",
+    "displayName": "Upper Class Hivemind",
+    "icon": "upperClass_hivemind",
+    "fields": {
+      "Name": "upperClass_hivemind",
+      "Icon": "upperClass_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClass_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "military_hivemind",
+    "type": "faction-variants",
+    "displayName": "War Drones",
+    "icon": "military_hivemind",
+    "fields": {
+      "Name": "military_hivemind",
+      "Icon": "military_hivemind"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "warExhaustionMult",
+    "type": "faction-variants",
+    "displayName": "War Exhaustion Mult",
+    "icon": "warExhaustionMult",
+    "fields": {
+      "Name": "warExhaustionMult",
+      "Icon": "warExhaustionMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warExhaustionMult"
       }
     ]
   }

@@ -1,23 +1,154 @@
 [
   {
-    "id": "governRegion",
+    "id": "form_administration",
     "type": "character-jobs",
-    "displayName": "Govern Region",
+    "displayName": "Administration",
+    "icon": "form_administration",
+    "fields": {
+      "Name": "form_administration",
+      "Icon": "form_administration",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_administration"
+      }
+    ]
+  },
+  {
+    "id": "economy_agrarian",
+    "type": "character-jobs",
+    "displayName": "Agrarian",
+    "icon": "economy_agrarian",
+    "fields": {
+      "Name": "economy_agrarian",
+      "Icon": "economy_agrarian",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_agrarian"
+      }
+    ]
+  },
+  {
+    "id": "algorator",
+    "type": "character-jobs",
+    "displayName": "Algorator",
+    "icon": "algorator",
+    "fields": {
+      "Name": "algorator",
+      "Icon": "algorator",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "algorator"
+      }
+    ]
+  },
+  {
+    "id": "economy_algorithmic",
+    "type": "character-jobs",
+    "displayName": "Algorithmic",
+    "icon": "economy_algorithmic",
+    "fields": {
+      "Name": "economy_algorithmic",
+      "Icon": "economy_algorithmic",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_algorithmic"
+      }
+    ]
+  },
+  {
+    "id": "form_empire",
+    "type": "character-jobs",
+    "displayName": "Autocracy",
+    "icon": "form_empire",
+    "fields": {
+      "Name": "form_empire",
+      "Icon": "form_empire",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_empire"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy",
+    "type": "character-jobs",
+    "displayName": "Bureaucracy",
+    "icon": "bureaucracy",
+    "fields": {
+      "Name": "bureaucracy",
+      "Icon": "bureaucracy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "charisma",
+    "type": "character-jobs",
+    "displayName": "Charisma",
     "icon": "charisma",
     "fields": {
-      "Name": "governRegion",
+      "Name": "charisma",
       "Icon": "charisma",
       "EffortCost": 1,
       "ExperienceGain": 1,
       "Term": 999999,
       "ElectionType": 0,
-      "Color": {
-        "R": 0.392104,
-        "G": 0.997,
-        "B": 0.425638,
-        "A": 1
-      },
-      "JobArchetype": "governRegion",
       "MajorJob": false
     },
     "modifiers": [],
@@ -26,6 +157,558 @@
       {
         "type": "icon",
         "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "clergy",
+    "type": "character-jobs",
+    "displayName": "Clergy",
+    "icon": "clergy",
+    "fields": {
+      "Name": "clergy",
+      "Icon": "clergy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy"
+      }
+    ]
+  },
+  {
+    "id": "corporate",
+    "type": "character-jobs",
+    "displayName": "Corporate",
+    "icon": "corporate",
+    "fields": {
+      "Name": "corporate",
+      "Icon": "corporate",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporate"
+      }
+    ]
+  },
+  {
+    "id": "form_corporation",
+    "type": "character-jobs",
+    "displayName": "Corporation",
+    "icon": "form_corporation",
+    "fields": {
+      "Name": "form_corporation",
+      "Icon": "form_corporation",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_corporation"
+      }
+    ]
+  },
+  {
+    "id": "economy_corporatism",
+    "type": "character-jobs",
+    "displayName": "Corporatism",
+    "icon": "economy_corporatism",
+    "fields": {
+      "Name": "economy_corporatism",
+      "Icon": "economy_corporatism",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_corporatism"
+      }
+    ]
+  },
+  {
+    "id": "emperor",
+    "type": "character-jobs",
+    "displayName": "Emperor",
+    "icon": "emperor",
+    "fields": {
+      "Name": "emperor",
+      "Icon": "emperor",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "emperor"
+      }
+    ]
+  },
+  {
+    "id": "espionage",
+    "type": "character-jobs",
+    "displayName": "Espionage",
+    "icon": "espionage",
+    "fields": {
+      "Name": "espionage",
+      "Icon": "espionage",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionage"
+      }
+    ]
+  },
+  {
+    "id": "friendly",
+    "type": "character-jobs",
+    "displayName": "Friendly",
+    "icon": "friendly",
+    "fields": {
+      "Name": "friendly",
+      "Icon": "friendly",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "friendly"
+      }
+    ]
+  },
+  {
+    "id": "form_hivemind",
+    "type": "character-jobs",
+    "displayName": "Gestalt Consciousness",
+    "icon": "form_hivemind",
+    "fields": {
+      "Name": "form_hivemind",
+      "Icon": "form_hivemind",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_hivemind"
+      }
+    ]
+  },
+  {
+    "id": "economy_interventionism",
+    "type": "character-jobs",
+    "displayName": "Interventionism",
+    "icon": "economy_interventionism",
+    "fields": {
+      "Name": "economy_interventionism",
+      "Icon": "economy_interventionism",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_interventionism"
+      }
+    ]
+  },
+  {
+    "id": "macromanager",
+    "type": "character-jobs",
+    "displayName": "Macromanager",
+    "icon": "macromanager",
+    "fields": {
+      "Name": "macromanager",
+      "Icon": "macromanager",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "macromanager"
+      }
+    ]
+  },
+  {
+    "id": "management",
+    "type": "character-jobs",
+    "displayName": "Management",
+    "icon": "management",
+    "fields": {
+      "Name": "management",
+      "Icon": "management",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "monarch",
+    "type": "character-jobs",
+    "displayName": "Monarch",
+    "icon": "monarch",
+    "fields": {
+      "Name": "monarch",
+      "Icon": "monarch",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "monarch"
+      }
+    ]
+  },
+  {
+    "id": "form_monarchy",
+    "type": "character-jobs",
+    "displayName": "Monarchy",
+    "icon": "form_monarchy",
+    "fields": {
+      "Name": "form_monarchy",
+      "Icon": "form_monarchy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_monarchy"
+      }
+    ]
+  },
+  {
+    "id": "form_oligarchy",
+    "type": "character-jobs",
+    "displayName": "Oligarchy",
+    "icon": "form_oligarchy",
+    "fields": {
+      "Name": "form_oligarchy",
+      "Icon": "form_oligarchy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_oligarchy"
+      }
+    ]
+  },
+  {
+    "id": "form_totality",
+    "type": "character-jobs",
+    "displayName": "One-Party State",
+    "icon": "form_totality",
+    "fields": {
+      "Name": "form_totality",
+      "Icon": "form_totality",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_totality"
+      }
+    ]
+  },
+  {
+    "id": "economy_planned",
+    "type": "character-jobs",
+    "displayName": "Planned Economy",
+    "icon": "economy_planned",
+    "fields": {
+      "Name": "economy_planned",
+      "Icon": "economy_planned",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_planned"
+      }
+    ]
+  },
+  {
+    "id": "premier",
+    "type": "character-jobs",
+    "displayName": "Premier",
+    "icon": "premier",
+    "fields": {
+      "Name": "premier",
+      "Icon": "premier",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "premier"
+      }
+    ]
+  },
+  {
+    "id": "president",
+    "type": "character-jobs",
+    "displayName": "President",
+    "icon": "president",
+    "fields": {
+      "Name": "president",
+      "Icon": "president",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "president"
+      }
+    ]
+  },
+  {
+    "id": "form_republic",
+    "type": "character-jobs",
+    "displayName": "Republic",
+    "icon": "form_republic",
+    "fields": {
+      "Name": "form_republic",
+      "Icon": "form_republic",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_republic"
+      }
+    ]
+  },
+  {
+    "id": "ruler",
+    "type": "character-jobs",
+    "displayName": "Ruler",
+    "icon": "ruler",
+    "fields": {
+      "Name": "ruler",
+      "Icon": "ruler",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ruler"
+      }
+    ]
+  },
+  {
+    "id": "spymaster",
+    "type": "character-jobs",
+    "displayName": "Spymaster",
+    "icon": "spymaster",
+    "fields": {
+      "Name": "spymaster",
+      "Icon": "spymaster",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spymaster"
+      }
+    ]
+  },
+  {
+    "id": "strategy",
+    "type": "character-jobs",
+    "displayName": "Strategy",
+    "icon": "strategy",
+    "fields": {
+      "Name": "strategy",
+      "Icon": "strategy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "form_algocracy",
+    "type": "character-jobs",
+    "displayName": "Technocracy",
+    "icon": "form_algocracy",
+    "fields": {
+      "Name": "form_algocracy",
+      "Icon": "form_algocracy",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_algocracy"
+      }
+    ]
+  },
+  {
+    "id": "wypl",
+    "type": "character-jobs",
+    "displayName": "Wypl",
+    "icon": "wypl",
+    "fields": {
+      "Name": "wypl",
+      "Icon": "wypl",
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ElectionType": 0,
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "wypl"
       }
     ]
   }

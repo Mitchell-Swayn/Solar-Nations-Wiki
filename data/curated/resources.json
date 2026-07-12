@@ -1,39 +1,667 @@
 [
   {
+    "id": "health",
+    "type": "resources",
+    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "icon": "health",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
+    "id": "manpower",
+    "type": "resources",
+    "displayName": "<img id=\"manpower\"/> <yellow>Manpower</> is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+    "icon": "manpower",
+    "fields": {
+      "Name": "manpower",
+      "Icon": "manpower"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "air",
+    "type": "resources",
+    "displayName": "Air",
+    "icon": "air",
+    "fields": {
+      "Name": "air",
+      "Icon": "air"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "air"
+      }
+    ]
+  },
+  {
+    "id": "airCapacity",
+    "type": "resources",
+    "displayName": "Air Capacity",
+    "icon": "airCapacity",
+    "fields": {
+      "Name": "airCapacity",
+      "Icon": "airCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airCapacity"
+      }
+    ]
+  },
+  {
+    "id": "antimatter",
+    "type": "resources",
+    "displayName": "Antimatter",
+    "icon": "antimatter",
+    "fields": {
+      "Name": "antimatter",
+      "Icon": "antimatter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatter"
+      }
+    ]
+  },
+  {
+    "id": "bPpO",
+    "type": "resources",
+    "displayName": "B Pp O",
+    "icon": "bPpO",
+    "fields": {
+      "Name": "bPpO",
+      "Icon": "bPpO"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bPpO"
+      }
+    ]
+  },
+  {
+    "id": "baseEconomicOutputMult",
+    "type": "resources",
+    "displayName": "Base Economic Output Mult",
+    "icon": "baseEconomicOutputMult",
+    "fields": {
+      "Name": "baseEconomicOutputMult",
+      "Icon": "baseEconomicOutputMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "baseEconomicOutputMult"
+      }
+    ]
+  },
+  {
+    "id": "developmentGrowthMult",
+    "type": "resources",
+    "displayName": "Development Growth Mult",
+    "icon": "developmentGrowthMult",
+    "fields": {
+      "Name": "developmentGrowthMult",
+      "Icon": "developmentGrowthMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "developmentGrowthMult"
+      }
+    ]
+  },
+  {
+    "id": "diplomacyCapacity",
+    "type": "resources",
+    "displayName": "Diplomacy Capacity",
+    "icon": "diplomacyCapacity",
+    "fields": {
+      "Name": "diplomacyCapacity",
+      "Icon": "diplomacyCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacyCapacity"
+      }
+    ]
+  },
+  {
+    "id": "educationEfficiency",
+    "type": "resources",
+    "displayName": "Education Efficiency",
+    "icon": "educationEfficiency",
+    "fields": {
+      "Name": "educationEfficiency",
+      "Icon": "educationEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "exoticMatter",
+    "type": "resources",
+    "displayName": "Exotic Matter",
+    "icon": "exoticMatter",
+    "fields": {
+      "Name": "exoticMatter",
+      "Icon": "exoticMatter"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "exoticMatter"
+      }
+    ]
+  },
+  {
+    "id": "factionLoyaltyAdd",
+    "type": "resources",
+    "displayName": "Faction Loyalty Add",
+    "icon": "factionLoyaltyAdd",
+    "fields": {
+      "Name": "factionLoyaltyAdd",
+      "Icon": "factionLoyaltyAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionLoyaltyAdd"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterial",
+    "type": "resources",
+    "displayName": "Genetic Material",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "geneticMaterial",
+      "Icon": "geneticMaterial"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "gravitons",
+    "type": "resources",
+    "displayName": "Gravitons",
+    "icon": "gravitons",
+    "fields": {
+      "Name": "gravitons",
+      "Icon": "gravitons"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravitons"
+      }
+    ]
+  },
+  {
+    "id": "habitabilityAdd",
+    "type": "resources",
+    "displayName": "Habitability Add",
+    "icon": "habitabilityAdd",
+    "fields": {
+      "Name": "habitabilityAdd",
+      "Icon": "habitabilityAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "habitabilityAdd"
+      }
+    ]
+  },
+  {
     "id": "industry",
     "type": "resources",
-    "displayName": "Industry",
+    "displayName": "Industrial Capacity",
     "icon": "industry",
     "fields": {
       "Name": "industry",
-      "Icon": "industry",
-      "BasePrice": 2,
-      "Tradeable": true,
-      "AlwaysVisible": true,
-      "Color": {
-        "R": 0,
-        "G": 0.091411,
-        "B": 0.517361,
-        "A": 1
-      },
-      "AIWeight": 320,
-      "MilitaryValue": 10
+      "Icon": "industry"
     },
-    "modifiers": [
-      {
-        "key": "projectBuildCostMult",
-        "value": 1
-      },
-      {
-        "key": "developmentGrowthMult",
-        "value": -2
-      }
-    ],
+    "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "industry"
+      }
+    ]
+  },
+  {
+    "id": "logistics",
+    "type": "resources",
+    "displayName": "Logistics Capacity",
+    "icon": "logistics",
+    "fields": {
+      "Name": "logistics",
+      "Icon": "logistics"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logistics"
+      }
+    ]
+  },
+  {
+    "id": "navyCapacity",
+    "type": "resources",
+    "displayName": "Navy Capacity",
+    "icon": "navyCapacity",
+    "fields": {
+      "Name": "navyCapacity",
+      "Icon": "navyCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "navyCapacity"
+      }
+    ]
+  },
+  {
+    "id": "neuralNetworks",
+    "type": "resources",
+    "displayName": "Neural Networks",
+    "icon": "neuralNetworks",
+    "fields": {
+      "Name": "neuralNetworks",
+      "Icon": "neuralNetworks"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworks"
+      }
+    ]
+  },
+  {
+    "id": "popGrowthMult",
+    "type": "resources",
+    "displayName": "Pop Growth Mult",
+    "icon": "popGrowthMult",
+    "fields": {
+      "Name": "popGrowthMult",
+      "Icon": "popGrowthMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "popGrowthMult"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildCostMult",
+    "type": "resources",
+    "displayName": "Project Build Cost Mult",
+    "icon": "projectBuildCostMult",
+    "fields": {
+      "Name": "projectBuildCostMult",
+      "Icon": "projectBuildCostMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildCostMult"
+      }
+    ]
+  },
+  {
+    "id": "projectEfficiency",
+    "type": "resources",
+    "displayName": "Project Efficiency",
+    "icon": "projectEfficiency",
+    "fields": {
+      "Name": "projectEfficiency",
+      "Icon": "projectEfficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "resourceCapacityMult",
+    "type": "resources",
+    "displayName": "Resource Capacity Mult",
+    "icon": "resourceCapacityMult",
+    "fields": {
+      "Name": "resourceCapacityMult",
+      "Icon": "resourceCapacityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "robots",
+    "type": "resources",
+    "displayName": "Robots",
+    "icon": "robots",
+    "fields": {
+      "Name": "robots",
+      "Icon": "robots"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "space",
+    "type": "resources",
+    "displayName": "Space",
+    "icon": "space",
+    "fields": {
+      "Name": "space",
+      "Icon": "space"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "space"
+      }
+    ]
+  },
+  {
+    "id": "spaceCapacity",
+    "type": "resources",
+    "displayName": "Space Capacity",
+    "icon": "spaceCapacity",
+    "fields": {
+      "Name": "spaceCapacity",
+      "Icon": "spaceCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceCapacity"
+      }
+    ]
+  },
+  {
+    "id": "stabilityGainAdd",
+    "type": "resources",
+    "displayName": "Stability Gain Add",
+    "icon": "stabilityGainAdd",
+    "fields": {
+      "Name": "stabilityGainAdd",
+      "Icon": "stabilityGainAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stabilityGainAdd"
+      }
+    ]
+  },
+  {
+    "id": "strategicCapacity",
+    "type": "resources",
+    "displayName": "Strategic Capacity",
+    "icon": "strategicCapacity",
+    "fields": {
+      "Name": "strategicCapacity",
+      "Icon": "strategicCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategicCapacity"
+      }
+    ]
+  },
+  {
+    "id": "superSteel",
+    "type": "resources",
+    "displayName": "Super Steel",
+    "icon": "superSteel",
+    "fields": {
+      "Name": "superSteel",
+      "Icon": "superSteel"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superSteel"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleMult",
+    "type": "resources",
+    "displayName": "Unit Morale Mult",
+    "icon": "unitMoraleMult",
+    "fields": {
+      "Name": "unitMoraleMult",
+      "Icon": "unitMoraleMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleMult"
+      }
+    ]
+  },
+  {
+    "id": "unitReinforceRateMult",
+    "type": "resources",
+    "displayName": "Unit Reinforce Rate Mult",
+    "icon": "unitReinforceRateMult",
+    "fields": {
+      "Name": "unitReinforceRateMult",
+      "Icon": "unitReinforceRateMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitReinforceRateMult"
+      }
+    ]
+  },
+  {
+    "id": "unitSpeedMult",
+    "type": "resources",
+    "displayName": "Unit Speed Mult",
+    "icon": "unitSpeedMult",
+    "fields": {
+      "Name": "unitSpeedMult",
+      "Icon": "unitSpeedMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitSpeedMult"
+      }
+    ]
+  },
+  {
+    "id": "unitStatMult",
+    "type": "resources",
+    "displayName": "Unit Stat Mult",
+    "icon": "unitStatMult",
+    "fields": {
+      "Name": "unitStatMult",
+      "Icon": "unitStatMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitStatMult"
+      }
+    ]
+  },
+  {
+    "id": "unityMult",
+    "type": "resources",
+    "displayName": "Unity Mult",
+    "icon": "unityMult",
+    "fields": {
+      "Name": "unityMult",
+      "Icon": "unityMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unityMult"
+      }
+    ]
+  },
+  {
+    "id": "university",
+    "type": "resources",
+    "displayName": "University",
+    "icon": "university",
+    "fields": {
+      "Name": "university",
+      "Icon": "university"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "university"
+      }
+    ]
+  },
+  {
+    "id": "water",
+    "type": "resources",
+    "displayName": "Water",
+    "icon": "water",
+    "fields": {
+      "Name": "water",
+      "Icon": "water"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "water"
+      }
+    ]
+  },
+  {
+    "id": "willpowerCapacity",
+    "type": "resources",
+    "displayName": "Willpower Capacity",
+    "icon": "willpowerCapacity",
+    "fields": {
+      "Name": "willpowerCapacity",
+      "Icon": "willpowerCapacity"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "willpowerCapacity"
       }
     ]
   }

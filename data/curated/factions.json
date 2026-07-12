@@ -8,7 +8,303 @@
       "Name": "bureaucracy",
       "Icon": "bureaucracy",
       "Alignment": {
+        "R": 0.007813,
+        "Theta": 0.007812
+      },
+      "Color": {
         "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.5
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": -0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 1
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 180
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "clergy",
+    "type": "factions",
+    "displayName": "Clergy",
+    "icon": "clergy",
+    "fields": {
+      "Name": "clergy",
+      "Icon": "clergy",
+      "Alignment": {
+        "R": 0.000031,
+        "Theta": 0.007812
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 1
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": -1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 240
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.2
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.007813
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "clergy"
+      }
+    ]
+  },
+  {
+    "id": "corporate",
+    "type": "factions",
+    "displayName": "Corporate",
+    "icon": "corporate",
+    "fields": {
+      "Name": "corporate",
+      "Icon": "corporate",
+      "Alignment": {
+        "R": 0.000031,
+        "Theta": 0.007812
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.5
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 1
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 120
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporate"
+      }
+    ]
+  },
+  {
+    "id": "espionageFaction",
+    "type": "factions",
+    "displayName": "Espionage Faction",
+    "icon": "espionageFaction",
+    "fields": {
+      "Name": "espionageFaction",
+      "Icon": "espionageFaction",
+      "Alignment": {
+        "R": 1,
+        "Theta": 180
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 539832.162109
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.2
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": -0.01
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.007813
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageFaction"
+      }
+    ]
+  },
+  {
+    "id": "middleClass",
+    "type": "factions",
+    "displayName": "Middle Class",
+    "icon": "middleClass",
+    "fields": {
+      "Name": "middleClass",
+      "Icon": "middleClass",
+      "Alignment": {
+        "R": 0.007813,
+        "Theta": 0.2
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 1
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": -1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 60
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.007812
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass"
+      }
+    ]
+  },
+  {
+    "id": "military",
+    "type": "factions",
+    "displayName": "Military",
+    "icon": "military",
+    "fields": {
+      "Name": "military",
+      "Icon": "military",
+      "Alignment": {
+        "R": 0.4,
         "Theta": 180
       },
       "Color": {
@@ -26,11 +322,191 @@
       {
         "key": "sliderMaxAdd",
         "value1": "incomeTax",
-        "value": 0.5
+        "value": -0.5
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": -0.5
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": -0.01
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.000054
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.007813
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "laborer",
+    "type": "factions",
+    "displayName": "Rural Laborers",
+    "icon": "laborer",
+    "fields": {
+      "Name": "laborer",
+      "Icon": "laborer",
+      "Alignment": {
+        "R": 0.2,
+        "Theta": 0.6
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 1
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": -1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 0.25
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.007812
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.007813
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborer"
+      }
+    ]
+  },
+  {
+    "id": "separatist",
+    "type": "factions",
+    "displayName": "Separatist",
+    "icon": "separatist",
+    "fields": {
+      "Name": "separatist",
+      "Icon": "separatist",
+      "Alignment": {
+        "R": 1,
+        "Theta": 180
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 10
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.01
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.007812
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 0.2
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 539832.162109
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "separatist"
+      }
+    ]
+  },
+  {
+    "id": "upperClass",
+    "type": "factions",
+    "displayName": "Upper Class",
+    "icon": "upperClass",
+    "fields": {
+      "Name": "upperClass",
+      "Icon": "upperClass",
+      "Alignment": {
+        "R": 300,
+        "Theta": 0.007812
+      },
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 131072.00586
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -1
       },
       {
         "key": "unrestChangeAdd",
@@ -44,18 +520,18 @@
       {
         "key": "situationVariableAdd",
         "value1": "bureaucracyCrisis_intensity",
-        "value": 0.1
+        "value": 0.000031
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.2
+        "value": -2
       }
     ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "bureaucracy"
+        "id": "upperClass"
       }
     ]
   }

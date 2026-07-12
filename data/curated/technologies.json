@@ -1,53 +1,7999 @@
 [
   {
-    "id": "telepathicTech_1",
+    "id": "aerodrome",
     "type": "technologies",
-    "displayName": "Telepathic Tech 1",
-    "icon": "telepathicTech_1",
+    "displayName": "Aerodrome",
+    "icon": "aerodrome",
     "fields": {
-      "Name": "telepathicTech_1",
+      "Name": "aerodrome",
+      "Icon": "aerodrome",
       "Type": 1,
-      "Icon": "telepathicTech_1",
       "Year": 0,
-      "Cost": 6,
+      "Cost": 0,
       "Prerequisites": [],
       "Exclusives": [],
       "Tier": 1,
       "Location": {
-        "X": -200,
-        "Y": -900
+        "X": 0,
+        "Y": 0
       },
-      "Domain": [
-        "culture"
-      ],
-      "Categories": [
-        "industry"
-      ],
-      "Dangerous": false,
-      "HiddenPrerequisite": {
-        "A": "cultureTrait",
-        "B": "traitTelepathic"
-      }
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
     },
     "modifiers": [],
-    "prerequisites": [
-      {
-        "type": "cultureTrait",
-        "id": "traitTelepathic"
-      }
-    ],
+    "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "telepathicTech_1"
+        "id": "aerodrome"
+      }
+    ]
+  },
+  {
+    "id": "ageTech",
+    "type": "technologies",
+    "displayName": "Age Tech",
+    "icon": "ageTech",
+    "fields": {
+      "Name": "ageTech",
+      "Icon": "ageTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
       },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
-        "type": "domain",
-        "id": "culture"
+        "type": "icon",
+        "id": "ageTech"
+      }
+    ]
+  },
+  {
+    "id": "aiBrainImplants",
+    "type": "technologies",
+    "displayName": "Ai Brain Implants",
+    "icon": "aiBrainImplants",
+    "fields": {
+      "Name": "aiBrainImplants",
+      "Icon": "aiBrainImplants",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
       },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
       {
-        "type": "category",
-        "id": "industry"
+        "type": "icon",
+        "id": "aiBrainImplants"
+      }
+    ]
+  },
+  {
+    "id": "aiCyberdesign",
+    "type": "technologies",
+    "displayName": "Ai Cyberdesign",
+    "icon": "aiCyberdesign",
+    "fields": {
+      "Name": "aiCyberdesign",
+      "Icon": "aiCyberdesign",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "aiCyberdesign"
+      }
+    ]
+  },
+  {
+    "id": "aiHumanHybrid",
+    "type": "technologies",
+    "displayName": "Ai Human Hybrid",
+    "icon": "aiHumanHybrid",
+    "fields": {
+      "Name": "aiHumanHybrid",
+      "Icon": "aiHumanHybrid",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "aiHumanHybrid"
+      }
+    ]
+  },
+  {
+    "id": "airTracking",
+    "type": "technologies",
+    "displayName": "Air Tracking",
+    "icon": "airTracking",
+    "fields": {
+      "Name": "airTracking",
+      "Icon": "airTracking",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airTracking"
+      }
+    ]
+  },
+  {
+    "id": "airplanes1",
+    "type": "technologies",
+    "displayName": "Airplanes1",
+    "icon": "airplanes1",
+    "fields": {
+      "Name": "airplanes1",
+      "Icon": "airplanes1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes1"
+      }
+    ]
+  },
+  {
+    "id": "airplanes2",
+    "type": "technologies",
+    "displayName": "Airplanes2",
+    "icon": "airplanes2",
+    "fields": {
+      "Name": "airplanes2",
+      "Icon": "airplanes2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes2"
+      }
+    ]
+  },
+  {
+    "id": "airplanes3",
+    "type": "technologies",
+    "displayName": "Airplanes3",
+    "icon": "airplanes3",
+    "fields": {
+      "Name": "airplanes3",
+      "Icon": "airplanes3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes3"
+      }
+    ]
+  },
+  {
+    "id": "airplanes4",
+    "type": "technologies",
+    "displayName": "Airplanes4",
+    "icon": "airplanes4",
+    "fields": {
+      "Name": "airplanes4",
+      "Icon": "airplanes4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes4"
+      }
+    ]
+  },
+  {
+    "id": "airplanes5",
+    "type": "technologies",
+    "displayName": "Airplanes5",
+    "icon": "airplanes5",
+    "fields": {
+      "Name": "airplanes5",
+      "Icon": "airplanes5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes5"
+      }
+    ]
+  },
+  {
+    "id": "allResourceCapacityMult",
+    "type": "technologies",
+    "displayName": "All Resource Capacity Mult",
+    "icon": "allResourceCapacityMult",
+    "fields": {
+      "Name": "allResourceCapacityMult",
+      "Icon": "allResourceCapacityMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "allResourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "antimatter",
+    "type": "technologies",
+    "displayName": "Antimatter",
+    "icon": "antimatter",
+    "fields": {
+      "Name": "antimatter",
+      "Icon": "antimatter",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatter"
+      }
+    ]
+  },
+  {
+    "id": "antimatterAdvancement",
+    "type": "technologies",
+    "displayName": "Antimatter Advancement",
+    "icon": "antimatterAdvancement",
+    "fields": {
+      "Name": "antimatterAdvancement",
+      "Icon": "antimatterAdvancement",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatterAdvancement"
+      }
+    ]
+  },
+  {
+    "id": "antimatterPower",
+    "type": "technologies",
+    "displayName": "Antimatter Power",
+    "icon": "antimatterPower",
+    "fields": {
+      "Name": "antimatterPower",
+      "Icon": "antimatterPower",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatterPower"
+      }
+    ]
+  },
+  {
+    "id": "armor1",
+    "type": "technologies",
+    "displayName": "Armor1",
+    "icon": "armor1",
+    "fields": {
+      "Name": "armor1",
+      "Icon": "armor1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor1"
+      }
+    ]
+  },
+  {
+    "id": "armor2",
+    "type": "technologies",
+    "displayName": "Armor2",
+    "icon": "armor2",
+    "fields": {
+      "Name": "armor2",
+      "Icon": "armor2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor2"
+      }
+    ]
+  },
+  {
+    "id": "armor3",
+    "type": "technologies",
+    "displayName": "Armor3",
+    "icon": "armor3",
+    "fields": {
+      "Name": "armor3",
+      "Icon": "armor3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor3"
+      }
+    ]
+  },
+  {
+    "id": "armor4",
+    "type": "technologies",
+    "displayName": "Armor4",
+    "icon": "armor4",
+    "fields": {
+      "Name": "armor4",
+      "Icon": "armor4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor4"
+      }
+    ]
+  },
+  {
+    "id": "armor5",
+    "type": "technologies",
+    "displayName": "Armor5",
+    "icon": "armor5",
+    "fields": {
+      "Name": "armor5",
+      "Icon": "armor5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor5"
+      }
+    ]
+  },
+  {
+    "id": "armyLogistics",
+    "type": "technologies",
+    "displayName": "Army Logistics",
+    "icon": "armyLogistics",
+    "fields": {
+      "Name": "armyLogistics",
+      "Icon": "armyLogistics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armyLogistics"
+      }
+    ]
+  },
+  {
+    "id": "armyOrganization",
+    "type": "technologies",
+    "displayName": "Army Organization",
+    "icon": "armyOrganization",
+    "fields": {
+      "Name": "armyOrganization",
+      "Icon": "armyOrganization",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armyOrganization"
+      }
+    ]
+  },
+  {
+    "id": "armyTactics",
+    "type": "technologies",
+    "displayName": "Army Tactics",
+    "icon": "armyTactics",
+    "fields": {
+      "Name": "armyTactics",
+      "Icon": "armyTactics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armyTactics"
+      }
+    ]
+  },
+  {
+    "id": "artificialIntelligence",
+    "type": "technologies",
+    "displayName": "Artificial Intelligence",
+    "icon": "artificialIntelligence",
+    "fields": {
+      "Name": "artificialIntelligence",
+      "Icon": "artificialIntelligence",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artificialIntelligence"
+      }
+    ]
+  },
+  {
+    "id": "artillery",
+    "type": "technologies",
+    "displayName": "Artillery",
+    "icon": "artillery",
+    "fields": {
+      "Name": "artillery",
+      "Icon": "artillery",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery"
+      }
+    ]
+  },
+  {
+    "id": "artillery1",
+    "type": "technologies",
+    "displayName": "Artillery1",
+    "icon": "artillery1",
+    "fields": {
+      "Name": "artillery1",
+      "Icon": "artillery1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery1"
+      }
+    ]
+  },
+  {
+    "id": "artillery2",
+    "type": "technologies",
+    "displayName": "Artillery2",
+    "icon": "artillery2",
+    "fields": {
+      "Name": "artillery2",
+      "Icon": "artillery2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery2"
+      }
+    ]
+  },
+  {
+    "id": "artillery3",
+    "type": "technologies",
+    "displayName": "Artillery3",
+    "icon": "artillery3",
+    "fields": {
+      "Name": "artillery3",
+      "Icon": "artillery3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery3"
+      }
+    ]
+  },
+  {
+    "id": "artillery4",
+    "type": "technologies",
+    "displayName": "Artillery4",
+    "icon": "artillery4",
+    "fields": {
+      "Name": "artillery4",
+      "Icon": "artillery4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery4"
+      }
+    ]
+  },
+  {
+    "id": "artillery5",
+    "type": "technologies",
+    "displayName": "Artillery5",
+    "icon": "artillery5",
+    "fields": {
+      "Name": "artillery5",
+      "Icon": "artillery5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery5"
+      }
+    ]
+  },
+  {
+    "id": "autocannon1",
+    "type": "technologies",
+    "displayName": "Autocannon1",
+    "icon": "autocannon1",
+    "fields": {
+      "Name": "autocannon1",
+      "Icon": "autocannon1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon1"
+      }
+    ]
+  },
+  {
+    "id": "autocannon2",
+    "type": "technologies",
+    "displayName": "Autocannon2",
+    "icon": "autocannon2",
+    "fields": {
+      "Name": "autocannon2",
+      "Icon": "autocannon2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon2"
+      }
+    ]
+  },
+  {
+    "id": "autocannon3",
+    "type": "technologies",
+    "displayName": "Autocannon3",
+    "icon": "autocannon3",
+    "fields": {
+      "Name": "autocannon3",
+      "Icon": "autocannon3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon3"
+      }
+    ]
+  },
+  {
+    "id": "autocannon4",
+    "type": "technologies",
+    "displayName": "Autocannon4",
+    "icon": "autocannon4",
+    "fields": {
+      "Name": "autocannon4",
+      "Icon": "autocannon4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon4"
+      }
+    ]
+  },
+  {
+    "id": "autocannon5",
+    "type": "technologies",
+    "displayName": "Autocannon5",
+    "icon": "autocannon5",
+    "fields": {
+      "Name": "autocannon5",
+      "Icon": "autocannon5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocannon5"
+      }
+    ]
+  },
+  {
+    "id": "automatedFactory",
+    "type": "technologies",
+    "displayName": "Automated Factory",
+    "icon": "automatedFactory",
+    "fields": {
+      "Name": "automatedFactory",
+      "Icon": "automatedFactory",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "automatedFactory"
+      }
+    ]
+  },
+  {
+    "id": "automatedWorkforceMult",
+    "type": "technologies",
+    "displayName": "Automated Workforce Mult",
+    "icon": "automatedWorkforceMult",
+    "fields": {
+      "Name": "automatedWorkforceMult",
+      "Icon": "automatedWorkforceMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "automatedWorkforceMult"
+      }
+    ]
+  },
+  {
+    "id": "biohazard",
+    "type": "technologies",
+    "displayName": "Biohazard",
+    "icon": "biohazard",
+    "fields": {
+      "Name": "biohazard",
+      "Icon": "biohazard",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biohazard"
+      }
+    ]
+  },
+  {
+    "id": "biosculpting",
+    "type": "technologies",
+    "displayName": "Biosculpting",
+    "icon": "biosculpting",
+    "fields": {
+      "Name": "biosculpting",
+      "Icon": "biosculpting",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biosculpting"
+      }
+    ]
+  },
+  {
+    "id": "biotech",
+    "type": "technologies",
+    "displayName": "Biotechnology",
+    "icon": "biotech",
+    "fields": {
+      "Name": "biotech",
+      "Icon": "biotech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biotech"
+      }
+    ]
+  },
+  {
+    "id": "biowarfare",
+    "type": "technologies",
+    "displayName": "Biowarfare",
+    "icon": "biowarfare",
+    "fields": {
+      "Name": "biowarfare",
+      "Icon": "biowarfare",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "biowarfare"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy",
+    "type": "technologies",
+    "displayName": "Bureaucracy",
+    "icon": "bureaucracy",
+    "fields": {
+      "Name": "bureaucracy",
+      "Icon": "bureaucracy",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "chromiteTech",
+    "type": "technologies",
+    "displayName": "Chromite Tech",
+    "icon": "chromiteTech",
+    "fields": {
+      "Name": "chromiteTech",
+      "Icon": "chromiteTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "chromiteTech"
+      }
+    ]
+  },
+  {
+    "id": "colonialRange",
+    "type": "technologies",
+    "displayName": "Colonial Range",
+    "icon": "colonialRange",
+    "fields": {
+      "Name": "colonialRange",
+      "Icon": "colonialRange",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colonialRange"
+      }
+    ]
+  },
+  {
+    "id": "colonialRangeLy",
+    "type": "technologies",
+    "displayName": "Colonial Range Ly",
+    "icon": "colonialRangeLy",
+    "fields": {
+      "Name": "colonialRangeLy",
+      "Icon": "colonialRangeLy",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colonialRangeLy"
+      }
+    ]
+  },
+  {
+    "id": "colossalCommandCenter",
+    "type": "technologies",
+    "displayName": "Colossal Command Center",
+    "icon": "colossalCommandCenter",
+    "fields": {
+      "Name": "colossalCommandCenter",
+      "Icon": "colossalCommandCenter",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colossalCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "commerceZones",
+    "type": "technologies",
+    "displayName": "Commerce Zones",
+    "icon": "commerceZones",
+    "fields": {
+      "Name": "commerceZones",
+      "Icon": "commerceZones",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "commerceZones"
+      }
+    ]
+  },
+  {
+    "id": "computing",
+    "type": "technologies",
+    "displayName": "Computing",
+    "icon": "computing",
+    "fields": {
+      "Name": "computing",
+      "Icon": "computing",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "computing"
+      }
+    ]
+  },
+  {
+    "id": "corporate",
+    "type": "technologies",
+    "displayName": "Corporate",
+    "icon": "corporate",
+    "fields": {
+      "Name": "corporate",
+      "Icon": "corporate",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporate"
+      }
+    ]
+  },
+  {
+    "id": "crisisSpawnChanceAdd",
+    "type": "technologies",
+    "displayName": "Crisis Spawn Chance Add",
+    "icon": "crisisSpawnChanceAdd",
+    "fields": {
+      "Name": "crisisSpawnChanceAdd",
+      "Icon": "crisisSpawnChanceAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "crisisSpawnChanceAdd"
+      }
+    ]
+  },
+  {
+    "id": "culturalEconomics",
+    "type": "technologies",
+    "displayName": "Cultural Economics",
+    "icon": "culturalEconomics",
+    "fields": {
+      "Name": "culturalEconomics",
+      "Icon": "culturalEconomics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "culturalEconomics"
+      }
+    ]
+  },
+  {
+    "id": "cybermastery",
+    "type": "technologies",
+    "displayName": "Cybermastery",
+    "icon": "cybermastery",
+    "fields": {
+      "Name": "cybermastery",
+      "Icon": "cybermastery",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cybermastery"
+      }
+    ]
+  },
+  {
+    "id": "cybernetics",
+    "type": "technologies",
+    "displayName": "Cybernetics",
+    "icon": "cybernetics",
+    "fields": {
+      "Name": "cybernetics",
+      "Icon": "cybernetics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cybernetics"
+      }
+    ]
+  },
+  {
+    "id": "deepSpaceColonization",
+    "type": "technologies",
+    "displayName": "Deep Space Colonization",
+    "icon": "deepSpaceColonization",
+    "fields": {
+      "Name": "deepSpaceColonization",
+      "Icon": "deepSpaceColonization",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "deepSpaceColonization"
+      }
+    ]
+  },
+  {
+    "id": "defaultDomain",
+    "type": "technologies",
+    "displayName": "Default Domain",
+    "icon": "defaultDomain",
+    "fields": {
+      "Name": "defaultDomain",
+      "Icon": "defaultDomain",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "defaultDomain"
+      }
+    ]
+  },
+  {
+    "id": "digitalHumanity",
+    "type": "technologies",
+    "displayName": "Digital Humanity",
+    "icon": "digitalHumanity",
+    "fields": {
+      "Name": "digitalHumanity",
+      "Icon": "digitalHumanity",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "digitalHumanity"
+      }
+    ]
+  },
+  {
+    "id": "dirtyBombOperation",
+    "type": "technologies",
+    "displayName": "Dirty Bomb Operation",
+    "icon": "dirtyBombOperation",
+    "fields": {
+      "Name": "dirtyBombOperation",
+      "Icon": "dirtyBombOperation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "dirtyBombOperation"
+      }
+    ]
+  },
+  {
+    "id": "economicOutput",
+    "type": "technologies",
+    "displayName": "Economic Output",
+    "icon": "economicOutput",
+    "fields": {
+      "Name": "economicOutput",
+      "Icon": "economicOutput",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economicOutput"
+      }
+    ]
+  },
+  {
+    "id": "economicOutputMult",
+    "type": "technologies",
+    "displayName": "Economic Output Mult",
+    "icon": "economicOutputMult",
+    "fields": {
+      "Name": "economicOutputMult",
+      "Icon": "economicOutputMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economicOutputMult"
+      }
+    ]
+  },
+  {
+    "id": "educationEfficiency",
+    "type": "technologies",
+    "displayName": "Education Efficiency",
+    "icon": "educationEfficiency",
+    "fields": {
+      "Name": "educationEfficiency",
+      "Icon": "educationEfficiency",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "educationTech",
+    "type": "technologies",
+    "displayName": "Education Tech",
+    "icon": "educationTech",
+    "fields": {
+      "Name": "educationTech",
+      "Icon": "educationTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "educationTech"
+      }
+    ]
+  },
+  {
+    "id": "empTech",
+    "type": "technologies",
+    "displayName": "Emp Tech",
+    "icon": "empTech",
+    "fields": {
+      "Name": "empTech",
+      "Icon": "empTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTech"
+      }
+    ]
+  },
+  {
+    "id": "empTurret1",
+    "type": "technologies",
+    "displayName": "Emp Turret1",
+    "icon": "empTurret1",
+    "fields": {
+      "Name": "empTurret1",
+      "Icon": "empTurret1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret1"
+      }
+    ]
+  },
+  {
+    "id": "empTurret2",
+    "type": "technologies",
+    "displayName": "Emp Turret2",
+    "icon": "empTurret2",
+    "fields": {
+      "Name": "empTurret2",
+      "Icon": "empTurret2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret2"
+      }
+    ]
+  },
+  {
+    "id": "empTurret3",
+    "type": "technologies",
+    "displayName": "Emp Turret3",
+    "icon": "empTurret3",
+    "fields": {
+      "Name": "empTurret3",
+      "Icon": "empTurret3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "empTurret3"
+      }
+    ]
+  },
+  {
+    "id": "engine1",
+    "type": "technologies",
+    "displayName": "Engine1",
+    "icon": "engine1",
+    "fields": {
+      "Name": "engine1",
+      "Icon": "engine1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine1"
+      }
+    ]
+  },
+  {
+    "id": "engine2",
+    "type": "technologies",
+    "displayName": "Engine2",
+    "icon": "engine2",
+    "fields": {
+      "Name": "engine2",
+      "Icon": "engine2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine2"
+      }
+    ]
+  },
+  {
+    "id": "engine3",
+    "type": "technologies",
+    "displayName": "Engine3",
+    "icon": "engine3",
+    "fields": {
+      "Name": "engine3",
+      "Icon": "engine3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine3"
+      }
+    ]
+  },
+  {
+    "id": "engine4",
+    "type": "technologies",
+    "displayName": "Engine4",
+    "icon": "engine4",
+    "fields": {
+      "Name": "engine4",
+      "Icon": "engine4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine4"
+      }
+    ]
+  },
+  {
+    "id": "engine5",
+    "type": "technologies",
+    "displayName": "Engine5",
+    "icon": "engine5",
+    "fields": {
+      "Name": "engine5",
+      "Icon": "engine5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine5"
+      }
+    ]
+  },
+  {
+    "id": "enigmatic",
+    "type": "technologies",
+    "displayName": "Enigmatic",
+    "icon": "enigmatic",
+    "fields": {
+      "Name": "enigmatic",
+      "Icon": "enigmatic",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "enigmatic"
+      }
+    ]
+  },
+  {
+    "id": "eraInterplanetary",
+    "type": "technologies",
+    "displayName": "Era Interplanetary",
+    "icon": "eraInterplanetary",
+    "fields": {
+      "Name": "eraInterplanetary",
+      "Icon": "eraInterplanetary",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraInterplanetary"
+      }
+    ]
+  },
+  {
+    "id": "eraUnification",
+    "type": "technologies",
+    "displayName": "Era Unification",
+    "icon": "eraUnification",
+    "fields": {
+      "Name": "eraUnification",
+      "Icon": "eraUnification",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eraUnification"
+      }
+    ]
+  },
+  {
+    "id": "espionageDefense",
+    "type": "technologies",
+    "displayName": "Espionage Defense",
+    "icon": "espionageDefense",
+    "fields": {
+      "Name": "espionageDefense",
+      "Icon": "espionageDefense",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageDefense"
+      }
+    ]
+  },
+  {
+    "id": "espionageEffect",
+    "type": "technologies",
+    "displayName": "Espionage Effect",
+    "icon": "espionageEffect",
+    "fields": {
+      "Name": "espionageEffect",
+      "Icon": "espionageEffect",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageEffect"
+      }
+    ]
+  },
+  {
+    "id": "espionageOffense",
+    "type": "technologies",
+    "displayName": "Espionage Offense",
+    "icon": "espionageOffense",
+    "fields": {
+      "Name": "espionageOffense",
+      "Icon": "espionageOffense",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageOffense"
+      }
+    ]
+  },
+  {
+    "id": "exoticMatter",
+    "type": "technologies",
+    "displayName": "Exotic Matter",
+    "icon": "exoticMatter",
+    "fields": {
+      "Name": "exoticMatter",
+      "Icon": "exoticMatter",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "exoticMatter"
+      }
+    ]
+  },
+  {
+    "id": "exoticMatterCatalysis",
+    "type": "technologies",
+    "displayName": "Exotic Matter Catalysis",
+    "icon": "exoticMatterCatalysis",
+    "fields": {
+      "Name": "exoticMatterCatalysis",
+      "Icon": "exoticMatterCatalysis",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "exoticMatterCatalysis"
+      }
+    ]
+  },
+  {
+    "id": "expansion",
+    "type": "technologies",
+    "displayName": "Expansion",
+    "icon": "expansion",
+    "fields": {
+      "Name": "expansion",
+      "Icon": "expansion",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "expansion"
+      }
+    ]
+  },
+  {
+    "id": "fXQ2",
+    "type": "technologies",
+    "displayName": "F XQ2",
+    "icon": "fXQ2",
+    "fields": {
+      "Name": "fXQ2",
+      "Icon": "fXQ2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fXQ2"
+      }
+    ]
+  },
+  {
+    "id": "factionLoyaltyAdd",
+    "type": "technologies",
+    "displayName": "Faction Loyalty Add",
+    "icon": "factionLoyaltyAdd",
+    "fields": {
+      "Name": "factionLoyaltyAdd",
+      "Icon": "factionLoyaltyAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionLoyaltyAdd"
+      }
+    ]
+  },
+  {
+    "id": "factionPowerAdd",
+    "type": "technologies",
+    "displayName": "Faction Power Add",
+    "icon": "factionPowerAdd",
+    "fields": {
+      "Name": "factionPowerAdd",
+      "Icon": "factionPowerAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionPowerAdd"
+      }
+    ]
+  },
+  {
+    "id": "factionPrivilegePower",
+    "type": "technologies",
+    "displayName": "Faction Privilege Power",
+    "icon": "factionPrivilegePower",
+    "fields": {
+      "Name": "factionPrivilegePower",
+      "Icon": "factionPrivilegePower",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "factionPrivilegePower"
+      }
+    ]
+  },
+  {
+    "id": "floatingFortressTech",
+    "type": "technologies",
+    "displayName": "Floating Fortress Tech",
+    "icon": "floatingFortressTech",
+    "fields": {
+      "Name": "floatingFortressTech",
+      "Icon": "floatingFortressTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "floatingFortressTech"
+      }
+    ]
+  },
+  {
+    "id": "flyingFortress",
+    "type": "technologies",
+    "displayName": "Flying Fortress",
+    "icon": "flyingFortress",
+    "fields": {
+      "Name": "flyingFortress",
+      "Icon": "flyingFortress",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "flyingFortress"
+      }
+    ]
+  },
+  {
+    "id": "flyingFortressTech",
+    "type": "technologies",
+    "displayName": "Flying Fortress Tech",
+    "icon": "flyingFortressTech",
+    "fields": {
+      "Name": "flyingFortressTech",
+      "Icon": "flyingFortressTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "flyingFortressTech"
+      }
+    ]
+  },
+  {
+    "id": "fortifications",
+    "type": "technologies",
+    "displayName": "Fortification Structures",
+    "icon": "fortifications",
+    "fields": {
+      "Name": "fortifications",
+      "Icon": "fortifications",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fortifications"
+      }
+    ]
+  },
+  {
+    "id": "fusionReactor",
+    "type": "technologies",
+    "displayName": "Fusion Reactor",
+    "icon": "fusionReactor",
+    "fields": {
+      "Name": "fusionReactor",
+      "Icon": "fusionReactor",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fusionReactor"
+      }
+    ]
+  },
+  {
+    "id": "futureSociety",
+    "type": "technologies",
+    "displayName": "Future Society",
+    "icon": "futureSociety",
+    "fields": {
+      "Name": "futureSociety",
+      "Icon": "futureSociety",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "futureSociety"
+      }
+    ]
+  },
+  {
+    "id": "galacticAmbition",
+    "type": "technologies",
+    "displayName": "Galactic Ambition",
+    "icon": "galacticAmbition",
+    "fields": {
+      "Name": "galacticAmbition",
+      "Icon": "galacticAmbition",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "galacticAmbition"
+      }
+    ]
+  },
+  {
+    "id": "galacticCivilization",
+    "type": "technologies",
+    "displayName": "Galactic Civilization",
+    "icon": "galacticCivilization",
+    "fields": {
+      "Name": "galacticCivilization",
+      "Icon": "galacticCivilization",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "galacticCivilization"
+      }
+    ]
+  },
+  {
+    "id": "geneticEngineering",
+    "type": "technologies",
+    "displayName": "Genetic Engineering",
+    "icon": "geneticEngineering",
+    "fields": {
+      "Name": "geneticEngineering",
+      "Icon": "geneticEngineering",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticEngineering"
+      }
+    ]
+  },
+  {
+    "id": "geneticManipulation",
+    "type": "technologies",
+    "displayName": "Genetic Manipulation",
+    "icon": "geneticManipulation",
+    "fields": {
+      "Name": "geneticManipulation",
+      "Icon": "geneticManipulation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticManipulation"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterial",
+    "type": "technologies",
+    "displayName": "Genetic Material",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "geneticMaterial",
+      "Icon": "geneticMaterial",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterialFactory",
+    "type": "technologies",
+    "displayName": "Genetic Material Factory",
+    "icon": "geneticMaterialFactory",
+    "fields": {
+      "Name": "geneticMaterialFactory",
+      "Icon": "geneticMaterialFactory",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterialFactory"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterialUp",
+    "type": "technologies",
+    "displayName": "Genetic Material Up",
+    "icon": "geneticMaterialUp",
+    "fields": {
+      "Name": "geneticMaterialUp",
+      "Icon": "geneticMaterialUp",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterialUp"
+      }
+    ]
+  },
+  {
+    "id": "geneticSequencing",
+    "type": "technologies",
+    "displayName": "Genetic Sequencing",
+    "icon": "geneticSequencing",
+    "fields": {
+      "Name": "geneticSequencing",
+      "Icon": "geneticSequencing",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticSequencing"
+      }
+    ]
+  },
+  {
+    "id": "gravitonManipulation",
+    "type": "technologies",
+    "displayName": "Graviton Manipulation",
+    "icon": "gravitonManipulation",
+    "fields": {
+      "Name": "gravitonManipulation",
+      "Icon": "gravitonManipulation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravitonManipulation"
+      }
+    ]
+  },
+  {
+    "id": "grayGooWeapon",
+    "type": "technologies",
+    "displayName": "Gray Goo Weapon",
+    "icon": "grayGooWeapon",
+    "fields": {
+      "Name": "grayGooWeapon",
+      "Icon": "grayGooWeapon",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "grayGooWeapon"
+      }
+    ]
+  },
+  {
+    "id": "greatGameTheory",
+    "type": "technologies",
+    "displayName": "Great Game Theory",
+    "icon": "greatGameTheory",
+    "fields": {
+      "Name": "greatGameTheory",
+      "Icon": "greatGameTheory",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "greatGameTheory"
+      }
+    ]
+  },
+  {
+    "id": "habitability",
+    "type": "technologies",
+    "displayName": "Habitability",
+    "icon": "habitability",
+    "fields": {
+      "Name": "habitability",
+      "Icon": "habitability",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "habitability"
+      }
+    ]
+  },
+  {
+    "id": "habitabilityAdd",
+    "type": "technologies",
+    "displayName": "Habitability Add",
+    "icon": "habitabilityAdd",
+    "fields": {
+      "Name": "habitabilityAdd",
+      "Icon": "habitabilityAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "habitabilityAdd"
+      }
+    ]
+  },
+  {
+    "id": "hivemindTheory",
+    "type": "technologies",
+    "displayName": "Hivemind Theory",
+    "icon": "hivemindTheory",
+    "fields": {
+      "Name": "hivemindTheory",
+      "Icon": "hivemindTheory",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hivemindTheory"
+      }
+    ]
+  },
+  {
+    "id": "homoSuperius",
+    "type": "technologies",
+    "displayName": "Homo Superius",
+    "icon": "homoSuperius",
+    "fields": {
+      "Name": "homoSuperius",
+      "Icon": "homoSuperius",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "homoSuperius"
+      }
+    ]
+  },
+  {
+    "id": "humanDeterminism",
+    "type": "technologies",
+    "displayName": "Human Determinism",
+    "icon": "humanDeterminism",
+    "fields": {
+      "Name": "humanDeterminism",
+      "Icon": "humanDeterminism",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "humanDeterminism"
+      }
+    ]
+  },
+  {
+    "id": "hypercomputation",
+    "type": "technologies",
+    "displayName": "Hypercomputation",
+    "icon": "hypercomputation",
+    "fields": {
+      "Name": "hypercomputation",
+      "Icon": "hypercomputation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hypercomputation"
+      }
+    ]
+  },
+  {
+    "id": "hypermaterials",
+    "type": "technologies",
+    "displayName": "Hypermaterials",
+    "icon": "hypermaterials",
+    "fields": {
+      "Name": "hypermaterials",
+      "Icon": "hypermaterials",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hypermaterials"
+      }
+    ]
+  },
+  {
+    "id": "hyperphysics",
+    "type": "technologies",
+    "displayName": "Hyperspace Theory",
+    "icon": "hyperphysics",
+    "fields": {
+      "Name": "hyperphysics",
+      "Icon": "hyperphysics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hyperphysics"
+      }
+    ]
+  },
+  {
+    "id": "industrialAutomation",
+    "type": "technologies",
+    "displayName": "Industrial Automation",
+    "icon": "industrialAutomation",
+    "fields": {
+      "Name": "industrialAutomation",
+      "Icon": "industrialAutomation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrialAutomation"
+      }
+    ]
+  },
+  {
+    "id": "industrialPower",
+    "type": "technologies",
+    "displayName": "Industrial Power",
+    "icon": "industrialPower",
+    "fields": {
+      "Name": "industrialPower",
+      "Icon": "industrialPower",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrialPower"
+      }
+    ]
+  },
+  {
+    "id": "industrialReplication",
+    "type": "technologies",
+    "displayName": "Industrial Replication",
+    "icon": "industrialReplication",
+    "fields": {
+      "Name": "industrialReplication",
+      "Icon": "industrialReplication",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrialReplication"
+      }
+    ]
+  },
+  {
+    "id": "industrialization",
+    "type": "technologies",
+    "displayName": "Industrialization",
+    "icon": "industrialization",
+    "fields": {
+      "Name": "industrialization",
+      "Icon": "industrialization",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrialization"
+      }
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "type": "technologies",
+    "displayName": "Infrastructure",
+    "icon": "infrastructure",
+    "fields": {
+      "Name": "infrastructure",
+      "Icon": "infrastructure",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infrastructure"
+      }
+    ]
+  },
+  {
+    "id": "integrationCostMult",
+    "type": "technologies",
+    "displayName": "Integration Cost Mult",
+    "icon": "integrationCostMult",
+    "fields": {
+      "Name": "integrationCostMult",
+      "Icon": "integrationCostMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "integrationCostMult"
+      }
+    ]
+  },
+  {
+    "id": "interplanetaryColonization",
+    "type": "technologies",
+    "displayName": "Interplanetary Colonization",
+    "icon": "interplanetaryColonization",
+    "fields": {
+      "Name": "interplanetaryColonization",
+      "Icon": "interplanetaryColonization",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interplanetaryColonization"
+      }
+    ]
+  },
+  {
+    "id": "interplanetaryCulture",
+    "type": "technologies",
+    "displayName": "Interplanetary Culture",
+    "icon": "interplanetaryCulture",
+    "fields": {
+      "Name": "interplanetaryCulture",
+      "Icon": "interplanetaryCulture",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interplanetaryCulture"
+      }
+    ]
+  },
+  {
+    "id": "interplanetaryTrade",
+    "type": "technologies",
+    "displayName": "Interplanetary Trade",
+    "icon": "interplanetaryTrade",
+    "fields": {
+      "Name": "interplanetaryTrade",
+      "Icon": "interplanetaryTrade",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interplanetaryTrade"
+      }
+    ]
+  },
+  {
+    "id": "interstellarExploration",
+    "type": "technologies",
+    "displayName": "Interstellar Exploration",
+    "icon": "interstellarExploration",
+    "fields": {
+      "Name": "interstellarExploration",
+      "Icon": "interstellarExploration",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "interstellarExploration"
+      }
+    ]
+  },
+  {
+    "id": "landCruiser",
+    "type": "technologies",
+    "displayName": "Land Cruiser",
+    "icon": "landCruiser",
+    "fields": {
+      "Name": "landCruiser",
+      "Icon": "landCruiser",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landCruiser"
+      }
+    ]
+  },
+  {
+    "id": "landOrdinance",
+    "type": "technologies",
+    "displayName": "Land Ordinance",
+    "icon": "landOrdinance",
+    "fields": {
+      "Name": "landOrdinance",
+      "Icon": "landOrdinance",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landOrdinance"
+      }
+    ]
+  },
+  {
+    "id": "landTracking",
+    "type": "technologies",
+    "displayName": "Land Tracking",
+    "icon": "landTracking",
+    "fields": {
+      "Name": "landTracking",
+      "Icon": "landTracking",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landTracking"
+      }
+    ]
+  },
+  {
+    "id": "landVehicles",
+    "type": "technologies",
+    "displayName": "Land Vehicles",
+    "icon": "landVehicles",
+    "fields": {
+      "Name": "landVehicles",
+      "Icon": "landVehicles",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landVehicles"
+      }
+    ]
+  },
+  {
+    "id": "laserTech",
+    "type": "technologies",
+    "displayName": "Laser Tech",
+    "icon": "laserTech",
+    "fields": {
+      "Name": "laserTech",
+      "Icon": "laserTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTech"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret1",
+    "type": "technologies",
+    "displayName": "Laser Turret1",
+    "icon": "laserTurret1",
+    "fields": {
+      "Name": "laserTurret1",
+      "Icon": "laserTurret1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret1"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret2",
+    "type": "technologies",
+    "displayName": "Laser Turret2",
+    "icon": "laserTurret2",
+    "fields": {
+      "Name": "laserTurret2",
+      "Icon": "laserTurret2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret2"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret3",
+    "type": "technologies",
+    "displayName": "Laser Turret3",
+    "icon": "laserTurret3",
+    "fields": {
+      "Name": "laserTurret3",
+      "Icon": "laserTurret3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret3"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret4",
+    "type": "technologies",
+    "displayName": "Laser Turret4",
+    "icon": "laserTurret4",
+    "fields": {
+      "Name": "laserTurret4",
+      "Icon": "laserTurret4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret4"
+      }
+    ]
+  },
+  {
+    "id": "laserTurret5",
+    "type": "technologies",
+    "displayName": "Laser Turret5",
+    "icon": "laserTurret5",
+    "fields": {
+      "Name": "laserTurret5",
+      "Icon": "laserTurret5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laserTurret5"
+      }
+    ]
+  },
+  {
+    "id": "lifeSpanAdd",
+    "type": "technologies",
+    "displayName": "Life Span Add",
+    "icon": "lifeSpanAdd",
+    "fields": {
+      "Name": "lifeSpanAdd",
+      "Icon": "lifeSpanAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "lifeSpanAdd"
+      }
+    ]
+  },
+  {
+    "id": "livingMetal",
+    "type": "technologies",
+    "displayName": "Living Metal",
+    "icon": "livingMetal",
+    "fields": {
+      "Name": "livingMetal",
+      "Icon": "livingMetal",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "livingMetal"
+      }
+    ]
+  },
+  {
+    "id": "magneticShield",
+    "type": "technologies",
+    "displayName": "Magnetic Shield",
+    "icon": "magneticShield",
+    "fields": {
+      "Name": "magneticShield",
+      "Icon": "magneticShield",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "magneticShield"
+      }
+    ]
+  },
+  {
+    "id": "manpowerRecoveryRate",
+    "type": "technologies",
+    "displayName": "Manpower Recovery Rate",
+    "icon": "manpowerRecoveryRate",
+    "fields": {
+      "Name": "manpowerRecoveryRate",
+      "Icon": "manpowerRecoveryRate",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpowerRecoveryRate"
+      }
+    ]
+  },
+  {
+    "id": "massManufacturing",
+    "type": "technologies",
+    "displayName": "Mass Manufacturing",
+    "icon": "massManufacturing",
+    "fields": {
+      "Name": "massManufacturing",
+      "Icon": "massManufacturing",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massManufacturing"
+      }
+    ]
+  },
+  {
+    "id": "matterEnergyCovalence",
+    "type": "technologies",
+    "displayName": "Matter Energy Covalence",
+    "icon": "matterEnergyCovalence",
+    "fields": {
+      "Name": "matterEnergyCovalence",
+      "Icon": "matterEnergyCovalence",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "matterEnergyCovalence"
+      }
+    ]
+  },
+  {
+    "id": "maxPrivilegesAdd",
+    "type": "technologies",
+    "displayName": "Max Privileges Add",
+    "icon": "maxPrivilegesAdd",
+    "fields": {
+      "Name": "maxPrivilegesAdd",
+      "Icon": "maxPrivilegesAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "maxPrivilegesAdd"
+      }
+    ]
+  },
+  {
+    "id": "metalAdvance",
+    "type": "technologies",
+    "displayName": "Metal Advance",
+    "icon": "metalAdvance",
+    "fields": {
+      "Name": "metalAdvance",
+      "Icon": "metalAdvance",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "metalAdvance"
+      }
+    ]
+  },
+  {
+    "id": "microCooling",
+    "type": "technologies",
+    "displayName": "Micro Cooling",
+    "icon": "microCooling",
+    "fields": {
+      "Name": "microCooling",
+      "Icon": "microCooling",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "microCooling"
+      }
+    ]
+  },
+  {
+    "id": "middleClass",
+    "type": "technologies",
+    "displayName": "Middle Class",
+    "icon": "middleClass",
+    "fields": {
+      "Name": "middleClass",
+      "Icon": "middleClass",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass"
+      }
+    ]
+  },
+  {
+    "id": "militaryDoctrine_mobile",
+    "type": "technologies",
+    "displayName": "Military Doctrine Mobile",
+    "icon": "militaryDoctrine_mobile",
+    "fields": {
+      "Name": "militaryDoctrine_mobile",
+      "Icon": "militaryDoctrine_mobile",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_mobile"
+      }
+    ]
+  },
+  {
+    "id": "militaryIdeology",
+    "type": "technologies",
+    "displayName": "Military Ideology",
+    "icon": "militaryIdeology",
+    "fields": {
+      "Name": "militaryIdeology",
+      "Icon": "militaryIdeology",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryIdeology"
+      }
+    ]
+  },
+  {
+    "id": "militaryTech",
+    "type": "technologies",
+    "displayName": "Military Tech",
+    "icon": "militaryTech",
+    "fields": {
+      "Name": "militaryTech",
+      "Icon": "militaryTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryTech"
+      }
+    ]
+  },
+  {
+    "id": "mindUpload",
+    "type": "technologies",
+    "displayName": "Mind Upload",
+    "icon": "mindUpload",
+    "fields": {
+      "Name": "mindUpload",
+      "Icon": "mindUpload",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mindUpload"
+      }
+    ]
+  },
+  {
+    "id": "missileSilo",
+    "type": "technologies",
+    "displayName": "Missile Silo",
+    "icon": "missileSilo",
+    "fields": {
+      "Name": "missileSilo",
+      "Icon": "missileSilo",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missileSilo"
+      }
+    ]
+  },
+  {
+    "id": "missile1",
+    "type": "technologies",
+    "displayName": "Missile1",
+    "icon": "missile1",
+    "fields": {
+      "Name": "missile1",
+      "Icon": "missile1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile1"
+      }
+    ]
+  },
+  {
+    "id": "missile2",
+    "type": "technologies",
+    "displayName": "Missile2",
+    "icon": "missile2",
+    "fields": {
+      "Name": "missile2",
+      "Icon": "missile2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile2"
+      }
+    ]
+  },
+  {
+    "id": "missile3",
+    "type": "technologies",
+    "displayName": "Missile3",
+    "icon": "missile3",
+    "fields": {
+      "Name": "missile3",
+      "Icon": "missile3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile3"
+      }
+    ]
+  },
+  {
+    "id": "missile4",
+    "type": "technologies",
+    "displayName": "Missile4",
+    "icon": "missile4",
+    "fields": {
+      "Name": "missile4",
+      "Icon": "missile4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile4"
+      }
+    ]
+  },
+  {
+    "id": "missile5",
+    "type": "technologies",
+    "displayName": "Missile5",
+    "icon": "missile5",
+    "fields": {
+      "Name": "missile5",
+      "Icon": "missile5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile5"
+      }
+    ]
+  },
+  {
+    "id": "munitionDefense",
+    "type": "technologies",
+    "displayName": "Munition Defense",
+    "icon": "munitionDefense",
+    "fields": {
+      "Name": "munitionDefense",
+      "Icon": "munitionDefense",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense"
+      }
+    ]
+  },
+  {
+    "id": "nanoAlloy",
+    "type": "technologies",
+    "displayName": "Nano Alloy",
+    "icon": "nanoAlloy",
+    "fields": {
+      "Name": "nanoAlloy",
+      "Icon": "nanoAlloy",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nanoAlloy"
+      }
+    ]
+  },
+  {
+    "id": "nanocompositeUsage",
+    "type": "technologies",
+    "displayName": "Nanocomposite Usage",
+    "icon": "nanocompositeUsage",
+    "fields": {
+      "Name": "nanocompositeUsage",
+      "Icon": "nanocompositeUsage",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nanocompositeUsage"
+      }
+    ]
+  },
+  {
+    "id": "nanoscopicAssembly",
+    "type": "technologies",
+    "displayName": "Nanoscopic Assembly",
+    "icon": "nanoscopicAssembly",
+    "fields": {
+      "Name": "nanoscopicAssembly",
+      "Icon": "nanoscopicAssembly",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nanoscopicAssembly"
+      }
+    ]
+  },
+  {
+    "id": "navalPort",
+    "type": "technologies",
+    "displayName": "Naval Port",
+    "icon": "navalPort",
+    "fields": {
+      "Name": "navalPort",
+      "Icon": "navalPort",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "navalPort"
+      }
+    ]
+  },
+  {
+    "id": "neuralEngine",
+    "type": "technologies",
+    "displayName": "Neural Engine",
+    "icon": "neuralEngine",
+    "fields": {
+      "Name": "neuralEngine",
+      "Icon": "neuralEngine",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralEngine"
+      }
+    ]
+  },
+  {
+    "id": "neuralNetworks",
+    "type": "technologies",
+    "displayName": "Neural Networks",
+    "icon": "neuralNetworks",
+    "fields": {
+      "Name": "neuralNetworks",
+      "Icon": "neuralNetworks",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworks"
+      }
+    ]
+  },
+  {
+    "id": "neuralNetworksTech",
+    "type": "technologies",
+    "displayName": "Neural Networks Tech",
+    "icon": "neuralNetworksTech",
+    "fields": {
+      "Name": "neuralNetworksTech",
+      "Icon": "neuralNetworksTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworksTech"
+      }
+    ]
+  },
+  {
+    "id": "nuclearFuels",
+    "type": "technologies",
+    "displayName": "Nuclear Fuels",
+    "icon": "nuclearFuels",
+    "fields": {
+      "Name": "nuclearFuels",
+      "Icon": "nuclearFuels",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearFuels"
+      }
+    ]
+  },
+  {
+    "id": "nuclearFusion",
+    "type": "technologies",
+    "displayName": "Nuclear Fusion",
+    "icon": "nuclearFusion",
+    "fields": {
+      "Name": "nuclearFusion",
+      "Icon": "nuclearFusion",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearFusion"
+      }
+    ]
+  },
+  {
+    "id": "nuclearPhysics",
+    "type": "technologies",
+    "displayName": "Nuclear Physics",
+    "icon": "nuclearPhysics",
+    "fields": {
+      "Name": "nuclearPhysics",
+      "Icon": "nuclearPhysics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearPhysics"
+      }
+    ]
+  },
+  {
+    "id": "nuclearReactor",
+    "type": "technologies",
+    "displayName": "Nuclear Reactor",
+    "icon": "nuclearReactor",
+    "fields": {
+      "Name": "nuclearReactor",
+      "Icon": "nuclearReactor",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearReactor"
+      }
+    ]
+  },
+  {
+    "id": "organicSupremacy",
+    "type": "technologies",
+    "displayName": "Organic Supremacy",
+    "icon": "organicSupremacy",
+    "fields": {
+      "Name": "organicSupremacy",
+      "Icon": "organicSupremacy",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "organicSupremacy"
+      }
+    ]
+  },
+  {
+    "id": "panhumanismTech",
+    "type": "technologies",
+    "displayName": "Panhumanism Tech",
+    "icon": "panhumanismTech",
+    "fields": {
+      "Name": "panhumanismTech",
+      "Icon": "panhumanismTech",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "panhumanismTech"
+      }
+    ]
+  },
+  {
+    "id": "pharmaceuticals",
+    "type": "technologies",
+    "displayName": "Pharmaceuticals",
+    "icon": "pharmaceuticals",
+    "fields": {
+      "Name": "pharmaceuticals",
+      "Icon": "pharmaceuticals",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "pharmaceuticals"
+      }
+    ]
+  },
+  {
+    "id": "pointDefense",
+    "type": "technologies",
+    "displayName": "Point Defense",
+    "icon": "pointDefense",
+    "fields": {
+      "Name": "pointDefense",
+      "Icon": "pointDefense",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "pointDefense"
+      }
+    ]
+  },
+  {
+    "id": "polarizedArmor",
+    "type": "technologies",
+    "displayName": "Polarized Armor",
+    "icon": "polarizedArmor",
+    "fields": {
+      "Name": "polarizedArmor",
+      "Icon": "polarizedArmor",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "polarizedArmor"
+      }
+    ]
+  },
+  {
+    "id": "polymetals",
+    "type": "technologies",
+    "displayName": "Polymetals",
+    "icon": "polymetals",
+    "fields": {
+      "Name": "polymetals",
+      "Icon": "polymetals",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "polymetals"
+      }
+    ]
+  },
+  {
+    "id": "popGrowthMult",
+    "type": "technologies",
+    "displayName": "Pop Growth Mult",
+    "icon": "popGrowthMult",
+    "fields": {
+      "Name": "popGrowthMult",
+      "Icon": "popGrowthMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "popGrowthMult"
+      }
+    ]
+  },
+  {
+    "id": "posthumanism",
+    "type": "technologies",
+    "displayName": "Posthumanism",
+    "icon": "posthumanism",
+    "fields": {
+      "Name": "posthumanism",
+      "Icon": "posthumanism",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "posthumanism"
+      }
+    ]
+  },
+  {
+    "id": "privilegeGrantCost",
+    "type": "technologies",
+    "displayName": "Privilege Grant Cost",
+    "icon": "privilegeGrantCost",
+    "fields": {
+      "Name": "privilegeGrantCost",
+      "Icon": "privilegeGrantCost",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "privilegeGrantCost"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildCostMult",
+    "type": "technologies",
+    "displayName": "Project Build Cost Mult",
+    "icon": "projectBuildCostMult",
+    "fields": {
+      "Name": "projectBuildCostMult",
+      "Icon": "projectBuildCostMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildCostMult"
+      }
+    ]
+  },
+  {
+    "id": "projectBuildSpeedMult",
+    "type": "technologies",
+    "displayName": "Project Build Speed Mult",
+    "icon": "projectBuildSpeedMult",
+    "fields": {
+      "Name": "projectBuildSpeedMult",
+      "Icon": "projectBuildSpeedMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectBuildSpeedMult"
+      }
+    ]
+  },
+  {
+    "id": "projectEfficiency",
+    "type": "technologies",
+    "displayName": "Project Efficiency",
+    "icon": "projectEfficiency",
+    "fields": {
+      "Name": "projectEfficiency",
+      "Icon": "projectEfficiency",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectEfficiency"
+      }
+    ]
+  },
+  {
+    "id": "projectUpgradeLimit",
+    "type": "technologies",
+    "displayName": "Project Upgrade Limit",
+    "icon": "projectUpgradeLimit",
+    "fields": {
+      "Name": "projectUpgradeLimit",
+      "Icon": "projectUpgradeLimit",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectUpgradeLimit"
+      }
+    ]
+  },
+  {
+    "id": "projectUpkeepMult",
+    "type": "technologies",
+    "displayName": "Project Upkeep Mult",
+    "icon": "projectUpkeepMult",
+    "fields": {
+      "Name": "projectUpkeepMult",
+      "Icon": "projectUpkeepMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "projectUpkeepMult"
+      }
+    ]
+  },
+  {
+    "id": "psychology",
+    "type": "technologies",
+    "displayName": "Psychology",
+    "icon": "psychology",
+    "fields": {
+      "Name": "psychology",
+      "Icon": "psychology",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "psychology"
+      }
+    ]
+  },
+  {
+    "id": "quantumComputers",
+    "type": "technologies",
+    "displayName": "Quantum Computers",
+    "icon": "quantumComputers",
+    "fields": {
+      "Name": "quantumComputers",
+      "Icon": "quantumComputers",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "quantumComputers"
+      }
+    ]
+  },
+  {
+    "id": "quantumComputing",
+    "type": "technologies",
+    "displayName": "Quantum Computing",
+    "icon": "quantumComputing",
+    "fields": {
+      "Name": "quantumComputing",
+      "Icon": "quantumComputing",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "quantumComputing"
+      }
+    ]
+  },
+  {
+    "id": "radiator1",
+    "type": "technologies",
+    "displayName": "Radiator1",
+    "icon": "radiator1",
+    "fields": {
+      "Name": "radiator1",
+      "Icon": "radiator1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator1"
+      }
+    ]
+  },
+  {
+    "id": "radiator2",
+    "type": "technologies",
+    "displayName": "Radiator2",
+    "icon": "radiator2",
+    "fields": {
+      "Name": "radiator2",
+      "Icon": "radiator2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator2"
+      }
+    ]
+  },
+  {
+    "id": "radiator3",
+    "type": "technologies",
+    "displayName": "Radiator3",
+    "icon": "radiator3",
+    "fields": {
+      "Name": "radiator3",
+      "Icon": "radiator3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator3"
+      }
+    ]
+  },
+  {
+    "id": "radiator4",
+    "type": "technologies",
+    "displayName": "Radiator4",
+    "icon": "radiator4",
+    "fields": {
+      "Name": "radiator4",
+      "Icon": "radiator4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator4"
+      }
+    ]
+  },
+  {
+    "id": "radiator5",
+    "type": "technologies",
+    "displayName": "Radiator5",
+    "icon": "radiator5",
+    "fields": {
+      "Name": "radiator5",
+      "Icon": "radiator5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radiator5"
+      }
+    ]
+  },
+  {
+    "id": "rationalDiligence",
+    "type": "technologies",
+    "displayName": "Rational Diligence",
+    "icon": "rationalDiligence",
+    "fields": {
+      "Name": "rationalDiligence",
+      "Icon": "rationalDiligence",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rationalDiligence"
+      }
+    ]
+  },
+  {
+    "id": "reformCostMult",
+    "type": "technologies",
+    "displayName": "Reform Cost Mult",
+    "icon": "reformCostMult",
+    "fields": {
+      "Name": "reformCostMult",
+      "Icon": "reformCostMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "reformCostMult"
+      }
+    ]
+  },
+  {
+    "id": "replicatorIndustrial",
+    "type": "technologies",
+    "displayName": "Replicator Industrial",
+    "icon": "replicatorIndustrial",
+    "fields": {
+      "Name": "replicatorIndustrial",
+      "Icon": "replicatorIndustrial",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "replicatorIndustrial"
+      }
+    ]
+  },
+  {
+    "id": "researchMult",
+    "type": "technologies",
+    "displayName": "Research Mult",
+    "icon": "researchMult",
+    "fields": {
+      "Name": "researchMult",
+      "Icon": "researchMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "researchMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceCapacityMult",
+    "type": "technologies",
+    "displayName": "Resource Capacity Mult",
+    "icon": "resourceCapacityMult",
+    "fields": {
+      "Name": "resourceCapacityMult",
+      "Icon": "resourceCapacityMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceCapacityMult"
+      }
+    ]
+  },
+  {
+    "id": "extraction",
+    "type": "technologies",
+    "displayName": "Resource Extraction",
+    "icon": "extraction",
+    "fields": {
+      "Name": "extraction",
+      "Icon": "extraction",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "extraction"
+      }
+    ]
+  },
+  {
+    "id": "resourceIncomeMult",
+    "type": "technologies",
+    "displayName": "Resource Income Mult",
+    "icon": "resourceIncomeMult",
+    "fields": {
+      "Name": "resourceIncomeMult",
+      "Icon": "resourceIncomeMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceIncomeMult"
+      }
+    ]
+  },
+  {
+    "id": "resourceModifier",
+    "type": "technologies",
+    "displayName": "Resource Modifier",
+    "icon": "resourceModifier",
+    "fields": {
+      "Name": "resourceModifier",
+      "Icon": "resourceModifier",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceModifier"
+      }
+    ]
+  },
+  {
+    "id": "robotSelfRepair",
+    "type": "technologies",
+    "displayName": "Robot Self Repair",
+    "icon": "robotSelfRepair",
+    "fields": {
+      "Name": "robotSelfRepair",
+      "Icon": "robotSelfRepair",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotSelfRepair"
+      }
+    ]
+  },
+  {
+    "id": "roboticsCrisis",
+    "type": "technologies",
+    "displayName": "Robotics Crisis",
+    "icon": "roboticsCrisis",
+    "fields": {
+      "Name": "roboticsCrisis",
+      "Icon": "roboticsCrisis",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "roboticsCrisis"
+      }
+    ]
+  },
+  {
+    "id": "sapientMachines",
+    "type": "technologies",
+    "displayName": "Sapient Machines",
+    "icon": "sapientMachines",
+    "fields": {
+      "Name": "sapientMachines",
+      "Icon": "sapientMachines",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sapientMachines"
+      }
+    ]
+  },
+  {
+    "id": "serviceIndustry",
+    "type": "technologies",
+    "displayName": "Service Industry",
+    "icon": "serviceIndustry",
+    "fields": {
+      "Name": "serviceIndustry",
+      "Icon": "serviceIndustry",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "serviceIndustry"
+      }
+    ]
+  },
+  {
+    "id": "shipAuxiliaries",
+    "type": "technologies",
+    "displayName": "Ship Auxiliaries",
+    "icon": "shipAuxiliaries",
+    "fields": {
+      "Name": "shipAuxiliaries",
+      "Icon": "shipAuxiliaries",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shipAuxiliaries"
+      }
+    ]
+  },
+  {
+    "id": "shipConstruction",
+    "type": "technologies",
+    "displayName": "Ship Construction",
+    "icon": "shipConstruction",
+    "fields": {
+      "Name": "shipConstruction",
+      "Icon": "shipConstruction",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shipConstruction"
+      }
+    ]
+  },
+  {
+    "id": "smallArms",
+    "type": "technologies",
+    "displayName": "Small Arms",
+    "icon": "smallArms",
+    "fields": {
+      "Name": "smallArms",
+      "Icon": "smallArms",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms"
+      }
+    ]
+  },
+  {
+    "id": "smallArms1",
+    "type": "technologies",
+    "displayName": "Small Arms1",
+    "icon": "smallArms1",
+    "fields": {
+      "Name": "smallArms1",
+      "Icon": "smallArms1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms1"
+      }
+    ]
+  },
+  {
+    "id": "smallArms2",
+    "type": "technologies",
+    "displayName": "Small Arms2",
+    "icon": "smallArms2",
+    "fields": {
+      "Name": "smallArms2",
+      "Icon": "smallArms2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms2"
+      }
+    ]
+  },
+  {
+    "id": "smallArms3",
+    "type": "technologies",
+    "displayName": "Small Arms3",
+    "icon": "smallArms3",
+    "fields": {
+      "Name": "smallArms3",
+      "Icon": "smallArms3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms3"
+      }
+    ]
+  },
+  {
+    "id": "smallArms4",
+    "type": "technologies",
+    "displayName": "Small Arms4",
+    "icon": "smallArms4",
+    "fields": {
+      "Name": "smallArms4",
+      "Icon": "smallArms4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms4"
+      }
+    ]
+  },
+  {
+    "id": "smallArms5",
+    "type": "technologies",
+    "displayName": "Small Arms5",
+    "icon": "smallArms5",
+    "fields": {
+      "Name": "smallArms5",
+      "Icon": "smallArms5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms5"
+      }
+    ]
+  },
+  {
+    "id": "solarFederation",
+    "type": "technologies",
+    "displayName": "Solar Federation",
+    "icon": "solarFederation",
+    "fields": {
+      "Name": "solarFederation",
+      "Icon": "solarFederation",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "solarFederation"
+      }
+    ]
+  },
+  {
+    "id": "spaceColonies",
+    "type": "technologies",
+    "displayName": "Space Colonies",
+    "icon": "spaceColonies",
+    "fields": {
+      "Name": "spaceColonies",
+      "Icon": "spaceColonies",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceColonies"
+      }
+    ]
+  },
+  {
+    "id": "spaceEngine",
+    "type": "technologies",
+    "displayName": "Space Engine",
+    "icon": "spaceEngine",
+    "fields": {
+      "Name": "spaceEngine",
+      "Icon": "spaceEngine",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceEngine"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull1",
+    "type": "technologies",
+    "displayName": "Space Hull1",
+    "icon": "spaceHull1",
+    "fields": {
+      "Name": "spaceHull1",
+      "Icon": "spaceHull1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull1"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull2",
+    "type": "technologies",
+    "displayName": "Space Hull2",
+    "icon": "spaceHull2",
+    "fields": {
+      "Name": "spaceHull2",
+      "Icon": "spaceHull2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull2"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull3",
+    "type": "technologies",
+    "displayName": "Space Hull3",
+    "icon": "spaceHull3",
+    "fields": {
+      "Name": "spaceHull3",
+      "Icon": "spaceHull3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull3"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull4",
+    "type": "technologies",
+    "displayName": "Space Hull4",
+    "icon": "spaceHull4",
+    "fields": {
+      "Name": "spaceHull4",
+      "Icon": "spaceHull4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull4"
+      }
+    ]
+  },
+  {
+    "id": "spaceHull5",
+    "type": "technologies",
+    "displayName": "Space Hull5",
+    "icon": "spaceHull5",
+    "fields": {
+      "Name": "spaceHull5",
+      "Icon": "spaceHull5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceHull5"
+      }
+    ]
+  },
+  {
+    "id": "spaceTracking",
+    "type": "technologies",
+    "displayName": "Space Tracking",
+    "icon": "spaceTracking",
+    "fields": {
+      "Name": "spaceTracking",
+      "Icon": "spaceTracking",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceTracking"
+      }
+    ]
+  },
+  {
+    "id": "spacedArmor",
+    "type": "technologies",
+    "displayName": "Spaced Armor",
+    "icon": "spacedArmor",
+    "fields": {
+      "Name": "spacedArmor",
+      "Icon": "spacedArmor",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spacedArmor"
+      }
+    ]
+  },
+  {
+    "id": "spaceport",
+    "type": "technologies",
+    "displayName": "Spaceport",
+    "icon": "spaceport",
+    "fields": {
+      "Name": "spaceport",
+      "Icon": "spaceport",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceport"
+      }
+    ]
+  },
+  {
+    "id": "spaceports",
+    "type": "technologies",
+    "displayName": "Spaceports",
+    "icon": "spaceports",
+    "fields": {
+      "Name": "spaceports",
+      "Icon": "spaceports",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceports"
+      }
+    ]
+  },
+  {
+    "id": "stabilityGainAdd",
+    "type": "technologies",
+    "displayName": "Stability Gain Add",
+    "icon": "stabilityGainAdd",
+    "fields": {
+      "Name": "stabilityGainAdd",
+      "Icon": "stabilityGainAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stabilityGainAdd"
+      }
+    ]
+  },
+  {
+    "id": "stabilityGainFromFactions",
+    "type": "technologies",
+    "displayName": "Stability Gain From Factions",
+    "icon": "stabilityGainFromFactions",
+    "fields": {
+      "Name": "stabilityGainFromFactions",
+      "Icon": "stabilityGainFromFactions",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stabilityGainFromFactions"
+      }
+    ]
+  },
+  {
+    "id": "supermaterials",
+    "type": "technologies",
+    "displayName": "Super Materials",
+    "icon": "supermaterials",
+    "fields": {
+      "Name": "supermaterials",
+      "Icon": "supermaterials",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supermaterials"
+      }
+    ]
+  },
+  {
+    "id": "superSteel",
+    "type": "technologies",
+    "displayName": "Super Steel",
+    "icon": "superSteel",
+    "fields": {
+      "Name": "superSteel",
+      "Icon": "superSteel",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superSteel"
+      }
+    ]
+  },
+  {
+    "id": "supercollider",
+    "type": "technologies",
+    "displayName": "Supercollider",
+    "icon": "supercollider",
+    "fields": {
+      "Name": "supercollider",
+      "Icon": "supercollider",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supercollider"
+      }
+    ]
+  },
+  {
+    "id": "superhumanCrisis",
+    "type": "technologies",
+    "displayName": "Superhuman Crisis",
+    "icon": "superhumanCrisis",
+    "fields": {
+      "Name": "superhumanCrisis",
+      "Icon": "superhumanCrisis",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superhumanCrisis"
+      }
+    ]
+  },
+  {
+    "id": "superiorConstructs",
+    "type": "technologies",
+    "displayName": "Superior Constructs",
+    "icon": "superiorConstructs",
+    "fields": {
+      "Name": "superiorConstructs",
+      "Icon": "superiorConstructs",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superiorConstructs"
+      }
+    ]
+  },
+  {
+    "id": "syntheticEvolution",
+    "type": "technologies",
+    "displayName": "Synthetic Evolution",
+    "icon": "syntheticEvolution",
+    "fields": {
+      "Name": "syntheticEvolution",
+      "Icon": "syntheticEvolution",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "syntheticEvolution"
+      }
+    ]
+  },
+  {
+    "id": "syntheticUp",
+    "type": "technologies",
+    "displayName": "Synthetic Up",
+    "icon": "syntheticUp",
+    "fields": {
+      "Name": "syntheticUp",
+      "Icon": "syntheticUp",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "syntheticUp"
+      }
+    ]
+  },
+  {
+    "id": "synthetics",
+    "type": "technologies",
+    "displayName": "Synthetics",
+    "icon": "synthetics",
+    "fields": {
+      "Name": "synthetics",
+      "Icon": "synthetics",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "synthetics"
+      }
+    ]
+  },
+  {
+    "id": "tank1",
+    "type": "technologies",
+    "displayName": "Tank1",
+    "icon": "tank1",
+    "fields": {
+      "Name": "tank1",
+      "Icon": "tank1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank1"
+      }
+    ]
+  },
+  {
+    "id": "tank2",
+    "type": "technologies",
+    "displayName": "Tank2",
+    "icon": "tank2",
+    "fields": {
+      "Name": "tank2",
+      "Icon": "tank2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank2"
+      }
+    ]
+  },
+  {
+    "id": "tank3",
+    "type": "technologies",
+    "displayName": "Tank3",
+    "icon": "tank3",
+    "fields": {
+      "Name": "tank3",
+      "Icon": "tank3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank3"
+      }
+    ]
+  },
+  {
+    "id": "tank4",
+    "type": "technologies",
+    "displayName": "Tank4",
+    "icon": "tank4",
+    "fields": {
+      "Name": "tank4",
+      "Icon": "tank4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank4"
+      }
+    ]
+  },
+  {
+    "id": "tank5",
+    "type": "technologies",
+    "displayName": "Tank5",
+    "icon": "tank5",
+    "fields": {
+      "Name": "tank5",
+      "Icon": "tank5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "tank5"
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "type": "technologies",
+    "displayName": "Technology",
+    "icon": "technology",
+    "fields": {
+      "Name": "technology",
+      "Icon": "technology",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "technology"
+      }
+    ]
+  },
+  {
+    "id": "titaniumAlloy",
+    "type": "technologies",
+    "displayName": "Titanium Alloy",
+    "icon": "titaniumAlloy",
+    "fields": {
+      "Name": "titaniumAlloy",
+      "Icon": "titaniumAlloy",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "titaniumAlloy"
+      }
+    ]
+  },
+  {
+    "id": "turret1",
+    "type": "technologies",
+    "displayName": "Turret1",
+    "icon": "turret1",
+    "fields": {
+      "Name": "turret1",
+      "Icon": "turret1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret1"
+      }
+    ]
+  },
+  {
+    "id": "turret2",
+    "type": "technologies",
+    "displayName": "Turret2",
+    "icon": "turret2",
+    "fields": {
+      "Name": "turret2",
+      "Icon": "turret2",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret2"
+      }
+    ]
+  },
+  {
+    "id": "turret3",
+    "type": "technologies",
+    "displayName": "Turret3",
+    "icon": "turret3",
+    "fields": {
+      "Name": "turret3",
+      "Icon": "turret3",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret3"
+      }
+    ]
+  },
+  {
+    "id": "turret4",
+    "type": "technologies",
+    "displayName": "Turret4",
+    "icon": "turret4",
+    "fields": {
+      "Name": "turret4",
+      "Icon": "turret4",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret4"
+      }
+    ]
+  },
+  {
+    "id": "turret5",
+    "type": "technologies",
+    "displayName": "Turret5",
+    "icon": "turret5",
+    "fields": {
+      "Name": "turret5",
+      "Icon": "turret5",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "turret5"
+      }
+    ]
+  },
+  {
+    "id": "unitAttackMult",
+    "type": "technologies",
+    "displayName": "Unit Attack Mult",
+    "icon": "unitAttackMult",
+    "fields": {
+      "Name": "unitAttackMult",
+      "Icon": "unitAttackMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitAttackMult"
+      }
+    ]
+  },
+  {
+    "id": "unitCommandLimitAdd",
+    "type": "technologies",
+    "displayName": "Unit Command Limit Add",
+    "icon": "unitCommandLimitAdd",
+    "fields": {
+      "Name": "unitCommandLimitAdd",
+      "Icon": "unitCommandLimitAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitCommandLimitAdd"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleAdd",
+    "type": "technologies",
+    "displayName": "Unit Morale Add",
+    "icon": "unitMoraleAdd",
+    "fields": {
+      "Name": "unitMoraleAdd",
+      "Icon": "unitMoraleAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleAdd"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleDamageReduction",
+    "type": "technologies",
+    "displayName": "Unit Morale Damage Reduction",
+    "icon": "unitMoraleDamageReduction",
+    "fields": {
+      "Name": "unitMoraleDamageReduction",
+      "Icon": "unitMoraleDamageReduction",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleDamageReduction"
+      }
+    ]
+  },
+  {
+    "id": "unitMoraleMult",
+    "type": "technologies",
+    "displayName": "Unit Morale Mult",
+    "icon": "unitMoraleMult",
+    "fields": {
+      "Name": "unitMoraleMult",
+      "Icon": "unitMoraleMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitMoraleMult"
+      }
+    ]
+  },
+  {
+    "id": "unitReinforceRateMult",
+    "type": "technologies",
+    "displayName": "Unit Reinforce Rate Mult",
+    "icon": "unitReinforceRateMult",
+    "fields": {
+      "Name": "unitReinforceRateMult",
+      "Icon": "unitReinforceRateMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitReinforceRateMult"
+      }
+    ]
+  },
+  {
+    "id": "unitSpeedMult",
+    "type": "technologies",
+    "displayName": "Unit Speed Mult",
+    "icon": "unitSpeedMult",
+    "fields": {
+      "Name": "unitSpeedMult",
+      "Icon": "unitSpeedMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitSpeedMult"
+      }
+    ]
+  },
+  {
+    "id": "unitStatMult",
+    "type": "technologies",
+    "displayName": "Unit Stat Mult",
+    "icon": "unitStatMult",
+    "fields": {
+      "Name": "unitStatMult",
+      "Icon": "unitStatMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitStatMult"
+      }
+    ]
+  },
+  {
+    "id": "unitTransportSpeedAdd",
+    "type": "technologies",
+    "displayName": "Unit Transport Speed Add",
+    "icon": "unitTransportSpeedAdd",
+    "fields": {
+      "Name": "unitTransportSpeedAdd",
+      "Icon": "unitTransportSpeedAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitTransportSpeedAdd"
+      }
+    ]
+  },
+  {
+    "id": "unitVulnMult",
+    "type": "technologies",
+    "displayName": "Unit Vuln Mult",
+    "icon": "unitVulnMult",
+    "fields": {
+      "Name": "unitVulnMult",
+      "Icon": "unitVulnMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitVulnMult"
+      }
+    ]
+  },
+  {
+    "id": "unityMult",
+    "type": "technologies",
+    "displayName": "Unity Mult",
+    "icon": "unityMult",
+    "fields": {
+      "Name": "unityMult",
+      "Icon": "unityMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unityMult"
+      }
+    ]
+  },
+  {
+    "id": "university",
+    "type": "technologies",
+    "displayName": "University",
+    "icon": "university",
+    "fields": {
+      "Name": "university",
+      "Icon": "university",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "university"
+      }
+    ]
+  },
+  {
+    "id": "unrestChangeAdd",
+    "type": "technologies",
+    "displayName": "Unrest Change Add",
+    "icon": "unrestChangeAdd",
+    "fields": {
+      "Name": "unrestChangeAdd",
+      "Icon": "unrestChangeAdd",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unrestChangeAdd"
+      }
+    ]
+  },
+  {
+    "id": "upperClass",
+    "type": "technologies",
+    "displayName": "Upper Class",
+    "icon": "upperClass",
+    "fields": {
+      "Name": "upperClass",
+      "Icon": "upperClass",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClass"
+      }
+    ]
+  },
+  {
+    "id": "virtualSociety",
+    "type": "technologies",
+    "displayName": "Virtual Society",
+    "icon": "virtualSociety",
+    "fields": {
+      "Name": "virtualSociety",
+      "Icon": "virtualSociety",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "virtualSociety"
+      }
+    ]
+  },
+  {
+    "id": "warExhaustionMult",
+    "type": "technologies",
+    "displayName": "War Exhaustion Mult",
+    "icon": "warExhaustionMult",
+    "fields": {
+      "Name": "warExhaustionMult",
+      "Icon": "warExhaustionMult",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warExhaustionMult"
+      }
+    ]
+  },
+  {
+    "id": "warExpansion",
+    "type": "technologies",
+    "displayName": "War Expansion",
+    "icon": "warExpansion",
+    "fields": {
+      "Name": "warExpansion",
+      "Icon": "warExpansion",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warExpansion"
+      }
+    ]
+  },
+  {
+    "id": "warpDrive",
+    "type": "technologies",
+    "displayName": "Warp Drive",
+    "icon": "warpDrive",
+    "fields": {
+      "Name": "warpDrive",
+      "Icon": "warpDrive",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive"
+      }
+    ]
+  },
+  {
+    "id": "warpDrive_1",
+    "type": "technologies",
+    "displayName": "Warp Drive 1",
+    "icon": "warpDrive_1",
+    "fields": {
+      "Name": "warpDrive_1",
+      "Icon": "warpDrive_1",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive_1"
+      }
+    ]
+  },
+  {
+    "id": "breakthrough",
+    "type": "technologies",
+    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+    "icon": "breakthrough",
+    "fields": {
+      "Name": "breakthrough",
+      "Icon": "breakthrough",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breakthrough"
+      }
+    ]
+  },
+  {
+    "id": "entrenchment",
+    "type": "technologies",
+    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+    "icon": "entrenchment",
+    "fields": {
+      "Name": "entrenchment",
+      "Icon": "entrenchment",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "entrenchment"
+      }
+    ]
+  },
+  {
+    "id": "zenithPrinciple",
+    "type": "technologies",
+    "displayName": "Zenith Principle",
+    "icon": "zenithPrinciple",
+    "fields": {
+      "Name": "zenithPrinciple",
+      "Icon": "zenithPrinciple",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "zenithPrinciple"
       }
     ]
   }
