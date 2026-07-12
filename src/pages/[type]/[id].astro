@@ -9,7 +9,8 @@ import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
-  return getCategories().flatMap((cat) => getEntriesByType(cat.slug).map((entry) => ({ params: { type: cat.slug, id: entry.id } })));
+  // Culture traits are served by grouped family pages at /culture-traits/[family]/
+  return getCategories().filter((cat) => cat.slug !== 'culture-traits').flatMap((cat) => getEntriesByType(cat.slug).map((entry) => ({ params: { type: cat.slug, id: entry.id } })));
 }
 
 const { type, id } = Astro.params;

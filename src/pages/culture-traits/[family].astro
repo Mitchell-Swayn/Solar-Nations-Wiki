@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ModifierList from '../../components/ModifierList.astro';
+import GameIcon from '../../components/GameIcon.astro';
+import { getEntriesByType } from '../../lib/data';
+import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
+import { withBase } from '../../lib/base';
+
+export function getStaticPaths() {
+  const families = new Set(getEntriesByType('culture-traits').map((entry) => getCultureTraitGroup(entry.id).id));
+  return [...families].map((family) => ({ params: { family } }));
+}
+
+const { family } = Astro.params;
+const traits = getEntriesByType('culture-traits');
+const meta = getCultureTraitGroup(traits.find((entry) => getCultureTraitGroup(entry.id).id === family)!.id);
+const members = traits
+  .filter((entry) => getCultureTraitGroup(entry.id).id === family)
+  .sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id)) || a.displayName.localeCompare(b.displayName));
+const root = members.find((entry) => isCultureFamilyRoot(entry.id));
+const subtraits = members.filter((entry) => entry !== root);
+const totalEffects = members.reduce((sum, entry) => sum + entry.modifiers.length, 0);
+
+const families = [...new Map(traits.map((entry) => {
+  const group = getCultureTraitGroup(entry.id);
+  return [group.id, group];
+})).values()].sort((a, b) => a.label.localeCompare(b.label));
+const position = families.findIndex((item) => item.id === family);
+const previous = position > 0 ? families[position - 1] : undefined;
+const next = position < families.length - 1 ? families[position + 1] : undefined;
+---
+
+<BaseLayout title={`${meta.label} — Culture Traits`} description={`${meta.label} culture trait family and its ideas.`} activeType="culture-traits">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><a href={withBase('/culture-traits/')}>Culture Traits</a><span>/</span><strong>{meta.label}</strong></nav>
+
+  <article class="article-layout">
+    <div class="article-main">
+      <header class="article-header">
+        <p class="eyebrow">{meta.domain} · Trait Family</p>
+        <div class="article-title">
+          <span class="article-icon"><GameIcon name={root?.icon ?? meta.icon} size={56} /></span>
+          <div><h1>{meta.label}</h1><code>{meta.id}</code></div>
+        </div>
+        <p class="article-lede">{root ? `The ${meta.label} trait family and its ${subtraits.length} ideas.` : `A family of ${subtraits.length} culture ideas in the ${meta.domain.toLowerCase()} domain.`}</p>
+      </header>
+
+      {root && (
+        <section class="article-section trait-member" id={root.id}>
+          <header class="trait-member-header">
+            {root.icon && <GameIcon name={root.icon} size={34} />}
+            <div><h2>{root.displayName}</h2><code>{root.id}</code></div>
+            <span class="trait-role">Family trait</span>
+          </header>
+          {root.description && <p>{root.description}</p>}
+          {root.modifiers.length > 0 ? <ModifierList modifiers={root.modifiers} /> : <p class="notice">No effects extracted for this trait.</p>}
+        </section>
+      )}
+
+      {subtraits.map((entry) => (
+        <section class="article-section trait-member" id={entry.id}>
+          <header class="trait-member-header">
+            {entry.icon && <GameIcon name={entry.icon} size={34} />}
+            <div><h2>{entry.displayName}</h2><code>{entry.id}</code></div>
+          </header>
+          {entry.description && <p>{entry.description}</p>}
+          {entry.modifiers.length > 0 ? <ModifierList modifiers={entry.modifiers} /> : <p class="notice">No effects extracted for this idea.</p>}
+        </section>
+      ))}
+
+      <nav class="article-pager" aria-label="Adjacent trait families">
+        {previous ? <a href={withBase(`/culture-traits/${previous.id}/`)}><small>Previous family</small><strong>‹ {previous.label}</strong></a> : <span></span>}
+        {next && <a href={withBase(`/culture-traits/${next.id}/`)} class="next"><small>Next family</small><strong>{next.label} ›</strong></a>}
+      </nav>
+    </div>
+
+    <aside class="article-aside">
+      <section class="infobox">
+        <h2>At a glance</h2>
+        <dl>
+          <div><dt>Category</dt><dd><a href={withBase('/culture-traits/')}>Culture Traits</a></dd></div>
+          <div><dt>Domain</dt><dd>{meta.domain}</dd></div>
+          <div><dt>Ideas</dt><dd>{members.length}</dd></div>
+          <div><dt>Effects</dt><dd>{totalEffects}</dd></div>
+        </dl>
+      </section>
+      <section class="page-nav">
+        <h2>In this family</h2>
+        {members.map((entry) => <a href={`#${entry.id}`}>{entry.displayName}</a>)}
+      </section>
+    </aside>
+  </article>
+</BaseLayout>
+
+<style>
+  .trait-member-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .trait-member-header h2 {
+    margin: 0;
+  }
+  .trait-member-header code {
+    font-size: 0.75rem;
+    color: var(--text-muted, #888);
+  }
+  .trait-role {
+    margin-left: auto;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-muted, #888);
+    white-space: nowrap;
+  }
+  .trait-member {
+    scroll-margin-top: 5rem;
+  }
+</style>

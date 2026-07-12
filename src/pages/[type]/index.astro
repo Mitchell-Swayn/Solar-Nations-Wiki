@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameIcon from '../../components/GameIcon.astro';
 import { getCategories, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
-import { getCultureTraitGroup } from '../../lib/culture';
+import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -101,10 +101,10 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
           <header><p class="eyebrow">Culture Domain</p><h2>{domain}</h2></header>
           {groups.map(({ meta, entries: familyEntries }) => (
             <section class="reform-option-group culture-family entry-group">
-              <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><span>{familyEntries.length} ideas</span></header>
+              <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a></header>
               <div class="entry-directory">
-                {familyEntries.map((entry) => (
-                  <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))).map((entry) => (
+                  <a href={withBase(`/culture-traits/${meta.id}/#${entry.id}`)} class="directory-row" data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
                     <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
                     <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
                     <span class="row-arrow" aria-hidden="true">›</span>

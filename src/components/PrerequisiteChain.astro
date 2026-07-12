@@ -1,6 +1,7 @@
 ---
 import type { Prerequisite } from '../lib/types';
 import { withBase } from '../lib/base';
+import { getCultureTraitPath } from '../lib/culture';
 
 interface Props {
   prerequisites: Prerequisite[];
@@ -27,7 +28,7 @@ const TYPE_SLUGS: Record<string, string> = {
   {prerequisites.map((prereq) => (
     <li>
       <span class="prereq-type">{TYPE_LABELS[prereq.type] ?? prereq.type}</span>
-      <a href={withBase(`/${TYPE_SLUGS[prereq.type] ?? prereq.type}/${prereq.id}/`)}>
+      <a href={withBase(prereq.type === 'cultureTrait' ? getCultureTraitPath(prereq.id) : `/${TYPE_SLUGS[prereq.type] ?? prereq.type}/${prereq.id}/`)}>
         {prereq.id}
       </a>
     </li>

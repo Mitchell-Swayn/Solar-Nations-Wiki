@@ -39,3 +39,12 @@ export function getCultureTraitGroup(id: string) {
   const icon = FAMILY_ICONS[family] ?? ({ Economic: 'economic', Diplomatic: 'charisma', Administrative: 'management', Military: 'strategy', Cultural: 'cultural' } as Record<string, string>)[domain] ?? 'cultural';
   return { id: family, label: humanize(family), domain, icon };
 }
+
+export function isCultureFamilyRoot(id: string): boolean {
+  const family = getCultureTraitGroup(id).id;
+  return id === family || FAMILY_ALIASES[id] === family;
+}
+
+export function getCultureTraitPath(id: string): string {
+  return `/culture-traits/${getCultureTraitGroup(id).id}/#${id}`;
+}

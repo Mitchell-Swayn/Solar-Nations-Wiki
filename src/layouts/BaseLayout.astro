@@ -2,6 +2,7 @@
 import { withBase } from '../lib/base';
 import { getAllEntries, getCategories, getIndex } from '../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../lib/categories';
+import { getCultureTraitPath } from '../lib/culture';
 
 interface Props {
   title: string;
@@ -14,10 +15,10 @@ const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar N
 const categories = getCategories().filter((category) => !category.mergedInto);
 const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getIndex().byType[category.slug]?.length ?? 0]));
 const searchEntries = getAllEntries().map((entry) => ({
-  type: entry.type,
   id: entry.id,
   name: entry.displayName,
   category: CATEGORY_BY_SLUG[entry.type]?.pluralLabel ?? entry.type,
+  path: entry.type === 'culture-traits' ? getCultureTraitPath(entry.id).slice(1) : `${entry.type}/${entry.id}/`,
 }));
 ---
 
@@ -85,7 +86,7 @@ const searchEntries = getAllEntries().map((entry) => ({
         if (query.length < 2) { results.hidden = true; return; }
         const matches = entries.filter((entry) => entry.name.toLowerCase().includes(query) || entry.id.toLowerCase().includes(query)).slice(0, 10);
         results.innerHTML = matches.length
-          ? matches.map((entry) => `<a href="${baseUrl}${encodeURIComponent(entry.type)}/${encodeURIComponent(entry.id)}/"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
+          ? matches.map((entry) => `<a href="${baseUrl}${entry.path}"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
           : '<p>No matching entries</p>';
         results.hidden = false;
       };
