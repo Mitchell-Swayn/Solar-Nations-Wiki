@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCategories, getAllEntries } from '../lib/data';
 import { CATEGORY_BY_SLUG } from '../lib/categories';
+import { withBase } from '../lib/base';
 
 const categories = getCategories();
 const allEntries = getAllEntries();
@@ -36,7 +37,7 @@ const allEntries = getAllEntries();
     <h2>Categories</h2>
     <div class="category-grid">
       {categories.map((cat) => (
-        <a href={`/${cat.slug}/`} class="category-card" data-category={cat.slug}>
+        <a href={withBase(`/${cat.slug}/`)} class="category-card" data-category={cat.slug}>
           <h3>{cat.pluralLabel}</h3>
           <p>{cat.description}</p>
         </a>
@@ -50,7 +51,7 @@ const allEntries = getAllEntries();
   </section>
 </BaseLayout>
 
-<script define:vars={{ entries: allEntries.map(e => ({ type: e.type, id: e.id, name: e.displayName, category: CATEGORY_BY_SLUG[e.type]?.pluralLabel ?? e.type })) }}>
+<script define:vars={{ entries: allEntries.map(e => ({ type: e.type, id: e.id, name: e.displayName, category: CATEGORY_BY_SLUG[e.type]?.pluralLabel ?? e.type })), baseUrl: import.meta.env.BASE_URL }}>
   const searchInput = document.getElementById('search');
   const resultsSection = document.getElementById('search-results');
   const entryList = document.getElementById('entry-list');
@@ -72,7 +73,7 @@ const allEntries = getAllEntries();
     entryList.innerHTML = matches
       .map(
         (entry) =>
-          `<li><a href="/${entry.type}/${entry.id}/"><strong>${entry.name}</strong> <span class="tag">${entry.category}</span></a></li>`
+          `<li><a href="${baseUrl}${entry.type}/${entry.id}/"><strong>${entry.name}</strong> <span class="tag">${entry.category}</span></a></li>`
       )
       .join('');
 

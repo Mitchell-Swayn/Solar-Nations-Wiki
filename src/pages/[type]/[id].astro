@@ -6,6 +6,7 @@ import PrerequisiteChain from '../../components/PrerequisiteChain.astro';
 import GameIcon from '../../components/GameIcon.astro';
 import { getCategories, getEntry, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG } from '../../lib/categories';
+import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
   const categories = getCategories();
@@ -30,7 +31,7 @@ if (!entry) {
 
 <BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`}>
   <nav class="breadcrumb">
-    <a href="/">Home</a> / <a href={`/${type}/`}>{category.pluralLabel}</a> / {entry.displayName}
+    <a href={withBase('/')}>Home</a> / <a href={withBase(`/${type}/`)}>{category.pluralLabel}</a> / {entry.displayName}
   </nav>
 
   <header class="detail-header">

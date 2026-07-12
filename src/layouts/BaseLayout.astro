@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../lib/base';
+
 interface Props {
   title: string;
   description?: string;
@@ -14,15 +16,15 @@ const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar N
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description ?? 'Solar Nations 2 data encyclopedia'} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
     <title>{fullTitle}</title>
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="/" class="site-logo">☀ Solar Nations 2 Wiki</a>
+        <a href={withBase('/')} class="site-logo">☀ Solar Nations 2 Wiki</a>
         <nav class="site-nav">
-          <a href="/">Home</a>
+          <a href={withBase('/')}>Home</a>
         </nav>
       </div>
     </header>

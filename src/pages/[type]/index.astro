@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCategories, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG } from '../../lib/categories';
+import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
   const categories = getCategories();
@@ -15,7 +16,7 @@ const entries = getEntriesByType(type!);
 
 <BaseLayout title={category.pluralLabel} description={category.description}>
   <nav class="breadcrumb">
-    <a href="/">Home</a> / {category.pluralLabel}
+    <a href={withBase('/')}>Home</a> / {category.pluralLabel}
   </nav>
 
   <header class="page-header">
@@ -26,10 +27,10 @@ const entries = getEntriesByType(type!);
 
   <div class="entry-grid">
     {entries.map((entry) => (
-      <a href={`/${type}/${entry.id}/`} class="entry-card">
+      <a href={withBase(`/${type}/${entry.id}/`)} class="entry-card">
         {entry.icon && (
           <img
-            src={`/assets/icons/${entry.icon}.png`}
+            src={withBase(`/assets/icons/${entry.icon}.png`)}
             alt=""
             class="entry-icon"
             onerror="this.style.display='none'"

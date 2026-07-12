@@ -1,6 +1,7 @@
 ---
 import type { ModifierRef } from '../lib/types';
 import { getModifierMap } from '../lib/data';
+import { withBase } from '../lib/base';
 import GameIcon from './GameIcon.astro';
 
 interface Props {
@@ -43,7 +44,7 @@ function formatTarget(mod: ModifierRef): string {
             <td>
               <span class="modifier-name">
                 {def?.Icon && <GameIcon name={def.Icon} size={20} />}
-                <a href={`/modifiers/${mod.key}/`}>{mod.key}</a>
+                <a href={withBase(`/modifiers/${mod.key}/`)}>{mod.key}</a>
               </span>
             </td>
             <td class={def?.Positivity === 'positive' ? 'positive' : def?.Positivity === 'negative' ? 'negative' : ''}>

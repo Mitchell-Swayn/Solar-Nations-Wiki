@@ -1,11 +1,13 @@
 ---
+import { withBase } from '../lib/base';
+
 interface Props {
   name: string;
   size?: number;
 }
 
 const { name, size = 48 } = Astro.props;
-const src = `/assets/flags/${name}.png`;
+const src = withBase(`/assets/flags/${name}.png`);
 ---
 
 <img
