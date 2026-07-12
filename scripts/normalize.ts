@@ -1,8 +1,9 @@
-import { mkdirSync, readFileSync, readdirSync, writeFileSync, cpSync, existsSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, writeFileSync, cpSync, existsSync, rmSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import {
   DATA_CURATED,
   DATA_RAW,
+  PROJECT_ROOT,
   PUBLIC_ASSETS,
   getFlagsPath,
   getGameRoot,
@@ -286,6 +287,43 @@ function copyIconsRecursive(src: string, dest: string) {
   }
 }
 
+function indexPngFiles(root: string): Map<string, string> {
+  const files = new Map<string, string>();
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) walk(path);
+      else if (entry.name.toLowerCase().endsWith('.png')) {
+        const key = basename(entry.name, '.png').toLowerCase();
+        const current = files.get(key);
+        if (!current || path.length < current.length || path.localeCompare(current) < 0) files.set(key, path);
+      }
+    }
+  };
+  if (existsSync(root)) walk(root);
+  return files;
+}
+
+function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
+  const sourceRoot = getIconsPath(gameRoot);
+  const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
+  const sourceFiles = indexPngFiles(sourceRoot);
+  const requested = new Set(entries.map((entry) => entry.icon).filter((icon): icon is string => Boolean(icon)));
+
+  rmSync(outputRoot, { recursive: true, force: true });
+  mkdirSync(outputRoot, { recursive: true });
+
+  let copied = 0;
+  const missing: string[] = [];
+  for (const icon of [...requested].sort()) {
+    const source = sourceFiles.get(icon.toLowerCase());
+    if (!source) { missing.push(icon); continue; }
+    cpSync(source, join(outputRoot, `${icon}.png`));
+    copied++;
+  }
+  console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
+}
+
 function loadLocalization(modPath: string): Record<string, string> {
   const locPath = join(modPath, 'Localization/en.json');
   if (!existsSync(locPath)) return {};
@@ -439,6 +477,7 @@ function main() {
   const modifierDefs = parseJsonFile(join(modPath, 'modifiers.json')) as RawRecord[];
 
   copyAssets(gameRoot);
+  copyWikiIcons(gameRoot, allEntries);
   writeCuratedFiles(index, modifierDefs);
 
   console.log(`Normalized ${allEntries.length} entries from ${source}`);
