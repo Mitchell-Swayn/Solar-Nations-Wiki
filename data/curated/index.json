@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:22:03.016Z",
+  "generatedAt": "2026-07-12T06:23:50.546Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -25348,7 +25348,7 @@
     "modifiers:popGrowthMult": {
       "id": "popGrowthMult",
       "type": "modifiers",
-      "displayName": "Pop Growth Mult",
+      "displayName": "Population Growth",
       "icon": "population",
       "fields": {
         "Name": "popGrowthMult",
@@ -25361,7 +25361,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population Growth"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25375,7 +25376,7 @@
     "modifiers:workforceRatioAdd": {
       "id": "workforceRatioAdd",
       "type": "modifiers",
-      "displayName": "Workforce Ratio Add",
+      "displayName": "Workforce",
       "icon": "population",
       "fields": {
         "Name": "workforceRatioAdd",
@@ -25388,7 +25389,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Workforce"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25402,7 +25404,7 @@
     "modifiers:lifeSpanAdd": {
       "id": "lifeSpanAdd",
       "type": "modifiers",
-      "displayName": "Life Span Add",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "lifeSpanAdd",
@@ -25415,7 +25417,8 @@
           "base": 0.1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25429,7 +25432,7 @@
     "modifiers:unitMoraleAdd": {
       "id": "unitMoraleAdd",
       "type": "modifiers",
-      "displayName": "Unit Morale Add",
+      "displayName": "Military Morale",
       "icon": "morale",
       "fields": {
         "Name": "unitMoraleAdd",
@@ -25442,7 +25445,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Military Morale"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25456,7 +25460,7 @@
     "modifiers:unitMoraleMult": {
       "id": "unitMoraleMult",
       "type": "modifiers",
-      "displayName": "Unit Morale Mult",
+      "displayName": "Military Morale",
       "icon": "morale",
       "fields": {
         "Name": "unitMoraleMult",
@@ -25469,7 +25473,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Military Morale"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25483,7 +25488,7 @@
     "modifiers:unitReinforceRateMult": {
       "id": "unitReinforceRateMult",
       "type": "modifiers",
-      "displayName": "Unit Reinforce Rate Mult",
+      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "icon": "manpower",
       "fields": {
         "Name": "unitReinforceRateMult",
@@ -25496,7 +25501,8 @@
           "base": 2
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25510,7 +25516,7 @@
     "modifiers:unitSpeedMult": {
       "id": "unitSpeedMult",
       "type": "modifiers",
-      "displayName": "Unit Speed Mult",
+      "displayName": "Military Speed",
       "fields": {
         "Name": "unitSpeedMult",
         "Positivity": "positive",
@@ -25521,7 +25527,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Military Speed"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25543,7 +25550,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Occupation Speed Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25557,7 +25565,7 @@
     "modifiers:unitAttackMult": {
       "id": "unitAttackMult",
       "type": "modifiers",
-      "displayName": "Unit Attack Mult",
+      "displayName": "Military Aggression",
       "icon": "military",
       "fields": {
         "Name": "unitAttackMult",
@@ -25574,7 +25582,8 @@
           "war": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Military Aggression"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25588,7 +25597,7 @@
     "modifiers:stabilityGainAdd": {
       "id": "stabilityGainAdd",
       "type": "modifiers",
-      "displayName": "Stability Gain Add",
+      "displayName": "Stability Gain",
       "icon": "stability",
       "fields": {
         "Name": "stabilityGainAdd",
@@ -25601,7 +25610,8 @@
           "stability": 1.5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Stability Gain"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25615,7 +25625,7 @@
     "modifiers:prestigeMult": {
       "id": "prestigeMult",
       "type": "modifiers",
-      "displayName": "Prestige Mult",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "prestigeMult",
@@ -25628,7 +25638,8 @@
           "base": 0.25
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25642,7 +25653,7 @@
     "modifiers:projectBuildSpeedMult": {
       "id": "projectBuildSpeedMult",
       "type": "modifiers",
-      "displayName": "Project Build Speed Mult",
+      "displayName": "Project Build Speed",
       "fields": {
         "Name": "projectBuildSpeedMult",
         "Positivity": "positive",
@@ -25655,7 +25666,8 @@
           "base": 0.25
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Build Speed"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25664,7 +25676,7 @@
     "modifiers:projectBuildCostMult": {
       "id": "projectBuildCostMult",
       "type": "modifiers",
-      "displayName": "Project Build Cost Mult",
+      "displayName": "Project Cost",
       "fields": {
         "Name": "projectBuildCostMult",
         "Positivity": "negative",
@@ -25677,7 +25689,8 @@
           "base": -10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25701,7 +25714,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Budget Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25715,7 +25729,7 @@
     "modifiers:factionPowerAdd": {
       "id": "factionPowerAdd",
       "type": "modifiers",
-      "displayName": "Faction Power Add",
+      "displayName": "Power",
       "icon": "political",
       "fields": {
         "Name": "factionPowerAdd",
@@ -25731,7 +25745,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Power"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25761,7 +25776,8 @@
           "base": 5
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Faction Loyalty Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25775,7 +25791,7 @@
     "modifiers:developmentGrowthMult": {
       "id": "developmentGrowthMult",
       "type": "modifiers",
-      "displayName": "Development Growth Mult",
+      "displayName": "Development Growth",
       "icon": "development",
       "fields": {
         "Name": "developmentGrowthMult",
@@ -25788,7 +25804,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Development Growth"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25815,7 +25832,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Upgrade Limit"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25839,7 +25857,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Stat Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25869,7 +25888,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Stat Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25883,7 +25903,7 @@
     "modifiers:adminEfficiencyAdd": {
       "id": "adminEfficiencyAdd",
       "type": "modifiers",
-      "displayName": "Admin Efficiency Add",
+      "displayName": "Administration",
       "icon": "political",
       "fields": {
         "Name": "adminEfficiencyAdd",
@@ -25896,7 +25916,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Administration"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25910,7 +25931,7 @@
     "modifiers:unitCostMult": {
       "id": "unitCostMult",
       "type": "modifiers",
-      "displayName": "Unit Cost Mult",
+      "displayName": "Unit Cost",
       "icon": "military",
       "fields": {
         "Name": "unitCostMult",
@@ -25925,7 +25946,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25939,7 +25961,7 @@
     "modifiers:unitUpkeepMult": {
       "id": "unitUpkeepMult",
       "type": "modifiers",
-      "displayName": "Unit Upkeep Mult",
+      "displayName": "Unit Upkeep",
       "icon": "military",
       "fields": {
         "Name": "unitUpkeepMult",
@@ -25952,7 +25974,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Upkeep"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -25981,7 +26004,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Hangar Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26005,7 +26029,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Hangar Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26027,7 +26052,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Siege Ability"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26054,7 +26080,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Fort Defense"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26068,7 +26095,7 @@
     "modifiers:warExhaustionMult": {
       "id": "warExhaustionMult",
       "type": "modifiers",
-      "displayName": "War Exhaustion Mult",
+      "displayName": "War Exhaustion",
       "icon": "stability",
       "fields": {
         "Name": "warExhaustionMult",
@@ -26081,7 +26108,8 @@
           "base": -5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "War Exhaustion"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26110,7 +26138,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Leader Skill Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26134,7 +26163,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Leader Skill Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26156,7 +26186,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "All Leader Skills Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26183,7 +26214,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Leader XPGain"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26197,7 +26229,7 @@
     "modifiers:popAttrition": {
       "id": "popAttrition",
       "type": "modifiers",
-      "displayName": "Pop Attrition",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "popAttrition",
@@ -26210,7 +26242,8 @@
           "base": -100000000000000
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26224,7 +26257,7 @@
     "modifiers:habitabilityAdd": {
       "id": "habitabilityAdd",
       "type": "modifiers",
-      "displayName": "Habitability Add",
+      "displayName": "Habitability",
       "icon": "planet",
       "fields": {
         "Name": "habitabilityAdd",
@@ -26237,7 +26270,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Habitability"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26251,7 +26285,7 @@
     "modifiers:researchMult": {
       "id": "researchMult",
       "type": "modifiers",
-      "displayName": "Research Mult",
+      "displayName": "Research",
       "icon": "research",
       "fields": {
         "Name": "researchMult",
@@ -26266,7 +26300,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Research"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26280,7 +26315,7 @@
     "modifiers:economicOutputMult": {
       "id": "economicOutputMult",
       "type": "modifiers",
-      "displayName": "Economic Output Mult",
+      "displayName": "Development Equilibrium",
       "icon": "development",
       "fields": {
         "Name": "economicOutputMult",
@@ -26295,7 +26330,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Development Equilibrium"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26309,7 +26345,7 @@
     "modifiers:immigrationPush": {
       "id": "immigrationPush",
       "type": "modifiers",
-      "displayName": "Immigration Push",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "immigrationPush",
@@ -26322,7 +26358,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26336,7 +26373,7 @@
     "modifiers:immigrationPullExternal": {
       "id": "immigrationPullExternal",
       "type": "modifiers",
-      "displayName": "Immigration Pull External",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "immigrationPullExternal",
@@ -26349,7 +26386,8 @@
           "red": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26363,7 +26401,7 @@
     "modifiers:immigrationPull": {
       "id": "immigrationPull",
       "type": "modifiers",
-      "displayName": "Immigration Pull",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "immigrationPull",
@@ -26376,7 +26414,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26390,7 +26429,7 @@
     "modifiers:immigrationPushExternal": {
       "id": "immigrationPushExternal",
       "type": "modifiers",
-      "displayName": "Immigration Push External",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "immigrationPushExternal",
@@ -26401,7 +26440,8 @@
         "Scaler": "Linear",
         "AIWeights": {},
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26415,7 +26455,7 @@
     "modifiers:alignmentAdd": {
       "id": "alignmentAdd",
       "type": "modifiers",
-      "displayName": "Alignment Add",
+      "displayName": "Alignment",
       "fields": {
         "Name": "alignmentAdd",
         "Positivity": "positive",
@@ -26429,7 +26469,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Alignment"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26451,7 +26492,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Executive Term"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26465,7 +26507,7 @@
     "modifiers:factionEffectMult": {
       "id": "factionEffectMult",
       "type": "modifiers",
-      "displayName": "Faction Effect Mult",
+      "displayName": "Faction",
       "icon": "",
       "fields": {
         "Name": "factionEffectMult",
@@ -26481,7 +26523,8 @@
           "base": 2
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Faction"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26490,7 +26533,7 @@
     "modifiers:reformCostMult": {
       "id": "reformCostMult",
       "type": "modifiers",
-      "displayName": "Reform Cost Mult",
+      "displayName": "Government Reform",
       "icon": "enactDecision",
       "fields": {
         "Name": "reformCostMult",
@@ -26505,7 +26548,8 @@
           "base": 0.5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Government Reform"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26519,7 +26563,7 @@
     "modifiers:projectUpkeepMult": {
       "id": "projectUpkeepMult",
       "type": "modifiers",
-      "displayName": "Project Upkeep Mult",
+      "displayName": "Project Upkeep",
       "fields": {
         "Name": "projectUpkeepMult",
         "Positivity": "negative",
@@ -26533,7 +26577,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Upkeep"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26542,7 +26587,7 @@
     "modifiers:educationModifier": {
       "id": "educationModifier",
       "type": "modifiers",
-      "displayName": "Education Modifier",
+      "displayName": "Education",
       "fields": {
         "Name": "educationModifier",
         "Positivity": "positive",
@@ -26553,7 +26598,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Education"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26562,7 +26608,7 @@
     "modifiers:educationEfficiency": {
       "id": "educationEfficiency",
       "type": "modifiers",
-      "displayName": "Education Efficiency",
+      "displayName": "Education",
       "fields": {
         "Name": "educationEfficiency",
         "Positivity": "positive",
@@ -26573,7 +26619,8 @@
           "base": 2
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Education"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26597,7 +26644,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Character Level Up Options"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26626,7 +26674,8 @@
           "base": 0.01
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Battle Advantage Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26640,7 +26689,7 @@
     "modifiers:baseEconomicOutputMult": {
       "id": "baseEconomicOutputMult",
       "type": "modifiers",
-      "displayName": "Base Economic Output Mult",
+      "displayName": "Tax Base",
       "fields": {
         "Name": "baseEconomicOutputMult",
         "Positivity": "positive",
@@ -26653,7 +26702,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Tax Base"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26677,7 +26727,8 @@
           "base": 1
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Max Privileges Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26691,7 +26742,7 @@
     "modifiers:depositMult": {
       "id": "depositMult",
       "type": "modifiers",
-      "displayName": "Deposit Mult",
+      "displayName": "Economic Sector",
       "icon": "economic",
       "fields": {
         "Name": "depositMult",
@@ -26706,7 +26757,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Economic Sector"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26720,7 +26772,7 @@
     "modifiers:opinionModifier": {
       "id": "opinionModifier",
       "type": "modifiers",
-      "displayName": "Opinion Modifier",
+      "displayName": "Opinion",
       "fields": {
         "Name": "opinionModifier",
         "Positivity": "neutral",
@@ -26731,7 +26783,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Opinion"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26755,7 +26808,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Vuln Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26784,7 +26838,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Vuln Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26798,7 +26853,7 @@
     "modifiers:unitAttackAdd": {
       "id": "unitAttackAdd",
       "type": "modifiers",
-      "displayName": "Unit Attack Add",
+      "displayName": "Military Aggression",
       "fields": {
         "Name": "unitAttackAdd",
         "Positivity": "positive",
@@ -26812,7 +26867,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Military Aggression"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26834,7 +26890,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Morale Recovery Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26863,7 +26920,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Region Vuln Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26890,7 +26948,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Advantage Delta"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26904,7 +26963,7 @@
     "modifiers:integrationCostMult": {
       "id": "integrationCostMult",
       "type": "modifiers",
-      "displayName": "Integration Cost Mult",
+      "displayName": "Integration",
       "icon": "prestige",
       "fields": {
         "Name": "integrationCostMult",
@@ -26917,7 +26976,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Integration"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26944,7 +27004,8 @@
           "base": 0.005
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Defender Advantage Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26971,7 +27032,8 @@
           "base": 0.5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Max Ruling Factions Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -26985,7 +27047,7 @@
     "modifiers:integrationSpeedMult": {
       "id": "integrationSpeedMult",
       "type": "modifiers",
-      "displayName": "Integration Speed Mult",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "integrationSpeedMult",
@@ -26998,7 +27060,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27012,7 +27075,7 @@
     "modifiers:researchCostMult": {
       "id": "researchCostMult",
       "type": "modifiers",
-      "displayName": "Research Cost Mult",
+      "displayName": "Research",
       "icon": "research",
       "fields": {
         "Name": "researchCostMult",
@@ -27027,7 +27090,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Research"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27041,7 +27105,7 @@
     "modifiers:resourceModifier": {
       "id": "resourceModifier",
       "type": "modifiers",
-      "displayName": "Resource Modifier",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "resourceModifier",
@@ -27056,7 +27120,8 @@
           "1": 4
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27085,7 +27150,8 @@
           "1": 5
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Production"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27109,7 +27175,8 @@
           "1": 50
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27118,7 +27185,7 @@
     "modifiers:resourceIncomeMult": {
       "id": "resourceIncomeMult",
       "type": "modifiers",
-      "displayName": "Resource Income Mult",
+      "displayName": "Strategic Resource Income",
       "icon": "currency",
       "fields": {
         "Name": "resourceIncomeMult",
@@ -27133,7 +27200,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Strategic Resource Income"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27160,7 +27228,8 @@
           "base": 25
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Atm Earthlikeness Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27187,7 +27256,8 @@
           "base": 25
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Atm Pressure Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27214,7 +27284,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Rotation Earthlikeness Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27241,7 +27312,8 @@
           "base": 100
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Has Biosphere Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27268,7 +27340,8 @@
           "base": 100
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Surface Water Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27295,7 +27368,8 @@
           "base": 50
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Planet Magnetic Field Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27322,7 +27396,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Carrying Capacity Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27336,7 +27411,7 @@
     "modifiers:exportTariff": {
       "id": "exportTariff",
       "type": "modifiers",
-      "displayName": "Export Tariff",
+      "displayName": "Trade",
       "fields": {
         "Name": "exportTariff",
         "Positivity": "neutral",
@@ -27347,7 +27422,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Trade"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27356,7 +27432,7 @@
     "modifiers:importTariff": {
       "id": "importTariff",
       "type": "modifiers",
-      "displayName": "Import Tariff",
+      "displayName": "Trade",
       "fields": {
         "Name": "importTariff",
         "Positivity": "neutral",
@@ -27367,7 +27443,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Trade"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27376,7 +27453,7 @@
     "modifiers:recruitablePopulationAdd": {
       "id": "recruitablePopulationAdd",
       "type": "modifiers",
-      "displayName": "Recruitable Population Add",
+      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "icon": "manpower",
       "fields": {
         "Name": "recruitablePopulationAdd",
@@ -27389,7 +27466,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27403,7 +27481,7 @@
     "modifiers:recruitablePopulationMult": {
       "id": "recruitablePopulationMult",
       "type": "modifiers",
-      "displayName": "Recruitable Population Mult",
+      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "icon": "manpower",
       "fields": {
         "Name": "recruitablePopulationMult",
@@ -27416,7 +27494,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27430,7 +27509,7 @@
     "modifiers:manpowerRecoveryRate": {
       "id": "manpowerRecoveryRate",
       "type": "modifiers",
-      "displayName": "Manpower Recovery Rate",
+      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "icon": "manpower",
       "fields": {
         "Name": "manpowerRecoveryRate",
@@ -27443,7 +27522,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27457,7 +27537,7 @@
     "modifiers:protectorateAdmin": {
       "id": "protectorateAdmin",
       "type": "modifiers",
-      "displayName": "Protectorate Admin",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "protectorateAdmin",
@@ -27470,7 +27550,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27497,7 +27578,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Colonial Range"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27522,7 +27604,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Join Org Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27531,7 +27614,7 @@
     "modifiers:debtEffectMult": {
       "id": "debtEffectMult",
       "type": "modifiers",
-      "displayName": "Debt Effect Mult",
+      "displayName": "Debt",
       "icon": "stability",
       "fields": {
         "Name": "debtEffectMult",
@@ -27544,7 +27627,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Debt"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27558,7 +27642,7 @@
     "modifiers:unityMult": {
       "id": "unityMult",
       "type": "modifiers",
-      "displayName": "Unity Mult",
+      "displayName": "Unity",
       "icon": "culture",
       "fields": {
         "Name": "unityMult",
@@ -27571,7 +27655,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27585,7 +27670,7 @@
     "modifiers:stabilityOffset": {
       "id": "stabilityOffset",
       "type": "modifiers",
-      "displayName": "Stability Offset",
+      "displayName": "Stability",
       "icon": "stability",
       "fields": {
         "Name": "stabilityOffset",
@@ -27598,7 +27683,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Stability"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27612,7 +27698,7 @@
     "modifiers:taxRateMaxAdd": {
       "id": "taxRateMaxAdd",
       "type": "modifiers",
-      "displayName": "Tax Rate Max Add",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "taxRateMaxAdd",
@@ -27627,7 +27713,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27641,7 +27728,7 @@
     "modifiers:edictCostMult": {
       "id": "edictCostMult",
       "type": "modifiers",
-      "displayName": "Edict Cost Mult",
+      "displayName": "Edict Cost",
       "fields": {
         "Name": "edictCostMult",
         "Positivity": "negative",
@@ -27654,7 +27741,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Edict Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27663,7 +27751,7 @@
     "modifiers:edictBenefitMult": {
       "id": "edictBenefitMult",
       "type": "modifiers",
-      "displayName": "Edict Benefit Mult",
+      "displayName": "Edict Benefit",
       "fields": {
         "Name": "edictBenefitMult",
         "Positivity": "positive",
@@ -27676,7 +27764,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Edict Benefit"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27685,7 +27774,7 @@
     "modifiers:budgetModifierPopulation": {
       "id": "budgetModifierPopulation",
       "type": "modifiers",
-      "displayName": "Budget Modifier Population",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "budgetModifierPopulation",
@@ -27698,7 +27787,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27712,7 +27802,7 @@
     "modifiers:stabilityGainEffect": {
       "id": "stabilityGainEffect",
       "type": "modifiers",
-      "displayName": "Stability Gain Effect",
+      "displayName": "Stability Gain",
       "icon": "stability",
       "fields": {
         "Name": "stabilityGainEffect",
@@ -27725,7 +27815,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Stability Gain"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27739,7 +27830,7 @@
     "modifiers:influenceGainEffect": {
       "id": "influenceGainEffect",
       "type": "modifiers",
-      "displayName": "Influence Gain Effect",
+      "displayName": "Influence Region",
       "fields": {
         "Name": "influenceGainEffect",
         "Positivity": "positive",
@@ -27750,7 +27841,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Influence Region"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27759,7 +27851,7 @@
     "modifiers:manpowerGainEffect": {
       "id": "manpowerGainEffect",
       "type": "modifiers",
-      "displayName": "Manpower Gain Effect",
+      "displayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "icon": "manpower",
       "fields": {
         "Name": "manpowerGainEffect",
@@ -27772,7 +27864,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27786,7 +27879,7 @@
     "modifiers:currencyGainEffect": {
       "id": "currencyGainEffect",
       "type": "modifiers",
-      "displayName": "Currency Gain Effect",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "currencyGainEffect",
@@ -27799,7 +27892,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27813,7 +27907,7 @@
     "modifiers:currencyLossEffect": {
       "id": "currencyLossEffect",
       "type": "modifiers",
-      "displayName": "Currency Loss Effect",
+      "displayName": "Currency",
       "icon": "currency",
       "fields": {
         "Name": "currencyLossEffect",
@@ -27826,7 +27920,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Currency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27853,7 +27948,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Tooltip Modifier"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27862,7 +27958,7 @@
     "modifiers:siphonMoneyTooltipModifier": {
       "id": "siphonMoneyTooltipModifier",
       "type": "modifiers",
-      "displayName": "Siphon Money Tooltip Modifier",
+      "displayName": "Embezzle Funds",
       "icon": "",
       "fields": {
         "Name": "siphonMoneyTooltipModifier",
@@ -27875,7 +27971,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Embezzle Funds"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27884,7 +27981,7 @@
     "modifiers:siphonManpowerTooltipModifier": {
       "id": "siphonManpowerTooltipModifier",
       "type": "modifiers",
-      "displayName": "Siphon Manpower Tooltip Modifier",
+      "displayName": "Siphon Manpower",
       "icon": "",
       "fields": {
         "Name": "siphonManpowerTooltipModifier",
@@ -27897,7 +27994,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Siphon Manpower"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27906,7 +28004,7 @@
     "modifiers:rootOutInfluenceEffect": {
       "id": "rootOutInfluenceEffect",
       "type": "modifiers",
-      "displayName": "Root Out Influence Effect",
+      "displayName": "Combat Foreign Influence",
       "fields": {
         "Name": "rootOutInfluenceEffect",
         "Positivity": "positive",
@@ -27917,7 +28015,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": true
+        "IsEffect": true,
+        "DisplayName": "Combat Foreign Influence"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27939,7 +28038,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Controlling Faction Loyalty"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27953,7 +28053,7 @@
     "modifiers:unrestChangeAdd": {
       "id": "unrestChangeAdd",
       "type": "modifiers",
-      "displayName": "Unrest Change Add",
+      "displayName": "Unrest Change",
       "fields": {
         "Name": "unrestChangeAdd",
         "Positivity": "negative",
@@ -27964,7 +28064,8 @@
           "base": -5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unrest Change"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27973,7 +28074,7 @@
     "modifiers:resourceCapacityMult": {
       "id": "resourceCapacityMult",
       "type": "modifiers",
-      "displayName": "Resource Capacity Mult",
+      "displayName": "Resource Capacity",
       "icon": "",
       "fields": {
         "Name": "resourceCapacityMult",
@@ -27988,7 +28089,8 @@
           "1": 2.5
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -27997,7 +28099,7 @@
     "modifiers:allResourceCapacityMult": {
       "id": "allResourceCapacityMult",
       "type": "modifiers",
-      "displayName": "All Resource Capacity Mult",
+      "displayName": "Logistics Capacity",
       "icon": "logistics",
       "fields": {
         "Name": "allResourceCapacityMult",
@@ -28010,7 +28112,8 @@
           "base": 100
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Logistics Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28024,7 +28127,7 @@
     "modifiers:resourceCapacityAdd": {
       "id": "resourceCapacityAdd",
       "type": "modifiers",
-      "displayName": "Resource Capacity Add",
+      "displayName": "Resource Capacity",
       "icon": "",
       "fields": {
         "Name": "resourceCapacityAdd",
@@ -28039,7 +28142,8 @@
           "1": 0.1
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28048,7 +28152,7 @@
     "modifiers:resourceCapacityPopulation": {
       "id": "resourceCapacityPopulation",
       "type": "modifiers",
-      "displayName": "Resource Capacity Population",
+      "displayName": "Resource Capacity",
       "icon": "",
       "fields": {
         "Name": "resourceCapacityPopulation",
@@ -28063,7 +28167,8 @@
           "1": 0.1
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28072,7 +28177,7 @@
     "modifiers:resourceCapacityPopulationMult": {
       "id": "resourceCapacityPopulationMult",
       "type": "modifiers",
-      "displayName": "Resource Capacity Population Mult",
+      "displayName": "Resource Capacity",
       "icon": "",
       "fields": {
         "Name": "resourceCapacityPopulationMult",
@@ -28087,7 +28192,8 @@
           "1": 5
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28096,7 +28202,7 @@
     "modifiers:resourceCapacityCurrencyAdd": {
       "id": "resourceCapacityCurrencyAdd",
       "type": "modifiers",
-      "displayName": "Resource Capacity Currency Add",
+      "displayName": "Resource Capacity",
       "icon": "currency",
       "fields": {
         "Name": "resourceCapacityCurrencyAdd",
@@ -28111,7 +28217,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Capacity"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28140,7 +28247,8 @@
           "1": -0.05
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Usage Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28164,7 +28272,8 @@
           "1": -10
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Usage Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28188,7 +28297,8 @@
           "1": -100
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Resource Usage Population Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28197,7 +28307,7 @@
     "modifiers:genocideModifier": {
       "id": "genocideModifier",
       "type": "modifiers",
-      "displayName": "Genocide Modifier",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "genocideModifier",
@@ -28210,7 +28320,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28237,7 +28348,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Genocide Modifier Tooltip"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28246,7 +28358,7 @@
     "modifiers:tradeBarriersAdd": {
       "id": "tradeBarriersAdd",
       "type": "modifiers",
-      "displayName": "Trade Barriers Add",
+      "displayName": "Trade",
       "fields": {
         "Name": "tradeBarriersAdd",
         "Positivity": "negative",
@@ -28257,7 +28369,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Trade"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28281,7 +28394,8 @@
           "1": 10
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Political Power Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28305,7 +28419,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Privilege Points Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28334,7 +28449,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Privilege Picks Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28348,7 +28464,7 @@
     "modifiers:deployRangeModifier": {
       "id": "deployRangeModifier",
       "type": "modifiers",
-      "displayName": "Deploy Range Modifier",
+      "displayName": "Deploy Range",
       "fields": {
         "Name": "deployRangeModifier",
         "Positivity": "positive",
@@ -28359,7 +28475,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Deploy Range"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28368,7 +28485,7 @@
     "modifiers:deployRangeAdd": {
       "id": "deployRangeAdd",
       "type": "modifiers",
-      "displayName": "Deploy Range Add",
+      "displayName": "Deploy Range",
       "fields": {
         "Name": "deployRangeAdd",
         "Positivity": "neutral",
@@ -28379,7 +28496,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Deploy Range"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28388,7 +28506,7 @@
     "modifiers:deployRangeMult": {
       "id": "deployRangeMult",
       "type": "modifiers",
-      "displayName": "Deploy Range Mult",
+      "displayName": "Deploy Range",
       "fields": {
         "Name": "deployRangeMult",
         "Positivity": "positive",
@@ -28399,7 +28517,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Deploy Range"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28408,7 +28527,7 @@
     "modifiers:deployRangeInterplanetary": {
       "id": "deployRangeInterplanetary",
       "type": "modifiers",
-      "displayName": "Deploy Range Interplanetary",
+      "displayName": "Deploy Range",
       "fields": {
         "Name": "deployRangeInterplanetary",
         "Positivity": "boolean",
@@ -28419,7 +28538,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Deploy Range"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28442,7 +28562,8 @@
           "war": 0.4
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Region Ranged Defense"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28471,7 +28592,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Quality Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28495,7 +28617,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Quality Max Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28517,7 +28640,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Morale Damage Reduction"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28544,7 +28668,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Duplicate Policy Options Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28569,7 +28694,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Efficiency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28578,7 +28704,7 @@
     "modifiers:factionVariant": {
       "id": "factionVariant",
       "type": "modifiers",
-      "displayName": "Faction Variant",
+      "displayName": "Enables {1} Variant: {2}",
       "icon": "",
       "fields": {
         "Name": "factionVariant",
@@ -28594,7 +28720,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Enables {1} Variant: {2}"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28603,7 +28730,7 @@
     "modifiers:automatedWorkforceAdd": {
       "id": "automatedWorkforceAdd",
       "type": "modifiers",
-      "displayName": "Automated Workforce Add",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "automatedWorkforceAdd",
@@ -28616,7 +28743,8 @@
           "base": 0.000001
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28630,7 +28758,7 @@
     "modifiers:automatedWorkforceMult": {
       "id": "automatedWorkforceMult",
       "type": "modifiers",
-      "displayName": "Automated Workforce Mult",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "automatedWorkforceMult",
@@ -28643,7 +28771,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28670,7 +28799,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Colonial Range Ly"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28697,7 +28827,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Survey Efficiency"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28717,7 +28848,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Survey Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28726,7 +28858,7 @@
     "modifiers:taxRateAdd": {
       "id": "taxRateAdd",
       "type": "modifiers",
-      "displayName": "Tax Rate Add",
+      "displayName": "{1} Rate: {val}",
       "icon": "currency",
       "fields": {
         "Name": "taxRateAdd",
@@ -28741,7 +28873,8 @@
           "base": 1
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "{1} Rate: {val}"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28755,7 +28888,7 @@
     "modifiers:assimilationMult": {
       "id": "assimilationMult",
       "type": "modifiers",
-      "displayName": "Assimilation Mult",
+      "displayName": "Population",
       "icon": "population",
       "fields": {
         "Name": "assimilationMult",
@@ -28768,7 +28901,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Population"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28782,7 +28916,7 @@
     "modifiers:characterEffortAdd": {
       "id": "characterEffortAdd",
       "type": "modifiers",
-      "displayName": "Character Effort Add",
+      "displayName": "Energy",
       "icon": "energy",
       "fields": {
         "Name": "characterEffortAdd",
@@ -28795,7 +28929,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Energy"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28809,7 +28944,7 @@
     "modifiers:rangedAttackMult": {
       "id": "rangedAttackMult",
       "type": "modifiers",
-      "displayName": "Ranged Attack Mult",
+      "displayName": "Ranged Attack",
       "icon": "deployRange",
       "fields": {
         "Name": "rangedAttackMult",
@@ -28822,7 +28957,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Ranged Attack"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28849,7 +28985,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Colony Progress Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28876,7 +29013,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Experience Gain Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28903,7 +29041,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Experience Base"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28930,7 +29069,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Command Limit Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28960,7 +29100,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Privilege Grant Cost"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28989,7 +29130,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Situation Variable Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -28998,7 +29140,7 @@
     "modifiers:diploFlagAdd": {
       "id": "diploFlagAdd",
       "type": "modifiers",
-      "displayName": "Diplo Flag Add",
+      "displayName": "Opinion",
       "fields": {
         "Name": "diploFlagAdd",
         "Positivity": "boolean",
@@ -29012,7 +29154,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Opinion"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29021,7 +29164,7 @@
     "modifiers:organizationResearchCollaboration": {
       "id": "organizationResearchCollaboration",
       "type": "modifiers",
-      "displayName": "Organization Research Collaboration",
+      "displayName": "Research",
       "icon": "research",
       "fields": {
         "Name": "organizationResearchCollaboration",
@@ -29036,7 +29179,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Research"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29050,7 +29194,7 @@
     "modifiers:organizationUnityCollaboration": {
       "id": "organizationUnityCollaboration",
       "type": "modifiers",
-      "displayName": "Organization Unity Collaboration",
+      "displayName": "Culture",
       "icon": "culture",
       "fields": {
         "Name": "organizationUnityCollaboration",
@@ -29065,7 +29209,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Culture"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29079,7 +29224,7 @@
     "modifiers:organizationTradeBarrierModifier": {
       "id": "organizationTradeBarrierModifier",
       "type": "modifiers",
-      "displayName": "Organization Trade Barrier Modifier",
+      "displayName": "Trade",
       "fields": {
         "Name": "organizationTradeBarrierModifier",
         "Positivity": "negative",
@@ -29090,7 +29235,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Trade"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29099,7 +29245,7 @@
     "modifiers:leaderJoinsMemberDefensive": {
       "id": "leaderJoinsMemberDefensive",
       "type": "modifiers",
-      "displayName": "Leader Joins Member Defensive",
+      "displayName": "Opinion",
       "fields": {
         "Name": "leaderJoinsMemberDefensive",
         "Positivity": "boolean",
@@ -29110,7 +29256,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Opinion"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29119,7 +29266,7 @@
     "modifiers:stabilityGainFromFactions": {
       "id": "stabilityGainFromFactions",
       "type": "modifiers",
-      "displayName": "Stability Gain From Factions",
+      "displayName": "Stability",
       "icon": "stability",
       "fields": {
         "Name": "stabilityGainFromFactions",
@@ -29132,7 +29279,8 @@
           "stability": 0.75
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Stability"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29161,7 +29309,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Battle Domain Enable"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29170,7 +29319,7 @@
     "modifiers:rulingFactionPoliticalPowerAdd": {
       "id": "rulingFactionPoliticalPowerAdd",
       "type": "modifiers",
-      "displayName": "Ruling Faction Political Power Add",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "rulingFactionPoliticalPowerAdd",
@@ -29183,7 +29332,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29197,7 +29347,7 @@
     "modifiers:warExhaustionRecoveryMult": {
       "id": "warExhaustionRecoveryMult",
       "type": "modifiers",
-      "displayName": "War Exhaustion Recovery Mult",
+      "displayName": "Stability",
       "icon": "stability",
       "fields": {
         "Name": "warExhaustionRecoveryMult",
@@ -29210,7 +29360,8 @@
           "base": 0.5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Stability"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29240,7 +29391,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Faction Reform Support"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29249,7 +29401,7 @@
     "modifiers:aiInterventionChance": {
       "id": "aiInterventionChance",
       "type": "modifiers",
-      "displayName": "Ai Intervention Chance",
+      "displayName": "AI Modifier: Intervention Chance: {val}",
       "fields": {
         "Name": "aiInterventionChance",
         "Positivity": "neutral",
@@ -29260,7 +29412,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "AI Modifier: Intervention Chance: {val}"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29269,7 +29422,7 @@
     "modifiers:cultureTraitMaxAdd": {
       "id": "cultureTraitMaxAdd",
       "type": "modifiers",
-      "displayName": "Culture Trait Max Add",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "cultureTraitMaxAdd",
@@ -29282,7 +29435,8 @@
           "base": 10
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29296,7 +29450,7 @@
     "modifiers:cultureTraitChangeCostMult": {
       "id": "cultureTraitChangeCostMult",
       "type": "modifiers",
-      "displayName": "Culture Trait Change Cost Mult",
+      "displayName": "Culture",
       "icon": "culture",
       "fields": {
         "Name": "cultureTraitChangeCostMult",
@@ -29311,7 +29465,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Culture"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29325,7 +29480,7 @@
     "modifiers:cultureIdeaCostMult": {
       "id": "cultureIdeaCostMult",
       "type": "modifiers",
-      "displayName": "Culture Idea Cost Mult",
+      "displayName": "Culture",
       "icon": "culture",
       "fields": {
         "Name": "cultureIdeaCostMult",
@@ -29338,7 +29493,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Culture"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29352,7 +29508,7 @@
     "modifiers:interplanetaryCultureModifier": {
       "id": "interplanetaryCultureModifier",
       "type": "modifiers",
-      "displayName": "Interplanetary Culture Modifier",
+      "displayName": "Interplanetary Culture",
       "icon": "",
       "fields": {
         "Name": "interplanetaryCultureModifier",
@@ -29365,7 +29521,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Interplanetary Culture"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29387,7 +29544,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Project Count Cost Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29396,7 +29554,7 @@
     "modifiers:developmentGrowthAdd": {
       "id": "developmentGrowthAdd",
       "type": "modifiers",
-      "displayName": "Development Growth Add",
+      "displayName": "Development Growth",
       "icon": "development",
       "fields": {
         "Name": "developmentGrowthAdd",
@@ -29409,7 +29567,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Development Growth"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29423,7 +29582,7 @@
     "modifiers:sliderMaxAdd": {
       "id": "sliderMaxAdd",
       "type": "modifiers",
-      "displayName": "Slider Max Add",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "sliderMaxAdd",
@@ -29438,7 +29597,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29467,7 +29627,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Quality Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29476,7 +29637,7 @@
     "modifiers:unitTransportSpeedAdd": {
       "id": "unitTransportSpeedAdd",
       "type": "modifiers",
-      "displayName": "Unit Transport Speed Add",
+      "displayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
       "fields": {
         "Name": "unitTransportSpeedAdd",
         "Positivity": "positive",
@@ -29489,7 +29650,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component."
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29498,7 +29660,7 @@
     "modifiers:canColonizeOverride": {
       "id": "canColonizeOverride",
       "type": "modifiers",
-      "displayName": "Can Colonize Override",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "canColonizeOverride",
@@ -29511,7 +29673,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29540,7 +29703,8 @@
           "base": 0
         },
         "GenerateIcons": true,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Unit Cost Per Size"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29549,7 +29713,7 @@
     "modifiers:developmentMult": {
       "id": "developmentMult",
       "type": "modifiers",
-      "displayName": "Development Mult",
+      "displayName": "Development",
       "icon": "development",
       "fields": {
         "Name": "developmentMult",
@@ -29562,7 +29726,8 @@
           "population": 100
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Development"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29576,7 +29741,7 @@
     "modifiers:unitIsCarried": {
       "id": "unitIsCarried",
       "type": "modifiers",
-      "displayName": "Unit Is Carried",
+      "displayName": "Prestige",
       "icon": "prestige",
       "fields": {
         "Name": "unitIsCarried",
@@ -29589,7 +29754,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Prestige"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29616,7 +29782,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Crisis Spawn Chance Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29638,7 +29805,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Crisis Spawn Chance Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29662,7 +29830,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Reform Locked"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29689,7 +29858,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Leader Life Span Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29714,7 +29884,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Culture Power Add"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29734,7 +29905,8 @@
           "base": 0
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Culture Power Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29758,7 +29930,8 @@
           "base": -1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Budget Modifier Cost Mult"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29772,7 +29945,7 @@
     "modifiers:adminEfficiencyCap": {
       "id": "adminEfficiencyCap",
       "type": "modifiers",
-      "displayName": "Admin Efficiency Cap",
+      "displayName": "Administration",
       "icon": "political",
       "fields": {
         "Name": "adminEfficiencyCap",
@@ -29785,7 +29958,8 @@
           "base": 5
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Administration"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -29812,7 +29986,8 @@
           "base": 1
         },
         "GenerateIcons": false,
-        "IsEffect": false
+        "IsEffect": false,
+        "DisplayName": "Character Quality"
       },
       "modifiers": [],
       "prerequisites": [],
@@ -31562,153 +31737,160 @@
       "unit-components:warpDrive_1"
     ],
     "modifiers": [
+      "modifiers:taxRateAdd",
       "modifiers:adminEfficiencyAdd",
       "modifiers:adminEfficiencyCap",
       "modifiers:advantageDelta",
       "modifiers:aiInterventionChance",
       "modifiers:alignmentAdd",
       "modifiers:allLeaderSkillsMult",
-      "modifiers:allResourceCapacityMult",
-      "modifiers:assimilationMult",
       "modifiers:atmEarthlikenessModifier",
       "modifiers:atmPressureModifier",
-      "modifiers:automatedWorkforceAdd",
-      "modifiers:automatedWorkforceMult",
-      "modifiers:baseEconomicOutputMult",
       "modifiers:battleAdvantageAdd",
       "modifiers:battleDomainEnable",
       "modifiers:budgetModifier",
       "modifiers:budgetModifierCostMult",
-      "modifiers:budgetModifierPopulation",
-      "modifiers:canColonizeOverride",
       "modifiers:carryingCapacityMult",
-      "modifiers:characterEffortAdd",
       "modifiers:characterLevelUpOptions",
       "modifiers:characterQuality",
       "modifiers:colonialRange",
       "modifiers:colonialRangeLy",
       "modifiers:colonyProgressMult",
+      "modifiers:rootOutInfluenceEffect",
       "modifiers:controllingFactionLoyalty",
       "modifiers:crisisSpawnChanceAdd",
       "modifiers:crisisSpawnChanceMult",
+      "modifiers:organizationUnityCollaboration",
+      "modifiers:cultureTraitChangeCostMult",
       "modifiers:cultureIdeaCostMult",
       "modifiers:culturePowerAdd",
       "modifiers:culturePowerMult",
-      "modifiers:cultureTraitChangeCostMult",
-      "modifiers:cultureTraitMaxAdd",
+      "modifiers:resourceModifier",
+      "modifiers:protectorateAdmin",
+      "modifiers:taxRateMaxAdd",
+      "modifiers:budgetModifierPopulation",
       "modifiers:currencyGainEffect",
       "modifiers:currencyLossEffect",
       "modifiers:debtEffectMult",
       "modifiers:defenderAdvantageAdd",
-      "modifiers:deployRangeAdd",
-      "modifiers:deployRangeInterplanetary",
       "modifiers:deployRangeModifier",
+      "modifiers:deployRangeAdd",
       "modifiers:deployRangeMult",
-      "modifiers:depositMult",
-      "modifiers:developmentGrowthAdd",
-      "modifiers:developmentGrowthMult",
+      "modifiers:deployRangeInterplanetary",
       "modifiers:developmentMult",
-      "modifiers:diploFlagAdd",
-      "modifiers:duplicatePolicyOptionsAdd",
       "modifiers:economicOutputMult",
+      "modifiers:developmentGrowthMult",
+      "modifiers:developmentGrowthAdd",
+      "modifiers:duplicatePolicyOptionsAdd",
+      "modifiers:depositMult",
       "modifiers:edictBenefitMult",
       "modifiers:edictCostMult",
-      "modifiers:educationEfficiency",
       "modifiers:educationModifier",
+      "modifiers:educationEfficiency",
+      "modifiers:siphonMoneyTooltipModifier",
+      "modifiers:factionVariant",
+      "modifiers:characterEffortAdd",
       "modifiers:executiveTerm",
-      "modifiers:exportTariff",
       "modifiers:factionEffectMult",
       "modifiers:factionLoyaltyAdd",
-      "modifiers:factionPowerAdd",
       "modifiers:factionReformSupport",
-      "modifiers:factionVariant",
       "modifiers:fortDefense",
-      "modifiers:genocideModifier",
       "modifiers:genocideModifierTooltip",
+      "modifiers:reformCostMult",
       "modifiers:habitabilityAdd",
       "modifiers:hasBiosphereModifier",
-      "modifiers:immigrationPull",
-      "modifiers:immigrationPullExternal",
-      "modifiers:immigrationPush",
-      "modifiers:immigrationPushExternal",
-      "modifiers:importTariff",
       "modifiers:influenceGainEffect",
       "modifiers:integrationCostMult",
-      "modifiers:integrationSpeedMult",
       "modifiers:interplanetaryCultureModifier",
       "modifiers:joinOrgCost",
-      "modifiers:leaderJoinsMemberDefensive",
       "modifiers:leaderLifeSpanAdd",
       "modifiers:leaderSkillAdd",
       "modifiers:leaderSkillMult",
       "modifiers:leaderXPGain",
-      "modifiers:lifeSpanAdd",
-      "modifiers:manpowerGainEffect",
+      "modifiers:allResourceCapacityMult",
+      "modifiers:unitReinforceRateMult",
+      "modifiers:recruitablePopulationAdd",
+      "modifiers:recruitablePopulationMult",
       "modifiers:manpowerRecoveryRate",
+      "modifiers:manpowerGainEffect",
       "modifiers:maxPrivilegesAdd",
       "modifiers:maxRulingFactionsAdd",
+      "modifiers:unitAttackMult",
+      "modifiers:unitAttackAdd",
+      "modifiers:unitMoraleAdd",
+      "modifiers:unitMoraleMult",
+      "modifiers:unitSpeedMult",
       "modifiers:moraleRecoveryMult",
       "modifiers:opinionModifier",
-      "modifiers:organizationResearchCollaboration",
-      "modifiers:organizationTradeBarrierModifier",
-      "modifiers:organizationUnityCollaboration",
+      "modifiers:diploFlagAdd",
+      "modifiers:leaderJoinsMemberDefensive",
       "modifiers:planetMagneticFieldModifier",
       "modifiers:politicalPowerAdd",
+      "modifiers:lifeSpanAdd",
       "modifiers:popAttrition",
+      "modifiers:immigrationPush",
+      "modifiers:immigrationPullExternal",
+      "modifiers:immigrationPull",
+      "modifiers:immigrationPushExternal",
+      "modifiers:genocideModifier",
+      "modifiers:automatedWorkforceAdd",
+      "modifiers:automatedWorkforceMult",
+      "modifiers:assimilationMult",
       "modifiers:popGrowthMult",
+      "modifiers:factionPowerAdd",
       "modifiers:prestigeMult",
+      "modifiers:integrationSpeedMult",
+      "modifiers:rulingFactionPoliticalPowerAdd",
+      "modifiers:cultureTraitMaxAdd",
+      "modifiers:sliderMaxAdd",
+      "modifiers:canColonizeOverride",
+      "modifiers:unitIsCarried",
       "modifiers:privilegeGrantCost",
       "modifiers:privilegePicksAdd",
       "modifiers:privilegePointsAdd",
-      "modifiers:projectBuildCostMult",
       "modifiers:projectBuildSpeedMult",
+      "modifiers:projectBuildCostMult",
       "modifiers:projectCountCostMult",
       "modifiers:projectEfficiency",
       "modifiers:projectUpgradeLimit",
       "modifiers:projectUpkeepMult",
-      "modifiers:protectorateAdmin",
       "modifiers:rangedAttackMult",
-      "modifiers:recruitablePopulationAdd",
-      "modifiers:recruitablePopulationMult",
-      "modifiers:reformCostMult",
       "modifiers:reformLocked",
       "modifiers:regionRangedDefense",
       "modifiers:regionVulnAdd",
-      "modifiers:researchCostMult",
       "modifiers:researchMult",
-      "modifiers:resourceCapacityAdd",
-      "modifiers:resourceCapacityCurrencyAdd",
+      "modifiers:researchCostMult",
+      "modifiers:organizationResearchCollaboration",
       "modifiers:resourceCapacityMult",
+      "modifiers:resourceCapacityAdd",
       "modifiers:resourceCapacityPopulation",
       "modifiers:resourceCapacityPopulationMult",
-      "modifiers:resourceIncomeMult",
-      "modifiers:resourceModifier",
+      "modifiers:resourceCapacityCurrencyAdd",
       "modifiers:resourceMult",
       "modifiers:resourceProduction",
       "modifiers:resourceUsageAdd",
       "modifiers:resourceUsagePopulation",
       "modifiers:resourceUsagePopulationMult",
-      "modifiers:rootOutInfluenceEffect",
       "modifiers:rotationEarthlikenessModifier",
-      "modifiers:rulingFactionPoliticalPowerAdd",
       "modifiers:siegeAbility",
       "modifiers:siphonManpowerTooltipModifier",
-      "modifiers:siphonMoneyTooltipModifier",
       "modifiers:situationVariableAdd",
-      "modifiers:sliderMaxAdd",
+      "modifiers:unitTransportSpeedAdd",
+      "modifiers:stabilityOffset",
+      "modifiers:stabilityGainFromFactions",
+      "modifiers:warExhaustionRecoveryMult",
       "modifiers:stabilityGainAdd",
       "modifiers:stabilityGainEffect",
-      "modifiers:stabilityGainFromFactions",
-      "modifiers:stabilityOffset",
+      "modifiers:resourceIncomeMult",
       "modifiers:surfaceWaterModifier",
       "modifiers:surveyCost",
       "modifiers:surveyEfficiency",
-      "modifiers:taxRateAdd",
-      "modifiers:taxRateMaxAdd",
+      "modifiers:baseEconomicOutputMult",
       "modifiers:tooltipModifier",
+      "modifiers:exportTariff",
+      "modifiers:importTariff",
       "modifiers:tradeBarriersAdd",
-      "modifiers:unitAttackAdd",
-      "modifiers:unitAttackMult",
+      "modifiers:organizationTradeBarrierModifier",
       "modifiers:unitCommandLimitAdd",
       "modifiers:unitCostMult",
       "modifiers:unitCostPerSize",
@@ -31716,26 +31898,19 @@
       "modifiers:unitExperienceGainMult",
       "modifiers:unitHangarAdd",
       "modifiers:unitHangarMult",
-      "modifiers:unitIsCarried",
-      "modifiers:unitMoraleAdd",
       "modifiers:unitMoraleDamageReduction",
-      "modifiers:unitMoraleMult",
       "modifiers:unitOccupationSpeedMult",
       "modifiers:unitQualityAdd",
       "modifiers:unitQualityMaxAdd",
       "modifiers:unitQualityMult",
-      "modifiers:unitReinforceRateMult",
-      "modifiers:unitSpeedMult",
       "modifiers:unitStatAdd",
       "modifiers:unitStatMult",
-      "modifiers:unitTransportSpeedAdd",
       "modifiers:unitUpkeepMult",
       "modifiers:unitVulnAdd",
       "modifiers:unitVulnMult",
       "modifiers:unityMult",
       "modifiers:unrestChangeAdd",
       "modifiers:warExhaustionMult",
-      "modifiers:warExhaustionRecoveryMult",
       "modifiers:workforceRatioAdd"
     ],
     "mission-components": [

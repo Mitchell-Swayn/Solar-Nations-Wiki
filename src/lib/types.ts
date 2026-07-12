@@ -56,6 +56,7 @@ export interface CuratedIndex {
 
 export interface ModifierDefinition {
   Name: string;
+  DisplayName?: string;
   Positivity: string;
   IsPercent: string;
   Icon?: string;

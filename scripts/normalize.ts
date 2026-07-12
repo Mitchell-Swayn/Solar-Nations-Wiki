@@ -396,7 +396,28 @@ function loadDefines(modPath: string, localization: Record<string, string>) {
   return entries;
 }
 
-function loadModifiers(modPath: string): WikiEntry[] {
+function localizedModifierName(record: RawRecord, localization: Record<string, string>): string {
+  const id = String(record.Name);
+  const lookup = new Map(Object.entries(localization).map(([key, value]) => [key.toLowerCase(), value]));
+  const candidates = [id];
+  let base = id;
+  const suffixes = ['TooltipModifier', 'PopulationMult', 'Population', 'CurrencyAdd', 'Interplanetary', 'Modifier', 'Effect', 'Override', 'Mult', 'Add', 'Max', 'Cost', 'Cap'];
+  for (let i = 0; i < 4; i++) {
+    const suffix = suffixes.find((candidate) => base.endsWith(candidate));
+    if (!suffix) break;
+    base = base.slice(0, -suffix.length);
+    candidates.push(base);
+  }
+  const genericIcons = new Set(['political', 'military', 'industrial', 'defense', 'war', 'planet']);
+  if (typeof record.Icon === 'string' && !genericIcons.has(record.Icon)) candidates.push(record.Icon);
+  for (const candidate of candidates) {
+    const localized = lookup.get(candidate.toLowerCase());
+    if (localized) return cleanGameText(localized);
+  }
+  return humanizeId(id);
+}
+
+function loadModifiers(modPath: string, localization: Record<string, string>): WikiEntry[] {
   const path = join(modPath, 'modifiers.json');
   if (!existsSync(path)) return [];
   const data = parseJsonFile(path) as RawRecord[];
@@ -409,10 +430,12 @@ function loadModifiers(modPath: string): WikiEntry[] {
   }
   return data.map((record) => {
     const id = record.Name as string;
+    const displayName = localizedModifierName(record, localization);
+    record.DisplayName = displayName;
     return {
       id,
       type: 'modifiers',
-      displayName: humanizeId(id),
+      displayName,
       icon: typeof record.Icon === 'string' ? record.Icon : undefined,
       fields: record,
       modifiers: [],
@@ -513,13 +536,16 @@ function writeCuratedFiles(index: CuratedIndex, modifierDefs: RawRecord[]) {
 function main() {
   const gameRoot = getGameRoot();
   const modPath = getTutorialModPath(gameRoot);
-  const localization = loadLocalization(modPath);
+  const rawLocalizationPath = join(DATA_RAW, 'Localization/en.json');
+  const localization = existsSync(rawLocalizationPath)
+    ? (parseJsonFile(rawLocalizationPath) as Record<string, string>)
+    : loadLocalization(modPath);
 
   const rawEntries = loadRawExtract();
   const useRaw = rawEntries.length > 0;
 
   const defineEntries = useRaw ? rawEntries : loadDefines(modPath, localization);
-  const modifierEntries = loadModifiers(modPath);
+  const modifierEntries = loadModifiers(modPath, localization);
   const missionEntries = loadMissionComponents(modPath);
 
   const allEntries = [...defineEntries, ...modifierEntries, ...missionEntries];

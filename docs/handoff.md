@@ -18,11 +18,15 @@ Build an **auto-generated data encyclopedia** for Solar Nations 2 (Astro static 
 
 ## What's Done
 
-### 1. Astro wiki (v0 → v1)
+### 1. Astro wiki
 
-- Static site with category pages, detail pages, search, icons/flags
-- GitHub Actions deploy to Pages
-- `withBase()` fix for subpath 404s (committed as `311664f`)
+- High-density strategy-wiki layout with persistent grouped navigation and global search
+- Searchable category directories, responsive mobile navigation, detail infoboxes, and adjacent-entry navigation
+- Government reforms and their 56 options are consolidated under `/government-reforms/`
+- Factions and their 18 variants are consolidated under `/factions/`
+- 421 culture ideas are grouped into 59 families across six domains
+- Modifier references use localized concept names and icons; internal variable names appear on modifier detail pages
+- GitHub Actions deploys the static Astro build to Pages with subpath-safe links
 - **1,310 curated entries** generated from validated `.uexp` row identifiers
 
 ### 2. Data pipeline
@@ -71,7 +75,7 @@ Counts are lower than earlier automated output because schema fields and cross-t
 ### 4. Documentation
 
 - `docs/extraction.md` — macOS automated path + FModel/usmap path
-- `README.md` — updated for new pipeline (modified, not pushed)
+- `README.md` — pipeline and project overview
 
 ---
 
@@ -104,9 +108,10 @@ export SN2_GAME_PATH="/path/to/twilightModernity"
 ### A. `retoc` + `parse_legacy.py` — **working (primary path on Mac)**
 
 - Unpacks and converts define assets without `.usmap`
-- Produces tutorialMod-shaped JSON with **names, icons, partial modifiers**
+- Produces tutorialMod-shaped JSON with validated row names, mapped icons, and partial structured fields
+- Culture idea modifiers are fully decoded: 536 effects across 420 ideas, including keys, values, targets, and primary/region scope
 - **Limitations:**
-  - Modifier keys are placeholders (`modifier_0`, `modifier_1`) — real keys like `popGrowthMult` need property name resolution from `.usmap`
+  - Government reform option modifier keys are placeholders (`modifier_0`, `modifier_1`) pending property mappings
   - Tech fields (`Cost`, `Prerequisites`, `Location`, etc.) mostly default/empty
   - Deposits currently contain names/icons only; structured modifiers, colors, and special flags still need property mappings
   - Some variants missing (e.g. `economy_agrarian` only has `default`, `genetics`, `futuristic` — not all 5 variants)
@@ -139,7 +144,7 @@ export SN2_GAME_PATH="/path/to/twilightModernity"
 - **Failed:** pattern scan timeout — `GUObjectArray`, `FName::FName`, `FText::FText` not found
 - Log: `.../Binaries/Win64/UE4SS.log` — ends with `Fatal Error: PS scan timed out`
 - **No `Mappings.usmap` produced**
-- UE4SS files still present in game folder — consider removing before normal play
+- UE4SS injection is disabled. Files were moved to `Binaries/Win64/UE4SS.disabled/`, so the game no longer runs the failed scanner at launch
 
 ### D. `jmap_dumper` — **not run**
 
@@ -173,7 +178,8 @@ export SN2_GAME_PATH="/path/to/twilightModernity"
 | `data/raw/legacy-all/` | ~137 `.uexp` legacy exports |
 | `data/raw/Defines/` | 17 JSON files from parser |
 | `data/raw/Localization/en.json` | ~4,365 keys |
-| `data/curated/` | **Committed for CI** — locally updated, **not pushed** |
+| `data/curated/` | Committed wiki-ready data used by CI |
+| `public/wiki-icons/` | Tracked flat bundle of referenced game icons and aliases |
 
 ### Tools (mostly untracked `?? tools/`)
 
@@ -204,16 +210,14 @@ export SN2_GAME_PATH="/path/to/twilightModernity"
 
 ---
 
-## Git State (as of handoff)
+## Git State
 
 ```
 Branch: main (tracking origin/main)
-Last pushed commit before this parser correction: 4f9cd1c
+Tracking `origin/main`. The extraction, curated data, wiki UI, and deployable icon bundle are committed. Expected local-only untracked files are:
 
-Uncommitted:
-  - Modified: README.md, docs/extraction.md, scripts/extract.ts
-  - Modified: parser, documentation, curated JSON, and generated wiki icon bundle
-  - Untracked: tools/ (retoc, parse_legacy.py, extractor, ue4ss, jmap, etc.)
+  - `tools/extractor/` — experimental CUE4Parse project
+  - `tools/pakstore.json` — local pak index
 ```
 
 **Do not commit** `data/raw/` (gitignored). **Consider committing** `data/curated/` + `tools/parse_legacy.py` + retoc path docs after review.
@@ -229,9 +233,9 @@ Uncommitted:
 - Wire into `Sn2Extractor` via CUE4Parse `MappingsContainer`
 - Re-export all `Defines/*.json` with real modifier keys and numeric fields
 
-### 2. Improve `parse_legacy.py` (no usmap needed)
+### 2. Improve remaining `parse_legacy.py` fields (no usmap needed)
 
-- Map `modifier_N` → real keys using name table from `.uasset` + index order in `.uexp`
+- Map reform `modifier_N` values to real keys using the name table and `.uexp` ordering
 - Decode tech `Cost`, `Prerequisites`, `Location` from `Technologies.uexp`
 - Decode deposit modifiers, colors, and special flags from the singular `Deposit` table
 - Recover all 5 reform variants per option
@@ -241,10 +245,11 @@ Uncommitted:
 - Parser pulls keys from unpacked `resource_english.uasset` via `strings`
 - Could improve with proper UE string table parsing for `SourceString` pairs
 
-### 4. Cleanup
+### 4. Data presentation
 
-- Remove UE4SS from game `Binaries/Win64/` if user doesn't need it (`UE4SS.dll`, `dwmapi.dll`, `Mods/UsmapAutoDump/`)
-- Add `tools/` to git (exclude large binaries: `retoc.tar.xz`, `jmap.zip`, `ue4ss` zip, `data/raw/unpacked`)
+- Continue replacing humanized modifier fallbacks with extracted localization where localization keys exist
+- Identify the correct Industrial Capacity icon; do not substitute the factory icon
+- Add structured deposit and technology fields when decoding becomes reliable
 
 ### 5. Ship
 
@@ -277,5 +282,5 @@ git push
 | Real modifier keys on reforms | **Not done** — needs usmap or better parser |
 | Tech costs/prerequisites accurate | **Not done** |
 | Deposits category populated | Done (41 names/icons; structured fields remain) |
-| Curated data pushed to GitHub | **Not done** |
+| Curated data pushed to GitHub | Done |
 | FModel-quality full export | **Blocked on `.usmap`** |
