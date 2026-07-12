@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameIcon from '../../components/GameIcon.astro';
-import { getCategories, getEntriesByType } from '../../lib/data';
+import { getCategories, getEntriesByType, getModifierMap } from '../../lib/data';
+import type { ModifierRef } from '../../lib/types';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
 import { withBase } from '../../lib/base';
@@ -37,6 +38,29 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
   groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
 })).filter((domain) => domain.groups.length > 0);
 const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length + entries.length : entries.length;
+const modifierMap = getModifierMap();
+function formatEffects(modifiers: ModifierRef[]) {
+  return modifiers.map((mod) => {
+    const def = modifierMap.get(mod.key);
+    const numeric = typeof mod.value === 'number' ? mod.value : undefined;
+    const value = numeric === undefined ? String(mod.value)
+      : def?.IsPercent === 'Percentage' ? `${numeric >= 0 ? '+' : ''}${(numeric * 100).toFixed(1).replace(/\.0$/, '')}%`
+      : `${numeric >= 0 ? '+' : ''}${numeric}`;
+    const rawLabel = def?.DisplayName ?? mod.key;
+    let label = rawLabel
+      .replace(/:?\s*\{val\}/g, '')
+      .replace(/\{1\}/g, mod.value1 ?? '')
+      .replace(/\{2\}/g, mod.value2 ?? '')
+      .replace(/\{3\}/g, mod.value3 ?? '')
+      .trim() || mod.key;
+    if (!rawLabel.includes('{1}') && mod.value1) label += ` (${mod.value1})`;
+    const tone = numeric === undefined || !def ? ''
+      : def.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
+      : def.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')
+      : '';
+    return { value, icon: def?.Icon, label, tone };
+  });
+}
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -105,8 +129,17 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
               <div class="entry-directory">
                 {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))).map((entry) => (
                   <a href={withBase(`/culture-traits/${meta.id}/#${entry.id}`)} class="directory-row" data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
-                    <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                    <span class="directory-icon"><GameIcon name={meta.icon} size={34} /></span>
                     <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                    <span class="row-effects">
+                      {formatEffects(entry.modifiers).map((effect) => (
+                        <span class:list={['effect', effect.tone]}>
+                          <b>{effect.value}</b>
+                          {effect.icon && <GameIcon name={effect.icon} size={16} />}
+                          <span>{effect.label}</span>
+                        </span>
+                      ))}
+                    </span>
                     <span class="row-arrow" aria-hidden="true">›</span>
                   </a>
                 ))}
