@@ -1,0 +1,288 @@
+[
+  {
+    "id": "2_commerceCity",
+    "type": "province-buildings",
+    "displayName": "2 Commerce City",
+    "icon": "city",
+    "fields": {
+      "Name": "2_commerceCity",
+      "Mesh": "city",
+      "CanBuild": false,
+      "Cost": [],
+      "BuildTime": 3600,
+      "Icon": "city",
+      "HasName": true,
+      "SiegeTime": 840,
+      "Upgrades": [
+        "3_commerceCity"
+      ],
+      "CityCap": 2,
+      "SpaceModel": null
+    },
+    "modifiers": [
+      {
+        "key": "industryThroughputMult",
+        "value1": "consumerGoodsFactory",
+        "value": 0.15
+      },
+      {
+        "key": "industryThroughputMult",
+        "value1": "research",
+        "value": 0.15
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "city"
+      }
+    ]
+  },
+  {
+    "id": "2_fortressCity",
+    "type": "province-buildings",
+    "displayName": "2 Fortress City",
+    "icon": "city",
+    "fields": {
+      "Name": "2_fortressCity",
+      "Mesh": "city",
+      "CanBuild": false,
+      "Cost": [],
+      "BuildTime": 3600,
+      "Icon": "city",
+      "HasName": true,
+      "SiegeTime": 960,
+      "Upgrades": [
+        "3_fortressCity"
+      ],
+      "CityCap": 2,
+      "SpaceModel": null
+    },
+    "modifiers": [
+      {
+        "key": "promotionRateMult",
+        "value1": "soldier",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "city"
+      }
+    ]
+  },
+  {
+    "id": "2_industrialCity",
+    "type": "province-buildings",
+    "displayName": "2 Industrial City",
+    "icon": "city",
+    "fields": {
+      "Name": "2_industrialCity",
+      "Mesh": "city",
+      "CanBuild": false,
+      "Cost": [],
+      "BuildTime": 3600,
+      "Icon": "city",
+      "HasName": true,
+      "SiegeTime": 840,
+      "Upgrades": [
+        "3_industrialCity"
+      ],
+      "CityCap": 2,
+      "SpaceModel": null
+    },
+    "modifiers": [
+      {
+        "key": "industryThroughputMult",
+        "value1": "manufacturing",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "city"
+      }
+    ]
+  },
+  {
+    "id": "airport",
+    "type": "province-buildings",
+    "displayName": "Airport",
+    "icon": "airport",
+    "fields": {
+      "Name": "airport",
+      "Mesh": null,
+      "CanBuild": true,
+      "Cost": {
+        "steel": 25000
+      },
+      "BuildTime": 720,
+      "Icon": "airport",
+      "HasName": false,
+      "SiegeTime": 0,
+      "Upgrades": [],
+      "CityCap": 0,
+      "SpaceModel": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airport"
+      }
+    ]
+  },
+  {
+    "id": "barracks",
+    "type": "province-buildings",
+    "displayName": "Barracks",
+    "icon": "barracks",
+    "fields": {
+      "Name": "barracks",
+      "Mesh": "barracks",
+      "CanBuild": true,
+      "Cost": {
+        "steel": 25000
+      },
+      "BuildTime": 720,
+      "Icon": "barracks",
+      "HasName": false,
+      "SiegeTime": 0,
+      "Upgrades": [],
+      "CityCap": 0,
+      "SpaceModel": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "barracks"
+      }
+    ]
+  },
+  {
+    "id": "city",
+    "type": "province-buildings",
+    "displayName": "City",
+    "icon": "city",
+    "fields": {
+      "Name": "city",
+      "Mesh": "city",
+      "CanBuild": true,
+      "Cost": [],
+      "BuildTime": 1440,
+      "Icon": "city",
+      "HasName": true,
+      "SiegeTime": 720,
+      "Upgrades": [
+        "2_commerceCity",
+        "2_industrialCity",
+        "2_fortressCity"
+      ],
+      "CityCap": 1,
+      "SpaceModel": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "city"
+      }
+    ]
+  },
+  {
+    "id": "port",
+    "type": "province-buildings",
+    "displayName": "Port",
+    "icon": "navalBase",
+    "fields": {
+      "Name": "port",
+      "Mesh": null,
+      "CanBuild": true,
+      "Cost": {
+        "steel": 25000
+      },
+      "BuildTime": 720,
+      "Icon": "navalBase",
+      "HasName": false,
+      "SiegeTime": 15,
+      "Upgrades": [],
+      "CityCap": 0,
+      "SpaceModel": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "navalBase"
+      }
+    ]
+  },
+  {
+    "id": "spaceport",
+    "type": "province-buildings",
+    "displayName": "Spaceport",
+    "icon": "spaceport",
+    "fields": {
+      "Name": "spaceport",
+      "Mesh": "1M_Cube",
+      "CanBuild": true,
+      "Cost": {
+        "steel": 25000
+      },
+      "BuildTime": 720,
+      "Icon": "spaceport",
+      "HasName": true,
+      "SiegeTime": 15,
+      "Upgrades": [],
+      "CityCap": 0,
+      "SpaceModel": "shipyard"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceport"
+      }
+    ]
+  },
+  {
+    "id": "supplyBase",
+    "type": "province-buildings",
+    "displayName": "Supply Base",
+    "icon": "supplyUp",
+    "fields": {
+      "Name": "supplyBase",
+      "Mesh": "barracks",
+      "CanBuild": true,
+      "Cost": {
+        "supply": 10000
+      },
+      "BuildTime": 720,
+      "Icon": "supplyUp",
+      "HasName": false,
+      "SiegeTime": 360,
+      "Upgrades": [],
+      "CityCap": 0,
+      "SpaceModel": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supplyUp"
+      }
+    ]
+  }
+]

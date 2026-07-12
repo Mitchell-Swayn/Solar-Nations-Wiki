@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "administrativeState",
+    "type": "edicts",
+    "displayName": "Administrative State",
+    "icon": "administrativeState",
+    "fields": {
+      "Name": "administrativeState",
+      "EnactCost": 0.1,
+      "Icon": "administrativeState",
+      "BenefitModifier": {
+        "(Key=\"politicalPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.2
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "form_administration"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "administrativeState"
+      }
+    ]
+  },
+  {
+    "id": "agrarianIdyll",
+    "type": "edicts",
+    "displayName": "Agrarian Idyll",
+    "icon": "agrarianIdyll",
+    "fields": {
+      "Name": "agrarianIdyll",
+      "EnactCost": 0.1,
+      "Icon": "agrarianIdyll",
+      "BenefitModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"openFarm\",Value2=\"\",Value3=\"\")": 2,
+        "(Key=\"projectEfficiency\",Value1=\"hydroponics\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_agrarian"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "agrarianIdyll"
+      }
+    ]
+  },
+  {
+    "id": "aiDirectiveDevelopment",
+    "type": "edicts",
+    "displayName": "AI Directive: Development",
+    "icon": "edictGeneric",
+    "fields": {
+      "Name": "aiDirectiveDevelopment",
+      "EnactCost": 0.1,
+      "Icon": "edictGeneric",
+      "BenefitModifier": {
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"resourceUsageAdd\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 100,
+        "(Key=\"resourceUsagePopulation\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 1
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": true,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "virtualSociety"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "edictGeneric"
+      }
+    ]
+  },
+  {
+    "id": "aiDirectiveIndustrial",
+    "type": "edicts",
+    "displayName": "AI Directive: Industrial Output",
+    "icon": "edictGeneric",
+    "fields": {
+      "Name": "aiDirectiveIndustrial",
+      "EnactCost": 0.1,
+      "Icon": "edictGeneric",
+      "BenefitModifier": {
+        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      },
+      "CostModifier": {
+        "(Key=\"resourceUsageAdd\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 100,
+        "(Key=\"resourceUsagePopulation\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 1
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": true,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "virtualSociety"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "edictGeneric"
+      }
+    ]
+  },
+  {
+    "id": "breadAndCircuses",
+    "type": "edicts",
+    "displayName": "Bread and Circuses",
+    "icon": "breadAndCircuses",
+    "fields": {
+      "Name": "breadAndCircuses",
+      "EnactCost": 0.1,
+      "Icon": "breadAndCircuses",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.025
+      },
+      "CostModifier": {
+        "(Key=\"resourceUsagePopulation\",Value1=\"industry\",Value2=\"\",Value3=\"\")": 4
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breadAndCircuses"
+      }
+    ]
+  },
+  {
+    "id": "brutalSuppression",
+    "type": "edicts",
+    "displayName": "Brutal Suppression",
+    "icon": "brutalSuppression",
+    "fields": {
+      "Name": "brutalSuppression",
+      "EnactCost": 1.5,
+      "Icon": "brutalSuppression",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "civilLiberty_totalitarian"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "brutalSuppression"
+      }
+    ]
+  },
+  {
+    "id": "capitalismUnleashed",
+    "type": "edicts",
+    "displayName": "Capitalism Unleashed",
+    "icon": "capitalismUnleashed",
+    "fields": {
+      "Name": "capitalismUnleashed",
+      "EnactCost": 0.1,
+      "Icon": "capitalismUnleashed",
+      "BenefitModifier": {
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_lassezFaire"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "capitalismUnleashed"
+      }
+    ]
+  },
+  {
+    "id": "confusopoly",
+    "type": "edicts",
+    "displayName": "Confusopoly",
+    "icon": "confusopoly",
+    "fields": {
+      "Name": "confusopoly",
+      "EnactCost": 0.1,
+      "Icon": "confusopoly",
+      "BenefitModifier": {
+        "(Key=\"resourceIncomeMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "form_algocracy"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "confusopoly"
+      }
+    ]
+  },
+  {
+    "id": "constructionFocus",
+    "type": "edicts",
+    "displayName": "Construction Focus",
+    "icon": "constructionFocus",
+    "fields": {
+      "Name": "constructionFocus",
+      "EnactCost": 0.1,
+      "Icon": "constructionFocus",
+      "BenefitModifier": {
+        "(Key=\"projectBuildSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "constructionFocus"
+      }
+    ]
+  },
+  {
+    "id": "massPlanning",
+    "type": "edicts",
+    "displayName": "Economic Planning",
+    "icon": "massPlanning",
+    "fields": {
+      "Name": "massPlanning",
+      "EnactCost": 0.1,
+      "Icon": "massPlanning",
+      "BenefitModifier": {
+        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_planned"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massPlanning"
+      }
+    ]
+  },
+  {
+    "id": "immigrationPushEdict",
+    "type": "edicts",
+    "displayName": "Emmigration Incentives",
+    "icon": "edictGeneric",
+    "fields": {
+      "Name": "immigrationPushEdict",
+      "EnactCost": 0.1,
+      "Icon": "edictGeneric",
+      "BenefitModifier": {
+        "(Key=\"immigrationPush\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
+        "(Key=\"immigrationPushExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": true,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "edictGeneric"
+      }
+    ]
+  },
+  {
+    "id": "empireEducationFocus",
+    "type": "edicts",
+    "displayName": "Empire Education Focus",
+    "icon": "industrySubsidy",
+    "fields": {
+      "Name": "empireEducationFocus",
+      "EnactCost": 1,
+      "Icon": "industrySubsidy",
+      "BenefitModifier": {
+        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "false",
+        "B": "false"
+      },
+      "Type": "Empire"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrySubsidy"
+      }
+    ]
+  },
+  {
+    "id": "empireLeadershipFocus",
+    "type": "edicts",
+    "displayName": "Empire Leadership Focus",
+    "icon": "industrySubsidy",
+    "fields": {
+      "Name": "empireLeadershipFocus",
+      "EnactCost": 1,
+      "Icon": "industrySubsidy",
+      "BenefitModifier": {
+        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "false",
+        "B": "false"
+      },
+      "Type": "Empire"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrySubsidy"
+      }
+    ]
+  },
+  {
+    "id": "resourceFocus",
+    "type": "edicts",
+    "displayName": "Extraction Subsidies",
+    "icon": "resourceFocus",
+    "fields": {
+      "Name": "resourceFocus",
+      "EnactCost": 0.1,
+      "Icon": "resourceFocus",
+      "BenefitModifier": {
+        "(Key=\"resourceModifier\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "resourceFocus"
+      }
+    ]
+  },
+  {
+    "id": "feudalAuthority",
+    "type": "edicts",
+    "displayName": "Feudal Authority",
+    "icon": "feudalAuthority",
+    "fields": {
+      "Name": "feudalAuthority",
+      "EnactCost": 0.1,
+      "Icon": "feudalAuthority",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01,
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+        "(Key=\"controllingFactionLoyalty\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "form_monarchy"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "feudalAuthority"
+      }
+    ]
+  },
+  {
+    "id": "immigrationPullEdict",
+    "type": "edicts",
+    "displayName": "Immigration Incentives",
+    "icon": "edictGeneric",
+    "fields": {
+      "Name": "immigrationPullEdict",
+      "EnactCost": 0.1,
+      "Icon": "edictGeneric",
+      "BenefitModifier": {
+        "(Key=\"immigrationPull\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
+        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": true,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "edictGeneric"
+      }
+    ]
+  },
+  {
+    "id": "taxationFocus",
+    "type": "edicts",
+    "displayName": "Increased Taxation",
+    "icon": "taxationFocus",
+    "fields": {
+      "Name": "taxationFocus",
+      "EnactCost": 0.1,
+      "Icon": "taxationFocus",
+      "BenefitModifier": {
+        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "taxationFocus"
+      }
+    ]
+  },
+  {
+    "id": "industryFocus",
+    "type": "edicts",
+    "displayName": "Industry Focus",
+    "icon": "industrySubsidy",
+    "fields": {
+      "Name": "industryFocus",
+      "EnactCost": 0.1,
+      "Icon": "industrySubsidy",
+      "BenefitModifier": {
+        "(Key=\"resourceCapacityMult\",Value1=\"industry\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_interventionism"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrySubsidy"
+      }
+    ]
+  },
+  {
+    "id": "localAutonomy",
+    "type": "edicts",
+    "displayName": "Local Autonomy",
+    "icon": "localAutonomy",
+    "fields": {
+      "Name": "localAutonomy",
+      "EnactCost": 0.1,
+      "Icon": "localAutonomy",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01,
+        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "civilLiberty_liberal"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "localAutonomy"
+      }
+    ]
+  },
+  {
+    "id": "logisticsFocus",
+    "type": "edicts",
+    "displayName": "Logistics Focus",
+    "icon": "logisticsFocus",
+    "fields": {
+      "Name": "logisticsFocus",
+      "EnactCost": 0.1,
+      "Icon": "logisticsFocus",
+      "BenefitModifier": {
+        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_1"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logisticsFocus"
+      }
+    ]
+  },
+  {
+    "id": "martialLaw",
+    "type": "edicts",
+    "displayName": "Martial Law",
+    "icon": "martialLaw",
+    "fields": {
+      "Name": "martialLaw",
+      "EnactCost": 0.5,
+      "Icon": "martialLaw",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.02
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "civilLiberty_restricted"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "martialLaw"
+      }
+    ]
+  },
+  {
+    "id": "massCurfews",
+    "type": "edicts",
+    "displayName": "Mass Curfews",
+    "icon": "massCurfews",
+    "fields": {
+      "Name": "massCurfews",
+      "EnactCost": 0.25,
+      "Icon": "massCurfews",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.015
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "civilLiberty_neutral"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massCurfews"
+      }
+    ]
+  },
+  {
+    "id": "militaryParade",
+    "type": "edicts",
+    "displayName": "Military Parade",
+    "icon": "militaryParade",
+    "fields": {
+      "Name": "militaryParade",
+      "EnactCost": 0.1,
+      "Icon": "militaryParade",
+      "BenefitModifier": {
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "form_empire"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryParade"
+      }
+    ]
+  },
+  {
+    "id": "partyPolitics",
+    "type": "edicts",
+    "displayName": "Party Politics",
+    "icon": "partyPolitics",
+    "fields": {
+      "Name": "partyPolitics",
+      "EnactCost": 0.1,
+      "Icon": "partyPolitics",
+      "BenefitModifier": {
+        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "form_republic"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "partyPolitics"
+      }
+    ]
+  },
+  {
+    "id": "porkBarrelPolitics",
+    "type": "edicts",
+    "displayName": "Pork-Barrel Politics",
+    "icon": "edictGeneric",
+    "fields": {
+      "Name": "porkBarrelPolitics",
+      "EnactCost": 0.1,
+      "Icon": "edictGeneric",
+      "BenefitModifier": {
+        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_1"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "edictGeneric"
+      }
+    ]
+  },
+  {
+    "id": "psychoeconomics",
+    "type": "edicts",
+    "displayName": "Psycho-Economics",
+    "icon": "psychoeconomics",
+    "fields": {
+      "Name": "psychoeconomics",
+      "EnactCost": 0.1,
+      "Icon": "psychoeconomics",
+      "BenefitModifier": {
+        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_algorithmic"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "psychoeconomics"
+      }
+    ]
+  },
+  {
+    "id": "developmentFocus",
+    "type": "edicts",
+    "displayName": "Rapid Development",
+    "icon": "developmentFocus",
+    "fields": {
+      "Name": "developmentFocus",
+      "EnactCost": 0.1,
+      "Icon": "developmentFocus",
+      "BenefitModifier": {
+        "(Key=\"developmentGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "developmentFocus"
+      }
+    ]
+  },
+  {
+    "id": "reinforcementFocus",
+    "type": "edicts",
+    "displayName": "Reinforcement Focus",
+    "icon": "rapidReinforcement",
+    "fields": {
+      "Name": "reinforcementFocus",
+      "EnactCost": 0.1,
+      "Icon": "rapidReinforcement",
+      "BenefitModifier": {
+        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2,
+        "(Key=\"manpowerRecoveryRate\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "armyOrganization_1"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rapidReinforcement"
+      }
+    ]
+  },
+  {
+    "id": "researchGrants",
+    "type": "edicts",
+    "displayName": "Research Grants",
+    "icon": "researchGrants",
+    "fields": {
+      "Name": "researchGrants",
+      "EnactCost": 0.1,
+      "Icon": "researchGrants",
+      "BenefitModifier": {
+        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15,
+        "(Key=\"resourceModifier\",Value1=\"research\",Value2=\"\",Value3=\"\")": 1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "technology",
+        "B": "educationTech_1"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "researchGrants"
+      }
+    ]
+  },
+  {
+    "id": "socialCapitalism",
+    "type": "edicts",
+    "displayName": "Social Capitalism",
+    "icon": "socialCapitalism",
+    "fields": {
+      "Name": "socialCapitalism",
+      "EnactCost": 0.1,
+      "Icon": "socialCapitalism",
+      "BenefitModifier": {
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "economy_corporatism"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "socialCapitalism"
+      }
+    ]
+  },
+  {
+    "id": "struggleSessions",
+    "type": "edicts",
+    "displayName": "Struggle Sessions",
+    "icon": "struggleSessions",
+    "fields": {
+      "Name": "struggleSessions",
+      "EnactCost": 1,
+      "Icon": "struggleSessions",
+      "BenefitModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.025,
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
+        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "CostModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
+      },
+      "EdictEffect": [],
+      "MinInfluence": 0,
+      "ForeignAllowed": false,
+      "DomesticAllowed": true,
+      "Prerequisite": {
+        "A": "reformOption",
+        "B": "civilLiberty_hypocritical"
+      },
+      "Type": "Regional"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "struggleSessions"
+      }
+    ]
+  }
+]

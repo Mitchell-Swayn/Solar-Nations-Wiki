@@ -6,9 +6,33 @@
     "icon": "eraAbomination",
     "fields": {
       "Name": "eraAbomination",
-      "Icon": "eraAbomination"
+      "Icon": "eraAbomination",
+      "StartYear": 2300,
+      "EndYear": 2400,
+      "Color": {
+        "R": 0.383681,
+        "G": 0.010634,
+        "B": 0,
+        "A": 1,
+        "Hex": "A71A00"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 3
+      },
+      {
+        "key": "crisisSpawnChanceMult",
+        "value1": "roboticsCrisis",
+        "value": 10
+      },
+      {
+        "key": "crisisSpawnChanceMult",
+        "value1": "superhumanCrisis",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -24,9 +48,23 @@
     "icon": "eraBeyond",
     "fields": {
       "Name": "eraBeyond",
-      "Icon": "eraBeyond"
+      "Icon": "eraBeyond",
+      "StartYear": 2600,
+      "EndYear": 999999,
+      "Color": {
+        "R": 0.039142,
+        "G": 0.491319,
+        "B": 0,
+        "A": 1,
+        "Hex": "37BA00"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 6
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -42,9 +80,23 @@
     "icon": "eraUnraveling",
     "fields": {
       "Name": "eraUnraveling",
-      "Icon": "eraUnraveling"
+      "Icon": "eraUnraveling",
+      "StartYear": 2100,
+      "EndYear": 2200,
+      "Color": {
+        "R": 0.475694,
+        "G": 0.12124,
+        "B": 0.1465,
+        "A": 1,
+        "Hex": "B8626B"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -60,7 +112,16 @@
     "icon": "eraIndustrial",
     "fields": {
       "Name": "eraIndustrial",
-      "Icon": "eraIndustrial"
+      "Icon": "eraIndustrial",
+      "StartYear": -2147483648,
+      "EndYear": 2000,
+      "Color": {
+        "R": 0.355903,
+        "G": 0.355903,
+        "B": 0.355903,
+        "A": 1,
+        "Hex": "A1A1A1"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -78,9 +139,23 @@
     "icon": "eraInformation",
     "fields": {
       "Name": "eraInformation",
-      "Icon": "eraInformation"
+      "Icon": "eraInformation",
+      "StartYear": 2000,
+      "EndYear": 2100,
+      "Color": {
+        "R": 0.306617,
+        "G": 0.544847,
+        "B": 0.649305,
+        "A": 1,
+        "Hex": "96C3D3"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -96,9 +171,23 @@
     "icon": "eraInterplanetary",
     "fields": {
       "Name": "eraInterplanetary",
-      "Icon": "eraInterplanetary"
+      "Icon": "eraInterplanetary",
+      "StartYear": 2200,
+      "EndYear": 2300,
+      "Color": {
+        "R": 0.369601,
+        "G": 0.09463,
+        "B": 0.402777,
+        "A": 1,
+        "Hex": "A457AA"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -114,9 +203,23 @@
     "icon": "eraDarkCentury",
     "fields": {
       "Name": "eraDarkCentury",
-      "Icon": "eraDarkCentury"
+      "Icon": "eraDarkCentury",
+      "StartYear": 2500,
+      "EndYear": 2600,
+      "Color": {
+        "R": 0.041667,
+        "G": 0.041667,
+        "B": 0.041667,
+        "A": 1,
+        "Hex": "393939"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -132,9 +235,23 @@
     "icon": "eraUnification",
     "fields": {
       "Name": "eraUnification",
-      "Icon": "eraUnification"
+      "Icon": "eraUnification",
+      "StartYear": 2400,
+      "EndYear": 2500,
+      "Color": {
+        "R": 0.058179,
+        "G": 0.101767,
+        "B": 0.282986,
+        "A": 1,
+        "Hex": "445A91"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cultureTraitMaxAdd",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

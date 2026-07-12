@@ -7,9 +7,38 @@
     "fields": {
       "Name": "bureaucracy_hivemind",
       "Icon": "bureaucracy_hivemind",
+      "RandomNames": [],
       "BaseFaction": "bureaucracy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.5
+      },
+      {
+        "key": "sliderMaxAdd",
+        "value1": "incomeTax",
+        "value": 0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.5
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "bureaucracyCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "bureaucracyCrisis_intensity",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -31,13 +60,39 @@
     "id": "clergy_hindu",
     "type": "faction-variants",
     "displayName": "Brahmins",
-    "icon": "clergy_hindu",
+    "icon": "hindu",
     "fields": {
       "Name": "clergy_hindu",
-      "Icon": "clergy_hindu",
+      "Icon": "hindu",
+      "RandomNames": [
+        "Brahmins"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "casteSystem_rigidity",
+        "value": 0.01
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "casteSystem_rigidity",
+        "value": 0.02
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -47,7 +102,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_hindu"
+        "id": "hindu"
       },
       {
         "type": "factions",
@@ -59,13 +114,33 @@
     "id": "clergy_christian",
     "type": "faction-variants",
     "displayName": "Christian Theocrats",
-    "icon": "clergy_christian",
+    "icon": "christian",
     "fields": {
       "Name": "clergy_christian",
-      "Icon": "clergy_christian",
+      "Icon": "christian",
+      "RandomNames": [
+        "Christian Clergy"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.25
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -75,7 +150,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_christian"
+        "id": "christian"
       },
       {
         "type": "factions",
@@ -87,10 +162,11 @@
     "id": "clergy_atheist",
     "type": "faction-variants",
     "displayName": "Clergy Atheist",
-    "icon": "clergy_atheist",
+    "icon": "atheist",
     "fields": {
       "Name": "clergy_atheist",
-      "Icon": "clergy_atheist",
+      "Icon": "atheist",
+      "RandomNames": [],
       "BaseFaction": "clergy"
     },
     "modifiers": [],
@@ -103,7 +179,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_atheist"
+        "id": "atheist"
       },
       {
         "type": "factions",
@@ -119,9 +195,27 @@
     "fields": {
       "Name": "middleClass_hivemind",
       "Icon": "middleClass_hivemind",
+      "RandomNames": [],
       "BaseFaction": "middleClass"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 1
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1
+      },
+      {
+        "key": "researchMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -143,13 +237,33 @@
     "id": "clergy_fascist",
     "type": "faction-variants",
     "displayName": "Fascist Ideocrats",
-    "icon": "clergy_fascist",
+    "icon": "fascist",
     "fields": {
       "Name": "clergy_fascist",
-      "Icon": "clergy_fascist",
+      "Icon": "fascist",
+      "RandomNames": [
+        "Fascist Ideocrats"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "unitAttackMult",
+        "value": 0.1
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -159,7 +273,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_fascist"
+        "id": "fascist"
       },
       {
         "type": "factions",
@@ -175,9 +289,33 @@
     "fields": {
       "Name": "corporate_hivemind",
       "Icon": "corporate_hivemind",
+      "RandomNames": [],
       "BaseFaction": "corporate"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "debtEffectMult",
+        "value": -0.5
+      },
+      {
+        "key": "debtEffectMult",
+        "value": 0.5
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "corporateCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "corporateCrisis_intensity",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -199,13 +337,33 @@
     "id": "clergy_jewish",
     "type": "faction-variants",
     "displayName": "Jewish Elders",
-    "icon": "clergy_jewish",
+    "icon": "jewish",
     "fields": {
       "Name": "clergy_jewish",
-      "Icon": "clergy_jewish",
+      "Icon": "jewish",
+      "RandomNames": [
+        "Jewish Elders"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.05
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -215,7 +373,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_jewish"
+        "id": "jewish"
       },
       {
         "type": "factions",
@@ -227,10 +385,11 @@
     "id": "laborer_proletariat",
     "type": "faction-variants",
     "displayName": "Laborer Proletariat",
-    "icon": "laborer_proletariat",
+    "icon": "",
     "fields": {
       "Name": "laborer_proletariat",
-      "Icon": "laborer_proletariat",
+      "Icon": "",
+      "RandomNames": [],
       "BaseFaction": "laborer"
     },
     "modifiers": [],
@@ -243,7 +402,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "laborer_proletariat"
+        "id": ""
       },
       {
         "type": "factions",
@@ -259,9 +418,33 @@
     "fields": {
       "Name": "upperClass_hivemind",
       "Icon": "upperClass_hivemind",
+      "RandomNames": [],
       "BaseFaction": "upperClass"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 1
+      },
+      {
+        "key": "recruitablePopulationMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "upperClassCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "upperClassCrisis_intensity",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -287,9 +470,27 @@
     "fields": {
       "Name": "laborer_hivemind",
       "Icon": "laborer_hivemind",
+      "RandomNames": [],
       "BaseFaction": "laborer"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 1
+      },
+      {
+        "key": "projectEfficiency",
+        "value": 0.2
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -311,13 +512,36 @@
     "id": "military_conscript",
     "type": "faction-variants",
     "displayName": "Military Conscript",
-    "icon": "military_conscript",
+    "icon": "",
     "fields": {
       "Name": "military_conscript",
-      "Icon": "military_conscript",
+      "Icon": "",
+      "RandomNames": [
+        {
+          "CultureInvariantString": null
+        }
+      ],
       "BaseFaction": "military"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 1
+      },
+      {
+        "key": "unitQualityMult",
+        "value1": "infantry",
+        "value": 0.2
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -327,7 +551,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military_conscript"
+        "id": ""
       },
       {
         "type": "factions",
@@ -339,10 +563,11 @@
     "id": "military_mercenary",
     "type": "faction-variants",
     "displayName": "Military Mercenary",
-    "icon": "military_mercenary",
+    "icon": "",
     "fields": {
       "Name": "military_mercenary",
-      "Icon": "military_mercenary",
+      "Icon": "",
+      "RandomNames": [],
       "BaseFaction": "military"
     },
     "modifiers": [],
@@ -355,7 +580,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military_mercenary"
+        "id": ""
       },
       {
         "type": "factions",
@@ -367,13 +592,39 @@
     "id": "militaryIndustrialComplex",
     "type": "faction-variants",
     "displayName": "Military-Industrial Complex",
-    "icon": "militaryIndustrialComplex",
+    "icon": "MilitaryIndustrialComplex",
     "fields": {
       "Name": "militaryIndustrialComplex",
-      "Icon": "militaryIndustrialComplex",
+      "Icon": "MilitaryIndustrialComplex",
+      "RandomNames": [
+        "Defense Contractors"
+      ],
       "BaseFaction": "military"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 1
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "corporate",
+        "value": 0.25
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.25
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -383,7 +634,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "militaryIndustrialComplex"
+        "id": "MilitaryIndustrialComplex"
       },
       {
         "type": "factions",
@@ -399,9 +650,33 @@
     "fields": {
       "Name": "clergy_hivemind",
       "Icon": "clergy_hivemind",
+      "RandomNames": [],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "clergyCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "clergyCrisis_intensity",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -423,13 +698,33 @@
     "id": "clergy_communist",
     "type": "faction-variants",
     "displayName": "Radical Activists",
-    "icon": "clergy_communist",
+    "icon": "communist",
     "fields": {
       "Name": "clergy_communist",
-      "Icon": "clergy_communist",
+      "Icon": "communist",
+      "RandomNames": [
+        "Radical Activists"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -439,7 +734,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_communist"
+        "id": "communist"
       },
       {
         "type": "factions",
@@ -451,13 +746,33 @@
     "id": "clergy_islamic",
     "type": "faction-variants",
     "displayName": "Sharia Hardliners",
-    "icon": "clergy_islamic",
+    "icon": "islam",
     "fields": {
       "Name": "clergy_islamic",
-      "Icon": "clergy_islamic",
+      "Icon": "islam",
+      "RandomNames": [
+        "Sharia Hardliners"
+      ],
       "BaseFaction": "clergy"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "warExhaustionMult",
+        "value": -0.25
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",
@@ -467,7 +782,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "clergy_islamic"
+        "id": "islam"
       },
       {
         "type": "factions",
@@ -483,9 +798,19 @@
     "fields": {
       "Name": "military_hivemind",
       "Icon": "military_hivemind",
+      "RandomNames": [],
       "BaseFaction": "military"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.5
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": -0.5
+      }
+    ],
     "prerequisites": [
       {
         "type": "reformOption",

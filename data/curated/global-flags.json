@@ -1,0 +1,46 @@
+[
+  {
+    "id": "robotCountryGlobalFlag",
+    "type": "global-flags",
+    "displayName": "Robot Country Global Flag",
+    "fields": {
+      "Name": "robotCountryGlobalFlag"
+    },
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "roboticsCrisis_intensity",
+        "value": -1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "roboticsCrisis",
+        "value": -1000
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "superhumanCountryGlobalFlag",
+    "type": "global-flags",
+    "displayName": "Superhuman Country Global Flag",
+    "fields": {
+      "Name": "superhumanCountryGlobalFlag"
+    },
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "superhumanCrisis_intensity",
+        "value": -1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "superhumanCrisis",
+        "value": -1000
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

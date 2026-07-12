@@ -1,0 +1,256 @@
+[
+  {
+    "id": "air",
+    "type": "battle-domains",
+    "displayName": "Air",
+    "fields": {
+      "Name": "air",
+      "CombatWidth": 1,
+      "UnitModifiers": {
+        "(Key=\"unitStatAdd\",Value1=\"damageWeight\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"airSoft\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"airTracking\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"psychological\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitAttackMult\",Value1=\"spaceHard\",Value2=\"\",Value3=\"\")": -0.75
+      },
+      "ValidTerrain": [
+        "plains",
+        "desert",
+        "jungle",
+        "mountain",
+        "hills",
+        "arctic",
+        "river",
+        "spacePlains",
+        "ocean",
+        "deepOcean"
+      ],
+      "ConnectionStrength": 0.9,
+      "Stats": [
+        "size",
+        "sizeLimit",
+        "health",
+        "manpower",
+        "speed",
+        "entrenchment",
+        "breakthrough",
+        "damageWeight",
+        "modifierWeight",
+        "deployRange",
+        "rangedCombatWidth",
+        "escalation"
+      ],
+      "CommonDamageTypes": [
+        "tracking",
+        "airMissile"
+      ],
+      "TransportMesh": "airplane",
+      "TransportSpeed": 1,
+      "ClickSound": "airplane"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "land",
+    "type": "battle-domains",
+    "displayName": "Land",
+    "fields": {
+      "Name": "land",
+      "CombatWidth": 1,
+      "UnitModifiers": {
+        "(Key=\"unitStatAdd\",Value1=\"damageWeight\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"landSoft\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"biological\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"laser\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"unitVulnAdd\",Value1=\"landTracking\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"psychological\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitAttackMult\",Value1=\"spaceHard\",Value2=\"\",Value3=\"\")": -0.75,
+        "(Key=\"unitVulnAdd\",Value1=\"waterSoft\",Value2=\"\",Value3=\"\")": 1
+      },
+      "ValidTerrain": [
+        "plains",
+        "desert",
+        "jungle",
+        "mountain",
+        "hills",
+        "arctic",
+        "river",
+        "spacePlains"
+      ],
+      "ConnectionStrength": 0.9,
+      "Stats": [
+        "size",
+        "sizeLimit",
+        "health",
+        "manpower",
+        "speed",
+        "entrenchment",
+        "breakthrough",
+        "damageWeight",
+        "modifierWeight",
+        "deployRange",
+        "rangedCombatWidth",
+        "escalation"
+      ],
+      "CommonDamageTypes": [
+        "smallArms",
+        "piercing",
+        "artillery",
+        "special",
+        "strategic"
+      ],
+      "TransportMesh": "tank",
+      "TransportSpeed": 1,
+      "ClickSound": "marchnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "space",
+    "type": "battle-domains",
+    "displayName": "Space",
+    "fields": {
+      "Name": "space",
+      "CombatWidth": 1,
+      "UnitModifiers": {
+        "(Key=\"unitStatAdd\",Value1=\"damageWeight\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"spaceSoft\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"laser\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"spaceTracking\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"psychological\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"spaceHard\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"deployRangeInterplanetary\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      },
+      "ValidTerrain": [
+        "plains",
+        "desert",
+        "jungle",
+        "mountain",
+        "hills",
+        "arctic",
+        "river",
+        "spacePlains",
+        "ocean",
+        "deepOcean",
+        "space",
+        "interplanetary"
+      ],
+      "ConnectionStrength": 0.5,
+      "Stats": [
+        "size",
+        "sizeLimit",
+        "health",
+        "manpower",
+        "speed",
+        "entrenchment",
+        "breakthrough",
+        "damageWeight",
+        "modifierWeight",
+        "deployRange",
+        "rangedCombatWidth",
+        "escalation"
+      ],
+      "CommonDamageTypes": [
+        "kinetic",
+        "spaceMissile",
+        "ordinance",
+        "laser"
+      ],
+      "TransportMesh": "escort",
+      "TransportSpeed": 1,
+      "ClickSound": "ships"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategic",
+    "type": "battle-domains",
+    "displayName": "Strategic Damage",
+    "fields": {
+      "Name": "strategic",
+      "CombatWidth": 0,
+      "UnitModifiers": [],
+      "ValidTerrain": [],
+      "ConnectionStrength": 1,
+      "Stats": [
+        "size",
+        "sizeLimit",
+        "health",
+        "manpower",
+        "speed",
+        "entrenchment",
+        "breakthrough",
+        "damageWeight",
+        "deployRange",
+        "escalation",
+        "modifierWeight",
+        "rangedCombatWidth"
+      ],
+      "CommonDamageTypes": [
+        "strategic",
+        "biological",
+        "emp"
+      ],
+      "TransportMesh": "missile",
+      "TransportSpeed": 1,
+      "ClickSound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "water",
+    "type": "battle-domains",
+    "displayName": "Water",
+    "fields": {
+      "Name": "water",
+      "CombatWidth": 1,
+      "UnitModifiers": {
+        "(Key=\"unitStatAdd\",Value1=\"damageWeight\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"waterSoft\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"landTracking\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitVulnAdd\",Value1=\"psychological\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"unitAttackMult\",Value1=\"spaceHard\",Value2=\"\",Value3=\"\")": -0.75,
+        "(Key=\"unitVulnAdd\",Value1=\"waterHard\",Value2=\"\",Value3=\"\")": 1
+      },
+      "ValidTerrain": [
+        "ocean",
+        "deepOcean"
+      ],
+      "ConnectionStrength": 0.85,
+      "Stats": [
+        "size",
+        "sizeLimit",
+        "health",
+        "manpower",
+        "speed",
+        "entrenchment",
+        "breakthrough",
+        "damageWeight",
+        "modifierWeight",
+        "deployRange",
+        "rangedCombatWidth",
+        "escalation"
+      ],
+      "CommonDamageTypes": [
+        "waterKinetic",
+        "waterMissile",
+        "torpedo",
+        "depthCharge"
+      ],
+      "TransportMesh": "destroyer",
+      "TransportSpeed": 2,
+      "ClickSound": "naval"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

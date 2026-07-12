@@ -1,0 +1,64 @@
+[
+  {
+    "id": "education",
+    "type": "policies",
+    "displayName": "Education",
+    "fields": {
+      "Name": "education",
+      "Options": [
+        "education_low",
+        "education_medium",
+        "education_high"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultIndex": 1,
+      "Cooldown": 3600
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "integration_speed",
+    "type": "policies",
+    "displayName": "Integration Speed",
+    "fields": {
+      "Name": "integration_speed",
+      "Options": [
+        "integration_slow",
+        "integration_normal",
+        "integration_fast"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultIndex": 1,
+      "Cooldown": 3600
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "militarization",
+    "type": "policies",
+    "displayName": "Militarization",
+    "fields": {
+      "Name": "militarization",
+      "Options": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultIndex": 0,
+      "Cooldown": 3600
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,12 +1,44 @@
 [
   {
+    "id": "familyPolicy_proAbortion",
+    "type": "government-reform-options",
+    "displayName": "Abortion Incentives",
+    "icon": "alliance",
+    "fields": {
+      "Name": "familyPolicy_proAbortion",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "form_administration",
     "type": "government-reform-options",
     "displayName": "Administration",
     "icon": "form_administration",
     "fields": {
       "Name": "form_administration",
-      "Icon": "form_administration"
+      "Icon": "form_administration",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "premier",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -24,7 +56,14 @@
     "icon": "economy_agrarian",
     "fields": {
       "Name": "economy_agrarian",
-      "Icon": "economy_agrarian"
+      "Icon": "economy_agrarian",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "agriculturalMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -36,13 +75,170 @@
     ]
   },
   {
+    "id": "aiLaw_organism",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Organism",
+    "icon": "fascism",
+    "fields": {
+      "Name": "aiLaw_organism",
+      "Icon": "fascism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fascism"
+      }
+    ]
+  },
+  {
+    "id": "aiLaw_outlawed",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Outlawed",
+    "icon": "traditional",
+    "fields": {
+      "Name": "aiLaw_outlawed",
+      "Icon": "traditional",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  },
+  {
+    "id": "aiLaw_patriotic",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Patriotic",
+    "icon": "conservative",
+    "fields": {
+      "Name": "aiLaw_patriotic",
+      "Icon": "conservative",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "conservative"
+      }
+    ]
+  },
+  {
+    "id": "aiLaw_private",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Private",
+    "icon": "alliance",
+    "fields": {
+      "Name": "aiLaw_private",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "aiLaw_propaganda",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Propaganda",
+    "icon": "communism",
+    "fields": {
+      "Name": "aiLaw_propaganda",
+      "Icon": "communism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communism"
+      }
+    ]
+  },
+  {
+    "id": "aiLaw_surveillance",
+    "type": "government-reform-options",
+    "displayName": "Ai Law Surveillance",
+    "icon": "progressive",
+    "fields": {
+      "Name": "aiLaw_surveillance",
+      "Icon": "progressive",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "progressive"
+      }
+    ]
+  },
+  {
     "id": "economy_algorithmic",
     "type": "government-reform-options",
     "displayName": "Algorithmic",
     "icon": "economy_algorithmic",
     "fields": {
       "Name": "economy_algorithmic",
-      "Icon": "economy_algorithmic"
+      "Icon": "economy_algorithmic",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "macromanager",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -54,13 +250,120 @@
     ]
   },
   {
+    "id": "armyOrg_ideological",
+    "type": "government-reform-options",
+    "displayName": "Army Org Ideological",
+    "icon": "alliance",
+    "fields": {
+      "Name": "armyOrg_ideological",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "armyOrg_levy",
+    "type": "government-reform-options",
+    "displayName": "Army Org Levy",
+    "icon": "alliance",
+    "fields": {
+      "Name": "armyOrg_levy",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "armyOrg_professional",
+    "type": "government-reform-options",
+    "displayName": "Army Org Professional",
+    "icon": "alliance",
+    "fields": {
+      "Name": "armyOrg_professional",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "armyOrg_standing",
+    "type": "government-reform-options",
+    "displayName": "Army Org Standing",
+    "icon": "alliance",
+    "fields": {
+      "Name": "armyOrg_standing",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "fiscalPolicy_austerity",
     "type": "government-reform-options",
     "displayName": "Austerity",
     "icon": "fiscalPolicy_austerity",
     "fields": {
       "Name": "fiscalPolicy_austerity",
-      "Icon": "fiscalPolicy_austerity"
+      "Icon": "fiscalPolicy_austerity",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -72,13 +375,45 @@
     ]
   },
   {
+    "id": "tradePolicy_autarky",
+    "type": "government-reform-options",
+    "displayName": "Autarky",
+    "icon": "trade_autarky",
+    "fields": {
+      "Name": "tradePolicy_autarky",
+      "Icon": "trade_autarky",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_autarky"
+      }
+    ]
+  },
+  {
     "id": "form_empire",
     "type": "government-reform-options",
     "displayName": "Autocracy",
     "icon": "form_empire",
     "fields": {
       "Name": "form_empire",
-      "Icon": "form_empire"
+      "Icon": "form_empire",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "emperor",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -90,13 +425,120 @@
     ]
   },
   {
+    "id": "welfareSpending_low",
+    "type": "government-reform-options",
+    "displayName": "Basic Welfare",
+    "icon": "spending_low",
+    "fields": {
+      "Name": "welfareSpending_low",
+      "Icon": "spending_low",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_low"
+      }
+    ]
+  },
+  {
+    "id": "immigration_noBorders",
+    "type": "government-reform-options",
+    "displayName": "Borderless",
+    "icon": "alliance",
+    "fields": {
+      "Name": "immigration_noBorders",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "colonyPolicy_charter",
+    "type": "government-reform-options",
+    "displayName": "Charter Colonies",
+    "icon": "alliance",
+    "fields": {
+      "Name": "colonyPolicy_charter",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "immigration_closed",
+    "type": "government-reform-options",
+    "displayName": "Closed Borders",
+    "icon": "alliance",
+    "fields": {
+      "Name": "immigration_closed",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "militaryDoctrine_combinedArms",
     "type": "government-reform-options",
     "displayName": "Combined Arms",
     "icon": "militaryDoctrine_combinedArms",
     "fields": {
       "Name": "militaryDoctrine_combinedArms",
-      "Icon": "militaryDoctrine_combinedArms"
+      "Icon": "militaryDoctrine_combinedArms",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "defenseMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -108,13 +550,48 @@
     ]
   },
   {
+    "id": "legalSystem_commonLaw",
+    "type": "government-reform-options",
+    "displayName": "Common Law",
+    "icon": "alliance",
+    "fields": {
+      "Name": "legalSystem_commonLaw",
+      "Icon": "alliance",
+      "SpecialTgt": "incompetent",
+      "SpecialModifier": {
+        "(Key=\"popAttrition\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.002,
+        "(Key=\"adminEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": -2
+      },
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "serviceLaw_conscription",
     "type": "government-reform-options",
     "displayName": "Conscription",
     "icon": "serviceLaw_conscription",
     "fields": {
       "Name": "serviceLaw_conscription",
-      "Icon": "serviceLaw_conscription"
+      "Icon": "serviceLaw_conscription",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -126,13 +603,120 @@
     ]
   },
   {
+    "id": "nationalFocus_construction",
+    "type": "government-reform-options",
+    "displayName": "Construction",
+    "icon": "focus_construction",
+    "fields": {
+      "Name": "nationalFocus_construction",
+      "Icon": "focus_construction",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_construction"
+      }
+    ]
+  },
+  {
+    "id": "diplomaticStance_cooperative",
+    "type": "government-reform-options",
+    "displayName": "Cooperative",
+    "icon": "alliance",
+    "fields": {
+      "Name": "diplomaticStance_cooperative",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "colonyPolicy_corporate",
+    "type": "government-reform-options",
+    "displayName": "Corporate Control",
+    "icon": "alliance",
+    "fields": {
+      "Name": "colonyPolicy_corporate",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "roboticsLaw_corporate",
+    "type": "government-reform-options",
+    "displayName": "Corporate Only",
+    "icon": "progressive",
+    "fields": {
+      "Name": "roboticsLaw_corporate",
+      "Icon": "progressive",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "progressive"
+      }
+    ]
+  },
+  {
     "id": "form_corporation",
     "type": "government-reform-options",
     "displayName": "Corporation",
     "icon": "form_corporation",
     "fields": {
       "Name": "form_corporation",
-      "Icon": "form_corporation"
+      "Icon": "form_corporation",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "ceo",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -144,13 +728,48 @@
     ]
   },
   {
+    "id": "nonStateType_corporation",
+    "type": "government-reform-options",
+    "displayName": "Corporation",
+    "icon": "alliance",
+    "fields": {
+      "Name": "nonStateType_corporation",
+      "Icon": "alliance",
+      "SpecialTgt": "upperClass",
+      "SpecialModifier": {
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.4,
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.4
+      },
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "economy_corporatism",
     "type": "government-reform-options",
     "displayName": "Corporatism",
     "icon": "economy_corporatism",
     "fields": {
       "Name": "economy_corporatism",
-      "Icon": "economy_corporatism"
+      "Icon": "economy_corporatism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "corporateCommander",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -168,7 +787,14 @@
     "icon": "militaryDoctrine_defensive",
     "fields": {
       "Name": "militaryDoctrine_defensive",
-      "Icon": "militaryDoctrine_defensive"
+      "Icon": "militaryDoctrine_defensive",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "defenseMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -186,7 +812,14 @@
     "icon": "espionagePolicy_defense",
     "fields": {
       "Name": "espionagePolicy_defense",
-      "Icon": "espionagePolicy_defense"
+      "Icon": "espionagePolicy_defense",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "spymaster",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -198,13 +831,47 @@
     ]
   },
   {
+    "id": "familyPolicy_familyDestruction",
+    "type": "government-reform-options",
+    "displayName": "Deliberate Hostility",
+    "icon": "alliance",
+    "fields": {
+      "Name": "familyPolicy_familyDestruction",
+      "Icon": "alliance",
+      "SpecialTgt": "intellectual",
+      "SpecialModifier": {
+        "(Key=\"popGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.5
+      },
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "serviceLaw_disarmed",
     "type": "government-reform-options",
     "displayName": "Disarmed",
     "icon": "serviceLaw_disarmed",
     "fields": {
       "Name": "serviceLaw_disarmed",
-      "Icon": "serviceLaw_disarmed"
+      "Icon": "serviceLaw_disarmed",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -222,7 +889,14 @@
     "icon": "economy_hivemind",
     "fields": {
       "Name": "economy_hivemind",
-      "Icon": "economy_hivemind"
+      "Icon": "economy_hivemind",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "hivemindEconomicNode",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "alwaysFalse"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -237,17 +911,24 @@
     "id": "educationSpending_high",
     "type": "government-reform-options",
     "displayName": "Education Spending: High",
-    "icon": "educationSpending_high",
+    "icon": "spending_high",
     "fields": {
       "Name": "educationSpending_high",
-      "Icon": "educationSpending_high"
+      "Icon": "spending_high",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "educationSpending_high"
+        "id": "spending_high"
       }
     ]
   },
@@ -255,17 +936,24 @@
     "id": "educationSpending_low",
     "type": "government-reform-options",
     "displayName": "Education Spending: Low",
-    "icon": "educationSpending_low",
+    "icon": "spending_low",
     "fields": {
       "Name": "educationSpending_low",
-      "Icon": "educationSpending_low"
+      "Icon": "spending_low",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "educationSpending_low"
+        "id": "spending_low"
       }
     ]
   },
@@ -273,17 +961,24 @@
     "id": "educationSpending_medium",
     "type": "government-reform-options",
     "displayName": "Education Spending: Medium",
-    "icon": "educationSpending_medium",
+    "icon": "spending_medium",
     "fields": {
       "Name": "educationSpending_medium",
-      "Icon": "educationSpending_medium"
+      "Icon": "spending_medium",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "educationSpending_medium"
+        "id": "spending_medium"
       }
     ]
   },
@@ -291,39 +986,192 @@
     "id": "educationSpending_none",
     "type": "government-reform-options",
     "displayName": "Education Spending: None",
+    "icon": "spending_none",
     "fields": {
-      "Name": "educationSpending_none"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "focus_construction",
-    "type": "government-reform-options",
-    "displayName": "Focus Construction",
-    "icon": "focus_construction",
-    "fields": {
-      "Name": "focus_construction",
-      "Icon": "focus_construction"
+      "Name": "educationSpending_none",
+      "Icon": "spending_none",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "focus_construction"
+        "id": "spending_none"
       }
     ]
   },
   {
-    "id": "focus_expansion",
+    "id": "nanocompositeLaw_elite",
     "type": "government-reform-options",
-    "displayName": "Focus Expansion",
+    "displayName": "Elite-Restricted Nanotechnology",
+    "icon": "traditional",
+    "fields": {
+      "Name": "nanocompositeLaw_elite",
+      "Icon": "traditional",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  },
+  {
+    "id": "espionageFunding_high",
+    "type": "government-reform-options",
+    "displayName": "Espionage Funding: High",
+    "icon": "spending_high",
+    "fields": {
+      "Name": "espionageFunding_high",
+      "Icon": "spending_high",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_high"
+      }
+    ]
+  },
+  {
+    "id": "espionageFunding_low",
+    "type": "government-reform-options",
+    "displayName": "Espionage Funding: Low",
+    "icon": "spending_low",
+    "fields": {
+      "Name": "espionageFunding_low",
+      "Icon": "spending_low",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_low"
+      }
+    ]
+  },
+  {
+    "id": "espionageFunding_medium",
+    "type": "government-reform-options",
+    "displayName": "Espionage Funding: Medium",
+    "icon": "spending_medium",
+    "fields": {
+      "Name": "espionageFunding_medium",
+      "Icon": "spending_medium",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_medium"
+      }
+    ]
+  },
+  {
+    "id": "espionageFunding_none",
+    "type": "government-reform-options",
+    "displayName": "Espionage Funding: None",
+    "icon": "spending_none",
+    "fields": {
+      "Name": "espionageFunding_none",
+      "Icon": "spending_none",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_none"
+      }
+    ]
+  },
+  {
+    "id": "estateTax_none",
+    "type": "government-reform-options",
+    "displayName": "Estate Tax None",
+    "icon": "alliance",
+    "fields": {
+      "Name": "estateTax_none",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "nationalFocus_expansion",
+    "type": "government-reform-options",
+    "displayName": "Expansion",
     "icon": "focus_expansion",
     "fields": {
-      "Name": "focus_expansion",
-      "Icon": "focus_expansion"
+      "Name": "nationalFocus_expansion",
+      "Icon": "focus_expansion",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -335,56 +1183,27 @@
     ]
   },
   {
-    "id": "focus_innovation",
+    "id": "welfareSpending_medium",
     "type": "government-reform-options",
-    "displayName": "Focus Innovation",
-    "icon": "focus_innovation",
+    "displayName": "Extensive Welfare State",
+    "icon": "spending_medium",
     "fields": {
-      "Name": "focus_innovation",
-      "Icon": "focus_innovation"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "focus_innovation"
+      "Name": "welfareSpending_medium",
+      "Icon": "spending_medium",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
       }
-    ]
-  },
-  {
-    "id": "focus_politics",
-    "type": "government-reform-options",
-    "displayName": "Focus Politics",
-    "icon": "focus_politics",
-    "fields": {
-      "Name": "focus_politics",
-      "Icon": "focus_politics"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "focus_politics"
-      }
-    ]
-  },
-  {
-    "id": "focus_recruitment",
-    "type": "government-reform-options",
-    "displayName": "Focus Recruitment",
-    "icon": "focus_recruitment",
-    "fields": {
-      "Name": "focus_recruitment",
-      "Icon": "focus_recruitment"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "focus_recruitment"
+        "id": "spending_medium"
       }
     ]
   },
@@ -395,7 +1214,14 @@
     "icon": "economy_lassezFaire",
     "fields": {
       "Name": "economy_lassezFaire",
-      "Icon": "economy_lassezFaire"
+      "Icon": "economy_lassezFaire",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "freeMarketeer",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -407,13 +1233,45 @@
     ]
   },
   {
+    "id": "tradePolicy_freeTrade",
+    "type": "government-reform-options",
+    "displayName": "Free Trade",
+    "icon": "trade_inverted",
+    "fields": {
+      "Name": "tradePolicy_freeTrade",
+      "Icon": "trade_inverted",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_inverted"
+      }
+    ]
+  },
+  {
     "id": "form_hivemind",
     "type": "government-reform-options",
     "displayName": "Gestalt Consciousness",
     "icon": "form_hivemind",
     "fields": {
       "Name": "form_hivemind",
-      "Icon": "form_hivemind"
+      "Icon": "form_hivemind",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "hiveCentralNode",
+      "Prerequisite": {
+        "A": "false",
+        "B": "gestaltConsciousness"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -425,13 +1283,97 @@
     ]
   },
   {
+    "id": "legalSystem_harsh",
+    "type": "government-reform-options",
+    "displayName": "Harsh Penalties",
+    "icon": "alliance",
+    "fields": {
+      "Name": "legalSystem_harsh",
+      "Icon": "alliance",
+      "SpecialTgt": "incompetent",
+      "SpecialModifier": {
+        "(Key=\"popAttrition\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.01
+      },
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "nanocompositeLaw_mentalist",
+    "type": "government-reform-options",
+    "displayName": "Hierarchical Mentalmachines",
+    "icon": "progressive",
+    "fields": {
+      "Name": "nanocompositeLaw_mentalist",
+      "Icon": "progressive",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "progressive"
+      }
+    ]
+  },
+  {
+    "id": "governmentSpending_high",
+    "type": "government-reform-options",
+    "displayName": "High Government Spending",
+    "icon": "spending_high",
+    "fields": {
+      "Name": "governmentSpending_high",
+      "Icon": "spending_high",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_high"
+      }
+    ]
+  },
+  {
     "id": "fiscalPolicy_hyperinflation",
     "type": "government-reform-options",
     "displayName": "Hyperinflationary",
     "icon": "fiscalPolicy_hyperinflation",
     "fields": {
       "Name": "fiscalPolicy_hyperinflation",
-      "Icon": "fiscalPolicy_hyperinflation"
+      "Icon": "fiscalPolicy_hyperinflation",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -449,7 +1391,14 @@
     "icon": "civilLiberty_hypocritical",
     "fields": {
       "Name": "civilLiberty_hypocritical",
-      "Icon": "civilLiberty_hypocritical"
+      "Icon": "civilLiberty_hypocritical",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "deiCommissar",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -461,13 +1410,195 @@
     ]
   },
   {
+    "id": "bureaucracy_ideological",
+    "type": "government-reform-options",
+    "displayName": "Ideological",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_ideological",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "diplomaticStance_imperious",
+    "type": "government-reform-options",
+    "displayName": "Imperious",
+    "icon": "alliance",
+    "fields": {
+      "Name": "diplomaticStance_imperious",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax_extreme",
+    "type": "government-reform-options",
+    "displayName": "Income Tax Extreme",
+    "icon": "alliance",
+    "fields": {
+      "Name": "incomeTax_extreme",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax_high",
+    "type": "government-reform-options",
+    "displayName": "Income Tax High",
+    "icon": "alliance",
+    "fields": {
+      "Name": "incomeTax_high",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax_low",
+    "type": "government-reform-options",
+    "displayName": "Income Tax Low",
+    "icon": "alliance",
+    "fields": {
+      "Name": "incomeTax_low",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax_medium",
+    "type": "government-reform-options",
+    "displayName": "Income Tax Medium",
+    "icon": "alliance",
+    "fields": {
+      "Name": "incomeTax_medium",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "incomeTax_none",
+    "type": "government-reform-options",
+    "displayName": "Income Tax None",
+    "icon": "alliance",
+    "fields": {
+      "Name": "incomeTax_none",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "civilLiberty_hivemind",
     "type": "government-reform-options",
     "displayName": "Individuality Suppression",
     "icon": "civilLiberty_hivemind",
     "fields": {
       "Name": "civilLiberty_hivemind",
-      "Icon": "civilLiberty_hivemind"
+      "Icon": "civilLiberty_hivemind",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "hiveEnforcementNode",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "alwaysFalse"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -485,7 +1616,14 @@
     "icon": "fiscalPolicy_inflation",
     "fields": {
       "Name": "fiscalPolicy_inflation",
-      "Icon": "fiscalPolicy_inflation"
+      "Icon": "fiscalPolicy_inflation",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -497,13 +1635,45 @@
     ]
   },
   {
+    "id": "nationalFocus_innovation",
+    "type": "government-reform-options",
+    "displayName": "Innovation",
+    "icon": "focus_innovation",
+    "fields": {
+      "Name": "nationalFocus_innovation",
+      "Icon": "focus_innovation",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_innovation"
+      }
+    ]
+  },
+  {
     "id": "economy_interventionism",
     "type": "government-reform-options",
     "displayName": "Interventionism",
     "icon": "economy_interventionism",
     "fields": {
       "Name": "economy_interventionism",
-      "Icon": "economy_interventionism"
+      "Icon": "economy_interventionism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "enterpriseRegulator",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -515,13 +1685,45 @@
     ]
   },
   {
+    "id": "diplomaticStance_isolationist",
+    "type": "government-reform-options",
+    "displayName": "Isolationist",
+    "icon": "alliance",
+    "fields": {
+      "Name": "diplomaticStance_isolationist",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "civilLiberty_liberal",
     "type": "government-reform-options",
     "displayName": "Liberal",
     "icon": "civilLiberty_liberal",
     "fields": {
       "Name": "civilLiberty_liberal",
-      "Icon": "civilLiberty_liberal"
+      "Icon": "civilLiberty_liberal",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "firstSpeaker",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -539,7 +1741,14 @@
     "icon": "serviceLaw_timed",
     "fields": {
       "Name": "serviceLaw_timed",
-      "Icon": "serviceLaw_timed"
+      "Icon": "serviceLaw_timed",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -551,13 +1760,70 @@
     ]
   },
   {
+    "id": "nanocompositeLaw_mandatory",
+    "type": "government-reform-options",
+    "displayName": "Mandatory Nanoimplants",
+    "icon": "fascism",
+    "fields": {
+      "Name": "nanocompositeLaw_mandatory",
+      "Icon": "fascism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fascism"
+      }
+    ]
+  },
+  {
+    "id": "education_marxist",
+    "type": "government-reform-options",
+    "displayName": "Marxist",
+    "icon": "alliance",
+    "fields": {
+      "Name": "education_marxist",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "militaryDoctrine_massAssault",
     "type": "government-reform-options",
     "displayName": "Mass Assault",
     "icon": "militaryDoctrine_massAssault",
     "fields": {
       "Name": "militaryDoctrine_massAssault",
-      "Icon": "militaryDoctrine_massAssault"
+      "Icon": "militaryDoctrine_massAssault",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "defenseMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -569,13 +1835,170 @@
     ]
   },
   {
+    "id": "welfareSpending_high",
+    "type": "government-reform-options",
+    "displayName": "Massive Welfare System",
+    "icon": "spending_high",
+    "fields": {
+      "Name": "welfareSpending_high",
+      "Icon": "spending_high",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_high"
+      }
+    ]
+  },
+  {
+    "id": "governmentSpending_medium",
+    "type": "government-reform-options",
+    "displayName": "Medium Government Spending",
+    "icon": "spending_medium",
+    "fields": {
+      "Name": "governmentSpending_medium",
+      "Icon": "spending_medium",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_medium"
+      }
+    ]
+  },
+  {
+    "id": "immigration_quotas",
+    "type": "government-reform-options",
+    "displayName": "Migration Quotas",
+    "icon": "alliance",
+    "fields": {
+      "Name": "immigration_quotas",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy_militarized",
+    "type": "government-reform-options",
+    "displayName": "Militarized",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_militarized",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy_nonExistent",
+    "type": "government-reform-options",
+    "displayName": "Minarchic",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_nonExistent",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "governmentSpending_low",
+    "type": "government-reform-options",
+    "displayName": "Minimal Government Spending",
+    "icon": "spending_low",
+    "fields": {
+      "Name": "governmentSpending_low",
+      "Icon": "spending_low",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_low"
+      }
+    ]
+  },
+  {
     "id": "militaryDoctrine_mobile",
     "type": "government-reform-options",
     "displayName": "Mobile Warfare",
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "militaryDoctrine_mobile",
-      "Icon": "militaryDoctrine_mobile"
+      "Icon": "militaryDoctrine_mobile",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "defenseMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -593,7 +2016,14 @@
     "icon": "form_monarchy",
     "fields": {
       "Name": "form_monarchy",
-      "Icon": "form_monarchy"
+      "Icon": "form_monarchy",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "monarch",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -605,13 +2035,70 @@
     ]
   },
   {
+    "id": "nanocompositeLaw_equity",
+    "type": "government-reform-options",
+    "displayName": "Nanomechanical Equity",
+    "icon": "communism",
+    "fields": {
+      "Name": "nanocompositeLaw_equity",
+      "Icon": "communism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communism"
+      }
+    ]
+  },
+  {
+    "id": "familyPolicy_natalism",
+    "type": "government-reform-options",
+    "displayName": "Natalism",
+    "icon": "alliance",
+    "fields": {
+      "Name": "familyPolicy_natalism",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "civilLiberty_neutral",
     "type": "government-reform-options",
     "displayName": "Neutral",
     "icon": "civilLiberty_neutral",
     "fields": {
       "Name": "civilLiberty_neutral",
-      "Icon": "civilLiberty_neutral"
+      "Icon": "civilLiberty_neutral",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "securityChief",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -623,13 +2110,45 @@
     ]
   },
   {
+    "id": "familyPolicy_neutral",
+    "type": "government-reform-options",
+    "displayName": "Neutral",
+    "icon": "alliance",
+    "fields": {
+      "Name": "familyPolicy_neutral",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "fiscalPolicy_neutral",
     "type": "government-reform-options",
     "displayName": "Neutral",
     "icon": "fiscalPolicy_neutral",
     "fields": {
       "Name": "fiscalPolicy_neutral",
-      "Icon": "fiscalPolicy_neutral"
+      "Icon": "fiscalPolicy_neutral",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -641,13 +2160,70 @@
     ]
   },
   {
+    "id": "NewRow_0",
+    "type": "government-reform-options",
+    "displayName": "New Row 0",
+    "icon": "alliance",
+    "fields": {
+      "Name": "NewRow_0",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "welfareSpending_none",
+    "type": "government-reform-options",
+    "displayName": "No Welfare System",
+    "icon": "spending_none",
+    "fields": {
+      "Name": "welfareSpending_none",
+      "Icon": "spending_none",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spending_none"
+      }
+    ]
+  },
+  {
     "id": "espionagePolicy_offense",
     "type": "government-reform-options",
     "displayName": "Offensive Focus",
     "icon": "espionagePolicy_offense",
     "fields": {
       "Name": "espionagePolicy_offense",
-      "Icon": "espionagePolicy_offense"
+      "Icon": "espionagePolicy_offense",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "spymaster",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -665,7 +2241,14 @@
     "icon": "form_oligarchy",
     "fields": {
       "Name": "form_oligarchy",
-      "Icon": "form_oligarchy"
+      "Icon": "form_oligarchy",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "primeMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -683,7 +2266,14 @@
     "icon": "form_totality",
     "fields": {
       "Name": "form_totality",
-      "Icon": "form_totality"
+      "Icon": "form_totality",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "supremeLeader",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -695,13 +2285,95 @@
     ]
   },
   {
+    "id": "immigration_openBorders",
+    "type": "government-reform-options",
+    "displayName": "Open Borders",
+    "icon": "alliance",
+    "fields": {
+      "Name": "immigration_openBorders",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "roboticsLaw_outlawed",
+    "type": "government-reform-options",
+    "displayName": "Outlawed",
+    "icon": "traditional",
+    "fields": {
+      "Name": "roboticsLaw_outlawed",
+      "Icon": "traditional",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  },
+  {
+    "id": "nonStateType_paramilitary",
+    "type": "government-reform-options",
+    "displayName": "Paramilitary",
+    "icon": "alliance",
+    "fields": {
+      "Name": "nonStateType_paramilitary",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "militaryDoctrine_hivemind",
     "type": "government-reform-options",
     "displayName": "Perfect Synchronicity",
     "icon": "militaryDoctrine_hivemind",
     "fields": {
       "Name": "militaryDoctrine_hivemind",
-      "Icon": "militaryDoctrine_hivemind"
+      "Icon": "militaryDoctrine_hivemind",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "hiveMartialNode",
+      "Prerequisite": {
+        "A": "false",
+        "B": "alwaysFalse"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -719,7 +2391,14 @@
     "icon": "economy_planned",
     "fields": {
       "Name": "economy_planned",
-      "Icon": "economy_planned"
+      "Icon": "economy_planned",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "economicCommissar",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -731,13 +2410,273 @@
     ]
   },
   {
+    "id": "nationalFocus_politics",
+    "type": "government-reform-options",
+    "displayName": "Politics",
+    "icon": "focus_politics",
+    "fields": {
+      "Name": "nationalFocus_politics",
+      "Icon": "focus_politics",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_politics"
+      }
+    ]
+  },
+  {
+    "id": "roboticsLaw_private",
+    "type": "government-reform-options",
+    "displayName": "Private",
+    "icon": "liberal",
+    "fields": {
+      "Name": "roboticsLaw_private",
+      "Icon": "liberal",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "liberal"
+      }
+    ]
+  },
+  {
+    "id": "colonyPolicy_private",
+    "type": "government-reform-options",
+    "displayName": "Private Settlement",
+    "icon": "alliance",
+    "fields": {
+      "Name": "colonyPolicy_private",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy_privatised",
+    "type": "government-reform-options",
+    "displayName": "Privatized",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_privatised",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "nanocompositeLaw_private",
+    "type": "government-reform-options",
+    "displayName": "Privatized Nanomachines",
+    "icon": "liberal",
+    "fields": {
+      "Name": "nanocompositeLaw_private",
+      "Icon": "liberal",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "liberal"
+      }
+    ]
+  },
+  {
+    "id": "tradePolicy_protectionism",
+    "type": "government-reform-options",
+    "displayName": "Protectionism",
+    "icon": "trade_protectionism",
+    "fields": {
+      "Name": "tradePolicy_protectionism",
+      "Icon": "trade_protectionism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade_protectionism"
+      }
+    ]
+  },
+  {
+    "id": "nationalFocus_recruitment",
+    "type": "government-reform-options",
+    "displayName": "Recruitment",
+    "icon": "focus_recruitment",
+    "fields": {
+      "Name": "nationalFocus_recruitment",
+      "Icon": "focus_recruitment",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focus_recruitment"
+      }
+    ]
+  },
+  {
+    "id": "nanocompositeLaw_regulated",
+    "type": "government-reform-options",
+    "displayName": "Regulated Nanomachines",
+    "icon": "conservative",
+    "fields": {
+      "Name": "nanocompositeLaw_regulated",
+      "Icon": "conservative",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "conservative"
+      }
+    ]
+  },
+  {
+    "id": "education_religious",
+    "type": "government-reform-options",
+    "displayName": "Religious",
+    "icon": "alliance",
+    "fields": {
+      "Name": "education_religious",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "legalSystem_hypocritical",
+    "type": "government-reform-options",
+    "displayName": "Repressive Tolerance",
+    "icon": "alliance",
+    "fields": {
+      "Name": "legalSystem_hypocritical",
+      "Icon": "alliance",
+      "SpecialTgt": "incompetent",
+      "SpecialModifier": {
+        "(Key=\"jobWeightAdd\",Value1=\"incompetent\",Value2=\"\",Value3=\"\")": 20,
+        "(Key=\"adminEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": -4
+      },
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "form_republic",
     "type": "government-reform-options",
     "displayName": "Republic",
     "icon": "form_republic",
     "fields": {
       "Name": "form_republic",
-      "Icon": "form_republic"
+      "Icon": "form_republic",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "president",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -755,7 +2694,14 @@
     "icon": "civilLiberty_restricted",
     "fields": {
       "Name": "civilLiberty_restricted",
-      "Icon": "civilLiberty_restricted"
+      "Icon": "civilLiberty_restricted",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "interiorMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -767,13 +2713,70 @@
     ]
   },
   {
+    "id": "education_scientific",
+    "type": "government-reform-options",
+    "displayName": "Scientific",
+    "icon": "alliance",
+    "fields": {
+      "Name": "education_scientific",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "bureaucracy_secular",
+    "type": "government-reform-options",
+    "displayName": "Secular",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_secular",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "militaryDoctrine_softPower",
     "type": "government-reform-options",
     "displayName": "Soft Power",
     "icon": "militaryDoctrine_softPower",
     "fields": {
       "Name": "militaryDoctrine_softPower",
-      "Icon": "militaryDoctrine_softPower"
+      "Icon": "militaryDoctrine_softPower",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "defenseMinister",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -785,69 +2788,79 @@
     ]
   },
   {
-    "id": "spending_high",
+    "id": "roboticsLaw_statist",
     "type": "government-reform-options",
-    "displayName": "Spending High",
-    "icon": "spending_high",
+    "displayName": "State Owned",
+    "icon": "communism",
     "fields": {
-      "Name": "spending_high",
-      "Icon": "spending_high"
+      "Name": "roboticsLaw_statist",
+      "Icon": "communism",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "spending_high"
+        "id": "communism"
       }
     ]
   },
   {
-    "id": "spending_low",
+    "id": "colonyPolicy_stateOwned",
     "type": "government-reform-options",
-    "displayName": "Spending Low",
-    "icon": "spending_low",
+    "displayName": "State Owned",
+    "icon": "alliance",
     "fields": {
-      "Name": "spending_low",
-      "Icon": "spending_low"
+      "Name": "colonyPolicy_stateOwned",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "spending_low"
+        "id": "alliance"
       }
     ]
   },
   {
-    "id": "spending_medium",
+    "id": "diplomaticStance_subversive",
     "type": "government-reform-options",
-    "displayName": "Spending Medium",
-    "icon": "spending_medium",
+    "displayName": "Subversive",
+    "icon": "alliance",
     "fields": {
-      "Name": "spending_medium",
-      "Icon": "spending_medium"
+      "Name": "diplomaticStance_subversive",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "spending_medium"
+        "id": "alliance"
       }
     ]
-  },
-  {
-    "id": "spending_none",
-    "type": "government-reform-options",
-    "displayName": "Spending None",
-    "fields": {
-      "Name": "spending_none"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
   },
   {
     "id": "form_algocracy",
@@ -856,7 +2869,14 @@
     "icon": "form_algocracy",
     "fields": {
       "Name": "form_algocracy",
-      "Icon": "form_algocracy"
+      "Icon": "form_algocracy",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "algorator",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -868,13 +2888,70 @@
     ]
   },
   {
+    "id": "bureaucracy_technocratic",
+    "type": "government-reform-options",
+    "displayName": "Technocratic",
+    "icon": "alliance",
+    "fields": {
+      "Name": "bureaucracy_technocratic",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "nonStateType_religious",
+    "type": "government-reform-options",
+    "displayName": "Theocracy",
+    "icon": "alliance",
+    "fields": {
+      "Name": "nonStateType_religious",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
     "id": "serviceLaw_totalMobilization",
     "type": "government-reform-options",
     "displayName": "Total Mobilization",
     "icon": "serviceLaw_totalMobilization",
     "fields": {
       "Name": "serviceLaw_totalMobilization",
-      "Icon": "serviceLaw_totalMobilization"
+      "Icon": "serviceLaw_totalMobilization",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -892,7 +2969,14 @@
     "icon": "civilLiberty_totalitarian",
     "fields": {
       "Name": "civilLiberty_totalitarian",
-      "Icon": "civilLiberty_totalitarian"
+      "Icon": "civilLiberty_totalitarian",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "secretPoliceMaster",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
@@ -904,74 +2988,52 @@
     ]
   },
   {
-    "id": "trade_autarky",
-    "type": "government-reform-options",
-    "displayName": "Trade Autarky",
-    "icon": "trade_autarky",
-    "fields": {
-      "Name": "trade_autarky",
-      "Icon": "trade_autarky"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade_autarky"
-      }
-    ]
-  },
-  {
-    "id": "trade_inverted",
-    "type": "government-reform-options",
-    "displayName": "Trade Inverted",
-    "icon": "trade_inverted",
-    "fields": {
-      "Name": "trade_inverted",
-      "Icon": "trade_inverted"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade_inverted"
-      }
-    ]
-  },
-  {
-    "id": "trade_protectionism",
-    "type": "government-reform-options",
-    "displayName": "Trade Protectionism",
-    "icon": "trade_protectionism",
-    "fields": {
-      "Name": "trade_protectionism",
-      "Icon": "trade_protectionism"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "trade_protectionism"
-      }
-    ]
-  },
-  {
     "id": "unitTraining_default",
     "type": "government-reform-options",
     "displayName": "Unit Training Default",
-    "icon": "unitTraining_default",
+    "icon": "alliance",
     "fields": {
       "Name": "unitTraining_default",
-      "Icon": "unitTraining_default"
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "unitTraining_default"
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "unitTraining_desperate",
+    "type": "government-reform-options",
+    "displayName": "Unit Training Desperate",
+    "icon": "alliance",
+    "fields": {
+      "Name": "unitTraining_desperate",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
       }
     ]
   },
@@ -979,17 +3041,99 @@
     "id": "unitTraining_elite",
     "type": "government-reform-options",
     "displayName": "Unit Training Elite",
-    "icon": "unitTraining_elite",
+    "icon": "alliance",
     "fields": {
       "Name": "unitTraining_elite",
-      "Icon": "unitTraining_elite"
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "unitTraining_elite"
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "unitTraining_rushed",
+    "type": "government-reform-options",
+    "displayName": "Unit Training Rushed",
+    "icon": "alliance",
+    "fields": {
+      "Name": "unitTraining_rushed",
+      "Icon": "alliance",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "noPolicy",
+    "type": "government-reform-options",
+    "displayName": "Unset Policy",
+    "icon": "condition",
+    "fields": {
+      "Name": "noPolicy",
+      "Icon": "condition",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "condition"
+      }
+    ]
+  },
+  {
+    "id": "serviceLaw_volunteer",
+    "type": "government-reform-options",
+    "displayName": "Volunteer Only",
+    "icon": "manpower",
+    "fields": {
+      "Name": "serviceLaw_volunteer",
+      "Icon": "manpower",
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "CharacterPosition": "None",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
       }
     ]
   }

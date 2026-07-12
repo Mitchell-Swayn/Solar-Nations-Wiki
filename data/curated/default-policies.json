@@ -1,0 +1,980 @@
+[
+  {
+    "id": "Activist Economics",
+    "type": "default-policies",
+    "displayName": "Activist Economics",
+    "fields": {
+      "Name": "Activist Economics",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "factionLoyaltyClergy",
+        "projectBuildCost"
+      ],
+      "Costs": [
+        "economicOutput"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Algorithmic Flagging",
+    "type": "default-policies",
+    "displayName": "Algorithmic Flagging",
+    "fields": {
+      "Name": "Algorithmic Flagging",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "adminEfficiency"
+      ],
+      "Costs": [],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Antitrust Enforcement",
+    "type": "default-policies",
+    "displayName": "Antitrust Enforcement",
+    "fields": {
+      "Name": "Antitrust Enforcement",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "resourceModifierCommerce",
+        "resourceCapacity"
+      ],
+      "Costs": [
+        "stabilityGain"
+      ],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Autocracy",
+    "type": "default-policies",
+    "displayName": "Autocracy",
+    "fields": {
+      "Name": "Autocracy",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "reinforceRate"
+      ],
+      "Costs": [],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Brainwashing",
+    "type": "default-policies",
+    "displayName": "Brainwashing",
+    "fields": {
+      "Name": "Brainwashing",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain"
+      ],
+      "Costs": [],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Bureaucratized Military",
+    "type": "default-policies",
+    "displayName": "Bureaucratized Military",
+    "fields": {
+      "Name": "Bureaucratized Military",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "reinforceRate",
+        "reinforceRate"
+      ],
+      "Costs": [
+        "unitMorale"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Citizen Service",
+    "type": "default-policies",
+    "displayName": "Citizen Service",
+    "fields": {
+      "Name": "Citizen Service",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unitMorale",
+        "manpowerCapacity"
+      ],
+      "Costs": [
+        "economicOutput"
+      ],
+      "Faction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Civilian Firearms",
+    "type": "default-policies",
+    "displayName": "Civilian Firearms",
+    "fields": {
+      "Name": "Civilian Firearms",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "infantryPrimacy",
+        "manpowerCapacity"
+      ],
+      "Costs": [
+        "stabilityGain"
+      ],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Competitive Employment",
+    "type": "default-policies",
+    "displayName": "Competitive Employment",
+    "fields": {
+      "Name": "Competitive Employment",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectBuildCost",
+        "projectBuildCost"
+      ],
+      "Costs": [
+        "projectUpkeep"
+      ],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Corporate Collusion",
+    "type": "default-policies",
+    "displayName": "Corporate Collusion",
+    "fields": {
+      "Name": "Corporate Collusion",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "developmentGrowth"
+      ],
+      "Costs": [],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Credentialism",
+    "type": "default-policies",
+    "displayName": "Credentialism",
+    "fields": {
+      "Name": "Credentialism",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "prestigePolicy",
+        "unitySpeed"
+      ],
+      "Costs": [
+        "projectUpkeep"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Crony Contracts",
+    "type": "default-policies",
+    "displayName": "Crony Contracts",
+    "fields": {
+      "Name": "Crony Contracts",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectCost",
+        "projectCost"
+      ],
+      "Costs": [
+        "stabilityGain"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Cronyism",
+    "type": "default-policies",
+    "displayName": "Cronyism",
+    "fields": {
+      "Name": "Cronyism",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectBuildCost",
+        "projectUpkeep"
+      ],
+      "Costs": [
+        "resourceCapacity"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Economic Freedom",
+    "type": "default-policies",
+    "displayName": "Economic Freedom",
+    "fields": {
+      "Name": "Economic Freedom",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectBuildCost"
+      ],
+      "Costs": [],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Elite Leadership",
+    "type": "default-policies",
+    "displayName": "Elite Leadership",
+    "fields": {
+      "Name": "Elite Leadership",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unitHealth",
+        "resourceModifierTechnology",
+        "researchSpeed",
+        "unitMorale"
+      ],
+      "Costs": [
+        "reformCost",
+        "warExhaustion"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Elitism",
+    "type": "default-policies",
+    "displayName": "Elitism",
+    "fields": {
+      "Name": "Elitism",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain",
+        "adminEfficiency"
+      ],
+      "Costs": [
+        "unityMult"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Ethics are Weakness",
+    "type": "default-policies",
+    "displayName": "Ethics Are Weakness",
+    "fields": {
+      "Name": "Ethics are Weakness",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "resourceCapacity",
+        "resourceCapacity",
+        "researchSpeed",
+        "factionLoyaltyCorporate"
+      ],
+      "Costs": [
+        "unrestGain"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Free Contracts",
+    "type": "default-policies",
+    "displayName": "Free Contracts",
+    "fields": {
+      "Name": "Free Contracts",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectUpkeep",
+        "projectUpkeep"
+      ],
+      "Costs": [
+        "unitySpeed"
+      ],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Freedom of Speech",
+    "type": "default-policies",
+    "displayName": "Freedom Of Speech",
+    "fields": {
+      "Name": "Freedom of Speech",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "researchMult",
+        "unityMult"
+      ],
+      "Costs": [
+        "adminEfficiency"
+      ],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Freedom Unleashed",
+    "type": "default-policies",
+    "displayName": "Freedom Unleashed",
+    "fields": {
+      "Name": "Freedom Unleashed",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "researchMult",
+        "researchMult",
+        "factionLoyaltyMiddleClass",
+        "unityMult"
+      ],
+      "Costs": [
+        "stabilityGain",
+        "stabilityGain"
+      ],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Ideological Warfare",
+    "type": "default-policies",
+    "displayName": "Ideological Warfare",
+    "fields": {
+      "Name": "Ideological Warfare",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "edictCost",
+        "edictCost",
+        "unitMorale",
+        "unitAttack"
+      ],
+      "Costs": [
+        "unitEntrenchment",
+        "researchMult"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Lax Regulations",
+    "type": "default-policies",
+    "displayName": "Lax Regulations",
+    "fields": {
+      "Name": "Lax Regulations",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "projectUpkeep",
+        "projectUpkeep"
+      ],
+      "Costs": [
+        "deathRate"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Martial Education",
+    "type": "default-policies",
+    "displayName": "Martial Education",
+    "fields": {
+      "Name": "Martial Education",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "manpowerRecovery"
+      ],
+      "Costs": [],
+      "Faction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Mass Censorship",
+    "type": "default-policies",
+    "displayName": "Mass Censorship",
+    "fields": {
+      "Name": "Mass Censorship",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "warExhaustion",
+        "warExhaustion"
+      ],
+      "Costs": [
+        "educationEff"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Mass Surveillance",
+    "type": "default-policies",
+    "displayName": "Mass Surveillance",
+    "fields": {
+      "Name": "Mass Surveillance",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "factionLoyaltyBureaucracy",
+        "stabilityGain",
+        "warExhaustion",
+        "warExhaustion"
+      ],
+      "Costs": [
+        "budgetModifierPopulationPolicy"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Mercenary Advisors",
+    "type": "default-policies",
+    "displayName": "Mercenary Advisors",
+    "fields": {
+      "Name": "Mercenary Advisors",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unitBreakthrough",
+        "unitCost"
+      ],
+      "Costs": [
+        "reinforceRate"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Military Fanaticism",
+    "type": "default-policies",
+    "displayName": "Military Fanaticism",
+    "fields": {
+      "Name": "Military Fanaticism",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unitBreakthrough",
+        "unitAttack"
+      ],
+      "Costs": [
+        "unitHealth"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Military-Industrial Complex",
+    "type": "default-policies",
+    "displayName": "Military-Industrial Complex",
+    "fields": {
+      "Name": "Military-Industrial Complex",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "factionLoyaltyCorporate",
+        "unitCost",
+        "unitCost"
+      ],
+      "Costs": [
+        "unitMorale",
+        "economicOutput"
+      ],
+      "Faction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Noble Obligations",
+    "type": "default-policies",
+    "displayName": "Noble Obligations",
+    "fields": {
+      "Name": "Noble Obligations",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain",
+        "unityMult",
+        "stabilityGain",
+        "resourceIncome"
+      ],
+      "Costs": [
+        "budgetModifierPopulationPolicy"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Nudge Army",
+    "type": "default-policies",
+    "displayName": "Nudge Army",
+    "fields": {
+      "Name": "Nudge Army",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "economicOutput",
+        "resourceModifierTechnology",
+        "resourceModifierTechnology",
+        "stabilityGain"
+      ],
+      "Costs": [
+        "educationEff",
+        "unitySpeed"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Political Commissars",
+    "type": "default-policies",
+    "displayName": "Political Commissars",
+    "fields": {
+      "Name": "Political Commissars",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unitMorale",
+        "manpowerCapacity"
+      ],
+      "Costs": [
+        "unitHealth"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Popular Will",
+    "type": "default-policies",
+    "displayName": "Popular Will",
+    "fields": {
+      "Name": "Popular Will",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unityMult",
+        "unityMult",
+        "projectBuildSpeed"
+      ],
+      "Costs": [
+        "stabilityGain"
+      ],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Populism",
+    "type": "default-policies",
+    "displayName": "Populism",
+    "fields": {
+      "Name": "Populism",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "economicOutput",
+        "economicOutput",
+        "stabilityGain",
+        "popGrowth"
+      ],
+      "Costs": [
+        "adminEfficiency"
+      ],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Provincial Autonomy",
+    "type": "default-policies",
+    "displayName": "Provincial Autonomy",
+    "fields": {
+      "Name": "Provincial Autonomy",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "protectorateAdminEfficiency",
+        "unrestChange"
+      ],
+      "Costs": [
+        "adminEfficiency"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Psychocultivation",
+    "type": "default-policies",
+    "displayName": "Psychocultivation",
+    "fields": {
+      "Name": "Psychocultivation",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "baseEconomicOutput",
+        "baseEconomicOutput",
+        "unitMorale"
+      ],
+      "Costs": [
+        "popGrowth"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Red Tape",
+    "type": "default-policies",
+    "displayName": "Red Tape",
+    "fields": {
+      "Name": "Red Tape",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain",
+        "stabilityGain"
+      ],
+      "Costs": [
+        "reformCost"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Spiritual Awakening",
+    "type": "default-policies",
+    "displayName": "Spiritual Awakening",
+    "fields": {
+      "Name": "Spiritual Awakening",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unityMult",
+        "unityMult",
+        "unityMult",
+        "unityMult"
+      ],
+      "Costs": [
+        "researchMult",
+        "educationEff"
+      ],
+      "Faction": "clergy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Tax Reform",
+    "type": "default-policies",
+    "displayName": "Tax Reform",
+    "fields": {
+      "Name": "Tax Reform",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "economicOutput"
+      ],
+      "Costs": [],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Technocracy",
+    "type": "default-policies",
+    "displayName": "Technocracy",
+    "fields": {
+      "Name": "Technocracy",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "researchSpeed",
+        "researchSpeed"
+      ],
+      "Costs": [
+        "unitySpeed"
+      ],
+      "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Thalassocracy",
+    "type": "default-policies",
+    "displayName": "Thalassocracy",
+    "fields": {
+      "Name": "Thalassocracy",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "navalPrimacy",
+        "spacePrimacy"
+      ],
+      "Costs": [
+        "warExhaustion"
+      ],
+      "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Total Mobilization",
+    "type": "default-policies",
+    "displayName": "Total Mobilization",
+    "fields": {
+      "Name": "Total Mobilization",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "reinforceRate",
+        "unitMoraleRecovery",
+        "unitCost"
+      ],
+      "Costs": [
+        "economicOutput",
+        "stabilityGain"
+      ],
+      "Faction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Upward Mobility",
+    "type": "default-policies",
+    "displayName": "Upward Mobility",
+    "fields": {
+      "Name": "Upward Mobility",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain",
+        "economicOutput",
+        "economicOutput",
+        "developmentGrowth"
+      ],
+      "Costs": [
+        "reformCost"
+      ],
+      "Faction": "middleClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Warscience",
+    "type": "default-policies",
+    "displayName": "Warscience",
+    "fields": {
+      "Name": "Warscience",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "researchSpeed",
+        "unitAttack"
+      ],
+      "Costs": [
+        "logisticsCapacity"
+      ],
+      "Faction": "military"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Work-Life Balance",
+    "type": "default-policies",
+    "displayName": "Work-Life Balance",
+    "fields": {
+      "Name": "Work-Life Balance",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "resourceModifierCommerce",
+        "factionLoyaltyLaborer"
+      ],
+      "Costs": [
+        "workforceRatio"
+      ],
+      "Faction": "laborer"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

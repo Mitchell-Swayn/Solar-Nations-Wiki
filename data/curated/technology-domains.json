@@ -1,0 +1,80 @@
+[
+  {
+    "id": "culture",
+    "type": "technology-domains",
+    "displayName": "Culture",
+    "icon": "culture",
+    "fields": {
+      "Name": "culture",
+      "Icon": "culture",
+      "Background": "",
+      "Color": {
+        "R": 0.692708,
+        "G": 0,
+        "B": 0.466848,
+        "A": 1,
+        "Hex": "D900B6"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "culture"
+      }
+    ]
+  },
+  {
+    "id": "militaryTech",
+    "type": "technology-domains",
+    "displayName": "Military Technology",
+    "icon": "manpower",
+    "fields": {
+      "Name": "militaryTech",
+      "Icon": "manpower",
+      "Background": "",
+      "Color": {
+        "R": 0.151163,
+        "G": 0.692708,
+        "B": 0,
+        "A": 1,
+        "Hex": "6CD900"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "defaultDomain",
+    "type": "technology-domains",
+    "displayName": "Technology",
+    "icon": "research",
+    "fields": {
+      "Name": "defaultDomain",
+      "Icon": "research",
+      "Background": "",
+      "Color": {
+        "R": 0,
+        "G": 0.020543,
+        "B": 0.692708,
+        "A": 1,
+        "Hex": "0027D9"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "coupGovernment",
+    "type": "character-interactions",
+    "displayName": "Coup Government",
+    "fields": {
+      "Name": "coupGovernment",
+      "Effects": [
+        {
+          "Type": "coupGovernment",
+          "Args": []
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "-5"
+          ]
+        }
+      ],
+      "Conditions": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "NewRow",
+    "type": "character-interactions",
+    "displayName": "New Row",
+    "fields": {
+      "Name": "NewRow",
+      "Effects": [],
+      "Conditions": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "retire",
+    "type": "character-interactions",
+    "displayName": "Retire",
+    "fields": {
+      "Name": "retire",
+      "Effects": [
+        {
+          "Type": "retireLeader",
+          "Args": []
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "-2"
+          ]
+        }
+      ],
+      "Conditions": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

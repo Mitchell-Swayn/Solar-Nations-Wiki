@@ -1,42 +1,38 @@
 [
   {
-    "id": "form_administration",
+    "id": "agriculturalMinister",
     "type": "character-jobs",
-    "displayName": "Administration",
-    "icon": "form_administration",
-    "fields": {
-      "Name": "form_administration",
-      "Icon": "form_administration",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_administration"
-      }
-    ]
-  },
-  {
-    "id": "economy_agrarian",
-    "type": "character-jobs",
-    "displayName": "Agrarian",
+    "displayName": "Agricultural Minister",
     "icon": "economy_agrarian",
     "fields": {
-      "Name": "economy_agrarian",
+      "Name": "agriculturalMinister",
       "Icon": "economy_agrarian",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.997,
+        "B": 0.273479,
+        "A": 1,
+        "Hex": "00FF8F"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -46,181 +42,81 @@
     ]
   },
   {
-    "id": "economy_algorithmic",
+    "id": "algorator",
     "type": "character-jobs",
-    "displayName": "Algorithmic",
-    "icon": "economy_algorithmic",
+    "displayName": "Algorator",
+    "icon": "form_algocracy",
     "fields": {
-      "Name": "economy_algorithmic",
-      "Icon": "economy_algorithmic",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "Name": "algorator",
+      "Icon": "form_algocracy",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 7200,
+      "ReassignCost": 5,
+      "ElectionType": "JobElectionType::NewEnumerator2",
+      "Color": {
+        "R": 0.997,
+        "G": 0,
+        "B": 0.868887,
+        "A": 1,
+        "Hex": "FF00F0"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "economy_algorithmic"
+        "id": "form_algocracy"
       }
     ]
   },
   {
-    "id": "form_empire",
+    "id": "hiveCentralNode",
     "type": "character-jobs",
-    "displayName": "Autocracy",
-    "icon": "form_empire",
-    "fields": {
-      "Name": "form_empire",
-      "Icon": "form_empire",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_empire"
-      }
-    ]
-  },
-  {
-    "id": "charisma",
-    "type": "character-jobs",
-    "displayName": "Charisma",
-    "icon": "charisma",
-    "fields": {
-      "Name": "charisma",
-      "Icon": "charisma",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "charisma"
-      }
-    ]
-  },
-  {
-    "id": "form_corporation",
-    "type": "character-jobs",
-    "displayName": "Corporation",
-    "icon": "form_corporation",
-    "fields": {
-      "Name": "form_corporation",
-      "Icon": "form_corporation",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_corporation"
-      }
-    ]
-  },
-  {
-    "id": "economy_corporatism",
-    "type": "character-jobs",
-    "displayName": "Corporatism",
-    "icon": "economy_corporatism",
-    "fields": {
-      "Name": "economy_corporatism",
-      "Icon": "economy_corporatism",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economy_corporatism"
-      }
-    ]
-  },
-  {
-    "id": "espionage",
-    "type": "character-jobs",
-    "displayName": "Espionage",
-    "icon": "espionage",
-    "fields": {
-      "Name": "espionage",
-      "Icon": "espionage",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "espionage"
-      }
-    ]
-  },
-  {
-    "id": "economy_lassezFaire",
-    "type": "character-jobs",
-    "displayName": "Free Enterprise",
-    "icon": "economy_lassezFaire",
-    "fields": {
-      "Name": "economy_lassezFaire",
-      "Icon": "economy_lassezFaire",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economy_lassezFaire"
-      }
-    ]
-  },
-  {
-    "id": "form_hivemind",
-    "type": "character-jobs",
-    "displayName": "Gestalt Consciousness",
+    "displayName": "Central Node",
     "icon": "form_hivemind",
     "fields": {
-      "Name": "form_hivemind",
+      "Name": "hiveCentralNode",
       "Icon": "form_hivemind",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 30,
+      "ElectionType": "JobElectionType::NewEnumerator1",
+      "Color": {
+        "R": 0.997,
+        "G": 0.580799,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFC900"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -230,112 +126,81 @@
     ]
   },
   {
-    "id": "civilLiberty_hypocritical",
+    "id": "ceo",
     "type": "character-jobs",
-    "displayName": "Hypocritical",
-    "icon": "civilLiberty_hypocritical",
+    "displayName": "Ceo",
+    "icon": "form_corporation",
     "fields": {
-      "Name": "civilLiberty_hypocritical",
-      "Icon": "civilLiberty_hypocritical",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "Name": "ceo",
+      "Icon": "form_corporation",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 5,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0,
+        "B": 0.820841,
+        "A": 1,
+        "Hex": "FF00EA"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "civilLiberty_hypocritical"
+        "id": "form_corporation"
       }
     ]
   },
   {
-    "id": "economy_interventionism",
+    "id": "securityChief",
     "type": "character-jobs",
-    "displayName": "Interventionism",
-    "icon": "economy_interventionism",
-    "fields": {
-      "Name": "economy_interventionism",
-      "Icon": "economy_interventionism",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economy_interventionism"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_liberal",
-    "type": "character-jobs",
-    "displayName": "Liberal",
-    "icon": "civilLiberty_liberal",
-    "fields": {
-      "Name": "civilLiberty_liberal",
-      "Icon": "civilLiberty_liberal",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_liberal"
-      }
-    ]
-  },
-  {
-    "id": "form_monarchy",
-    "type": "character-jobs",
-    "displayName": "Monarchy",
-    "icon": "form_monarchy",
-    "fields": {
-      "Name": "form_monarchy",
-      "Icon": "form_monarchy",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_monarchy"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_neutral",
-    "type": "character-jobs",
-    "displayName": "Neutral",
+    "displayName": "Chief of Security",
     "icon": "civilLiberty_neutral",
     "fields": {
-      "Name": "civilLiberty_neutral",
+      "Name": "securityChief",
       "Icon": "civilLiberty_neutral",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.943095,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "00F9FF"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -345,132 +210,30 @@
     ]
   },
   {
-    "id": "form_oligarchy",
+    "id": "unitCommander",
     "type": "character-jobs",
-    "displayName": "Oligarchy",
-    "icon": "form_oligarchy",
-    "fields": {
-      "Name": "form_oligarchy",
-      "Icon": "form_oligarchy",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_oligarchy"
-      }
-    ]
-  },
-  {
-    "id": "form_totality",
-    "type": "character-jobs",
-    "displayName": "One-Party State",
-    "icon": "form_totality",
-    "fields": {
-      "Name": "form_totality",
-      "Icon": "form_totality",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_totality"
-      }
-    ]
-  },
-  {
-    "id": "economy_planned",
-    "type": "character-jobs",
-    "displayName": "Planned Economy",
-    "icon": "economy_planned",
-    "fields": {
-      "Name": "economy_planned",
-      "Icon": "economy_planned",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "economy_planned"
-      }
-    ]
-  },
-  {
-    "id": "form_republic",
-    "type": "character-jobs",
-    "displayName": "Republic",
-    "icon": "form_republic",
-    "fields": {
-      "Name": "form_republic",
-      "Icon": "form_republic",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "form_republic"
-      }
-    ]
-  },
-  {
-    "id": "civilLiberty_restricted",
-    "type": "character-jobs",
-    "displayName": "Restricted",
-    "icon": "civilLiberty_restricted",
-    "fields": {
-      "Name": "civilLiberty_restricted",
-      "Icon": "civilLiberty_restricted",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
-      "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "civilLiberty_restricted"
-      }
-    ]
-  },
-  {
-    "id": "strategy",
-    "type": "character-jobs",
-    "displayName": "Strategy",
+    "displayName": "Commander",
     "icon": "strategy",
     "fields": {
-      "Name": "strategy",
+      "Name": "unitCommander",
       "Icon": "strategy",
+      "ObjectClass": "Unit_C",
+      "Context": [
+        "friendly"
+      ],
       "EffortCost": 1,
       "ExperienceGain": 1,
       "Term": 999999,
-      "ElectionType": 0,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0.370381,
+        "B": 0.300832,
+        "A": 1,
+        "Hex": "FFA495"
+      },
+      "JobArchetype": "unitCommander",
       "MajorJob": false
     },
     "modifiers": [],
@@ -483,48 +246,888 @@
     ]
   },
   {
-    "id": "form_algocracy",
+    "id": "corporateCommander",
     "type": "character-jobs",
-    "displayName": "Technocracy",
-    "icon": "form_algocracy",
+    "displayName": "Corporate Commander",
+    "icon": "economy_corporatism",
     "fields": {
-      "Name": "form_algocracy",
-      "Icon": "form_algocracy",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "Name": "corporateCommander",
+      "Icon": "economy_corporatism",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.866124,
+        "G": 0.997,
+        "B": 0,
+        "A": 1,
+        "Hex": "F0FF00"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "form_algocracy"
+        "id": "economy_corporatism"
       }
     ]
   },
   {
-    "id": "civilLiberty_totalitarian",
+    "id": "defenseMinister",
     "type": "character-jobs",
-    "displayName": "Totalitarianism",
+    "displayName": "Defense Minister",
+    "icon": "strategy",
+    "fields": {
+      "Name": "defenseMinister",
+      "Icon": "strategy",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 1,
+        "G": 0.146034,
+        "B": 0.097222,
+        "A": 1,
+        "Hex": "FF6B58"
+      },
+      "JobArchetype": "defenseMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "deiCommissar",
+    "type": "character-jobs",
+    "displayName": "Diversity Head",
+    "icon": "civilLiberty_hypocritical",
+    "fields": {
+      "Name": "deiCommissar",
+      "Icon": "civilLiberty_hypocritical",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.631568,
+        "G": 0,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "D000FF"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_hypocritical"
+      }
+    ]
+  },
+  {
+    "id": "economicCommissar",
+    "type": "character-jobs",
+    "displayName": "Economic Commissar",
+    "icon": "economy_planned",
+    "fields": {
+      "Name": "economicCommissar",
+      "Icon": "economy_planned",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0.269903,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF8E00"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_planned"
+      }
+    ]
+  },
+  {
+    "id": "emperor",
+    "type": "character-jobs",
+    "displayName": "Emperor",
+    "icon": "form_empire",
+    "fields": {
+      "Name": "emperor",
+      "Icon": "form_empire",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 10,
+      "ElectionType": "JobElectionType::NewEnumerator2",
+      "Color": {
+        "R": 0,
+        "G": 0.997,
+        "B": 0.544522,
+        "A": 1,
+        "Hex": "00FFC3"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      },
+      {
+        "key": "leaderHereditarySuccessionChance",
+        "value": 1,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_empire"
+      }
+    ]
+  },
+  {
+    "id": "hiveEnforcementNode",
+    "type": "character-jobs",
+    "displayName": "Enforcement Node",
     "icon": "civilLiberty_totalitarian",
     "fields": {
-      "Name": "civilLiberty_totalitarian",
+      "Name": "hiveEnforcementNode",
       "Icon": "civilLiberty_totalitarian",
-      "EffortCost": 1,
-      "ExperienceGain": 1,
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
       "Term": 999999,
-      "ElectionType": 0,
-      "MajorJob": false
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0.157232,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF6E00"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "civilLiberty_totalitarian"
+      }
+    ]
+  },
+  {
+    "id": "enterpriseRegulator",
+    "type": "character-jobs",
+    "displayName": "Enterprise Regulator",
+    "icon": "economy_interventionism",
+    "fields": {
+      "Name": "enterpriseRegulator",
+      "Icon": "economy_interventionism",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.603249,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "00CCFF"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_interventionism"
+      }
+    ]
+  },
+  {
+    "id": "firstSpeaker",
+    "type": "character-jobs",
+    "displayName": "First Speaker",
+    "icon": "civilLiberty_liberal",
+    "fields": {
+      "Name": "firstSpeaker",
+      "Icon": "civilLiberty_liberal",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.134942,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "0067FF"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_liberal"
+      }
+    ]
+  },
+  {
+    "id": "freeMarketeer",
+    "type": "character-jobs",
+    "displayName": "Free Marketeer",
+    "icon": "economy_lassezFaire",
+    "fields": {
+      "Name": "freeMarketeer",
+      "Icon": "economy_lassezFaire",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.084746,
+        "G": 0,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "5200FF"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_lassezFaire"
+      }
+    ]
+  },
+  {
+    "id": "governRegion",
+    "type": "character-jobs",
+    "displayName": "Governor",
+    "icon": "charisma",
+    "fields": {
+      "Name": "governRegion",
+      "Icon": "charisma",
+      "ObjectClass": "EconomicRegion_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 1,
+      "ExperienceGain": 1,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.392104,
+        "G": 0.997,
+        "B": 0.425638,
+        "A": 1,
+        "Hex": "A8FFAF"
+      },
+      "JobArchetype": "governRegion",
+      "MajorJob": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "interiorMinister",
+    "type": "character-jobs",
+    "displayName": "Interior Minister",
+    "icon": "civilLiberty_restricted",
+    "fields": {
+      "Name": "interiorMinister",
+      "Icon": "civilLiberty_restricted",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.997,
+        "B": 0.047001,
+        "A": 1,
+        "Hex": "00FF3D"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_restricted"
+      }
+    ]
+  },
+  {
+    "id": "macromanager",
+    "type": "character-jobs",
+    "displayName": "Macromanager",
+    "icon": "economy_algorithmic",
+    "fields": {
+      "Name": "macromanager",
+      "Icon": "economy_algorithmic",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0,
+        "B": 0.570839,
+        "A": 1,
+        "Hex": "FF00C7"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_algorithmic"
+      }
+    ]
+  },
+  {
+    "id": "hiveEconomicNode",
+    "type": "character-jobs",
+    "displayName": "Management Node",
+    "icon": "economy_planned",
+    "fields": {
+      "Name": "hiveEconomicNode",
+      "Icon": "economy_planned",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0.269903,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF8E00"
+      },
+      "JobArchetype": "economyMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economy_planned"
+      }
+    ]
+  },
+  {
+    "id": "hiveMartialNode",
+    "type": "character-jobs",
+    "displayName": "Martial Node",
+    "icon": "strategy",
+    "fields": {
+      "Name": "hiveMartialNode",
+      "Icon": "strategy",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 1,
+        "G": 0.146034,
+        "B": 0.097222,
+        "A": 1,
+        "Hex": "FF6B58"
+      },
+      "JobArchetype": "defenseMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "monarch",
+    "type": "character-jobs",
+    "displayName": "Monarch",
+    "icon": "form_monarchy",
+    "fields": {
+      "Name": "monarch",
+      "Icon": "form_monarchy",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 10,
+      "ElectionType": "JobElectionType::NewEnumerator1",
+      "Color": {
+        "R": 0.031385,
+        "G": 0.997,
+        "B": 0,
+        "A": 1,
+        "Hex": "31FF00"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      },
+      {
+        "key": "leaderHereditarySuccessionChance",
+        "value": 1,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_monarchy"
+      }
+    ]
+  },
+  {
+    "id": "premier",
+    "type": "character-jobs",
+    "displayName": "Premier",
+    "icon": "form_administration",
+    "fields": {
+      "Name": "premier",
+      "Icon": "form_administration",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 10800,
+      "ReassignCost": 5,
+      "ElectionType": "JobElectionType::NewEnumerator2",
+      "Color": {
+        "R": 0.997,
+        "G": 0.010085,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF1900"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_administration"
+      }
+    ]
+  },
+  {
+    "id": "president",
+    "type": "character-jobs",
+    "displayName": "President",
+    "icon": "form_republic",
+    "fields": {
+      "Name": "president",
+      "Icon": "form_republic",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 3600,
+      "ReassignCost": 5,
+      "ElectionType": "JobElectionType::NewEnumerator3",
+      "Color": {
+        "R": 0,
+        "G": 0.111625,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "005EFF"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_republic"
+      }
+    ]
+  },
+  {
+    "id": "primeMinister",
+    "type": "character-jobs",
+    "displayName": "Prime Minister",
+    "icon": "form_oligarchy",
+    "fields": {
+      "Name": "primeMinister",
+      "Icon": "form_oligarchy",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 7200,
+      "ReassignCost": 5,
+      "ElectionType": "JobElectionType::NewEnumerator2",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_oligarchy"
+      }
+    ]
+  },
+  {
+    "id": "secretPoliceMaster",
+    "type": "character-jobs",
+    "displayName": "Secret Police Commissioner",
+    "icon": "civilLiberty_totalitarian",
+    "fields": {
+      "Name": "secretPoliceMaster",
+      "Icon": "civilLiberty_totalitarian",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator0",
+      "Color": {
+        "R": 0.997,
+        "G": 0.157232,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF6E00"
+      },
+      "JobArchetype": "interiorMinister",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilLiberty_totalitarian"
+      }
+    ]
+  },
+  {
+    "id": "spymaster",
+    "type": "character-jobs",
+    "displayName": "Spymaster",
+    "icon": "espionage",
+    "fields": {
+      "Name": "spymaster",
+      "Icon": "espionage",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 1,
+      "ElectionType": "JobElectionType::NewEnumerator1",
+      "Color": {
+        "R": 0.633267,
+        "G": 0.021263,
+        "B": 0.997,
+        "A": 1,
+        "Hex": "D128FF"
+      },
+      "JobArchetype": "spymaster",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionage"
+      }
+    ]
+  },
+  {
+    "id": "supremeLeader",
+    "type": "character-jobs",
+    "displayName": "Supreme Leader",
+    "icon": "form_totality",
+    "fields": {
+      "Name": "supremeLeader",
+      "Icon": "form_totality",
+      "ObjectClass": "Empire_C",
+      "Context": [
+        "friendly"
+      ],
+      "EffortCost": 0,
+      "ExperienceGain": 6,
+      "Term": 999999,
+      "ReassignCost": 15,
+      "ElectionType": "JobElectionType::NewEnumerator2",
+      "Color": {
+        "R": 0.997,
+        "G": 0.580799,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFC900"
+      },
+      "JobArchetype": "ruler",
+      "MajorJob": true
+    },
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.5,
+        "scope": "Character"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "form_totality"
       }
     ]
   }

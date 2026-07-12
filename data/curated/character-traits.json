@@ -6,9 +6,22 @@
     "icon": "activist",
     "fields": {
       "Name": "activist",
-      "Icon": "activist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "activist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -24,9 +37,22 @@
     "icon": "admiral",
     "fields": {
       "Name": "admiral",
-      "Icon": "admiral"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "admiral",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -42,9 +68,27 @@
     "icon": "arbitrary",
     "fields": {
       "Name": "arbitrary",
-      "Icon": "arbitrary"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "subversive",
+      "Icon": "arbitrary",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -60,9 +104,22 @@
     "icon": "artillerist",
     "fields": {
       "Name": "artillerist",
-      "Icon": "artillerist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "artillerist",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "general"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -78,9 +135,22 @@
     "icon": "carrier_commander",
     "fields": {
       "Name": "carrier_commander",
-      "Icon": "carrier_commander"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "carrier_commander",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "admiral"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -96,32 +166,32 @@
     "icon": "cautious",
     "fields": {
       "Name": "cautious",
-      "Icon": "cautious"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "cautious",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "cautious"
-      }
-    ]
-  },
-  {
-    "id": "charisma",
-    "type": "character-traits",
-    "displayName": "Charisma",
-    "icon": "charisma",
-    "fields": {
-      "Name": "charisma",
-      "Icon": "charisma"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "charisma"
       }
     ]
   },
@@ -132,9 +202,22 @@
     "icon": "commander",
     "fields": {
       "Name": "commander",
-      "Icon": "commander"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "commander",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -150,9 +233,22 @@
     "icon": "commerce_raider",
     "fields": {
       "Name": "commerce_raider",
-      "Icon": "commerce_raider"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "commerce_raider",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "admiral"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -168,9 +264,32 @@
     "icon": "creative",
     "fields": {
       "Name": "creative",
-      "Icon": "creative"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "creative",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -186,9 +305,32 @@
     "icon": "determined",
     "fields": {
       "Name": "determined",
-      "Icon": "determined"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "determined",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -204,9 +346,22 @@
     "icon": "diplomat",
     "fields": {
       "Name": "diplomat",
-      "Icon": "diplomat"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "diplomat",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -222,9 +377,22 @@
     "icon": "duelist",
     "fields": {
       "Name": "duelist",
-      "Icon": "duelist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "duelist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -240,9 +408,22 @@
     "icon": "economist",
     "fields": {
       "Name": "economist",
-      "Icon": "economist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "economist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -258,9 +439,22 @@
     "icon": "educator",
     "fields": {
       "Name": "educator",
-      "Icon": "educator"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "educator",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -276,9 +470,27 @@
     "icon": "investor_experienced",
     "fields": {
       "Name": "investor_experienced",
-      "Icon": "investor_experienced"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "investor_experienced",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "investor"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -294,9 +506,26 @@
     "icon": "networker_experienced",
     "fields": {
       "Name": "networker_experienced",
-      "Icon": "networker_experienced"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "networker_experienced",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "networker"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -312,9 +541,26 @@
     "icon": "field_marshal",
     "fields": {
       "Name": "field_marshal",
-      "Icon": "field_marshal"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "field_marshal",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "infantry_leader"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 5
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -330,9 +576,22 @@
     "icon": "air_ace",
     "fields": {
       "Name": "air_ace",
-      "Icon": "air_ace"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "air_ace",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -348,9 +607,26 @@
     "icon": "fleet_commander",
     "fields": {
       "Name": "fleet_commander",
-      "Icon": "fleet_commander"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "fleet_commander",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "admiral"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -366,9 +642,32 @@
     "icon": "gamer",
     "fields": {
       "Name": "gamer",
-      "Icon": "gamer"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "gamer",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": -1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -384,9 +683,22 @@
     "icon": "general",
     "fields": {
       "Name": "general",
-      "Icon": "general"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "general",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -402,9 +714,36 @@
     "icon": "greatBusinessman",
     "fields": {
       "Name": "greatBusinessman",
-      "Icon": "greatBusinessman"
+      "Type": "CTraitType::NewEnumerator3",
+      "Category": "general",
+      "Icon": "greatBusinessman",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 8
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -420,9 +759,36 @@
     "icon": "greatConqueror",
     "fields": {
       "Name": "greatConqueror",
-      "Icon": "greatConqueror"
+      "Type": "CTraitType::NewEnumerator3",
+      "Category": "general",
+      "Icon": "greatConqueror",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 8
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -438,9 +804,36 @@
     "icon": "greatScientist",
     "fields": {
       "Name": "greatScientist",
-      "Icon": "greatScientist"
+      "Type": "CTraitType::NewEnumerator3",
+      "Category": "general",
+      "Icon": "greatScientist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 8
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -456,9 +849,36 @@
     "icon": "greatStatesman",
     "fields": {
       "Name": "greatStatesman",
-      "Icon": "greatStatesman"
+      "Type": "CTraitType::NewEnumerator3",
+      "Category": "general",
+      "Icon": "greatStatesman",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 8
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -474,9 +894,27 @@
     "icon": "greedy",
     "fields": {
       "Name": "greedy",
-      "Icon": "greedy"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "greedy",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": -1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -492,9 +930,22 @@
     "icon": "hacker",
     "fields": {
       "Name": "hacker",
-      "Icon": "hacker"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "hacker",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "software_engineer"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -510,9 +961,31 @@
     "icon": "hedonist",
     "fields": {
       "Name": "hedonist",
-      "Icon": "hedonist"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "hedonist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": -1
+      },
+      {
+        "key": "leaderLifeSpanAdd",
+        "value": -5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -528,9 +1001,32 @@
     "icon": "honest",
     "fields": {
       "Name": "honest",
-      "Icon": "honest"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "honest",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -546,9 +1042,26 @@
     "icon": "imbecile",
     "fields": {
       "Name": "imbecile",
-      "Icon": "imbecile"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "imbecile",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "characterEffortAdd",
+        "value": -2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": -1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -564,9 +1077,21 @@
     "icon": "incompetent",
     "fields": {
       "Name": "incompetent",
-      "Icon": "incompetent"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "incompetent",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": -0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -582,9 +1107,22 @@
     "icon": "infantry_leader",
     "fields": {
       "Name": "infantry_leader",
-      "Icon": "infantry_leader"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "infantry_leader",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "general"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -600,9 +1138,22 @@
     "icon": "influencer",
     "fields": {
       "Name": "influencer",
-      "Icon": "influencer"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "influencer",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "diplomat"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -618,9 +1169,36 @@
     "icon": "intelligent",
     "fields": {
       "Name": "intelligent",
-      "Icon": "intelligent"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "general",
+      "Icon": "intelligent",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.15
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -636,9 +1214,21 @@
     "icon": "introvert",
     "fields": {
       "Name": "introvert",
-      "Icon": "introvert"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "introvert",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": -0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -654,9 +1244,22 @@
     "icon": "investor",
     "fields": {
       "Name": "investor",
-      "Icon": "investor"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "investor",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -672,9 +1275,27 @@
     "icon": "irritable",
     "fields": {
       "Name": "irritable",
-      "Icon": "irritable"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "irritable",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": -2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -690,9 +1311,32 @@
     "icon": "logical",
     "fields": {
       "Name": "logical",
-      "Icon": "logical"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "logical",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": -1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -708,9 +1352,22 @@
     "icon": "logistician",
     "fields": {
       "Name": "logistician",
-      "Icon": "logistician"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "logistician",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "general"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -726,9 +1383,22 @@
     "icon": "mad_scientist",
     "fields": {
       "Name": "mad_scientist",
-      "Icon": "mad_scientist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "mad_scientist",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "scientist"
+      },
+      "Quality": -0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -744,9 +1414,32 @@
     "icon": "maganate",
     "fields": {
       "Name": "maganate",
-      "Icon": "maganate"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "maganate",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 9
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -762,9 +1455,22 @@
     "icon": "investor_master",
     "fields": {
       "Name": "investor_master",
-      "Icon": "investor_master"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "investor_master",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "investor_experienced"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 6
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -780,9 +1486,32 @@
     "icon": "masterful",
     "fields": {
       "Name": "masterful",
-      "Icon": "masterful"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "masterful",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 5
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 7
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -798,9 +1527,27 @@
     "icon": "meticulous",
     "fields": {
       "Name": "meticulous",
-      "Icon": "meticulous"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "meticulous",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -816,9 +1563,22 @@
     "icon": "networker",
     "fields": {
       "Name": "networker",
-      "Icon": "networker"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "networker",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -834,9 +1594,32 @@
     "icon": "optimist",
     "fields": {
       "Name": "optimist",
-      "Icon": "optimist"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "optimist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": -1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 1
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -852,9 +1635,32 @@
     "icon": "organized",
     "fields": {
       "Name": "organized",
-      "Icon": "organized"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "organized",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 7
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -870,9 +1676,32 @@
     "icon": "overseer",
     "fields": {
       "Name": "overseer",
-      "Icon": "overseer"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "overseer",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -888,9 +1717,22 @@
     "icon": "paragon",
     "fields": {
       "Name": "paragon",
-      "Icon": "paragon"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "paragon",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "silver_tongue"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 8
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -906,9 +1748,22 @@
     "icon": "paranoid",
     "fields": {
       "Name": "paranoid",
-      "Icon": "paranoid"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "subversive",
+      "Icon": "paranoid",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -924,9 +1779,22 @@
     "icon": "politician",
     "fields": {
       "Name": "politician",
-      "Icon": "politician"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "politician",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "networker"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -942,9 +1810,32 @@
     "icon": "powermonger",
     "fields": {
       "Name": "powermonger",
-      "Icon": "powermonger"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "powermonger",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 9
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -960,9 +1851,22 @@
     "icon": "pretty",
     "fields": {
       "Name": "pretty",
-      "Icon": "pretty"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "pretty",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -978,9 +1882,32 @@
     "icon": "quickLearner",
     "fields": {
       "Name": "quickLearner",
-      "Icon": "quickLearner"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "quickLearner",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 6
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -996,9 +1923,36 @@
     "icon": "resilient",
     "fields": {
       "Name": "resilient",
-      "Icon": "resilient"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "general",
+      "Icon": "resilient",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2
+      },
+      {
+        "key": "leaderLifeSpanAdd",
+        "value": 25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1014,9 +1968,22 @@
     "icon": "sapper",
     "fields": {
       "Name": "sapper",
-      "Icon": "sapper"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "sapper",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "general"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1032,14 +1999,58 @@
     "icon": "scientist",
     "fields": {
       "Name": "scientist",
-      "Icon": "scientist"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "scientist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "scientist"
+      }
+    ]
+  },
+  {
+    "id": "silver_tongue",
+    "type": "character-traits",
+    "displayName": "Silver Tongue",
+    "icon": "charisma",
+    "fields": {
+      "Name": "silver_tongue",
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "charisma",
+      "Icon": "charisma",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "influencer"
+      },
+      "Quality": 0
+    },
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
       }
     ]
   },
@@ -1050,9 +2061,27 @@
     "icon": "socialite",
     "fields": {
       "Name": "socialite",
-      "Icon": "socialite"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "socialite",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1068,9 +2097,22 @@
     "icon": "software_engineer",
     "fields": {
       "Name": "software_engineer",
-      "Icon": "software_engineer"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "software_engineer",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1086,9 +2128,27 @@
     "icon": "strategist",
     "fields": {
       "Name": "strategist",
-      "Icon": "strategist"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "strategy",
+      "Icon": "strategist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 4
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1104,7 +2164,14 @@
     "icon": "stupid",
     "fields": {
       "Name": "stupid",
-      "Icon": "stupid"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "general",
+      "Icon": "stupid",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": -0.25
     },
     "modifiers": [],
     "prerequisites": [],
@@ -1122,9 +2189,36 @@
     "icon": "superior",
     "fields": {
       "Name": "superior",
-      "Icon": "superior"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "general",
+      "Icon": "superior",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 5
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 5
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 5
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1140,9 +2234,22 @@
     "icon": "tank_commander",
     "fields": {
       "Name": "tank_commander",
-      "Icon": "tank_commander"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "tank_commander",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "general"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1158,9 +2265,26 @@
     "icon": "taskmaster",
     "fields": {
       "Name": "taskmaster",
-      "Icon": "taskmaster"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "management",
+      "Icon": "taskmaster",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 3
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1176,9 +2300,32 @@
     "icon": "technologist",
     "fields": {
       "Name": "technologist",
-      "Icon": "technologist"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "management",
+      "Icon": "technologist",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 6
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 4
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1194,9 +2341,32 @@
     "icon": "trickster",
     "fields": {
       "Name": "trickster",
-      "Icon": "trickster"
+      "Type": "CTraitType::NewEnumerator0",
+      "Category": "charisma",
+      "Icon": "trickster",
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Quality": 0.25
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 3
+      },
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 9
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1212,9 +2382,26 @@
     "icon": "warmaster",
     "fields": {
       "Name": "warmaster",
-      "Icon": "warmaster"
+      "Type": "CTraitType::NewEnumerator1",
+      "Category": "strategy",
+      "Icon": "warmaster",
+      "TechPrerequisite": {
+        "A": "CharacterTrait",
+        "B": "fleet_commander"
+      },
+      "Quality": 0.2
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 5
+      },
+      {
+        "key": "characterEffortAdd",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

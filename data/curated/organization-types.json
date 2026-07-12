@@ -1,0 +1,182 @@
+[
+  {
+    "id": "culturalExchange",
+    "type": "organization-types",
+    "displayName": "Cultural Exchange",
+    "icon": "",
+    "fields": {
+      "Name": "culturalExchange",
+      "Icon": "",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "RandomNames": [
+        "{capital} Exchange",
+        "{ideology} Community Sphere",
+        "{adj} Cultural Sphere",
+        "{capital} Cultural Exhibition",
+        "{adj} Friendship Treaty",
+        "{ideology} Ideological Union"
+      ],
+      "Situation": "culturalExchange",
+      "JoinReluctance": -50,
+      "CanAdd": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "economicUnion",
+    "type": "organization-types",
+    "displayName": "Economic Union",
+    "icon": "",
+    "fields": {
+      "Name": "economicUnion",
+      "Icon": "",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "RandomNames": [
+        "{adj} Free Trade Association",
+        "{capital} Economic Union",
+        "{ideology} Mutual Assistance Bloc",
+        "{adj} Customs Union",
+        "{capital} Financial Alliance",
+        "{ideology} Development Advance"
+      ],
+      "Situation": "economicUnion",
+      "JoinReluctance": -50,
+      "CanAdd": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "militaryAlliance",
+    "type": "organization-types",
+    "displayName": "Military Alliance",
+    "icon": "",
+    "fields": {
+      "Name": "militaryAlliance",
+      "Icon": "",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "RandomNames": [
+        "{adj} Alliance",
+        "{capital} Accord",
+        "{ideology} Defense League",
+        "{adj} Axis",
+        "{capital} Treaty Organization",
+        "{ideology} International"
+      ],
+      "Situation": "militaryAlliance",
+      "JoinReluctance": -50,
+      "CanAdd": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "researchCooperative",
+    "type": "organization-types",
+    "displayName": "Research Cooperative",
+    "icon": "",
+    "fields": {
+      "Name": "researchCooperative",
+      "Icon": "",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "RandomNames": [
+        "{adj} Cooperative",
+        "{capital} Research Agreement",
+        "{ideology} Prosperity Collective",
+        "{adj} Scientific Exchange",
+        "{capital} Exhibition Association",
+        "{ideology} Technology Group"
+      ],
+      "Situation": "researchCooperative",
+      "JoinReluctance": -50,
+      "CanAdd": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "redArmyOrg",
+    "type": "organization-types",
+    "displayName": "Revolutionary Alliance",
+    "icon": "",
+    "fields": {
+      "Name": "redArmyOrg",
+      "Icon": "",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "RandomNames": [
+        "{adj} Free Trade Association",
+        "{capital} Economic Union",
+        "{ideology} Mutual Assistance Bloc",
+        "{adj} Customs Union",
+        "{capital} Financial Alliance",
+        "{ideology} Development Advance"
+      ],
+      "Situation": "redArmyOrgSituation",
+      "JoinReluctance": -50,
+      "CanAdd": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

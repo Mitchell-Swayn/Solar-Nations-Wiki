@@ -1,0 +1,101 @@
+[
+  {
+    "id": "aggressiveStance",
+    "type": "battle-stances",
+    "displayName": "Aggressive Stance",
+    "icon": "accuracy",
+    "fields": {
+      "Name": "aggressiveStance",
+      "Icon": "accuracy",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "ApplyInBattle": true,
+      "ApplyOutBattle": false
+    },
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": -0.25
+      },
+      {
+        "key": "advantageDelta",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "accuracy"
+      }
+    ]
+  },
+  {
+    "id": "fightingRetreat",
+    "type": "battle-stances",
+    "displayName": "Fighting Retreat",
+    "icon": "fightingRetreat",
+    "fields": {
+      "Name": "fightingRetreat",
+      "Icon": "fightingRetreat",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "ApplyInBattle": true,
+      "ApplyOutBattle": false
+    },
+    "modifiers": [
+      {
+        "key": "battleAdvantageAdd",
+        "value": 25
+      },
+      {
+        "key": "advantageDelta",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fightingRetreat"
+      }
+    ]
+  },
+  {
+    "id": "forcedMarch",
+    "type": "battle-stances",
+    "displayName": "Forced March",
+    "icon": "speed",
+    "fields": {
+      "Name": "forcedMarch",
+      "Icon": "speed",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "ApplyInBattle": false,
+      "ApplyOutBattle": true
+    },
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": -0.5
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": 0.67
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "speed"
+      }
+    ]
+  }
+]

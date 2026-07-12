@@ -1,0 +1,439 @@
+[
+  {
+    "id": "bombardmentAbility",
+    "type": "unit-qualities",
+    "displayName": "Bombardment",
+    "icon": "artillery1",
+    "fields": {
+      "Name": "bombardmentAbility",
+      "Icon": "artillery1",
+      "Color": {
+        "R": 0.040681,
+        "G": 0.375,
+        "B": 0.233653,
+        "A": 1,
+        "Hex": "39A585"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery1"
+      }
+    ]
+  },
+  {
+    "id": "droidOrchestration",
+    "type": "unit-qualities",
+    "displayName": "Droid Orchestration",
+    "icon": "robots",
+    "fields": {
+      "Name": "droidOrchestration",
+      "Icon": "robots",
+      "Color": {
+        "R": 0.305555,
+        "G": 0.305555,
+        "B": 0.305555,
+        "A": 1,
+        "Hex": "969696"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "robotic",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "energyQuality",
+    "type": "unit-qualities",
+    "displayName": "Energy",
+    "icon": "energy",
+    "fields": {
+      "Name": "energyQuality",
+      "Icon": "energy",
+      "Color": {
+        "R": 0.270833,
+        "G": 0.240503,
+        "B": 0,
+        "A": 1,
+        "Hex": "8E8700"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "energy"
+      }
+    ]
+  },
+  {
+    "id": "engineeringAbility",
+    "type": "unit-qualities",
+    "displayName": "Field Engineering",
+    "icon": "machineParts",
+    "fields": {
+      "Name": "engineeringAbility",
+      "Icon": "machineParts",
+      "Color": {
+        "R": 0.375209,
+        "G": 0.156507,
+        "B": 0.571181,
+        "A": 1,
+        "Hex": "A56EC7"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitStatAdd",
+        "value1": "entrenchment",
+        "value": 25
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "breakthrough",
+        "value": 25
+      },
+      {
+        "key": "unitVulnMult",
+        "value1": "emp",
+        "value": -0.33
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "machineParts"
+      }
+    ]
+  },
+  {
+    "id": "logisticsAbility",
+    "type": "unit-qualities",
+    "displayName": "Logistics",
+    "icon": "logistics",
+    "fields": {
+      "Name": "logisticsAbility",
+      "Icon": "logistics",
+      "Color": {
+        "R": 0.4375,
+        "G": 0.213922,
+        "B": 0,
+        "A": 1,
+        "Hex": "B17F00"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 1
+      },
+      {
+        "key": "unitCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "unitReinforceRateMult",
+        "value": 1
+      },
+      {
+        "key": "moraleRecoveryMult",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "logistics"
+      }
+    ]
+  },
+  {
+    "id": "medicalAbility",
+    "type": "unit-qualities",
+    "displayName": "Medical Ability",
+    "icon": "health",
+    "fields": {
+      "Name": "medicalAbility",
+      "Icon": "health",
+      "Color": {
+        "R": 0.451389,
+        "G": 0,
+        "B": 0.005193,
+        "A": 1,
+        "Hex": "B30010"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.2
+      },
+      {
+        "key": "unitVulnMult",
+        "value1": "biological",
+        "value": -0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
+    "id": "missileDefense",
+    "type": "unit-qualities",
+    "displayName": "Missile Defense",
+    "icon": "munitionDefense0",
+    "fields": {
+      "Name": "missileDefense",
+      "Icon": "munitionDefense0",
+      "Color": {
+        "R": 0.227431,
+        "G": 0.147957,
+        "B": 0.071493,
+        "A": 1,
+        "Hex": "836B4B"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitVulnMult",
+        "value1": "landTracking",
+        "value": -1
+      },
+      {
+        "key": "unitVulnMult",
+        "value1": "torpedo",
+        "value": -1
+      },
+      {
+        "key": "unitVulnMult",
+        "value1": "airTracking",
+        "value": -1
+      },
+      {
+        "key": "unitVulnMult",
+        "value1": "spaceTracking",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "munitionDefense0"
+      }
+    ]
+  },
+  {
+    "id": "missileSaturation",
+    "type": "unit-qualities",
+    "displayName": "Missile Saturation",
+    "icon": "missileSaturation",
+    "fields": {
+      "Name": "missileSaturation",
+      "Icon": "missileSaturation",
+      "Color": {
+        "R": 0.366319,
+        "G": 0.127191,
+        "B": 0.128405,
+        "A": 1,
+        "Hex": "A36464"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "landTracking",
+        "value": 1
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "airTracking",
+        "value": 1
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceTracking",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missileSaturation"
+      }
+    ]
+  },
+  {
+    "id": "neuralEngineQuality",
+    "type": "unit-qualities",
+    "displayName": "Neural Orchestration",
+    "icon": "neuralEngine",
+    "fields": {
+      "Name": "neuralEngineQuality",
+      "Icon": "neuralEngine",
+      "Color": {
+        "R": 0.447917,
+        "G": 0,
+        "B": 0.343547,
+        "A": 1,
+        "Hex": "B3009E"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitMoraleDamageReduction",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralEngine"
+      }
+    ]
+  },
+  {
+    "id": "reconAbility",
+    "type": "unit-qualities",
+    "displayName": "Reconaissance",
+    "icon": "recon",
+    "fields": {
+      "Name": "reconAbility",
+      "Icon": "recon",
+      "Color": {
+        "R": 0.037816,
+        "G": 0.304547,
+        "B": 0.333333,
+        "A": 1,
+        "Hex": "36969C"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.1
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": 0.25
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "recon"
+      }
+    ]
+  },
+  {
+    "id": "screenAbility",
+    "type": "unit-qualities",
+    "displayName": "Screening Efficiency",
+    "icon": "defense",
+    "fields": {
+      "Name": "screenAbility",
+      "Icon": "defense",
+      "Color": {
+        "R": 0.110642,
+        "G": 0.291667,
+        "B": 0.097814,
+        "A": 1,
+        "Hex": "5D9358"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.2
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "defense"
+      }
+    ]
+  },
+  {
+    "id": "blitzAbility",
+    "type": "unit-qualities",
+    "displayName": "Spearhead Tactics",
+    "icon": "armor",
+    "fields": {
+      "Name": "blitzAbility",
+      "Icon": "armor",
+      "Color": {
+        "R": 0.326389,
+        "G": 0.088697,
+        "B": 0,
+        "A": 1,
+        "Hex": "9B5400"
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.25
+      },
+      {
+        "key": "unitMoraleAdd",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor"
+      }
+    ]
+  }
+]

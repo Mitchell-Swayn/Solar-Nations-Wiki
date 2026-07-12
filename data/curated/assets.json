@@ -1,0 +1,865 @@
+[
+  {
+    "id": "abundantCapital",
+    "type": "assets",
+    "displayName": "Abundant Capital",
+    "icon": "money",
+    "fields": {
+      "Name": "abundantCapital",
+      "Icon": "money",
+      "OwnerModifier": [],
+      "Lifetime": 900,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.15
+      },
+      {
+        "key": "promotionRateMult",
+        "value": 0.25
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "money"
+      }
+    ]
+  },
+  {
+    "id": "controlBureaucracy",
+    "type": "assets",
+    "displayName": "Control Bureaucracy",
+    "icon": "supply",
+    "fields": {
+      "Name": "controlBureaucracy",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"management\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.75
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "controlCorporations",
+    "type": "assets",
+    "displayName": "Control Corporations",
+    "icon": "supply",
+    "fields": {
+      "Name": "controlCorporations",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"management\",Value2=\"\",Value3=\"\")": 10,
+        "(Key=\"operationPower\",Value1=\"exploit\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 360000,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.05
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "controlJudiciary",
+    "type": "assets",
+    "displayName": "Control Judiciary",
+    "icon": "supply",
+    "fields": {
+      "Name": "controlJudiciary",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"management\",Value2=\"\",Value3=\"\")": 5,
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "operationPower",
+        "value": -10
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "judiciary",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "controlOpposition",
+    "type": "assets",
+    "displayName": "Control Opposition",
+    "icon": "supply",
+    "fields": {
+      "Name": "controlOpposition",
+      "Icon": "supply",
+      "OwnerModifier": [],
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "operationPower",
+        "value": 5
+      },
+      {
+        "key": "factionPowerAdd",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "crimeWave",
+    "type": "assets",
+    "displayName": "Crime Wave",
+    "icon": "supply",
+    "fields": {
+      "Name": "crimeWave",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.02
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "cyberAttack",
+    "type": "assets",
+    "displayName": "Cyber Attack",
+    "icon": "supply",
+    "fields": {
+      "Name": "cyberAttack",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationDifficulty\",Value1=\"\",Value2=\"\",Value3=\"\")": -15
+      },
+      "Lifetime": 360,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -1
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": -0.5
+      },
+      {
+        "key": "industryThroughputMult",
+        "value": -0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "degenerateCulture",
+    "type": "assets",
+    "displayName": "Degenerate Culture",
+    "icon": "supply",
+    "fields": {
+      "Name": "degenerateCulture",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.03
+      },
+      {
+        "key": "industryChangeAdd",
+        "value1": "waste",
+        "value": 0.02,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "doubleAgents",
+    "type": "assets",
+    "displayName": "Double Agents",
+    "icon": "supply",
+    "fields": {
+      "Name": "doubleAgents",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"subversive\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "operationPower",
+        "value": -10,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "drugTrade",
+    "type": "assets",
+    "displayName": "Drug Trade",
+    "icon": "supply",
+    "fields": {
+      "Name": "drugTrade",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.05
+      },
+      {
+        "key": "industryChangeAdd",
+        "value1": "waste",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "friendsInHighPlaces",
+    "type": "assets",
+    "displayName": "Friends In High Places",
+    "icon": "charisma",
+    "fields": {
+      "Name": "friendsInHighPlaces",
+      "Icon": "charisma",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 7200,
+      "Hostile": true,
+      "InfluenceGain": 0.05,
+      "Intel": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "humanTrafficking",
+    "type": "assets",
+    "displayName": "Human Trafficking",
+    "icon": "supply",
+    "fields": {
+      "Name": "humanTrafficking",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"subversive\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25
+      },
+      {
+        "key": "developmentGrowthMult",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "localGovernment",
+    "type": "assets",
+    "displayName": "Local Government",
+    "icon": "supply",
+    "fields": {
+      "Name": "localGovernment",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationDifficulty\",Value1=\"hostile\",Value2=\"\",Value3=\"\")": 5,
+        "(Key=\"battleAdvantage\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 360000,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "lockdown",
+    "type": "assets",
+    "displayName": "Lockdown",
+    "icon": "supply",
+    "fields": {
+      "Name": "lockdown",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "popAttrition",
+        "value": -0.0005
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.75
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -0.5
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": -0.1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "militaryCommanders",
+    "type": "assets",
+    "displayName": "Military Commanders",
+    "icon": "supply",
+    "fields": {
+      "Name": "militaryCommanders",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"strategy\",Value2=\"\",Value3=\"\")": 8
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": -0.15
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "military",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "mindControlDrugs",
+    "type": "assets",
+    "displayName": "Mind Control Drugs",
+    "icon": "supply",
+    "fields": {
+      "Name": "mindControlDrugs",
+      "Icon": "supply",
+      "OwnerModifier": [],
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": -0.5
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "navalBase",
+    "type": "assets",
+    "displayName": "Naval Base",
+    "icon": "supply",
+    "fields": {
+      "Name": "navalBase",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"connectivityAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "Lifetime": 360000,
+      "Hostile": false,
+      "InfluenceGain": 0.05,
+      "Intel": 15
+    },
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": -0.15
+      },
+      {
+        "key": "developmentGrowthMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "organizedCrime",
+    "type": "assets",
+    "displayName": "Organized Crime",
+    "icon": "supply",
+    "fields": {
+      "Name": "organizedCrime",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"intelLevel\",Value1=\"\",Value2=\"\",Value3=\"\")": 10,
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "intelLevel",
+        "value": -10
+      },
+      {
+        "key": "connectivityAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "pandemic",
+    "type": "assets",
+    "displayName": "Pandemic",
+    "icon": "supply",
+    "fields": {
+      "Name": "pandemic",
+      "Icon": "supply",
+      "OwnerModifier": [],
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.05
+      },
+      {
+        "key": "popAttrition",
+        "value": 0.001
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "paramilitaries",
+    "type": "assets",
+    "displayName": "Paramilitaries",
+    "icon": "supply",
+    "fields": {
+      "Name": "paramilitaries",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"unitOccupationSpeed\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.33
+      },
+      "Lifetime": 360000,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "pocketPoliticians",
+    "type": "assets",
+    "displayName": "Pocket Politicians",
+    "icon": "supply",
+    "fields": {
+      "Name": "pocketPoliticians",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"charisma\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "propaganda",
+    "type": "assets",
+    "displayName": "Propaganda",
+    "icon": "supply",
+    "fields": {
+      "Name": "propaganda",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"influence\",Value2=\"\",Value3=\"\")": 10,
+        "(Key=\"leaderSkillAdd\",Value1=\"charisma\",Value2=\"\",Value3=\"\")": 5
+      },
+      "Lifetime": 3600,
+      "Hostile": true,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": -0.1
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": -0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "dependents",
+        "value": -0.1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "recentInvestigation",
+    "type": "assets",
+    "displayName": "Recent Investigation",
+    "icon": "supply",
+    "fields": {
+      "Name": "recentInvestigation",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"operationPower\",Value1=\"\",Value2=\"\",Value3=\"\")": 15
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "operationPower",
+        "value": -15
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "slaveTrade",
+    "type": "assets",
+    "displayName": "Slave Trade",
+    "icon": "supply",
+    "fields": {
+      "Name": "slaveTrade",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"subversive\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "promotionRateMult",
+        "value": -0.5
+      },
+      {
+        "key": "industryOutputMult",
+        "value": -0.15
+      },
+      {
+        "key": "prestigeMult",
+        "value": -0.5,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "surveillance",
+    "type": "assets",
+    "displayName": "Surveillance",
+    "icon": "supply",
+    "fields": {
+      "Name": "surveillance",
+      "Icon": "supply",
+      "OwnerModifier": {
+        "(Key=\"intelLevel\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
+      },
+      "Lifetime": 3600,
+      "Hostile": false,
+      "InfluenceGain": 0,
+      "Intel": 0
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.25
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": -0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  }
+]

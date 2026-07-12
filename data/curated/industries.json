@@ -1,0 +1,96 @@
+[
+  {
+    "id": "industry",
+    "type": "industries",
+    "displayName": "Industrial Capacity",
+    "fields": {
+      "Name": "industry",
+      "Color": {
+        "R": 0.106231,
+        "G": 0.12538,
+        "B": 0.307292,
+        "A": 1,
+        "Hex": "5C6397"
+      },
+      "Produces": {
+        "industry": 100
+      },
+      "Consumes": [],
+      "DefaultVal": 0.1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "consumerGoods",
+    "type": "industries",
+    "displayName": "Manufacturing",
+    "fields": {
+      "Name": "consumerGoods",
+      "Color": {
+        "R": 0.515625,
+        "G": 0.263744,
+        "B": 0,
+        "A": 1,
+        "Hex": "BE8C00"
+      },
+      "Produces": {
+        "consumerGoods": 100
+      },
+      "Consumes": {
+        "grain": 1
+      },
+      "DefaultVal": 0.5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "supply",
+    "type": "industries",
+    "displayName": "Supply",
+    "fields": {
+      "Name": "supply",
+      "Color": {
+        "R": 0.002929,
+        "G": 0.310764,
+        "B": 0,
+        "A": 1,
+        "Hex": "099700"
+      },
+      "Produces": {
+        "supply": 100
+      },
+      "Consumes": {
+        "steel": 1
+      },
+      "DefaultVal": 0.2
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "waste",
+    "type": "industries",
+    "displayName": "Waste",
+    "fields": {
+      "Name": "waste",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Produces": [],
+      "Consumes": [],
+      "DefaultVal": 0.2
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

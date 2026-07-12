@@ -1,0 +1,21 @@
+[
+  {
+    "id": "NewRow",
+    "type": "character-equipment",
+    "displayName": "New Row",
+    "icon": "",
+    "fields": {
+      "Name": "NewRow",
+      "MoneyCost": 0,
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

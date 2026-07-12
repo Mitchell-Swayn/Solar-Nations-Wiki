@@ -1,0 +1,182 @@
+[
+  {
+    "id": "neuralNetworksCat",
+    "type": "project-categories",
+    "displayName": "Artificial Intelligence",
+    "icon": "neuralNetworks",
+    "fields": {
+      "Name": "neuralNetworksCat",
+      "Icon": "neuralNetworks"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworks"
+      }
+    ]
+  },
+  {
+    "id": "energyCat",
+    "type": "project-categories",
+    "displayName": "Energy",
+    "icon": "energy",
+    "fields": {
+      "Name": "energyCat",
+      "Icon": "energy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "energy"
+      }
+    ]
+  },
+  {
+    "id": "geneticMaterialCat",
+    "type": "project-categories",
+    "displayName": "Genetics",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "geneticMaterialCat",
+      "Icon": "geneticMaterial"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "industryCat",
+    "type": "project-categories",
+    "displayName": "Industry",
+    "icon": "steel",
+    "fields": {
+      "Name": "industryCat",
+      "Icon": "steel"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "steel"
+      }
+    ]
+  },
+  {
+    "id": "infrastructureCat",
+    "type": "project-categories",
+    "displayName": "Infrastructure",
+    "icon": "development",
+    "fields": {
+      "Name": "infrastructureCat",
+      "Icon": "development"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "development"
+      }
+    ]
+  },
+  {
+    "id": "consumerGoodsCat",
+    "type": "project-categories",
+    "displayName": "Manufacturing",
+    "icon": "consumerGoods",
+    "fields": {
+      "Name": "consumerGoodsCat",
+      "Icon": "consumerGoods"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "consumerGoods"
+      }
+    ]
+  },
+  {
+    "id": "militaryCat",
+    "type": "project-categories",
+    "displayName": "Military",
+    "icon": "shield",
+    "fields": {
+      "Name": "militaryCat",
+      "Icon": "shield"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shield"
+      }
+    ]
+  },
+  {
+    "id": "robotsCat",
+    "type": "project-categories",
+    "displayName": "Robotics",
+    "icon": "robots",
+    "fields": {
+      "Name": "robotsCat",
+      "Icon": "robots"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "researchCat",
+    "type": "project-categories",
+    "displayName": "Technology",
+    "icon": "research",
+    "fields": {
+      "Name": "researchCat",
+      "Icon": "research"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  },
+  {
+    "id": "wonderCat",
+    "type": "project-categories",
+    "displayName": "Wonders",
+    "icon": "prestige",
+    "fields": {
+      "Name": "wonderCat",
+      "Icon": "prestige"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "prestige"
+      }
+    ]
+  }
+]

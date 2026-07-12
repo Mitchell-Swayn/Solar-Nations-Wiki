@@ -1,0 +1,422 @@
+[
+  {
+    "id": "chauvinism",
+    "type": "ideology-traits",
+    "displayName": "Chauvinism",
+    "fields": {
+      "Name": "chauvinism",
+      "AlignmentR": 0.33,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "clericalDominance",
+    "type": "ideology-traits",
+    "displayName": "Clerical Dominance",
+    "fields": {
+      "Name": "clericalDominance",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "credentialism",
+    "type": "ideology-traits",
+    "displayName": "Credentialism",
+    "fields": {
+      "Name": "credentialism",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deathWorship",
+    "type": "ideology-traits",
+    "displayName": "Death Worship",
+    "fields": {
+      "Name": "deathWorship",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "diplomaticPrimacy",
+    "type": "ideology-traits",
+    "displayName": "Diplomatic Primacy",
+    "fields": {
+      "Name": "diplomaticPrimacy",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "distributism",
+    "type": "ideology-traits",
+    "displayName": "Distributism",
+    "fields": {
+      "Name": "distributism",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "divineEmpire",
+    "type": "ideology-traits",
+    "displayName": "Divine Empire",
+    "fields": {
+      "Name": "divineEmpire",
+      "AlignmentR": 0.5,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "esotericism",
+    "type": "ideology-traits",
+    "displayName": "Esotericism",
+    "fields": {
+      "Name": "esotericism",
+      "AlignmentR": 0.2,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "freeEnterprise",
+    "type": "ideology-traits",
+    "displayName": "Free Enterprise",
+    "fields": {
+      "Name": "freeEnterprise",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "futurism",
+    "type": "ideology-traits",
+    "displayName": "Futurism",
+    "fields": {
+      "Name": "futurism",
+      "AlignmentR": 0.2,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "gleichschaltung",
+    "type": "ideology-traits",
+    "displayName": "Gleichschaltung",
+    "fields": {
+      "Name": "gleichschaltung",
+      "AlignmentR": 0.33,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "idealistic",
+    "type": "ideology-traits",
+    "displayName": "Idealistic",
+    "fields": {
+      "Name": "idealistic",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "imperialism",
+    "type": "ideology-traits",
+    "displayName": "Imperialism",
+    "fields": {
+      "Name": "imperialism",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "infirmocentric",
+    "type": "ideology-traits",
+    "displayName": "Infirmocentric",
+    "fields": {
+      "Name": "infirmocentric",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "interventionism",
+    "type": "ideology-traits",
+    "displayName": "Interventionism",
+    "fields": {
+      "Name": "interventionism",
+      "AlignmentR": 0.1,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "introspective",
+    "type": "ideology-traits",
+    "displayName": "Introspective",
+    "fields": {
+      "Name": "introspective",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "meritocracy",
+    "type": "ideology-traits",
+    "displayName": "Meritocracy",
+    "fields": {
+      "Name": "meritocracy",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "monumentalist",
+    "type": "ideology-traits",
+    "displayName": "Monumentalist",
+    "fields": {
+      "Name": "monumentalist",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "pacifism",
+    "type": "ideology-traits",
+    "displayName": "Pacifism",
+    "fields": {
+      "Name": "pacifism",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "populism",
+    "type": "ideology-traits",
+    "displayName": "Populism",
+    "fields": {
+      "Name": "populism",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "puritySpiral",
+    "type": "ideology-traits",
+    "displayName": "Purity Spiral",
+    "fields": {
+      "Name": "puritySpiral",
+      "AlignmentR": 0.5,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "realistic",
+    "type": "ideology-traits",
+    "displayName": "Realistic",
+    "fields": {
+      "Name": "realistic",
+      "AlignmentR": -0.1,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "repressiveTolerance",
+    "type": "ideology-traits",
+    "displayName": "Repressive Tolerance",
+    "fields": {
+      "Name": "repressiveTolerance",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "stateCapitalism",
+    "type": "ideology-traits",
+    "displayName": "State Capitalism",
+    "fields": {
+      "Name": "stateCapitalism",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "stateWorship",
+    "type": "ideology-traits",
+    "displayName": "State Worship",
+    "fields": {
+      "Name": "stateWorship",
+      "AlignmentR": 0.33,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "subversive",
+    "type": "ideology-traits",
+    "displayName": "Subversion",
+    "fields": {
+      "Name": "subversive",
+      "AlignmentR": 0.33,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "thalassocracy",
+    "type": "ideology-traits",
+    "displayName": "Thalassocracy",
+    "fields": {
+      "Name": "thalassocracy",
+      "AlignmentR": 0,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "universalism",
+    "type": "ideology-traits",
+    "displayName": "Universalism",
+    "fields": {
+      "Name": "universalism",
+      "AlignmentR": -0.1,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "utopianism",
+    "type": "ideology-traits",
+    "displayName": "Utopianism",
+    "fields": {
+      "Name": "utopianism",
+      "AlignmentR": 0.25,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "warmonger",
+    "type": "ideology-traits",
+    "displayName": "Warmonger",
+    "fields": {
+      "Name": "warmonger",
+      "AlignmentR": 0.2,
+      "PossibleEthics": [],
+      "EthicExclusion": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

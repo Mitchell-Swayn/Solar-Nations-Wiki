@@ -1,0 +1,187 @@
+[
+  {
+    "id": "typeCommunist",
+    "type": "government-types",
+    "displayName": "Collectivist",
+    "icon": "communism",
+    "fields": {
+      "Name": "typeCommunist",
+      "Icon": "communism",
+      "Alignment": {
+        "R": 1,
+        "Theta": 180
+      },
+      "RandomOrgNames": [
+        "{adjective} Internationale",
+        "{adjective} Union of Socialist Republics"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Directive",
+        "{benefit} Plan",
+        "{benefit} Order"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communism"
+      }
+    ]
+  },
+  {
+    "id": "typeConservative",
+    "type": "government-types",
+    "displayName": "Conservative",
+    "icon": "conservative",
+    "fields": {
+      "Name": "typeConservative",
+      "Icon": "conservative",
+      "Alignment": {
+        "R": 1,
+        "Theta": 0
+      },
+      "RandomOrgNames": [
+        "{adjective} Defense Alliance",
+        "{adjective} Cultural Union"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Executive Order",
+        "{benefit} Incentives",
+        "{benefit} Program"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "conservative"
+      }
+    ]
+  },
+  {
+    "id": "typeLiberal",
+    "type": "government-types",
+    "displayName": "Libertarian",
+    "icon": "liberal",
+    "fields": {
+      "Name": "typeLiberal",
+      "Icon": "liberal",
+      "Alignment": {
+        "R": 1,
+        "Theta": 60
+      },
+      "RandomOrgNames": [
+        "{adjective} Treaty Organization",
+        "{adjective} Alliance"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Initiative",
+        "{benefit} Program",
+        "{benefit} Incentives"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "liberal"
+      }
+    ]
+  },
+  {
+    "id": "typeProgressive",
+    "type": "government-types",
+    "displayName": "Materialist",
+    "icon": "progressive",
+    "fields": {
+      "Name": "typeProgressive",
+      "Icon": "progressive",
+      "Alignment": {
+        "R": 1,
+        "Theta": 120
+      },
+      "RandomOrgNames": [
+        "{adjective} Defense Union"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Program",
+        "{benefit} Directive",
+        "{benefit} Plan"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "progressive"
+      }
+    ]
+  },
+  {
+    "id": "typeTraditional",
+    "type": "government-types",
+    "displayName": "Spiritualist",
+    "icon": "traditional",
+    "fields": {
+      "Name": "typeTraditional",
+      "Icon": "traditional",
+      "Alignment": {
+        "R": 1,
+        "Theta": 300
+      },
+      "RandomOrgNames": [
+        "{adjective} League",
+        "{adjective} Confederation"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Order",
+        "{benefit} Program",
+        "{benefit} Edict"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  },
+  {
+    "id": "typeFascist",
+    "type": "government-types",
+    "displayName": "Tribalist",
+    "icon": "fascism",
+    "fields": {
+      "Name": "typeFascist",
+      "Icon": "fascism",
+      "Alignment": {
+        "R": 1,
+        "Theta": 240
+      },
+      "RandomOrgNames": [
+        "{adjective} Axis",
+        "{adjective} Strategic Coalescence"
+      ],
+      "RandomPolicyFormats": [
+        "{benefit} Order",
+        "{benefit} Edict",
+        "{benefit} Directive"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fascism"
+      }
+    ]
+  }
+]

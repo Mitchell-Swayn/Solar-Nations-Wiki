@@ -1,0 +1,191 @@
+[
+  {
+    "id": "cedeProvince",
+    "type": "situation-goals",
+    "displayName": "Cede Province",
+    "icon": "alliance",
+    "fields": {
+      "Name": "cedeProvince",
+      "Scalar": "GoalScalar::NewEnumerator0",
+      "Iteration": "tradeObjective::NewEnumerator1",
+      "Acceptance": 25,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "alliance",
+      "Visible": false,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "cedeRegion",
+    "type": "situation-goals",
+    "displayName": "Cede Region",
+    "icon": "territory",
+    "fields": {
+      "Name": "cedeRegion",
+      "Scalar": "GoalScalar::NewEnumerator0",
+      "Iteration": "tradeObjective::NewEnumerator2",
+      "Acceptance": 25,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "territory",
+      "Visible": true,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "territory"
+      }
+    ]
+  },
+  {
+    "id": "humiliate",
+    "type": "situation-goals",
+    "displayName": "Humiliate",
+    "icon": "rivalry",
+    "fields": {
+      "Name": "humiliate",
+      "Scalar": "GoalScalar::NewEnumerator0",
+      "Iteration": "tradeObjective::NewEnumerator3",
+      "Acceptance": 0,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "rivalry",
+      "Visible": true,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rivalry"
+      }
+    ]
+  },
+  {
+    "id": "joinOrg",
+    "type": "situation-goals",
+    "displayName": "Join Org",
+    "icon": "alliance",
+    "fields": {
+      "Name": "joinOrg",
+      "Scalar": "GoalScalar::NewEnumerator2",
+      "Iteration": "tradeObjective::NewEnumerator0",
+      "Acceptance": 1,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "alliance",
+      "Visible": true,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "leaveOrg",
+    "type": "situation-goals",
+    "displayName": "Leave Org",
+    "icon": "retreat",
+    "fields": {
+      "Name": "leaveOrg",
+      "Scalar": "GoalScalar::NewEnumerator2",
+      "Iteration": "tradeObjective::NewEnumerator0",
+      "Acceptance": 1,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "retreat",
+      "Visible": true,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "retreat"
+      }
+    ]
+  },
+  {
+    "id": "peace",
+    "type": "situation-goals",
+    "displayName": "Peace",
+    "icon": "diplomat",
+    "fields": {
+      "Name": "peace",
+      "Scalar": "GoalScalar::NewEnumerator0",
+      "Iteration": "tradeObjective::NewEnumerator3",
+      "Acceptance": 0,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "diplomat",
+      "Visible": false,
+      "Demand": true,
+      "Concession": false,
+      "FlagReq": "war"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomat"
+      }
+    ]
+  },
+  {
+    "id": "warReps",
+    "type": "situation-goals",
+    "displayName": "War Reps",
+    "icon": "dollars",
+    "fields": {
+      "Name": "warReps",
+      "Scalar": "GoalScalar::NewEnumerator2",
+      "Iteration": "tradeObjective::NewEnumerator3",
+      "Acceptance": 1,
+      "ReputationCost": 0,
+      "StabilityCost": 0,
+      "Icon": "dollars",
+      "Visible": true,
+      "Demand": true,
+      "Concession": true,
+      "FlagReq": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "dollars"
+      }
+    ]
+  }
+]

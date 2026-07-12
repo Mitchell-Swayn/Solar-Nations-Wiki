@@ -25,16 +25,39 @@ This runs:
 1. **`retoc unpack`** — extracts raw `.uasset` files to `data/raw/unpacked/` (first run only, ~6 GB)
 2. **`retoc to-legacy`** — converts define assets to legacy `.uexp` format in `data/raw/legacy-all/`
 3. **`tools/parse_legacy.py`** — parses binary exports into `data/raw/Defines/*.json` and `data/raw/Localization/en.json`
-4. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
+4. **CUE4Parse full export** (when `tools/jmap_dumper/mappings.usmap` and the .NET SDK are present) — `tools/cue4-export` dumps every define DataTable with complete property values to `data/raw/DefinesFull/`, and `tools/convert_full_defines.py` rewrites them over `data/raw/Defines/` in the tutorialMod convention
+5. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
 
-Current automated output: **1,095 verified define rows**, including 41 deposits, and **4,000+ localization keys**. Normalization adds tutorial modifier and mission-component definitions for **1,310 wiki entries** total. This includes one extracted modifier definition (`characterQuality`) absent from the tutorial catalog. Earlier versions reported larger counts because schema fields and cross-table references were incorrectly treated as rows.
+With the full export active, all ~85 define tables are extracted with exact field names and values (planet physics, culture traits, policies, edicts, missions, espionage operations, and more), producing 3,000+ wiki pages across 70+ categories.
+
+### Generating `mappings.usmap` on macOS
+
+UE 5.7 unversioned properties require a mappings file. It can be dumped from the running game under CrossOver:
+
+```bash
+CXBIN="/Applications/Games/CrossOver.app/Contents/SharedSupport/CrossOver/bin"
+# 1. Launch the game
+"$CXBIN/wine" --bottle Steam "C:\\...\\twilightModernity-Win64-Shipping.exe"
+# 2. Find the Windows PID
+"$CXBIN/wine" --bottle Steam cmd /c tasklist | grep twilight
+# 3. Attach the dumper (from tools/jmap_dumper)
+"$CXBIN/wine" --bottle Steam --wait-children "Z:\\...\\tools\\jmap_dumper\\jmap_dumper.exe" --pid <PID> "Z:\\...\\tools\\jmap_dumper\\mappings.usmap"
+```
+
+Re-dump after each game patch. The CUE4Parse exporter needs the .NET SDK (`brew install dotnet`).
+
+Current automated output with the full CUE4Parse export: **~3,000 define rows across 85 tables** and **4,000+ localization keys**, normalized into 70+ wiki categories. Without a `.usmap`, the legacy parser alone yields 1,095 verified rows (row identities plus reliably-decoded fields).
 
 ### Limitations of automated extraction
 
-- **Modifier keys** on reform options and some complex types use indexed keys (`modifier_0`, `modifier_1`) until a `.usmap` mappings file is available
+Without `mappings.usmap` (legacy parser only):
+
+- **Modifier keys** on reform options and some complex types use indexed keys (`modifier_0`, `modifier_1`)
 - **Numeric fields** (tech cost, prerequisites, coordinates) are not fully decoded without UE property mappings
-- **Deposits** currently include row names and icons, but their structured modifiers, colors, and special flags still require property mappings
-- **Row identity is validated**, but complete structured values still require a compatible `.usmap`; the parser intentionally omits fields it cannot identify reliably
+- **Deposits** include row names and icons, but not structured modifiers, colors, and special flags
+- **Row identity is validated**, but the parser intentionally omits fields it cannot identify reliably
+
+With `mappings.usmap`, none of these limitations apply — the CUE4Parse export decodes every property exactly.
 
 Culture idea effects are decoded directly from the legacy name map and serialized modifier records. The parser preserves modifier keys, numeric values, up to three targets, and whether each effect is primary or regional.
 
@@ -69,7 +92,7 @@ Export these define types as JSON:
 - `Factions`, `Technologies`, `Resources`, `Projects`, `Events`, `Eras`
 - `CultureTraits`, `CharacterTraits`, `CharacterJobs`
 - `GovernmentReforms`, `GovernmentReformOptions`
-- `UnitComponents`, `Deposits`, `DepositResources`
+- `UnitComponents`, `Deposits`, `DepositResources`, `Planets`
 - `Situations`, `StaticModifiers`, `FactionVariants`
 
 Place exports in:

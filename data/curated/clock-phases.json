@@ -1,0 +1,95 @@
+[
+  {
+    "id": "firstTurning",
+    "type": "clock-phases",
+    "displayName": "First Turning",
+    "fields": {
+      "Name": "firstTurning",
+      "Start": 0,
+      "End": 6
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": -5
+      },
+      {
+        "key": "warExhaustionMult",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "fourthTurning",
+    "type": "clock-phases",
+    "displayName": "Fourth Turning",
+    "fields": {
+      "Name": "fourthTurning",
+      "Start": 18,
+      "End": 24
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": -20
+      },
+      {
+        "key": "stabilityGainFrom",
+        "value1": "soldier",
+        "value": 2
+      },
+      {
+        "key": "warExhaustionMult",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "secondTurning",
+    "type": "clock-phases",
+    "displayName": "Second Turning",
+    "fields": {
+      "Name": "secondTurning",
+      "Start": 6,
+      "End": 12
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 15
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "thirdTurning",
+    "type": "clock-phases",
+    "displayName": "Third Turning",
+    "fields": {
+      "Name": "thirdTurning",
+      "Start": 12,
+      "End": 18
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.25
+      },
+      {
+        "key": "warExhaustionMult",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

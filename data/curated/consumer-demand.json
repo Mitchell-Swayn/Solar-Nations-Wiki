@@ -1,0 +1,211 @@
+[
+  {
+    "id": "1",
+    "type": "consumer-demand",
+    "displayName": "1",
+    "fields": {
+      "Name": "1",
+      "Resources": {
+        "grain": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "10",
+    "type": "consumer-demand",
+    "displayName": "10",
+    "fields": {
+      "Name": "10",
+      "Resources": {
+        "consumer_goods": 6,
+        "electronics": 1,
+        "grain": 2,
+        "energy": 100,
+        "geneticMaterial": 0.02,
+        "neuralNetworks": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "11",
+    "type": "consumer-demand",
+    "displayName": "11",
+    "fields": {
+      "Name": "11",
+      "Resources": {
+        "consumer_goods": 6,
+        "electronics": 2,
+        "grain": 2,
+        "energy": 200,
+        "geneticMaterial": 0.02,
+        "neuralNetworks": 0.01,
+        "airplanes": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "12",
+    "type": "consumer-demand",
+    "displayName": "12",
+    "fields": {
+      "Name": "12",
+      "Resources": {
+        "consumer_goods": 6,
+        "electronics": 4,
+        "grain": 2,
+        "energy": 600,
+        "geneticMaterial": 0.02,
+        "neuralNetworks": 0.1,
+        "airplanes": 0.02
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "2",
+    "type": "consumer-demand",
+    "displayName": "2",
+    "fields": {
+      "Name": "2",
+      "Resources": {
+        "steel": 0.4,
+        "grain": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "3",
+    "type": "consumer-demand",
+    "displayName": "3",
+    "fields": {
+      "Name": "3",
+      "Resources": {
+        "grain": 2,
+        "steel": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "4",
+    "type": "consumer-demand",
+    "displayName": "4",
+    "fields": {
+      "Name": "4",
+      "Resources": {
+        "consumer_goods": 0.1,
+        "grain": 2,
+        "steel": 2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "5",
+    "type": "consumer-demand",
+    "displayName": "5",
+    "fields": {
+      "Name": "5",
+      "Resources": {
+        "consumer_goods": 0.6,
+        "steel": 2,
+        "grain": 2,
+        "energy": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "6",
+    "type": "consumer-demand",
+    "displayName": "6",
+    "fields": {
+      "Name": "6",
+      "Resources": {
+        "consumer_goods": 1,
+        "electronics": 0.1,
+        "grain": 2,
+        "geneticMaterial": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "7",
+    "type": "consumer-demand",
+    "displayName": "7",
+    "fields": {
+      "Name": "7",
+      "Resources": {
+        "consumer_goods": 2,
+        "electronics": 0.1,
+        "grain": 2,
+        "energy": 8,
+        "geneticMatieral": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "8",
+    "type": "consumer-demand",
+    "displayName": "8",
+    "fields": {
+      "Name": "8",
+      "Resources": {
+        "consumer_goods": 4,
+        "electronics": 0.2,
+        "grain": 2,
+        "energy": 20,
+        "geneticMaterial": 0.02,
+        "neuralNetworks": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "9",
+    "type": "consumer-demand",
+    "displayName": "9",
+    "fields": {
+      "Name": "9",
+      "Resources": {
+        "consumer_goods": 6,
+        "electronics": 0.6,
+        "grain": 2,
+        "energy": 40,
+        "geneticMaterial": 0.02,
+        "neuralNetworks": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

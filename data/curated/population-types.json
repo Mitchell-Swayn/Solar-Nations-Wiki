@@ -1,0 +1,342 @@
+[
+  {
+    "id": "bureaucrat",
+    "type": "population-types",
+    "displayName": "Bureaucrat",
+    "fields": {
+      "Name": "bureaucrat",
+      "BaseWeight": 3,
+      "PromotionChance": 1,
+      "WageWeight": 2,
+      "Stratum": "PopStrataEnum::NewEnumerator1",
+      "Color": {
+        "R": 0.5,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "BC0000"
+      },
+      "DevelopmentOffset": 0.6,
+      "OptimalPercent": 1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 2,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "bureaucracy",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "child",
+    "type": "population-types",
+    "displayName": "Child",
+    "fields": {
+      "Name": "child",
+      "BaseWeight": 0,
+      "PromotionChance": 0,
+      "WageWeight": 0,
+      "Stratum": "PopStrataEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.20395,
+        "G": 0.935344,
+        "B": 0.947917,
+        "A": 1,
+        "Hex": "7DF8FA"
+      },
+      "DevelopmentOffset": 0,
+      "OptimalPercent": 1,
+      "IsDependent": true,
+      "Produces": [],
+      "PoliticalWeightBase": -100,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "popDemandMult",
+        "value": 2,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dependent",
+    "type": "population-types",
+    "displayName": "Dependent",
+    "fields": {
+      "Name": "dependent",
+      "BaseWeight": 0,
+      "PromotionChance": 0,
+      "WageWeight": 0,
+      "Stratum": "PopStrataEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.513889,
+        "G": 0.093058,
+        "B": 0.447295,
+        "A": 1,
+        "Hex": "BE56B3"
+      },
+      "DevelopmentOffset": 0,
+      "OptimalPercent": 0.4,
+      "IsDependent": true,
+      "Produces": [],
+      "PoliticalWeightBase": 0,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "elderly",
+    "type": "population-types",
+    "displayName": "Elderly",
+    "fields": {
+      "Name": "elderly",
+      "BaseWeight": 0,
+      "PromotionChance": 0,
+      "WageWeight": 0,
+      "Stratum": "PopStrataEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.375,
+        "G": 0.375,
+        "B": 0.375,
+        "A": 1,
+        "Hex": "A5A5A5"
+      },
+      "DevelopmentOffset": 0,
+      "OptimalPercent": 0.3,
+      "IsDependent": true,
+      "Produces": [],
+      "PoliticalWeightBase": 1.5,
+      "IndustrialCap": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "engineer",
+    "type": "population-types",
+    "displayName": "Engineer",
+    "fields": {
+      "Name": "engineer",
+      "BaseWeight": 1,
+      "PromotionChance": 0.1,
+      "WageWeight": 1,
+      "Stratum": "PopStrataEnum::NewEnumerator1",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0.5,
+        "A": 1,
+        "Hex": "0000BC"
+      },
+      "DevelopmentOffset": 1,
+      "OptimalPercent": 1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 2,
+      "IndustrialCap": 2
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "middleClass",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "incompetent",
+    "type": "population-types",
+    "displayName": "Incompetent",
+    "fields": {
+      "Name": "incompetent",
+      "BaseWeight": 1,
+      "PromotionChance": 1,
+      "WageWeight": 0,
+      "Stratum": "PopStrataEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.128472,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "640000"
+      },
+      "DevelopmentOffset": -0.75,
+      "OptimalPercent": 1,
+      "IsDependent": true,
+      "Produces": [],
+      "PoliticalWeightBase": -0.25,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "unrestAdd",
+        "value": 2,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "intellectual",
+    "type": "population-types",
+    "displayName": "Intellectual",
+    "fields": {
+      "Name": "intellectual",
+      "BaseWeight": 3,
+      "PromotionChance": 0.1,
+      "WageWeight": 1,
+      "Stratum": "PopStrataEnum::NewEnumerator2",
+      "Color": {
+        "R": 0.6,
+        "G": 0,
+        "B": 0.6,
+        "A": 1,
+        "Hex": "CC00CC"
+      },
+      "DevelopmentOffset": 0,
+      "OptimalPercent": 0.1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 4,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "clergy",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "laborer",
+    "type": "population-types",
+    "displayName": "Rural Laborers",
+    "fields": {
+      "Name": "laborer",
+      "BaseWeight": 86,
+      "PromotionChance": 1,
+      "WageWeight": 1,
+      "Stratum": "PopStrataEnum::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.5,
+        "B": 0.5,
+        "A": 1,
+        "Hex": "00BCBC"
+      },
+      "DevelopmentOffset": 0,
+      "OptimalPercent": 1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 0.25,
+      "IndustrialCap": 1
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "laborer",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "soldier",
+    "type": "population-types",
+    "displayName": "Soldier",
+    "fields": {
+      "Name": "soldier",
+      "BaseWeight": 2,
+      "PromotionChance": 0.05,
+      "WageWeight": 1,
+      "Stratum": "PopStrataEnum::NewEnumerator1",
+      "Color": {
+        "R": 0,
+        "G": 0.5,
+        "B": 0.285886,
+        "A": 1,
+        "Hex": "00BC92"
+      },
+      "DevelopmentOffset": 0.8,
+      "OptimalPercent": 1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 2,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "military",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "upperClass",
+    "type": "population-types",
+    "displayName": "Upper Class",
+    "fields": {
+      "Name": "upperClass",
+      "BaseWeight": 1,
+      "PromotionChance": 0.33,
+      "WageWeight": 25,
+      "Stratum": "PopStrataEnum::NewEnumerator2",
+      "Color": {
+        "R": 0,
+        "G": 0.6,
+        "B": 0,
+        "A": 1,
+        "Hex": "00CC00"
+      },
+      "DevelopmentOffset": 3,
+      "OptimalPercent": 0.1,
+      "IsDependent": false,
+      "Produces": [],
+      "PoliticalWeightBase": 20,
+      "IndustrialCap": 0
+    },
+    "modifiers": [
+      {
+        "key": "politicalEvolutionChance",
+        "value1": "upperClass",
+        "value": 1,
+        "scope": "Region"
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

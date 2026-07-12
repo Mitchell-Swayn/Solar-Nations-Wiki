@@ -1,0 +1,67 @@
+[
+  {
+    "id": "heritage",
+    "type": "culture-trait-categories",
+    "displayName": "Heritage",
+    "fields": {
+      "Name": "heritage",
+      "ChangeCost": 50,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "idea",
+    "type": "culture-trait-categories",
+    "displayName": "Idea",
+    "fields": {
+      "Name": "idea",
+      "ChangeCost": 10,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "religion",
+    "type": "culture-trait-categories",
+    "displayName": "Religion",
+    "fields": {
+      "Name": "religion",
+      "ChangeCost": 20,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "species",
+    "type": "culture-trait-categories",
+    "displayName": "Species",
+    "fields": {
+      "Name": "species",
+      "ChangeCost": 999,
+      "CanChange": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "trait",
+    "type": "culture-trait-categories",
+    "displayName": "Trait",
+    "fields": {
+      "Name": "trait",
+      "ChangeCost": 10,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,0 +1,835 @@
+[
+  {
+    "id": "heritage_atheist",
+    "type": "religion-traits",
+    "displayName": "Heritage Atheist",
+    "icon": "atheist",
+    "fields": {
+      "Name": "heritage_atheist",
+      "Icon": "atheist",
+      "PopBeneficiary": "None",
+      "LocationTheta": 90,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "atheistSkepticism",
+          "PrimaryModifier": {
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "atheistMaterialism",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"resourceCapacityMult\",Value1=\"industry\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "atheistPolitics",
+          "PrimaryModifier": {
+            "(Key=\"factionPowerAdd\",Value1=\"middleClass\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "atheistWorldliness",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"resourceModifier\",Value1=\"consumerGoods\",Value2=\"\",Value3=\"\")": 1
+          }
+        },
+        {
+          "Name": "atheistEducation",
+          "PrimaryModifier": {
+            "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "atheistHumanism",
+          "PrimaryModifier": {
+            "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "atheistScientism",
+          "PrimaryModifier": {
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": -0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atheist"
+      }
+    ]
+  },
+  {
+    "id": "heritage_christian",
+    "type": "religion-traits",
+    "displayName": "Heritage Christian",
+    "icon": "christian",
+    "fields": {
+      "Name": "heritage_christian",
+      "Icon": "christian",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "christianityPiety",
+          "PrimaryModifier": {
+            "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.005
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "christianityDevotion",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "christianityWorship",
+          "PrimaryModifier": {
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "christianityUnity",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2,
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+          }
+        },
+        {
+          "Name": "christianityTithes",
+          "PrimaryModifier": {
+            "(Key=\"factionLoyaltyAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"sliderMaxAdd\",Value1=\"incomeTax\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": {
+            "(Key=\"politicalPowerAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "christianityConversions",
+          "PrimaryModifier": {
+            "(Key=\"assimilationMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "christianityDeusVult",
+          "PrimaryModifier": {
+            "(Key=\"warExhaustionMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2,
+            "(Key=\"unitAttackMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"siegeAbility\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_christian",
+        "value": 1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "christian"
+      }
+    ]
+  },
+  {
+    "id": "heritage_hindu",
+    "type": "religion-traits",
+    "displayName": "Heritage Hindu",
+    "icon": "hindu",
+    "fields": {
+      "Name": "heritage_hindu",
+      "Icon": "hindu",
+      "PopBeneficiary": "None",
+      "LocationTheta": 270,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "hinduismReincarnation",
+          "PrimaryModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "hinduismCastes",
+          "PrimaryModifier": {
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": {
+            "(Key=\"politicalPowerAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "hinduismCommunity",
+          "PrimaryModifier": {
+            "(Key=\"warExhaustionMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "hinduismSpiritualism",
+          "PrimaryModifier": {
+            "(Key=\"cultureIdeaCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "hinduismCulture",
+          "PrimaryModifier": {
+            "(Key=\"resourceCapacityAdd\",Value1=\"diplomacyCapacity\",Value2=\"\",Value3=\"\")": 50
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "hinduismPolytheism",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"carryingCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+          }
+        },
+        {
+          "Name": "hinduismMastery",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"factionLoyaltyAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "integrationCostMult",
+        "value": 0.25,
+        "scope": "Empire"
+      },
+      {
+        "key": "popGrowthMult",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_hindu",
+        "value": 1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "hindu"
+      }
+    ]
+  },
+  {
+    "id": "heritage_islamic",
+    "type": "religion-traits",
+    "displayName": "Heritage Islamic",
+    "icon": "islam",
+    "fields": {
+      "Name": "heritage_islamic",
+      "Icon": "islam",
+      "PopBeneficiary": "None",
+      "LocationTheta": 300,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "islamQuran",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "islamFanaticism",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"politicalPowerAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.2
+          }
+        },
+        {
+          "Name": "islamSubmission",
+          "PrimaryModifier": {
+            "(Key=\"factionPowerAdd\",Value1=\"middleClass\",Value2=\"\",Value3=\"\")": -0.05,
+            "(Key=\"factionPowerAdd\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": -0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "islamWorship",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+          }
+        },
+        {
+          "Name": "islamTerror",
+          "PrimaryModifier": {
+            "(Key=\"unitAttackMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2,
+            "(Key=\"unitStatMult\",Value1=\"health\",Value2=\"\",Value3=\"\")": -0.15
+          },
+          "RegionModifier": {
+            "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01
+          }
+        },
+        {
+          "Name": "islamUnification",
+          "PrimaryModifier": {
+            "(Key=\"unitSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "islamGlobalIntifada",
+          "PrimaryModifier": {
+            "(Key=\"integrationCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_islamic",
+        "value": 1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "islam"
+      }
+    ]
+  },
+  {
+    "id": "heritage_jewish",
+    "type": "religion-traits",
+    "displayName": "Heritage Jewish",
+    "icon": "jewish",
+    "fields": {
+      "Name": "heritage_jewish",
+      "Icon": "jewish",
+      "PopBeneficiary": "None",
+      "LocationTheta": 330,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "judaismUsury",
+          "PrimaryModifier": {
+            "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "judaismConviction",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"politicalPowerAdd\",Value1=\"clergy\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"politicalPowerAdd\",Value1=\"upperClass\",Value2=\"\",Value3=\"\")": 0.05
+          }
+        },
+        {
+          "Name": "judaismMonotheism",
+          "PrimaryModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "judaismOrganization",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "judaismInternationalism",
+          "PrimaryModifier": {
+            "(Key=\"resourceCapacityAdd\",Value1=\"diplomacyCapacity\",Value2=\"\",Value3=\"\")": 100
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "judaismAncients",
+          "PrimaryModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "judaismChosen",
+          "PrimaryModifier": {
+            "(Key=\"integrationCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"factionLoyaltyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_jewish",
+        "value": 1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "jewish"
+      }
+    ]
+  },
+  {
+    "id": "heritage_marxist",
+    "type": "religion-traits",
+    "displayName": "Heritage Marxist",
+    "icon": "communist",
+    "fields": {
+      "Name": "heritage_marxist",
+      "Icon": "communist",
+      "PopBeneficiary": "None",
+      "LocationTheta": 180,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "marxismEquity",
+          "PrimaryModifier": {
+            "(Key=\"factionPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "marxismPraxis",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          }
+        },
+        {
+          "Name": "marxismRevolution",
+          "PrimaryModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05,
+            "(Key=\"unitAttackMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "marxismClassWar",
+          "PrimaryModifier": {
+            "(Key=\"factionLoyaltyAdd\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"factionLoyaltyAdd\",Value1=\"upperClass\",Value2=\"\",Value3=\"\")": -0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "marxismInternationale",
+          "PrimaryModifier": {
+            "(Key=\"resourceCapacityAdd\",Value1=\"diplomacyCapacity\",Value2=\"\",Value3=\"\")": 75
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "marxismMaterialism",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.33,
+            "(Key=\"politicalPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "marxismStruggleSession",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15,
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "factionVariant",
+        "value1": "clergy",
+        "value2": "clergy_communist",
+        "value": 1,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communist"
+      }
+    ]
+  },
+  {
+    "id": "heritage_occult",
+    "type": "religion-traits",
+    "displayName": "Heritage Occult",
+    "icon": "occult",
+    "fields": {
+      "Name": "heritage_occult",
+      "Icon": "occult",
+      "PopBeneficiary": "None",
+      "LocationTheta": 120,
+      "LocationR": 200,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "heritage",
+      "ListCategory": "None",
+      "Ideas": [
+        {
+          "Name": "occultRitual",
+          "PrimaryModifier": {
+            "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "occultMagic",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"fortDefense\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+          }
+        },
+        {
+          "Name": "occultEvil",
+          "PrimaryModifier": {
+            "(Key=\"factionPowerAdd\",Value1=\"corporate\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "occultElitism",
+          "PrimaryModifier": {
+            "(Key=\"factionLoyaltyAdd\",Value1=\"corporate\",Value2=\"\",Value3=\"\")": 0.1
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "occultIdeology",
+          "PrimaryModifier": {
+            "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+          },
+          "RegionModifier": []
+        },
+        {
+          "Name": "occultUnion",
+          "PrimaryModifier": [],
+          "RegionModifier": {
+            "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+          }
+        },
+        {
+          "Name": "occultForbiddenKnowledge",
+          "PrimaryModifier": {
+            "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.33,
+            "(Key=\"stabilityGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+          },
+          "RegionModifier": []
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1,
+        "scope": "Region"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2,
+        "scope": "Empire"
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "occult"
+      }
+    ]
+  },
+  {
+    "id": "tenet_chosenPeople",
+    "type": "religion-traits",
+    "displayName": "Tenet Chosen People",
+    "icon": "",
+    "fields": {
+      "Name": "tenet_chosenPeople",
+      "Icon": "",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 0,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "idea",
+      "ListCategory": "None",
+      "Ideas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "tenet_papacy",
+    "type": "religion-traits",
+    "displayName": "Tenet Papacy",
+    "icon": "",
+    "fields": {
+      "Name": "tenet_papacy",
+      "Icon": "",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 0,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "idea",
+      "ListCategory": "None",
+      "Ideas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "tenet_pilgrimage",
+    "type": "religion-traits",
+    "displayName": "Tenet Pilgrimage",
+    "icon": "",
+    "fields": {
+      "Name": "tenet_pilgrimage",
+      "Icon": "",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 0,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "idea",
+      "ListCategory": "None",
+      "Ideas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "tenet_syncretic",
+    "type": "religion-traits",
+    "displayName": "Tenet Syncretic",
+    "icon": "",
+    "fields": {
+      "Name": "tenet_syncretic",
+      "Icon": "",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 0,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "idea",
+      "ListCategory": "None",
+      "Ideas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "tenet_warlike",
+    "type": "religion-traits",
+    "displayName": "Tenet Warlike",
+    "icon": "",
+    "fields": {
+      "Name": "tenet_warlike",
+      "Icon": "",
+      "PopBeneficiary": "None",
+      "LocationTheta": 0,
+      "LocationR": 0,
+      "Prerequisite": [],
+      "Exclusive": [],
+      "Category": "idea",
+      "ListCategory": "None",
+      "Ideas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

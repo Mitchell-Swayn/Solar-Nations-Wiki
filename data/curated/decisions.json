@@ -1,0 +1,132 @@
+[
+  {
+    "id": "terraformingMars",
+    "type": "decisions",
+    "displayName": "Terraforming Mars",
+    "fields": {
+      "Name": "terraformingMars",
+      "VisibleCondition": [
+        {
+          "Type": "isPlanetController",
+          "Args": [
+            "mars"
+          ]
+        }
+      ],
+      "Mission": {
+        "Name": "Mars Terraforming: Atmospherics",
+        "Icon": "terraforming",
+        "OwnerFaction": "None",
+        "Conditions": [
+          {
+            "Type": "hasPlanetProjects",
+            "Args": [
+              "mars",
+              "atmosformer",
+              "3"
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Type": "terraformPlanet",
+            "Args": [
+              "mars",
+              "mars_terraform1"
+            ]
+          },
+          {
+            "Type": "addStability",
+            "Args": [
+              "5"
+            ]
+          },
+          {
+            "Type": "addMission",
+            "Args": [
+              "marsTerraform2"
+            ]
+          },
+          {
+            "Type": "spawnNotification",
+            "Args": [
+              "terraformNotification",
+              "mars",
+              "atmospheric"
+            ]
+          }
+        ],
+        "StartTime": 0,
+        "Type": "terraformingMars"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "terraformingVenus",
+    "type": "decisions",
+    "displayName": "Terraforming Venus",
+    "fields": {
+      "Name": "terraformingVenus",
+      "VisibleCondition": [
+        {
+          "Type": "isPlanetController",
+          "Args": [
+            "venus"
+          ]
+        }
+      ],
+      "Mission": {
+        "Name": "Venus Terraforming: Atmospherics",
+        "Icon": "terraforming",
+        "OwnerFaction": "None",
+        "Conditions": [
+          {
+            "Type": "hasPlanetProjects",
+            "Args": [
+              "venus",
+              "atmosformer",
+              "10"
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Type": "terraformPlanet",
+            "Args": [
+              "venus",
+              "venus_terraform1"
+            ]
+          },
+          {
+            "Type": "addStability",
+            "Args": [
+              "5"
+            ]
+          },
+          {
+            "Type": "addMission",
+            "Args": [
+              "venusTerraform2"
+            ]
+          },
+          {
+            "Type": "spawnNotification",
+            "Args": [
+              "terraformNotification",
+              "venus",
+              "atmospheric"
+            ]
+          }
+        ],
+        "StartTime": 0,
+        "Type": "terraformingVenus"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

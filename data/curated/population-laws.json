@@ -1,0 +1,47 @@
+[
+  {
+    "id": "familyPolicy",
+    "type": "population-laws",
+    "displayName": "Family Policy",
+    "fields": {
+      "Name": "familyPolicy",
+      "Options": [
+        "familyPolicy_natalism",
+        "familyPolicy_default",
+        "familyPolicy_abortion",
+        "familyPolicy_neutering"
+      ],
+      "StabilityCost": 5,
+      "DefaultOption": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "livingStandards",
+    "type": "population-laws",
+    "displayName": "Living Standards",
+    "fields": {
+      "Name": "livingStandards",
+      "Options": [
+        "livingStandards_extermination",
+        "livingStandards_forcedLabor",
+        "livingStandards_reeducation",
+        "livingStandards_massDeportation",
+        "livingStandards_rationing",
+        "livingStandards_default",
+        "livingStandards_welfare",
+        "livingStandards_capitalism",
+        "livingStandards_postScarcity",
+        "livingStandards_academicPrivilege",
+        "livingStandards_ultimateLiberty"
+      ],
+      "StabilityCost": 5,
+      "DefaultOption": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

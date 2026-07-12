@@ -1,0 +1,41 @@
+[
+  {
+    "id": "heritage",
+    "type": "religion-trait-categories",
+    "displayName": "Heritage",
+    "fields": {
+      "Name": "heritage",
+      "ChangeCost": 999,
+      "CanChange": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tene",
+    "type": "religion-trait-categories",
+    "displayName": "Tene",
+    "fields": {
+      "Name": "tene",
+      "ChangeCost": 25,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "trait",
+    "type": "religion-trait-categories",
+    "displayName": "Trait",
+    "fields": {
+      "Name": "trait",
+      "ChangeCost": 10,
+      "CanChange": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

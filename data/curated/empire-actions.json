@@ -1,0 +1,110 @@
+[
+  {
+    "id": "damageRelation",
+    "type": "empire-actions",
+    "displayName": "Damage Relations",
+    "icon": "damageRelation",
+    "fields": {
+      "Name": "damageRelation",
+      "Icon": "damageRelation",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Priority": 0,
+      "Diplocost": 50
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "damageRelation"
+      }
+    ]
+  },
+  {
+    "id": "guaranteeIndependence",
+    "type": "empire-actions",
+    "displayName": "Guarantee Independence",
+    "icon": "guaranteeIndependence",
+    "fields": {
+      "Name": "guaranteeIndependence",
+      "Icon": "guaranteeIndependence",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Priority": 0,
+      "Diplocost": 100
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "guaranteeIndependence"
+      }
+    ]
+  },
+  {
+    "id": "improveRelation",
+    "type": "empire-actions",
+    "displayName": "Improve Relations",
+    "icon": "improveRelation",
+    "fields": {
+      "Name": "improveRelation",
+      "Icon": "improveRelation",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Priority": 0,
+      "Diplocost": 100
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "improveRelation"
+      }
+    ]
+  },
+  {
+    "id": "spying",
+    "type": "empire-actions",
+    "displayName": "Spying",
+    "icon": "militaryDoctrine_softPower",
+    "fields": {
+      "Name": "spying",
+      "Icon": "militaryDoctrine_softPower",
+      "Color": {
+        "R": 0.302772,
+        "G": 0.027584,
+        "B": 0.519097,
+        "A": 1,
+        "Hex": "962EBF"
+      },
+      "Priority": 0,
+      "Diplocost": 50
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryDoctrine_softPower"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "adminEfficiency",
+    "type": "policy-options",
+    "displayName": "Administration",
+    "fields": {
+      "Name": "adminEfficiency",
+      "BenefitEnabled": true,
+      "CostEnabled": true,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aerialPrimacy",
+    "type": "policy-options",
+    "displayName": "Aerial Primacy",
+    "fields": {
+      "Name": "aerialPrimacy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "interceptor",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "interceptor",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "armorPrimacy",
+    "type": "policy-options",
+    "displayName": "Armor Primacy",
+    "fields": {
+      "Name": "armorPrimacy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "tank",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "tank",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyBureaucracy",
+    "type": "policy-options",
+    "displayName": "Bureaucratic Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyBureaucracy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceModifierCommerce",
+    "type": "policy-options",
+    "displayName": "Commercial Production",
+    "fields": {
+      "Name": "resourceModifierCommerce",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "consumerGoodsFactory",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyCorporate",
+    "type": "policy-options",
+    "displayName": "Corporate Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyCorporate",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "corporate"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deathRate",
+    "type": "policy-options",
+    "displayName": "Death Rate",
+    "fields": {
+      "Name": "deathRate",
+      "BenefitEnabled": false,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "popAttrition",
+        "value": -0.001
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "economicOutput",
+    "type": "policy-options",
+    "displayName": "Development Equilibrium",
+    "fields": {
+      "Name": "economicOutput",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "developmentGrowth",
+    "type": "policy-options",
+    "displayName": "Development Growth",
+    "fields": {
+      "Name": "developmentGrowth",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "developmentGrowthMult",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "edictBenefit",
+    "type": "policy-options",
+    "displayName": "Edict Benefit",
+    "fields": {
+      "Name": "edictBenefit",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "edictBenefitMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "edictCost",
+    "type": "policy-options",
+    "displayName": "Edict Cost",
+    "fields": {
+      "Name": "edictCost",
+      "BenefitEnabled": false,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "edictCostMult",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "educationEff",
+    "type": "policy-options",
+    "displayName": "Education Efficiency",
+    "fields": {
+      "Name": "educationEff",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyUpperClass",
+    "type": "policy-options",
+    "displayName": "Elite Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyUpperClass",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "reformCost",
+    "type": "policy-options",
+    "displayName": "Government Reform",
+    "fields": {
+      "Name": "reformCost",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "reformCostMult",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyClergy",
+    "type": "policy-options",
+    "displayName": "Ideological Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyClergy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "clergy",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "industryCapacity",
+    "type": "policy-options",
+    "displayName": "Industrial Capacity",
+    "fields": {
+      "Name": "industryCapacity",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceModifierIndustry",
+    "type": "policy-options",
+    "displayName": "Industrial Production",
+    "fields": {
+      "Name": "resourceModifierIndustry",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "factory",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "infantryPrimacy",
+    "type": "policy-options",
+    "displayName": "Infantry Primacy",
+    "fields": {
+      "Name": "infantryPrimacy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "infantry",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "infantry",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "influenceCapacity",
+    "type": "policy-options",
+    "displayName": "Influence",
+    "fields": {
+      "Name": "influenceCapacity",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "alignmentBlue",
+    "type": "policy-options",
+    "displayName": "Liberalization",
+    "fields": {
+      "Name": "alignmentBlue",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "alignmentAdd",
+        "value1": "liberal",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "logisticsCapacity",
+    "type": "policy-options",
+    "displayName": "Logistics Capacity",
+    "fields": {
+      "Name": "logisticsCapacity",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "logistics",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyLaborer",
+    "type": "policy-options",
+    "displayName": "Lower-class Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyLaborer",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "manpowerRecovery",
+    "type": "policy-options",
+    "displayName": "Manpower Recovery",
+    "fields": {
+      "Name": "manpowerRecovery",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "manpowerRecoveryRate",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "alignmentRed",
+    "type": "policy-options",
+    "displayName": "Marxification",
+    "fields": {
+      "Name": "alignmentRed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "alignmentAdd",
+        "value1": "marxist",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyMiddleClass",
+    "type": "policy-options",
+    "displayName": "Middle-class Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyMiddleClass",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitAttack",
+    "type": "policy-options",
+    "displayName": "Military Aggression",
+    "fields": {
+      "Name": "unitAttack",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitBreakthrough",
+    "type": "policy-options",
+    "displayName": "Military Attack",
+    "fields": {
+      "Name": "unitBreakthrough",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitEntrenchment",
+    "type": "policy-options",
+    "displayName": "Military Defense",
+    "fields": {
+      "Name": "unitEntrenchment",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "entrenchment",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitHealth",
+    "type": "policy-options",
+    "displayName": "Military Endurance",
+    "fields": {
+      "Name": "unitHealth",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "factionLoyaltyMilitary",
+    "type": "policy-options",
+    "displayName": "Military Loyalty",
+    "fields": {
+      "Name": "factionLoyaltyMilitary",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "military",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitMorale",
+    "type": "policy-options",
+    "displayName": "Military Morale",
+    "fields": {
+      "Name": "unitMorale",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitSpeed",
+    "type": "policy-options",
+    "displayName": "Military Speed",
+    "fields": {
+      "Name": "unitSpeed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "navalPrimacy",
+    "type": "policy-options",
+    "displayName": "Naval Primacy",
+    "fields": {
+      "Name": "navalPrimacy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "water",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "water",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "budgetModifierPopulationPolicy",
+    "type": "policy-options",
+    "displayName": "Population Expenditure",
+    "fields": {
+      "Name": "budgetModifierPopulationPolicy",
+      "BenefitEnabled": false,
+      "CostEnabled": true,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "budgetModifier",
+        "value1": "population",
+        "value": 0.15
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "popGrowth",
+    "type": "policy-options",
+    "displayName": "Population Growth",
+    "fields": {
+      "Name": "popGrowth",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "prestigePolicy",
+    "type": "policy-options",
+    "displayName": "Prestige",
+    "fields": {
+      "Name": "prestigePolicy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "prestigeMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "projectBuildSpeed",
+    "type": "policy-options",
+    "displayName": "Project Build Speed",
+    "fields": {
+      "Name": "projectBuildSpeed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "projectBuildCost",
+    "type": "policy-options",
+    "displayName": "Project Cost",
+    "fields": {
+      "Name": "projectBuildCost",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "projectUpkeep",
+    "type": "policy-options",
+    "displayName": "Project Upkeep",
+    "fields": {
+      "Name": "projectUpkeep",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "middleClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "protectorateAdminEfficiency",
+    "type": "policy-options",
+    "displayName": "Protectorate Administration",
+    "fields": {
+      "Name": "protectorateAdminEfficiency",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "protectorateAdmin",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "manpowerCapacity",
+    "type": "policy-options",
+    "displayName": "Recruitable Population",
+    "fields": {
+      "Name": "manpowerCapacity",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "reinforceRate",
+    "type": "policy-options",
+    "displayName": "Reinforce Rate",
+    "fields": {
+      "Name": "reinforceRate",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "researchSpeed",
+    "type": "policy-options",
+    "displayName": "Research Speed",
+    "fields": {
+      "Name": "researchSpeed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "corporate"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceCapacity",
+    "type": "policy-options",
+    "displayName": "Resource Capacity",
+    "fields": {
+      "Name": "resourceCapacity",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "corporate"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.025
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "logistics",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spacePrimacy",
+    "type": "policy-options",
+    "displayName": "Space Primacy",
+    "fields": {
+      "Name": "spacePrimacy",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value2": "space",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "space",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "stabilityGain",
+    "type": "policy-options",
+    "displayName": "Stability Gain",
+    "fields": {
+      "Name": "stabilityGain",
+      "BenefitEnabled": true,
+      "CostEnabled": true,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceIncome",
+    "type": "policy-options",
+    "displayName": "Strategic Resource Income",
+    "fields": {
+      "Name": "resourceIncome",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "baseEconomicOutput",
+    "type": "policy-options",
+    "displayName": "Tax Base",
+    "fields": {
+      "Name": "baseEconomicOutput",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceModifierTechnology",
+    "type": "policy-options",
+    "displayName": "Technical Production",
+    "fields": {
+      "Name": "resourceModifierTechnology",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "corporate"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "alignmentGreen",
+    "type": "policy-options",
+    "displayName": "Traditionalism",
+    "fields": {
+      "Name": "alignmentGreen",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "upperClass"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "alignmentAdd",
+        "value1": "traditional",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitCost",
+    "type": "policy-options",
+    "displayName": "Unit Cost",
+    "fields": {
+      "Name": "unitCost",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unitCostMult",
+        "value": -0.025
+      },
+      {
+        "key": "unitCostMult",
+        "value1": "manpower",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitMoraleRecovery",
+    "type": "policy-options",
+    "displayName": "Unit Morale Recovery",
+    "fields": {
+      "Name": "unitMoraleRecovery",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "military",
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unitySpeed",
+    "type": "policy-options",
+    "displayName": "Unity Multiplier",
+    "fields": {
+      "Name": "unitySpeed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unrestChange",
+    "type": "policy-options",
+    "displayName": "Unrest Change",
+    "fields": {
+      "Name": "unrestChange",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "bureaucracy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.005
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "warExhaustion",
+    "type": "policy-options",
+    "displayName": "War Exhaustion",
+    "fields": {
+      "Name": "warExhaustion",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "clergy"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.075
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "workforceRatio",
+    "type": "policy-options",
+    "displayName": "Workforce",
+    "fields": {
+      "Name": "workforceRatio",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

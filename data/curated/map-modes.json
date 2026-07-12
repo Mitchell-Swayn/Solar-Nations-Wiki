@@ -1,0 +1,748 @@
+[
+  {
+    "id": "administrative",
+    "type": "map-modes",
+    "displayName": "Administrative",
+    "icon": "gavel",
+    "fields": {
+      "Name": "administrative",
+      "Color": {
+        "R": 0.066164,
+        "G": 0.345486,
+        "B": 0.092876,
+        "A": 1,
+        "Hex": "499F56"
+      },
+      "Icon": "gavel",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows administrative efficiency",
+      "DisplayName": "Administrative"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "gavel"
+      }
+    ]
+  },
+  {
+    "id": "alignment",
+    "type": "map-modes",
+    "displayName": "Alignment",
+    "icon": "cultureCircle",
+    "fields": {
+      "Name": "alignment",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "cultureCircle",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the ideological alignment of countries",
+      "DisplayName": "Alignment"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cultureCircle"
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "type": "map-modes",
+    "displayName": "Culture",
+    "icon": "culture",
+    "fields": {
+      "Name": "culture",
+      "Color": {
+        "R": 0.445925,
+        "G": 0.070203,
+        "B": 0.543403,
+        "A": 1,
+        "Hex": "B24BC3"
+      },
+      "Icon": "culture",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the dominant/minority culture in territories",
+      "DisplayName": "Culture"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "culture"
+      }
+    ]
+  },
+  {
+    "id": "development",
+    "type": "map-modes",
+    "displayName": "Development",
+    "icon": "development",
+    "fields": {
+      "Name": "development",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "development",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the development of the territory",
+      "DisplayName": "Development"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "development"
+      }
+    ]
+  },
+  {
+    "id": "diplomatic",
+    "type": "map-modes",
+    "displayName": "Diplomatic",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "diplomatic",
+      "Color": {
+        "R": 0.671875,
+        "G": 0.671875,
+        "B": 0.671875,
+        "A": 1,
+        "Hex": "D6D6D6"
+      },
+      "Icon": "diplomacy",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows diplomatic arrangements, including war and alliances.",
+      "DisplayName": "Diplomatic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "deposit",
+    "type": "map-modes",
+    "displayName": "Economic Sector",
+    "icon": "iron",
+    "fields": {
+      "Name": "deposit",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "iron",
+      "KeyType": "deposit",
+      "IncludeNavnodes": true,
+      "ShowOnBar": true,
+      "Desc": "Shows the resources in the region.",
+      "DisplayName": "Deposit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "iron"
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "type": "map-modes",
+    "displayName": "Education",
+    "icon": "education",
+    "fields": {
+      "Name": "education",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "education",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the level of education in the territory.",
+      "DisplayName": "Education"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "education"
+      }
+    ]
+  },
+  {
+    "id": "formable",
+    "type": "map-modes",
+    "displayName": "Formable",
+    "icon": "",
+    "fields": {
+      "Name": "formable",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Icon": "",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": "Formable"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "influence",
+    "type": "map-modes",
+    "displayName": "Influence Region",
+    "icon": "influence",
+    "fields": {
+      "Name": "influence",
+      "Color": {
+        "R": 0,
+        "G": 0.768404,
+        "B": 1,
+        "A": 1,
+        "Hex": "00E3FF"
+      },
+      "Icon": "influence",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": "Shows influence",
+      "DisplayName": "Influence"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "influence"
+      }
+    ]
+  },
+  {
+    "id": "intel",
+    "type": "map-modes",
+    "displayName": "Intel",
+    "icon": "intel",
+    "fields": {
+      "Name": "intel",
+      "Color": {
+        "R": 0.167507,
+        "G": 0.613903,
+        "B": 0.637153,
+        "A": 1,
+        "Hex": "72CED1"
+      },
+      "Icon": "intel",
+      "KeyType": "None",
+      "IncludeNavnodes": true,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "intel"
+      }
+    ]
+  },
+  {
+    "id": "migration",
+    "type": "map-modes",
+    "displayName": "Migration",
+    "icon": "migrationLaw_openBorders",
+    "fields": {
+      "Name": "migration",
+      "Color": {
+        "R": 0.285911,
+        "G": 0.557292,
+        "B": 0,
+        "A": 1,
+        "Hex": "92C500"
+      },
+      "Icon": "migrationLaw_openBorders",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the movement of populations",
+      "DisplayName": "Migration"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "migrationLaw_openBorders"
+      }
+    ]
+  },
+  {
+    "id": "opinion",
+    "type": "map-modes",
+    "displayName": "Opinion",
+    "icon": "opinion",
+    "fields": {
+      "Name": "opinion",
+      "Color": {
+        "R": 0.398096,
+        "G": 0.564236,
+        "B": 0.378241,
+        "A": 1,
+        "Hex": "A9C6A6"
+      },
+      "Icon": "opinion",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the Opinion values other nations hold of us.",
+      "DisplayName": "Opinion"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "opinion"
+      }
+    ]
+  },
+  {
+    "id": "organization",
+    "type": "map-modes",
+    "displayName": "Organization",
+    "icon": "alliance",
+    "fields": {
+      "Name": "organization",
+      "Color": {
+        "R": 0.229732,
+        "G": 0.043091,
+        "B": 0.557292,
+        "A": 1,
+        "Hex": "843AC5"
+      },
+      "Icon": "alliance",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows organizational affiliations of nations, if unaffiliated, a nation will be the same color as it is in the political map.",
+      "DisplayName": "Organization"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "peacedeal",
+    "type": "map-modes",
+    "displayName": "Peacedeal",
+    "icon": "",
+    "fields": {
+      "Name": "peacedeal",
+      "Color": {
+        "R": 0.324652,
+        "G": 0.270217,
+        "B": 0.073414,
+        "A": 1,
+        "Hex": "9A8E4C"
+      },
+      "Icon": "",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "political",
+    "type": "map-modes",
+    "displayName": "Political",
+    "icon": "colony",
+    "fields": {
+      "Name": "political",
+      "Color": {
+        "R": 0,
+        "G": 0.403698,
+        "B": 0.539931,
+        "A": 1,
+        "Hex": "00AAC2"
+      },
+      "Icon": "colony",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the political loyalties of territory, as well as occupations where applicable.",
+      "DisplayName": "Political"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
+    "id": "populationdensity",
+    "type": "map-modes",
+    "displayName": "Population Density",
+    "icon": "population",
+    "fields": {
+      "Name": "populationdensity",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "population",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows the population density of the territory. If hovered, also shows the population.",
+      "DisplayName": "Population Density"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "project",
+    "type": "map-modes",
+    "displayName": "Project",
+    "icon": "",
+    "fields": {
+      "Name": "project",
+      "Color": {
+        "R": 0.699653,
+        "G": 0.068017,
+        "B": 0.070337,
+        "A": 1,
+        "Hex": "DA4A4B"
+      },
+      "Icon": "",
+      "KeyType": "project",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": "Construction"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "recruitment",
+    "type": "map-modes",
+    "displayName": "Recruitment",
+    "icon": "",
+    "fields": {
+      "Name": "recruitment",
+      "Color": {
+        "R": 0,
+        "G": 0.335069,
+        "B": 0.169873,
+        "A": 1,
+        "Hex": "009D72"
+      },
+      "Icon": "",
+      "KeyType": "template",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "region",
+    "type": "map-modes",
+    "displayName": "Region",
+    "icon": "territory",
+    "fields": {
+      "Name": "region",
+      "Color": {
+        "R": 0.093776,
+        "G": 0.384741,
+        "B": 0.460069,
+        "A": 1,
+        "Hex": "56A7B5"
+      },
+      "Icon": "territory",
+      "KeyType": "None",
+      "IncludeNavnodes": true,
+      "ShowOnBar": true,
+      "Desc": "Shows regional boundaries of owned and unowned territories",
+      "DisplayName": "Region"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "territory"
+      }
+    ]
+  },
+  {
+    "id": "relevance",
+    "type": "map-modes",
+    "displayName": "Relevance",
+    "icon": "",
+    "fields": {
+      "Name": "relevance",
+      "Color": {
+        "R": 0.300376,
+        "G": 0,
+        "B": 0.717014,
+        "A": 1,
+        "Hex": "9500DD"
+      },
+      "Icon": "",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": "Relevance (DEBUG)"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "strategic",
+    "type": "map-modes",
+    "displayName": "Strategic Damage",
+    "icon": "",
+    "fields": {
+      "Name": "strategic",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Icon": "",
+      "KeyType": "None",
+      "IncludeNavnodes": true,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "supply",
+    "type": "map-modes",
+    "displayName": "Supply",
+    "icon": "supply",
+    "fields": {
+      "Name": "supply",
+      "Color": {
+        "R": 0.421875,
+        "G": 0.218413,
+        "B": 0,
+        "A": 1,
+        "Hex": "AE8100"
+      },
+      "Icon": "supply",
+      "KeyType": "None",
+      "IncludeNavnodes": true,
+      "ShowOnBar": false,
+      "Desc": {
+        "CultureInvariantString": null
+      },
+      "DisplayName": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supply"
+      }
+    ]
+  },
+  {
+    "id": "terrain",
+    "type": "map-modes",
+    "displayName": "Terrain",
+    "icon": "olympusMons",
+    "fields": {
+      "Name": "terrain",
+      "Color": {
+        "R": 0.124923,
+        "G": 0.439236,
+        "B": 0.140215,
+        "A": 1,
+        "Hex": "63B169"
+      },
+      "Icon": "olympusMons",
+      "KeyType": "None",
+      "IncludeNavnodes": true,
+      "ShowOnBar": true,
+      "Desc": "Shows the terrain of provinces, regional terrain is the terrain of the capital province of the region",
+      "DisplayName": "Terrain"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "olympusMons"
+      }
+    ]
+  },
+  {
+    "id": "unrest",
+    "type": "map-modes",
+    "displayName": "Unrest",
+    "icon": "unrest",
+    "fields": {
+      "Name": "unrest",
+      "Color": {
+        "R": 0.671875,
+        "G": 0.01983,
+        "B": 0.01983,
+        "A": 1,
+        "Hex": "D62626"
+      },
+      "Icon": "unrest",
+      "KeyType": "None",
+      "IncludeNavnodes": false,
+      "ShowOnBar": true,
+      "Desc": "Shows regional unrest",
+      "DisplayName": "Unrest"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unrest"
+      }
+    ]
+  }
+]

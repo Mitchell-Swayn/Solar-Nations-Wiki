@@ -1,0 +1,66 @@
+[
+  {
+    "id": "highOrbit",
+    "type": "space-zone-types",
+    "displayName": "High Orbit",
+    "fields": {
+      "Name": "highOrbit",
+      "DefaultStart": 0.5,
+      "MinStart": 1,
+      "MaxStart": 1000,
+      "Terrain": "spaceMiddle",
+      "dVBase": 100
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "interplanetarySpace",
+    "type": "space-zone-types",
+    "displayName": "Interplanetary Space",
+    "fields": {
+      "Name": "interplanetarySpace",
+      "DefaultStart": 0.5,
+      "MinStart": 10000,
+      "MaxStart": 1000000000,
+      "Terrain": "spaceHigh",
+      "dVBase": 250
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lowOrbit",
+    "type": "space-zone-types",
+    "displayName": "Low Orbit",
+    "fields": {
+      "Name": "lowOrbit",
+      "DefaultStart": 0.05,
+      "MinStart": 0,
+      "MaxStart": 30,
+      "Terrain": "spaceLow",
+      "dVBase": 400
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "middleOrbit",
+    "type": "space-zone-types",
+    "displayName": "Middle Orbit",
+    "fields": {
+      "Name": "middleOrbit",
+      "DefaultStart": 0.1,
+      "MinStart": 0,
+      "MaxStart": 1000,
+      "Terrain": "spaceMiddle",
+      "dVBase": 200
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "id": "arctic",
+    "type": "terrain-types",
+    "displayName": "Arctic",
+    "fields": {
+      "Name": "arctic",
+      "Color": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFF"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 50
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "asteroid",
+    "type": "terrain-types",
+    "displayName": "Asteroid",
+    "fields": {
+      "Name": "asteroid",
+      "Color": {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 300
+      },
+      {
+        "key": "battleDomainEnable",
+        "value1": "air",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deepOcean",
+    "type": "terrain-types",
+    "displayName": "Deep Ocean",
+    "fields": {
+      "Name": "deepOcean",
+      "Color": {
+        "B": 116,
+        "G": 39,
+        "R": 0,
+        "A": 255,
+        "Hex": "002774"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "desert",
+    "type": "terrain-types",
+    "displayName": "Desert",
+    "fields": {
+      "Name": "desert",
+      "Color": {
+        "B": 0,
+        "G": 106,
+        "R": 127,
+        "A": 255,
+        "Hex": "7F6A00"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 15
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "gasGiantAtmosphere",
+    "type": "terrain-types",
+    "displayName": "Gaseous Atmosphere",
+    "fields": {
+      "Name": "gasGiantAtmosphere",
+      "Color": {
+        "B": 207,
+        "G": 207,
+        "R": 207,
+        "A": 255,
+        "Hex": "CFCFCF"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator2"
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hills",
+    "type": "terrain-types",
+    "displayName": "Hills",
+    "fields": {
+      "Name": "hills",
+      "Color": {
+        "B": 116,
+        "G": 157,
+        "R": 115,
+        "A": 255,
+        "Hex": "739D74"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 20
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hothouse",
+    "type": "terrain-types",
+    "displayName": "Hothouse",
+    "fields": {
+      "Name": "hothouse",
+      "Color": {
+        "B": 0,
+        "G": 123,
+        "R": 173,
+        "A": 255,
+        "Hex": "AD7B00"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "land",
+        "value": -0.5
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "air",
+        "value": 0.5
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "interplanetary",
+    "type": "terrain-types",
+    "displayName": "Interplanetary Space",
+    "fields": {
+      "Name": "interplanetary",
+      "Color": {
+        "B": 54,
+        "G": 4,
+        "R": 0,
+        "A": 255,
+        "Hex": "000436"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator3"
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceSoft",
+        "value": -0.9
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceHard",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jungle",
+    "type": "terrain-types",
+    "displayName": "Jungle",
+    "fields": {
+      "Name": "jungle",
+      "Color": {
+        "B": 144,
+        "G": 255,
+        "R": 0,
+        "A": 255,
+        "Hex": "00FF90"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lavaOcean",
+    "type": "terrain-types",
+    "displayName": "Lava Ocean",
+    "fields": {
+      "Name": "lavaOcean",
+      "Color": {
+        "B": 0,
+        "G": 0,
+        "R": 255,
+        "A": 255,
+        "Hex": "FF0000"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": -0.75
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 300
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.25
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "steelRefinery",
+        "value": 10
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "methaneOcean",
+    "type": "terrain-types",
+    "displayName": "Methane Ocean",
+    "fields": {
+      "Name": "methaneOcean",
+      "Color": {
+        "B": 53,
+        "G": 73,
+        "R": 96,
+        "A": 255,
+        "Hex": "604935"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator1"
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": -0.25
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mountain",
+    "type": "terrain-types",
+    "displayName": "Mountain",
+    "fields": {
+      "Name": "mountain",
+      "Color": {
+        "B": 64,
+        "G": 64,
+        "R": 64,
+        "A": 255,
+        "Hex": "404040"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 40
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ocean",
+    "type": "terrain-types",
+    "displayName": "Ocean",
+    "fields": {
+      "Name": "ocean",
+      "Color": {
+        "B": 255,
+        "G": 38,
+        "R": 0,
+        "A": 255,
+        "Hex": "0026FF"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator1"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "plains",
+    "type": "terrain-types",
+    "displayName": "Plains",
+    "fields": {
+      "Name": "plains",
+      "Color": {
+        "B": 14,
+        "G": 127,
+        "R": 0,
+        "A": 255,
+        "Hex": "007F0E"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "river",
+    "type": "terrain-types",
+    "displayName": "River",
+    "fields": {
+      "Name": "river",
+      "Color": {
+        "B": 212,
+        "G": 146,
+        "R": 0,
+        "A": 255,
+        "Hex": "0092D4"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "salineOcean",
+    "type": "terrain-types",
+    "displayName": "Saline Ocean",
+    "fields": {
+      "Name": "salineOcean",
+      "Color": {
+        "B": 212,
+        "G": 202,
+        "R": 147,
+        "A": 255,
+        "Hex": "93CAD4"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator1"
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": -0.25
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "space",
+    "type": "terrain-types",
+    "displayName": "Space",
+    "fields": {
+      "Name": "space",
+      "Color": {
+        "B": 75,
+        "G": 0,
+        "R": 47,
+        "A": 255,
+        "Hex": "2F004B"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator3"
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value1": "spaceTracking",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spaceMountains",
+    "type": "terrain-types",
+    "displayName": "Space Mountains",
+    "fields": {
+      "Name": "spaceMountains",
+      "Color": {
+        "B": 111,
+        "G": 116,
+        "R": 146,
+        "A": 255,
+        "Hex": "92746F"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 75
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spacePlains",
+    "type": "terrain-types",
+    "displayName": "Space Plains",
+    "fields": {
+      "Name": "spacePlains",
+      "Color": {
+        "B": 167,
+        "G": 167,
+        "R": 167,
+        "A": 255,
+        "Hex": "A7A7A7"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spaceStation",
+    "type": "terrain-types",
+    "displayName": "Space Station",
+    "fields": {
+      "Name": "spaceStation",
+      "Color": {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 50
+      },
+      {
+        "key": "battleDomainEnable",
+        "value1": "air",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "subsurfaceOcean",
+    "type": "terrain-types",
+    "displayName": "Subsurface Ocean",
+    "fields": {
+      "Name": "subsurfaceOcean",
+      "Color": {
+        "B": 86,
+        "G": 46,
+        "R": 33,
+        "A": 255,
+        "Hex": "212E56"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "battleDomainEnable",
+        "value1": "water",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "volcano",
+    "type": "terrain-types",
+    "displayName": "Volcano",
+    "fields": {
+      "Name": "volcano",
+      "Color": {
+        "B": 69,
+        "G": 120,
+        "R": 139,
+        "A": 255,
+        "Hex": "8B7845"
+      },
+      "SupplyBonus": 0,
+      "Domain": "UnitDomainEnum::NewEnumerator0"
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 50
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,0 +1,443 @@
+[
+  {
+    "id": "foodSpec",
+    "type": "specializations",
+    "displayName": "Agricultural Region",
+    "icon": "grain",
+    "fields": {
+      "Name": "foodSpec",
+      "Icon": "grain",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "grain",
+        "value": 1
+      },
+      {
+        "key": "popGrowthMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "grain"
+      }
+    ]
+  },
+  {
+    "id": "arcologySpec",
+    "type": "specializations",
+    "displayName": "Arcology Region",
+    "icon": "arcologySpec",
+    "fields": {
+      "Name": "arcologySpec",
+      "Icon": "arcologySpec",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": -0.5
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.03
+      },
+      {
+        "key": "fortDefense",
+        "value": 1
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 100
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "arcologySpec"
+      }
+    ]
+  },
+  {
+    "id": "capitalSpec",
+    "type": "specializations",
+    "displayName": "Capital",
+    "icon": "prestige",
+    "fields": {
+      "Name": "capitalSpec",
+      "Icon": "prestige",
+      "Choosable": false
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.5
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 2
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "prestige"
+      }
+    ]
+  },
+  {
+    "id": "colonySpec",
+    "type": "specializations",
+    "displayName": "Colony Region",
+    "icon": "colonySpec",
+    "fields": {
+      "Name": "colonySpec",
+      "Icon": "colonySpec",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": 2
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colonySpec"
+      }
+    ]
+  },
+  {
+    "id": "defaultSpec",
+    "type": "specializations",
+    "displayName": "Default Spec",
+    "icon": "colony",
+    "fields": {
+      "Name": "defaultSpec",
+      "Icon": "colony",
+      "Choosable": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
+    "id": "fortressSpec",
+    "type": "specializations",
+    "displayName": "Fortress Region",
+    "icon": "defense",
+    "fields": {
+      "Name": "fortressSpec",
+      "Icon": "defense",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 10
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "defense"
+      }
+    ]
+  },
+  {
+    "id": "energySpec",
+    "type": "specializations",
+    "displayName": "Generator Region",
+    "icon": "energy",
+    "fields": {
+      "Name": "energySpec",
+      "Icon": "energy",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "nuclearReactor",
+        "value": 0.25
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value1": "infrastructure",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "energy"
+      }
+    ]
+  },
+  {
+    "id": "industrialSpec",
+    "type": "specializations",
+    "displayName": "Industrial Region",
+    "icon": "machineParts",
+    "fields": {
+      "Name": "industrialSpec",
+      "Icon": "machineParts",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.25
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "machineParts"
+      }
+    ]
+  },
+  {
+    "id": "metropolisSpec",
+    "type": "specializations",
+    "displayName": "Metropolis Region",
+    "icon": "metropolisSpec",
+    "fields": {
+      "Name": "metropolisSpec",
+      "Icon": "metropolisSpec",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": -0.25
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.01
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.5
+      },
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "metropolisSpec"
+      }
+    ]
+  },
+  {
+    "id": "protectorateSpec",
+    "type": "specializations",
+    "displayName": "Protectorate Spec",
+    "icon": "colony",
+    "fields": {
+      "Name": "protectorateSpec",
+      "Icon": "colony",
+      "Choosable": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
+    "id": "technologySpec",
+    "type": "specializations",
+    "displayName": "Research Region",
+    "icon": "research",
+    "fields": {
+      "Name": "technologySpec",
+      "Icon": "research",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.25
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  },
+  {
+    "id": "ruralSpec",
+    "type": "specializations",
+    "displayName": "Rural Region",
+    "icon": "ruralSpec",
+    "fields": {
+      "Name": "ruralSpec",
+      "Icon": "ruralSpec",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "projectCountCostMult",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ruralSpec"
+      }
+    ]
+  },
+  {
+    "id": "shipyardSpec",
+    "type": "specializations",
+    "displayName": "Shipyard Region",
+    "icon": "shipyard",
+    "fields": {
+      "Name": "shipyardSpec",
+      "Icon": "shipyard",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.25
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "navyCapacity",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shipyard"
+      }
+    ]
+  },
+  {
+    "id": "unintegratedSpec",
+    "type": "specializations",
+    "displayName": "Unintegrated Spec",
+    "icon": "colony",
+    "fields": {
+      "Name": "unintegratedSpec",
+      "Icon": "colony",
+      "Choosable": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
+    "id": "commerceSpec",
+    "type": "specializations",
+    "displayName": "Urban Region",
+    "icon": "dollars",
+    "fields": {
+      "Name": "commerceSpec",
+      "Icon": "dollars",
+      "Choosable": true
+    },
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "dollars"
+      }
+    ]
+  },
+  {
+    "id": "urbanSpec",
+    "type": "specializations",
+    "displayName": "Urban Region",
+    "icon": "urbanSpec",
+    "fields": {
+      "Name": "urbanSpec",
+      "Icon": "urbanSpec",
+      "Choosable": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "urbanSpec"
+      }
+    ]
+  }
+]

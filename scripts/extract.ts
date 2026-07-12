@@ -8,6 +8,10 @@ const UNPACKED_ROOT = join(DATA_RAW, 'unpacked');
 const PARSE_SCRIPT = join(PROJECT_ROOT, 'tools/parse_legacy.py');
 const ICON_SCRIPT = join(PROJECT_ROOT, 'tools/extract_packed_icons.py');
 const RETOC = join(PROJECT_ROOT, 'tools/retoc_cli-aarch64-apple-darwin/retoc');
+const USMAP = join(PROJECT_ROOT, 'tools/jmap_dumper/mappings.usmap');
+const CUE4_EXPORT_DIR = join(PROJECT_ROOT, 'tools/cue4-export');
+const CONVERT_SCRIPT = join(PROJECT_ROOT, 'tools/convert_full_defines.py');
+const DEFINES_FULL = join(DATA_RAW, 'DefinesFull');
 
 function runParseLegacy() {
   console.log('Parsing legacy UE exports into Defines JSON...');
@@ -81,6 +85,7 @@ function ensureLegacy(gameRoot: string) {
     'Situations',
     'StaticModifiers',
     'FactionVariants',
+    'Planets',
   ];
 
   for (const target of targets) {
@@ -89,6 +94,31 @@ function ensureLegacy(gameRoot: string) {
       { stdio: 'pipe' },
     );
   }
+}
+
+/**
+ * Full-fidelity export via CUE4Parse using the .usmap dumped from the running
+ * game (see docs/extraction.md). Overwrites the legacy-parsed tables in
+ * data/raw/Defines with complete structured values when available.
+ */
+function runFullExport(gameRoot: string) {
+  if (!existsSync(USMAP)) {
+    console.log('mappings.usmap not found — keeping legacy-parsed defines.');
+    return;
+  }
+  try {
+    execSync('dotnet --version', { stdio: 'pipe' });
+  } catch {
+    console.log('dotnet not found — keeping legacy-parsed defines.');
+    return;
+  }
+  console.log('Exporting full define tables with CUE4Parse...');
+  execSync(
+    `dotnet run --project "${CUE4_EXPORT_DIR}" -- "${getPaksPath(gameRoot)}" "${USMAP}" "${DEFINES_FULL}"`,
+    { stdio: 'inherit' },
+  );
+  console.log('Converting full exports to Defines JSON...');
+  execSync(`python3 "${CONVERT_SCRIPT}"`, { stdio: 'inherit', cwd: PROJECT_ROOT });
 }
 
 function main() {
@@ -103,6 +133,7 @@ function main() {
   ensureLegacy(gameRoot);
   extractPackedIcons();
   runParseLegacy();
+  runFullExport(gameRoot);
 
   console.log('\nExtraction complete. Run npm run normalize to update data/curated/.');
 }

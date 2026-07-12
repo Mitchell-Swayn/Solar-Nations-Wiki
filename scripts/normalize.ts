@@ -38,6 +38,10 @@ const ICON_ALIASES: Record<string, string> = {
   culturePower: 'cultureHex', edict: 'edictGeneric', industrial: 'constructHex',
   industry: 'machineParts', speed: 'moveSpeed', unrest: 'stability',
   crisis: 'crisisProgress', alignment: 'political',
+  ascendedAutomation: 'ascendedAI', ascendedDigital: 'ascendedCybernetic', ascendedMutation: 'ascendedGenetic',
+  fascism: 'fascist', harmony: 'unity', immigrationIncentive: 'edictImmigration',
+  liberal: 'civilLiberty_liberal', massDeportations: 'edictEmmigration', money: 'currency',
+  progressive: 'futurist', spending_none: 'spending_low', supply: 'logistics',
 };
 
 function resolveIconSource(icon: string): string {
@@ -684,7 +688,13 @@ function main() {
 
   const defineEntries = useRaw ? rawEntries : loadDefines(modPath, localization);
   const modifierEntries = loadModifiers(modPath, localization);
-  const missionEntries = loadMissionComponents(modPath);
+  // Skip tutorialMod mission components already covered by the raw extract.
+  const extractedMissionIds = new Set(
+    defineEntries.filter((e) => e.type === 'mission-components').map((e) => e.id),
+  );
+  const missionEntries = loadMissionComponents(modPath).filter(
+    (entry) => !extractedMissionIds.has(entry.id),
+  );
 
   if (useRaw) enrichUnitComponents(defineEntries, modPath, localization);
   applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);

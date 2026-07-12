@@ -1,19 +1,198 @@
 [
   {
+    "id": "aerodrome",
+    "type": "projects",
+    "displayName": "Aerodrome",
+    "icon": "airplaneFactory",
+    "fields": {
+      "Name": "aerodrome",
+      "Icon": "airplaneFactory",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 200
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0.5,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "airCapacity",
+        "value": 100
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplaneFactory"
+      },
+      {
+        "type": "category",
+        "id": "military"
+      }
+    ]
+  },
+  {
     "id": "aiLogistics",
     "type": "projects",
     "displayName": "AI Logistics Models",
     "icon": "aiLogistics",
     "fields": {
       "Name": "aiLogistics",
-      "Icon": "aiLogistics"
+      "Icon": "aiLogistics",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "neuralNetworksTech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "infrastructure",
+      "Cost": {
+        "industry": 20000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.25
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.25
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "neuralNetworks",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "aiLogistics"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      }
+    ]
+  },
+  {
+    "id": "AiServer",
+    "type": "projects",
+    "displayName": "AI Server Farm",
+    "icon": "supercomputer",
+    "fields": {
+      "Name": "AiServer",
+      "Icon": "supercomputer",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "ascendedAi"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "neuralNetworks"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "neuralNetworks",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "supercomputer"
+      },
+      {
+        "type": "category",
+        "id": "neuralNetworks"
       }
     ]
   },
@@ -24,50 +203,126 @@
     "icon": "neuralNetworkFactory",
     "fields": {
       "Name": "neuralNetworkFactory",
-      "Icon": "neuralNetworkFactory"
+      "Icon": "neuralNetworkFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "neuralNetworksTech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "neuralNetworks"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "neuralNetworks",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "roboticsCrisis_intensity",
+        "value": 0.0025,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "neuralNetworkFactory"
-      }
-    ]
-  },
-  {
-    "id": "airplaneFactory",
-    "type": "projects",
-    "displayName": "Airplane Factory",
-    "icon": "airplaneFactory",
-    "fields": {
-      "Name": "airplaneFactory",
-      "Icon": "airplaneFactory"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
+      },
       {
-        "type": "icon",
-        "id": "airplaneFactory"
+        "type": "category",
+        "id": "neuralNetworks"
       }
     ]
   },
   {
-    "id": "antimatterFactory",
+    "id": "antimatterHarvester",
     "type": "projects",
-    "displayName": "Antimatter Factory",
+    "displayName": "Antimatter Collecter",
     "icon": "antimatterFactory",
     "fields": {
-      "Name": "antimatterFactory",
-      "Icon": "antimatterFactory"
+      "Name": "antimatterHarvester",
+      "Icon": "antimatterFactory",
+      "Limit": 0,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "antimatterPower"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "magneticAntimatter"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 250000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 5000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "antimatter",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "antimatterFactory"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -78,14 +333,62 @@
     "icon": "antimatterReactor",
     "fields": {
       "Name": "antimatterReactor",
-      "Icon": "antimatterReactor"
+      "Icon": "antimatterReactor",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "antimatterPower"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "nuclearReactor",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 50000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.6,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 10
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "antimatter",
+        "value": 100
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "antimatterReactor"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -96,14 +399,67 @@
     "icon": "antimatterSynthesizer",
     "fields": {
       "Name": "antimatterSynthesizer",
-      "Icon": "antimatterSynthesizer"
+      "Icon": "antimatterSynthesizer",
+      "Limit": 2,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "antimatterAdvancement"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 10000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "supercollider",
+        "value": 0.5
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "antimatterHarvester",
+        "value": 0.5
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "superSteel",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "antimatterSynthesizer"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -114,14 +470,61 @@
     "icon": "apollo11Site",
     "fields": {
       "Name": "apollo11Site",
-      "Icon": "apollo11Site"
+      "Icon": "apollo11Site",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.25
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.5
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "apollo11Site"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -132,14 +535,61 @@
     "icon": "aresColonySite",
     "fields": {
       "Name": "aresColonySite",
-      "Icon": "aresColonySite"
+      "Icon": "aresColonySite",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "unityMult",
+        "value": 2
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "aresColonySite"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -150,14 +600,127 @@
     "icon": "asteroidHarvester",
     "fields": {
       "Name": "asteroidHarvester",
-      "Icon": "asteroidHarvester"
+      "Icon": "asteroidHarvester",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "metalAdvance"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "asteroidDensity"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": true,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 10000
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.25,
+        "scope": "Empire"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "asteroidHarvester"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
+      }
+    ]
+  },
+  {
+    "id": "atmosformer",
+    "type": "projects",
+    "displayName": "Atmosformer",
+    "icon": "oxygen",
+    "fields": {
+      "Name": "atmosformer",
+      "Icon": "oxygen",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryColonization"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 2000
+      },
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "oxygen"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -168,14 +731,128 @@
     "icon": "automatedFactory",
     "fields": {
       "Name": "automatedFactory",
-      "Icon": "automatedFactory"
+      "Icon": "automatedFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "industrialAutomation"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "automatedWorkforceAdd",
+        "value": 1000000
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "automatedFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "barracks",
+    "type": "projects",
+    "displayName": "Barracks",
+    "icon": "military liason",
+    "fields": {
+      "Name": "barracks",
+      "Icon": "military liason",
+      "Limit": 3,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0.25,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": "barracks",
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.1
+      },
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military liason"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -186,14 +863,122 @@
     "icon": "bigBen",
     "fields": {
       "Name": "bigBen",
-      "Icon": "bigBen"
+      "Icon": "bigBen",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "factory",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "bigBen"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
+      }
+    ]
+  },
+  {
+    "id": "bioformer",
+    "type": "projects",
+    "displayName": "Bioformer",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "bioformer",
+      "Icon": "geneticMaterial",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryColonization"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 2000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 4000
+      },
+      "ConstructionTime": 18000,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "habitabilityAdd",
+        "value": 0.25
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "geneticMaterial",
+        "value": 1000
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -204,14 +989,60 @@
     "icon": "biologySchool",
     "fields": {
       "Name": "biologySchool",
-      "Icon": "biologySchool"
+      "Icon": "biologySchool",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "geneticEngineering"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "university",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 1
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "geneticMaterial",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "biologySchool"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -222,14 +1053,66 @@
     "icon": "brainChips",
     "fields": {
       "Name": "brainChips",
-      "Icon": "brainChips"
+      "Icon": "brainChips",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "cybernetics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 20000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 500
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.02
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "robots",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "brainChips"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      },
+      {
+        "type": "category",
+        "id": "robots"
       }
     ]
   },
@@ -240,14 +1123,60 @@
     "icon": "brandenburgGate",
     "fields": {
       "Name": "brandenburgGate",
-      "Icon": "brandenburgGate"
+      "Icon": "brandenburgGate",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "recruitablePopulationMult",
+        "value": 0.25
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "brandenburgGate"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -258,14 +1187,64 @@
     "icon": "superSteelFactory",
     "fields": {
       "Name": "superSteelFactory",
-      "Icon": "superSteelFactory"
+      "Icon": "superSteelFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "chromiteTech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 70000
+      },
+      "RequiredResource": {
+        "nanocomposites": 1
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 2000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "superSteel",
+        "value": 10
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "industry",
+        "value": 1000
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "superSteelFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -276,14 +1255,64 @@
     "icon": "cloneVats",
     "fields": {
       "Name": "cloneVats",
-      "Icon": "cloneVats"
+      "Icon": "cloneVats",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "geneticSequencing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 300000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial",
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.25
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "geneticMaterial",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "cloneVats"
+      },
+      {
+        "type": "category",
+        "id": "geneticMaterial"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -294,14 +1323,59 @@
     "icon": "coldFusionReactor",
     "fields": {
       "Name": "coldFusionReactor",
-      "Icon": "coldFusionReactor"
+      "Icon": "coldFusionReactor",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "microCooling"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "nuclearReactor",
+      "Cost": {
+        "industry": 50000
+      },
+      "RequiredResource": {
+        "helium3": 1
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 5000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.6,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "coldFusionReactor"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -312,32 +1386,127 @@
     "icon": "colloseum",
     "fields": {
       "Name": "colloseum",
-      "Icon": "colloseum"
+      "Icon": "colloseum",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.25
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "commercialZones",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "colloseum"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
   {
-    "id": "commerceZones",
+    "id": "commercialZones",
     "type": "projects",
-    "displayName": "Commerce Zones",
+    "displayName": "Commercial Zones",
     "icon": "commerceZones",
     "fields": {
-      "Name": "commerceZones",
-      "Icon": "commerceZones"
+      "Name": "commercialZones",
+      "Icon": "commerceZones",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryTrade"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": {
+        "consumerGoods": 3
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "commerce",
+        "value": 1
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.15
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "commerceZones"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
       }
     ]
   },
@@ -348,14 +1517,60 @@
     "icon": "computingSchool",
     "fields": {
       "Name": "computingSchool",
-      "Icon": "computingSchool"
+      "Icon": "computingSchool",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "neuralNetworksTech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "university",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 1
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "neuralNetworks",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "computingSchool"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -366,14 +1581,66 @@
     "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "consumerGoodsFactory",
-      "Icon": "consumerGoodsFactory"
+      "Icon": "consumerGoodsFactory",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "industrialization"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 20000
+      },
+      "RequiredResource": {
+        "steel": 5
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.25,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "consumerGoods",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "consumerGoodsFactory"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
       }
     ]
   },
@@ -384,14 +1651,66 @@
     "icon": "covalenceFactory",
     "fields": {
       "Name": "covalenceFactory",
-      "Icon": "covalenceFactory"
+      "Icon": "covalenceFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "matterEngergyCovalence"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 2000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 50000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "covalenceFactory",
+        "value": -0.1
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "superSteel",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "covalenceFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -402,14 +1721,62 @@
     "icon": "cyborgFactory",
     "fields": {
       "Name": "cyborgFactory",
-      "Icon": "cyborgFactory"
+      "Icon": "cyborgFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "cybernetics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "robotFactory",
+      "Cost": {
+        "industry": 100000
+      },
+      "RequiredResource": {
+        "palladium": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "cyborgFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "robots"
       }
     ]
   },
@@ -420,14 +1787,124 @@
     "icon": "robotScrapper",
     "fields": {
       "Name": "robotScrapper",
-      "Icon": "robotScrapper"
+      "Icon": "robotScrapper",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "roboticsCrisis"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 100000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 5000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "roboticsCrisis_intensity",
+        "value": -0.01,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "robotScrapper"
+      },
+      {
+        "type": "category",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "digitalAssembly",
+    "type": "projects",
+    "displayName": "Digital Assembly",
+    "icon": "electronics",
+    "fields": {
+      "Name": "digitalAssembly",
+      "Icon": "electronics",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "artificialIntelligence"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "electronicsFactory",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": {
+        "steel": 5
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods",
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "electronics",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "electronics"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -438,14 +1915,67 @@
     "icon": "dysonSwarm",
     "fields": {
       "Name": "dysonSwarm",
-      "Icon": "dysonSwarm"
+      "Icon": "dysonSwarm",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "antimatterPower"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "lowSolarOrbit"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 200000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 14400,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": true,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "energy",
+        "value": 50
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 100000
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "antimatter",
+        "value": 100
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "dysonSwarm"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -456,14 +1986,57 @@
     "icon": "eiffelTower",
     "fields": {
       "Name": "eiffelTower",
-      "Icon": "eiffelTower"
+      "Icon": "eiffelTower",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "eiffelTower"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -474,32 +2047,71 @@
     "icon": "electronicsFactory",
     "fields": {
       "Name": "electronicsFactory",
-      "Icon": "electronicsFactory"
+      "Icon": "electronicsFactory",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "artificialIntelligence"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods",
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "electronics",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "electronicsFactory"
-      }
-    ]
-  },
-  {
-    "id": "electronicsUsage",
-    "type": "projects",
-    "displayName": "Electronics Usage",
-    "icon": "electronicsUsage",
-    "fields": {
-      "Name": "electronicsUsage",
-      "Icon": "electronicsUsage"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
+      },
       {
-        "type": "icon",
-        "id": "electronicsUsage"
+        "type": "category",
+        "id": "consumerGoods"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -510,14 +2122,60 @@
     "icon": "engineeringSchool",
     "fields": {
       "Name": "engineeringSchool",
-      "Icon": "engineeringSchool"
+      "Icon": "engineeringSchool",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "robotics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "university",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 1
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "robots",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "engineeringSchool"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -528,14 +2186,62 @@
     "icon": "entertainmentZone",
     "fields": {
       "Name": "entertainmentZone",
-      "Icon": "entertainmentZone"
+      "Icon": "entertainmentZone",
+      "Limit": 5,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "massManufacturing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "monument",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "culture",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "entertainmentZone"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -546,14 +2252,59 @@
     "icon": "exoticMatterFactory",
     "fields": {
       "Name": "exoticMatterFactory",
-      "Icon": "exoticMatterFactory"
+      "Icon": "exoticMatterFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "exoticMatter"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 2500000
+      },
+      "RequiredResource": {
+        "energy": 20
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 150000
+      },
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "exoticMatter",
+        "value": 5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "exoticMatterFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -564,14 +2315,67 @@
     "icon": "factory",
     "fields": {
       "Name": "factory",
-      "Icon": "factory"
+      "Icon": "factory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 8000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 150
+      },
+      "ConstructionTime": 720,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 2,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 100
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.025
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.002
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "factory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -582,32 +2386,57 @@
     "icon": "falloutShelters",
     "fields": {
       "Name": "falloutShelters",
-      "Icon": "falloutShelters"
+      "Icon": "falloutShelters",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "biowarfare_1"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "regionVulnAdd",
+        "value1": "biological",
+        "value": -0.5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "falloutShelters"
-      }
-    ]
-  },
-  {
-    "id": "farm",
-    "type": "projects",
-    "displayName": "Farm",
-    "icon": "farm",
-    "fields": {
-      "Name": "farm",
-      "Icon": "farm"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
+      },
       {
-        "type": "icon",
-        "id": "farm"
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -618,14 +2447,61 @@
     "icon": "forbiddenCity",
     "fields": {
       "Name": "forbiddenCity",
-      "Icon": "forbiddenCity"
+      "Icon": "forbiddenCity",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.01
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "forbiddenCity"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -636,14 +2512,60 @@
     "icon": "fortifications",
     "fields": {
       "Name": "fortifications",
-      "Icon": "fortifications"
+      "Icon": "fortifications",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 15000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 1,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defenderAdvantageAdd",
+        "value": 25
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "fortifications"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -654,32 +2576,131 @@
     "icon": "fusionReactor",
     "fields": {
       "Name": "fusionReactor",
-      "Icon": "fusionReactor"
+      "Icon": "fusionReactor",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "nuclearFusion"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": {
+        "nanocomposites": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.6,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "fusionReactor"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
   {
-    "id": "geneClinic",
+    "id": "geneClinics",
     "type": "projects",
-    "displayName": "Gene Clinic",
+    "displayName": "Gene Clinics",
     "icon": "geneClinic",
     "fields": {
-      "Name": "geneClinic",
-      "Icon": "geneClinic"
+      "Name": "geneClinics",
+      "Icon": "geneClinic",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "geneticEngineering"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 60000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial",
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "lifeSpanAdd",
+        "value": 20
+      },
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "geneticMaterial",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "geneClinic"
+      },
+      {
+        "type": "category",
+        "id": "geneticMaterial"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -690,14 +2711,58 @@
     "icon": "genePurifier",
     "fields": {
       "Name": "genePurifier",
-      "Icon": "genePurifier"
+      "Icon": "genePurifier",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "superhumanCrisis"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 100000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 5000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "superhumanCrisis_intensity",
+        "value": -0.01,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "genePurifier"
+      },
+      {
+        "type": "category",
+        "id": "geneticMaterial"
       }
     ]
   },
@@ -708,7 +2773,36 @@
     "icon": "generationShip",
     "fields": {
       "Name": "generationShip",
-      "Icon": "generationShip"
+      "Icon": "generationShip",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": 1,
+      "HasEmpireLimit": true,
+      "IsWonder": true,
+      "WonderLimit": 4
     },
     "modifiers": [],
     "prerequisites": [],
@@ -716,6 +2810,10 @@
       {
         "type": "icon",
         "id": "generationShip"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -726,14 +2824,63 @@
     "icon": "geneticMaterialFactory",
     "fields": {
       "Name": "geneticMaterialFactory",
-      "Icon": "geneticMaterialFactory"
+      "Icon": "geneticMaterialFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "geneticEngineering"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": -8,
+      "IndustrialCap": 1,
+      "EducationLevel": 1.5,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "geneticMaterial",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "superhumanCrisis_intensity",
+        "value": 0.0025,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "geneticMaterialFactory"
+      },
+      {
+        "type": "category",
+        "id": "geneticMaterial"
       }
     ]
   },
@@ -744,14 +2891,55 @@
     "icon": "gravitonFactory",
     "fields": {
       "Name": "gravitonFactory",
-      "Icon": "gravitonFactory"
+      "Icon": "gravitonFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "bad tech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 250000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "antimatter",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "gravitonFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -762,14 +2950,71 @@
     "icon": "gravityManipulator",
     "fields": {
       "Name": "gravityManipulator",
-      "Icon": "gravityManipulator"
+      "Icon": "gravityManipulator",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "gravitonManipulation"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 1000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "habitabilityAdd",
+        "value": 0.2
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.25
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 2
+      },
+      {
+        "key": "projectEfficiency",
+        "value": 0.1
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "antimatter",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "gravityManipulator"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -780,14 +3025,60 @@
     "icon": "hagiaSophia",
     "fields": {
       "Name": "hagiaSophia",
-      "Icon": "hagiaSophia"
+      "Icon": "hagiaSophia",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.25
+      },
+      {
+        "key": "unityMult",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "hagiaSophia"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -798,14 +3089,123 @@
     "icon": "hardenedPowergrid",
     "fields": {
       "Name": "hardenedPowergrid",
-      "Icon": "hardenedPowergrid"
+      "Icon": "hardenedPowergrid",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "empTech_1"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 50000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 500
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "regionVulnAdd",
+        "value1": "emp",
+        "value": -0.75
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "hardenedPowergrid"
+      },
+      {
+        "type": "category",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "heavyIndustry",
+    "type": "projects",
+    "displayName": "Heavy Industry",
+    "icon": "robots",
+    "fields": {
+      "Name": "heavyIndustry",
+      "Icon": "robots",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "cybernetics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "robotFactory",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": {
+        "steel": 10
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robots"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "robots"
       }
     ]
   },
@@ -816,32 +3216,259 @@
     "icon": "hivemindCentralNodeProject",
     "fields": {
       "Name": "hivemindCentralNodeProject",
-      "Icon": "hivemindCentralNodeProject"
+      "Icon": "hivemindCentralNodeProject",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 720,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": -1,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": 1,
+      "HasEmpireLimit": true,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "robots",
+        "value": 1000
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 15000
+      },
+      {
+        "key": "resourceProduction",
+        "value1": "steel",
+        "value": 10
+      },
+      {
+        "key": "resourceProduction",
+        "value1": "energy",
+        "value": 10
+      },
+      {
+        "key": "automatedWorkforceAdd",
+        "value": 100000000
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "hivemindCentralNodeProject"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
   {
-    "id": "hydroponicsFarm",
+    "id": "massGeneticGrowth",
     "type": "projects",
-    "displayName": "Hydroponics Farm",
+    "displayName": "Human Petri Dish",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "massGeneticGrowth",
+      "Icon": "geneticMaterial",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "biotech"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "geneticMaterialFactory",
+      "Cost": {
+        "industry": 300000
+      },
+      "RequiredResource": {
+        "cryoOrganics": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "geneticMaterial",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      },
+      {
+        "type": "category",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "hydroformer",
+    "type": "projects",
+    "displayName": "Hydroformer",
+    "icon": "water",
+    "fields": {
+      "Name": "hydroformer",
+      "Icon": "water",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryColonization"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 1000000
+      },
+      "RequiredResource": {
+        "energy": 15
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 2000
+      },
+      "ConstructionTime": 7200,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "water"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      }
+    ]
+  },
+  {
+    "id": "hydroponics",
+    "type": "projects",
+    "displayName": "Hydroponics Farming",
     "icon": "hydroponicsFarm",
     "fields": {
-      "Name": "hydroponicsFarm",
-      "Icon": "hydroponicsFarm"
+      "Name": "hydroponics",
+      "Icon": "hydroponicsFarm",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 1,
+      "IndustrialCap": 0,
+      "EducationLevel": 0.6,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "grain",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "hydroponicsFarm"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
       }
     ]
   },
@@ -852,14 +3479,129 @@
     "icon": "hyperdimensionalLab",
     "fields": {
       "Name": "hyperdimensionalLab",
-      "Icon": "hyperdimensionalLab"
+      "Icon": "hyperdimensionalLab",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "hyperphysics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": true,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "research",
+        "value": 5
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.25,
+        "scope": "Empire"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.1,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "hyperdimensionalLab"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
+      }
+    ]
+  },
+  {
+    "id": "digitalFactory",
+    "type": "projects",
+    "displayName": "Industrial Computerization",
+    "icon": "electronicsUsage",
+    "fields": {
+      "Name": "digitalFactory",
+      "Icon": "electronicsUsage",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "artificialIntelligence"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": {
+        "electronics": 5
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.15
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "electronicsUsage"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -870,14 +3612,60 @@
     "icon": "replicatorIndustrial",
     "fields": {
       "Name": "replicatorIndustrial",
-      "Icon": "replicatorIndustrial"
+      "Icon": "replicatorIndustrial",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "industrialReplication"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 100000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "superSteel",
+        "value": 20
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 1000
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "replicatorIndustrial"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -888,13 +3676,66 @@
     "icon": "infrastructure",
     "fields": {
       "Name": "infrastructure",
-      "Icon": "infrastructure"
+      "Icon": "infrastructure",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 15000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.25,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.02
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.333
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
+        "id": "infrastructure"
+      },
+      {
+        "type": "category",
         "id": "infrastructure"
       }
     ]
@@ -906,14 +3747,60 @@
     "icon": "logisticsHub",
     "fields": {
       "Name": "logisticsHub",
-      "Icon": "logisticsHub"
+      "Icon": "logisticsHub",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "titaniumAlloy"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "factory",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure",
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "logisticsHub"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -924,14 +3811,60 @@
     "icon": "regionShield",
     "fields": {
       "Name": "regionShield",
-      "Icon": "regionShield"
+      "Icon": "regionShield",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "hypercomputation"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "regionVulnAdd",
+        "value": -0.25
+      },
+      {
+        "key": "regionRangedDefense",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "regionShield"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -942,14 +3875,254 @@
     "icon": "mantleBorehole",
     "fields": {
       "Name": "mantleBorehole",
-      "Icon": "mantleBorehole"
+      "Icon": "mantleBorehole",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "polymetals"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": true,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 10000
+      },
+      {
+        "key": "resourceProduction",
+        "value1": "steel",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "mantleBorehole"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
+      }
+    ]
+  },
+  {
+    "id": "massCasting",
+    "type": "projects",
+    "displayName": "Mass Casting Apparatus",
+    "icon": "superSteel",
+    "fields": {
+      "Name": "massCasting",
+      "Icon": "superSteel",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "supermaterials"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "superSteelFactory",
+      "Cost": {
+        "industry": 150000
+      },
+      "RequiredResource": {
+        "energy": 15
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 15000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "superSteelFactory",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superSteel"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      }
+    ]
+  },
+  {
+    "id": "massMechanization",
+    "type": "projects",
+    "displayName": "Mass Mechanization",
+    "icon": "robotUsage",
+    "fields": {
+      "Name": "massMechanization",
+      "Icon": "robotUsage",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "robotics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 100000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.2
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "robots",
+        "value": 100
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robotUsage"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      },
+      {
+        "type": "category",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "massProduction",
+    "type": "projects",
+    "displayName": "Mass Production",
+    "icon": "consumerGoods",
+    "fields": {
+      "Name": "massProduction",
+      "Icon": "consumerGoods",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "massManufacturing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "consumerGoodsFactory",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": {
+        "energy": 5
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 2000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "consumerGoods",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "consumerGoods"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
       }
     ]
   },
@@ -960,14 +4133,65 @@
     "icon": "metaverseServer",
     "fields": {
       "Name": "metaverseServer",
-      "Icon": "metaverseServer"
+      "Icon": "metaverseServer",
+      "Limit": 4,
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "ascendedVirtual"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 5000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "neuralNetworks"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.25
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "neuralNetworks",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "metaverseServer"
+      },
+      {
+        "type": "category",
+        "id": "neuralNetworks"
       }
     ]
   },
@@ -978,14 +4202,62 @@
     "icon": "missileSilo",
     "fields": {
       "Name": "missileSilo",
-      "Icon": "missileSilo"
+      "Icon": "missileSilo",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 15000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 300
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "strategicCapacity",
+        "value": 20
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "missileSilo"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -996,14 +4268,74 @@
     "icon": "monument",
     "fields": {
       "Name": "monument",
-      "Icon": "monument"
+      "Icon": "monument",
+      "Limit": 3,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "culture",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.02
+      },
+      {
+        "key": "controllingFactionLoyalty",
+        "value": 0.01
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.2
+      },
+      {
+        "key": "unityMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "monument"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -1014,14 +4346,61 @@
     "icon": "munitionDefense",
     "fields": {
       "Name": "munitionDefense",
-      "Icon": "munitionDefense"
+      "Icon": "munitionDefense",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "pointDefense_1"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 2,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "regionVulnAdd",
+        "value1": "strategic",
+        "value": -0.1
+      },
+      {
+        "key": "regionRangedDefense",
+        "value": 50
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "munitionDefense"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -1032,14 +4411,60 @@
     "icon": "nanobotHealthcare",
     "fields": {
       "Name": "nanobotHealthcare",
-      "Icon": "nanobotHealthcare"
+      "Icon": "nanobotHealthcare",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "nanocomposites"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 75000
+      },
+      "RequiredResource": {
+        "nanocomposites": 5
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "lifeSpanAdd",
+        "value": 10
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.15
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "nanobotHealthcare"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -1050,14 +4475,63 @@
     "icon": "nanocompositeFactory",
     "fields": {
       "Name": "nanocompositeFactory",
-      "Icon": "nanocompositeFactory"
+      "Icon": "nanocompositeFactory",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "nanocomposites"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 20000
+      },
+      "RequiredResource": {
+        "electronics": 3
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": -8,
+      "IndustrialCap": 1,
+      "EducationLevel": 1.25,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "nanocomposites",
+        "value": 1
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "nanocompositeFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -1068,32 +4542,123 @@
     "icon": "nanocompositeUsage",
     "fields": {
       "Name": "nanocompositeUsage",
-      "Icon": "nanocompositeUsage"
+      "Icon": "nanocompositeUsage",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "polymetals"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": {
+        "nanocomposites": 3
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 2000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "nanocompositeUsage"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
   {
-    "id": "neuralEngine",
+    "id": "neuralHarvester",
     "type": "projects",
-    "displayName": "Neural Engine",
+    "displayName": "Neural Harvester",
     "icon": "neuralEngine",
     "fields": {
-      "Name": "neuralEngine",
-      "Icon": "neuralEngine"
+      "Name": "neuralHarvester",
+      "Icon": "neuralEngine",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "sapientMachines"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 500000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popAttrition",
+        "value": 0.005
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "willpowerCapacity",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "neuralEngine"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -1104,50 +4669,260 @@
     "icon": "northernSpaceport",
     "fields": {
       "Name": "northernSpaceport",
-      "Icon": "northernSpaceport"
+      "Icon": "northernSpaceport",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "spaceCapacity",
+        "value": 80
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "spaceport",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "northernSpaceport"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
   {
-    "id": "officeBuilding",
+    "id": "nuclearReactor",
     "type": "projects",
-    "displayName": "Office Building",
-    "icon": "officeBuilding",
+    "displayName": "Nuclear Reactor",
+    "icon": "reactor",
     "fields": {
-      "Name": "officeBuilding",
-      "Icon": "officeBuilding"
+      "Name": "nuclearReactor",
+      "Icon": "reactor",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 20000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.6,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "energy",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "officeBuilding"
+        "id": "reactor"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
   {
-    "id": "oilRefinery",
+    "id": "openFarm",
     "type": "projects",
-    "displayName": "Oil Refinery",
+    "displayName": "Open-Air Farming",
+    "icon": "farm",
+    "fields": {
+      "Name": "openFarm",
+      "Icon": "farm",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "farmland"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 3000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 1,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.25,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": "farm",
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "grain",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "farm"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
+      }
+    ]
+  },
+  {
+    "id": "oilApplication",
+    "type": "projects",
+    "displayName": "Petrochemicals Industry",
     "icon": "oilRefinery",
     "fields": {
-      "Name": "oilRefinery",
-      "Icon": "oilRefinery"
+      "Name": "oilApplication",
+      "Icon": "oilRefinery",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "oil"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.4,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "energy",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "oilRefinery"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -1158,32 +4933,63 @@
     "icon": "populationHarvesting",
     "fields": {
       "Name": "populationHarvesting",
-      "Icon": "populationHarvesting"
+      "Icon": "populationHarvesting",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "pharmaceuticals"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 6000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "geneticMaterial"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "geneticMaterial",
+        "value": 10
+      },
+      {
+        "key": "popAttrition",
+        "value": 0.001
+      },
+      {
+        "key": "lifeSpanAdd",
+        "value": -3
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "populationHarvesting"
-      }
-    ]
-  },
-  {
-    "id": "port",
-    "type": "projects",
-    "displayName": "Port",
-    "icon": "port",
-    "fields": {
-      "Name": "port",
-      "Icon": "port"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
+      },
       {
-        "type": "icon",
-        "id": "port"
+        "type": "category",
+        "id": "geneticMaterial"
       }
     ]
   },
@@ -1194,14 +5000,57 @@
     "icon": "powerGrid",
     "fields": {
       "Name": "powerGrid",
-      "Icon": "powerGrid"
+      "Icon": "powerGrid",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "nuclearPhysics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "nuclearReactor",
+      "Cost": {
+        "industry": 15000
+      },
+      "RequiredResource": {
+        "steel": 5
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "powerGrid"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -1212,32 +5061,57 @@
     "icon": "quantumComputers",
     "fields": {
       "Name": "quantumComputers",
-      "Icon": "quantumComputers"
+      "Icon": "quantumComputers",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "quantumComputing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "neuralNetworkFactory",
+      "Cost": {
+        "industry": 60000
+      },
+      "RequiredResource": {
+        "thorium": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "neuralNetworks"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "neuralNetworks",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "quantumComputers"
-      }
-    ]
-  },
-  {
-    "id": "reactor",
-    "type": "projects",
-    "displayName": "Reactor",
-    "icon": "reactor",
-    "fields": {
-      "Name": "reactor",
-      "Icon": "reactor"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
+      },
       {
-        "type": "icon",
-        "id": "reactor"
+        "type": "category",
+        "id": "neuralNetworks"
       }
     ]
   },
@@ -1248,14 +5122,57 @@
     "icon": "redSquare",
     "fields": {
       "Name": "redSquare",
-      "Icon": "redSquare"
+      "Icon": "redSquare",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.33
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "redSquare"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -1266,14 +5183,132 @@
     "icon": "replicatorAutomation",
     "fields": {
       "Name": "replicatorAutomation",
-      "Icon": "replicatorAutomation"
+      "Icon": "replicatorAutomation",
+      "Limit": 4,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "cybernetics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "nanocompositeFactory",
+      "Cost": {
+        "industry": 50000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.25,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "nanocomposites",
+        "value": 0.25
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "robots",
+        "value": 100
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "replicatorAutomation"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "researchIndustry",
+    "type": "projects",
+    "displayName": "Research Industry",
+    "icon": "university",
+    "fields": {
+      "Name": "researchIndustry",
+      "Icon": "university",
+      "Limit": 3,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "educationTech_1"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.2
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "university"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -1284,14 +5319,60 @@
     "icon": "extraction",
     "fields": {
       "Name": "extraction",
-      "Icon": "extraction"
+      "Icon": "extraction",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceMult",
+        "value1": "steel",
+        "value": 0.2
+      },
+      {
+        "key": "resourceMult",
+        "value1": "grain",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "extraction"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -1302,50 +5383,263 @@
     "icon": "robotFactory",
     "fields": {
       "Name": "robotFactory",
-      "Icon": "robotFactory"
+      "Icon": "robotFactory",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "robotics"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "robots"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "robots",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "roboticsCrisis_intensity",
+        "value": 0.0025,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "robotFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "robots"
       }
     ]
   },
   {
-    "id": "robotUsage",
+    "id": "navalPort",
     "type": "projects",
-    "displayName": "Robot Usage",
-    "icon": "robotUsage",
+    "displayName": "Seaport",
+    "icon": "port",
     "fields": {
-      "Name": "robotUsage",
-      "Icon": "robotUsage"
+      "Name": "navalPort",
+      "Icon": "port",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "terrain",
+        "B": "coastal"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 8000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 1,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "navyCapacity",
+        "value": 100
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.01
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "robotUsage"
+        "id": "port"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
   {
-    "id": "shipyard",
+    "id": "grayGooReplicator",
     "type": "projects",
-    "displayName": "Shipyard",
-    "icon": "shipyard",
+    "displayName": "Self-Replication Pools",
+    "icon": "nanocomposites",
     "fields": {
-      "Name": "shipyard",
-      "Icon": "shipyard"
+      "Name": "grayGooReplicator",
+      "Icon": "nanocomposites",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "polymetals"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "nanocompositeFactory",
+      "Cost": {
+        "industry": 40000
+      },
+      "RequiredResource": {
+        "steel": 10
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 500
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.5,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "nanocomposites",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "shipyard"
+        "id": "nanocomposites"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      }
+    ]
+  },
+  {
+    "id": "serviceIndustry",
+    "type": "projects",
+    "displayName": "Service Industry",
+    "icon": "officeBuilding",
+    "fields": {
+      "Name": "serviceIndustry",
+      "Icon": "officeBuilding",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryTrade"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "commercialZones",
+      "Cost": {
+        "industry": 60000
+      },
+      "RequiredResource": {
+        "iceNine": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "commerce",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "officeBuilding"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
       }
     ]
   },
@@ -1356,14 +5650,71 @@
     "icon": "spaceElevator",
     "fields": {
       "Name": "spaceElevator",
-      "Icon": "spaceElevator"
+      "Icon": "spaceElevator",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "supermaterials"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 250000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 2500
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.5
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.5
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "superSteel",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "spaceElevator"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -1374,14 +5725,120 @@
     "icon": "spaceHabitation",
     "fields": {
       "Name": "spaceHabitation",
-      "Icon": "spaceHabitation"
+      "Icon": "spaceHabitation",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "spaceColonies"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "habitabilityAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "spaceHabitation"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
+      }
+    ]
+  },
+  {
+    "id": "spaceport",
+    "type": "projects",
+    "displayName": "Spaceport",
+    "icon": "shipyard",
+    "fields": {
+      "Name": "spaceport",
+      "Icon": "shipyard",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "spaceports"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 250
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0.5,
+      "AutoGenStatic": -4,
+      "IndustrialCap": 3,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": "spaceport",
+      "Categories": [
+        "military"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "spaceCapacity",
+        "value": 20
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "military",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "shipyard"
+      },
+      {
+        "type": "category",
+        "id": "military"
       }
     ]
   },
@@ -1392,32 +5849,129 @@
     "icon": "statueOfLiberty",
     "fields": {
       "Name": "statueOfLiberty",
-      "Icon": "statueOfLiberty"
+      "Icon": "statueOfLiberty",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "immigrationPull",
+        "value": 0.25
+      },
+      {
+        "key": "assimilationMult",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "statueOfLiberty"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
   {
-    "id": "steelFactory",
+    "id": "steelRefinery",
     "type": "projects",
-    "displayName": "Steel Factory",
+    "displayName": "Steel Refinery",
     "icon": "steelFactory",
     "fields": {
-      "Name": "steelFactory",
-      "Icon": "steelFactory"
+      "Name": "steelRefinery",
+      "Icon": "steelFactory",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 1,
+      "IndustrialCap": 1,
+      "EducationLevel": 0.25,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "steel",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.01
+      },
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "industry",
+        "value": 25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "steelFactory"
+      },
+      {
+        "type": "category",
+        "id": "industry"
       }
     ]
   },
@@ -1428,14 +5982,59 @@
     "icon": "supercollider",
     "fields": {
       "Name": "supercollider",
-      "Icon": "supercollider"
+      "Icon": "supercollider",
+      "Limit": 999,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "antimatterPower"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 1000000
+      },
+      "RequiredResource": {
+        "energy": 15
+      },
+      "Production": [],
+      "Consumption": {
+        "industry": 15000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityAdd",
+        "value1": "antimatter",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "supercollider"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -1446,14 +6045,62 @@
     "icon": "supercomputer",
     "fields": {
       "Name": "supercomputer",
-      "Icon": "supercomputer"
+      "Icon": "supercomputer",
+      "Limit": 4,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "quantumComputing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "electronicsFactory",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": {
+        "nanocomposites": 1
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "consumerGoods",
+        "energy"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "electronics",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "supercomputer"
+      },
+      {
+        "type": "category",
+        "id": "consumerGoods"
+      },
+      {
+        "type": "category",
+        "id": "energy"
       }
     ]
   },
@@ -1464,14 +6111,75 @@
     "icon": "superconstruction",
     "fields": {
       "Name": "superconstruction",
-      "Icon": "superconstruction"
+      "Icon": "superconstruction",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "supermaterials"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 1000000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 10000
+      },
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "industry",
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.5
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 2
+      },
+      {
+        "key": "regionVulnAdd",
+        "value1": "strategic",
+        "value": -0.2
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "superSteel",
+        "value": 10
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "superconstruction"
+      },
+      {
+        "type": "category",
+        "id": "industry"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -1482,14 +6190,60 @@
     "icon": "tajMahal",
     "fields": {
       "Name": "tajMahal",
-      "Icon": "tajMahal"
+      "Icon": "tajMahal",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": [],
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      },
+      {
+        "key": "unrestAdd",
+        "value": -0.02
+      },
+      {
+        "key": "popGrowthMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "tajMahal"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -1500,14 +6254,62 @@
     "icon": "ultracomputer",
     "fields": {
       "Name": "ultracomputer",
-      "Icon": "ultracomputer"
+      "Icon": "ultracomputer",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "quantumComputing"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 10000000
+      },
+      "RequiredResource": {
+        "energy": 10
+      },
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 4800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "wonder"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": true,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.1,
+        "scope": "Empire"
+      },
+      {
+        "key": "researchMult",
+        "value": 0.2,
+        "scope": "Empire"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "ultracomputer"
+      },
+      {
+        "type": "category",
+        "id": "wonder"
       }
     ]
   },
@@ -1518,14 +6320,66 @@
     "icon": "university",
     "fields": {
       "Name": "university",
-      "Icon": "university"
+      "Icon": "university",
+      "Limit": 3,
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 5000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 100
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 0,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": false,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "research"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "research",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.01
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.15
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "university"
+      },
+      {
+        "type": "category",
+        "id": "research"
       }
     ]
   },
@@ -1536,14 +6390,67 @@
     "icon": "urbanization",
     "fields": {
       "Name": "urbanization",
-      "Icon": "urbanization"
+      "Icon": "urbanization",
+      "Limit": 5,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "None"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 25000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": [],
+      "ConstructionTime": 1800,
+      "CostScalar": 2,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.25
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.5
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.02
+      },
+      {
+        "key": "immigrationPull",
+        "value": 0.5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "urbanization"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   },
@@ -1554,14 +6461,59 @@
     "icon": "waystation",
     "fields": {
       "Name": "waystation",
-      "Icon": "waystation"
+      "Icon": "waystation",
+      "Limit": 1,
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "interplanetaryColonization"
+      },
+      "Exclusives": [],
+      "RequiredDeposit": [
+        "spaceStation"
+      ],
+      "AssociatedIndustry": "None",
+      "Cost": {
+        "industry": 50000
+      },
+      "RequiredResource": [],
+      "Production": [],
+      "Consumption": {
+        "industry": 1000
+      },
+      "ConstructionTime": 1800,
+      "CostScalar": 1.1,
+      "IsTechUnlock": false,
+      "AutoGenPerDev": 1,
+      "AutoGenStatic": 0,
+      "IndustrialCap": 0,
+      "EducationLevel": 0,
+      "ShouldAutoGenerate": true,
+      "DamagePriority": 0,
+      "Model": null,
+      "Categories": [
+        "infrastructure"
+      ],
+      "EmpireLimit": -1,
+      "HasEmpireLimit": false,
+      "IsWonder": false,
+      "WonderLimit": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "waystation"
+      },
+      {
+        "type": "category",
+        "id": "infrastructure"
       }
     ]
   }

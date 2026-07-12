@@ -1,0 +1,74 @@
+[
+  {
+    "id": "immigrationIncentive",
+    "type": "region-interactions",
+    "displayName": "Immigration Incentive",
+    "icon": "immigrationIncentive",
+    "fields": {
+      "Name": "immigrationIncentive",
+      "Icon": "immigrationIncentive"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "immigrationIncentive"
+      }
+    ]
+  },
+  {
+    "id": "massDeportations",
+    "type": "region-interactions",
+    "displayName": "Mass Deportations",
+    "icon": "massDeportations",
+    "fields": {
+      "Name": "massDeportations",
+      "Icon": "massDeportations"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massDeportations"
+      }
+    ]
+  },
+  {
+    "id": "NewRow_1",
+    "type": "region-interactions",
+    "displayName": "New Row 1",
+    "icon": "",
+    "fields": {
+      "Name": "NewRow_1",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "NewRow_2",
+    "type": "region-interactions",
+    "displayName": "New Row 2",
+    "icon": "",
+    "fields": {
+      "Name": "NewRow_2",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

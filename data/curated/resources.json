@@ -6,9 +6,36 @@
     "icon": "airCapacity",
     "fields": {
       "Name": "airCapacity",
-      "Icon": "airCapacity"
+      "Icon": "airCapacity",
+      "BasePrice": 7.5,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.221695,
+        "G": 0.546294,
+        "B": 0.572917,
+        "A": 1,
+        "Hex": "82C3C8"
+      },
+      "AIWeight": 160,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "air",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -24,9 +51,39 @@
     "icon": "antimatter",
     "fields": {
       "Name": "antimatter",
-      "Icon": "antimatter"
+      "Icon": "antimatter",
+      "BasePrice": 200,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.335069,
+        "G": 0,
+        "B": 0.211105,
+        "A": 1,
+        "Hex": "9D007F"
+      },
+      "AIWeight": 20000,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.2,
+        "scope": "Surplus"
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -42,9 +99,40 @@
     "icon": "superSteel",
     "fields": {
       "Name": "superSteel",
-      "Icon": "superSteel"
+      "Icon": "superSteel",
+      "BasePrice": 16,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.618055,
+        "G": 0.0678,
+        "B": 0,
+        "A": 1,
+        "Hex": "CE4900"
+      },
+      "AIWeight": 1600,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 1,
+        "scope": "Surplus"
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": 2,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -60,9 +148,34 @@
     "icon": "diplomacyCapacity",
     "fields": {
       "Name": "diplomacyCapacity",
-      "Icon": "diplomacyCapacity"
+      "Icon": "diplomacyCapacity",
+      "BasePrice": 0,
+      "Tradeable": false,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.161775,
+        "G": 0.682292,
+        "B": 0.107623,
+        "A": 1,
+        "Hex": "70D85C"
+      },
+      "AIWeight": 0,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -78,9 +191,34 @@
     "icon": "exoticMatter",
     "fields": {
       "Name": "exoticMatter",
-      "Icon": "exoticMatter"
+      "Icon": "exoticMatter",
+      "BasePrice": 2000,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 1,
+        "G": 0.555541,
+        "B": 0.881851,
+        "A": 1,
+        "Hex": "FFC5F2"
+      },
+      "AIWeight": 20000,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -10,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -96,9 +234,39 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "geneticMaterial",
-      "Icon": "geneticMaterial"
+      "Icon": "geneticMaterial",
+      "BasePrice": 8,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.170772,
+        "G": 0.324653,
+        "B": 0,
+        "A": 1,
+        "Hex": "739A00"
+      },
+      "AIWeight": 800,
+      "IncomeValue": 0,
+      "MilitaryValue": 10
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1,
+        "scope": "Surplus"
+      },
+      {
+        "key": "popGrowthMult",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -114,9 +282,39 @@
     "icon": "gravitons",
     "fields": {
       "Name": "gravitons",
-      "Icon": "gravitons"
+      "Icon": "gravitons",
+      "BasePrice": 500,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.517361,
+        "G": 0.022117,
+        "B": 0.298294,
+        "A": 1,
+        "Hex": "BF2995"
+      },
+      "AIWeight": 5000,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": -1,
+        "scope": "Shortage"
+      },
+      {
+        "key": "habitabilityAdd",
+        "value": -0.25,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -129,17 +327,47 @@
     "id": "industry",
     "type": "resources",
     "displayName": "Industrial Capacity",
-    "icon": "machineParts",
+    "icon": "industry",
     "fields": {
       "Name": "industry",
-      "Icon": "machineParts"
+      "Icon": "industry",
+      "BasePrice": 2,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": true,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.091411,
+        "B": 0.517361,
+        "A": 1,
+        "Hex": "0055BF"
+      },
+      "AIWeight": 320,
+      "IncomeValue": 0,
+      "MilitaryValue": 10
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 1,
+        "scope": "Shortage"
+      },
+      {
+        "key": "developmentGrowthMult",
+        "value": -2,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "machineParts"
+        "id": "industry"
       }
     ]
   },
@@ -150,9 +378,34 @@
     "icon": "logistics",
     "fields": {
       "Name": "logistics",
-      "Icon": "logistics"
+      "Icon": "logistics",
+      "BasePrice": 1,
+      "Tradeable": false,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.508681,
+        "G": 0.246936,
+        "B": 0.060633,
+        "A": 1,
+        "Hex": "BD8845"
+      },
+      "AIWeight": 160,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -169,9 +422,44 @@
     "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
     "fields": {
       "Name": "manpower",
-      "Icon": "manpower"
+      "Icon": "manpower",
+      "BasePrice": 1,
+      "Tradeable": false,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": true,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.02415,
+        "G": 0.222222,
+        "B": 0,
+        "A": 1,
+        "Hex": "2B8200"
+      },
+      "AIWeight": 1,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.2,
+        "scope": "Surplus"
+      },
+      {
+        "key": "unitReinforceRateMult",
+        "value": -1,
+        "scope": "Shortage"
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -187,9 +475,36 @@
     "icon": "navyCapacity",
     "fields": {
       "Name": "navyCapacity",
-      "Icon": "navyCapacity"
+      "Icon": "navyCapacity",
+      "BasePrice": 5,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.002844,
+        "G": 0,
+        "B": 0.213541,
+        "A": 1,
+        "Hex": "09007F"
+      },
+      "AIWeight": 160,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "water",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -205,9 +520,40 @@
     "icon": "neuralNetworks",
     "fields": {
       "Name": "neuralNetworks",
-      "Icon": "neuralNetworks"
+      "Icon": "neuralNetworks",
+      "BasePrice": 8,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0,
+        "G": 0.652778,
+        "B": 0.46624,
+        "A": 1,
+        "Hex": "00D4B6"
+      },
+      "AIWeight": 800,
+      "IncomeValue": 0,
+      "MilitaryValue": 10
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 1,
+        "scope": "Surplus"
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -223,9 +569,39 @@
     "icon": "robots",
     "fields": {
       "Name": "robots",
-      "Icon": "robots"
+      "Icon": "robots",
+      "BasePrice": 8,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.456597,
+        "G": 0.456597,
+        "B": 0.456597,
+        "A": 1,
+        "Hex": "B4B4B4"
+      },
+      "AIWeight": 800,
+      "IncomeValue": 0,
+      "MilitaryValue": 10
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.25,
+        "scope": "Surplus"
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": -0.75,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -241,9 +617,34 @@
     "icon": "willpowerCapacity",
     "fields": {
       "Name": "willpowerCapacity",
-      "Icon": "willpowerCapacity"
+      "Icon": "willpowerCapacity",
+      "BasePrice": 20,
+      "Tradeable": false,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.263889,
+        "G": 0,
+        "B": 0.250356,
+        "A": 1,
+        "Hex": "8C0089"
+      },
+      "AIWeight": 200,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -259,9 +660,36 @@
     "icon": "spaceCapacity",
     "fields": {
       "Name": "spaceCapacity",
-      "Icon": "spaceCapacity"
+      "Icon": "spaceCapacity",
+      "BasePrice": 15,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.168862,
+        "G": 0,
+        "B": 0.302083,
+        "A": 1,
+        "Hex": "720095"
+      },
+      "AIWeight": 128000,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value2": "space",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -277,9 +705,34 @@
     "icon": "strategicCapacity",
     "fields": {
       "Name": "strategicCapacity",
-      "Icon": "strategicCapacity"
+      "Icon": "strategicCapacity",
+      "BasePrice": 20,
+      "Tradeable": true,
+      "CanDeficitSpend": true,
+      "DefaultStockpile": 0,
+      "AlwaysVisible": false,
+      "CreationCost": [],
+      "BaseConsumes": 0,
+      "ConsumesExp": 0,
+      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "Color": {
+        "R": 0.035773,
+        "G": 0.604167,
+        "B": 0,
+        "A": 1,
+        "Hex": "35CC00"
+      },
+      "AIWeight": 50,
+      "IncomeValue": 0,
+      "MilitaryValue": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": -1,
+        "scope": "Shortage"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

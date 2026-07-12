@@ -1,0 +1,436 @@
+[
+  {
+    "id": "Anti-Tank (Generic)",
+    "type": "unit-types",
+    "displayName": "Anti-Tank (Generic)",
+    "icon": "smallArms",
+    "fields": {
+      "Name": "Anti-Tank (Generic)",
+      "Icon": "smallArms",
+      "Model": "None",
+      "Components": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8,
+        16,
+        25
+      ],
+      "Color": {
+        "B": 184,
+        "G": 137,
+        "R": 205,
+        "A": 255,
+        "Hex": "CD89B8"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Stats": [],
+      "Cost": {
+        "smallArms": 5
+      },
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms"
+      }
+    ]
+  },
+  {
+    "id": "Artillery (Generic)",
+    "type": "unit-types",
+    "displayName": "Artillery (Generic)",
+    "icon": "artillery0",
+    "fields": {
+      "Name": "Artillery (Generic)",
+      "Icon": "artillery0",
+      "Model": "None",
+      "Components": [
+        0,
+        9,
+        16,
+        3
+      ],
+      "Color": {
+        "B": 0,
+        "G": 192,
+        "R": 203,
+        "A": 255,
+        "Hex": "CBC000"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Stats": [],
+      "Cost": {
+        "smallArms": 5
+      },
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery0"
+      }
+    ]
+  },
+  {
+    "id": "Destroyer",
+    "type": "unit-types",
+    "displayName": "Destroyer",
+    "icon": "ships",
+    "fields": {
+      "Name": "Destroyer",
+      "Icon": "ships",
+      "Model": "None",
+      "Components": [],
+      "Color": {
+        "B": 224,
+        "G": 90,
+        "R": 148,
+        "A": 255,
+        "Hex": "945AE0"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Stats": [],
+      "Cost": [],
+      "IsShip": true,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ships"
+      }
+    ]
+  },
+  {
+    "id": "Destroyer (Generic)",
+    "type": "unit-types",
+    "displayName": "Destroyer (Generic)",
+    "icon": "boats",
+    "fields": {
+      "Name": "Destroyer (Generic)",
+      "Icon": "boats",
+      "Model": "None",
+      "Components": [
+        27,
+        27,
+        20,
+        28,
+        24,
+        24,
+        12,
+        12,
+        13
+      ],
+      "Color": {
+        "B": 215,
+        "G": 93,
+        "R": 135,
+        "A": 255,
+        "Hex": "875DD7"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Stats": [],
+      "Cost": {
+        "ships": 1
+      },
+      "IsShip": true,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "boats"
+      }
+    ]
+  },
+  {
+    "id": "Fighter (Generic)",
+    "type": "unit-types",
+    "displayName": "Fighter (Generic)",
+    "icon": "airplanes",
+    "fields": {
+      "Name": "Fighter (Generic)",
+      "Icon": "airplanes",
+      "Model": "None",
+      "Components": [
+        32,
+        32,
+        30,
+        28,
+        12,
+        14,
+        31,
+        12,
+        12,
+        12,
+        12
+      ],
+      "Color": {
+        "B": 255,
+        "G": 235,
+        "R": 158,
+        "A": 255,
+        "Hex": "9EEBFF"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Stats": [],
+      "Cost": [],
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes"
+      }
+    ]
+  },
+  {
+    "id": "Infantry (Generic)",
+    "type": "unit-types",
+    "displayName": "Infantry (Generic)",
+    "icon": "smallArms",
+    "fields": {
+      "Name": "Infantry (Generic)",
+      "Icon": "smallArms",
+      "Model": "None",
+      "Components": [
+        0,
+        2,
+        4,
+        6,
+        26,
+        16
+      ],
+      "Color": {
+        "B": 0,
+        "G": 158,
+        "R": 61,
+        "A": 255,
+        "Hex": "3D9E00"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Stats": [],
+      "Cost": {
+        "smallArms": 1
+      },
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms"
+      }
+    ]
+  },
+  {
+    "id": "Interceptor (Generic)",
+    "type": "unit-types",
+    "displayName": "Interceptor (Generic)",
+    "icon": "airplanes",
+    "fields": {
+      "Name": "Interceptor (Generic)",
+      "Icon": "airplanes",
+      "Model": "None",
+      "Components": [
+        32,
+        32,
+        30,
+        28,
+        12,
+        14
+      ],
+      "Color": {
+        "B": 255,
+        "G": 235,
+        "R": 158,
+        "A": 255,
+        "Hex": "9EEBFF"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Stats": [],
+      "Cost": [],
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes"
+      }
+    ]
+  },
+  {
+    "id": "Tank (Generic)",
+    "type": "unit-types",
+    "displayName": "Tank (Generic)",
+    "icon": "armor",
+    "fields": {
+      "Name": "Tank (Generic)",
+      "Icon": "armor",
+      "Model": "None",
+      "Components": [
+        5,
+        7,
+        4,
+        11,
+        14,
+        26,
+        26,
+        16,
+        25,
+        15,
+        12,
+        12,
+        13
+      ],
+      "Color": {
+        "B": 214,
+        "G": 0,
+        "R": 180,
+        "A": 255,
+        "Hex": "B400D6"
+      },
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Stats": [],
+      "Cost": {
+        "armor": 5
+      },
+      "IsShip": false,
+      "Attributes": [],
+      "HangarSpace": [],
+      "DefaultHangar": [],
+      "Attack": [],
+      "Vulnerability": [],
+      "AutoUpgrade": true,
+      "Archetype": "None",
+      "ColorOverride": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor"
+      }
+    ]
+  }
+]

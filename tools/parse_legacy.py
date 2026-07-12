@@ -184,7 +184,8 @@ def write_json(path: Path, data: object) -> None:
 
 def validate_records(filename: str, records: list[dict]) -> None:
     names = [record.get("Name") for record in records]
-    if any(not isinstance(name, str) or not re.fullmatch(r"[A-Za-z][A-Za-z0-9_]*", name) for name in names):
+    identifier_pattern = r"[A-Za-z0-9][A-Za-z0-9_-]*" if filename == "Planets.json" else r"[A-Za-z][A-Za-z0-9_]*"
+    if any(not isinstance(name, str) or not re.fullmatch(identifier_pattern, name) for name in names):
         raise ValueError(f"{filename}: invalid row identifier")
     if len(names) != len(set(names)):
         raise ValueError(f"{filename}: duplicate row identifiers")
@@ -475,6 +476,42 @@ def parse_deposits() -> list[dict]:
     return [{"Name": name, "Icon": name} for name in names]
 
 
+# Planet rows are stored as name-map indices in the serialized payload rather
+# than inline strings. These are the non-row identifiers present in the table's
+# compact name map (deposit/resource/modifier references and the table name).
+PLANET_REFERENCE_IDS = {
+    "alienBiosphere", "colonizableOcean", "cryoOrganics", "curiosities",
+    "exoticGasses", "farmland", "gravityEarthlike", "gravityHigh",
+    "gravityInsignificant", "gravityLow", "groundStability", "helium3",
+    "iceNine", "iron", "letheTreasure", "lithium", "lqdMethane",
+    "magneticAntimatter", "niceAtmosphere", "noAtmosphere", "nonSurveyed",
+    "noSunlight", "nuclearFuels", "oil", "oxygen", "palladium",
+    "placidGiant", "radiation", "rareMetals", "subsurfaceOcean", "sunlight",
+    "superAtmosphere", "thorium", "tidallyLocked", "titanium", "water",
+    "Planets",
+}
+
+def parse_planets() -> list[dict]:
+    """Extract planetary-body row IDs from the Planets data-table name map."""
+    path = uexp_path("Planets.uasset")
+    if not path.exists():
+        return []
+    output = subprocess.check_output(["strings", "-n", "2", str(path)], text=True).splitlines()
+    table_path = "/Game/Blueprints/Struct/Defines/Planets"
+    try:
+        start = output.index(table_path) + 1
+        end = output.index("Planets", start)
+    except ValueError as error:
+        raise ValueError("Planets.uasset name-map boundary was not found") from error
+    names = sorted({
+        name for name in output[start:end]
+        if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", name)
+        and name not in PLANET_REFERENCE_IDS
+        and name not in JUNK_STRINGS
+    })
+    return [{"Name": name} for name in names]
+
+
 def parse_projects() -> list[dict]:
     resource_ids = {record["Name"] for record in parse_resources()}
     resource_ids.update(record["Name"] for record in parse_simple("", "DepositResources.uasset"))
@@ -657,6 +694,7 @@ def ensure_legacy_assets() -> None:
         "Situations",
         "StaticModifiers",
         "FactionVariants",
+        "Planets",
     ]
 
     for target in targets:
@@ -703,6 +741,7 @@ def main() -> int:
         ("Situations.json", parse_situations),
         ("Events.json", parse_events),
         ("Deposits.json", parse_deposits),
+        ("Planets.json", parse_planets),
     ]
 
     summary: dict[str, int] = {}

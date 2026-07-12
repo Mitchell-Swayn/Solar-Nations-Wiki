@@ -1,0 +1,6617 @@
+[
+  {
+    "id": "40a2",
+    "type": "planetary-bodies",
+    "displayName": "40a2",
+    "fields": {
+      "Name": "40a2",
+      "SizeofEarth": 46,
+      "ATMPressure": 1,
+      "GravityASL": 5,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.17195,
+        "G": 1,
+        "B": 0.846514,
+        "A": 1,
+        "Hex": "73FFED"
+      },
+      "CloudColor": {
+        "R": 0.554892,
+        "G": 1,
+        "B": 0.976779,
+        "A": 1,
+        "Hex": "C5FFFD"
+      },
+      "SurfaceTexture": "40a2",
+      "CloudTexture": "40a2_cloud",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "40a2_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.15926,
+        "G": 0.357598,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "6FA1C4"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 3,
+        "niceAtmosphere": 1,
+        "gravityLow": 1,
+        "curiosities": 2,
+        "titanium": 5,
+        "iron": 10,
+        "lithium": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40a3",
+    "type": "planetary-bodies",
+    "displayName": "40a3",
+    "fields": {
+      "Name": "40a3",
+      "SizeofEarth": 16,
+      "ATMPressure": 0,
+      "GravityASL": 5,
+      "TemperatureEarthlikeness": 0.2,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.621528,
+        "G": 0.621528,
+        "B": 0.621528,
+        "A": 1,
+        "Hex": "CFCFCF"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40a3",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "40a2_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.433781,
+        "G": 0.492897,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "B0BBC4"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iceNine": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1,
+        "cryoOrganics": 3,
+        "nuclearFuels": 1,
+        "lithium": 9
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniA",
+    "type": "planetary-bodies",
+    "displayName": "40eridani A",
+    "fields": {
+      "Name": "40eridaniA",
+      "SizeofEarth": 142,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.706761,
+        "B": 0.487847,
+        "A": 1,
+        "Hex": "FFDBBA"
+      },
+      "CloudColor": {
+        "R": 0.461805,
+        "G": 0.334743,
+        "B": 0.144914,
+        "A": 1,
+        "Hex": "B59D6A"
+      },
+      "SurfaceTexture": "40eridaniA",
+      "CloudTexture": "40eridaniA_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "40eridaniA_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.53125,
+        "G": 0.21894,
+        "B": 0,
+        "A": 1,
+        "Hex": "C18100"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 2,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "oil": 0.15
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "oil": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniA2",
+    "type": "planetary-bodies",
+    "displayName": "40eridani A2",
+    "fields": {
+      "Name": "40eridaniA2",
+      "SizeofEarth": 43,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.464122,
+        "G": 0.480903,
+        "B": 0.479306,
+        "A": 1,
+        "Hex": "B6B8B8"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40EridaniB",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "40EridaniB_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.53125,
+        "G": 0.508298,
+        "B": 0.429477,
+        "A": 1,
+        "Hex": "C1BDAF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "gravityLow": 1,
+        "noAtmosphere": 0,
+        "iron": 10,
+        "lithium": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniA3",
+    "type": "planetary-bodies",
+    "displayName": "40eridani A3",
+    "fields": {
+      "Name": "40eridaniA3",
+      "SizeofEarth": 760,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.367766,
+        "G": 0.861111,
+        "B": 0.719399,
+        "A": 1,
+        "Hex": "A3EFDD"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40EridaniC",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.53125,
+        "B": 0.518409,
+        "A": 1,
+        "Hex": "00C1BF"
+      },
+      "Symbol": "earth",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": "planetNineRings"
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 6,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "placidGiant": 1,
+        "magneticAntimatter": 3,
+        "helium3": 5,
+        "exoticGasses": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniA3-1",
+    "type": "planetary-bodies",
+    "displayName": "40eridani A3-1",
+    "fields": {
+      "Name": "40eridaniA3-1",
+      "SizeofEarth": 79,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.154224,
+        "G": 0.569444,
+        "B": 0.569444,
+        "A": 1,
+        "Hex": "6DC7C7"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "40EridaniC1",
+      "CloudTexture": "40EridaniC1_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "40EridaniC1_height",
+      "NormalMap": "40EridaniC1_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.153396,
+        "G": 0.359228,
+        "B": 0.53125,
+        "A": 1,
+        "Hex": "6DA2C1"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 1,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "sunlight": 1,
+        "radiation": 1,
+        "palladium": 4,
+        "iron": 8
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniA4",
+    "type": "planetary-bodies",
+    "displayName": "40eridani A4",
+    "fields": {
+      "Name": "40eridaniA4",
+      "SizeofEarth": 19,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.190972,
+        "G": 0.08752,
+        "B": 0.088787,
+        "A": 1,
+        "Hex": "795354"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40EridaniD",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "40EridaniD_height",
+      "NormalMap": "40EridaniD_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.53125,
+        "G": 0.182814,
+        "B": 0.161663,
+        "A": 1,
+        "Hex": "C17670"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noSunlight": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1,
+        "iron": 14
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniM1",
+    "type": "planetary-bodies",
+    "displayName": "40eridani M1",
+    "fields": {
+      "Name": "40eridaniM1",
+      "SizeofEarth": 0.5,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.301844,
+        "B": 0.139281,
+        "A": 1,
+        "Hex": "B69568"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 18,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniM2",
+    "type": "planetary-bodies",
+    "displayName": "40eridani M2",
+    "fields": {
+      "Name": "40eridaniM2",
+      "SizeofEarth": 0.5,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.301844,
+        "B": 0.139281,
+        "A": 1,
+        "Hex": "B69568"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 18,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "40eridaniM3",
+    "type": "planetary-bodies",
+    "displayName": "40eridani M3",
+    "fields": {
+      "Name": "40eridaniM3",
+      "SizeofEarth": 0.5,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.301844,
+        "B": 0.139281,
+        "A": 1,
+        "Hex": "B69568"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 18,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aegir",
+    "type": "planetary-bodies",
+    "displayName": "Aegir",
+    "fields": {
+      "Name": "aegir",
+      "SizeofEarth": 1028,
+      "ATMPressure": 0.5,
+      "GravityASL": 8,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.25,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.511396,
+        "B": 0.176417,
+        "A": 1,
+        "Hex": "FFBE75"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "aegir",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.206425,
+        "B": 0.044146,
+        "A": 1,
+        "Hex": "B67D3B"
+      },
+      "Symbol": "mercury",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.2,
+        "End": 4,
+        "Texture": "aegir_rings"
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityEarthlike": 1,
+        "cryoOrganics": 1,
+        "exoticGasses": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aegir1",
+    "type": "planetary-bodies",
+    "displayName": "Aegir1",
+    "fields": {
+      "Name": "aegir1",
+      "SizeofEarth": 78,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 0.165241,
+        "G": 0.13028,
+        "B": 1,
+        "A": 1,
+        "Hex": "7165FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusA2",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "aegir1_csv",
+      "ProvinceFindTable": "aegir1_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "aegir1_provinces",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.313842,
+        "G": 0,
+        "B": 1,
+        "A": 1,
+        "Hex": "9800FF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "water": 3,
+        "oxygen": 5,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "alienBiosphere": 1
+      },
+      "CloudLayers": [
+        {
+          "Texture": "EarthCloud",
+          "Material": "PlanetAura_WholePlanet",
+          "Scale": 1.02
+        }
+      ],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "oil": 0.15,
+        "farmland": 0.75
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "oil": 4,
+        "farmland": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "aegir1_devastated"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aegir1_devastated",
+    "type": "planetary-bodies",
+    "displayName": "Aegir1 Devastated",
+    "fields": {
+      "Name": "aegir1_devastated",
+      "SizeofEarth": 78,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.533719,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFC100"
+      },
+      "CloudColor": {
+        "R": 0.484375,
+        "G": 0.370485,
+        "B": 0,
+        "A": 1,
+        "Hex": "B9A400"
+      },
+      "SurfaceTexture": "siriusA2",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "aegir1_csv",
+      "ProvinceFindTable": "aegir1_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "aegir1_provinces",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.313842,
+        "G": 0,
+        "B": 1,
+        "A": 1,
+        "Hex": "9800FF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "water": 3,
+        "oxygen": 5,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "alienBiosphere": 1,
+        "radiation": 5
+      },
+      "CloudLayers": [
+        {
+          "Texture": "EarthCloud",
+          "Material": "PlanetAura_WholePlanet",
+          "Scale": 1.02
+        }
+      ],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "oil": 0.15,
+        "farmland": 0.75
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "oil": 4,
+        "farmland": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "altair4",
+    "type": "planetary-bodies",
+    "displayName": "Altair4",
+    "fields": {
+      "Name": "altair4",
+      "SizeofEarth": 130,
+      "ATMPressure": 1,
+      "GravityASL": 13,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 2,
+        "G": 1.351628,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFFF00"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 0.52578,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFC000"
+      },
+      "SurfaceTexture": "altair4",
+      "CloudTexture": "altair4_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "40EridaniC1_height",
+      "NormalMap": "altair4_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.53125,
+        "G": 0.365428,
+        "B": 0.042593,
+        "A": 1,
+        "Hex": "C1A33A"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 1,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "iron": 9,
+        "titanium": 2,
+        "lithium": 3,
+        "exoticGasses": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ariel",
+    "type": "planetary-bodies",
+    "displayName": "Ariel",
+    "fields": {
+      "Name": "ariel",
+      "SizeofEarth": 4.2,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ariel",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.144437,
+        "G": 0.152613,
+        "B": 0.199653,
+        "A": 1,
+        "Hex": "6A6D7B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "iceNine": 0.1
+      },
+      "SurfaceModel": null,
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "palladium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "palladium": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "callisto",
+    "type": "planetary-bodies",
+    "displayName": "Callisto",
+    "fields": {
+      "Name": "callisto",
+      "SizeofEarth": 37.7,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Callisto",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.4375,
+        "G": 0.4375,
+        "B": 0.4375,
+        "A": 1,
+        "Hex": "B1B1B1"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "thorium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "thorium": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "centauriA",
+    "type": "planetary-bodies",
+    "displayName": "Centauri A",
+    "fields": {
+      "Name": "centauriA",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.971768,
+        "B": 0.944011,
+        "A": 1,
+        "Hex": "FFFCF9"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "centauriB",
+    "type": "planetary-bodies",
+    "displayName": "Centauri B",
+    "fields": {
+      "Name": "centauriB",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.376631,
+        "B": 0.165271,
+        "A": 1,
+        "Hex": "FFA571"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ceres",
+    "type": "planetary-bodies",
+    "displayName": "Ceres",
+    "fields": {
+      "Name": "ceres",
+      "SizeofEarth": 7.38,
+      "ATMPressure": 0,
+      "GravityASL": 0.27,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.385132,
+        "G": 0.248038,
+        "B": 0.40625,
+        "A": 1,
+        "Hex": "A788AB"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "charon",
+    "type": "planetary-bodies",
+    "displayName": "Charon",
+    "fields": {
+      "Name": "charon",
+      "SizeofEarth": 9.5,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.612847,
+        "G": 0.506311,
+        "B": 0.487949,
+        "A": 0.5,
+        "Hex": "7FCEBDBA"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "charon",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "flatNormal",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.221953,
+        "G": 0.128263,
+        "B": 0.333333,
+        "A": 1,
+        "Hex": "82649C"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "cryoOrganics": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noSunlight": 1,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "cryoOrganics": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "cryoOrganics": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deimos",
+    "type": "planetary-bodies",
+    "displayName": "Deimos",
+    "fields": {
+      "Name": "deimos",
+      "SizeofEarth": 0.5,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.301844,
+        "B": 0.139281,
+        "A": 1,
+        "Hex": "B69568"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 18,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dione",
+    "type": "planetary-bodies",
+    "displayName": "Dione",
+    "fields": {
+      "Name": "dione",
+      "SizeofEarth": 8.8,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.079861,
+        "G": 0.079861,
+        "B": 0.079861,
+        "A": 1,
+        "Hex": "505050"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Dione",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.224222,
+        "G": 0.294728,
+        "B": 0.623264,
+        "A": 1,
+        "Hex": "8294CF"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "thorium": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "thorium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "thorium": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "earth",
+    "type": "planetary-bodies",
+    "displayName": "Earth",
+    "fields": {
+      "Name": "earth",
+      "SizeofEarth": 100,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 0.096262,
+        "G": 0.340954,
+        "B": 1,
+        "A": 1,
+        "Hex": "579EFF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "world_shaded_22k",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "terrain",
+      "ProvinceTable": "EarthProvinces",
+      "ProvinceFindTable": "earth_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "provinces_modified",
+      "HeightMap": "heightmap",
+      "NormalMap": "normal",
+      "LightTexture": "earth_lights",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.126143,
+        "B": 1,
+        "A": 1,
+        "Hex": "0063FF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "water": 2,
+        "oxygen": 5,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "earth_devastated"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "earth_devastated",
+    "type": "planetary-bodies",
+    "displayName": "Earth Devastated",
+    "fields": {
+      "Name": "earth_devastated",
+      "SizeofEarth": 100,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.696396,
+        "B": 0.295045,
+        "A": 1,
+        "Hex": "FFDA94"
+      },
+      "CloudColor": {
+        "R": 0.586805,
+        "G": 0.407621,
+        "B": 0.101807,
+        "A": 1,
+        "Hex": "CAAB5A"
+      },
+      "SurfaceTexture": "world_shaded_22k",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "terrain",
+      "ProvinceTable": "EarthProvinces",
+      "ProvinceFindTable": "earth_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "provinces_modified",
+      "HeightMap": "heightmap",
+      "NormalMap": "normal",
+      "LightTexture": "earth_lights",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.126143,
+        "B": 1,
+        "A": 1,
+        "Hex": "0063FF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "water": 2,
+        "oxygen": 5,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "radiation": 5
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "enceladus",
+    "type": "planetary-bodies",
+    "displayName": "Enceladus",
+    "fields": {
+      "Name": "enceladus",
+      "SizeofEarth": 4,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.079861,
+        "G": 0.079861,
+        "B": 0.079861,
+        "A": 1,
+        "Hex": "505050"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Enceladus",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.264016,
+        "G": 0.623264,
+        "B": 0.621198,
+        "A": 1,
+        "Hex": "8CCFCF"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "cryoOrganics": 0.1,
+        "iceNine": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "subsurfaceOcean": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "iceNine": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "iceNine": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "europa",
+    "type": "planetary-bodies",
+    "displayName": "Europa",
+    "fields": {
+      "Name": "europa",
+      "SizeofEarth": 24.4,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.079861,
+        "G": 0.079861,
+        "B": 0.079861,
+        "A": 1,
+        "Hex": "505050"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Europa",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.623264,
+        "G": 0.623264,
+        "B": 0.623264,
+        "A": 1,
+        "Hex": "CFCFCF"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "iceNine": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "subsurfaceOcean": 1,
+        "noSunlight": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "iceNine": 0.2
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "iceNine": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ganymede",
+    "type": "planetary-bodies",
+    "displayName": "Ganymede",
+    "fields": {
+      "Name": "ganymede",
+      "SizeofEarth": 41.2,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.263889,
+        "G": 0.167038,
+        "B": 0.071819,
+        "A": 0,
+        "Hex": "8C724C"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ganymede",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.623264,
+        "G": 0.25983,
+        "B": 0.218419,
+        "A": 1,
+        "Hex": "CF8B81"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1.2,
+        "rareMetals": 0.6,
+        "water": 0.25,
+        "nuclearFuels": 0.1,
+        "lithium": 0.4,
+        "titanium": 0.2
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "thorium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "thorium": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "planetNine",
+    "type": "planetary-bodies",
+    "displayName": "Haephestus",
+    "fields": {
+      "Name": "planetNine",
+      "SizeofEarth": 267,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.119198,
+        "G": 0.633752,
+        "B": 1,
+        "A": 1,
+        "Hex": "61D1FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "planetNine",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.133303,
+        "G": 0,
+        "B": 0.489583,
+        "A": 1,
+        "Hex": "6600BA"
+      },
+      "Symbol": "planetNine",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.2,
+        "End": 3,
+        "Texture": "planetNineRings"
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "noSunlight": 3,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "iapetus",
+    "type": "planetary-bodies",
+    "displayName": "Iapetus",
+    "fields": {
+      "Name": "iapetus",
+      "SizeofEarth": 11.5,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.048611,
+        "G": 0.048611,
+        "B": 0.048611,
+        "A": 1,
+        "Hex": "3E3E3E"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Iapetus",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.145833,
+        "G": 0.145833,
+        "B": 0.145833,
+        "A": 1,
+        "Hex": "6B6B6B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "palladium": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "palladium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "palladium": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "io",
+    "type": "planetary-bodies",
+    "displayName": "Io",
+    "fields": {
+      "Name": "io",
+      "SizeofEarth": 28.5,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.298611,
+        "G": 0.248539,
+        "B": 0.095524,
+        "A": 1,
+        "Hex": "958957"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Io",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.585324,
+        "G": 0.623264,
+        "B": 0.025138,
+        "A": 1,
+        "Hex": "C9CF2C"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "nuclearFuels": 0.25,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "groundStability": -1,
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1,
+        "radiation": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "exoticGasses": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "exoticGasses": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jupiter",
+    "type": "planetary-bodies",
+    "displayName": "Jupiter",
+    "fields": {
+      "Name": "jupiter",
+      "SizeofEarth": 1121,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.513482,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFBE00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Jupiter",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.510417,
+        "G": 0.224205,
+        "B": 0.064802,
+        "A": 1,
+        "Hex": "BD8248"
+      },
+      "Symbol": "jupiter",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "noSunlight": 1,
+        "gravityHigh": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "planetNineMoon1",
+    "type": "planetary-bodies",
+    "displayName": "Lethe",
+    "fields": {
+      "Name": "planetNineMoon1",
+      "SizeofEarth": 8,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.354601,
+        "G": 0.495001,
+        "B": 0.59375,
+        "A": 0,
+        "Hex": "A1BBCB"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "planetNineMoon1",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.195489,
+        "G": 0.070017,
+        "B": 0.199653,
+        "A": 1,
+        "Hex": "7A4B7B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "exoticGasses": 0.1
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "exoticGasses": 0.1,
+        "letheTreasure": 1,
+        "iceNine": 0.25
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 10,
+        "letheTreasure": 1,
+        "iceNine": 3
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "luna",
+    "type": "planetary-bodies",
+    "displayName": "Luna",
+    "fields": {
+      "Name": "luna",
+      "SizeofEarth": 27.2,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0.75,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.118055,
+        "G": 0.118055,
+        "B": 0.118055,
+        "A": 1,
+        "Hex": "606060"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "lunaSurface",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_large_csv",
+      "ProvinceFindTable": "othermap_large_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_large",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "lunaNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.623264,
+        "G": 0.623264,
+        "B": 0.623264,
+        "A": 1,
+        "Hex": "CFCFCF"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mars",
+    "type": "planetary-bodies",
+    "displayName": "Mars",
+    "fields": {
+      "Name": "mars",
+      "SizeofEarth": 50,
+      "ATMPressure": 0.01,
+      "GravityASL": 0.333333,
+      "TemperatureEarthlikeness": 0.6,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.668403,
+        "G": 0.236201,
+        "B": 0,
+        "A": 1,
+        "Hex": "D68500"
+      },
+      "CloudColor": {
+        "R": 0.15625,
+        "G": 0.15625,
+        "B": 0.15625,
+        "A": 0.25,
+        "Hex": "3F6E6E6E"
+      },
+      "SurfaceTexture": "Mars",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "mars_csv",
+      "ProvinceFindTable": "mars_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "mars",
+      "HeightMap": null,
+      "NormalMap": "marsNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.002682,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF0800"
+      },
+      "Symbol": "mars",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 25,
+      "RandomDeposits": {
+        "iron": 1.25,
+        "rareMetals": 0.5,
+        "water": 0.35,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mercury",
+    "type": "planetary-bodies",
+    "displayName": "Mercury",
+    "fields": {
+      "Name": "mercury",
+      "SizeofEarth": 38,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "Mercury",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.604167,
+        "G": 0.196449,
+        "B": 0.066867,
+        "A": 1,
+        "Hex": "CC7B49"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 4,
+        "sunlight": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neptune",
+    "type": "planetary-bodies",
+    "displayName": "Neptune",
+    "fields": {
+      "Name": "neptune",
+      "SizeofEarth": 388,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0.053727,
+        "B": 1,
+        "A": 1,
+        "Hex": "0041FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "Neptune",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.056056,
+        "B": 0.489583,
+        "A": 1,
+        "Hex": "0043BA"
+      },
+      "Symbol": "neptune",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.42,
+        "End": 3,
+        "Texture": "neptuneRings"
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "noSunlight": 2,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nonSurveyed",
+    "type": "planetary-bodies",
+    "displayName": "Non Surveyed",
+    "fields": {
+      "Name": "nonSurveyed",
+      "SizeofEarth": 100,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "blank_black",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "Symbol": null,
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "oberon",
+    "type": "planetary-bodies",
+    "displayName": "Oberon",
+    "fields": {
+      "Name": "oberon",
+      "SizeofEarth": 11.3,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Oberon",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.063905,
+        "G": 0.073356,
+        "B": 0.199653,
+        "A": 1,
+        "Hex": "474C7B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "iceNine": 0.1
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "iceNine": 0.15
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "iceNine": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "pallas",
+    "type": "planetary-bodies",
+    "displayName": "Pallas",
+    "fields": {
+      "Name": "pallas",
+      "SizeofEarth": 2,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.199653,
+        "G": 0.185893,
+        "B": 0.101455,
+        "A": 1,
+        "Hex": "7B775A"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 16,
+        "titanium": 8,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "phobos",
+    "type": "planetary-bodies",
+    "displayName": "Phobos",
+    "fields": {
+      "Name": "phobos",
+      "SizeofEarth": 0.5,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.110955,
+        "B": 0.213514,
+        "A": 1,
+        "Hex": "B65D7F"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 20,
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "pluto",
+    "type": "planetary-bodies",
+    "displayName": "Pluto",
+    "fields": {
+      "Name": "pluto",
+      "SizeofEarth": 18.5,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.991535,
+        "G": 1,
+        "B": 0.956079,
+        "A": 0.5,
+        "Hex": "7FFFFFFA"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "pluto",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "flatNormal",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.333333,
+        "G": 0.077224,
+        "B": 0.204464,
+        "A": 1,
+        "Hex": "9C4E7D"
+      },
+      "Symbol": "pluto",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "cryoOrganics": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noSunlight": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "cryoOrganics": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "cryoOrganics": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proteus",
+    "type": "planetary-bodies",
+    "displayName": "Proteus",
+    "fields": {
+      "Name": "proteus",
+      "SizeofEarth": 4,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.46875,
+        "G": 0.301844,
+        "B": 0.139281,
+        "A": 1,
+        "Hex": "B69568"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "iron": 8,
+        "noAtmosphere": 1,
+        "noSunlight": 0,
+        "titanium": 4,
+        "curiosities": 8,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proximaCentauri",
+    "type": "planetary-bodies",
+    "displayName": "Proxima Centauri",
+    "fields": {
+      "Name": "proximaCentauri",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0,
+        "B": 0.034921,
+        "A": 1,
+        "Hex": "FF0034"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proxima1",
+    "type": "planetary-bodies",
+    "displayName": "Proxima1",
+    "fields": {
+      "Name": "proxima1",
+      "SizeofEarth": 68,
+      "ATMPressure": 0,
+      "GravityASL": 5,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.479167,
+        "G": 0.316682,
+        "B": 0.262033,
+        "A": 1,
+        "Hex": "B8998C"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "proximaA",
+      "CloudTexture": "proximaA_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "proximaA_height",
+      "NormalMap": "proximaA_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.31328,
+        "B": 0.143852,
+        "A": 1,
+        "Hex": "B6986A"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "curiosities": 3,
+        "tidallyLocked": 1,
+        "gravityLow": 1,
+        "niceAtmosphere": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": true,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proxima2",
+    "type": "planetary-bodies",
+    "displayName": "Proxima2",
+    "fields": {
+      "Name": "proxima2",
+      "SizeofEarth": 102,
+      "ATMPressure": 0,
+      "GravityASL": 10,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.631944,
+        "G": 0.417653,
+        "B": 0.345579,
+        "A": 1,
+        "Hex": "D0AD9F"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "proximaB",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "proximaB_height",
+      "NormalMap": "proximaB_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.12622,
+        "B": 0.217214,
+        "A": 1,
+        "Hex": "B66380"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "curiosities": 3,
+        "gravityEarthlike": 1,
+        "niceAtmosphere": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proxima3",
+    "type": "planetary-bodies",
+    "displayName": "Proxima3",
+    "fields": {
+      "Name": "proxima3",
+      "SizeofEarth": 56,
+      "ATMPressure": 0.5,
+      "GravityASL": 8,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.25,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.357639,
+        "G": 0.901012,
+        "B": 1,
+        "A": 1,
+        "Hex": "A1F4FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "proximaC1",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "proximaC1_height",
+      "NormalMap": "proximaC1_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.120953,
+        "G": 0.407856,
+        "B": 0.467014,
+        "A": 1,
+        "Hex": "61ABB6"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 8,
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "titanium": 4,
+        "curiosities": 2,
+        "gravityLow": 1,
+        "iceNine": 1,
+        "water": 2,
+        "palladium": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.5,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proxima4",
+    "type": "planetary-bodies",
+    "displayName": "Proxima4",
+    "fields": {
+      "Name": "proxima4",
+      "SizeofEarth": 480,
+      "ATMPressure": 0.5,
+      "GravityASL": 8,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.25,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.35881,
+        "G": 0.037543,
+        "B": 1,
+        "A": 1,
+        "Hex": "A236FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "proximaD",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.172238,
+        "G": 0.045929,
+        "B": 0.467014,
+        "A": 1,
+        "Hex": "733CB6"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityEarthlike": 1,
+        "cryoOrganics": 1,
+        "water": 5
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "proxima4-1",
+    "type": "planetary-bodies",
+    "displayName": "Proxima4-1",
+    "fields": {
+      "Name": "proxima4-1",
+      "SizeofEarth": 24,
+      "ATMPressure": 0.5,
+      "GravityASL": 8,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.25,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.060779,
+        "G": 0.398974,
+        "B": 1,
+        "A": 1,
+        "Hex": "46AAFF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "proximaD1",
+      "CloudTexture": "proximaD1_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "proximaD1_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.148243,
+        "G": 0.225746,
+        "B": 0.467014,
+        "A": 1,
+        "Hex": "6B83B6"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1,
+        "water": 2
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "rhea",
+    "type": "planetary-bodies",
+    "displayName": "Rhea",
+    "fields": {
+      "Name": "rhea",
+      "SizeofEarth": 12,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.079861,
+        "G": 0.079861,
+        "B": 0.079861,
+        "A": 1,
+        "Hex": "505050"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Rhea",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.623264,
+        "G": 0.409825,
+        "B": 0.300064,
+        "A": 1,
+        "Hex": "CFAC95"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "palladium": 0.1
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "palladium": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "palladium": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "saturn",
+    "type": "planetary-bodies",
+    "displayName": "Saturn",
+    "fields": {
+      "Name": "saturn",
+      "SizeofEarth": 945,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.315798,
+        "G": 0.23176,
+        "B": 1,
+        "A": 1,
+        "Hex": "9884FF"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Saturn",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.767361,
+        "G": 0,
+        "B": 0.496372,
+        "A": 1,
+        "Hex": "E300BB"
+      },
+      "Symbol": "saturn",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.25,
+        "End": 3,
+        "Texture": "Saturn_Rings"
+      },
+      "Tilt": 27,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "noSunlight": 1,
+        "gravityHigh": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sirius",
+    "type": "planetary-bodies",
+    "displayName": "Sirius",
+    "fields": {
+      "Name": "sirius",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.971768,
+        "B": 0.944011,
+        "A": 1,
+        "Hex": "FFFCF9"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusA1",
+    "type": "planetary-bodies",
+    "displayName": "Sirius A1",
+    "fields": {
+      "Name": "siriusA1",
+      "SizeofEarth": 30,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.479167,
+        "G": 0.316682,
+        "B": 0.262033,
+        "A": 1,
+        "Hex": "B8998C"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusA1",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.312399,
+        "B": 0.304654,
+        "A": 1,
+        "Hex": "B69896"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "iron": 14,
+        "gravityLow": 1,
+        "rareMetals": 6
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusA2",
+    "type": "planetary-bodies",
+    "displayName": "Sirius A2",
+    "fields": {
+      "Name": "siriusA2",
+      "SizeofEarth": 62,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.262153,
+        "G": 0.200806,
+        "B": 0.196457,
+        "A": 1,
+        "Hex": "8C7C7B"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusC",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "siriusC_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.312399,
+        "B": 0.304654,
+        "A": 1,
+        "Hex": "B69896"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "iceNine": 2,
+        "gravityLow": 1,
+        "lithium": 6
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusA3",
+    "type": "planetary-bodies",
+    "displayName": "Sirius A3",
+    "fields": {
+      "Name": "siriusA3",
+      "SizeofEarth": 1650,
+      "ATMPressure": 1,
+      "GravityASL": 20,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.051901,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF4000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "siriusA3",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 1,
+        "G": 0,
+        "B": 0.020266,
+        "A": 1,
+        "Hex": "FF0027"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "radiation": 2,
+        "helium3": 1,
+        "superAtmosphere": 1,
+        "gravityHigh": 1,
+        "exoticGasses": 2,
+        "sunlight": 2,
+        "curiosities": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.5
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 5
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusA3-1",
+    "type": "planetary-bodies",
+    "displayName": "Sirius A3-1",
+    "fields": {
+      "Name": "siriusA3-1",
+      "SizeofEarth": 87,
+      "ATMPressure": 12,
+      "GravityASL": 6,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.155322,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF6E00"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusA3-1",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.250265,
+        "B": 0.048217,
+        "A": 1,
+        "Hex": "B6893E"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "gravityEarthlike": 1,
+        "exoticGasses": 1,
+        "palladium": 1,
+        "iron": 22,
+        "rareMetals": 10,
+        "lithium": 8,
+        "titanium": 8
+      },
+      "CloudLayers": [
+        {
+          "Texture": "VenusCloud",
+          "Material": "VenusCloudMat_Red",
+          "Scale": 1.05
+        }
+      ],
+      "SurveyFindChances": {
+        "iron": 0.5,
+        "titanium": 0.5,
+        "rareMetals": 0.5,
+        "curiosities": 0.25
+      },
+      "SurveyFindAmounts": {
+        "titanium": 5,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusB",
+    "type": "planetary-bodies",
+    "displayName": "Sirius B",
+    "fields": {
+      "Name": "siriusB",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 0.734654,
+        "G": 0.973426,
+        "B": 1,
+        "A": 1,
+        "Hex": "DFFCFF"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siriusB1",
+    "type": "planetary-bodies",
+    "displayName": "Sirius B1",
+    "fields": {
+      "Name": "siriusB1",
+      "SizeofEarth": 46,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.262153,
+        "G": 0.200806,
+        "B": 0.196457,
+        "A": 1,
+        "Hex": "8C7C7B"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusB1",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "siriusB1_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.187632,
+        "G": 0.451521,
+        "B": 0.467014,
+        "A": 1,
+        "Hex": "78B3B6"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "iceNine": 1,
+        "gravityLow": 1,
+        "titanium": 6,
+        "noSunlight": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sol",
+    "type": "planetary-bodies",
+    "displayName": "Sol",
+    "fields": {
+      "Name": "sol",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.357282,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFA100"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "stableOrbit",
+    "type": "planetary-bodies",
+    "displayName": "Stable Orbit",
+    "fields": {
+      "Name": "stableOrbit",
+      "SizeofEarth": 4,
+      "ATMPressure": 1,
+      "GravityASL": 1,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "fakeSurface",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_tiny_csv",
+      "ProvinceFindTable": "othermap_tiny_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_tiny",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0.729167,
+        "G": 0.729167,
+        "B": 0.729167,
+        "A": 1,
+        "Hex": "DEDEDE"
+      },
+      "Symbol": "stableOrbit",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "spaceStation",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "planetNineMoon2",
+    "type": "planetary-bodies",
+    "displayName": "Tartarus",
+    "fields": {
+      "Name": "planetNineMoon2",
+      "SizeofEarth": 24,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.419235,
+        "G": 0.582844,
+        "B": 0.697917,
+        "A": 1,
+        "Hex": "ADC9DA"
+      },
+      "CloudColor": {
+        "R": 0.332854,
+        "G": 0.439129,
+        "B": 0.487847,
+        "A": 1,
+        "Hex": "9CB1BA"
+      },
+      "SurfaceTexture": "planetNineMoon2",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": null,
+      "ProvinceTable": "planetNineMoon2_csv",
+      "ProvinceFindTable": "planetNineMoon2_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "planetNineMoon2Province",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.135278,
+        "G": 0.611397,
+        "B": 0.630208,
+        "A": 1,
+        "Hex": "67CDD0"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "exoticGasses": 0.1
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1,
+        "iceNine": 1,
+        "water": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.3,
+        "curiosities": 0.3,
+        "exoticGasses": 0.5,
+        "palladium": 0.75,
+        "cryoOrganics": 0.5,
+        "iceNine": 0.5
+      },
+      "SurveyFindAmounts": {
+        "water": 8,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 10,
+        "exoticGasses": 1,
+        "iceNine": 1,
+        "cryoOrganics": 1,
+        "palladium": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mars_terraform3",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Mars",
+    "fields": {
+      "Name": "mars_terraform3",
+      "SizeofEarth": 50,
+      "ATMPressure": 1,
+      "GravityASL": 0.33,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 0.096262,
+        "G": 0.340954,
+        "B": 1,
+        "A": 1,
+        "Hex": "579EFF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "marsTerraformed",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "marsTerraformedTerrain",
+      "ProvinceTable": "mars_csv",
+      "ProvinceFindTable": "mars_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "mars",
+      "HeightMap": null,
+      "NormalMap": "marsNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.321219,
+        "G": 0.528448,
+        "B": 1,
+        "A": 1,
+        "Hex": "9AC0FF"
+      },
+      "Symbol": "mars",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 25,
+      "RandomDeposits": {
+        "iron": 1.25,
+        "rareMetals": 0.5,
+        "water": 0.35,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 1,
+        "oxygen": 5,
+        "water": 2,
+        "farmland": 1,
+        "niceAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "mars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mars_terraform1",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Mars (1/3)",
+    "fields": {
+      "Name": "mars_terraform1",
+      "SizeofEarth": 50,
+      "ATMPressure": 0.5,
+      "GravityASL": 0.333333,
+      "TemperatureEarthlikeness": 0.6,
+      "AtmEarthlikeness": 0.25,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.668403,
+        "G": 0.575545,
+        "B": 0.448228,
+        "A": 1,
+        "Hex": "D6C8B3"
+      },
+      "CloudColor": {
+        "R": 0.15625,
+        "G": 0.15625,
+        "B": 0.15625,
+        "A": 0.25,
+        "Hex": "3F6E6E6E"
+      },
+      "SurfaceTexture": "Mars",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "mars_csv",
+      "ProvinceFindTable": "mars_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "mars",
+      "HeightMap": null,
+      "NormalMap": "marsNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.002682,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF0800"
+      },
+      "Symbol": "mars",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 25,
+      "RandomDeposits": {
+        "iron": 1.25,
+        "rareMetals": 0.5,
+        "water": 0.35,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 1,
+        "oxygen": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "mars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mars_terraform2",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Mars (2/3)",
+    "fields": {
+      "Name": "mars_terraform2",
+      "SizeofEarth": 50,
+      "ATMPressure": 1,
+      "GravityASL": 0.33,
+      "TemperatureEarthlikeness": 0.6,
+      "AtmEarthlikeness": 0.5,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.486112,
+        "G": 0.837914,
+        "B": 1,
+        "A": 1,
+        "Hex": "B9ECFF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "marsTerraformed_partial",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "mars_csv",
+      "ProvinceFindTable": "mars_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "mars",
+      "HeightMap": null,
+      "NormalMap": "marsNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.321219,
+        "G": 0.528448,
+        "B": 1,
+        "A": 1,
+        "Hex": "9AC0FF"
+      },
+      "Symbol": "mars",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 25,
+      "RandomDeposits": {
+        "iron": 1.25,
+        "rareMetals": 0.5,
+        "water": 0.35,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iron": 1,
+        "oxygen": 2,
+        "water": 1,
+        "niceAtmosphere": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "mars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venus_terraform3",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Venus",
+    "fields": {
+      "Name": "venus_terraform3",
+      "SizeofEarth": 100,
+      "ATMPressure": 92,
+      "GravityASL": 10,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": true,
+      "AtmColor": {
+        "R": 0.096262,
+        "G": 0.340954,
+        "B": 1,
+        "A": 1,
+        "Hex": "579EFF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "venus_terraformed",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.426999,
+        "G": 1,
+        "B": 0.464078,
+        "A": 1,
+        "Hex": "AFFFB6"
+      },
+      "Symbol": "venus",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "sunlight": 1,
+        "gravityEarthlike": 1,
+        "oxygen": 2,
+        "water": 2
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "venus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venus_terraform1",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Venus (1/3)",
+    "fields": {
+      "Name": "venus_terraform1",
+      "SizeofEarth": 100,
+      "ATMPressure": 92,
+      "GravityASL": 10,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.415607,
+        "G": 0.577375,
+        "B": 0.673611,
+        "A": 1,
+        "Hex": "ADC8D7"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "venusSurface",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.94153,
+        "B": 0.408253,
+        "A": 1,
+        "Hex": "FFF9AB"
+      },
+      "Symbol": "venus",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "sunlight": 1,
+        "gravityEarthlike": 1,
+        "oxygen": 2
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "venus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venus_terraform2",
+    "type": "planetary-bodies",
+    "displayName": "Terraformed Venus (2/3)",
+    "fields": {
+      "Name": "venus_terraform2",
+      "SizeofEarth": 100,
+      "ATMPressure": 92,
+      "GravityASL": 10,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.165595,
+        "G": 0.36233,
+        "B": 0.673611,
+        "A": 1,
+        "Hex": "71A2D7"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "venus_hydroformed",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.763524,
+        "G": 1,
+        "B": 0.460686,
+        "A": 1,
+        "Hex": "E3FFB5"
+      },
+      "Symbol": "venus",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "sunlight": 1,
+        "gravityEarthlike": 1,
+        "oxygen": 2,
+        "water": 2
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "venus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tethys",
+    "type": "planetary-bodies",
+    "displayName": "Tethys",
+    "fields": {
+      "Name": "tethys",
+      "SizeofEarth": 8.4,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.050911,
+        "G": 0.070129,
+        "B": 0.079861,
+        "A": 1,
+        "Hex": "404B50"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "tethys",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.215083,
+        "G": 0.203042,
+        "B": 0.623264,
+        "A": 1,
+        "Hex": "807CCF"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tiamat",
+    "type": "planetary-bodies",
+    "displayName": "Tiamat",
+    "fields": {
+      "Name": "tiamat",
+      "SizeofEarth": 115,
+      "ATMPressure": 1,
+      "GravityASL": 13,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0.127922,
+        "B": 1,
+        "A": 1,
+        "Hex": "0064FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "tiamat",
+      "CloudTexture": "EarthCloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "40EridaniC1_height",
+      "NormalMap": "altair4_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.01193,
+        "G": 0,
+        "B": 1,
+        "A": 1,
+        "Hex": "1C00FF"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 2,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "water": 10,
+        "lithium": 3,
+        "exoticGasses": 1,
+        "colonizableOcean": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "titan",
+    "type": "planetary-bodies",
+    "displayName": "Titan",
+    "fields": {
+      "Name": "titan",
+      "SizeofEarth": 41.2,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0.5,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.925347,
+        "G": 0.464413,
+        "B": 0.011245,
+        "A": 1,
+        "Hex": "F7B61B"
+      },
+      "CloudColor": {
+        "R": 0.711805,
+        "G": 0.629783,
+        "B": 0.209917,
+        "A": 1,
+        "Hex": "DCD07E"
+      },
+      "SurfaceTexture": "Titan",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "titanTerrain",
+      "ProvinceTable": "titan_csv",
+      "ProvinceFindTable": "titan_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "titanMap",
+      "HeightMap": "lunaHeight",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.638889,
+        "G": 0.358737,
+        "B": 0,
+        "A": 1,
+        "Hex": "D2A200"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.3,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25,
+        "lqdMethane": 1,
+        "palladium": 0.05,
+        "thorium": 0.05
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "niceAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [
+        {
+          "Texture": "blank_white",
+          "Material": "TitanCloudMat",
+          "Scale": 1.02
+        }
+      ],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "lqdMethane": 0.2
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "lqdMethane": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "titania",
+    "type": "planetary-bodies",
+    "displayName": "Titania",
+    "fields": {
+      "Name": "titania",
+      "SizeofEarth": 11.4,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Titania",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.073369,
+        "G": 0.159178,
+        "B": 0.199653,
+        "A": 1,
+        "Hex": "4C6F7B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "iceNine": 0.1
+      },
+      "SurfaceModel": null,
+      "GlobalDeposits": {
+        "titanium": 3,
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "iceNine": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "iceNine": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "triton",
+    "type": "planetary-bodies",
+    "displayName": "Triton",
+    "fields": {
+      "Name": "triton",
+      "SizeofEarth": 13,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0.1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.354601,
+        "G": 0.495001,
+        "B": 0.59375,
+        "A": 0.5,
+        "Hex": "7FA1BBCB"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Triton",
+      "CloudTexture": null,
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.195489,
+        "G": 0.070017,
+        "B": 0.199653,
+        "A": 1,
+        "Hex": "7A4B7B"
+      },
+      "Symbol": "luna",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 0.75,
+        "rareMetals": 0.4,
+        "water": 0.6,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.2,
+        "exoticGasses": 0.1
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "noSunlight": 1,
+        "gravityLow": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "exoticGasses": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "exoticGasses": 1
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "uranus",
+    "type": "planetary-bodies",
+    "displayName": "Uranus",
+    "fields": {
+      "Name": "uranus",
+      "SizeofEarth": 400,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.241814,
+        "G": 0.893514,
+        "B": 1,
+        "A": 1,
+        "Hex": "87F3FF"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "Uranus",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "blank_black",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.664931,
+        "B": 0.544927,
+        "A": 1,
+        "Hex": "00D5C3"
+      },
+      "Symbol": "uranus",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.475,
+        "End": 2,
+        "Texture": "uranusRings"
+      },
+      "Tilt": 90,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "noSunlight": 2,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venus",
+    "type": "planetary-bodies",
+    "displayName": "Venus",
+    "fields": {
+      "Name": "venus",
+      "SizeofEarth": 100,
+      "ATMPressure": 92,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.576954,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFC800"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 0.689132,
+        "B": 0.179842,
+        "A": 1,
+        "Hex": "FFD976"
+      },
+      "SurfaceTexture": "venusSurface",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.489296,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFBA00"
+      },
+      "Symbol": "venus",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 1,
+        "rareMetals": 0.5,
+        "water": 0.2,
+        "nuclearFuels": 0.1,
+        "lithium": 0.5,
+        "titanium": 0.25
+      },
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "sunlight": 1,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [
+        {
+          "Texture": "venusCloud",
+          "Material": "VenusCloudMat",
+          "Scale": 1.02
+        }
+      ],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "vesta",
+    "type": "planetary-bodies",
+    "displayName": "Vesta",
+    "fields": {
+      "Name": "vesta",
+      "SizeofEarth": 4.12,
+      "ATMPressure": 0,
+      "GravityASL": 0.22,
+      "TemperatureEarthlikeness": 0.5,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Ceres",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.185398,
+        "G": 0.245242,
+        "B": 0.46875,
+        "A": 1,
+        "Hex": "7788B6"
+      },
+      "Symbol": "dwarfPlanet",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": {
+        "iron": 2,
+        "rareMetals": 1,
+        "water": 0.4,
+        "nuclearFuels": 0.2,
+        "lithium": 1,
+        "titanium": 0.5
+      },
+      "SurfaceModel": "pallas_model",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "gravityInsignificant": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

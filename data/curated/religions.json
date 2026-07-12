@@ -1,0 +1,29 @@
+[
+  {
+    "id": "religion_catholic",
+    "type": "religions",
+    "displayName": "Religion Catholic",
+    "fields": {
+      "Name": "religion_catholic",
+      "MapColor": {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "A": 255,
+        "Hex": "000000"
+      },
+      "Traits": [],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [],
+      "Namelist": "default",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

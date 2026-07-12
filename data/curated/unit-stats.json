@@ -1,0 +1,381 @@
+[
+  {
+    "id": "accuracy",
+    "type": "unit-stats",
+    "displayName": "Accuracy",
+    "description": "Each unit of Accuracy nullifies one unit of Evasion. Accuracy above enemy Evasion is has no effect.",
+    "fields": {
+      "Name": "accuracy",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "air_attack",
+    "type": "unit-stats",
+    "displayName": "Air Attack",
+    "description": "Air Attack is the damage this unit does to Air Units.",
+    "fields": {
+      "Name": "air_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "armor",
+    "type": "unit-stats",
+    "displayName": "Armor",
+    "description": "Each unit of Armor provides 1% Damage reduction up to 95%. It is counteracted by Piercing.",
+    "fields": {
+      "Name": "armor",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "breakthrough",
+    "type": "unit-stats",
+    "displayName": "Breakthrough",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "breakthrough",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "damageWeight",
+    "type": "unit-stats",
+    "displayName": "Damage Weight",
+    "fields": {
+      "Name": "damageWeight",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deployRange",
+    "type": "unit-stats",
+    "displayName": "Deploy Range",
+    "fields": {
+      "Name": "deployRange",
+      "Display": false,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "entrenchment",
+    "type": "unit-stats",
+    "displayName": "Entrenchment",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "entrenchment",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "escalation",
+    "type": "unit-stats",
+    "displayName": "Escalation",
+    "fields": {
+      "Name": "escalation",
+      "Display": false,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "evasion",
+    "type": "unit-stats",
+    "displayName": "Evasion",
+    "description": "Each unit of Evasion provides 1% Damage reduction up to 95%. It is counteracted by Accuracy.",
+    "fields": {
+      "Name": "evasion",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "health",
+    "type": "unit-stats",
+    "displayName": "Health",
+    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "fields": {
+      "Name": "health",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "land_attack",
+    "type": "unit-stats",
+    "displayName": "Land Attack",
+    "description": "Land Attack is the damage this unit does to Land Units.",
+    "fields": {
+      "Name": "land_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "manpower",
+    "type": "unit-stats",
+    "displayName": "Manpower",
+    "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+    "fields": {
+      "Name": "manpower",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "modifierWeight",
+    "type": "unit-stats",
+    "displayName": "Modifier Weight",
+    "fields": {
+      "Name": "modifierWeight",
+      "Display": false,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "piercing",
+    "type": "unit-stats",
+    "displayName": "Piercing",
+    "description": "Each unit of Piercing nullifies one unit of Armor. Piercing above enemy Armor is has no effect.",
+    "fields": {
+      "Name": "piercing",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "rangedCombatWidth",
+    "type": "unit-stats",
+    "displayName": "Ranged CW",
+    "fields": {
+      "Name": "rangedCombatWidth",
+      "Display": false,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "recon",
+    "type": "unit-stats",
+    "displayName": "Recon",
+    "fields": {
+      "Name": "recon",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "reconWeight",
+    "type": "unit-stats",
+    "displayName": "Recon Weight",
+    "fields": {
+      "Name": "reconWeight",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "shield",
+    "type": "unit-stats",
+    "displayName": "Shield",
+    "description": "Shields absorb damage linearly each day of battle. They are effective when stacked with high Armor or Evasion.",
+    "fields": {
+      "Name": "shield",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "size",
+    "type": "unit-stats",
+    "displayName": "Size",
+    "description": "Size represents the combat width each of this unit takes up. Larger units draw more fire, but larger armies can't position themselves as efficiently, leading to reduced damage.",
+    "fields": {
+      "Name": "size",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sizeLimit",
+    "type": "unit-stats",
+    "displayName": "Size Limit",
+    "fields": {
+      "Name": "sizeLimit",
+      "Display": false,
+      "DisplayZero": false,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "smallArms_attack",
+    "type": "unit-stats",
+    "displayName": "Small Arms Attack",
+    "fields": {
+      "Name": "smallArms_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "smallArms_vuln",
+    "type": "unit-stats",
+    "displayName": "Small Arms Vuln",
+    "fields": {
+      "Name": "smallArms_vuln",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "space_attack",
+    "type": "unit-stats",
+    "displayName": "Space Attack",
+    "description": "Space Attack is the damage this unit does to Space Units.",
+    "fields": {
+      "Name": "space_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "speed",
+    "type": "unit-stats",
+    "displayName": "Speed",
+    "description": "Speed controls how fast the unit moves. A stack of units moves as fast as its slowest component.",
+    "fields": {
+      "Name": "speed",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategic_attack",
+    "type": "unit-stats",
+    "displayName": "Strategic Attack",
+    "fields": {
+      "Name": "strategic_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "water_attack",
+    "type": "unit-stats",
+    "displayName": "Water Attack",
+    "description": "Water Attack is the damage this unit does to Water Units.",
+    "fields": {
+      "Name": "water_attack",
+      "Display": true,
+      "DisplayZero": true,
+      "SizeScaled": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "Mars Terraforming: Atmospherics",
+    "type": "empire-missions",
+    "displayName": "Mars Terraforming: Atmospherics",
+    "icon": "",
+    "fields": {
+      "Name": "Mars Terraforming: Atmospherics",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "mars",
+            "atmosformer",
+            "3"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "mars",
+            "mars_terraform1"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "5"
+          ]
+        },
+        {
+          "Type": "addMission",
+          "Args": [
+            "marsTerraform2"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "mars",
+            "atmospheric"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingMars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "Mars Terraforming: Biosphere",
+    "type": "empire-missions",
+    "displayName": "Mars Terraforming: Biosphere",
+    "icon": "",
+    "fields": {
+      "Name": "Mars Terraforming: Biosphere",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "mars",
+            "bioformer",
+            "3"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "mars",
+            "mars_terraform3"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "20"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "mars",
+            "biosphere"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingMars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "Mars Terraforming: Hydrology",
+    "type": "empire-missions",
+    "displayName": "Mars Terraforming: Hydrology",
+    "icon": "",
+    "fields": {
+      "Name": "Mars Terraforming: Hydrology",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "mars",
+            "hydroformer",
+            "3"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "mars",
+            "mars_terraform2"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "5"
+          ]
+        },
+        {
+          "Type": "addMission",
+          "Args": [
+            "marsTerraform3"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "mars",
+            "hydrology"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingMars"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "Venus Terraforming: Atmospherics",
+    "type": "empire-missions",
+    "displayName": "Venus Terraforming: Atmospherics",
+    "icon": "",
+    "fields": {
+      "Name": "Venus Terraforming: Atmospherics",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "venus",
+            "atmosformer",
+            "5"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "venus",
+            "venus_terraform1"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "5"
+          ]
+        },
+        {
+          "Type": "addMission",
+          "Args": [
+            "marsTerraform2"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "venus",
+            "atmospheric"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingVenus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "Venus Terraforming: Biosphere",
+    "type": "empire-missions",
+    "displayName": "Venus Terraforming: Biosphere",
+    "icon": "",
+    "fields": {
+      "Name": "Venus Terraforming: Biosphere",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "venus",
+            "bioformer",
+            "10"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "venus",
+            "venus_terraform3"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "20"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "venus",
+            "biosphere"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingVenus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "Venus Terraforming: Hydrology",
+    "type": "empire-missions",
+    "displayName": "Venus Terraforming: Hydrology",
+    "icon": "",
+    "fields": {
+      "Name": "Venus Terraforming: Hydrology",
+      "Icon": "",
+      "OwnerFaction": "None",
+      "Conditions": [
+        {
+          "Type": "hasPlanetProjects",
+          "Args": [
+            "venus",
+            "hydroformer",
+            "5"
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "terraformPlanet",
+          "Args": [
+            "venus",
+            "venus_terraform2"
+          ]
+        },
+        {
+          "Type": "addStability",
+          "Args": [
+            "5"
+          ]
+        },
+        {
+          "Type": "addMission",
+          "Args": [
+            "venusTerraform3"
+          ]
+        },
+        {
+          "Type": "spawnNotification",
+          "Args": [
+            "terraformNotification",
+            "venus",
+            "hydrology"
+          ]
+        }
+      ],
+      "StartTime": 0,
+      "Type": "terraformingVenus"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

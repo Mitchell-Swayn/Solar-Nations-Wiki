@@ -1,0 +1,532 @@
+[
+  {
+    "id": "artillery",
+    "type": "unit-archetypes",
+    "displayName": "Artillery",
+    "fields": {
+      "Name": "artillery",
+      "TypeFormat": "Army",
+      "DefaultIcon": "artillery0",
+      "DefaultDesignName": "Artillery",
+      "DefaultColor": {
+        "R": 0.522569,
+        "G": 0.473292,
+        "B": 0,
+        "A": 1,
+        "Hex": "C0B700"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator0": "artillery"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "capital",
+    "type": "unit-archetypes",
+    "displayName": "Capital",
+    "fields": {
+      "Name": "capital",
+      "TypeFormat": "Battlefleet",
+      "DefaultIcon": "capitalCommandCenter",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.328636,
+        "G": 0.14595,
+        "B": 0.555555,
+        "A": 1,
+        "Hex": "9B6BC5"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "destroyer",
+        "UnitDomainEnum::NewEnumerator3": "spaceBattleship"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cargoTruck",
+    "type": "unit-archetypes",
+    "displayName": "Cargo Truck",
+    "fields": {
+      "Name": "cargoTruck",
+      "TypeFormat": "Logistics Unit",
+      "DefaultIcon": "apc0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.262153,
+        "B": 0.028773,
+        "A": 1,
+        "Hex": "008C2F"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator4": "truck",
+        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer",
+        "UnitDomainEnum::NewEnumerator2": "airplane",
+        "UnitDomainEnum::NewEnumerator1": "destroyer",
+        "UnitDomainEnum::NewEnumerator0": "truck"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "carrier",
+    "type": "unit-archetypes",
+    "displayName": "Carrier",
+    "fields": {
+      "Name": "carrier",
+      "TypeFormat": "Carrier Fleet",
+      "DefaultIcon": "carrierDeck",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.105306,
+        "B": 0.585069,
+        "A": 1,
+        "Hex": "005BC9"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "navyCarrier",
+        "UnitDomainEnum::NewEnumerator3": "spaceCarrier"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "closeAirSupport",
+    "type": "unit-archetypes",
+    "displayName": "Close Air Support",
+    "fields": {
+      "Name": "closeAirSupport",
+      "TypeFormat": "Airforce",
+      "DefaultIcon": "airplane0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.236996,
+        "G": 0.546536,
+        "B": 0.571181,
+        "A": 1,
+        "Hex": "86C3C7"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator2": "airplane"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cruiser",
+    "type": "unit-archetypes",
+    "displayName": "Cruiser",
+    "fields": {
+      "Name": "cruiser",
+      "TypeFormat": "Fleet",
+      "DefaultIcon": "crusierCommandCenter",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.171309,
+        "B": 0.534722,
+        "A": 1,
+        "Hex": "0073C1"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "destroyer",
+        "UnitDomainEnum::NewEnumerator3": "spaceBattleship"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "drone",
+    "type": "unit-archetypes",
+    "displayName": "Drone",
+    "fields": {
+      "Name": "drone",
+      "TypeFormat": "Drone Swarm",
+      "DefaultIcon": "droneCore",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.317708,
+        "G": 0.317708,
+        "B": 0.317708,
+        "A": 1,
+        "Hex": "999999"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator2": "drone"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "fighter",
+    "type": "unit-archetypes",
+    "displayName": "Fighter",
+    "fields": {
+      "Name": "fighter",
+      "TypeFormat": "Airforce",
+      "DefaultIcon": "airplane0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.319298,
+        "G": 0.5599,
+        "B": 0.604167,
+        "A": 1,
+        "Hex": "99C6CC"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator2": "airplane"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "floatingFortress",
+    "type": "unit-archetypes",
+    "displayName": "Floating Fortress",
+    "fields": {
+      "Name": "floatingFortress",
+      "TypeFormat": "Battlefleet",
+      "DefaultIcon": "colossalCommandCenter",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.027876,
+        "G": 0,
+        "B": 0.105903,
+        "A": 1,
+        "Hex": "2E005B"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "floatingFortress"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "flyingFortress",
+    "type": "unit-archetypes",
+    "displayName": "Flying Fortress",
+    "fields": {
+      "Name": "flyingFortress",
+      "TypeFormat": "Airfleet",
+      "DefaultIcon": "flyingFortress",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.897569,
+        "B": 0.567257,
+        "A": 1,
+        "Hex": "00F4C7"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator2": "flyingFortress"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "headquarters",
+    "type": "unit-archetypes",
+    "displayName": "Headquarters",
+    "fields": {
+      "Name": "headquarters",
+      "TypeFormat": "Command Center",
+      "DefaultIcon": "threeStar",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.209556,
+        "G": 0.409722,
+        "B": 0.170277,
+        "A": 1,
+        "Hex": "7EAC73"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator4": "truck",
+        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer",
+        "UnitDomainEnum::NewEnumerator2": "airplane",
+        "UnitDomainEnum::NewEnumerator1": "destroyer",
+        "UnitDomainEnum::NewEnumerator0": "truck"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "infantry",
+    "type": "unit-archetypes",
+    "displayName": "Infantry",
+    "fields": {
+      "Name": "infantry",
+      "TypeFormat": "Army",
+      "DefaultIcon": "infantry",
+      "DefaultDesignName": "Infantry",
+      "DefaultColor": {
+        "R": 0.00339,
+        "G": 0.644097,
+        "B": 0,
+        "A": 1,
+        "Hex": "0BD200"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator0": "apc"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "interceptor",
+    "type": "unit-archetypes",
+    "displayName": "Interceptor",
+    "fields": {
+      "Name": "interceptor",
+      "TypeFormat": "Airforce",
+      "DefaultIcon": "airplane0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.55046,
+        "B": 0.565972,
+        "A": 1,
+        "Hex": "00C4C6"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator2": "airplane"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "irregular",
+    "type": "unit-archetypes",
+    "displayName": "Irregular",
+    "fields": {
+      "Name": "irregular",
+      "TypeFormat": "Militia",
+      "DefaultIcon": "irregular",
+      "DefaultDesignName": "Irregulars",
+      "DefaultColor": {
+        "R": 0.207375,
+        "G": 0.262153,
+        "B": 0.007912,
+        "A": 1,
+        "Hex": "7E8C15"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator0": "apc"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "landcruiser",
+    "type": "unit-archetypes",
+    "displayName": "Landcruiser",
+    "fields": {
+      "Name": "landcruiser",
+      "TypeFormat": "Landcruiser Fleet",
+      "DefaultIcon": "landCruiser",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator0": "landcruiser"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "missile",
+    "type": "unit-archetypes",
+    "displayName": "Missile",
+    "fields": {
+      "Name": "missile",
+      "TypeFormat": "Missile Battery",
+      "DefaultIcon": "missile0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.5,
+        "G": 0.136295,
+        "B": 0.032576,
+        "A": 1,
+        "Hex": "BC6732"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator4": "missileRoot",
+        "UnitDomainEnum::NewEnumerator3": "missileRoot",
+        "UnitDomainEnum::NewEnumerator2": "missileRoot",
+        "UnitDomainEnum::NewEnumerator1": "missileRoot",
+        "UnitDomainEnum::NewEnumerator0": "missileRoot"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "screen",
+    "type": "unit-archetypes",
+    "displayName": "Screen",
+    "fields": {
+      "Name": "screen",
+      "TypeFormat": "Fleet",
+      "DefaultIcon": "destroyerCommandCenter",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.160286,
+        "G": 0.1669,
+        "B": 0.862847,
+        "A": 1,
+        "Hex": "6F72EF"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "destroyer",
+        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strikeCraft",
+    "type": "unit-archetypes",
+    "displayName": "Strike Craft",
+    "fields": {
+      "Name": "strikeCraft",
+      "TypeFormat": "Voidwings",
+      "DefaultIcon": "strikeCraft0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.625,
+        "G": 0.109164,
+        "B": 0.617425,
+        "A": 1,
+        "Hex": "CF5DCE"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator3": "airplane"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "submarine",
+    "type": "unit-archetypes",
+    "displayName": "Submarine",
+    "fields": {
+      "Name": "submarine",
+      "TypeFormat": "Submarine Fleet",
+      "DefaultIcon": "submarine",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0,
+        "G": 0.041339,
+        "B": 0.413194,
+        "A": 1,
+        "Hex": "0039AC"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator1": "destroyer"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tank",
+    "type": "unit-archetypes",
+    "displayName": "Tank",
+    "fields": {
+      "Name": "tank",
+      "TypeFormat": "Armor Division",
+      "DefaultIcon": "tank0",
+      "DefaultDesignName": {
+        "CultureInvariantString": null
+      },
+      "DefaultColor": {
+        "R": 0.631944,
+        "G": 0,
+        "B": 0.396758,
+        "A": 1,
+        "Hex": "D000A9"
+      },
+      "Model": {
+        "UnitDomainEnum::NewEnumerator0": "tank"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

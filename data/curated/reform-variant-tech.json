@@ -1,0 +1,178 @@
+[
+  {
+    "id": "cyberneticsTech",
+    "type": "reform-variant-tech",
+    "displayName": "Cybernetics",
+    "icon": "robots",
+    "fields": {
+      "Name": "cyberneticsTech",
+      "Icon": "robots",
+      "Prerequisite": {
+        "A": "situation",
+        "B": "ascendedCybernetic"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "robots"
+      }
+    ]
+  },
+  {
+    "id": "default",
+    "type": "reform-variant-tech",
+    "displayName": "Default",
+    "icon": "stability",
+    "fields": {
+      "Name": "default",
+      "Icon": "stability",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stability"
+      }
+    ]
+  },
+  {
+    "id": "reformAutocratic",
+    "type": "reform-variant-tech",
+    "displayName": "Elite Oriented",
+    "icon": "upperClass",
+    "fields": {
+      "Name": "reformAutocratic",
+      "Icon": "upperClass",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upperClass"
+      }
+    ]
+  },
+  {
+    "id": "futuristic",
+    "type": "reform-variant-tech",
+    "displayName": "Futuristic",
+    "icon": "futureSociety",
+    "fields": {
+      "Name": "futuristic",
+      "Icon": "futureSociety",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "futureSociety"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "futureSociety"
+      }
+    ]
+  },
+  {
+    "id": "genetics",
+    "type": "reform-variant-tech",
+    "displayName": "Genetic Evolution",
+    "icon": "geneticMaterial",
+    "fields": {
+      "Name": "genetics",
+      "Icon": "geneticMaterial",
+      "Prerequisite": {
+        "A": "situation",
+        "B": "ascendedGenetic"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "geneticMaterial"
+      }
+    ]
+  },
+  {
+    "id": "reformPublic",
+    "type": "reform-variant-tech",
+    "displayName": "Government Controlled",
+    "icon": "bureaucracy",
+    "fields": {
+      "Name": "reformPublic",
+      "Icon": "bureaucracy",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "reformPrivate",
+    "type": "reform-variant-tech",
+    "displayName": "Private",
+    "icon": "middleClass",
+    "fields": {
+      "Name": "reformPrivate",
+      "Icon": "middleClass",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "middleClass"
+      }
+    ]
+  },
+  {
+    "id": "virtualReality",
+    "type": "reform-variant-tech",
+    "displayName": "Virtualism",
+    "icon": "neuralNetworks",
+    "fields": {
+      "Name": "virtualReality",
+      "Icon": "neuralNetworks",
+      "Prerequisite": {
+        "A": "situation",
+        "B": "ascendedAi"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "neuralNetworks"
+      }
+    ]
+  }
+]

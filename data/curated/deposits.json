@@ -1,19 +1,40 @@
 [
   {
-    "id": "antimatter",
+    "id": "alienBiosphere",
     "type": "deposits",
-    "displayName": "Antimatter",
-    "icon": "antimatter",
+    "displayName": "Alien Biosphere",
+    "icon": "biohazard",
     "fields": {
-      "Name": "antimatter",
-      "Icon": "antimatter"
+      "Name": "alienBiosphere",
+      "Icon": "biohazard",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.527777,
+        "G": 0,
+        "B": 0.421305,
+        "A": 1,
+        "Hex": "C000AE"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "habitabilityAdd",
+        "value": -0.2
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "antimatter"
+        "id": "biohazard"
       }
     ]
   },
@@ -24,9 +45,30 @@
     "icon": "apollo11Site",
     "fields": {
       "Name": "apollo11Site",
-      "Icon": "apollo11Site"
+      "Icon": "apollo11Site",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.582472,
+        "G": 0,
+        "B": 0.795139,
+        "A": 1,
+        "Hex": "C900E7"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "culture",
+        "value": 0.5
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -36,56 +78,45 @@
     ]
   },
   {
-    "id": "asteroids",
+    "id": "asteroidDensity",
     "type": "deposits",
-    "displayName": "Asteroids",
+    "displayName": "Asteroid Density",
     "icon": "asteroids",
     "fields": {
-      "Name": "asteroids",
-      "Icon": "asteroids"
+      "Name": "asteroidDensity",
+      "Icon": "asteroids",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.220486,
+        "G": 0.105118,
+        "B": 0.020496,
+        "A": 1,
+        "Hex": "815B27"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 1
+      },
+      {
+        "key": "projectUpkeepMult",
+        "value": 0.1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "steelRefinery",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "asteroids"
-      }
-    ]
-  },
-  {
-    "id": "atmosphere",
-    "type": "deposits",
-    "displayName": "Atmosphere",
-    "icon": "atmosphere",
-    "fields": {
-      "Name": "atmosphere",
-      "Icon": "atmosphere"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "atmosphere"
-      }
-    ]
-  },
-  {
-    "id": "biohazard",
-    "type": "deposits",
-    "displayName": "Biohazard",
-    "icon": "biohazard",
-    "fields": {
-      "Name": "biohazard",
-      "Icon": "biohazard"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "biohazard"
       }
     ]
   },
@@ -96,9 +127,26 @@
     "icon": "carbon",
     "fields": {
       "Name": "carbon",
-      "Icon": "carbon"
+      "Icon": "carbon",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.140625,
+        "G": 0.04109,
+        "B": 0,
+        "A": 1,
+        "Hex": "693900"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "steel",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -114,9 +162,26 @@
     "icon": "cryoOrganics",
     "fields": {
       "Name": "cryoOrganics",
-      "Icon": "cryoOrganics"
+      "Icon": "cryoOrganics",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.214979,
+        "G": 0.507982,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "80BDC4"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "cryoOrganics",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -132,9 +197,31 @@
     "icon": "curiosities",
     "fields": {
       "Name": "curiosities",
-      "Icon": "curiosities"
+      "Icon": "curiosities",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.245766,
+        "B": 0.34375,
+        "A": 1,
+        "Hex": "00889F"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.1,
+      "SurveyFindAmount": 4
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 0.2
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.02
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -150,9 +237,26 @@
     "icon": "exoticGasses",
     "fields": {
       "Name": "exoticGasses",
-      "Icon": "exoticGasses"
+      "Icon": "exoticGasses",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.034789,
+        "G": 0.333333,
+        "B": 0,
+        "A": 1,
+        "Hex": "349C00"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "exoticGasses",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -168,9 +272,41 @@
     "icon": "farmland",
     "fields": {
       "Name": "farmland",
-      "Icon": "farmland"
+      "Icon": "farmland",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.550347,
+        "G": 0.446999,
+        "B": 0.111145,
+        "A": 1,
+        "Hex": "C4B35E"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "openFarm",
+        "value": 1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "geneticMaterial",
+        "value": 0.05
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.02
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -186,9 +322,30 @@
     "icon": "gravityEarthlike",
     "fields": {
       "Name": "gravityEarthlike",
-      "Icon": "gravityEarthlike"
+      "Icon": "gravityEarthlike",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": 1
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -204,9 +361,30 @@
     "icon": "gravityHigh",
     "fields": {
       "Name": "gravityHigh",
-      "Icon": "gravityHigh"
+      "Icon": "gravityHigh",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": 2
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -222,9 +400,38 @@
     "icon": "gravityInsignificant",
     "fields": {
       "Name": "gravityInsignificant",
-      "Icon": "gravityInsignificant"
+      "Icon": "gravityInsignificant",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": -0.5
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.25
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "projectUpkeepMult",
+        "value": 0.5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -240,9 +447,25 @@
     "icon": "gravityLow",
     "fields": {
       "Name": "gravityLow",
-      "Icon": "gravityLow"
+      "Icon": "gravityLow",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -258,9 +481,25 @@
     "icon": "colonizableOcean",
     "fields": {
       "Name": "colonizableOcean",
-      "Icon": "colonizableOcean"
+      "Icon": "colonizableOcean",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "canColonizeOverride",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -276,9 +515,25 @@
     "icon": "groundStability",
     "fields": {
       "Name": "groundStability",
-      "Icon": "groundStability"
+      "Icon": "groundStability",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.416667,
+        "G": 0.114118,
+        "B": 0.178193,
+        "A": 1,
+        "Hex": "AD5F75"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -294,9 +549,26 @@
     "icon": "helium3",
     "fields": {
       "Name": "helium3",
-      "Icon": "helium3"
+      "Icon": "helium3",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.732553,
+        "G": 0.760417,
+        "B": 0,
+        "A": 1,
+        "Hex": "DFE200"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "helium3",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -312,9 +584,26 @@
     "icon": "iceNine",
     "fields": {
       "Name": "iceNine",
-      "Icon": "iceNine"
+      "Icon": "iceNine",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.143373,
+        "B": 0.319444,
+        "A": 1,
+        "Hex": "006A99"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "iceNine",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -330,9 +619,39 @@
     "icon": "noAtmosphere",
     "fields": {
       "Name": "noAtmosphere",
-      "Icon": "noAtmosphere"
+      "Icon": "noAtmosphere",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.012449,
+        "B": 0.095486,
+        "A": 1,
+        "Hex": "001D57"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": 0.1
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.2
+      },
+      {
+        "key": "battleDomainEnable",
+        "value1": "air",
+        "value": -1
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value1": "aerodrome",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -348,9 +667,31 @@
     "icon": "iron",
     "fields": {
       "Name": "iron",
-      "Icon": "iron"
+      "Icon": "iron",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.207631,
+        "G": 0.34677,
+        "B": 0.692708,
+        "A": 1,
+        "Hex": "7E9FD9"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.5,
+      "SurveyFindAmount": 4
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "steelRefinery",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.02
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -366,9 +707,30 @@
     "icon": "letheTreasure",
     "fields": {
       "Name": "letheTreasure",
-      "Icon": "letheTreasure"
+      "Icon": "letheTreasure",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.586805,
+        "B": 0.064376,
+        "A": 1,
+        "Hex": "00CA48"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.5
+      },
+      {
+        "key": "resourceProduction",
+        "value1": "letheTreasure",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -384,9 +746,26 @@
     "icon": "lqdMethane",
     "fields": {
       "Name": "lqdMethane",
-      "Icon": "lqdMethane"
+      "Icon": "lqdMethane",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.387153,
+        "G": 0.159691,
+        "B": 0,
+        "A": 1,
+        "Hex": "A76F00"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "lqdMethane",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -402,9 +781,31 @@
     "icon": "lithium",
     "fields": {
       "Name": "lithium",
-      "Icon": "lithium"
+      "Icon": "lithium",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.140751,
+        "G": 0.578125,
+        "B": 0.372474,
+        "A": 1,
+        "Hex": "69C8A4"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.2,
+      "SurveyFindAmount": 4
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "electronics",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.02
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -420,14 +821,65 @@
     "icon": "lowSolarOrbit",
     "fields": {
       "Name": "lowSolarOrbit",
-      "Icon": "lowSolarOrbit"
+      "Icon": "lowSolarOrbit",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.5
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "lowSolarOrbit"
+      }
+    ]
+  },
+  {
+    "id": "magneticAntimatter",
+    "type": "deposits",
+    "displayName": "Magnetosphere Antimatter",
+    "icon": "antimatter",
+    "fields": {
+      "Name": "magneticAntimatter",
+      "Icon": "antimatter",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.423611,
+        "G": 0,
+        "B": 0.272945,
+        "A": 1,
+        "Hex": "AE008F"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
+    },
+    "modifiers": [
+      {
+        "key": "projectUpgradeLimit",
+        "value1": "antimatterHarvester",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antimatter"
       }
     ]
   },
@@ -438,9 +890,35 @@
     "icon": "nuclearFuels",
     "fields": {
       "Name": "nuclearFuels",
-      "Icon": "nuclearFuels"
+      "Icon": "nuclearFuels",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.439236,
+        "G": 0.221668,
+        "B": 0.088573,
+        "A": 1,
+        "Hex": "B18254"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.2,
+      "SurveyFindAmount": 4
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 1
+      },
+      {
+        "key": "popGrowthMult",
+        "value": -0.01
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.03
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -456,9 +934,31 @@
     "icon": "oil",
     "fields": {
       "Name": "oil",
-      "Icon": "oil"
+      "Icon": "oil",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.374835,
+        "G": 0.010284,
+        "B": 0.565972,
+        "A": 1,
+        "Hex": "A51AC6"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "oilApplication",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.03
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -474,9 +974,36 @@
     "icon": "olympusMons",
     "fields": {
       "Name": "olympusMons",
-      "Icon": "olympusMons"
+      "Icon": "olympusMons",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.486111,
+        "G": 0.142999,
+        "B": 0,
+        "A": 1,
+        "Hex": "B96A00"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "steelRefinery",
+        "value": 3
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "research",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -492,9 +1019,29 @@
     "icon": "oxygen",
     "fields": {
       "Name": "oxygen",
-      "Icon": "oxygen"
+      "Icon": "oxygen",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.06656,
+        "G": 0.240466,
+        "B": 0.355903,
+        "A": 1,
+        "Hex": "4987A1"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.05,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.1
+      },
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.025
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -510,9 +1057,26 @@
     "icon": "palladium",
     "fields": {
       "Name": "palladium",
-      "Icon": "palladium"
+      "Icon": "palladium",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.259401,
+        "G": 0,
+        "B": 0.538194,
+        "A": 1,
+        "Hex": "8B00C2"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "palladium",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -528,14 +1092,68 @@
     "icon": "placidGiant",
     "fields": {
       "Name": "placidGiant",
-      "Icon": "placidGiant"
+      "Icon": "placidGiant",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "canColonizeOverride",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
         "id": "placidGiant"
+      }
+    ]
+  },
+  {
+    "id": "radiation",
+    "type": "deposits",
+    "displayName": "Radiation",
+    "icon": "nuclearFuels",
+    "fields": {
+      "Name": "radiation",
+      "Icon": "nuclearFuels",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.274305,
+        "G": 0.190208,
+        "B": 0,
+        "A": 1,
+        "Hex": "8F7900"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
+    },
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.2
+      },
+      {
+        "key": "lifeSpanAdd",
+        "value": -5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nuclearFuels"
       }
     ]
   },
@@ -546,9 +1164,31 @@
     "icon": "rareMetals",
     "fields": {
       "Name": "rareMetals",
-      "Icon": "rareMetals"
+      "Icon": "rareMetals",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.760417,
+        "G": 0.529255,
+        "B": 0,
+        "A": 1,
+        "Hex": "E2C100"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.1,
+      "SurveyFindAmount": 5
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "consumerGoods",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.04
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -558,15 +1198,81 @@
     ]
   },
   {
-    "id": "shipyard",
+    "id": "niceAtmosphere",
     "type": "deposits",
-    "displayName": "Shipyard",
+    "displayName": "Significant Atmosphere",
+    "icon": "atmosphere",
+    "fields": {
+      "Name": "niceAtmosphere",
+      "Icon": "atmosphere",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.012449,
+        "B": 0.095486,
+        "A": 1,
+        "Hex": "001D57"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
+    },
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.1
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": 1
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "laser",
+        "value": -0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "atmosphere"
+      }
+    ]
+  },
+  {
+    "id": "spaceStation",
+    "type": "deposits",
+    "displayName": "Space Station",
     "icon": "shipyard",
     "fields": {
-      "Name": "shipyard",
-      "Icon": "shipyard"
+      "Name": "spaceStation",
+      "Icon": "shipyard",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": -0.6
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "commercialZones",
+        "value": 0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -582,9 +1288,25 @@
     "icon": "noSunlight",
     "fields": {
       "Name": "noSunlight",
-      "Icon": "noSunlight"
+      "Icon": "noSunlight",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.047534,
+        "B": 0.364583,
+        "A": 1,
+        "Hex": "003DA3"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -600,9 +1322,38 @@
     "icon": "subsurfaceOcean",
     "fields": {
       "Name": "subsurfaceOcean",
-      "Icon": "subsurfaceOcean"
+      "Icon": "subsurfaceOcean",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.311938,
+        "B": 0.692708,
+        "A": 1,
+        "Hex": "0098D9"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "hydroponics",
+        "value": 3
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": 0.5
+      },
+      {
+        "key": "fortDefense",
+        "value": 0.5
+      },
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -618,9 +1369,30 @@
     "icon": "sunlight",
     "fields": {
       "Name": "sunlight",
-      "Icon": "sunlight"
+      "Icon": "sunlight",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.364583,
+        "G": 0.132127,
+        "B": 0,
+        "A": 1,
+        "Hex": "A36600"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.2
+      },
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -636,9 +1408,39 @@
     "icon": "superAtmosphere",
     "fields": {
       "Name": "superAtmosphere",
-      "Icon": "superAtmosphere"
+      "Icon": "superAtmosphere",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0.012449,
+        "B": 0.095486,
+        "A": 1,
+        "Hex": "001D57"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": 0.2
+      },
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.33
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value1": "spaceport",
+        "value": 2
+      },
+      {
+        "key": "unitAttackMult",
+        "value1": "laser",
+        "value": -0.75
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -654,9 +1456,26 @@
     "icon": "thorium",
     "fields": {
       "Name": "thorium",
-      "Icon": "thorium"
+      "Icon": "thorium",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.012665,
+        "G": 0,
+        "B": 0.546875,
+        "A": 1,
+        "Hex": "1D00C3"
+      },
+      "Special": false,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceProduction",
+        "value1": "thorium",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -672,9 +1491,25 @@
     "icon": "tidallyLocked",
     "fields": {
       "Name": "tidallyLocked",
-      "Icon": "tidallyLocked"
+      "Icon": "tidallyLocked",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "carryingCapacityMult",
+        "value": -0.25
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -690,9 +1525,31 @@
     "icon": "titanium",
     "fields": {
       "Name": "titanium",
-      "Icon": "titanium"
+      "Icon": "titanium",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.690972,
+        "G": 0.038229,
+        "B": 0.602486,
+        "A": 1,
+        "Hex": "D937CC"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.1,
+      "SurveyFindAmount": 4
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "nanocomposites",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.02
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -708,9 +1565,39 @@
     "icon": "vallisMarinaris",
     "fields": {
       "Name": "vallisMarinaris",
-      "Icon": "vallisMarinaris"
+      "Icon": "vallisMarinaris",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.486111,
+        "G": 0.002357,
+        "B": 0,
+        "A": 1,
+        "Hex": "B90700"
+      },
+      "Special": true,
+      "SurveyFindChance": 0,
+      "SurveyFindAmount": 1
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "steelRefinery",
+        "value": 8
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value": 0.25
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "nanocomposites",
+        "value": 0.1
+      },
+      {
+        "key": "habitabilityAdd",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -726,9 +1613,30 @@
     "icon": "water",
     "fields": {
       "Name": "water",
-      "Icon": "water"
+      "Icon": "water",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.17617,
+        "G": 0.210503,
+        "B": 0.638889,
+        "A": 1,
+        "Hex": "747FD2"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.1,
+      "SurveyFindAmount": 6
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "hydroponics",
+        "value": 1
+      },
+      {
+        "key": "habitabilityAdd",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

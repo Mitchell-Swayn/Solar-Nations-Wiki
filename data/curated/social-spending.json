@@ -1,0 +1,47 @@
+[
+  {
+    "id": "educationSpending",
+    "type": "social-spending",
+    "displayName": "Education Spending",
+    "fields": {
+      "Name": "educationSpending",
+      "NegativeCutoff": 0,
+      "StartValue": 0,
+      "AlwaysModifier": [],
+      "Discretionary": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "stabilitySpending",
+    "type": "social-spending",
+    "displayName": "Government Spending",
+    "fields": {
+      "Name": "stabilitySpending",
+      "NegativeCutoff": 0,
+      "StartValue": 0,
+      "AlwaysModifier": [],
+      "Discretionary": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "integration",
+    "type": "social-spending",
+    "displayName": "Integration",
+    "fields": {
+      "Name": "integration",
+      "NegativeCutoff": 0.5,
+      "StartValue": 0.5,
+      "AlwaysModifier": [],
+      "Discretionary": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

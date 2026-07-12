@@ -6,16 +6,36 @@
     "icon": "bureaucracy",
     "fields": {
       "Name": "bureaucracy",
+      "Type": "Institution",
       "Icon": "bureaucracy",
+      "RandomNames": [
+        "Managers"
+      ],
+      "Ideologies": [
+        "authoritarian",
+        "managerial",
+        "marxist"
+      ],
+      "PopType": [
+        "bureaucrat"
+      ],
       "Alignment": {
-        "R": 0.007813,
-        "Theta": 0.007812
+        "R": 1,
+        "Theta": 180
       },
       "Color": {
         "R": 1,
         "G": 0,
         "B": 0,
-        "A": 1
+        "A": 1,
+        "Hex": "FF0000"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.1,
+        "buildProject": 0.4,
+        "armyBuildup": 0.1,
+        "researchTech": 0.1,
+        "selectReform": 0.4
       }
     },
     "modifiers": [
@@ -26,25 +46,25 @@
       {
         "key": "sliderMaxAdd",
         "value1": "incomeTax",
-        "value": -0.5
+        "value": 0.5
       },
       {
         "key": "adminEfficiencyAdd",
-        "value": 0.1
+        "value": -0.5
       },
       {
         "key": "unrestChangeAdd",
-        "value": 10
+        "value": 0.1
       },
       {
         "key": "crisisSpawnChanceAdd",
         "value1": "bureaucracyCrisis",
-        "value": 1
+        "value": 10
       },
       {
         "key": "situationVariableAdd",
         "value1": "bureaucracyCrisis_intensity",
-        "value": 180
+        "value": 0.1
       },
       {
         "key": "adminEfficiencyAdd",
@@ -67,49 +87,60 @@
     "icon": "clergy",
     "fields": {
       "Name": "clergy",
+      "Type": "Institution",
       "Icon": "clergy",
+      "RandomNames": [
+        "Ideologoues"
+      ],
+      "Ideologies": [],
+      "PopType": [
+        "intellectual"
+      ],
       "Alignment": {
-        "R": 0.000031,
-        "Theta": 0.007812
+        "R": 1,
+        "Theta": 240
       },
       "Color": {
         "R": 1,
-        "G": 0,
+        "G": 0.5,
         "B": 0,
-        "A": 1
+        "A": 1,
+        "Hex": "FFBC00"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.2,
+        "armyBuildup": 0.2,
+        "researchTech": 0.2,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unityMult",
         "value": 1
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "unityMult",
         "value": -1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
         "value": 0.1
       },
       {
-        "key": "unrestChangeAdd",
+        "key": "crisisSpawnChanceAdd",
+        "value1": "clergyCrisis",
         "value": 10
       },
       {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": 240
-      },
-      {
         "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.2
+        "value1": "clergyCrisis_intensity",
+        "value": 0.1
       },
       {
-        "key": "adminEfficiencyAdd",
-        "value": 0.007813,
+        "key": "unitMoraleMult",
+        "value": 0.2,
         "scope": "Region"
       }
     ],
@@ -128,48 +159,58 @@
     "icon": "corporate",
     "fields": {
       "Name": "corporate",
+      "Type": "Special Interest",
       "Icon": "corporate",
+      "RandomNames": [
+        "Technocrats"
+      ],
+      "Ideologies": [],
+      "PopType": [],
       "Alignment": {
-        "R": 0.000031,
-        "Theta": 0.007812
+        "R": 1,
+        "Theta": 120
       },
       "Color": {
-        "R": 1,
+        "R": 0.5,
         "G": 0,
-        "B": 0,
-        "A": 1
+        "B": 1,
+        "A": 1,
+        "Hex": "BC00FF"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.2,
+        "armyBuildup": 0.2,
+        "researchTech": 0.6,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "debtEffectMult",
         "value": -0.5
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "debtEffectMult",
         "value": 0.5
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
         "value": 0.1
       },
       {
-        "key": "unrestChangeAdd",
+        "key": "crisisSpawnChanceAdd",
+        "value1": "corporateCrisis",
         "value": 10
       },
       {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": 1
-      },
-      {
         "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 120
+        "value1": "corporateCrisis_intensity",
+        "value": 0.1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "resourceCapacityMult",
+        "value1": "industry",
         "value": 0.2,
         "scope": "Region"
       }
@@ -189,49 +230,64 @@
     "icon": "middleClass",
     "fields": {
       "Name": "middleClass",
+      "Type": "Popular",
       "Icon": "middleClass",
+      "RandomNames": [
+        "Middle Class"
+      ],
+      "Ideologies": [
+        "conservative",
+        "libertarian"
+      ],
+      "PopType": [
+        "engineer",
+        "entrepeneur"
+      ],
       "Alignment": {
-        "R": 0.007813,
-        "Theta": 0.2
+        "R": 1,
+        "Theta": 60
       },
       "Color": {
-        "R": 1,
+        "R": 0,
         "G": 0,
-        "B": 0,
-        "A": 1
+        "B": 1,
+        "A": 1,
+        "Hex": "0000FF"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.4,
+        "armyBuildup": 0.2,
+        "researchTech": 0.4,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "researchMult",
         "value": 1
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "researchMult",
         "value": -1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
         "value": 0.1
       },
       {
-        "key": "unrestChangeAdd",
+        "key": "crisisSpawnChanceAdd",
+        "value1": "middleClass",
         "value": 10
       },
       {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": 60
-      },
-      {
         "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.5
+        "value1": "middleClassCrisis_intensity",
+        "value": 0.1
       },
       {
-        "key": "adminEfficiencyAdd",
-        "value": 0.007812,
+        "key": "educationEfficiency",
+        "value": 0.5,
         "scope": "Region"
       }
     ],
@@ -250,49 +306,62 @@
     "icon": "military",
     "fields": {
       "Name": "military",
+      "Type": "Institution",
       "Icon": "military",
+      "RandomNames": [
+        "Military"
+      ],
+      "Ideologies": [
+        "authoritarian"
+      ],
+      "PopType": [
+        "soldier"
+      ],
       "Alignment": {
-        "R": 0.4,
-        "Theta": 180
+        "R": 0,
+        "Theta": 0
       },
       "Color": {
-        "R": 1,
-        "G": 0,
-        "B": 0,
-        "A": 1
+        "R": 0.548611,
+        "G": 0.548611,
+        "B": 0.548611,
+        "A": 1,
+        "Hex": "C4C4C4"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.4,
+        "buildProject": 0.1,
+        "armyBuildup": 0.4,
+        "researchTech": 0.1,
+        "selectReform": 0.1
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unitMoraleMult",
         "value": 0.5
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "unitMoraleMult",
         "value": -0.5
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      },
+      {
+        "key": "crisisSpawnChanceAdd",
+        "value1": "militaryCrisis",
+        "value": 10
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "militaryCrisis_intensity",
         "value": 0.1
       },
       {
         "key": "unrestChangeAdd",
-        "value": 10
-      },
-      {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": -0.01
-      },
-      {
-        "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.000054
-      },
-      {
-        "key": "adminEfficiencyAdd",
-        "value": 0.007813,
+        "value": -0.01,
         "scope": "Region"
       }
     ],
@@ -311,49 +380,64 @@
     "icon": "laborer",
     "fields": {
       "Name": "laborer",
+      "Type": "Popular",
       "Icon": "laborer",
+      "RandomNames": [
+        "Rural Laborers"
+      ],
+      "Ideologies": [
+        "centrist",
+        "conservative"
+      ],
+      "PopType": [
+        "farmer",
+        "laborer"
+      ],
       "Alignment": {
-        "R": 0.2,
-        "Theta": 0.6
+        "R": 1,
+        "Theta": 0
       },
       "Color": {
-        "R": 1,
-        "G": 0,
-        "B": 0,
-        "A": 1
+        "R": 0,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "00FFFF"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.6,
+        "armyBuildup": 0.2,
+        "researchTech": 0.2,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "developmentMult",
         "value": 1
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "developmentMult",
         "value": -1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
         "value": 0.1
       },
       {
-        "key": "unrestChangeAdd",
+        "key": "crisisSpawnChanceAdd",
+        "value1": "laborerCrisis",
         "value": 10
       },
       {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": 0.25
-      },
-      {
         "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.007812
+        "value1": "laborerCrisis_intensity",
+        "value": 0.1
       },
       {
-        "key": "adminEfficiencyAdd",
-        "value": 0.007813,
+        "key": "unitReinforceRateMult",
+        "value": 0.25,
         "scope": "Region"
       }
     ],
@@ -372,49 +456,50 @@
     "icon": "separatist",
     "fields": {
       "Name": "separatist",
+      "Type": "Special Interest",
       "Icon": "separatist",
+      "RandomNames": [
+        "Separatists"
+      ],
+      "Ideologies": [],
+      "PopType": [],
       "Alignment": {
-        "R": 1,
-        "Theta": 180
+        "R": 0,
+        "Theta": 0
       },
       "Color": {
-        "R": 1,
+        "R": 0,
         "G": 0,
         "B": 0,
-        "A": 1
+        "A": 1,
+        "Hex": "000000"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.2,
+        "armyBuildup": 0.2,
+        "researchTech": 0.2,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
+        "key": "unrestChangeAdd",
         "value": 0.1
       },
       {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "crisisSpawnChanceAdd",
+        "value1": "separatistCrisis",
         "value": 10
       },
       {
-        "key": "adminEfficiencyAdd",
-        "value": 0.01
+        "key": "crisisSpawnChanceAdd",
+        "value1": "separatistCrisis_intensity",
+        "value": 0.1
       },
       {
         "key": "unrestChangeAdd",
-        "value": 0.007812
-      },
-      {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": 0.2
-      },
-      {
-        "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 539832.162109
-      },
-      {
-        "key": "adminEfficiencyAdd",
-        "value": 1,
+        "value": 0.01,
         "scope": "Region"
       }
     ],
@@ -433,45 +518,59 @@
     "icon": "espionageFaction",
     "fields": {
       "Name": "espionageFaction",
+      "Type": "Institution",
       "Icon": "espionageFaction",
+      "RandomNames": [
+        "Spy Agency"
+      ],
+      "Ideologies": [],
+      "PopType": [],
       "Alignment": {
-        "R": 1,
-        "Theta": 180
+        "R": 0,
+        "Theta": 0
       },
       "Color": {
-        "R": 1,
-        "G": 0,
-        "B": 0,
-        "A": 1
+        "R": 0.300347,
+        "G": 0.300347,
+        "B": 0.300347,
+        "A": 1,
+        "Hex": "959595"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.2,
+        "buildProject": 0.2,
+        "armyBuildup": 0.2,
+        "researchTech": 0.2,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
-        "value": 539832.162109
-      },
-      {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "espionageOffense",
         "value": 1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "espionageEffect",
+        "value1": "counterespionage",
+        "value": 1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
         "value": 0.2
       },
       {
-        "key": "unrestChangeAdd",
+        "key": "espionageOffense",
         "value": -1
       },
       {
-        "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
-        "value": -0.01
+        "key": "espionageDefense",
+        "value": -1
       },
       {
-        "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.007813
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Region"
       }
     ],
     "prerequisites": [],
@@ -489,30 +588,44 @@
     "icon": "upperClass",
     "fields": {
       "Name": "upperClass",
+      "Type": "Special Interest",
       "Icon": "upperClass",
+      "RandomNames": [
+        "Aristocrats"
+      ],
+      "Ideologies": [
+        "liberal",
+        "marxist"
+      ],
+      "PopType": [
+        "upperClass"
+      ],
       "Alignment": {
-        "R": 300,
-        "Theta": 0.007812
+        "R": 1,
+        "Theta": 300
       },
       "Color": {
-        "R": 1,
-        "G": 0,
+        "R": 0,
+        "G": 1,
         "B": 0,
-        "A": 1
+        "A": 1,
+        "Hex": "00FF00"
+      },
+      "MissionTypeWeights": {
+        "conquerTerritory": 0.5,
+        "buildProject": 0.2,
+        "armyBuildup": 0.2,
+        "researchTech": 0,
+        "selectReform": 0.2
       }
     },
     "modifiers": [
       {
-        "key": "adminEfficiencyAdd",
-        "value": 131072.00586
-      },
-      {
-        "key": "sliderMaxAdd",
-        "value1": "incomeTax",
+        "key": "recruitablePopulationMult",
         "value": 1
       },
       {
-        "key": "adminEfficiencyAdd",
+        "key": "recruitablePopulationMult",
         "value": -1
       },
       {
@@ -521,17 +634,17 @@
       },
       {
         "key": "crisisSpawnChanceAdd",
-        "value1": "bureaucracyCrisis",
+        "value1": "upperClassCrisis",
         "value": 10
       },
       {
         "key": "situationVariableAdd",
-        "value1": "bureaucracyCrisis_intensity",
-        "value": 0.000031
+        "value1": "upperClassCrisis_intensity",
+        "value": 0.1
       },
       {
-        "key": "adminEfficiencyAdd",
-        "value": -2,
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
         "scope": "Region"
       }
     ],

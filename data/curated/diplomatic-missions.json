@@ -1,0 +1,74 @@
+[
+  {
+    "id": "damageRelation",
+    "type": "diplomatic-missions",
+    "displayName": "Damage Relations",
+    "fields": {
+      "Name": "damageRelation",
+      "Scope": "Empire_C",
+      "Effect": [],
+      "RecallCondition": {
+        "Parameters": [],
+        "Logic": ""
+      },
+      "RelationChange": -1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "deescalate",
+    "type": "diplomatic-missions",
+    "displayName": "Deescalate",
+    "fields": {
+      "Name": "deescalate",
+      "Scope": "SituationActor_C",
+      "Effect": [],
+      "RecallCondition": {
+        "Parameters": [],
+        "Logic": ""
+      },
+      "RelationChange": -0.001
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "escalate",
+    "type": "diplomatic-missions",
+    "displayName": "Escalate",
+    "fields": {
+      "Name": "escalate",
+      "Scope": "SituationActor_C",
+      "Effect": [],
+      "RecallCondition": {
+        "Parameters": [],
+        "Logic": ""
+      },
+      "RelationChange": 0.0025
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "improveRelation",
+    "type": "diplomatic-missions",
+    "displayName": "Improve Relations",
+    "fields": {
+      "Name": "improveRelation",
+      "Scope": "Empire_C",
+      "Effect": [],
+      "RecallCondition": {
+        "Parameters": [],
+        "Logic": ""
+      },
+      "RelationChange": 0.5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

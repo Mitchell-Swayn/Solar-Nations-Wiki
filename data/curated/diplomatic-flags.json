@@ -1,0 +1,504 @@
+[
+  {
+    "id": "ally",
+    "type": "diplomatic-flags",
+    "displayName": "Alliance",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "ally",
+      "OpinionModifier": 25,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0.318537,
+        "B": 1,
+        "A": 1,
+        "Hex": "0099FF"
+      },
+      "IconPriority": 2,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": [],
+      "OrganizationOnly": false,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": true,
+      "VoluntaryExit": false,
+      "HideWhenFalse": true,
+      "ActionAvailable": true,
+      "BlockerFlags": [
+        "war"
+      ],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": -1000,
+        "AIAttitudeEnum::NewEnumerator3": 10,
+        "AIAttitudeEnum::NewEnumerator1": 5,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "collaborativeEconomyPlan",
+    "type": "diplomatic-flags",
+    "displayName": "Collaborative Economic Planning",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "collaborativeEconomyPlan",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"marxist\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "culturalSupremacy",
+    "type": "diplomatic-flags",
+    "displayName": "Cultural Supremacy",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "culturalSupremacy",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"marxist\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"alignmentAdd\",Value1=\"traditional\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "customsUnion",
+    "type": "diplomatic-flags",
+    "displayName": "Customs Union",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "customsUnion",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"marxist\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"alignmentAdd\",Value1=\"liberal\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"researchMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "marketEnterprise",
+    "type": "diplomatic-flags",
+    "displayName": "Market Enterprise",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "marketEnterprise",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"liberal\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "militaryAccess",
+    "type": "diplomatic-flags",
+    "displayName": "Military Access",
+    "icon": "manpower",
+    "fields": {
+      "Name": "militaryAccess",
+      "OpinionModifier": 0,
+      "Icon": "manpower",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": [],
+      "OrganizationOnly": false,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": true,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": true,
+      "BlockerFlags": [
+        "war"
+      ],
+      "RemoveFlags": [],
+      "AIReluctance": -30,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": -1000,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "sovereignRights",
+    "type": "diplomatic-flags",
+    "displayName": "Sovereign Rights",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "sovereignRights",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"traditional\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"alignmentAdd\",Value1=\"liberal\",Value2=\"\",Value3=\"\")": 0.05,
+        "(Key=\"projectUpkeepMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "tradeAgreement",
+    "type": "diplomatic-flags",
+    "displayName": "Trade Agreement",
+    "icon": "trade",
+    "fields": {
+      "Name": "tradeAgreement",
+      "OpinionModifier": 5,
+      "Icon": "trade",
+      "Color": {
+        "R": 0.103118,
+        "G": 0.404514,
+        "B": 0.101831,
+        "A": 1,
+        "Hex": "5AAB5A"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0.05,
+      "OrganizationModifier": [],
+      "OrganizationOnly": false,
+      "OrganizationAvailable": false,
+      "VoluntaryEnter": true,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [
+        "war"
+      ],
+      "RemoveFlags": [],
+      "AIReluctance": -25,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": -1000,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
+  },
+  {
+    "id": "unifiedFaith",
+    "type": "diplomatic-flags",
+    "displayName": "Unified Faith",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "unifiedFaith",
+      "OpinionModifier": 0,
+      "Icon": "diplomacy",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "IconPriority": 0,
+      "InfluenceCost": -0.05,
+      "TrustGain": 0,
+      "OrganizationModifier": {
+        "(Key=\"alignmentAdd\",Value1=\"traditional\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      },
+      "OrganizationOnly": true,
+      "OrganizationAvailable": true,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [],
+      "RemoveFlags": [],
+      "AIReluctance": -50,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "war",
+    "type": "diplomatic-flags",
+    "displayName": "War",
+    "icon": "war",
+    "fields": {
+      "Name": "war",
+      "OpinionModifier": -10,
+      "Icon": "war",
+      "Color": {
+        "R": 1,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF0000"
+      },
+      "IconPriority": 2,
+      "InfluenceCost": 0,
+      "TrustGain": 0,
+      "OrganizationModifier": [],
+      "OrganizationOnly": false,
+      "OrganizationAvailable": false,
+      "VoluntaryEnter": false,
+      "VoluntaryExit": false,
+      "HideWhenFalse": false,
+      "ActionAvailable": false,
+      "BlockerFlags": [
+        "ally",
+        "defensivePact",
+        "militaryAccess",
+        "nonAggressionPact"
+      ],
+      "RemoveFlags": [
+        "tradeAgreement",
+        "culturalExchange",
+        "coalitionTarget",
+        "endorsement",
+        "migrationTreaty",
+        "techSharing"
+      ],
+      "AIReluctance": 0,
+      "AttitudeEffect": {
+        "AIAttitudeEnum::NewEnumerator4": 0,
+        "AIAttitudeEnum::NewEnumerator2": 0,
+        "AIAttitudeEnum::NewEnumerator3": 0,
+        "AIAttitudeEnum::NewEnumerator1": 0,
+        "AIAttitudeEnum::NewEnumerator0": 0
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "war"
+      }
+    ]
+  }
+]

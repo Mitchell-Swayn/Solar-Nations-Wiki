@@ -1,0 +1,74 @@
+[
+  {
+    "id": "team_blue",
+    "type": "teams",
+    "displayName": "Liberals",
+    "icon": "liberal",
+    "fields": {
+      "Name": "team_blue",
+      "Alignment": {
+        "Marxist": 0,
+        "Liberal": 1,
+        "Traditional": 0
+      },
+      "Icon": "liberal",
+      "Color": "blue"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "liberal"
+      }
+    ]
+  },
+  {
+    "id": "team_red",
+    "type": "teams",
+    "displayName": "Marxists",
+    "icon": "communism",
+    "fields": {
+      "Name": "team_red",
+      "Alignment": {
+        "Marxist": 1,
+        "Liberal": 0,
+        "Traditional": 0
+      },
+      "Icon": "communism",
+      "Color": "red"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "communism"
+      }
+    ]
+  },
+  {
+    "id": "team_green",
+    "type": "teams",
+    "displayName": "Traditionalists",
+    "icon": "traditional",
+    "fields": {
+      "Name": "team_green",
+      "Alignment": {
+        "Marxist": 0,
+        "Liberal": 0,
+        "Traditional": 1
+      },
+      "Icon": "traditional",
+      "Color": "green"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "traditional"
+      }
+    ]
+  }
+]

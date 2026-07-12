@@ -1,0 +1,230 @@
+[
+  {
+    "id": "authoritarian",
+    "type": "ethics",
+    "displayName": "Authoritarian",
+    "icon": "",
+    "fields": {
+      "Name": "authoritarian",
+      "Icon": "",
+      "AlignmentTheta": 270
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "conservative",
+    "type": "ethics",
+    "displayName": "Conservative",
+    "icon": "",
+    "fields": {
+      "Name": "conservative",
+      "Icon": "",
+      "AlignmentTheta": 30
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "fascist",
+    "type": "ethics",
+    "displayName": "Fascist",
+    "icon": "",
+    "fields": {
+      "Name": "fascist",
+      "Icon": "",
+      "AlignmentTheta": 240
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "liberal",
+    "type": "ethics",
+    "displayName": "Liberal",
+    "icon": "",
+    "fields": {
+      "Name": "liberal",
+      "Icon": "",
+      "AlignmentTheta": 60
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "mechanist",
+    "type": "ethics",
+    "displayName": "Mechanist",
+    "icon": "",
+    "fields": {
+      "Name": "mechanist",
+      "Icon": "",
+      "AlignmentTheta": 210
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "moralist",
+    "type": "ethics",
+    "displayName": "Moralist",
+    "icon": "",
+    "fields": {
+      "Name": "moralist",
+      "Icon": "",
+      "AlignmentTheta": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "progressive",
+    "type": "ethics",
+    "displayName": "Progressive",
+    "icon": "",
+    "fields": {
+      "Name": "progressive",
+      "Icon": "",
+      "AlignmentTheta": 120
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "revolutionary",
+    "type": "ethics",
+    "displayName": "Revolutionary",
+    "icon": "",
+    "fields": {
+      "Name": "revolutionary",
+      "Icon": "",
+      "AlignmentTheta": 180
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "technocratic",
+    "type": "ethics",
+    "displayName": "Technocratic",
+    "icon": "",
+    "fields": {
+      "Name": "technocratic",
+      "Icon": "",
+      "AlignmentTheta": 90
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "theocratic",
+    "type": "ethics",
+    "displayName": "Theocratic",
+    "icon": "",
+    "fields": {
+      "Name": "theocratic",
+      "Icon": "",
+      "AlignmentTheta": 300
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "traditional",
+    "type": "ethics",
+    "displayName": "Traditional",
+    "icon": "",
+    "fields": {
+      "Name": "traditional",
+      "Icon": "",
+      "AlignmentTheta": 330
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "utopian",
+    "type": "ethics",
+    "displayName": "Utopian",
+    "icon": "",
+    "fields": {
+      "Name": "utopian",
+      "Icon": "",
+      "AlignmentTheta": 150
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

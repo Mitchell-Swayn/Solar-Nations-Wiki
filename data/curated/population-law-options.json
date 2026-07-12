@@ -1,0 +1,697 @@
+[
+  {
+    "id": "livingStandards_academicPrivilege",
+    "type": "population-law-options",
+    "displayName": "Academic Privilege",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_academicPrivilege",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 8
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "university",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "clergy",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "militaryService_allowed",
+    "type": "population-law-options",
+    "displayName": "Allowed",
+    "icon": "",
+    "fields": {
+      "Name": "militaryService_allowed",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_default",
+    "type": "population-law-options",
+    "displayName": "Decent Conditions",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_default",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "militaryService_disallowed",
+    "type": "population-law-options",
+    "displayName": "Disallowed",
+    "icon": "",
+    "fields": {
+      "Name": "militaryService_disallowed",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": -1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "familyPolicy_neutering",
+    "type": "population-law-options",
+    "displayName": "Enforced Neutering",
+    "icon": "",
+    "fields": {
+      "Name": "familyPolicy_neutering",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": false,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": false
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": -1
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": 0.25
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_extermination",
+    "type": "population-law-options",
+    "displayName": "Extermination",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_extermination",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": false,
+        "CultureStatusEnum::NewEnumerator0": false,
+        "CultureStatusEnum::NewEnumerator4": false,
+        "CultureStatusEnum::NewEnumerator3": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popAttrition",
+        "value": 0.1
+      },
+      {
+        "key": "assimilationMult",
+        "value": 5
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "militaryService_forced",
+    "type": "population-law-options",
+    "displayName": "Forced",
+    "icon": "",
+    "fields": {
+      "Name": "militaryService_forced",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "recruitablePopulationMult",
+        "value": 1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_forcedLabor",
+    "type": "population-law-options",
+    "displayName": "Forced Labor",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_forcedLabor",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": false,
+        "CultureStatusEnum::NewEnumerator0": false,
+        "CultureStatusEnum::NewEnumerator4": false,
+        "CultureStatusEnum::NewEnumerator3": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popAttrition",
+        "value": 0.02
+      },
+      {
+        "key": "assimilationMult",
+        "value": 1
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.02
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_capitalism",
+    "type": "population-law-options",
+    "displayName": "Free Enterprise",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_capitalism",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 3
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.25
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.05
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "corporate",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "familyPolicy_abortion",
+    "type": "population-law-options",
+    "displayName": "Incentivized Contraception",
+    "icon": "",
+    "fields": {
+      "Name": "familyPolicy_abortion",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": -0.25
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_massDeportation",
+    "type": "population-law-options",
+    "displayName": "Mass Deportation",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_massDeportation",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": false,
+        "CultureStatusEnum::NewEnumerator0": false,
+        "CultureStatusEnum::NewEnumerator4": false,
+        "CultureStatusEnum::NewEnumerator3": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "immigrationPush",
+        "value": 1
+      },
+      {
+        "key": "assimilationMult",
+        "value": 2
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "familyPolicy_natalism",
+    "type": "population-law-options",
+    "displayName": "Natalism",
+    "icon": "",
+    "fields": {
+      "Name": "familyPolicy_natalism",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.25
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "familyPolicy_default",
+    "type": "population-law-options",
+    "displayName": "Neutral",
+    "icon": "",
+    "fields": {
+      "Name": "familyPolicy_default",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_rationing",
+    "type": "population-law-options",
+    "displayName": "Rationing",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_rationing",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": true,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": -0.25
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.05
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_reeducation",
+    "type": "population-law-options",
+    "displayName": "Re-Education",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_reeducation",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": false,
+        "CultureStatusEnum::NewEnumerator0": false,
+        "CultureStatusEnum::NewEnumerator4": false,
+        "CultureStatusEnum::NewEnumerator3": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 2
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": 0.03
+      },
+      {
+        "key": "unityMult",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_welfare",
+    "type": "population-law-options",
+    "displayName": "Social Welfare",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_welfare",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 3
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.1
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.25
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_ultimateLiberty",
+    "type": "population-law-options",
+    "displayName": "Ultimate Liberty",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_ultimateLiberty",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 10
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.5
+      },
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.25
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "laborer",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "livingStandards_postScarcity",
+    "type": "population-law-options",
+    "displayName": "Utopian Abundance",
+    "icon": "",
+    "fields": {
+      "Name": "livingStandards_postScarcity",
+      "Icon": "",
+      "Allowed": {
+        "CultureStatusEnum::NewEnumerator2": true,
+        "CultureStatusEnum::NewEnumerator1": true,
+        "CultureStatusEnum::NewEnumerator0": true,
+        "CultureStatusEnum::NewEnumerator3": false,
+        "CultureStatusEnum::NewEnumerator4": true
+      }
+    },
+    "modifiers": [
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 10
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": -0.2
+      },
+      {
+        "key": "unityMult",
+        "value": 0.5
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "agency",
+    "type": "psychology",
+    "displayName": "Agency",
+    "icon": "",
+    "fields": {
+      "Name": "agency",
+      "PositiveColor": {
+        "R": 0,
+        "G": 1,
+        "B": 0.939711,
+        "A": 1,
+        "Hex": "00FFF9"
+      },
+      "NegativeColor": {
+        "R": 1,
+        "G": 0.080133,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF5000"
+      },
+      "Icon": "",
+      "ConvergenceSpeed": 0.05
+    },
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.2
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "conformity",
+    "type": "psychology",
+    "displayName": "Conformity",
+    "icon": "",
+    "fields": {
+      "Name": "conformity",
+      "PositiveColor": {
+        "R": 0.548611,
+        "G": 0.299764,
+        "B": 0,
+        "A": 1,
+        "Hex": "C49500"
+      },
+      "NegativeColor": {
+        "R": 0,
+        "G": 0.05334,
+        "B": 0.420139,
+        "A": 1,
+        "Hex": "0041AE"
+      },
+      "Icon": "",
+      "ConvergenceSpeed": 0.05
+    },
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "harmony",
+    "type": "psychology",
+    "displayName": "Harmony",
+    "icon": "harmony",
+    "fields": {
+      "Name": "harmony",
+      "PositiveColor": {
+        "R": 0.080604,
+        "G": 0.560764,
+        "B": 0.267937,
+        "A": 1,
+        "Hex": "50C68D"
+      },
+      "NegativeColor": {
+        "R": 0.482639,
+        "G": 0.116639,
+        "B": 0,
+        "A": 1,
+        "Hex": "B96000"
+      },
+      "Icon": "harmony",
+      "ConvergenceSpeed": 0.05
+    },
+    "modifiers": [
+      {
+        "key": "controllingFactionLoyalty",
+        "value": 0.5
+      },
+      {
+        "key": "unityMult",
+        "value": 1
+      },
+      {
+        "key": "controllingFactionLoyalty",
+        "value": -1
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": -0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "harmony"
+      }
+    ]
+  },
+  {
+    "id": "trust",
+    "type": "psychology",
+    "displayName": "Trust",
+    "icon": "",
+    "fields": {
+      "Name": "trust",
+      "PositiveColor": {
+        "R": 0,
+        "G": 0.590278,
+        "B": 0.005966,
+        "A": 1,
+        "Hex": "00CA11"
+      },
+      "NegativeColor": {
+        "R": 0.388889,
+        "G": 0.016679,
+        "B": 0,
+        "A": 1,
+        "Hex": "A82200"
+      },
+      "Icon": "",
+      "ConvergenceSpeed": 0.05
+    },
+    "modifiers": [
+      {
+        "key": "adminEfficiencyAdd",
+        "value": 0.25
+      },
+      {
+        "key": "controllingFactionLoyalty",
+        "value": 0.5
+      },
+      {
+        "key": "controllingFactionLoyalty",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "equatorial",
+    "type": "orbit-types",
+    "displayName": "Equatorial",
+    "fields": {
+      "Name": "equatorial",
+      "InnerRadius": 1.1,
+      "OuterRadius": 4,
+      "Terrain": "space",
+      "Color": {
+        "R": 0.678819,
+        "G": 0.678819,
+        "B": 0.678819,
+        "A": 1,
+        "Hex": "D7D7D7"
+      },
+      "Inclination": 0,
+      "OffsetR": 0,
+      "OffsetTheta": 0,
+      "OnlyPlanet": false,
+      "SameAdjacency": [
+        "highOrbit"
+      ],
+      "ParentSOIAdjacency": [],
+      "ChildAdjacency": [
+        "highOrbit"
+      ],
+      "SuperiorSiblingAdjacency": [],
+      "InferiorSiblingAdjacency": [],
+      "NameFormat": "Low {name} Orbit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "highOrbit",
+    "type": "orbit-types",
+    "displayName": "High Orbit",
+    "fields": {
+      "Name": "highOrbit",
+      "InnerRadius": 4,
+      "OuterRadius": 10,
+      "Terrain": "interplanetary",
+      "Color": {
+        "R": 0.456597,
+        "G": 0.362859,
+        "B": 0.232291,
+        "A": 1,
+        "Hex": "B4A284"
+      },
+      "Inclination": 0,
+      "OffsetR": 0,
+      "OffsetTheta": 0,
+      "OnlyPlanet": false,
+      "SameAdjacency": [
+        "equatorial"
+      ],
+      "ParentSOIAdjacency": [
+        "highOrbit"
+      ],
+      "ChildAdjacency": [],
+      "SuperiorSiblingAdjacency": [
+        "highOrbit"
+      ],
+      "InferiorSiblingAdjacency": [
+        "highOrbit"
+      ],
+      "NameFormat": "High {name} Orbit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

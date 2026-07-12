@@ -1,0 +1,986 @@
+[
+  {
+    "id": "activeRecon",
+    "type": "espionage-operations",
+    "displayName": "Active Reconaissance",
+    "icon": "activeRecon",
+    "fields": {
+      "Name": "activeRecon",
+      "Icon": "activeRecon",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "activeRecon"
+      }
+    ]
+  },
+  {
+    "id": "killLeaderOperation",
+    "type": "espionage-operations",
+    "displayName": "Assassinate Leader",
+    "icon": "killLeaderOperation",
+    "fields": {
+      "Name": "killLeaderOperation",
+      "Icon": "killLeaderOperation",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": true,
+      "ParameterTypes": [
+        "character"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "killLeaderOperation"
+      }
+    ]
+  },
+  {
+    "id": "banEmbassy",
+    "type": "espionage-operations",
+    "displayName": "Ban Embassy",
+    "icon": "banEmbassy",
+    "fields": {
+      "Name": "banEmbassy",
+      "Icon": "banEmbassy",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.05,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "banEmbassy"
+      }
+    ]
+  },
+  {
+    "id": "controlGovernment",
+    "type": "espionage-operations",
+    "displayName": "Control Government",
+    "icon": "controlGovernment",
+    "fields": {
+      "Name": "controlGovernment",
+      "Icon": "controlGovernment",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.25,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "controlGovernment"
+      }
+    ]
+  },
+  {
+    "id": "cooptIntelligence",
+    "type": "espionage-operations",
+    "displayName": "Coopt Intelligence",
+    "icon": "cooptIntelligence",
+    "fields": {
+      "Name": "cooptIntelligence",
+      "Icon": "cooptIntelligence",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cooptIntelligence"
+      }
+    ]
+  },
+  {
+    "id": "counterespionage",
+    "type": "espionage-operations",
+    "displayName": "Counter Espionage",
+    "icon": "counterespionage",
+    "fields": {
+      "Name": "counterespionage",
+      "Icon": "counterespionage",
+      "InfiltrationRequirement": 0,
+      "InfluenceCost": 0,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "counterespionage"
+      }
+    ]
+  },
+  {
+    "id": "curryFavors",
+    "type": "espionage-operations",
+    "displayName": "Curry Favors",
+    "icon": "curryFavors",
+    "fields": {
+      "Name": "curryFavors",
+      "Icon": "curryFavors",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.1,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "curryFavors"
+      }
+    ]
+  },
+  {
+    "id": "cyberattackOperation",
+    "type": "espionage-operations",
+    "displayName": "Cyber Attack",
+    "icon": "cyberattackOperation",
+    "fields": {
+      "Name": "cyberattackOperation",
+      "Icon": "cyberattackOperation",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cyberattackOperation"
+      }
+    ]
+  },
+  {
+    "id": "diplomaticCoercion",
+    "type": "espionage-operations",
+    "displayName": "Diplomatic Coercion",
+    "icon": "diplomaticCoercion",
+    "fields": {
+      "Name": "diplomaticCoercion",
+      "Icon": "diplomaticCoercion",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomaticCoercion"
+      }
+    ]
+  },
+  {
+    "id": "diplomaticInterference",
+    "type": "espionage-operations",
+    "displayName": "Diplomatic Interference",
+    "icon": "diplomaticInterference",
+    "fields": {
+      "Name": "diplomaticInterference",
+      "Icon": "diplomaticInterference",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomaticInterference"
+      }
+    ]
+  },
+  {
+    "id": "dirtyBombOperation",
+    "type": "espionage-operations",
+    "displayName": "Dirty Bomb",
+    "icon": "dirtyBombOperation",
+    "fields": {
+      "Name": "dirtyBombOperation",
+      "Icon": "dirtyBombOperation",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [
+        "region"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "dirtyBombOperation"
+      }
+    ]
+  },
+  {
+    "id": "infiltrateEconomy",
+    "type": "espionage-operations",
+    "displayName": "Economic Infiltration",
+    "icon": "infiltrateEconomy",
+    "fields": {
+      "Name": "infiltrateEconomy",
+      "Icon": "infiltrateEconomy",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infiltrateEconomy"
+      }
+    ]
+  },
+  {
+    "id": "siphonMoney",
+    "type": "espionage-operations",
+    "displayName": "Embezzle Funds",
+    "icon": "siphonMoney",
+    "fields": {
+      "Name": "siphonMoney",
+      "Icon": "siphonMoney",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "siphonMoney"
+      }
+    ]
+  },
+  {
+    "id": "espionageAssistance",
+    "type": "espionage-operations",
+    "displayName": "Espionage Assistance",
+    "icon": "espionageAssistance",
+    "fields": {
+      "Name": "espionageAssistance",
+      "Icon": "espionageAssistance",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.05,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageAssistance"
+      }
+    ]
+  },
+  {
+    "id": "focusEspionage",
+    "type": "espionage-operations",
+    "displayName": "Focused Infiltration",
+    "icon": "focusEspionage",
+    "fields": {
+      "Name": "focusEspionage",
+      "Icon": "focusEspionage",
+      "InfiltrationRequirement": 0,
+      "InfluenceCost": 0,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "focusEspionage"
+      }
+    ]
+  },
+  {
+    "id": "infiltrateAdministration",
+    "type": "espionage-operations",
+    "displayName": "Infiltrate Administration",
+    "icon": "infiltrateAdministration",
+    "fields": {
+      "Name": "infiltrateAdministration",
+      "Icon": "infiltrateAdministration",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infiltrateAdministration"
+      }
+    ]
+  },
+  {
+    "id": "instigateCrisis",
+    "type": "espionage-operations",
+    "displayName": "Instigate Crisis",
+    "icon": "instigateCrisis",
+    "fields": {
+      "Name": "instigateCrisis",
+      "Icon": "instigateCrisis",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "instigateCrisis"
+      }
+    ]
+  },
+  {
+    "id": "infiltrateMilitary",
+    "type": "espionage-operations",
+    "displayName": "Military Infiltration",
+    "icon": "infiltrateMilitary",
+    "fields": {
+      "Name": "infiltrateMilitary",
+      "Icon": "infiltrateMilitary",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.3,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infiltrateMilitary"
+      }
+    ]
+  },
+  {
+    "id": "orchestrateMutiny",
+    "type": "espionage-operations",
+    "displayName": "Orchestrate Mutiny",
+    "icon": "orchestrateMutiny",
+    "fields": {
+      "Name": "orchestrateMutiny",
+      "Icon": "orchestrateMutiny",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": true,
+      "ParameterTypes": [
+        "unit"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "orchestrateMutiny"
+      }
+    ]
+  },
+  {
+    "id": "infiltratePolitics",
+    "type": "espionage-operations",
+    "displayName": "Political Infiltration",
+    "icon": "infiltratePolitics",
+    "fields": {
+      "Name": "infiltratePolitics",
+      "Icon": "infiltratePolitics",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infiltratePolitics"
+      }
+    ]
+  },
+  {
+    "id": "propagandaOperation",
+    "type": "espionage-operations",
+    "displayName": "Propaganda",
+    "icon": "propagandaOperation",
+    "fields": {
+      "Name": "propagandaOperation",
+      "Icon": "propagandaOperation",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.1,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "propagandaOperation"
+      }
+    ]
+  },
+  {
+    "id": "radicalizeFaction",
+    "type": "espionage-operations",
+    "displayName": "Radicalize Faction",
+    "icon": "radicalizeFaction",
+    "fields": {
+      "Name": "radicalizeFaction",
+      "Icon": "radicalizeFaction",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [
+        "faction"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "radicalizeFaction"
+      }
+    ]
+  },
+  {
+    "id": "robotRevolution",
+    "type": "espionage-operations",
+    "displayName": "Robot Revolution",
+    "icon": "unleashScrapCode",
+    "fields": {
+      "Name": "robotRevolution",
+      "Icon": "unleashScrapCode",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashScrapCode"
+      }
+    ]
+  },
+  {
+    "id": "sabotageColony",
+    "type": "espionage-operations",
+    "displayName": "Sabotage Colony",
+    "icon": "sabotageColony",
+    "fields": {
+      "Name": "sabotageColony",
+      "Icon": "sabotageColony",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": true,
+      "ParameterTypes": [
+        "colony"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sabotageColony"
+      }
+    ]
+  },
+  {
+    "id": "sabotageEconomy",
+    "type": "espionage-operations",
+    "displayName": "Sabotage Economy",
+    "icon": "sabotageEconomy",
+    "fields": {
+      "Name": "sabotageEconomy",
+      "Icon": "sabotageEconomy",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sabotageEconomy"
+      }
+    ]
+  },
+  {
+    "id": "sabotageReinforcement",
+    "type": "espionage-operations",
+    "displayName": "Sabotage Reinforcement",
+    "icon": "sabotageReinforcement",
+    "fields": {
+      "Name": "sabotageReinforcement",
+      "Icon": "sabotageReinforcement",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sabotageReinforcement"
+      }
+    ]
+  },
+  {
+    "id": "sabotageReputation",
+    "type": "espionage-operations",
+    "displayName": "Sabotage Reputation",
+    "icon": "sabotageReputation",
+    "fields": {
+      "Name": "sabotageReputation",
+      "Icon": "sabotageReputation",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sabotageReputation"
+      }
+    ]
+  },
+  {
+    "id": "sabotageResearch",
+    "type": "espionage-operations",
+    "displayName": "Sabotage Research",
+    "icon": "sabotageResearch",
+    "fields": {
+      "Name": "sabotageResearch",
+      "Icon": "sabotageResearch",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sabotageResearch"
+      }
+    ]
+  },
+  {
+    "id": "siphonResearch",
+    "type": "espionage-operations",
+    "displayName": "Siphon Research",
+    "icon": "siphonResearch",
+    "fields": {
+      "Name": "siphonResearch",
+      "Icon": "siphonResearch",
+      "InfiltrationRequirement": 0.25,
+      "InfluenceCost": 0.1,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "siphonResearch"
+      }
+    ]
+  },
+  {
+    "id": "sowDiscontent",
+    "type": "espionage-operations",
+    "displayName": "Sow Discontent",
+    "icon": "sowDiscontent",
+    "fields": {
+      "Name": "sowDiscontent",
+      "Icon": "sowDiscontent",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "sowDiscontent"
+      }
+    ]
+  },
+  {
+    "id": "stealResources",
+    "type": "espionage-operations",
+    "displayName": "Steal Resources",
+    "icon": "stealResources",
+    "fields": {
+      "Name": "stealResources",
+      "Icon": "stealResources",
+      "InfiltrationRequirement": 0.75,
+      "InfluenceCost": 0.3,
+      "Instant": false,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stealResources"
+      }
+    ]
+  },
+  {
+    "id": "stealTechnology",
+    "type": "espionage-operations",
+    "displayName": "Steal Technology",
+    "icon": "stealTechnology",
+    "fields": {
+      "Name": "stealTechnology",
+      "Icon": "stealTechnology",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "stealTechnology"
+      }
+    ]
+  },
+  {
+    "id": "strengthenFaction",
+    "type": "espionage-operations",
+    "displayName": "Strengthen Faction",
+    "icon": "strengthenFaction",
+    "fields": {
+      "Name": "strengthenFaction",
+      "Icon": "strengthenFaction",
+      "InfiltrationRequirement": 0.5,
+      "InfluenceCost": 0.2,
+      "Instant": false,
+      "ParameterTypes": [
+        "faction"
+      ],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strengthenFaction"
+      }
+    ]
+  },
+  {
+    "id": "unleashMemeticVirus",
+    "type": "espionage-operations",
+    "displayName": "Unleash Memetic Virus",
+    "icon": "unleashMemeticVirus",
+    "fields": {
+      "Name": "unleashMemeticVirus",
+      "Icon": "unleashMemeticVirus",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashMemeticVirus"
+      }
+    ]
+  },
+  {
+    "id": "unleashBioweapon",
+    "type": "espionage-operations",
+    "displayName": "Unleash Pandemic",
+    "icon": "unleashBioweapon",
+    "fields": {
+      "Name": "unleashBioweapon",
+      "Icon": "unleashBioweapon",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "biowarfare_1"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashBioweapon"
+      }
+    ]
+  },
+  {
+    "id": "unleashScrapCode",
+    "type": "espionage-operations",
+    "displayName": "Unleash Scrap Code",
+    "icon": "unleashScrapCode",
+    "fields": {
+      "Name": "unleashScrapCode",
+      "Icon": "unleashScrapCode",
+      "InfiltrationRequirement": 1,
+      "InfluenceCost": 0.5,
+      "Instant": true,
+      "ParameterTypes": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "cybernetics"
+      },
+      "SpawnNotification": true
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashScrapCode"
+      }
+    ]
+  }
+]

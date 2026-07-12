@@ -1,0 +1,1563 @@
+[
+  {
+    "id": "Aerial Drone",
+    "type": "auto-units",
+    "displayName": "Aerial Drone",
+    "icon": "droneCore",
+    "fields": {
+      "Name": "Aerial Drone",
+      "Icon": "droneCore",
+      "Model": "drone",
+      "Color": {
+        "R": 0.461105,
+        "G": 0.15766,
+        "B": 0.744792,
+        "A": 1,
+        "Hex": "B56FE0"
+      },
+      "Components": [
+        107,
+        12,
+        32,
+        32,
+        32,
+        32,
+        30,
+        30,
+        136,
+        117,
+        55
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "droneCore"
+      }
+    ]
+  },
+  {
+    "id": "Airbase",
+    "type": "auto-units",
+    "displayName": "Airbase",
+    "icon": "carrierDeck",
+    "fields": {
+      "Name": "Airbase",
+      "Icon": "carrierDeck",
+      "Model": "truck",
+      "Color": {
+        "R": 0.033624,
+        "G": 0.088542,
+        "B": 0.084133,
+        "A": 1,
+        "Hex": "335452"
+      },
+      "Components": [
+        3002,
+        21,
+        21,
+        21,
+        54
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carrierDeck"
+      }
+    ]
+  },
+  {
+    "id": "Aquatic Unit",
+    "type": "auto-units",
+    "displayName": "Aquatic Unit",
+    "icon": "boats",
+    "fields": {
+      "Name": "Aquatic Unit",
+      "Icon": "boats",
+      "Model": "destroyer",
+      "Color": {
+        "R": 0.627907,
+        "G": 0.432558,
+        "B": 1,
+        "A": 255,
+        "Hex": "D0B0FF"
+      },
+      "Components": [
+        22,
+        27,
+        27,
+        25,
+        44,
+        24,
+        24,
+        136,
+        119,
+        26,
+        262
+      ],
+      "TargetSpeed": 4,
+      "TargetReliability": 500,
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "boats"
+      }
+    ]
+  },
+  {
+    "id": "Artillery",
+    "type": "auto-units",
+    "displayName": "Artillery",
+    "icon": "artillery0",
+    "fields": {
+      "Name": "Artillery",
+      "Icon": "artillery0",
+      "Model": "artillery",
+      "Color": {
+        "R": 203,
+        "G": 192,
+        "B": 0,
+        "A": 255,
+        "Hex": "FFFF00"
+      },
+      "Components": [
+        9,
+        54,
+        2,
+        4,
+        136
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "artillery0"
+      }
+    ]
+  },
+  {
+    "id": "Astronautical Unit",
+    "type": "auto-units",
+    "displayName": "Astronautical Unit",
+    "icon": "spaceships",
+    "fields": {
+      "Name": "Astronautical Unit",
+      "Icon": "spaceships",
+      "Model": "spaceBattleship",
+      "Color": {
+        "R": 0.578125,
+        "G": 0.246768,
+        "B": 0.041992,
+        "A": 1,
+        "Hex": "C88839"
+      },
+      "Components": [
+        132,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        117,
+        237,
+        134,
+        135,
+        139,
+        137,
+        119,
+        122,
+        314,
+        314,
+        314,
+        314,
+        314,
+        136,
+        315,
+        315,
+        315,
+        315,
+        60,
+        60,
+        133,
+        133,
+        133,
+        133,
+        354,
+        262
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceships"
+      }
+    ]
+  },
+  {
+    "id": "Ballistic Missile",
+    "type": "auto-units",
+    "displayName": "Ballistic Missile",
+    "icon": "missile0",
+    "fields": {
+      "Name": "Ballistic Missile",
+      "Icon": "missile0",
+      "Model": "truck",
+      "Color": {
+        "R": 0.576389,
+        "G": 0.515915,
+        "B": 0.259175,
+        "A": 1,
+        "Hex": "C8BE8B"
+      },
+      "Components": [
+        100,
+        3000
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator4",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile0"
+      }
+    ]
+  },
+  {
+    "id": "Carrier",
+    "type": "auto-units",
+    "displayName": "Carrier",
+    "icon": "carrierDeck",
+    "fields": {
+      "Name": "Carrier",
+      "Icon": "carrierDeck",
+      "Model": "navyCarrier",
+      "Color": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "Components": [
+        20,
+        25,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        134,
+        137,
+        136,
+        135,
+        141,
+        21,
+        21,
+        21,
+        139,
+        54,
+        44
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 800,
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carrierDeck"
+      }
+    ]
+  },
+  {
+    "id": "Cruiser",
+    "type": "auto-units",
+    "displayName": "Cruiser",
+    "icon": "boats",
+    "fields": {
+      "Name": "Cruiser",
+      "Icon": "boats",
+      "Model": "destroyer",
+      "Color": {
+        "R": 0.058271,
+        "G": 0.014645,
+        "B": 0.196181,
+        "A": 1,
+        "Hex": "44207A"
+      },
+      "Components": [
+        132,
+        25,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        44,
+        136,
+        24,
+        24,
+        24,
+        119,
+        19,
+        19,
+        19,
+        134,
+        117,
+        315,
+        315,
+        315,
+        140,
+        137,
+        139,
+        133,
+        135,
+        122
+      ],
+      "TargetSpeed": 3,
+      "TargetReliability": 500,
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "boats"
+      }
+    ]
+  },
+  {
+    "id": "Destroyer",
+    "type": "auto-units",
+    "displayName": "Destroyer",
+    "icon": "boats",
+    "fields": {
+      "Name": "Destroyer",
+      "Icon": "boats",
+      "Model": "destroyer",
+      "Color": {
+        "R": 0.627907,
+        "G": 0.432558,
+        "B": 1,
+        "A": 255,
+        "Hex": "D0B0FF"
+      },
+      "Components": [
+        22,
+        27,
+        27,
+        25,
+        44,
+        24,
+        24,
+        136,
+        119,
+        26
+      ],
+      "TargetSpeed": 4,
+      "TargetReliability": 500,
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "boats"
+      }
+    ]
+  },
+  {
+    "id": "Extermination Unit",
+    "type": "auto-units",
+    "displayName": "Extermination Unit",
+    "icon": "landCruiser",
+    "fields": {
+      "Name": "Extermination Unit",
+      "Icon": "landCruiser",
+      "Model": "landCruiser",
+      "Color": {
+        "R": 0.388889,
+        "G": 0.108445,
+        "B": 0,
+        "A": 1,
+        "Hex": "A85C00"
+      },
+      "Components": [
+        3002,
+        146,
+        25,
+        2,
+        21,
+        119,
+        122,
+        117,
+        3004,
+        3003,
+        134,
+        141,
+        54,
+        152,
+        135,
+        262
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landCruiser"
+      }
+    ]
+  },
+  {
+    "id": "Fighter",
+    "type": "auto-units",
+    "displayName": "Fighter",
+    "icon": "airplanes",
+    "fields": {
+      "Name": "Fighter",
+      "Icon": "airplanes",
+      "Model": "airplane",
+      "Color": {
+        "R": 158,
+        "G": 235,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFFFFF"
+      },
+      "Components": [
+        106,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        30,
+        30,
+        30,
+        30,
+        30,
+        12,
+        136,
+        31,
+        31,
+        31,
+        31
+      ],
+      "TargetSpeed": 10,
+      "TargetReliability": 100,
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes"
+      }
+    ]
+  },
+  {
+    "id": "Floating Fortress",
+    "type": "auto-units",
+    "displayName": "Floating Fortress",
+    "icon": "colossalCommandCenter",
+    "fields": {
+      "Name": "Floating Fortress",
+      "Icon": "colossalCommandCenter",
+      "Model": "floatingFortress",
+      "Color": {
+        "R": 0,
+        "G": 0.010334,
+        "B": 0.0625,
+        "A": 1,
+        "Hex": "001A46"
+      },
+      "Components": [
+        144,
+        21,
+        21,
+        21,
+        21,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27,
+        25,
+        137,
+        136,
+        139,
+        141,
+        152,
+        135,
+        44,
+        134,
+        315,
+        315,
+        315,
+        315,
+        315,
+        315,
+        315,
+        315,
+        315,
+        315,
+        119,
+        122,
+        60,
+        60,
+        60,
+        60,
+        60,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "floatingFortressTech"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colossalCommandCenter"
+      }
+    ]
+  },
+  {
+    "id": "Flying Fortress",
+    "type": "auto-units",
+    "displayName": "Flying Fortress",
+    "icon": "flyingFortress",
+    "fields": {
+      "Name": "Flying Fortress",
+      "Icon": "flyingFortress",
+      "Model": "flyingFortress",
+      "Color": {
+        "R": 0,
+        "G": 0.076389,
+        "B": 0.076389,
+        "A": 1,
+        "Hex": "004E4E"
+      },
+      "Components": [
+        145,
+        130,
+        130,
+        130,
+        130,
+        130,
+        136,
+        134,
+        137,
+        129,
+        25,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        117,
+        122,
+        119,
+        315,
+        60,
+        60
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "flyingFortressTech"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "flyingFortress"
+      }
+    ]
+  },
+  {
+    "id": "Infantry",
+    "type": "auto-units",
+    "displayName": "Infantry",
+    "icon": "infantry",
+    "fields": {
+      "Name": "Infantry",
+      "Icon": "infantry",
+      "Model": "apc",
+      "Color": {
+        "R": 0.386076,
+        "G": 1,
+        "B": 0,
+        "A": 255,
+        "Hex": "A7FF00"
+      },
+      "Components": [
+        0,
+        2,
+        4,
+        6,
+        136
+      ],
+      "TargetSpeed": 2,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infantry"
+      }
+    ]
+  },
+  {
+    "id": "Infantry (Mech)",
+    "type": "auto-units",
+    "displayName": "Infantry (Mech)",
+    "icon": "apc1",
+    "fields": {
+      "Name": "Infantry (Mech)",
+      "Icon": "apc1",
+      "Model": "apc",
+      "Color": {
+        "R": 0,
+        "G": 0.335069,
+        "B": 0.075723,
+        "A": 1,
+        "Hex": "009D4E"
+      },
+      "Components": [
+        0,
+        2,
+        4,
+        6,
+        136,
+        3,
+        25
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "apc1"
+      }
+    ]
+  },
+  {
+    "id": "Interceptor",
+    "type": "auto-units",
+    "displayName": "Interceptor",
+    "icon": "airplanes",
+    "fields": {
+      "Name": "Interceptor",
+      "Icon": "airplanes",
+      "Model": "airplane",
+      "Color": {
+        "R": 158,
+        "G": 235,
+        "B": 255,
+        "A": 255,
+        "Hex": "FFFFFF"
+      },
+      "Components": [
+        106,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        32,
+        30,
+        30,
+        30,
+        30,
+        30,
+        12,
+        136,
+        35,
+        35,
+        35,
+        35
+      ],
+      "TargetSpeed": 12,
+      "TargetReliability": 100,
+      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "airplanes"
+      }
+    ]
+  },
+  {
+    "id": "Irregular",
+    "type": "auto-units",
+    "displayName": "Irregular",
+    "icon": "irregular",
+    "fields": {
+      "Name": "Irregular",
+      "Icon": "irregular",
+      "Model": "apc",
+      "Color": {
+        "R": 0.376485,
+        "G": 0.460069,
+        "B": 0,
+        "A": 255,
+        "Hex": "A5B500"
+      },
+      "Components": [
+        1
+      ],
+      "TargetSpeed": 2,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "irregular"
+      }
+    ]
+  },
+  {
+    "id": "Landcruiser",
+    "type": "auto-units",
+    "displayName": "Landcruiser",
+    "icon": "landCruiser",
+    "fields": {
+      "Name": "Landcruiser",
+      "Icon": "landCruiser",
+      "Model": "tank",
+      "Color": {
+        "R": 0.388889,
+        "G": 0.108445,
+        "B": 0,
+        "A": 1,
+        "Hex": "A85C00"
+      },
+      "Components": [
+        3002,
+        146,
+        25,
+        2,
+        21,
+        119,
+        122,
+        117,
+        3004,
+        3003,
+        134,
+        141,
+        54,
+        152,
+        135
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "landCruiser_0"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "landCruiser"
+      }
+    ]
+  },
+  {
+    "id": "Mech",
+    "type": "auto-units",
+    "displayName": "Mech",
+    "icon": "mech",
+    "fields": {
+      "Name": "Mech",
+      "Icon": "mech",
+      "Model": "mech",
+      "Color": {
+        "R": 0.461805,
+        "G": 0.20675,
+        "B": 0,
+        "A": 1,
+        "Hex": "B57D00"
+      },
+      "Components": [
+        3200,
+        60,
+        19,
+        25,
+        2,
+        4,
+        55
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "landCruiser_0"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mech"
+      }
+    ]
+  },
+  {
+    "id": "Mobile Termination Unit",
+    "type": "auto-units",
+    "displayName": "Mobile Termination Unit",
+    "icon": "armor1",
+    "fields": {
+      "Name": "Mobile Termination Unit",
+      "Icon": "armor1",
+      "Model": "tank",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 0,
+        "Hex": "000000"
+      },
+      "Components": [
+        5,
+        7,
+        25,
+        55,
+        2,
+        136,
+        4,
+        262
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor1"
+      }
+    ]
+  },
+  {
+    "id": "Nuclear Missile",
+    "type": "auto-units",
+    "displayName": "Nuclear Missile",
+    "icon": "missile6",
+    "fields": {
+      "Name": "Nuclear Missile",
+      "Icon": "missile6",
+      "Model": "truck",
+      "Color": {
+        "R": 1,
+        "G": 0.809359,
+        "B": 0,
+        "A": 1,
+        "Hex": "FFE900"
+      },
+      "Components": [
+        100,
+        103
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator4",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "missile6"
+      }
+    ]
+  },
+  {
+    "id": "Robotic Infantry",
+    "type": "auto-units",
+    "displayName": "Robotic Infantry",
+    "icon": "battleDroid",
+    "fields": {
+      "Name": "Robotic Infantry",
+      "Icon": "battleDroid",
+      "Model": "apc",
+      "Color": {
+        "R": 0.079453,
+        "G": 0.265625,
+        "B": 0.082595,
+        "A": 1,
+        "Hex": "4F8D51"
+      },
+      "Components": [
+        0,
+        2,
+        4,
+        6,
+        136,
+        3,
+        25,
+        262
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "situation",
+        "B": "robotCountrySituation"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "battleDroid"
+      }
+    ]
+  },
+  {
+    "id": "Space Cruiser",
+    "type": "auto-units",
+    "displayName": "Space Cruiser",
+    "icon": "spaceships",
+    "fields": {
+      "Name": "Space Cruiser",
+      "Icon": "spaceships",
+      "Model": "spaceBattleship",
+      "Color": {
+        "R": 0.578125,
+        "G": 0.246768,
+        "B": 0.041992,
+        "A": 1,
+        "Hex": "C88839"
+      },
+      "Components": [
+        132,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        117,
+        237,
+        134,
+        135,
+        139,
+        137,
+        119,
+        122,
+        314,
+        314,
+        314,
+        314,
+        314,
+        136,
+        315,
+        315,
+        315,
+        315,
+        60,
+        60,
+        133,
+        133,
+        133,
+        133,
+        354
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "shipConstruction_2"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceships"
+      }
+    ]
+  },
+  {
+    "id": "Space Destroyer",
+    "type": "auto-units",
+    "displayName": "Space Destroyer",
+    "icon": "spaceships",
+    "fields": {
+      "Name": "Space Destroyer",
+      "Icon": "spaceships",
+      "Model": "spaceDestroyer",
+      "Color": {
+        "R": 0.413194,
+        "G": 0.017482,
+        "B": 0,
+        "A": 1,
+        "Hex": "AC2300"
+      },
+      "Components": [
+        22,
+        58,
+        58,
+        25,
+        60,
+        314,
+        136,
+        23,
+        354
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "spaceports"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spaceships"
+      }
+    ]
+  },
+  {
+    "id": "Spec Ops",
+    "type": "auto-units",
+    "displayName": "Spec Ops",
+    "icon": "leader",
+    "fields": {
+      "Name": "Spec Ops",
+      "Icon": "leader",
+      "Model": "apc",
+      "Color": {
+        "R": 0.36164,
+        "G": 0.8125,
+        "B": 0.747598,
+        "A": 1,
+        "Hex": "A2E9E1"
+      },
+      "Components": [
+        0,
+        2,
+        3,
+        6,
+        25,
+        55,
+        4000,
+        136,
+        148,
+        149,
+        150,
+        324,
+        39,
+        120
+      ],
+      "TargetSpeed": 2,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leader"
+      }
+    ]
+  },
+  {
+    "id": "Starship",
+    "type": "auto-units",
+    "displayName": "Starship",
+    "icon": "warpDrive",
+    "fields": {
+      "Name": "Starship",
+      "Icon": "warpDrive",
+      "Model": "warpShip",
+      "Color": {
+        "R": 0.109594,
+        "G": 0,
+        "B": 0.111111,
+        "A": 1,
+        "Hex": "5D005E"
+      },
+      "Components": [
+        20,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        117,
+        237,
+        134,
+        135,
+        139,
+        137,
+        119,
+        122,
+        314,
+        314,
+        314,
+        314,
+        314,
+        136,
+        315,
+        315,
+        315,
+        315,
+        60,
+        60,
+        133,
+        133,
+        133,
+        133,
+        154
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "warpDrive"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warpDrive"
+      }
+    ]
+  },
+  {
+    "id": "Strike Carrier",
+    "type": "auto-units",
+    "displayName": "Strike Carrier",
+    "icon": "carrierDeck",
+    "fields": {
+      "Name": "Strike Carrier",
+      "Icon": "carrierDeck",
+      "Model": "spaceCarrier",
+      "Color": {
+        "R": 0.336805,
+        "G": 0.036247,
+        "B": 0.183309,
+        "A": 1,
+        "Hex": "9D3577"
+      },
+      "Components": [
+        20,
+        21,
+        21,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        54,
+        119,
+        122,
+        134,
+        141,
+        137,
+        135,
+        139,
+        237,
+        25,
+        314,
+        314,
+        314,
+        314,
+        354
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "shipConstruction_2"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "carrierDeck"
+      }
+    ]
+  },
+  {
+    "id": "Strike Craft",
+    "type": "auto-units",
+    "displayName": "Strike Craft",
+    "icon": "strikeCraft0",
+    "fields": {
+      "Name": "Strike Craft",
+      "Icon": "strikeCraft0",
+      "Model": "strikeCraft",
+      "Color": {
+        "R": 0.657986,
+        "G": 0.4606,
+        "B": 0.374051,
+        "A": 1,
+        "Hex": "D4B5A5"
+      },
+      "Components": [
+        106,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        127,
+        136,
+        117,
+        128,
+        128,
+        128,
+        128,
+        126,
+        126,
+        126,
+        126,
+        126,
+        119
+      ],
+      "TargetSpeed": 1,
+      "TargetReliability": 0.5,
+      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "technology",
+        "B": "airHull_1"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strikeCraft0"
+      }
+    ]
+  },
+  {
+    "id": "Tank",
+    "type": "auto-units",
+    "displayName": "Tank",
+    "icon": "armor",
+    "fields": {
+      "Name": "Tank",
+      "Icon": "armor",
+      "Model": "tank",
+      "Color": {
+        "R": 180,
+        "G": 0,
+        "B": 214,
+        "A": 255,
+        "Hex": "FF00FF"
+      },
+      "Components": [
+        5,
+        7,
+        25,
+        55,
+        2,
+        136,
+        4
+      ],
+      "TargetSpeed": 5,
+      "TargetReliability": 1,
+      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "ResourcePrerequisite": [],
+      "TechPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "DefaultHangar": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "armor"
+      }
+    ]
+  }
+]

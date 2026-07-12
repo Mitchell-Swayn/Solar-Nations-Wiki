@@ -1,0 +1,603 @@
+[
+  {
+    "id": "addTreaty",
+    "type": "diplomatic-actions",
+    "displayName": "Add Treaty",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "addTreaty",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "diploFlag"
+      ],
+      "StabilityCost": 0,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "diploFlag",
+      "DisputeFormat": "{a_adj} imposition of {diploFlag}",
+      "Escalation": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "civilWar",
+    "type": "diplomatic-actions",
+    "displayName": "Civil War",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "civilWar",
+      "Icon": "diplomacy",
+      "Parameters": [],
+      "StabilityCost": 2.5,
+      "AIReluctance": -1000,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": false,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{a_adj} Civil War",
+      "Escalation": 15
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "inviteOrganization",
+    "type": "diplomatic-actions",
+    "displayName": "Invite Organization",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "inviteOrganization",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "organization"
+      ],
+      "StabilityCost": 2.5,
+      "AIReluctance": 25,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [
+        "war"
+      ],
+      "RequiresApproval": true,
+      "HideWhenFalse": true,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": {
+        "CultureInvariantString": null
+      },
+      "Escalation": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "joinDispute",
+    "type": "diplomatic-actions",
+    "displayName": "Join Dispute",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "joinDispute",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "dispute"
+      ],
+      "StabilityCost": 2.5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "None",
+      "DisputeFormat": "{b_adj} enforcement into {dispute}",
+      "Escalation": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "joinOrganization",
+    "type": "diplomatic-actions",
+    "displayName": "Join Organization",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "joinOrganization",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "organization"
+      ],
+      "StabilityCost": 2,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [
+        "war"
+      ],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "None",
+      "DisputeFormat": "{b_adj} forced entry into {organization}",
+      "Escalation": 2
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "leaveDispute",
+    "type": "diplomatic-actions",
+    "displayName": "Leave Dispute",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "leaveDispute",
+      "Icon": "diplomacy",
+      "Parameters": [],
+      "StabilityCost": 0,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "None",
+      "DisputeFormat": "BAD",
+      "Escalation": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "leaveOrganization",
+    "type": "diplomatic-actions",
+    "displayName": "Leave Organization",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "leaveOrganization",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "organization"
+      ],
+      "StabilityCost": 1,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "None",
+      "DisputeFormat": "{b_adj} expulsion from {organization}",
+      "Escalation": 2
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "makeProxy",
+    "type": "diplomatic-actions",
+    "displayName": "Make Proxy",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "makeProxy",
+      "Icon": "diplomacy",
+      "Parameters": [],
+      "StabilityCost": 2.5,
+      "AIReluctance": -75,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": {
+        "CultureInvariantString": null
+      },
+      "Escalation": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "makePuppet",
+    "type": "diplomatic-actions",
+    "displayName": "Make Puppet",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "makePuppet",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "empire"
+      ],
+      "StabilityCost": 5,
+      "AIReluctance": -500,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": true,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{a_adj} subjugation of {b}",
+      "Escalation": 15
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "puppetRegion",
+    "type": "diplomatic-actions",
+    "displayName": "Puppet Region",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "puppetRegion",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "region"
+      ],
+      "StabilityCost": 5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": false,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{a_adj} subjugation of {region}",
+      "Escalation": 10
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "releaseHostage",
+    "type": "diplomatic-actions",
+    "displayName": "Release Hostage",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "releaseHostage",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "character"
+      ],
+      "StabilityCost": 0.5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": true,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{b_adj} Hostage Crisis",
+      "Escalation": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "releasePuppet",
+    "type": "diplomatic-actions",
+    "displayName": "Release Puppet",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "releasePuppet",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "empire"
+      ],
+      "StabilityCost": 1.5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "puppet",
+      "DisputeFormat": "{a_adj} liberation of {empire}",
+      "Escalation": 10
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "removeTreaty",
+    "type": "diplomatic-actions",
+    "displayName": "Remove Treaty",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "removeTreaty",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "diploFlag"
+      ],
+      "StabilityCost": 0,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": false,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "diploFlag",
+      "DisputeFormat": "{a_adj} revocation of {diploFlag}",
+      "Escalation": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "removeTreatySH",
+    "type": "diplomatic-actions",
+    "displayName": "Remove Treaty SH",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "removeTreatySH",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "empire",
+        "diploFlag"
+      ],
+      "StabilityCost": 0,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "diploFlag",
+      "DisputeFormat": "{a_adj} revocation of {diploFlag} with {empire}",
+      "Escalation": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "transferMoney",
+    "type": "diplomatic-actions",
+    "displayName": "Transfer Money",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "transferMoney",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "float"
+      ],
+      "StabilityCost": 0.5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{a_adj} - {b_adj} trade conflict",
+      "Escalation": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "transferRegion",
+    "type": "diplomatic-actions",
+    "displayName": "Transfer Region",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "transferRegion",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "empire",
+        "region"
+      ],
+      "StabilityCost": 0,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "territory",
+      "Iterator": "region",
+      "DisputeFormat": "{a_adj} conquest of {region}",
+      "Escalation": 10
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "transferResource",
+    "type": "diplomatic-actions",
+    "displayName": "Transfer Resource",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "transferResource",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "resource",
+        "float"
+      ],
+      "StabilityCost": 0.5,
+      "AIReluctance": 0,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "None",
+      "Iterator": "None",
+      "DisputeFormat": "{a_adj} - {b_adj} trade conflict",
+      "Escalation": 1
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "warReparations",
+    "type": "diplomatic-actions",
+    "displayName": "War Reparations",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "warReparations",
+      "Icon": "diplomacy",
+      "Parameters": [
+        "float"
+      ],
+      "StabilityCost": 0,
+      "AIReluctance": -25,
+      "RequiredFlags": [],
+      "ExclusiveFlags": [],
+      "RequiresApproval": true,
+      "HideWhenFalse": false,
+      "AttitudeEffect": [],
+      "ShowsInEmpireDiplo": false,
+      "Category": "misc",
+      "Iterator": "None",
+      "DisputeFormat": {
+        "CultureInvariantString": null
+      },
+      "Escalation": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  }
+]

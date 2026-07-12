@@ -6,9 +6,34 @@
     "icon": "grain",
     "fields": {
       "Name": "grain",
-      "Icon": "grain"
+      "Icon": "grain",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.082138,
+        "G": 0.402777,
+        "B": 0.198265,
+        "A": 1,
+        "Hex": "51AA7B"
+      },
+      "Value": 1,
+      "TradeValue": 1,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.02,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -24,9 +49,34 @@
     "icon": "commerce",
     "fields": {
       "Name": "commerce",
-      "Icon": "commerce"
+      "Icon": "commerce",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.720486,
+        "G": 0.515687,
+        "B": 0.097465,
+        "A": 1,
+        "Hex": "DDBE58"
+      },
+      "Value": 6,
+      "TradeValue": 10,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "interplanetaryTrade"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.15,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -42,9 +92,29 @@
     "icon": "cryoOrganics",
     "fields": {
       "Name": "cryoOrganics",
-      "Icon": "cryoOrganics"
+      "Icon": "cryoOrganics",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.214979,
+        "G": 0.507982,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "80BDC4"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -60,9 +130,29 @@
     "icon": "culture",
     "fields": {
       "Name": "culture",
-      "Icon": "culture"
+      "Icon": "culture",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.502931,
+        "G": 0,
+        "B": 0.701389,
+        "A": 1,
+        "Hex": "BC00DA"
+      },
+      "Value": 0,
+      "TradeValue": 5,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -78,9 +168,43 @@
     "icon": "electronics",
     "fields": {
       "Name": "electronics",
-      "Icon": "electronics"
+      "Icon": "electronics",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.087648,
+        "G": 0.27367,
+        "B": 0.621528,
+        "A": 1,
+        "Hex": "538FCF"
+      },
+      "Value": 5,
+      "TradeValue": 5,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "artificialIntelligence"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "battleAdvantageAdd",
+        "value": 1
+      },
+      {
+        "key": "unitVulnAdd",
+        "value1": "emp",
+        "value": 0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.05,
+        "scope": "Region"
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -96,9 +220,34 @@
     "icon": "energy",
     "fields": {
       "Name": "energy",
-      "Icon": "energy"
+      "Icon": "energy",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.6019,
+        "G": 0.6875,
+        "B": 0,
+        "A": 1,
+        "Hex": "CCD800"
+      },
+      "Value": 3,
+      "TradeValue": 1,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.025
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.03,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -114,9 +263,29 @@
     "icon": "exoticGasses",
     "fields": {
       "Name": "exoticGasses",
-      "Icon": "exoticGasses"
+      "Icon": "exoticGasses",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.034789,
+        "G": 0.333333,
+        "B": 0,
+        "A": 1,
+        "Hex": "349C00"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -132,9 +301,35 @@
     "icon": "helium3",
     "fields": {
       "Name": "helium3",
-      "Icon": "helium3"
+      "Icon": "helium3",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.732553,
+        "G": 0.760417,
+        "B": 0,
+        "A": 1,
+        "Hex": "DFE200"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "energy",
+        "value": 1
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -150,9 +345,33 @@
     "icon": "iceNine",
     "fields": {
       "Name": "iceNine",
-      "Icon": "iceNine"
+      "Icon": "iceNine",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0,
+        "G": 0.143373,
+        "B": 0.319444,
+        "A": 1,
+        "Hex": "006A99"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "popGrowthMult",
+        "value": 0.05
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.01
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -168,9 +387,39 @@
     "icon": "letheTreasure",
     "fields": {
       "Name": "letheTreasure",
-      "Icon": "letheTreasure"
+      "Icon": "letheTreasure",
+      "ValidTerrain": [
+        "plains",
+        "ocean",
+        "desert",
+        "jungle",
+        "mountain"
+      ],
+      "Color": {
+        "R": 0,
+        "G": 0.663194,
+        "B": 0.05149,
+        "A": 1,
+        "Hex": "00D540"
+      },
+      "Value": 1,
+      "TradeValue": 1,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "lifeSpanAdd",
+        "value": 5
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -186,9 +435,35 @@
     "icon": "lqdMethane",
     "fields": {
       "Name": "lqdMethane",
-      "Icon": "lqdMethane"
+      "Icon": "lqdMethane",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.387153,
+        "G": 0.159691,
+        "B": 0,
+        "A": 1,
+        "Hex": "A76F00"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.25
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "hydroponics",
+        "value": 1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -204,9 +479,34 @@
     "icon": "consumerGoods",
     "fields": {
       "Name": "consumerGoods",
-      "Icon": "consumerGoods"
+      "Icon": "consumerGoods",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.246527,
+        "G": 0.130931,
+        "B": 0,
+        "A": 1,
+        "Hex": "886500"
+      },
+      "Value": 4,
+      "TradeValue": 5,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialization"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.05
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.05,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -222,9 +522,44 @@
     "icon": "nanocomposites",
     "fields": {
       "Name": "nanocomposites",
-      "Icon": "nanocomposites"
+      "Icon": "nanocomposites",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0,
+        "G": 0.244061,
+        "B": 0.305555,
+        "A": 1,
+        "Hex": "008796"
+      },
+      "Value": 7,
+      "TradeValue": 10,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "technology",
+        "B": "nanocomposites"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.05
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.08,
+        "scope": "Region"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.1
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -240,9 +575,30 @@
     "icon": "palladium",
     "fields": {
       "Name": "palladium",
-      "Icon": "palladium"
+      "Icon": "palladium",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.259401,
+        "G": 0,
+        "B": 0.538194,
+        "A": 1,
+        "Hex": "8B00C2"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": 0.05
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -258,9 +614,34 @@
     "icon": "steel",
     "fields": {
       "Name": "steel",
-      "Icon": "steel"
+      "Icon": "steel",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.053313,
+        "G": 0.067346,
+        "B": 0.232639,
+        "A": 1,
+        "Hex": "414985"
+      },
+      "Value": 2,
+      "TradeValue": 1,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.01
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.02,
+        "scope": "Region"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -276,9 +657,29 @@
     "icon": "research",
     "fields": {
       "Name": "research",
-      "Icon": "research"
+      "Icon": "research",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0,
+        "G": 0.950768,
+        "B": 1,
+        "A": 1,
+        "Hex": "00FAFF"
+      },
+      "Value": 0,
+      "TradeValue": 5,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.05
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -294,9 +695,29 @@
     "icon": "thorium",
     "fields": {
       "Name": "thorium",
-      "Icon": "thorium"
+      "Icon": "thorium",
+      "ValidTerrain": [],
+      "Color": {
+        "R": 0.012665,
+        "G": 0,
+        "B": 0.546875,
+        "A": 1,
+        "Hex": "1D00C3"
+      },
+      "Value": 20,
+      "TradeValue": 20,
+      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      }
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

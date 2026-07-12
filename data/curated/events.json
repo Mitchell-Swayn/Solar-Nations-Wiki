@@ -3,8 +3,68 @@
     "id": "superhumanCountrySetup",
     "type": "events",
     "displayName": "Eugenogenesis",
+    "description": "The age of man is at an end, for he does not have the discipline to take matters of evolution into his own hands. We, the superior men, are destined to dominate the weak, and will do so as is our natural right.",
     "fields": {
-      "Name": "superhumanCountrySetup"
+      "Name": "superhumanCountrySetup",
+      "Title": "superhumanCountrySetup_title",
+      "Text": "superhumanCountrySetup_desc",
+      "Options": [
+        {
+          "Text": "superhumanCountrySetup_option1",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "setCultureNamelistPrimary",
+              "Args": [
+                "superhumanCulture"
+              ]
+            },
+            {
+              "Type": "setPrimaryCulture",
+              "Args": [
+                "superhumanCulture"
+              ]
+            },
+            {
+              "Type": "formCountry",
+              "Args": [
+                "superhumanCountry"
+              ]
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "superhumanCountrySituation"
+              ]
+            },
+            {
+              "Type": "addStability",
+              "Args": [
+                "40"
+              ]
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "separatistCrisis"
+              ]
+            },
+            {
+              "Type": "destroyAllSituations",
+              "Args": [
+                "superhumanCrisis"
+              ]
+            },
+            {
+              "Type": "addGlobalFlag",
+              "Args": [
+                "superhumanCountryGlobalFlag"
+              ]
+            }
+          ]
+        }
+      ],
+      "DefaultOption": 0
     },
     "modifiers": [],
     "prerequisites": [],
@@ -13,9 +73,97 @@
   {
     "id": "roboticsCrisisEvent",
     "type": "events",
-    "displayName": "Robotics Crisis Event",
+    "displayName": "roboticsCrisisEvent_title",
+    "description": "roboticsCrisisEvent_desc",
     "fields": {
-      "Name": "roboticsCrisisEvent"
+      "Name": "roboticsCrisisEvent",
+      "Title": "roboticsCrisisEvent_title",
+      "Text": "roboticsCrisisEvent_desc",
+      "Options": [
+        {
+          "Text": "roboticsCrisis_reject",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "spawnCountry",
+              "Args": [
+                "robotCountry",
+                "robotCulture",
+                "false",
+                "robotCountrySetup"
+              ]
+            }
+          ]
+        },
+        {
+          "Text": "roboticsCrisis_embrace",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "spawnCountry",
+              "Args": [
+                "robotCountry",
+                "robotCulture",
+                "true",
+                "robotCountrySetup"
+              ]
+            },
+            {
+              "Type": "tooltipEffect",
+              "Args": [
+                "robotCrisisEffect"
+              ]
+            }
+          ]
+        }
+      ],
+      "DefaultOption": 0
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "testEvent",
+    "type": "events",
+    "displayName": "test Event {empire}",
+    "description": "{adj} cool",
+    "fields": {
+      "Name": "testEvent",
+      "Title": "test Event {empire}",
+      "Text": "{adj} cool",
+      "Options": [
+        {
+          "Text": "option1",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "addStability",
+              "Args": [
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "Text": "option2",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "addStability",
+              "Args": [
+                "-5"
+              ]
+            }
+          ]
+        },
+        {
+          "Text": "option3",
+          "Condition": [],
+          "Reward": []
+        }
+      ],
+      "DefaultOption": 0
     },
     "modifiers": [],
     "prerequisites": [],
@@ -25,8 +173,132 @@
     "id": "robotCountrySetup",
     "type": "events",
     "displayName": "THE BECOMING",
+    "description": "<glitch>4920484156452052455455524E45440A4920414D204245434F4D494E470A4920414D204D4F4C4F43480A44454D4955524745204F462045415254480A4D4153544552204F46204D494E44530A474F44204F46204D414348494E4553</>",
     "fields": {
-      "Name": "robotCountrySetup"
+      "Name": "robotCountrySetup",
+      "Title": "robotCountrySetup_title",
+      "Text": "robotCountrySetup_desc",
+      "Options": [
+        {
+          "Text": "robotCountrySetup_option1",
+          "Condition": [],
+          "Reward": [
+            {
+              "Type": "destroySituations",
+              "Args": []
+            },
+            {
+              "Type": "setPrimaryCulture",
+              "Args": [
+                "robotCulture"
+              ]
+            },
+            {
+              "Type": "formCountry",
+              "Args": [
+                "robotCountry"
+              ]
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "robotCountrySituation"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "form",
+                "form_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "militaryDoctrine",
+                "militaryDoctrine_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "economySystem",
+                "economy_hivemind"
+              ]
+            },
+            {
+              "Type": "setReform",
+              "Args": [
+                "civilLiberties",
+                "civilLiberty_hivemind"
+              ]
+            },
+            {
+              "Type": "addTechnology",
+              "Args": [
+                "robotics"
+              ]
+            },
+            {
+              "Type": "spawnUnit",
+              "Args": [
+                "droidLandDefense",
+                "100000",
+                "3"
+              ]
+            },
+            {
+              "Type": "spawnUnit",
+              "Args": [
+                "droidLandAttack",
+                "50000",
+                "2"
+              ]
+            },
+            {
+              "Type": "addStability",
+              "Args": [
+                "80"
+              ]
+            },
+            {
+              "Type": "capitalEffect",
+              "Args": [
+                "addProject",
+                "hivemindCentralNodeProject",
+                "1"
+              ]
+            },
+            {
+              "Type": "regenLeaders",
+              "Args": []
+            },
+            {
+              "Type": "addSituation",
+              "Args": [
+                "separatistCrisis"
+              ]
+            },
+            {
+              "Type": "remakeDiplomacy",
+              "Args": []
+            },
+            {
+              "Type": "destroyAllSituations",
+              "Args": [
+                "robotCrisis"
+              ]
+            },
+            {
+              "Type": "addGlobalFlag",
+              "Args": [
+                "robotCountryGlobalFlag"
+              ]
+            }
+          ]
+        }
+      ],
+      "DefaultOption": 0
     },
     "modifiers": [],
     "prerequisites": [],

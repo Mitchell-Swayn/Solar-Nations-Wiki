@@ -1,0 +1,136 @@
+[
+  {
+    "id": "individualism",
+    "type": "social-metrics",
+    "displayName": "Individualism",
+    "fields": {
+      "Name": "individualism",
+      "StartValue": 0,
+      "MinValue": -1,
+      "maxValue": 1,
+      "positiveModifier": [],
+      "negativeModifier": [],
+      "twoSides": true,
+      "iconMin": null,
+      "minColor": {
+        "B": 11,
+        "G": 83,
+        "R": 212,
+        "A": 255,
+        "Hex": "D4530B"
+      },
+      "iconMax": null,
+      "maxColor": {
+        "B": 212,
+        "G": 148,
+        "R": 207,
+        "A": 255,
+        "Hex": "CF94D4"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "internationalism",
+    "type": "social-metrics",
+    "displayName": "Internationalism",
+    "fields": {
+      "Name": "internationalism",
+      "StartValue": 0,
+      "MinValue": -1,
+      "maxValue": 1,
+      "positiveModifier": [],
+      "negativeModifier": [],
+      "twoSides": true,
+      "iconMin": null,
+      "minColor": {
+        "B": 212,
+        "G": 57,
+        "R": 194,
+        "A": 255,
+        "Hex": "C239D4"
+      },
+      "iconMax": null,
+      "maxColor": {
+        "B": 212,
+        "G": 154,
+        "R": 39,
+        "A": 255,
+        "Hex": "279AD4"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "liberty",
+    "type": "social-metrics",
+    "displayName": "Liberty",
+    "fields": {
+      "Name": "liberty",
+      "StartValue": 0,
+      "MinValue": -1,
+      "maxValue": 1,
+      "positiveModifier": [],
+      "negativeModifier": {
+        "(Key=\"corruptionGainAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.02
+      },
+      "twoSides": true,
+      "iconMin": null,
+      "minColor": {
+        "B": 212,
+        "G": 72,
+        "R": 28,
+        "A": 255,
+        "Hex": "1C48D4"
+      },
+      "iconMax": null,
+      "maxColor": {
+        "B": 81,
+        "G": 208,
+        "R": 212,
+        "A": 255,
+        "Hex": "D4D051"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "progress",
+    "type": "social-metrics",
+    "displayName": "Progress",
+    "fields": {
+      "Name": "progress",
+      "StartValue": 0,
+      "MinValue": -1,
+      "maxValue": 1,
+      "positiveModifier": [],
+      "negativeModifier": [],
+      "twoSides": true,
+      "iconMin": null,
+      "minColor": {
+        "B": 70,
+        "G": 212,
+        "R": 168,
+        "A": 255,
+        "Hex": "A8D446"
+      },
+      "iconMax": null,
+      "maxColor": {
+        "B": 179,
+        "G": 62,
+        "R": 161,
+        "A": 255,
+        "Hex": "A13EB3"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

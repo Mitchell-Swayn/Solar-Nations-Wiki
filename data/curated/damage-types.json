@@ -1,0 +1,387 @@
+[
+  {
+    "id": "airTracking",
+    "type": "damage-types",
+    "displayName": "Aerial Missile",
+    "fields": {
+      "Name": "airTracking",
+      "Notes": "Aerial Missiles",
+      "Color": {
+        "R": 0,
+        "G": 0.576389,
+        "B": 0.402891,
+        "A": 1,
+        "Hex": "00C8AA"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "airHard",
+    "type": "damage-types",
+    "displayName": "Air Hard",
+    "fields": {
+      "Name": "airHard",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.229545,
+        "G": 0.4375,
+        "B": 0.396593,
+        "A": 1,
+        "Hex": "84B1A9"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "airSoft",
+    "type": "damage-types",
+    "displayName": "Air Soft",
+    "fields": {
+      "Name": "airSoft",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.060705,
+        "G": 0.520876,
+        "B": 0.585069,
+        "A": 1,
+        "Hex": "45BFC9"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "biological",
+    "type": "damage-types",
+    "displayName": "Biological Damage",
+    "fields": {
+      "Name": "biological",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.046863,
+        "G": 0.586805,
+        "B": 0.103302,
+        "A": 1,
+        "Hex": "3DCA5A"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "depthCharge",
+    "type": "damage-types",
+    "displayName": "Depth Charge",
+    "fields": {
+      "Name": "depthCharge",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.004869,
+        "G": 0,
+        "B": 0.059027,
+        "A": 1,
+        "Hex": "0F0044"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "emp",
+    "type": "damage-types",
+    "displayName": "Emp",
+    "fields": {
+      "Name": "emp",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.289931,
+        "G": 0.801253,
+        "B": 1,
+        "A": 1,
+        "Hex": "93E8FF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "gravometric",
+    "type": "damage-types",
+    "displayName": "Gravometric",
+    "fields": {
+      "Name": "gravometric",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.619792,
+        "G": 0.019755,
+        "B": 0.263359,
+        "A": 1,
+        "Hex": "CF268C"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "landHard",
+    "type": "damage-types",
+    "displayName": "Land Hard",
+    "fields": {
+      "Name": "landHard",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.058324,
+        "G": 0.067708,
+        "B": 0,
+        "A": 1,
+        "Hex": "444900"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "landTracking",
+    "type": "damage-types",
+    "displayName": "Land Missile",
+    "fields": {
+      "Name": "landTracking",
+      "Notes": "Special Forces, Characters",
+      "Color": {
+        "R": 0.085176,
+        "G": 0.765078,
+        "B": 1,
+        "A": 1,
+        "Hex": "52E3FF"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "landSoft",
+    "type": "damage-types",
+    "displayName": "Land Soft",
+    "fields": {
+      "Name": "landSoft",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.00156,
+        "G": 0.496527,
+        "B": 0,
+        "A": 1,
+        "Hex": "05BB00"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "psychological",
+    "type": "damage-types",
+    "displayName": "Psychological Damage",
+    "fields": {
+      "Name": "psychological",
+      "Notes": "Spiritual Warfare",
+      "Color": {
+        "R": 0.450036,
+        "G": 0,
+        "B": 0.472222,
+        "A": 1,
+        "Hex": "B300B7"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spaceHard",
+    "type": "damage-types",
+    "displayName": "Space Heavy",
+    "fields": {
+      "Name": "spaceHard",
+      "Notes": "Space big guns",
+      "Color": {
+        "R": 0.428819,
+        "G": 0,
+        "B": 0.188705,
+        "A": 1,
+        "Hex": "AF0078"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spaceSoft",
+    "type": "damage-types",
+    "displayName": "Space Light",
+    "fields": {
+      "Name": "spaceSoft",
+      "Notes": "Space Autocannon",
+      "Color": {
+        "R": 0.066291,
+        "G": 0,
+        "B": 0.085069,
+        "A": 1,
+        "Hex": "490052"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spaceTracking",
+    "type": "damage-types",
+    "displayName": "Space Missile",
+    "fields": {
+      "Name": "spaceTracking",
+      "Notes": "Space missiles",
+      "Color": {
+        "R": 0.28125,
+        "G": 0.10003,
+        "B": 0.279938,
+        "A": 1,
+        "Hex": "915990"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategic",
+    "type": "damage-types",
+    "displayName": "Strategic Damage",
+    "fields": {
+      "Name": "strategic",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.350694,
+        "G": 0.319815,
+        "B": 0.174503,
+        "A": 1,
+        "Hex": "A09974"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "laser",
+    "type": "damage-types",
+    "displayName": "Thermal Laser Damage",
+    "fields": {
+      "Name": "laser",
+      "Notes": "Red lasers",
+      "Color": {
+        "R": 0.385417,
+        "G": 0.037471,
+        "B": 0.037471,
+        "A": 1,
+        "Hex": "A73636"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "torpedo",
+    "type": "damage-types",
+    "displayName": "Torpedo",
+    "fields": {
+      "Name": "torpedo",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.190475,
+        "G": 0.439227,
+        "B": 0.664931,
+        "A": 1,
+        "Hex": "79B1D5"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "waterHard",
+    "type": "damage-types",
+    "displayName": "Water Hard",
+    "fields": {
+      "Name": "waterHard",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.073492,
+        "G": 0,
+        "B": 0.237847,
+        "A": 1,
+        "Hex": "4C0086"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "waterSoft",
+    "type": "damage-types",
+    "displayName": "Water Soft",
+    "fields": {
+      "Name": "waterSoft",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.004649,
+        "G": 0,
+        "B": 0.654514,
+        "A": 1,
+        "Hex": "0E00D4"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

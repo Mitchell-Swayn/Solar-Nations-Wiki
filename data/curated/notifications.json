@@ -1,0 +1,938 @@
+[
+  {
+    "id": "aiJoinAnnounce_ally",
+    "type": "notifications",
+    "displayName": "Ai Join Announce Ally",
+    "fields": {
+      "Name": "aiJoinAnnounce_ally",
+      "Image": "warExpansion",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aiJoinAnnounce_enemy",
+    "type": "notifications",
+    "displayName": "Ai Join Announce Enemy",
+    "fields": {
+      "Name": "aiJoinAnnounce_enemy",
+      "Image": "warExpansion",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "warnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "aiJoinWar",
+    "type": "notifications",
+    "displayName": "Ai Join War",
+    "fields": {
+      "Name": "aiJoinWar",
+      "Image": "warIcon",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "badPuppet",
+    "type": "notifications",
+    "displayName": "Bad Puppet",
+    "fields": {
+      "Name": "badPuppet",
+      "Image": "puppetWarning",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "callAlly",
+    "type": "notifications",
+    "displayName": "Call Ally",
+    "fields": {
+      "Name": "callAlly",
+      "Image": "alliance",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "canAddCultureIdea",
+    "type": "notifications",
+    "displayName": "Can Add Culture Idea",
+    "fields": {
+      "Name": "canAddCultureIdea",
+      "Image": "stabilityPurple",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "canAddCultureTrait",
+    "type": "notifications",
+    "displayName": "Can Add Culture Trait",
+    "fields": {
+      "Name": "canAddCultureTrait",
+      "Image": "stabilityPurple",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "characterDeathNotification",
+    "type": "notifications",
+    "displayName": "Character Death Notification",
+    "fields": {
+      "Name": "characterDeathNotification",
+      "Image": "skull",
+      "Tooltip": "",
+      "Lifetime": 0,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "colonyCompleted",
+    "type": "notifications",
+    "displayName": "Colony Completed",
+    "fields": {
+      "Name": "colonyCompleted",
+      "Image": "colony",
+      "Tooltip": "",
+      "Lifetime": 120,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": true,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "complexPeaceDeal",
+    "type": "notifications",
+    "displayName": "Complex Peace Deal",
+    "fields": {
+      "Name": "complexPeaceDeal",
+      "Image": "peaceDeal",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "crisisSpawn",
+    "type": "notifications",
+    "displayName": "Crisis Spawn",
+    "fields": {
+      "Name": "crisisSpawn",
+      "Image": "combatPower",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": true,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "debtNotification",
+    "type": "notifications",
+    "displayName": "Debt Notification",
+    "fields": {
+      "Name": "debtNotification",
+      "Image": "dollars",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "diploMessage",
+    "type": "notifications",
+    "displayName": "Diplo Message",
+    "fields": {
+      "Name": "diploMessage",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 0,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dispute",
+    "type": "notifications",
+    "displayName": "Dispute",
+    "fields": {
+      "Name": "dispute",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 0,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "edictInvalidated",
+    "type": "notifications",
+    "displayName": "Edict Invalidated",
+    "fields": {
+      "Name": "edictInvalidated",
+      "Image": "edictCancel",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "click2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "electionNotification",
+    "type": "notifications",
+    "displayName": "Election Notification",
+    "fields": {
+      "Name": "electionNotification",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "focusClear",
+    "type": "notifications",
+    "displayName": "Focus Clear",
+    "fields": {
+      "Name": "focusClear",
+      "Image": "condition",
+      "Tooltip": "focusClear",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "highStability",
+    "type": "notifications",
+    "displayName": "High Stability",
+    "fields": {
+      "Name": "highStability",
+      "Image": "stability",
+      "Tooltip": "",
+      "Lifetime": 10,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hostileOperation",
+    "type": "notifications",
+    "displayName": "Hostile Operation",
+    "fields": {
+      "Name": "hostileOperation",
+      "Image": "espionage",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "impendingRevolt",
+    "type": "notifications",
+    "displayName": "Impending Revolt",
+    "fields": {
+      "Name": "impendingRevolt",
+      "Image": "combatPower_yellow",
+      "Tooltip": "",
+      "Lifetime": 1,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "incomingDiplomacy",
+    "type": "notifications",
+    "displayName": "Incoming Diplomacy",
+    "fields": {
+      "Name": "incomingDiplomacy",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 0,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "incomingPeace",
+    "type": "notifications",
+    "displayName": "Incoming Peace",
+    "fields": {
+      "Name": "incomingPeace",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 0,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "integrationComplete",
+    "type": "notifications",
+    "displayName": "Integration Complete",
+    "fields": {
+      "Name": "integrationComplete",
+      "Image": "territory",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "leftOrganization",
+    "type": "notifications",
+    "displayName": "Left Organization",
+    "fields": {
+      "Name": "leftOrganization",
+      "Image": "allianceBroken",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 0,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": "marchnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lowAdminEfficiency",
+    "type": "notifications",
+    "displayName": "Low Admin Efficiency",
+    "fields": {
+      "Name": "lowAdminEfficiency",
+      "Image": "adminEffWarning",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nuclearUltimatum",
+    "type": "notifications",
+    "displayName": "Nuclear Ultimatum",
+    "fields": {
+      "Name": "nuclearUltimatum",
+      "Image": "nuclearFuels",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nuclearUltimatum_refuse",
+    "type": "notifications",
+    "displayName": "Nuclear Ultimatum Refuse",
+    "fields": {
+      "Name": "nuclearUltimatum_refuse",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "orgVoteBegun",
+    "type": "notifications",
+    "displayName": "Org Vote Begun",
+    "fields": {
+      "Name": "orgVoteBegun",
+      "Image": "form_republic",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "orgVoteFailed",
+    "type": "notifications",
+    "displayName": "Org Vote Failed",
+    "fields": {
+      "Name": "orgVoteFailed",
+      "Image": "form_republic",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "orgVotePassed",
+    "type": "notifications",
+    "displayName": "Org Vote Passed",
+    "fields": {
+      "Name": "orgVotePassed",
+      "Image": "form_republic",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "peaceDeal",
+    "type": "notifications",
+    "displayName": "Peace Deal",
+    "fields": {
+      "Name": "peaceDeal",
+      "Image": "peaceDeal",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "possibleFormable",
+    "type": "notifications",
+    "displayName": "Possible Formable",
+    "fields": {
+      "Name": "possibleFormable",
+      "Image": "cohesion",
+      "Tooltip": "",
+      "Lifetime": 720,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "regionInvasion",
+    "type": "notifications",
+    "displayName": "Region Invasion",
+    "fields": {
+      "Name": "regionInvasion",
+      "Image": "invasion",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "regionOccupation",
+    "type": "notifications",
+    "displayName": "Region Occupation",
+    "fields": {
+      "Name": "regionOccupation",
+      "Image": "territory",
+      "Tooltip": "",
+      "Lifetime": 10,
+      "Urgency": 0,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "researchComplete",
+    "type": "notifications",
+    "displayName": "Research Complete",
+    "fields": {
+      "Name": "researchComplete",
+      "Image": "research",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 0,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": "click3_science"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceShortage",
+    "type": "notifications",
+    "displayName": "Resource Shortage",
+    "fields": {
+      "Name": "resourceShortage",
+      "Image": "resourceShortage",
+      "Tooltip": "resourceShortage",
+      "Lifetime": 30,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "revoltThreshold",
+    "type": "notifications",
+    "displayName": "Revolt Threshold",
+    "fields": {
+      "Name": "revoltThreshold",
+      "Image": "combatPower",
+      "Tooltip": "",
+      "Lifetime": 10,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "warnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "selectMission",
+    "type": "notifications",
+    "displayName": "Select Mission",
+    "fields": {
+      "Name": "selectMission",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "situationMissionPossible",
+    "type": "notifications",
+    "displayName": "Situation Mission Possible",
+    "fields": {
+      "Name": "situationMissionPossible",
+      "Image": "condition",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "splinterCulture",
+    "type": "notifications",
+    "displayName": "Splinter Culture",
+    "fields": {
+      "Name": "splinterCulture",
+      "Image": "culture",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 0,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strikeDefenseFailure",
+    "type": "notifications",
+    "displayName": "Strike Defense Failure",
+    "fields": {
+      "Name": "strikeDefenseFailure",
+      "Image": "rangeDefense",
+      "Tooltip": "",
+      "Lifetime": 120,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strikeDefenseSuccess",
+    "type": "notifications",
+    "displayName": "Strike Defense Success",
+    "fields": {
+      "Name": "strikeDefenseSuccess",
+      "Image": "rangeDefense",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strikeFailure",
+    "type": "notifications",
+    "displayName": "Strike Failure",
+    "fields": {
+      "Name": "strikeFailure",
+      "Image": "accuracy",
+      "Tooltip": "",
+      "Lifetime": 120,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strikeSuccess",
+    "type": "notifications",
+    "displayName": "Strike Success",
+    "fields": {
+      "Name": "strikeSuccess",
+      "Image": "accuracy",
+      "Tooltip": "",
+      "Lifetime": 60,
+      "Urgency": 3,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "techNotification",
+    "type": "notifications",
+    "displayName": "Tech Notification",
+    "fields": {
+      "Name": "techNotification",
+      "Image": "research",
+      "Tooltip": "techNotification",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "click3_science"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tooManyCharacters",
+    "type": "notifications",
+    "displayName": "Too Many Characters",
+    "fields": {
+      "Name": "tooManyCharacters",
+      "Image": "leader",
+      "Tooltip": "",
+      "Lifetime": 10,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "transferOccupation",
+    "type": "notifications",
+    "displayName": "Transfer Occupation",
+    "fields": {
+      "Name": "transferOccupation",
+      "Image": "territoryTrade",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 0,
+      "CreateBoxWidget": true,
+      "PopupImmediately": false,
+      "Sound": "click2"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unrestWarning",
+    "type": "notifications",
+    "displayName": "Unrest Warning",
+    "fields": {
+      "Name": "unrestWarning",
+      "Image": "combatPower",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "unrestWarningSevere",
+    "type": "notifications",
+    "displayName": "Unrest Warning Severe",
+    "fields": {
+      "Name": "unrestWarningSevere",
+      "Image": "combatPower",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 2,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "warnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "warDeclared",
+    "type": "notifications",
+    "displayName": "War Declared",
+    "fields": {
+      "Name": "warDeclared",
+      "Image": "warIcon",
+      "Tooltip": "",
+      "Lifetime": 180,
+      "Urgency": 2,
+      "CreateBoxWidget": true,
+      "PopupImmediately": true,
+      "Sound": "warnoise"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "warEscalated",
+    "type": "notifications",
+    "displayName": "War Escalated",
+    "fields": {
+      "Name": "warEscalated",
+      "Image": "escalation",
+      "Tooltip": "",
+      "Lifetime": 360,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "warResolved",
+    "type": "notifications",
+    "displayName": "War Resolved",
+    "fields": {
+      "Name": "warResolved",
+      "Image": "diplomat",
+      "Tooltip": "",
+      "Lifetime": 180,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

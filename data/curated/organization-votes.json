@@ -1,0 +1,50 @@
+[
+  {
+    "id": "addTreaty",
+    "type": "organization-votes",
+    "displayName": "Add Treaty",
+    "fields": {
+      "Name": "addTreaty",
+      "ProposeStabilityCost": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "inviteMember",
+    "type": "organization-votes",
+    "displayName": "Invite Member",
+    "fields": {
+      "Name": "inviteMember",
+      "ProposeStabilityCost": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kickMember",
+    "type": "organization-votes",
+    "displayName": "Kick Member",
+    "fields": {
+      "Name": "kickMember",
+      "ProposeStabilityCost": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "removeTreaty",
+    "type": "organization-votes",
+    "displayName": "Remove Treaty",
+    "fields": {
+      "Name": "removeTreaty",
+      "ProposeStabilityCost": 5
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

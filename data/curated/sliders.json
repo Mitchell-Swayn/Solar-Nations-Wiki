@@ -1,0 +1,101 @@
+[
+  {
+    "id": "incomeTax",
+    "type": "sliders",
+    "displayName": "Income Tax",
+    "fields": {
+      "Name": "incomeTax",
+      "DefaultMin": 0,
+      "DefaultMax": 0.25
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": -0.5
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": -0.5
+      },
+      {
+        "key": "taxRateAdd",
+        "value1": "income_tax",
+        "value": 1
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "privatization",
+    "type": "sliders",
+    "displayName": "Privatization",
+    "fields": {
+      "Name": "privatization",
+      "DefaultMin": 0,
+      "DefaultMax": 0.25
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "clergy",
+        "value": -0.5
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": -0.5
+      },
+      {
+        "key": "projectEfficiency",
+        "value": 0.5
+      },
+      {
+        "key": "budgetModifierCostMult",
+        "value1": "population",
+        "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceTax",
+    "type": "sliders",
+    "displayName": "Resource Tax",
+    "fields": {
+      "Name": "resourceTax",
+      "DefaultMin": 0,
+      "DefaultMax": 0.25
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": -0.5
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": -0.5
+      },
+      {
+        "key": "taxRateAdd",
+        "value1": "resourceTax",
+        "value": 1
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": -0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

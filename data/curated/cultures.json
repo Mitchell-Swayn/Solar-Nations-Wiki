@@ -1,0 +1,7575 @@
+[
+  {
+    "id": "aboriginal",
+    "type": "cultures",
+    "displayName": "Aboriginal",
+    "fields": {
+      "Name": "aboriginal",
+      "MapColor": {
+        "B": 111,
+        "G": 161,
+        "R": 157,
+        "A": 255,
+        "Hex": "9DA16F"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "aborAustralia"
+      ],
+      "Namelist": "australia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "afghan",
+    "type": "cultures",
+    "displayName": "Afghan",
+    "fields": {
+      "Name": "afghan",
+      "MapColor": {
+        "B": 131,
+        "G": 193,
+        "R": 0,
+        "A": 255,
+        "Hex": "00C183"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "afghanistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "afroAmerican",
+    "type": "cultures",
+    "displayName": "African American",
+    "fields": {
+      "Name": "afroAmerican",
+      "MapColor": {
+        "B": 11,
+        "G": 66,
+        "R": 0,
+        "A": 255,
+        "Hex": "00420B"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_tribalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "afroAmerica"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "afrikaaner",
+    "type": "cultures",
+    "displayName": "Afrikaaner",
+    "fields": {
+      "Name": "afrikaaner",
+      "MapColor": {
+        "B": 0,
+        "G": 116,
+        "R": 161,
+        "A": 255,
+        "Hex": "A17400"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_prosperism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "afrikaa"
+      ],
+      "Namelist": "netherlands",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "afroBrazilian",
+    "type": "cultures",
+    "displayName": "Afro-Brazilian",
+    "fields": {
+      "Name": "afroBrazilian",
+      "MapColor": {
+        "B": 107,
+        "G": 183,
+        "R": 43,
+        "A": 255,
+        "Hex": "2BB76B"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_transformationism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "brazil"
+      ],
+      "Namelist": "brazil",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "albanian",
+    "type": "cultures",
+    "displayName": "Albanian",
+    "fields": {
+      "Name": "albanian",
+      "MapColor": {
+        "B": 171,
+        "G": 77,
+        "R": 186,
+        "A": 255,
+        "Hex": "BA4DAB"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "albania"
+      ],
+      "Namelist": "albania",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "albertan",
+    "type": "cultures",
+    "displayName": "Albertan",
+    "fields": {
+      "Name": "albertan",
+      "MapColor": {
+        "B": 181,
+        "G": 140,
+        "R": 219,
+        "A": 255,
+        "Hex": "DB8CB5"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "westCanada"
+      ],
+      "Namelist": "canada",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "algerian",
+    "type": "cultures",
+    "displayName": "Algerian",
+    "fields": {
+      "Name": "algerian",
+      "MapColor": {
+        "B": 163,
+        "G": 203,
+        "R": 143,
+        "A": 255,
+        "Hex": "8FCBA3"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_transformationism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "algeria"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nativeAmerican",
+    "type": "cultures",
+    "displayName": "Amerindian",
+    "fields": {
+      "Name": "nativeAmerican",
+      "MapColor": {
+        "B": 104,
+        "G": 98,
+        "R": 129,
+        "A": 255,
+        "Hex": "816268"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "amerindia"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "amish",
+    "type": "cultures",
+    "displayName": "Amish",
+    "fields": {
+      "Name": "amish",
+      "MapColor": {
+        "B": 115,
+        "G": 129,
+        "R": 89,
+        "A": 255,
+        "Hex": "598173"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_traditionalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "amidum"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsAncap",
+    "type": "cultures",
+    "displayName": "Ancap",
+    "fields": {
+      "Name": "marsAncap",
+      "MapColor": {
+        "B": 0,
+        "G": 235,
+        "R": 245,
+        "A": 255,
+        "Hex": "F5EB00"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "idea_prosperism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsAncapistan"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "angolan",
+    "type": "cultures",
+    "displayName": "Angolan",
+    "fields": {
+      "Name": "angolan",
+      "MapColor": {
+        "B": 77,
+        "G": 53,
+        "R": 96,
+        "A": 255,
+        "Hex": "60354D"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_irridentist",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "angola"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "arab",
+    "type": "cultures",
+    "displayName": "Arab",
+    "fields": {
+      "Name": "arab",
+      "MapColor": {
+        "B": 64,
+        "G": 124,
+        "R": 86,
+        "A": 255,
+        "Hex": "567C40"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "polygamist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "arabia"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsTurkish",
+    "type": "cultures",
+    "displayName": "Arestanic",
+    "fields": {
+      "Name": "marsTurkish",
+      "MapColor": {
+        "B": 105,
+        "G": 90,
+        "R": 164,
+        "A": 255,
+        "Hex": "A45A69"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_statism",
+        "urbanophile",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsTurkey"
+      ],
+      "Namelist": "turkey",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "argentinian",
+    "type": "cultures",
+    "displayName": "Argentine",
+    "fields": {
+      "Name": "argentinian",
+      "MapColor": {
+        "B": 252,
+        "G": 224,
+        "R": 180,
+        "A": 255,
+        "Hex": "B4E0FC"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "argentina"
+      ],
+      "Namelist": "argentina",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "armenian",
+    "type": "cultures",
+    "displayName": "Armenian",
+    "fields": {
+      "Name": "armenian",
+      "MapColor": {
+        "B": 0,
+        "G": 196,
+        "R": 191,
+        "A": 255,
+        "Hex": "BFC400"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_traditionalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "armenia"
+      ],
+      "Namelist": "turkey",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "superhumanCulture",
+    "type": "cultures",
+    "displayName": "Augment",
+    "fields": {
+      "Name": "superhumanCulture",
+      "MapColor": {
+        "B": 119,
+        "G": 121,
+        "R": 58,
+        "A": 255,
+        "Hex": "3A7977"
+      },
+      "Traits": [
+        "species_human"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "superhumanCountry"
+      ],
+      "Namelist": "default",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "australian",
+    "type": "cultures",
+    "displayName": "Australian",
+    "fields": {
+      "Name": "australian",
+      "MapColor": {
+        "B": 195,
+        "G": 99,
+        "R": 120,
+        "A": 255,
+        "Hex": "7863C3"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_intellectualism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "australia"
+      ],
+      "Namelist": "australia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "azerbaijani",
+    "type": "cultures",
+    "displayName": "Azerbaijani",
+    "fields": {
+      "Name": "azerbaijani",
+      "MapColor": {
+        "B": 171,
+        "G": 122,
+        "R": 204,
+        "A": 255,
+        "Hex": "CC7AAB"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "azerbaijan"
+      ],
+      "Namelist": "turkey",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "badlander",
+    "type": "cultures",
+    "displayName": "Badlander",
+    "fields": {
+      "Name": "badlander",
+      "MapColor": {
+        "B": 0,
+        "G": 84,
+        "R": 172,
+        "A": 255,
+        "Hex": "AC5400"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "irridentist",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsBadlands"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "baloch",
+    "type": "cultures",
+    "displayName": "Baloch",
+    "fields": {
+      "Name": "baloch",
+      "MapColor": {
+        "B": 147,
+        "G": 171,
+        "R": 113,
+        "A": 255,
+        "Hex": "71AB93"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "balochistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "banda",
+    "type": "cultures",
+    "displayName": "Banda",
+    "fields": {
+      "Name": "banda",
+      "MapColor": {
+        "B": 174,
+        "G": 84,
+        "R": 133,
+        "A": 255,
+        "Hex": "8554AE"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "banda"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "bangladeshi",
+    "type": "cultures",
+    "displayName": "Bangladeshi",
+    "fields": {
+      "Name": "bangladeshi",
+      "MapColor": {
+        "B": 0,
+        "G": 138,
+        "R": 131,
+        "A": 255,
+        "Hex": "838A00"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_stoicism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bangladesh"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "basque",
+    "type": "cultures",
+    "displayName": "Basque",
+    "fields": {
+      "Name": "basque",
+      "MapColor": {
+        "B": 147,
+        "G": 170,
+        "R": 200,
+        "A": 255,
+        "Hex": "C8AA93"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "catalonia"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "belter",
+    "type": "cultures",
+    "displayName": "Belter",
+    "fields": {
+      "Name": "belter",
+      "MapColor": {
+        "B": 98,
+        "G": 106,
+        "R": 119,
+        "A": 255,
+        "Hex": "776A62"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ceres",
+        "vesta"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "bengali",
+    "type": "cultures",
+    "displayName": "Bengali",
+    "fields": {
+      "Name": "bengali",
+      "MapColor": {
+        "B": 0,
+        "G": 162,
+        "R": 80,
+        "A": 255,
+        "Hex": "50A200"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bengal"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "bolivian",
+    "type": "cultures",
+    "displayName": "Bolivian",
+    "fields": {
+      "Name": "bolivian",
+      "MapColor": {
+        "B": 102,
+        "G": 154,
+        "R": 159,
+        "A": 255,
+        "Hex": "9F9A66"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bolivia"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsBorealis",
+    "type": "cultures",
+    "displayName": "Borealian",
+    "fields": {
+      "Name": "marsBorealis",
+      "MapColor": {
+        "B": 143,
+        "G": 53,
+        "R": 168,
+        "A": 255,
+        "Hex": "A8358F"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "insular",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsBorealis"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "bosnian",
+    "type": "cultures",
+    "displayName": "Bosnian",
+    "fields": {
+      "Name": "bosnian",
+      "MapColor": {
+        "B": 139,
+        "G": 161,
+        "R": 213,
+        "A": 255,
+        "Hex": "D5A18B"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_statism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bosnia"
+      ],
+      "Namelist": "bosnia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "botswanan",
+    "type": "cultures",
+    "displayName": "Botswanan",
+    "fields": {
+      "Name": "botswanan",
+      "MapColor": {
+        "B": 80,
+        "G": 100,
+        "R": 126,
+        "A": 255,
+        "Hex": "7E6450"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_intellectualism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "botswana"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "brazilian",
+    "type": "cultures",
+    "displayName": "Brazilian",
+    "fields": {
+      "Name": "brazilian",
+      "MapColor": {
+        "B": 0,
+        "G": 148,
+        "R": 22,
+        "A": 255,
+        "Hex": "169400"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_transformationism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "brazil"
+      ],
+      "Namelist": "brazil",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "breton",
+    "type": "cultures",
+    "displayName": "Breton",
+    "fields": {
+      "Name": "breton",
+      "MapColor": {
+        "B": 211,
+        "G": 115,
+        "R": 183,
+        "A": 255,
+        "Hex": "B773D3"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_stoicism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "france"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "bulgarian",
+    "type": "cultures",
+    "displayName": "Bulgarian",
+    "fields": {
+      "Name": "bulgarian",
+      "MapColor": {
+        "B": 0,
+        "G": 181,
+        "R": 62,
+        "A": 255,
+        "Hex": "3EB500"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_irridentist",
+        "assimilationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bulgaria"
+      ],
+      "Namelist": "bulgaria",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "burmese",
+    "type": "cultures",
+    "displayName": "Burmese",
+    "fields": {
+      "Name": "burmese",
+      "MapColor": {
+        "B": 147,
+        "G": 84,
+        "R": 180,
+        "A": 255,
+        "Hex": "B45493"
+      },
+      "Traits": [
+        "idea_prosperism",
+        "idea_tribalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "myanmar"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "californian",
+    "type": "cultures",
+    "displayName": "Californian",
+    "fields": {
+      "Name": "californian",
+      "MapColor": {
+        "B": 171,
+        "G": 98,
+        "R": 122,
+        "A": 255,
+        "Hex": "7A62AB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "california",
+        "oregon",
+        "washington"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "callistan",
+    "type": "cultures",
+    "displayName": "Callistan",
+    "fields": {
+      "Name": "callistan",
+      "MapColor": {
+        "B": 203,
+        "G": 95,
+        "R": 201,
+        "A": 255,
+        "Hex": "C95FCB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "monumentalist",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "callisto"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cambodian",
+    "type": "cultures",
+    "displayName": "Cambodian",
+    "fields": {
+      "Name": "cambodian",
+      "MapColor": {
+        "B": 116,
+        "G": 146,
+        "R": 166,
+        "A": 255,
+        "Hex": "A69274"
+      },
+      "Traits": [
+        "idea_prosperism",
+        "idea_moralism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "cambodia"
+      ],
+      "Namelist": "vietnam",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cameroonian",
+    "type": "cultures",
+    "displayName": "Cameroonian",
+    "fields": {
+      "Name": "cameroonian",
+      "MapColor": {
+        "B": 124,
+        "G": 78,
+        "R": 187,
+        "A": 255,
+        "Hex": "BB4E7C"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "cameroon"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "canadian",
+    "type": "cultures",
+    "displayName": "Canadian",
+    "fields": {
+      "Name": "canadian",
+      "MapColor": {
+        "B": 120,
+        "G": 120,
+        "R": 255,
+        "A": 255,
+        "Hex": "FF7878"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ontario"
+      ],
+      "Namelist": "canada",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cantonese",
+    "type": "cultures",
+    "displayName": "Cantonese",
+    "fields": {
+      "Name": "cantonese",
+      "MapColor": {
+        "B": 0,
+        "G": 213,
+        "R": 167,
+        "A": 255,
+        "Hex": "A7D500"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_moralism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "canton",
+        "guanxi",
+        "fujian"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "caribbean",
+    "type": "cultures",
+    "displayName": "Caribbean",
+    "fields": {
+      "Name": "caribbean",
+      "MapColor": {
+        "B": 184,
+        "G": 102,
+        "R": 167,
+        "A": 255,
+        "Hex": "A766B8"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "caribbean",
+        "jamaica"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "chilean",
+    "type": "cultures",
+    "displayName": "Chilean",
+    "fields": {
+      "Name": "chilean",
+      "MapColor": {
+        "B": 177,
+        "G": 132,
+        "R": 197,
+        "A": 255,
+        "Hex": "C584B1"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "chile"
+      ],
+      "Namelist": "chile",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "colombian",
+    "type": "cultures",
+    "displayName": "Colombian",
+    "fields": {
+      "Name": "colombian",
+      "MapColor": {
+        "B": 72,
+        "G": 186,
+        "R": 200,
+        "A": 255,
+        "Hex": "C8BA48"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "colombia"
+      ],
+      "Namelist": "colombia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "copernican",
+    "type": "cultures",
+    "displayName": "Copernican",
+    "fields": {
+      "Name": "copernican",
+      "MapColor": {
+        "B": 194,
+        "G": 83,
+        "R": 135,
+        "A": 255,
+        "Hex": "8753C2"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_utopianism",
+        "assimilationist",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "copernica"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "costaRican",
+    "type": "cultures",
+    "displayName": "Costa Rican",
+    "fields": {
+      "Name": "costaRican",
+      "MapColor": {
+        "B": 187,
+        "G": 123,
+        "R": 182,
+        "A": 255,
+        "Hex": "B67BBB"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "costaRica"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "croatian",
+    "type": "cultures",
+    "displayName": "Croatian",
+    "fields": {
+      "Name": "croatian",
+      "MapColor": {
+        "B": 200,
+        "G": 109,
+        "R": 205,
+        "A": 255,
+        "Hex": "CD6DC8"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "croatia"
+      ],
+      "Namelist": "croatia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "cuban",
+    "type": "cultures",
+    "displayName": "Cuban",
+    "fields": {
+      "Name": "cuban",
+      "MapColor": {
+        "B": 0,
+        "G": 206,
+        "R": 199,
+        "A": 255,
+        "Hex": "C7CE00"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "cuba"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "czech",
+    "type": "cultures",
+    "displayName": "Czech",
+    "fields": {
+      "Name": "czech",
+      "MapColor": {
+        "B": 194,
+        "G": 227,
+        "R": 76,
+        "A": 255,
+        "Hex": "4CE3C2"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "czechia"
+      ],
+      "Namelist": "czechia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "danish",
+    "type": "cultures",
+    "displayName": "Danish",
+    "fields": {
+      "Name": "danish",
+      "MapColor": {
+        "B": 160,
+        "G": 141,
+        "R": 197,
+        "A": 255,
+        "Hex": "C58DA0"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "denmark"
+      ],
+      "Namelist": "denmark",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dixie",
+    "type": "cultures",
+    "displayName": "Dixie",
+    "fields": {
+      "Name": "dixie",
+      "MapColor": {
+        "B": 177,
+        "G": 173,
+        "R": 159,
+        "A": 255,
+        "Hex": "9FADB1"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "assimilationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "dixieland"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dominican",
+    "type": "cultures",
+    "displayName": "Dominican",
+    "fields": {
+      "Name": "dominican",
+      "MapColor": {
+        "B": 204,
+        "G": 0,
+        "R": 151,
+        "A": 255,
+        "Hex": "9700CC"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "dominica"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "dutch",
+    "type": "cultures",
+    "displayName": "Dutch",
+    "fields": {
+      "Name": "dutch",
+      "MapColor": {
+        "B": 0,
+        "G": 116,
+        "R": 168,
+        "A": 255,
+        "Hex": "A87400"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "netherlands",
+        "belgium",
+        "luxembourg"
+      ],
+      "Namelist": "netherlands",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ecuadorian",
+    "type": "cultures",
+    "displayName": "Ecuadorian",
+    "fields": {
+      "Name": "ecuadorian",
+      "MapColor": {
+        "B": 83,
+        "G": 207,
+        "R": 230,
+        "A": 255,
+        "Hex": "E6CF53"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ecuador"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "egyptian",
+    "type": "cultures",
+    "displayName": "Egyptian",
+    "fields": {
+      "Name": "egyptian",
+      "MapColor": {
+        "B": 74,
+        "G": 154,
+        "R": 166,
+        "A": 255,
+        "Hex": "A69A4A"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "egypt"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "enceladan",
+    "type": "cultures",
+    "displayName": "Enceladan",
+    "fields": {
+      "Name": "enceladan",
+      "MapColor": {
+        "B": 219,
+        "G": 219,
+        "R": 219,
+        "A": 255,
+        "Hex": "DBDBDB"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "enceladus"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "english",
+    "type": "cultures",
+    "displayName": "English",
+    "fields": {
+      "Name": "english",
+      "MapColor": {
+        "B": 100,
+        "G": 100,
+        "R": 232,
+        "A": 255,
+        "Hex": "E86464"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "england"
+      ],
+      "Namelist": "unitedKingdom",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "epsilonEridanian",
+    "type": "cultures",
+    "displayName": "Eridanian",
+    "fields": {
+      "Name": "epsilonEridanian",
+      "MapColor": {
+        "B": 213,
+        "G": 0,
+        "R": 139,
+        "A": 255,
+        "Hex": "8B00D5"
+      },
+      "Traits": [
+        "species_human",
+        "religion_christian",
+        "idea_prosperism",
+        "diligent",
+        "irridentist",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "epsilonEridani"
+      ],
+      "Namelist": "default",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "eritrean",
+    "type": "cultures",
+    "displayName": "Eritrean",
+    "fields": {
+      "Name": "eritrean",
+      "MapColor": {
+        "B": 29,
+        "G": 75,
+        "R": 47,
+        "A": 255,
+        "Hex": "2F4B1D"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "eritrea"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "estonian",
+    "type": "cultures",
+    "displayName": "Estonian",
+    "fields": {
+      "Name": "estonian",
+      "MapColor": {
+        "B": 219,
+        "G": 173,
+        "R": 142,
+        "A": 255,
+        "Hex": "8EADDB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_moralism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "estonia"
+      ],
+      "Namelist": "estonia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ethiopian",
+    "type": "cultures",
+    "displayName": "Ethiopian",
+    "fields": {
+      "Name": "ethiopian",
+      "MapColor": {
+        "B": 34,
+        "G": 48,
+        "R": 0,
+        "A": 255,
+        "Hex": "003022"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ethiopia"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "europan",
+    "type": "cultures",
+    "displayName": "Europan",
+    "fields": {
+      "Name": "europan",
+      "MapColor": {
+        "B": 203,
+        "G": 130,
+        "R": 93,
+        "A": 255,
+        "Hex": "5D82CB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_tribalism",
+        "irridentist",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "europaMonarchists",
+        "europaPopulists",
+        "europaCommunists",
+        "europaFascists",
+        "europa",
+        "europaAuthoritarian"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ferrian",
+    "type": "cultures",
+    "displayName": "Ferrian",
+    "fields": {
+      "Name": "ferrian",
+      "MapColor": {
+        "B": 121,
+        "G": 154,
+        "R": 190,
+        "A": 255,
+        "Hex": "BE9A79"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_obliterationOfSelf",
+        "prideful",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ferrius"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "finnish",
+    "type": "cultures",
+    "displayName": "Finnish",
+    "fields": {
+      "Name": "finnish",
+      "MapColor": {
+        "B": 212,
+        "G": 212,
+        "R": 212,
+        "A": 255,
+        "Hex": "D4D4D4"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_tribalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "finland"
+      ],
+      "Namelist": "finland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "floridian",
+    "type": "cultures",
+    "displayName": "Floridian",
+    "fields": {
+      "Name": "floridian",
+      "MapColor": {
+        "B": 150,
+        "G": 162,
+        "R": 72,
+        "A": 255,
+        "Hex": "48A296"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "florida"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "french",
+    "type": "cultures",
+    "displayName": "French",
+    "fields": {
+      "Name": "french",
+      "MapColor": {
+        "B": 211,
+        "G": 11,
+        "R": 0,
+        "A": 255,
+        "Hex": "000BD3"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_transformationism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "france"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "fulani",
+    "type": "cultures",
+    "displayName": "Fulani",
+    "fields": {
+      "Name": "fulani",
+      "MapColor": {
+        "B": 182,
+        "G": 139,
+        "R": 121,
+        "A": 255,
+        "Hex": "798BB6"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "fulani"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "gabonese",
+    "type": "cultures",
+    "displayName": "Gabonese",
+    "fields": {
+      "Name": "gabonese",
+      "MapColor": {
+        "B": 142,
+        "G": 74,
+        "R": 170,
+        "A": 255,
+        "Hex": "AA4A8E"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_traditionalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "gabon"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ganymedeSouth",
+    "type": "cultures",
+    "displayName": "Ganymede Australic",
+    "fields": {
+      "Name": "ganymedeSouth",
+      "MapColor": {
+        "B": 223,
+        "G": 104,
+        "R": 192,
+        "A": 255,
+        "Hex": "C068DF"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "insular",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ganymedeSouth"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "georgian",
+    "type": "cultures",
+    "displayName": "Georgian",
+    "fields": {
+      "Name": "georgian",
+      "MapColor": {
+        "B": 216,
+        "G": 97,
+        "R": 179,
+        "A": 255,
+        "Hex": "B361D8"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_traditionalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "georgia"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ghanan",
+    "type": "cultures",
+    "displayName": "Ghanan",
+    "fields": {
+      "Name": "ghanan",
+      "MapColor": {
+        "B": 144,
+        "G": 88,
+        "R": 127,
+        "A": 255,
+        "Hex": "7F5890"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ghana"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "greek",
+    "type": "cultures",
+    "displayName": "Greek",
+    "fields": {
+      "Name": "greek",
+      "MapColor": {
+        "B": 210,
+        "G": 173,
+        "R": 25,
+        "A": 255,
+        "Hex": "19ADD2"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "greece"
+      ],
+      "Namelist": "greece",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "guatemalan",
+    "type": "cultures",
+    "displayName": "Guatemalan",
+    "fields": {
+      "Name": "guatemalan",
+      "MapColor": {
+        "B": 170,
+        "G": 147,
+        "R": 115,
+        "A": 255,
+        "Hex": "7393AA"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "guatemala"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "guinean",
+    "type": "cultures",
+    "displayName": "Guinean",
+    "fields": {
+      "Name": "guinean",
+      "MapColor": {
+        "B": 189,
+        "G": 185,
+        "R": 117,
+        "A": 255,
+        "Hex": "75B9BD"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "guinea",
+        "guineaBissau"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "gujarat",
+    "type": "cultures",
+    "displayName": "Gujarati",
+    "fields": {
+      "Name": "gujarat",
+      "MapColor": {
+        "B": 179,
+        "G": 98,
+        "R": 15,
+        "A": 255,
+        "Hex": "0F62B3"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "gujarat"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "guyanan",
+    "type": "cultures",
+    "displayName": "Guyanan",
+    "fields": {
+      "Name": "guyanan",
+      "MapColor": {
+        "B": 180,
+        "G": 186,
+        "R": 100,
+        "A": 255,
+        "Hex": "64BAB4"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_intellectualism",
+        "firearmAffinity"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "guyana"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "han",
+    "type": "cultures",
+    "displayName": "Han",
+    "fields": {
+      "Name": "han",
+      "MapColor": {
+        "B": 0,
+        "G": 123,
+        "R": 185,
+        "A": 255,
+        "Hex": "B97B00"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_obliterationOfSelf",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "hibei",
+        "hubei",
+        "fujian",
+        "beijing",
+        "shanxi",
+        "anhui"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hawaiian",
+    "type": "cultures",
+    "displayName": "Hawaiian",
+    "fields": {
+      "Name": "hawaiian",
+      "MapColor": {
+        "B": 213,
+        "G": 106,
+        "R": 133,
+        "A": 255,
+        "Hex": "856AD5"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "hawaii"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hindi",
+    "type": "cultures",
+    "displayName": "Hindi",
+    "fields": {
+      "Name": "hindi",
+      "MapColor": {
+        "B": 38,
+        "G": 110,
+        "R": 163,
+        "A": 255,
+        "Hex": "A36E26"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_statism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "hindustan"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "honduran",
+    "type": "cultures",
+    "displayName": "Honduran",
+    "fields": {
+      "Name": "honduran",
+      "MapColor": {
+        "B": 131,
+        "G": 83,
+        "R": 75,
+        "A": 255,
+        "Hex": "4B5383"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "honduras"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hungarian",
+    "type": "cultures",
+    "displayName": "Hungarian",
+    "fields": {
+      "Name": "hungarian",
+      "MapColor": {
+        "B": 98,
+        "G": 157,
+        "R": 193,
+        "A": 255,
+        "Hex": "C19D62"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "hungary"
+      ],
+      "Namelist": "hungary",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "icelandic",
+    "type": "cultures",
+    "displayName": "Icelandic",
+    "fields": {
+      "Name": "icelandic",
+      "MapColor": {
+        "B": 196,
+        "G": 114,
+        "R": 0,
+        "A": 255,
+        "Hex": "0072C4"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "iceland"
+      ],
+      "Namelist": "iceland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ioan",
+    "type": "cultures",
+    "displayName": "Ioan",
+    "fields": {
+      "Name": "ioan",
+      "MapColor": {
+        "B": 68,
+        "G": 131,
+        "R": 203,
+        "A": 255,
+        "Hex": "CB8344"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "diligent",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "io"
+      ],
+      "Namelist": "norway",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "iraqi",
+    "type": "cultures",
+    "displayName": "Iraqi",
+    "fields": {
+      "Name": "iraqi",
+      "MapColor": {
+        "B": 131,
+        "G": 157,
+        "R": 109,
+        "A": 255,
+        "Hex": "6D9D83"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "iraq"
+      ],
+      "Namelist": "iran",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "irish",
+    "type": "cultures",
+    "displayName": "Irish",
+    "fields": {
+      "Name": "irish",
+      "MapColor": {
+        "B": 71,
+        "G": 207,
+        "R": 100,
+        "A": 255,
+        "Hex": "64CF47"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_guiltComplex",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ireland"
+      ],
+      "Namelist": "ireland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neoBritish",
+    "type": "cultures",
+    "displayName": "Islamo-British",
+    "fields": {
+      "Name": "neoBritish",
+      "MapColor": {
+        "B": 41,
+        "G": 105,
+        "R": 62,
+        "A": 255,
+        "Hex": "3E6929"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "britain_islamic"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neoEuropean",
+    "type": "cultures",
+    "displayName": "Islamo-European",
+    "fields": {
+      "Name": "neoEuropean",
+      "MapColor": {
+        "B": 44,
+        "G": 105,
+        "R": 56,
+        "A": 255,
+        "Hex": "38692C"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "europe_islamic"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neoFrench",
+    "type": "cultures",
+    "displayName": "Islamo-French",
+    "fields": {
+      "Name": "neoFrench",
+      "MapColor": {
+        "B": 70,
+        "G": 105,
+        "R": 35,
+        "A": 255,
+        "Hex": "236946"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "france_islamic"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neoGerman",
+    "type": "cultures",
+    "displayName": "Islamo-German",
+    "fields": {
+      "Name": "neoGerman",
+      "MapColor": {
+        "B": 64,
+        "G": 102,
+        "R": 66,
+        "A": 255,
+        "Hex": "426640"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "germany_islamic"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "italian",
+    "type": "cultures",
+    "displayName": "Italian",
+    "fields": {
+      "Name": "italian",
+      "MapColor": {
+        "B": 0,
+        "G": 158,
+        "R": 3,
+        "A": 255,
+        "Hex": "039E00"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "italy"
+      ],
+      "Namelist": "italy",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ixumian",
+    "type": "cultures",
+    "displayName": "Ixumian",
+    "fields": {
+      "Name": "ixumian",
+      "MapColor": {
+        "B": 203,
+        "G": 185,
+        "R": 87,
+        "A": 255,
+        "Hex": "57B9CB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "easygoing",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ixumia"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "japanese",
+    "type": "cultures",
+    "displayName": "Japanese",
+    "fields": {
+      "Name": "japanese",
+      "MapColor": {
+        "B": 234,
+        "G": 234,
+        "R": 242,
+        "A": 255,
+        "Hex": "F2EAEA"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "japan"
+      ],
+      "Namelist": "japan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "javan",
+    "type": "cultures",
+    "displayName": "Javan",
+    "fields": {
+      "Name": "javan",
+      "MapColor": {
+        "B": 129,
+        "G": 162,
+        "R": 158,
+        "A": 255,
+        "Hex": "9EA281"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_transformationism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "java"
+      ],
+      "Namelist": "indonesia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jehovasWitness",
+    "type": "cultures",
+    "displayName": "Jehovas Witness",
+    "fields": {
+      "Name": "jehovasWitness",
+      "MapColor": {
+        "B": 116,
+        "G": 158,
+        "R": 164,
+        "A": 255,
+        "Hex": "A49E74"
+      },
+      "Traits": [
+        "religion_christian",
+        "religion_occult",
+        "idea_utopianism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "jehovasWitness"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jewish",
+    "type": "cultures",
+    "displayName": "Jewish",
+    "fields": {
+      "Name": "jewish",
+      "MapColor": {
+        "B": 234,
+        "G": 219,
+        "R": 149,
+        "A": 255,
+        "Hex": "95DBEA"
+      },
+      "Traits": [
+        "religion_jewish",
+        "idea_traditionalism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "israel"
+      ],
+      "Namelist": "israel",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kashmiri",
+    "type": "cultures",
+    "displayName": "Kashmiri",
+    "fields": {
+      "Name": "kashmiri",
+      "MapColor": {
+        "B": 161,
+        "G": 100,
+        "R": 179,
+        "A": 255,
+        "Hex": "B364A1"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "kashmir"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kazakh",
+    "type": "cultures",
+    "displayName": "Kazakh",
+    "fields": {
+      "Name": "kazakh",
+      "MapColor": {
+        "B": 201,
+        "G": 180,
+        "R": 91,
+        "A": 255,
+        "Hex": "5BB4C9"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "kazakhstan"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kenyan",
+    "type": "cultures",
+    "displayName": "Kenyan",
+    "fields": {
+      "Name": "kenyan",
+      "MapColor": {
+        "B": 184,
+        "G": 142,
+        "R": 184,
+        "A": 255,
+        "Hex": "B88EB8"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_transformationism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "kenya"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kiwi",
+    "type": "cultures",
+    "displayName": "Kiwi",
+    "fields": {
+      "Name": "kiwi",
+      "MapColor": {
+        "B": 188,
+        "G": 93,
+        "R": 62,
+        "A": 255,
+        "Hex": "3E5DBC"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "newZealand"
+      ],
+      "Namelist": "newZealand",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "korean",
+    "type": "cultures",
+    "displayName": "Korean",
+    "fields": {
+      "Name": "korean",
+      "MapColor": {
+        "B": 186,
+        "G": 0,
+        "R": 140,
+        "A": 255,
+        "Hex": "8C00BA"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_statism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "korea",
+        "southKorea",
+        "northKorea"
+      ],
+      "Namelist": "korea",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kurdish",
+    "type": "cultures",
+    "displayName": "Kurdish",
+    "fields": {
+      "Name": "kurdish",
+      "MapColor": {
+        "B": 146,
+        "G": 211,
+        "R": 91,
+        "A": 255,
+        "Hex": "5BD392"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "kurdistan"
+      ],
+      "Namelist": "turkey",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lao",
+    "type": "cultures",
+    "displayName": "Lao",
+    "fields": {
+      "Name": "lao",
+      "MapColor": {
+        "B": 86,
+        "G": 164,
+        "R": 115,
+        "A": 255,
+        "Hex": "73A456"
+      },
+      "Traits": [
+        "idea_prosperism",
+        "idea_tribalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "laos"
+      ],
+      "Namelist": "vietnam",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "latvian",
+    "type": "cultures",
+    "displayName": "Latvian",
+    "fields": {
+      "Name": "latvian",
+      "MapColor": {
+        "B": 230,
+        "G": 146,
+        "R": 224,
+        "A": 255,
+        "Hex": "E092E6"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_moralism",
+        "nuclearFamily"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "latvia"
+      ],
+      "Namelist": "latvia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lebannese",
+    "type": "cultures",
+    "displayName": "Lebannese",
+    "fields": {
+      "Name": "lebannese",
+      "MapColor": {
+        "B": 59,
+        "G": 28,
+        "R": 56,
+        "A": 255,
+        "Hex": "381C3B"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lebanon"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lithuanian",
+    "type": "cultures",
+    "displayName": "Lithuanian",
+    "fields": {
+      "Name": "lithuanian",
+      "MapColor": {
+        "B": 139,
+        "G": 221,
+        "R": 222,
+        "A": 255,
+        "Hex": "DEDD8B"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_moralism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lithuania"
+      ],
+      "Namelist": "lithuania",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lunarPioneeric",
+    "type": "cultures",
+    "displayName": "Lunar Pioneer",
+    "fields": {
+      "Name": "lunarPioneeric",
+      "MapColor": {
+        "B": 159,
+        "G": 109,
+        "R": 164,
+        "A": 255,
+        "Hex": "A46D9F"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "frontierSpirit",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lunarPioneers"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lunaRed",
+    "type": "cultures",
+    "displayName": "Lunar Red",
+    "fields": {
+      "Name": "lunaRed",
+      "MapColor": {
+        "B": 57,
+        "G": 57,
+        "R": 154,
+        "A": 255,
+        "Hex": "9A3939"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_guiltComplex",
+        "firearmAffinity",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lunaReds",
+        "engelsburg"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "astromerican",
+    "type": "cultures",
+    "displayName": "Lunar-American",
+    "fields": {
+      "Name": "astromerican",
+      "MapColor": {
+        "B": 124,
+        "G": 16,
+        "R": 0,
+        "A": 255,
+        "Hex": "00107C"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "firearmAffinity",
+        "nuclearFamily"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "unitedColonies"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "astroBritish",
+    "type": "cultures",
+    "displayName": "Lunar-British",
+    "fields": {
+      "Name": "astroBritish",
+      "MapColor": {
+        "B": 32,
+        "G": 0,
+        "R": 154,
+        "A": 255,
+        "Hex": "9A0020"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "insular",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "astroEngland"
+      ],
+      "Namelist": "unitedKingdom",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lunaChinese",
+    "type": "cultures",
+    "displayName": "Lunar-Chinese",
+    "fields": {
+      "Name": "lunaChinese",
+      "MapColor": {
+        "B": 104,
+        "G": 143,
+        "R": 183,
+        "A": 255,
+        "Hex": "B78F68"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_obliterationOfSelf",
+        "mandateOfHeaven",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lunarChina"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "astroFrench",
+    "type": "cultures",
+    "displayName": "Lunar-French",
+    "fields": {
+      "Name": "astroFrench",
+      "MapColor": {
+        "B": 190,
+        "G": 141,
+        "R": 83,
+        "A": 255,
+        "Hex": "538DBE"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "assimilationist",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lunarFrance"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "astroGerman",
+    "type": "cultures",
+    "displayName": "Lunar-German",
+    "fields": {
+      "Name": "astroGerman",
+      "MapColor": {
+        "B": 105,
+        "G": 110,
+        "R": 147,
+        "A": 255,
+        "Hex": "936E69"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "diligent",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "lunarGermany"
+      ],
+      "Namelist": "germany",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lunaRussian",
+    "type": "cultures",
+    "displayName": "Lunar-Russian",
+    "fields": {
+      "Name": "lunaRussian",
+      "MapColor": {
+        "B": 94,
+        "G": 156,
+        "R": 111,
+        "A": 255,
+        "Hex": "6F9C5E"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "assimilationist",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "catherina"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "lybian",
+    "type": "cultures",
+    "displayName": "Lybian",
+    "fields": {
+      "Name": "lybian",
+      "MapColor": {
+        "B": 0,
+        "G": 86,
+        "R": 35,
+        "A": 255,
+        "Hex": "235600"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "idea_stoicism"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "libya"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "madagascarian",
+    "type": "cultures",
+    "displayName": "Madagascarian",
+    "fields": {
+      "Name": "madagascarian",
+      "MapColor": {
+        "B": 37,
+        "G": 41,
+        "R": 29,
+        "A": 255,
+        "Hex": "1D2925"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_transformationism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "madagascar"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "malay",
+    "type": "cultures",
+    "displayName": "Malay",
+    "fields": {
+      "Name": "malay",
+      "MapColor": {
+        "B": 211,
+        "G": 83,
+        "R": 187,
+        "A": 255,
+        "Hex": "BB53D3"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_intellectualism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "malaysia",
+        "brunei"
+      ],
+      "Namelist": "indonesia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "manchu",
+    "type": "cultures",
+    "displayName": "Manchu",
+    "fields": {
+      "Name": "manchu",
+      "MapColor": {
+        "B": 110,
+        "G": 164,
+        "R": 186,
+        "A": 255,
+        "Hex": "BAA46E"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_traditionalism",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "manchuria"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mande",
+    "type": "cultures",
+    "displayName": "Mande",
+    "fields": {
+      "Name": "mande",
+      "MapColor": {
+        "B": 179,
+        "G": 137,
+        "R": 203,
+        "A": 255,
+        "Hex": "CB89B3"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "mandea"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marathi",
+    "type": "cultures",
+    "displayName": "Marathi",
+    "fields": {
+      "Name": "marathi",
+      "MapColor": {
+        "B": 216,
+        "G": 0,
+        "R": 50,
+        "A": 255,
+        "Hex": "3200D8"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "maratha"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsIndian",
+    "type": "cultures",
+    "displayName": "Marindian",
+    "fields": {
+      "Name": "marsIndian",
+      "MapColor": {
+        "B": 52,
+        "G": 119,
+        "R": 168,
+        "A": 255,
+        "Hex": "A87734"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_utopianism",
+        "urbanophile",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsIndia"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marineran",
+    "type": "cultures",
+    "displayName": "Marineran",
+    "fields": {
+      "Name": "marineran",
+      "MapColor": {
+        "B": 83,
+        "G": 60,
+        "R": 151,
+        "A": 255,
+        "Hex": "973C53"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "assimilationist",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marinaris"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsHan",
+    "type": "cultures",
+    "displayName": "Mars-Chinese",
+    "fields": {
+      "Name": "marsHan",
+      "MapColor": {
+        "B": 88,
+        "G": 157,
+        "R": 164,
+        "A": 255,
+        "Hex": "A49D58"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_obliterationOfSelf",
+        "mandateOfHeaven",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsChina"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsFrench",
+    "type": "cultures",
+    "displayName": "Mars-French",
+    "fields": {
+      "Name": "marsFrench",
+      "MapColor": {
+        "B": 164,
+        "G": 76,
+        "R": 88,
+        "A": 255,
+        "Hex": "584CA4"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "assimilationist",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsFrance"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsGerman",
+    "type": "cultures",
+    "displayName": "Mars-German",
+    "fields": {
+      "Name": "marsGerman",
+      "MapColor": {
+        "B": 127,
+        "G": 130,
+        "R": 164,
+        "A": 255,
+        "Hex": "A4827F"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "diligent",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsGermany"
+      ],
+      "Namelist": "germany",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsIndochinese",
+    "type": "cultures",
+    "displayName": "Mars-Indochinese",
+    "fields": {
+      "Name": "marsIndochinese",
+      "MapColor": {
+        "B": 112,
+        "G": 164,
+        "R": 155,
+        "A": 255,
+        "Hex": "9BA470"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "mandateOfHeaven",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsIndochina"
+      ],
+      "Namelist": "vietnam",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsTexan",
+    "type": "cultures",
+    "displayName": "Mars-Texan",
+    "fields": {
+      "Name": "marsTexan",
+      "MapColor": {
+        "B": 164,
+        "G": 144,
+        "R": 120,
+        "A": 255,
+        "Hex": "7890A4"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "firearmAffinity",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsTexas"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsManchu",
+    "type": "cultures",
+    "displayName": "Marschurian",
+    "fields": {
+      "Name": "marsManchu",
+      "MapColor": {
+        "B": 103,
+        "G": 98,
+        "R": 164,
+        "A": 255,
+        "Hex": "A46267"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "mandateOfHeaven",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsManchuria"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsCommunist",
+    "type": "cultures",
+    "displayName": "Marsxist",
+    "fields": {
+      "Name": "marsCommunist",
+      "MapColor": {
+        "B": 51,
+        "G": 96,
+        "R": 164,
+        "A": 255,
+        "Hex": "A46033"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_utopianism",
+        "easygoing",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsStalinists",
+        "marsProgressives"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsPioneeric",
+    "type": "cultures",
+    "displayName": "Martian Pioneer",
+    "fields": {
+      "Name": "marsPioneeric",
+      "MapColor": {
+        "B": 187,
+        "G": 34,
+        "R": 171,
+        "A": 255,
+        "Hex": "AB22BB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "frontierSpirit",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsPioneers"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsPridelander",
+    "type": "cultures",
+    "displayName": "Martian Progressive",
+    "fields": {
+      "Name": "marsPridelander",
+      "MapColor": {
+        "B": 164,
+        "G": 37,
+        "R": 150,
+        "A": 255,
+        "Hex": "9625A4"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_transformationism",
+        "prideful",
+        "polygamist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsProgressives"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsAmerican",
+    "type": "cultures",
+    "displayName": "Martian-American",
+    "fields": {
+      "Name": "marsAmerican",
+      "MapColor": {
+        "B": 142,
+        "G": 70,
+        "R": 105,
+        "A": 255,
+        "Hex": "69468E"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "firearmAffinity",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsAmerica"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsLatin",
+    "type": "cultures",
+    "displayName": "Martianum",
+    "fields": {
+      "Name": "marsLatin",
+      "MapColor": {
+        "B": 58,
+        "G": 0,
+        "R": 164,
+        "A": 255,
+        "Hex": "A4003A"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_traditionalism",
+        "irridentist",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsLatinum"
+      ],
+      "Namelist": "latin",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "marsRussian",
+    "type": "cultures",
+    "displayName": "Marussian",
+    "fields": {
+      "Name": "marsRussian",
+      "MapColor": {
+        "B": 0,
+        "G": 127,
+        "R": 138,
+        "A": 255,
+        "Hex": "8A7F00"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "assimilationist",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsRussia"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mauritanian",
+    "type": "cultures",
+    "displayName": "Mauritanian",
+    "fields": {
+      "Name": "mauritanian",
+      "MapColor": {
+        "B": 76,
+        "G": 117,
+        "R": 137,
+        "A": 255,
+        "Hex": "89754C"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "mauritania"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mexican",
+    "type": "cultures",
+    "displayName": "Mexican",
+    "fields": {
+      "Name": "mexican",
+      "MapColor": {
+        "B": 158,
+        "G": 226,
+        "R": 185,
+        "A": 255,
+        "Hex": "B9E29E"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "mexico",
+        "sonora",
+        "juarez",
+        "yucatan"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "midwestern",
+    "type": "cultures",
+    "displayName": "Midwestern",
+    "fields": {
+      "Name": "midwestern",
+      "MapColor": {
+        "B": 150,
+        "G": 162,
+        "R": 72,
+        "A": 255,
+        "Hex": "48A296"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "midwest"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mozambiqui",
+    "type": "cultures",
+    "displayName": "Moazambiqui",
+    "fields": {
+      "Name": "mozambiqui",
+      "MapColor": {
+        "B": 149,
+        "G": 184,
+        "R": 0,
+        "A": 255,
+        "Hex": "00B895"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_transformationism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "mozambique",
+        "malawi",
+        "zambia"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mongol",
+    "type": "cultures",
+    "displayName": "Mongolian",
+    "fields": {
+      "Name": "mongol",
+      "MapColor": {
+        "B": 0,
+        "G": 129,
+        "R": 180,
+        "A": 255,
+        "Hex": "B48100"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "mongolia"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mormon",
+    "type": "cultures",
+    "displayName": "Mormon",
+    "fields": {
+      "Name": "mormon",
+      "MapColor": {
+        "B": 0,
+        "G": 151,
+        "R": 173,
+        "A": 255,
+        "Hex": "AD9700"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "polygamist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "utah"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "moroccan",
+    "type": "cultures",
+    "displayName": "Moroccan",
+    "fields": {
+      "Name": "moroccan",
+      "MapColor": {
+        "B": 0,
+        "G": 96,
+        "R": 177,
+        "A": 255,
+        "Hex": "B16000"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_statism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "morocco"
+      ],
+      "Namelist": "morocco",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "moruan",
+    "type": "cultures",
+    "displayName": "Moruan",
+    "fields": {
+      "Name": "moruan",
+      "MapColor": {
+        "B": 214,
+        "G": 140,
+        "R": 132,
+        "A": 255,
+        "Hex": "848CD6"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_intellectualism",
+        "easygoing",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "moruania"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "mpongwe",
+    "type": "cultures",
+    "displayName": "Mpongwe",
+    "fields": {
+      "Name": "mpongwe",
+      "MapColor": {
+        "B": 99,
+        "G": 165,
+        "R": 205,
+        "A": 255,
+        "Hex": "CDA563"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "gabon"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "namib",
+    "type": "cultures",
+    "displayName": "Namibian",
+    "fields": {
+      "Name": "namib",
+      "MapColor": {
+        "B": 107,
+        "G": 107,
+        "R": 107,
+        "A": 255,
+        "Hex": "6B6B6B"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "namibia"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nepali",
+    "type": "cultures",
+    "displayName": "Nepali",
+    "fields": {
+      "Name": "nepali",
+      "MapColor": {
+        "B": 201,
+        "G": 182,
+        "R": 103,
+        "A": 255,
+        "Hex": "67B6C9"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_traditionalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "nepal",
+        "bhutan"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "neptunian",
+    "type": "cultures",
+    "displayName": "Neptunian",
+    "fields": {
+      "Name": "neptunian",
+      "MapColor": {
+        "B": 213,
+        "G": 73,
+        "R": 0,
+        "A": 255,
+        "Hex": "0049D5"
+      },
+      "Traits": [
+        "species_human",
+        "religion_atheist",
+        "idea_prosperism",
+        "diligent",
+        "irridentist",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "neptune"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "newEnglander",
+    "type": "cultures",
+    "displayName": "New Englander",
+    "fields": {
+      "Name": "newEnglander",
+      "MapColor": {
+        "B": 210,
+        "G": 104,
+        "R": 227,
+        "A": 255,
+        "Hex": "E368D2"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "newEngland"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nicaraguan",
+    "type": "cultures",
+    "displayName": "Nicaraguan",
+    "fields": {
+      "Name": "nicaraguan",
+      "MapColor": {
+        "B": 159,
+        "G": 193,
+        "R": 102,
+        "A": 255,
+        "Hex": "66C19F"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "nicaragua"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "nigerian",
+    "type": "cultures",
+    "displayName": "Nigerian",
+    "fields": {
+      "Name": "nigerian",
+      "MapColor": {
+        "B": 84,
+        "G": 142,
+        "R": 0,
+        "A": 255,
+        "Hex": "008E54"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "nigeria"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "northGerman",
+    "type": "cultures",
+    "displayName": "North German",
+    "fields": {
+      "Name": "northGerman",
+      "MapColor": {
+        "B": 107,
+        "G": 111,
+        "R": 117,
+        "A": 255,
+        "Hex": "756F6B"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_guiltComplex",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "northGermany"
+      ],
+      "Namelist": "germany",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "northIrish",
+    "type": "cultures",
+    "displayName": "Northern Irish",
+    "fields": {
+      "Name": "northIrish",
+      "MapColor": {
+        "B": 128,
+        "G": 163,
+        "R": 207,
+        "A": 255,
+        "Hex": "CFA380"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ireland"
+      ],
+      "Namelist": "ireland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "norwegian",
+    "type": "cultures",
+    "displayName": "Norwegian",
+    "fields": {
+      "Name": "norwegian",
+      "MapColor": {
+        "B": 44,
+        "G": 122,
+        "R": 158,
+        "A": 255,
+        "Hex": "9E7A2C"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_utopianism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "norway"
+      ],
+      "Namelist": "norway",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "occitan",
+    "type": "cultures",
+    "displayName": "Occitan",
+    "fields": {
+      "Name": "occitan",
+      "MapColor": {
+        "B": 184,
+        "G": 0,
+        "R": 138,
+        "A": 255,
+        "Hex": "8A00B8"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_intellectualism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "aquitaine"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "olympian",
+    "type": "cultures",
+    "displayName": "Olympian",
+    "fields": {
+      "Name": "olympian",
+      "MapColor": {
+        "B": 0,
+        "G": 90,
+        "R": 210,
+        "A": 255,
+        "Hex": "D25A00"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "consumerCulture",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "marsAmerica"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "omani",
+    "type": "cultures",
+    "displayName": "Omani",
+    "fields": {
+      "Name": "omani",
+      "MapColor": {
+        "B": 97,
+        "G": 121,
+        "R": 155,
+        "A": 255,
+        "Hex": "9B7961"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "firearmAffinity"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "oman"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "oregonian",
+    "type": "cultures",
+    "displayName": "Oregonian",
+    "fields": {
+      "Name": "oregonian",
+      "MapColor": {
+        "B": 78,
+        "G": 133,
+        "R": 145,
+        "A": 255,
+        "Hex": "91854E"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "oregon"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "orissan",
+    "type": "cultures",
+    "displayName": "Orissan",
+    "fields": {
+      "Name": "orissan",
+      "MapColor": {
+        "B": 191,
+        "G": 86,
+        "R": 181,
+        "A": 255,
+        "Hex": "B556BF"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_statism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "orissa"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "pakistani",
+    "type": "cultures",
+    "displayName": "Pakistani",
+    "fields": {
+      "Name": "pakistani",
+      "MapColor": {
+        "B": 181,
+        "G": 124,
+        "R": 166,
+        "A": 255,
+        "Hex": "A67CB5"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "pakistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "palestinian",
+    "type": "cultures",
+    "displayName": "Palestinian",
+    "fields": {
+      "Name": "palestinian",
+      "MapColor": {
+        "B": 0,
+        "G": 104,
+        "R": 7,
+        "A": 255,
+        "Hex": "076800"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "palestine"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "panamanian",
+    "type": "cultures",
+    "displayName": "Panamanian",
+    "fields": {
+      "Name": "panamanian",
+      "MapColor": {
+        "B": 131,
+        "G": 118,
+        "R": 107,
+        "A": 255,
+        "Hex": "6B7683"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "panama"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "papuan",
+    "type": "cultures",
+    "displayName": "Papuan",
+    "fields": {
+      "Name": "papuan",
+      "MapColor": {
+        "B": 147,
+        "G": 108,
+        "R": 211,
+        "A": 255,
+        "Hex": "D36C93"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "papuaNewGuinea"
+      ],
+      "Namelist": "indonesia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "paraguayan",
+    "type": "cultures",
+    "displayName": "Paraguayan",
+    "fields": {
+      "Name": "paraguayan",
+      "MapColor": {
+        "B": 215,
+        "G": 170,
+        "R": 186,
+        "A": 255,
+        "Hex": "BAAAD7"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "paraguay"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "persian",
+    "type": "cultures",
+    "displayName": "Persian",
+    "fields": {
+      "Name": "persian",
+      "MapColor": {
+        "B": 94,
+        "G": 152,
+        "R": 138,
+        "A": 255,
+        "Hex": "8A985E"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "assimilationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "iran"
+      ],
+      "Namelist": "iran",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "peruvian",
+    "type": "cultures",
+    "displayName": "Peruvian",
+    "fields": {
+      "Name": "peruvian",
+      "MapColor": {
+        "B": 129,
+        "G": 52,
+        "R": 207,
+        "A": 255,
+        "Hex": "CF3481"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_utopianism",
+        "firearmAffinity"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "peru"
+      ],
+      "Namelist": "peru",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "philipine",
+    "type": "cultures",
+    "displayName": "Philipino",
+    "fields": {
+      "Name": "philipine",
+      "MapColor": {
+        "B": 205,
+        "G": 136,
+        "R": 171,
+        "A": 255,
+        "Hex": "AB88CD"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_intellectualism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "philipines"
+      ],
+      "Namelist": "philippines",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "polish",
+    "type": "cultures",
+    "displayName": "Polish",
+    "fields": {
+      "Name": "polish",
+      "MapColor": {
+        "B": 192,
+        "G": 170,
+        "R": 245,
+        "A": 255,
+        "Hex": "F5AAC0"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "poland"
+      ],
+      "Namelist": "poland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "portuguese",
+    "type": "cultures",
+    "displayName": "Portuguese",
+    "fields": {
+      "Name": "portuguese",
+      "MapColor": {
+        "B": 77,
+        "G": 186,
+        "R": 102,
+        "A": 255,
+        "Hex": "66BA4D"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "portugal"
+      ],
+      "Namelist": "portugal",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "prussian",
+    "type": "cultures",
+    "displayName": "Prussian",
+    "fields": {
+      "Name": "prussian",
+      "MapColor": {
+        "B": 103,
+        "G": 48,
+        "R": 0,
+        "A": 255,
+        "Hex": "003067"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "prussia"
+      ],
+      "Namelist": "germany",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "punjabi",
+    "type": "cultures",
+    "displayName": "Punjabi",
+    "fields": {
+      "Name": "punjabi",
+      "MapColor": {
+        "B": 150,
+        "G": 64,
+        "R": 179,
+        "A": 255,
+        "Hex": "B34096"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "punjab"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "quebecois",
+    "type": "cultures",
+    "displayName": "Quebecois",
+    "fields": {
+      "Name": "quebecois",
+      "MapColor": {
+        "B": 232,
+        "G": 143,
+        "R": 168,
+        "A": 255,
+        "Hex": "A88FE8"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "quebec"
+      ],
+      "Namelist": "france",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "robotCulture",
+    "type": "cultures",
+    "displayName": "Robotic",
+    "fields": {
+      "Name": "robotCulture",
+      "MapColor": {
+        "B": 121,
+        "G": 121,
+        "R": 121,
+        "A": 255,
+        "Hex": "797979"
+      },
+      "Traits": [
+        "species_robotic"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "robotCountry"
+      ],
+      "Namelist": "demonRobot",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "romanian",
+    "type": "cultures",
+    "displayName": "Romanian",
+    "fields": {
+      "Name": "romanian",
+      "MapColor": {
+        "B": 0,
+        "G": 180,
+        "R": 201,
+        "A": 255,
+        "Hex": "C9B400"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_intellectualism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "romania"
+      ],
+      "Namelist": "romania",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "russian",
+    "type": "cultures",
+    "displayName": "Russian",
+    "fields": {
+      "Name": "russian",
+      "MapColor": {
+        "B": 0,
+        "G": 182,
+        "R": 57,
+        "A": 255,
+        "Hex": "39B600"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "russia"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "rustbelter",
+    "type": "cultures",
+    "displayName": "Rustbelter",
+    "fields": {
+      "Name": "rustbelter",
+      "MapColor": {
+        "B": 117,
+        "G": 88,
+        "R": 162,
+        "A": 255,
+        "Hex": "A25875"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "yankeeland"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "salvadorian",
+    "type": "cultures",
+    "displayName": "Salvadorian",
+    "fields": {
+      "Name": "salvadorian",
+      "MapColor": {
+        "B": 131,
+        "G": 121,
+        "R": 42,
+        "A": 255,
+        "Hex": "2A7983"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "elSalvador"
+      ],
+      "Namelist": "mexico",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "scottish",
+    "type": "cultures",
+    "displayName": "Scottish",
+    "fields": {
+      "Name": "scottish",
+      "MapColor": {
+        "B": 230,
+        "G": 202,
+        "R": 116,
+        "A": 255,
+        "Hex": "74CAE6"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "scotland"
+      ],
+      "Namelist": "unitedKingdom",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "serbian",
+    "type": "cultures",
+    "displayName": "Serbian",
+    "fields": {
+      "Name": "serbian",
+      "MapColor": {
+        "B": 188,
+        "G": 128,
+        "R": 0,
+        "A": 255,
+        "Hex": "0080BC"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "serbia"
+      ],
+      "Namelist": "serbia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "siberian",
+    "type": "cultures",
+    "displayName": "Siberian",
+    "fields": {
+      "Name": "siberian",
+      "MapColor": {
+        "B": 145,
+        "G": 203,
+        "R": 151,
+        "A": 255,
+        "Hex": "97CB91"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_traditionalism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "siberia"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sicilian",
+    "type": "cultures",
+    "displayName": "Sicilian",
+    "fields": {
+      "Name": "sicilian",
+      "MapColor": {
+        "B": 152,
+        "G": 158,
+        "R": 84,
+        "A": 255,
+        "Hex": "549E98"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_stoicism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "italy"
+      ],
+      "Namelist": "italy",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "singaporian",
+    "type": "cultures",
+    "displayName": "Singaporian",
+    "fields": {
+      "Name": "singaporian",
+      "MapColor": {
+        "B": 171,
+        "G": 127,
+        "R": 38,
+        "A": 255,
+        "Hex": "267FAB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_statism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "singapore"
+      ],
+      "Namelist": "indonesia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "slovakian",
+    "type": "cultures",
+    "displayName": "Slovak",
+    "fields": {
+      "Name": "slovakian",
+      "MapColor": {
+        "B": 239,
+        "G": 201,
+        "R": 190,
+        "A": 255,
+        "Hex": "BEC9EF"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_transformationism",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "slovakia"
+      ],
+      "Namelist": "slovakia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "slovenian",
+    "type": "cultures",
+    "displayName": "Slovene",
+    "fields": {
+      "Name": "slovenian",
+      "MapColor": {
+        "B": 209,
+        "G": 155,
+        "R": 208,
+        "A": 255,
+        "Hex": "D09BD1"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_intellectualism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "slovenia"
+      ],
+      "Namelist": "slovenia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "somali",
+    "type": "cultures",
+    "displayName": "Somali",
+    "fields": {
+      "Name": "somali",
+      "MapColor": {
+        "B": 51,
+        "G": 39,
+        "R": 0,
+        "A": 255,
+        "Hex": "002733"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "somalia"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "angloAfrican",
+    "type": "cultures",
+    "displayName": "South African",
+    "fields": {
+      "Name": "angloAfrican",
+      "MapColor": {
+        "B": 121,
+        "G": 98,
+        "R": 198,
+        "A": 255,
+        "Hex": "C66279"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_moralism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "southAfrica"
+      ],
+      "Namelist": "unitedKingdom",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "southGerman",
+    "type": "cultures",
+    "displayName": "South German",
+    "fields": {
+      "Name": "southGerman",
+      "MapColor": {
+        "B": 108,
+        "G": 100,
+        "R": 83,
+        "A": 255,
+        "Hex": "53646C"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "bavaria"
+      ],
+      "Namelist": "germany",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "southSudanese",
+    "type": "cultures",
+    "displayName": "South Sudanese",
+    "fields": {
+      "Name": "southSudanese",
+      "MapColor": {
+        "B": 77,
+        "G": 129,
+        "R": 125,
+        "A": 255,
+        "Hex": "7D814D"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "southSudan"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "southwestern",
+    "type": "cultures",
+    "displayName": "Southwestern",
+    "fields": {
+      "Name": "southwestern",
+      "MapColor": {
+        "B": 212,
+        "G": 154,
+        "R": 78,
+        "A": 255,
+        "Hex": "4E9AD4"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "arizona"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spanish",
+    "type": "cultures",
+    "displayName": "Spanish",
+    "fields": {
+      "Name": "spanish",
+      "MapColor": {
+        "B": 106,
+        "G": 204,
+        "R": 233,
+        "A": 255,
+        "Hex": "E9CC6A"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "castile"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sriLankan",
+    "type": "cultures",
+    "displayName": "Sri Lankan",
+    "fields": {
+      "Name": "sriLankan",
+      "MapColor": {
+        "B": 50,
+        "G": 131,
+        "R": 170,
+        "A": 255,
+        "Hex": "AA8332"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_stoicism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "sriLanka"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sudanese",
+    "type": "cultures",
+    "displayName": "Sudanese",
+    "fields": {
+      "Name": "sudanese",
+      "MapColor": {
+        "B": 0,
+        "G": 40,
+        "R": 59,
+        "A": 255,
+        "Hex": "3B2800"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_transformationism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "sudan"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "sumatran",
+    "type": "cultures",
+    "displayName": "Sumatran",
+    "fields": {
+      "Name": "sumatran",
+      "MapColor": {
+        "B": 162,
+        "G": 174,
+        "R": 0,
+        "A": 255,
+        "Hex": "00AEA2"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "sumatra"
+      ],
+      "Namelist": "indonesia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "swedish",
+    "type": "cultures",
+    "displayName": "Swedish",
+    "fields": {
+      "Name": "swedish",
+      "MapColor": {
+        "B": 219,
+        "G": 168,
+        "R": 115,
+        "A": 255,
+        "Hex": "73A8DB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "passivist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "sweden"
+      ],
+      "Namelist": "sweden",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "swiss",
+    "type": "cultures",
+    "displayName": "Swiss",
+    "fields": {
+      "Name": "swiss",
+      "MapColor": {
+        "B": 0,
+        "G": 0,
+        "R": 191,
+        "A": 255,
+        "Hex": "BF0000"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_stoicism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "switzerland"
+      ],
+      "Namelist": "switzerland",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "syrian",
+    "type": "cultures",
+    "displayName": "Syrian",
+    "fields": {
+      "Name": "syrian",
+      "MapColor": {
+        "B": 71,
+        "G": 151,
+        "R": 176,
+        "A": 255,
+        "Hex": "B09747"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_utopianism",
+        "assimilationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "syria"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "taiwanese",
+    "type": "cultures",
+    "displayName": "Taiwanese",
+    "fields": {
+      "Name": "taiwanese",
+      "MapColor": {
+        "B": 189,
+        "G": 32,
+        "R": 193,
+        "A": 255,
+        "Hex": "C120BD"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "taiwan"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tajik",
+    "type": "cultures",
+    "displayName": "Tajik",
+    "fields": {
+      "Name": "tajik",
+      "MapColor": {
+        "B": 183,
+        "G": 183,
+        "R": 118,
+        "A": 255,
+        "Hex": "76B7B7"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tajikistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tamil",
+    "type": "cultures",
+    "displayName": "Tamil",
+    "fields": {
+      "Name": "tamil",
+      "MapColor": {
+        "B": 191,
+        "G": 216,
+        "R": 49,
+        "A": 255,
+        "Hex": "31D8BF"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tamil"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tanzanian",
+    "type": "cultures",
+    "displayName": "Tanzanian",
+    "fields": {
+      "Name": "tanzanian",
+      "MapColor": {
+        "B": 187,
+        "G": 223,
+        "R": 67,
+        "A": 255,
+        "Hex": "43DFBB"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tanzania"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "telegu",
+    "type": "cultures",
+    "displayName": "Telegu",
+    "fields": {
+      "Name": "telegu",
+      "MapColor": {
+        "B": 70,
+        "G": 88,
+        "R": 216,
+        "A": 255,
+        "Hex": "D85846"
+      },
+      "Traits": [
+        "religion_hindu",
+        "idea_tribalism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "telegu"
+      ],
+      "Namelist": "india",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "texan",
+    "type": "cultures",
+    "displayName": "Texan",
+    "fields": {
+      "Name": "texan",
+      "MapColor": {
+        "B": 157,
+        "G": 87,
+        "R": 0,
+        "A": 255,
+        "Hex": "00579D"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "firearmAffinity"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "texas"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "thai",
+    "type": "cultures",
+    "displayName": "Thai",
+    "fields": {
+      "Name": "thai",
+      "MapColor": {
+        "B": 140,
+        "G": 163,
+        "R": 108,
+        "A": 255,
+        "Hex": "6CA38C"
+      },
+      "Traits": [
+        "idea_prosperism",
+        "idea_statism",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "thailand"
+      ],
+      "Namelist": "vietnam",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "thorian",
+    "type": "cultures",
+    "displayName": "Thorian",
+    "fields": {
+      "Name": "thorian",
+      "MapColor": {
+        "B": 167,
+        "G": 142,
+        "R": 90,
+        "A": 255,
+        "Hex": "5A8EA7"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_intellectualism",
+        "easygoing",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "thorich"
+      ],
+      "Namelist": "sweden",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tibetan",
+    "type": "cultures",
+    "displayName": "Tibetan",
+    "fields": {
+      "Name": "tibetan",
+      "MapColor": {
+        "B": 187,
+        "G": 193,
+        "R": 159,
+        "A": 255,
+        "Hex": "9FC1BB"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_traditionalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tibet"
+      ],
+      "Namelist": "china",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "titanian",
+    "type": "cultures",
+    "displayName": "Titanian",
+    "fields": {
+      "Name": "titanian",
+      "MapColor": {
+        "B": 0,
+        "G": 120,
+        "R": 177,
+        "A": 255,
+        "Hex": "B17800"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_individualism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "titan"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tricorpic",
+    "type": "cultures",
+    "displayName": "Tricolonial",
+    "fields": {
+      "Name": "tricorpic",
+      "MapColor": {
+        "B": 180,
+        "G": 106,
+        "R": 115,
+        "A": 255,
+        "Hex": "736AB4"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "consumerCulture",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tricorp"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tuareg",
+    "type": "cultures",
+    "displayName": "Tuareg",
+    "fields": {
+      "Name": "tuareg",
+      "MapColor": {
+        "B": 84,
+        "G": 196,
+        "R": 107,
+        "A": 255,
+        "Hex": "6BC454"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tuareg"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tukulor",
+    "type": "cultures",
+    "displayName": "Tukulor",
+    "fields": {
+      "Name": "tukulor",
+      "MapColor": {
+        "B": 71,
+        "G": 111,
+        "R": 141,
+        "A": 255,
+        "Hex": "8D6F47"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "monumentalist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tukulor"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "tunisian",
+    "type": "cultures",
+    "displayName": "Tunisian",
+    "fields": {
+      "Name": "tunisian",
+      "MapColor": {
+        "B": 168,
+        "G": 85,
+        "R": 192,
+        "A": 255,
+        "Hex": "C055A8"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_transformationism",
+        "isolationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "tunisia"
+      ],
+      "Namelist": "arabia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "turkish",
+    "type": "cultures",
+    "displayName": "Turkish",
+    "fields": {
+      "Name": "turkish",
+      "MapColor": {
+        "B": 83,
+        "G": 170,
+        "R": 204,
+        "A": 255,
+        "Hex": "CCAA53"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_moralism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "turkey"
+      ],
+      "Namelist": "turkey",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "turkmen",
+    "type": "cultures",
+    "displayName": "Turkmen",
+    "fields": {
+      "Name": "turkmen",
+      "MapColor": {
+        "B": 147,
+        "G": 159,
+        "R": 110,
+        "A": 255,
+        "Hex": "6E9F93"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "luddite"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "turkmenistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ugandan",
+    "type": "cultures",
+    "displayName": "Ugandan",
+    "fields": {
+      "Name": "ugandan",
+      "MapColor": {
+        "B": 0,
+        "G": 113,
+        "R": 161,
+        "A": 255,
+        "Hex": "A17100"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_tribalism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "uganda",
+        "burundi"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ukrainian",
+    "type": "cultures",
+    "displayName": "Ukrainian",
+    "fields": {
+      "Name": "ukrainian",
+      "MapColor": {
+        "B": 220,
+        "G": 189,
+        "R": 0,
+        "A": 255,
+        "Hex": "00BDDC"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_tribalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ukraine"
+      ],
+      "Namelist": "ukraine",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "ulumain",
+    "type": "cultures",
+    "displayName": "Ulumain",
+    "fields": {
+      "Name": "ulumain",
+      "MapColor": {
+        "B": 189,
+        "G": 119,
+        "R": 203,
+        "A": 255,
+        "Hex": "CB77BD"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "robophile",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "ulumain"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "uranian",
+    "type": "cultures",
+    "displayName": "Uranian",
+    "fields": {
+      "Name": "uranian",
+      "MapColor": {
+        "B": 213,
+        "G": 201,
+        "R": 0,
+        "A": 255,
+        "Hex": "00C9D5"
+      },
+      "Traits": [
+        "species_human",
+        "religion_atheist",
+        "idea_prosperism",
+        "diligent",
+        "irridentist",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "uranus"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "elite",
+    "type": "cultures",
+    "displayName": "Urbanite",
+    "fields": {
+      "Name": "elite",
+      "MapColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFF"
+      },
+      "Traits": [
+        "religion_hegelian",
+        "idea_transformationism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "europe"
+      ],
+      "Namelist": "euroElite",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "uruguayan",
+    "type": "cultures",
+    "displayName": "Uruguayan",
+    "fields": {
+      "Name": "uruguayan",
+      "MapColor": {
+        "B": 167,
+        "G": 198,
+        "R": 115,
+        "A": 255,
+        "Hex": "73C6A7"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "socialContract"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "uruguay"
+      ],
+      "Namelist": "spain",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "uyghur",
+    "type": "cultures",
+    "displayName": "Uyghur",
+    "fields": {
+      "Name": "uyghur",
+      "MapColor": {
+        "B": 0,
+        "G": 171,
+        "R": 73,
+        "A": 255,
+        "Hex": "49AB00"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_obliterationOfSelf",
+        "mandateOfHeaven"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "sinkiang"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "uzbek",
+    "type": "cultures",
+    "displayName": "Uzbek",
+    "fields": {
+      "Name": "uzbek",
+      "MapColor": {
+        "B": 184,
+        "G": 110,
+        "R": 96,
+        "A": 255,
+        "Hex": "606EB8"
+      },
+      "Traits": [
+        "religion_islam",
+        "idea_traditionalism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "uzbekistan"
+      ],
+      "Namelist": "pakistan",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "vanuan",
+    "type": "cultures",
+    "displayName": "Vanuan",
+    "fields": {
+      "Name": "vanuan",
+      "MapColor": {
+        "B": 216,
+        "G": 94,
+        "R": 205,
+        "A": 255,
+        "Hex": "CD5ED8"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_prosperism",
+        "assimilationist",
+        "easygoing"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "vanus"
+      ],
+      "Namelist": "canada",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "veneramerican",
+    "type": "cultures",
+    "displayName": "Veneramerican",
+    "fields": {
+      "Name": "veneramerican",
+      "MapColor": {
+        "B": 178,
+        "G": 185,
+        "R": 55,
+        "A": 255,
+        "Hex": "37B9B2"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "diligent"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "venusAmerica",
+        "venusGamma",
+        "venusAncap"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venerussian",
+    "type": "cultures",
+    "displayName": "Venerussian",
+    "fields": {
+      "Name": "venerussian",
+      "MapColor": {
+        "B": 95,
+        "G": 200,
+        "R": 157,
+        "A": 255,
+        "Hex": "9DC85F"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_moralism",
+        "robophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "venusRussia",
+        "venusAlgorithm"
+      ],
+      "Namelist": "russia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "venezuelan",
+    "type": "cultures",
+    "displayName": "Venezuelan",
+    "fields": {
+      "Name": "venezuelan",
+      "MapColor": {
+        "B": 76,
+        "G": 163,
+        "R": 212,
+        "A": 255,
+        "Hex": "D4A34C"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_statism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "venezuela"
+      ],
+      "Namelist": "colombia",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "vietnamese",
+    "type": "cultures",
+    "displayName": "Vietnamese",
+    "fields": {
+      "Name": "vietnamese",
+      "MapColor": {
+        "B": 117,
+        "G": 103,
+        "R": 201,
+        "A": 255,
+        "Hex": "C96775"
+      },
+      "Traits": [
+        "religion_marxist",
+        "idea_stoicism",
+        "urbanophile"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "vietnam"
+      ],
+      "Namelist": "vietnam",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "welsh",
+    "type": "cultures",
+    "displayName": "Welsh",
+    "fields": {
+      "Name": "welsh",
+      "MapColor": {
+        "B": 165,
+        "G": 232,
+        "R": 168,
+        "A": 255,
+        "Hex": "A8E8A5"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_guiltComplex",
+        "frontierSpirit"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "scotland"
+      ],
+      "Namelist": "unitedKingdom",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "yankee",
+    "type": "cultures",
+    "displayName": "Yankee",
+    "fields": {
+      "Name": "yankee",
+      "MapColor": {
+        "B": 227,
+        "G": 84,
+        "R": 26,
+        "A": 255,
+        "Hex": "1A54E3"
+      },
+      "Traits": [
+        "religion_atheist",
+        "idea_individualism",
+        "assimilationist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "yankeeland"
+      ],
+      "Namelist": "unitedStates",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "yoruba",
+    "type": "cultures",
+    "displayName": "Yoruba",
+    "fields": {
+      "Name": "yoruba",
+      "MapColor": {
+        "B": 156,
+        "G": 85,
+        "R": 170,
+        "A": 255,
+        "Hex": "AA559C"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "insular"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "yoruba"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "zaire",
+    "type": "cultures",
+    "displayName": "Zaire",
+    "fields": {
+      "Name": "zaire",
+      "MapColor": {
+        "B": 41,
+        "G": 178,
+        "R": 143,
+        "A": 255,
+        "Hex": "8FB229"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_tribalism",
+        "irridentist"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "zaire"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "zimbabwean",
+    "type": "cultures",
+    "displayName": "Zimbabwean",
+    "fields": {
+      "Name": "zimbabwean",
+      "MapColor": {
+        "B": 149,
+        "G": 184,
+        "R": 0,
+        "A": 255,
+        "Hex": "00B895"
+      },
+      "Traits": [
+        "religion_christian",
+        "idea_transformationism",
+        "consumerCulture"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "zimbabwe",
+        "zambia"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "zulu",
+    "type": "cultures",
+    "displayName": "Zulu",
+    "fields": {
+      "Name": "zulu",
+      "MapColor": {
+        "B": 18,
+        "G": 97,
+        "R": 86,
+        "A": 255,
+        "Hex": "566112"
+      },
+      "Traits": [
+        "religion_occult",
+        "idea_irridentist",
+        "prideful"
+      ],
+      "Evolution": "None",
+      "EvolutionProgress": 0,
+      "Controller": "None",
+      "Heartland": "None",
+      "Cohesion": 0,
+      "BaseTag": [
+        "zulu",
+        "eswatini",
+        "lesotho"
+      ],
+      "Namelist": "africa",
+      "TraitIdeas": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]

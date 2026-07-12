@@ -1,0 +1,2742 @@
+[
+  {
+    "id": "activistEconomics",
+    "type": "faction-privileges",
+    "displayName": "Activist Economics",
+    "icon": "activistEconomics",
+    "fields": {
+      "Name": "activistEconomics",
+      "Faction": "clergy",
+      "Icon": "activistEconomics",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectBuildCostMult\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": -0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "activistEconomics"
+      }
+    ]
+  },
+  {
+    "id": "activistRecruitment",
+    "type": "faction-privileges",
+    "displayName": "Activist Recruitment",
+    "icon": "activistRecruitment",
+    "fields": {
+      "Name": "activistRecruitment",
+      "Faction": "clergy",
+      "Icon": "activistRecruitment",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "educationTech_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"assimilationMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "middleClass",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "activistRecruitment"
+      }
+    ]
+  },
+  {
+    "id": "espionagePowerFocus",
+    "type": "faction-privileges",
+    "displayName": "Advanced Operations Techniques",
+    "icon": "espionagePowerFocus",
+    "fields": {
+      "Name": "espionagePowerFocus",
+      "Faction": "espionageFaction",
+      "Icon": "espionagePowerFocus",
+      "StabilityGain": -5,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.05,
+      "LoyaltyImpact": 0,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "factionPrivilegePower_2"
+      },
+      "MaxLevel": 999,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "espionageFaction",
+        "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePowerFocus"
+      }
+    ]
+  },
+  {
+    "id": "antitrustEnforcement",
+    "type": "faction-privileges",
+    "displayName": "Antitrust Enforcement",
+    "icon": "antitrustEnforcement",
+    "fields": {
+      "Name": "antitrustEnforcement",
+      "Faction": "middleClass",
+      "Icon": "antitrustEnforcement",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "corporate",
+        "value": -0.1
+      },
+      {
+        "key": "factionEffectMult",
+        "value1": "middleClass",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "antitrustEnforcement"
+      }
+    ]
+  },
+  {
+    "id": "militaryProfessionalism",
+    "type": "faction-privileges",
+    "displayName": "Army Professionalism",
+    "icon": "militaryProfessionalism",
+    "fields": {
+      "Name": "militaryProfessionalism",
+      "Faction": "military",
+      "Icon": "militaryProfessionalism",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "armyOrganization_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"siegeAbility\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryProfessionalism"
+      }
+    ]
+  },
+  {
+    "id": "autocracy",
+    "type": "faction-privileges",
+    "displayName": "Autocracy",
+    "icon": "autocracy",
+    "fields": {
+      "Name": "autocracy",
+      "Faction": "upperClass",
+      "Icon": "autocracy",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "manpowerRecoveryRate",
+        "value": 0.5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autocracy"
+      }
+    ]
+  },
+  {
+    "id": "autonomousProvinces",
+    "type": "faction-privileges",
+    "displayName": "Autonomous Provinces",
+    "icon": "autonomousProvinces",
+    "fields": {
+      "Name": "autonomousProvinces",
+      "Faction": "upperClass",
+      "Icon": "autonomousProvinces",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"protectorateAdmin\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "autonomousProvinces"
+      }
+    ]
+  },
+  {
+    "id": "spiritualAwakening",
+    "type": "faction-privileges",
+    "displayName": "Awakened Spirituality",
+    "icon": "spiritualAwakening",
+    "fields": {
+      "Name": "spiritualAwakening",
+      "Faction": "clergy",
+      "Icon": "spiritualAwakening",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "educationTech_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"monument\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "spiritualAwakening"
+      }
+    ]
+  },
+  {
+    "id": "bourgeoisManagement",
+    "type": "faction-privileges",
+    "displayName": "Bourgeois Management",
+    "icon": "bourgeoisManagement",
+    "fields": {
+      "Name": "bourgeoisManagement",
+      "Faction": "middleClass",
+      "Icon": "bourgeoisManagement",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"resourceMult\",Value1=\"electronics\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "bourgeoisManagement"
+      }
+    ]
+  },
+  {
+    "id": "brainwashing",
+    "type": "faction-privileges",
+    "displayName": "Brainwashing",
+    "icon": "brainwashing",
+    "fields": {
+      "Name": "brainwashing",
+      "Faction": "clergy",
+      "Icon": "brainwashing",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "brainwashing"
+      }
+    ]
+  },
+  {
+    "id": "privilegeBribe",
+    "type": "faction-privileges",
+    "displayName": "Bribe Faction",
+    "icon": "enactDecision",
+    "fields": {
+      "Name": "privilegeBribe",
+      "Faction": "all",
+      "Icon": "enactDecision",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"budgetModifier\",Value1=\"population\",Value2=\"\",Value3=\"\")": -2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "enactDecision"
+      }
+    ]
+  },
+  {
+    "id": "militaryBureaucracy",
+    "type": "faction-privileges",
+    "displayName": "Bureaucratized Military",
+    "icon": "militaryBureaucracy",
+    "fields": {
+      "Name": "militaryBureaucracy",
+      "Faction": "bureaucracy",
+      "Icon": "militaryBureaucracy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryBureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "citizenService",
+    "type": "faction-privileges",
+    "displayName": "Citizen Service",
+    "icon": "citizenService",
+    "fields": {
+      "Name": "citizenService",
+      "Faction": "military",
+      "Icon": "citizenService",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"factionEffectMult\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "citizenService"
+      }
+    ]
+  },
+  {
+    "id": "mindControl",
+    "type": "faction-privileges",
+    "displayName": "Class-5 Thought-Weapons",
+    "icon": "mindControl",
+    "fields": {
+      "Name": "mindControl",
+      "Faction": "bureaucracy",
+      "Icon": "mindControl",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "cultureTraitChangeCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "cultureIdeaCostMult",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mindControl"
+      }
+    ]
+  },
+  {
+    "id": "competitiveEmployment",
+    "type": "faction-privileges",
+    "displayName": "Competitive Employment",
+    "icon": "competitiveEmployment",
+    "fields": {
+      "Name": "competitiveEmployment",
+      "Faction": "laborer",
+      "Icon": "competitiveEmployment",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.3
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "competitiveEmployment"
+      }
+    ]
+  },
+  {
+    "id": "corpoCollusion",
+    "type": "faction-privileges",
+    "displayName": "Corporate Collusion",
+    "icon": "corpoCollusion",
+    "fields": {
+      "Name": "corpoCollusion",
+      "Faction": "corporate",
+      "Icon": "corpoCollusion",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.5
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corpoCollusion"
+      }
+    ]
+  },
+  {
+    "id": "corporateControl",
+    "type": "faction-privileges",
+    "displayName": "Corporatocracy",
+    "icon": "corporateControl",
+    "fields": {
+      "Name": "corporateControl",
+      "Faction": "corporate",
+      "Icon": "corporateControl",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "habitability_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"debtEffectMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corporateControl"
+      }
+    ]
+  },
+  {
+    "id": "espionageDefensiveFocus",
+    "type": "faction-privileges",
+    "displayName": "Counter Espionage Effort",
+    "icon": "espionageDefensiveFocus",
+    "fields": {
+      "Name": "espionageDefensiveFocus",
+      "Faction": "espionageFaction",
+      "Icon": "espionageDefensiveFocus",
+      "StabilityGain": -5,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.025,
+      "LoyaltyImpact": 0,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "factionPrivilegePower_1"
+      },
+      "MaxLevel": 999,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "espionageDefense",
+        "value": 0.02
+      },
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageDefensiveFocus"
+      }
+    ]
+  },
+  {
+    "id": "credentialism",
+    "type": "faction-privileges",
+    "displayName": "Credentialism",
+    "icon": "credentialism",
+    "fields": {
+      "Name": "credentialism",
+      "Faction": "clergy",
+      "Icon": "credentialism",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"charisma\",Value2=\"\",Value3=\"\")": 2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "credentialism"
+      }
+    ]
+  },
+  {
+    "id": "cronyContracts",
+    "type": "faction-privileges",
+    "displayName": "Crony Contracts",
+    "icon": "cronyContracts",
+    "fields": {
+      "Name": "cronyContracts",
+      "Faction": "corporate",
+      "Icon": "cronyContracts",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.1,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.15
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cronyContracts"
+      }
+    ]
+  },
+  {
+    "id": "cronyism",
+    "type": "faction-privileges",
+    "displayName": "Cronyism",
+    "icon": "cronyism",
+    "fields": {
+      "Name": "cronyism",
+      "Faction": "upperClass",
+      "Icon": "cronyism",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "cronyism"
+      }
+    ]
+  },
+  {
+    "id": "espionageCrowdSourcing",
+    "type": "faction-privileges",
+    "displayName": "Crowd-Sourced Intel",
+    "icon": "espionageCrowdSourcing",
+    "fields": {
+      "Name": "espionageCrowdSourcing",
+      "Faction": "espionageFaction",
+      "Icon": "espionageCrowdSourcing",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.05,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "factionPrivilegePower_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"espionageEffect\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
+        "(Key=\"factionPowerAdd\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": 0.2,
+        "(Key=\"factionPowerAdd\",Value1=\"middleClass\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageCrowdSourcing"
+      }
+    ]
+  },
+  {
+    "id": "espionageOffensiveFocus",
+    "type": "faction-privileges",
+    "displayName": "Deep Cover Operatives",
+    "icon": "espionageOffensiveFocus",
+    "fields": {
+      "Name": "espionageOffensiveFocus",
+      "Faction": "espionageFaction",
+      "Icon": "espionageOffensiveFocus",
+      "StabilityGain": -5,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.025,
+      "LoyaltyImpact": 0,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 999,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "espionageOffense",
+        "value": 0.075
+      },
+      {
+        "key": "espionageDefense",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageOffensiveFocus"
+      }
+    ]
+  },
+  {
+    "id": "digitalId",
+    "type": "faction-privileges",
+    "displayName": "Digital ID",
+    "icon": "digitalId",
+    "fields": {
+      "Name": "digitalId",
+      "Faction": "bureaucracy",
+      "Icon": "digitalId",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"stabilityOffset\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
+      }
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "laborer",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "digitalId"
+      }
+    ]
+  },
+  {
+    "id": "economicFreedom",
+    "type": "faction-privileges",
+    "displayName": "Economic Freedom",
+    "icon": "economicFreedom",
+    "fields": {
+      "Name": "economicFreedom",
+      "Faction": "middleClass",
+      "Icon": "economicFreedom",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.3,
+        "(Key=\"projectBuildSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economicFreedom"
+      }
+    ]
+  },
+  {
+    "id": "efficientBureaucracy",
+    "type": "faction-privileges",
+    "displayName": "Efficient Bureaucracy",
+    "icon": "efficientBureaucracy",
+    "fields": {
+      "Name": "efficientBureaucracy",
+      "Faction": "bureaucracy",
+      "Icon": "efficientBureaucracy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectUpkeepMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "efficientBureaucracy"
+      }
+    ]
+  },
+  {
+    "id": "eliteLeadership",
+    "type": "faction-privileges",
+    "displayName": "Elite Leadership",
+    "icon": "eliteLeadership",
+    "fields": {
+      "Name": "eliteLeadership",
+      "Faction": "upperClass",
+      "Icon": "eliteLeadership",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "eliteLeadership"
+      }
+    ]
+  },
+  {
+    "id": "elitePatronage",
+    "type": "faction-privileges",
+    "displayName": "Elite Patronage",
+    "icon": "elitePatronage",
+    "fields": {
+      "Name": "elitePatronage",
+      "Faction": "upperClass",
+      "Icon": "elitePatronage",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": -0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"management\",Value2=\"\",Value3=\"\")": 2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "elitePatronage"
+      }
+    ]
+  },
+  {
+    "id": "elitism",
+    "type": "faction-privileges",
+    "displayName": "Elitism",
+    "icon": "elitism",
+    "fields": {
+      "Name": "elitism",
+      "Faction": "upperClass",
+      "Icon": "elitism",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderSkillAdd\",Value1=\"strategy\",Value2=\"\",Value3=\"\")": 2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "elitism"
+      }
+    ]
+  },
+  {
+    "id": "ethicsAreWeakness",
+    "type": "faction-privileges",
+    "displayName": "Ethics are Weakness",
+    "icon": "ethicsAreWeakness",
+    "fields": {
+      "Name": "ethicsAreWeakness",
+      "Faction": "corporate",
+      "Icon": "ethicsAreWeakness",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "habitability_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"researchMult\",Value1=\"enigmatic\",Value2=\"\",Value3=\"\")": 0.5,
+        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ethicsAreWeakness"
+      }
+    ]
+  },
+  {
+    "id": "extendedShifts",
+    "type": "faction-privileges",
+    "displayName": "Extended Shifts",
+    "icon": "extendedShifts",
+    "fields": {
+      "Name": "extendedShifts",
+      "Faction": "laborer",
+      "Icon": "extendedShifts",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": -0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"workforceRatioAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "extendedShifts"
+      }
+    ]
+  },
+  {
+    "id": "foreignLaborAdvancement",
+    "type": "faction-privileges",
+    "displayName": "Foreign Replacement Labor",
+    "icon": "foreignLaborAdvancement",
+    "fields": {
+      "Name": "foreignLaborAdvancement",
+      "Faction": "middleClass",
+      "Icon": "foreignLaborAdvancement",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": -0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "foreignLaborAdvancement"
+      }
+    ]
+  },
+  {
+    "id": "freeAssociation",
+    "type": "faction-privileges",
+    "displayName": "Free Association",
+    "icon": "freeAssociation",
+    "fields": {
+      "Name": "freeAssociation",
+      "Faction": "middleClass",
+      "Icon": "freeAssociation",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"immigrationPull\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.33
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "freeAssociation"
+      }
+    ]
+  },
+  {
+    "id": "freeContracts",
+    "type": "faction-privileges",
+    "displayName": "Free Contracts",
+    "icon": "freeContracts",
+    "fields": {
+      "Name": "freeContracts",
+      "Faction": "middleClass",
+      "Icon": "freeContracts",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"resourceModifier\",Value1=\"research\",Value2=\"\",Value3=\"\")": 5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "freeContracts"
+      }
+    ]
+  },
+  {
+    "id": "freeSpeech",
+    "type": "faction-privileges",
+    "displayName": "Freedom of Speech",
+    "icon": "freeSpeech",
+    "fields": {
+      "Name": "freeSpeech",
+      "Faction": "middleClass",
+      "Icon": "freeSpeech",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "freeSpeech"
+      }
+    ]
+  },
+  {
+    "id": "superiorIdeology",
+    "type": "faction-privileges",
+    "displayName": "Ideological Supremacy",
+    "icon": "superiorIdeology",
+    "fields": {
+      "Name": "superiorIdeology",
+      "Faction": "clergy",
+      "Icon": "superiorIdeology",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "educationTech_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"privilegeGrantCost\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "superiorIdeology"
+      }
+    ]
+  },
+  {
+    "id": "ideologicalWarfare",
+    "type": "faction-privileges",
+    "displayName": "Ideological Warfare",
+    "icon": "ideologicalWarfare",
+    "fields": {
+      "Name": "ideologicalWarfare",
+      "Faction": "clergy",
+      "Icon": "ideologicalWarfare",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "educationTech_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"resourceCapacityMult\",Value1=\"diplomacyCapacity\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ideologicalWarfare"
+      }
+    ]
+  },
+  {
+    "id": "redTape",
+    "type": "faction-privileges",
+    "displayName": "Increased Red Tape",
+    "icon": "redTape",
+    "fields": {
+      "Name": "redTape",
+      "Faction": "bureaucracy",
+      "Icon": "redTape",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"sliderMaxAdd\",Value1=\"resourceTax\",Value2=\"\",Value3=\"\")": 0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "redTape"
+      }
+    ]
+  },
+  {
+    "id": "laborContracts",
+    "type": "faction-privileges",
+    "displayName": "Labor Contracts",
+    "icon": "laborContracts",
+    "fields": {
+      "Name": "laborContracts",
+      "Faction": "laborer",
+      "Icon": "laborContracts",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborContracts"
+      }
+    ]
+  },
+  {
+    "id": "freeTradeEconomics",
+    "type": "faction-privileges",
+    "displayName": "Lassez Faire Economics",
+    "icon": "unleashedFreedom",
+    "fields": {
+      "Name": "freeTradeEconomics",
+      "Faction": "middleClass",
+      "Icon": "unleashedFreedom",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [
+      {
+        "key": "tradeBarriersAdd",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashedFreedom"
+      }
+    ]
+  },
+  {
+    "id": "laxRegulations",
+    "type": "faction-privileges",
+    "displayName": "Lax Regulation",
+    "icon": "laxRegulations",
+    "fields": {
+      "Name": "laxRegulations",
+      "Faction": "corporate",
+      "Icon": "laxRegulations",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"popAttrition\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.0001
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laxRegulations"
+      }
+    ]
+  },
+  {
+    "id": "macromanagement",
+    "type": "faction-privileges",
+    "displayName": "Macromanagement",
+    "icon": "macromanagement",
+    "fields": {
+      "Name": "macromanagement",
+      "Faction": "bureaucracy",
+      "Icon": "macromanagement",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "macromanagement"
+      }
+    ]
+  },
+  {
+    "id": "martialConquest",
+    "type": "faction-privileges",
+    "displayName": "Martial Conquest",
+    "icon": "martialConquest",
+    "fields": {
+      "Name": "martialConquest",
+      "Faction": "military",
+      "Icon": "martialConquest",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "armyOrganization_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"integrationCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "martialConquest"
+      }
+    ]
+  },
+  {
+    "id": "massCensorship",
+    "type": "faction-privileges",
+    "displayName": "Mass Censorship",
+    "icon": "massCensorship",
+    "fields": {
+      "Name": "massCensorship",
+      "Faction": "bureaucracy",
+      "Icon": "massCensorship",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"warExhaustionMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massCensorship"
+      }
+    ]
+  },
+  {
+    "id": "masteryOfShadows",
+    "type": "faction-privileges",
+    "displayName": "Mastery of Shadows",
+    "icon": "masteryOfShadows",
+    "fields": {
+      "Name": "masteryOfShadows",
+      "Faction": "espionageFaction",
+      "Icon": "masteryOfShadows",
+      "StabilityGain": -20,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "factionPrivilegePower_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "espionageEffect",
+        "value": 0.25
+      },
+      {
+        "key": "unityMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "masteryOfShadows"
+      }
+    ]
+  },
+  {
+    "id": "megaUrbanization",
+    "type": "faction-privileges",
+    "displayName": "Mega Urbanization",
+    "icon": "megaUrbanization",
+    "fields": {
+      "Name": "megaUrbanization",
+      "Faction": "corporate",
+      "Icon": "megaUrbanization",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "habitability_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "megaUrbanization"
+      }
+    ]
+  },
+  {
+    "id": "mercenaryAdvisors",
+    "type": "faction-privileges",
+    "displayName": "Mercenary Advisors",
+    "icon": "mercenaryAdvisors",
+    "fields": {
+      "Name": "mercenaryAdvisors",
+      "Faction": "corporate",
+      "Icon": "mercenaryAdvisors",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitStatMult\",Value1=\"breakthrough\",Value2=\"\",Value3=\"\")": 0.05
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "mercenaryAdvisors"
+      }
+    ]
+  },
+  {
+    "id": "militaryEducation",
+    "type": "faction-privileges",
+    "displayName": "Militarized Education",
+    "icon": "militaryEducation",
+    "fields": {
+      "Name": "militaryEducation",
+      "Faction": "military",
+      "Icon": "militaryEducation",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"manpowerRecoveryRate\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "militaryEducation"
+      }
+    ]
+  },
+  {
+    "id": "fanaticMilitary",
+    "type": "faction-privileges",
+    "displayName": "Military Fanaticism",
+    "icon": "fanaticMilitary",
+    "fields": {
+      "Name": "fanaticMilitary",
+      "Faction": "clergy",
+      "Icon": "fanaticMilitary",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitStatMult\",Value1=\"breakthrough\",Value2=\"\",Value3=\"\")": 0.1,
+        "(Key=\"unitStatMult\",Value1=\"health\",Value2=\"\",Value3=\"\")": -0.05
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "fanaticMilitary"
+      }
+    ]
+  },
+  {
+    "id": "militaryIndustrialComplex",
+    "type": "faction-privileges",
+    "displayName": "Military-Industrial Complex",
+    "icon": "privilegeMIC",
+    "fields": {
+      "Name": "militaryIndustrialComplex",
+      "Faction": "military",
+      "Icon": "privilegeMIC",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitCostMult\",Value1=\"industry\",Value2=\"\",Value3=\"\")": -0.05
+      }
+    },
+    "modifiers": [
+      {
+        "key": "factionEffectMult",
+        "value1": "corporate",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "privilegeMIC"
+      }
+    ]
+  },
+  {
+    "id": "monopolyProtection",
+    "type": "faction-privileges",
+    "displayName": "Monopoly Protections",
+    "icon": "monopolyProtection",
+    "fields": {
+      "Name": "monopolyProtection",
+      "Faction": "corporate",
+      "Icon": "monopolyProtection",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "habitability_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"robotFactory\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "monopolyProtection"
+      }
+    ]
+  },
+  {
+    "id": "ngoDominance",
+    "type": "faction-privileges",
+    "displayName": "NGO Dominance",
+    "icon": "ngoDominance",
+    "fields": {
+      "Name": "ngoDominance",
+      "Faction": "bureaucracy",
+      "Icon": "ngoDominance",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"logisticsHub\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "ngoDominance"
+      }
+    ]
+  },
+  {
+    "id": "nobleObligation",
+    "type": "faction-privileges",
+    "displayName": "Obligations of Nobility",
+    "icon": "nobleObligation",
+    "fields": {
+      "Name": "nobleObligation",
+      "Faction": "upperClass",
+      "Icon": "nobleObligation",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectBuildCostMult\",Value1=\"monument\",Value2=\"\",Value3=\"\")": -0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "nobleObligation"
+      }
+    ]
+  },
+  {
+    "id": "politicalCommissars",
+    "type": "faction-privileges",
+    "displayName": "Political Commissars",
+    "icon": "politicalCommissars",
+    "fields": {
+      "Name": "politicalCommissars",
+      "Faction": "clergy",
+      "Icon": "politicalCommissars",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "politicalCommissars"
+      }
+    ]
+  },
+  {
+    "id": "popularWill",
+    "type": "faction-privileges",
+    "displayName": "Popular Will",
+    "icon": "popularWill",
+    "fields": {
+      "Name": "popularWill",
+      "Faction": "laborer",
+      "Icon": "popularWill",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "popularWill"
+      }
+    ]
+  },
+  {
+    "id": "populism",
+    "type": "faction-privileges",
+    "displayName": "Populism",
+    "icon": "populism",
+    "fields": {
+      "Name": "populism",
+      "Faction": "laborer",
+      "Icon": "populism",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      }
+    },
+    "modifiers": [
+      {
+        "key": "factionEffectMult",
+        "value1": "middleClass",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "populism"
+      }
+    ]
+  },
+  {
+    "id": "populistEconomics",
+    "type": "faction-privileges",
+    "displayName": "Populist Economics",
+    "icon": "populistEconomics",
+    "fields": {
+      "Name": "populistEconomics",
+      "Faction": "laborer",
+      "Icon": "populistEconomics",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "industrialPower_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"edictBenefitMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [
+      {
+        "key": "tradeBarriersAdd",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "populistEconomics"
+      }
+    ]
+  },
+  {
+    "id": "powergames",
+    "type": "faction-privileges",
+    "displayName": "Power Games",
+    "icon": "powergames",
+    "fields": {
+      "Name": "powergames",
+      "Faction": "upperClass",
+      "Icon": "powergames",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitExperienceGainMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "powergames"
+      }
+    ]
+  },
+  {
+    "id": "espionagePsyopPower",
+    "type": "faction-privileges",
+    "displayName": "Psychological Operations",
+    "icon": "espionagePsyopPower",
+    "fields": {
+      "Name": "espionagePsyopPower",
+      "Faction": "espionageFaction",
+      "Icon": "espionagePsyopPower",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.05,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "factionPrivilegePower_3"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05,
+        "(Key=\"factionLoyaltyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePsyopPower"
+      }
+    ]
+  },
+  {
+    "id": "algorithmicFlagging",
+    "type": "faction-privileges",
+    "displayName": "Red Flag Laws",
+    "icon": "algorithmicFlagging",
+    "fields": {
+      "Name": "algorithmicFlagging",
+      "Faction": "bureaucracy",
+      "Icon": "algorithmicFlagging",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"edictBenefitMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "algorithmicFlagging"
+      }
+    ]
+  },
+  {
+    "id": "regionalAutonomy",
+    "type": "faction-privileges",
+    "displayName": "Regional Autonomy",
+    "icon": "regionalAutonomy",
+    "fields": {
+      "Name": "regionalAutonomy",
+      "Faction": "middleClass",
+      "Icon": "regionalAutonomy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.08
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "regionalAutonomy"
+      }
+    ]
+  },
+  {
+    "id": "civilianFirearms",
+    "type": "faction-privileges",
+    "displayName": "Right to Bear Arms",
+    "icon": "civilianFirearms",
+    "fields": {
+      "Name": "civilianFirearms",
+      "Faction": "laborer",
+      "Icon": "civilianFirearms",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitQualityMult\",Value1=\"infantry\",Value2=\"\",Value3=\"\")": 0.25,
+        "(Key=\"unitQualityMult\",Value1=\"irregular\",Value2=\"\",Value3=\"\")": 0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "civilianFirearms"
+      }
+    ]
+  },
+  {
+    "id": "rigidOligarchy",
+    "type": "faction-privileges",
+    "displayName": "Rigid Oligarchy",
+    "icon": "rigidOligarchy",
+    "fields": {
+      "Name": "rigidOligarchy",
+      "Faction": "upperClass",
+      "Icon": "rigidOligarchy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "expansion_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"fortDefense\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rigidOligarchy"
+      }
+    ]
+  },
+  {
+    "id": "secularAuthority",
+    "type": "faction-privileges",
+    "displayName": "Secular Authority",
+    "icon": "secularAuthority",
+    "fields": {
+      "Name": "secularAuthority",
+      "Faction": "bureaucracy",
+      "Icon": "secularAuthority",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "psychology_5"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "factionEffectMult",
+        "value1": "bureaucracy",
+        "value": 0.25
+      },
+      {
+        "key": "factionEffectMult",
+        "value1": "clergy",
+        "value": -0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "secularAuthority"
+      }
+    ]
+  },
+  {
+    "id": "taxReforms",
+    "type": "faction-privileges",
+    "displayName": "Tax Reform",
+    "icon": "taxReforms",
+    "fields": {
+      "Name": "taxReforms",
+      "Faction": "laborer",
+      "Icon": "taxReforms",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": []
+    },
+    "modifiers": [
+      {
+        "key": "developmentGrowthMult",
+        "value": 1
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "taxReforms"
+      }
+    ]
+  },
+  {
+    "id": "technocracy",
+    "type": "faction-privileges",
+    "displayName": "Technocracy",
+    "icon": "privilegeTechnocracy",
+    "fields": {
+      "Name": "technocracy",
+      "Faction": "corporate",
+      "Icon": "privilegeTechnocracy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "habitability_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"projectEfficiency\",Value1=\"electronicsFactory\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "privilegeTechnocracy"
+      }
+    ]
+  },
+  {
+    "id": "massSurveillance",
+    "type": "faction-privileges",
+    "displayName": "Telescreens for All",
+    "icon": "massSurveillance",
+    "fields": {
+      "Name": "massSurveillance",
+      "Faction": "bureaucracy",
+      "Icon": "massSurveillance",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "pyschology_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "massSurveillance"
+      }
+    ]
+  },
+  {
+    "id": "thalassocracy",
+    "type": "faction-privileges",
+    "displayName": "Thalassocracy",
+    "icon": "thalassocracy",
+    "fields": {
+      "Name": "thalassocracy",
+      "Faction": "upperClass",
+      "Icon": "thalassocracy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"resourceCapacityMult\",Value1=\"navyCapacity\",Value2=\"\",Value3=\"\")": 0.2,
+        "(Key=\"resourceCapacityMult\",Value1=\"spaceCapacity\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "thalassocracy"
+      }
+    ]
+  },
+  {
+    "id": "totalMobilization",
+    "type": "faction-privileges",
+    "displayName": "Total Mobilization",
+    "icon": "totalMobilization",
+    "fields": {
+      "Name": "totalMobilization",
+      "Faction": "military",
+      "Icon": "totalMobilization",
+      "StabilityGain": 0,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.15,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [
+      {
+        "key": "moraleRecoveryMult",
+        "value": 0.33
+      },
+      {
+        "key": "unitCostMult",
+        "value": -0.25
+      },
+      {
+        "key": "economicOutputMult",
+        "value": -0.5
+      },
+      {
+        "key": "budgetModifier",
+        "value1": "population",
+        "value": -2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "totalMobilization"
+      }
+    ]
+  },
+  {
+    "id": "unitAutonomy",
+    "type": "faction-privileges",
+    "displayName": "Unit Autonomy",
+    "icon": "unitAutonomy",
+    "fields": {
+      "Name": "unitAutonomy",
+      "Faction": "military",
+      "Icon": "unitAutonomy",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "armyOrganization_4"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"unitSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unitAutonomy"
+      }
+    ]
+  },
+  {
+    "id": "unleashedFreedom",
+    "type": "faction-privileges",
+    "displayName": "Unleashed Freedom",
+    "icon": "unleashedFreedom",
+    "fields": {
+      "Name": "unleashedFreedom",
+      "Faction": "middleClass",
+      "Icon": "unleashedFreedom",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0.5,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_2"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "unleashedFreedom"
+      }
+    ]
+  },
+  {
+    "id": "upwardMobility",
+    "type": "faction-privileges",
+    "displayName": "Upward Mobility",
+    "icon": "upwardMobility",
+    "fields": {
+      "Name": "upwardMobility",
+      "Faction": "middleClass",
+      "Icon": "upwardMobility",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "economicOutput_1"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
+        "(Key=\"characterQuality\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "upwardMobility"
+      }
+    ]
+  },
+  {
+    "id": "warscience",
+    "type": "faction-privileges",
+    "displayName": "Warscience",
+    "icon": "warscience",
+    "fields": {
+      "Name": "warscience",
+      "Faction": "military",
+      "Icon": "warscience",
+      "StabilityGain": -15,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"researchMult\",Value1=\"military\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "warscience"
+      }
+    ]
+  },
+  {
+    "id": "laborBalance",
+    "type": "faction-privileges",
+    "displayName": "Work-Life Balance",
+    "icon": "laborBalance",
+    "fields": {
+      "Name": "laborBalance",
+      "Faction": "laborer",
+      "Icon": "laborBalance",
+      "StabilityGain": -25,
+      "StabilityMaintenance": 0,
+      "PowerChange": 0.1,
+      "LoyaltyImpact": 0.1,
+      "SpecialTgt": "None",
+      "SpecialModifier": [],
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "MaxLevel": 1,
+      "EnactmentTime": 3600,
+      "LoyaltyScaledModifier": [],
+      "PowerScaledModifier": {
+        "(Key=\"resourceMult\",Value1=\"consumerGoods\",Value2=\"\",Value3=\"\")": 0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "laborBalance"
+      }
+    ]
+  }
+]

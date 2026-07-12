@@ -1,0 +1,47 @@
+[
+  {
+    "id": "misc",
+    "type": "trade-categories",
+    "displayName": "Misc",
+    "icon": "alliance",
+    "fields": {
+      "Name": "misc",
+      "Icon": "alliance",
+      "SubItems": [
+        "peace",
+        "threaten",
+        "humiliate",
+        "disarm",
+        "warReps",
+        "makePuppet"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "alliance"
+      }
+    ]
+  },
+  {
+    "id": "territory",
+    "type": "trade-categories",
+    "displayName": "Territory",
+    "icon": "territory",
+    "fields": {
+      "Name": "territory",
+      "Icon": "territory",
+      "SubItems": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "territory"
+      }
+    ]
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "earthMagneticField",
+    "type": "space-objects",
+    "displayName": "Earth Magnetic Field",
+    "fields": {
+      "Name": "earthMagneticField",
+      "Parent": "earth",
+      "Orbit": {
+        "R": 0,
+        "Theta": 0
+      },
+      "Deposits": {
+        "antimatter": 1
+      },
+      "Model": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hygiea",
+    "type": "space-objects",
+    "displayName": "Hygiea",
+    "fields": {
+      "Name": "hygiea",
+      "Parent": "sol",
+      "Orbit": {
+        "R": 2.45,
+        "Theta": 60
+      },
+      "Deposits": {
+        "water": 4
+      },
+      "Model": "hygiea"
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "steel",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jupiterAsteroids",
+    "type": "space-objects",
+    "displayName": "Jupiter Asteroids",
+    "fields": {
+      "Name": "jupiterAsteroids",
+      "Parent": "jupiter",
+      "Orbit": {
+        "R": 0,
+        "Theta": 0
+      },
+      "Deposits": {
+        "iron": 12,
+        "ice": 4
+      },
+      "Model": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "jupiterMagneticField",
+    "type": "space-objects",
+    "displayName": "Jupiter Magnetic Field",
+    "fields": {
+      "Name": "jupiterMagneticField",
+      "Parent": "jupiter",
+      "Orbit": {
+        "R": 0,
+        "Theta": 0
+      },
+      "Deposits": {
+        "antimatter": 3
+      },
+      "Model": null
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "kuiperBelt",
+    "type": "space-objects",
+    "displayName": "Kuiper Belt",
+    "fields": {
+      "Name": "kuiperBelt",
+      "Parent": "sol",
+      "Orbit": {
+        "R": 0,
+        "Theta": 0
+      },
+      "Deposits": {
+        "iron": 12,
+        "water": 4
+      },
+      "Model": null
+    },
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "pallas",
+    "type": "space-objects",
+    "displayName": "Pallas",
+    "fields": {
+      "Name": "pallas",
+      "Parent": "sol",
+      "Orbit": {
+        "R": 2.77,
+        "Theta": 30
+      },
+      "Deposits": {
+        "water": 4
+      },
+      "Model": "pallas_model"
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "steel",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  }
+]

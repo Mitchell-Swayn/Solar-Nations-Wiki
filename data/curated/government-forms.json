@@ -1,0 +1,92 @@
+[
+  {
+    "id": "administration",
+    "type": "government-forms",
+    "displayName": "Administration",
+    "icon": "",
+    "fields": {
+      "Name": "administration",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "empire",
+    "type": "government-forms",
+    "displayName": "Empire",
+    "icon": "",
+    "fields": {
+      "Name": "empire",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "monarchy",
+    "type": "government-forms",
+    "displayName": "Monarchy",
+    "icon": "",
+    "fields": {
+      "Name": "monarchy",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "nonState",
+    "type": "government-forms",
+    "displayName": "Non State",
+    "icon": "",
+    "fields": {
+      "Name": "nonState",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "republic",
+    "type": "government-forms",
+    "displayName": "Republic",
+    "icon": "",
+    "fields": {
+      "Name": "republic",
+      "Icon": ""
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  }
+]

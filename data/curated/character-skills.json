@@ -1,0 +1,103 @@
+[
+  {
+    "id": "charisma",
+    "type": "character-skills",
+    "displayName": "Charisma",
+    "icon": "charisma",
+    "fields": {
+      "Name": "charisma",
+      "Icon": "charisma",
+      "LocationModifier": {
+        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.025
+      },
+      "UnitModifier": {
+        "(Key=\"unitMoraleMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.02
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "management",
+    "type": "character-skills",
+    "displayName": "Management",
+    "icon": "management",
+    "fields": {
+      "Name": "management",
+      "Icon": "management",
+      "LocationModifier": {
+        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.025
+      },
+      "UnitModifier": {
+        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.01
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "strategy",
+    "type": "character-skills",
+    "displayName": "Strategy",
+    "icon": "strategy",
+    "fields": {
+      "Name": "strategy",
+      "Icon": "strategy",
+      "LocationModifier": {
+        "(Key=\"jobWeightAdd\",Value1=\"soldier\",Value2=\"\",Value3=\"\")": 0.1
+      },
+      "UnitModifier": {
+        "(Key=\"battleAdvantageAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "subversive",
+    "type": "character-skills",
+    "displayName": "Subversion",
+    "icon": "subversive",
+    "fields": {
+      "Name": "subversive",
+      "Icon": "subversive",
+      "LocationModifier": {
+        "(Key=\"unrestAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.025
+      },
+      "UnitModifier": {
+        "(Key=\"unitSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.025
+      }
+    },
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "subversive"
+      }
+    ]
+  }
+]

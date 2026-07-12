@@ -1,0 +1,97 @@
+[
+  {
+    "id": "armyBuildup",
+    "type": "mission-types",
+    "displayName": "Army Buildup",
+    "icon": "manpower",
+    "fields": {
+      "Name": "armyBuildup",
+      "Icon": "manpower",
+      "NameFormat": "Army Buildup"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "buildProject",
+    "type": "mission-types",
+    "displayName": "Build Project",
+    "icon": "infrastructure",
+    "fields": {
+      "Name": "buildProject",
+      "Icon": "infrastructure",
+      "NameFormat": "{project} Expansion Initiative"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "infrastructure"
+      }
+    ]
+  },
+  {
+    "id": "conquerTerritory",
+    "type": "mission-types",
+    "displayName": "Conquer Territory",
+    "icon": "colony",
+    "fields": {
+      "Name": "conquerTerritory",
+      "Icon": "colony",
+      "NameFormat": "Conquer {region}"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
+    "id": "researchTech",
+    "type": "mission-types",
+    "displayName": "Research Tech",
+    "icon": "research",
+    "fields": {
+      "Name": "researchTech",
+      "Icon": "research",
+      "NameFormat": "{tech} Research Advancement"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "research"
+      }
+    ]
+  },
+  {
+    "id": "selectReform",
+    "type": "mission-types",
+    "displayName": "Select Reform",
+    "icon": "enactDecision",
+    "fields": {
+      "Name": "selectReform",
+      "Icon": "enactDecision",
+      "NameFormat": "{reform} Lobby"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "enactDecision"
+      }
+    ]
+  }
+]

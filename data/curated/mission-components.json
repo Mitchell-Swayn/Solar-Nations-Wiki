@@ -1,11 +1,26 @@
 [
   {
+    "id": "addCulturePower",
+    "type": "mission-components",
+    "displayName": "Add Culture Power",
+    "fields": {
+      "Name": "addCulturePower",
+      "Format": "<img id=\"culturePower\"/> Culture Power: +<yellow>{0}</>",
+      "ArgTypes": [
+        "float"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
     "id": "addCultureTrait",
     "type": "mission-components",
     "displayName": "Add Culture Trait",
     "fields": {
       "Name": "addCultureTrait",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"36B4349B4931AB6ECFCF2E9D1011D16B\", \"Add Culture Trait: <yellow>{0}</>\")",
+      "Format": "Add Culture Trait: <yellow>{0}</>",
       "ArgTypes": [
         "cultureTrait"
       ]
@@ -20,7 +35,7 @@
     "displayName": "Add Currency",
     "fields": {
       "Name": "addCurrency",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"443CEC9D408F8E8A24DB2BA59B50BFD5\", \"Treasury: <{0_color}>${0}</>\")",
+      "Format": "Treasury: <{0_color}>${0}</>",
       "ArgTypes": [
         "signedFloat"
       ]
@@ -35,9 +50,54 @@
     "displayName": "Add Currency Population",
     "fields": {
       "Name": "addCurrencyPopulation",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"92E91A0C481626E05A26AD928017C1F6\", \"Treasury: <{0_color}>${0}</>\")",
+      "Format": "Treasury: <{0_color}>${0}</>",
       "ArgTypes": [
         "populationFloat"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "addCurrencyYears",
+    "type": "mission-components",
+    "displayName": "Add Currency Years",
+    "fields": {
+      "Name": "addCurrencyYears",
+      "Format": "Treasury: <{0_color}>${0}</>",
+      "ArgTypes": [
+        "grossIncome"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "addDevelopment",
+    "type": "mission-components",
+    "displayName": "Add Development",
+    "fields": {
+      "Name": "addDevelopment",
+      "Format": "<img id=\"development\"/> Development: +<yellow>{0}</>",
+      "ArgTypes": [
+        "percent"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "addEducation",
+    "type": "mission-components",
+    "displayName": "Add Education",
+    "fields": {
+      "Name": "addEducation",
+      "Format": "<img id=\"education\"/> Education:  +{0}",
+      "ArgTypes": [
+        "percent"
       ]
     },
     "modifiers": [],
@@ -50,7 +110,7 @@
     "displayName": "Add Mission",
     "fields": {
       "Name": "addMission",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"47E73CBC416EE4CC9152F7962516F574\", \"Add Mission: {0}\")",
+      "Format": "Add Mission: {0}",
       "ArgTypes": [
         "mission"
       ]
@@ -65,7 +125,7 @@
     "displayName": "Add Situation",
     "fields": {
       "Name": "addSituation",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"46C1158C4E0E480D7C7E70BE7D48AFEC\", \"Add <yellow>Situation</>: {0}\")",
+      "Format": "Add <yellow>Situation</>: {0}",
       "ArgTypes": [
         "situation"
       ]
@@ -80,7 +140,7 @@
     "displayName": "Add Stability",
     "fields": {
       "Name": "addStability",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"1ED7CB244B47BFDCE63BCCBD6D4D4DCC\", \"<{0_color}>{0}</> <img id=\\\"stability\\\"/> <yellow>Stability</>\")",
+      "Format": "<{0_color}>{0}</> <img id=\"stability\"/> <yellow>Stability</>",
       "ArgTypes": [
         "signedFloat"
       ]
@@ -95,7 +155,7 @@
     "displayName": "Add Static Modifier",
     "fields": {
       "Name": "addStaticModifier",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"C8CBB9FB44DE652842D3E5977954CC2F\", \"For {1}: {0}\")",
+      "Format": "For {1}: {0}",
       "ArgTypes": [
         "staticModifier",
         "time"
@@ -111,7 +171,7 @@
     "displayName": "Add Technology",
     "fields": {
       "Name": "addTechnology",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"5125435546DB7B498BF8BCB6695DC376\", \"Add Technology: <yellow>{0}</>\")",
+      "Format": "Add Technology: <yellow>{0}</>",
       "ArgTypes": [
         "tech"
       ]
@@ -126,7 +186,7 @@
     "displayName": "Army Size",
     "fields": {
       "Name": "armySize",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"CDD76E0E42048232B1CAF6AF99D8F8C6\", \"Military Size Greater than {0}\")",
+      "Format": "Military Size Greater than {0}",
       "ArgTypes": [
         "float"
       ]
@@ -141,7 +201,7 @@
     "displayName": "At War With",
     "fields": {
       "Name": "atWarWith",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"7623E4DD45D2BAF25C9C30B531D41EA3\", \"Is at war with {0}\")",
+      "Format": "Is at war with {0}",
       "ArgTypes": [
         "empire"
       ]
@@ -156,11 +216,27 @@
     "displayName": "Build Project",
     "fields": {
       "Name": "buildProject",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"91389CCF427208F193FC3E80AC255AA8\", \"{0} has at least {2} levels of {1}\")",
+      "Format": "{0} has at least {2} levels of {1}",
       "ArgTypes": [
         "economicRegion",
         "project",
         "integer"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "changeColonyProgress",
+    "type": "mission-components",
+    "displayName": "Change Colony Progress",
+    "fields": {
+      "Name": "changeColonyProgress",
+      "Format": "{0} colonization progress: <yellow>{1}</>",
+      "ArgTypes": [
+        "scope",
+        "percent"
       ]
     },
     "modifiers": [],
@@ -173,9 +249,24 @@
     "displayName": "Conquer Territory",
     "fields": {
       "Name": "conquerTerritory",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"133EB53E44BA625AFB8FE69B7585E119\", \"Owns and Controls {0}\")",
+      "Format": "Owns and Controls {0}",
       "ArgTypes": [
         "economicRegion"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "damageRegion",
+    "type": "mission-components",
+    "displayName": "Damage Region",
+    "fields": {
+      "Name": "damageRegion",
+      "Format": "Take <red>{0}</> Strategic Damage",
+      "ArgTypes": [
+        "float"
       ]
     },
     "modifiers": [],
@@ -188,7 +279,7 @@
     "displayName": "Destroy Situations",
     "fields": {
       "Name": "destroySituations",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"87C9FE32421BBC8520A1BCB346862013\", \"<red>All situations will be cleared</>\")",
+      "Format": "<red>All situations will be cleared</>",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -201,7 +292,7 @@
     "displayName": "Federalize Organization",
     "fields": {
       "Name": "federalizeOrganization",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"0132B2924DCA64BA91F2E783E0CBF23C\", \"<yellow>Federalize</> Organization\")",
+      "Format": "<yellow>Federalize</> Organization",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -214,7 +305,7 @@
     "displayName": "Form Country",
     "fields": {
       "Name": "formCountry",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"188F1AD64937B647095CED8EB179FE04\", \"<yellow>Form Country</>: {0}\")",
+      "Format": "<yellow>Form Country</>: {0}",
       "ArgTypes": [
         "cosmeticTag"
       ]
@@ -229,9 +320,99 @@
     "displayName": "Formable Population",
     "fields": {
       "Name": "formablePopulation",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"E76F100C460434FDA13D909C48114C57\", \"80% of {0} Accepted Population\")",
+      "Format": "80% of {0} Accepted Population",
       "ArgTypes": [
         "cosmeticTag"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasCurrency",
+    "type": "mission-components",
+    "displayName": "Has Currency",
+    "fields": {
+      "Name": "hasCurrency",
+      "Format": "Has at least ${0} in Treasury",
+      "ArgTypes": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasDevelopment",
+    "type": "mission-components",
+    "displayName": "Has Development",
+    "fields": {
+      "Name": "hasDevelopment",
+      "Format": "<img id=\"development\"/> Development >= <yellow>{0}</>",
+      "ArgTypes": [
+        "percent"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasEducation",
+    "type": "mission-components",
+    "displayName": "Has Education",
+    "fields": {
+      "Name": "hasEducation",
+      "Format": "<img id=\"education\"/> Education >= {0}",
+      "ArgTypes": [
+        "percent"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasLoyalists",
+    "type": "mission-components",
+    "displayName": "Has Loyalists",
+    "fields": {
+      "Name": "hasLoyalists",
+      "Format": "Has at least <yellow>{0}</> loyalists",
+      "ArgTypes": [
+        "percent"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasNumPrivileges",
+    "type": "mission-components",
+    "displayName": "Has Num Privileges",
+    "fields": {
+      "Name": "hasNumPrivileges",
+      "Format": "{0}: Has at least {1} privilege(s)",
+      "ArgTypes": [
+        "faction",
+        "integer"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasPlanetPopulation",
+    "type": "mission-components",
+    "displayName": "Has Planet Population",
+    "fields": {
+      "Name": "hasPlanetPopulation",
+      "Format": "{0}: Has at least <yellow>{1}</> population",
+      "ArgTypes": [
+        "planet",
+        "float"
       ]
     },
     "modifiers": [],
@@ -244,7 +425,7 @@
     "displayName": "Has Planet Projects",
     "fields": {
       "Name": "hasPlanetProjects",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"3A84E3C94F9E75E8B5D0999BAF2132ED\", \"{0}: Has {2} or more {1} Projects\")",
+      "Format": "{0}: Has {2} or more {1} Projects",
       "ArgTypes": [
         "planet",
         "project",
@@ -261,7 +442,23 @@
     "displayName": "Has Project Any",
     "fields": {
       "Name": "hasProjectAny",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"F4AC591F4D8E3B8DD62043BFD5A3C25C\", \"Has any {0} of level {1} or greater\")",
+      "Format": "Has any {0} of level {1} or greater",
+      "ArgTypes": [
+        "project",
+        "integer"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasProjects",
+    "type": "mission-components",
+    "displayName": "Has Projects",
+    "fields": {
+      "Name": "hasProjects",
+      "Format": "Has {1} or more {0} Projects",
       "ArgTypes": [
         "project",
         "integer"
@@ -277,7 +474,7 @@
     "displayName": "Has Reform",
     "fields": {
       "Name": "hasReform",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"4ADC152F496710A1C21FCDBB21CB5318\", \"Has Reform {0}: {1}\")",
+      "Format": "Has Reform {0}: {1}",
       "ArgTypes": [
         "reform",
         "reformOption"
@@ -293,7 +490,7 @@
     "displayName": "Has Relations",
     "fields": {
       "Name": "hasRelations",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"2663D83647D9AB14E41343BC77EA42C5\", \"Opinion of {0} greater than {1}\")",
+      "Format": "Opinion of {0} greater than {1}",
       "ArgTypes": [
         "empire",
         "float"
@@ -309,10 +506,57 @@
     "displayName": "Has Resource",
     "fields": {
       "Name": "hasResource",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"0A70CF9A4C48E41D9481359A4843D63C\", \"Has at least {1} quality of {0}\")",
+      "Format": "Has at least {1} quality of {0}",
       "ArgTypes": [
         "resource",
         "integer"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasResourceBalance",
+    "type": "mission-components",
+    "displayName": "Has Resource Balance",
+    "fields": {
+      "Name": "hasResourceBalance",
+      "Format": "{0} balance > <yellow>{1}</>",
+      "ArgTypes": [
+        "resource",
+        "float"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasResourceCapacity",
+    "type": "mission-components",
+    "displayName": "Has Resource Capacity",
+    "fields": {
+      "Name": "hasResourceCapacity",
+      "Format": "Total {0} > <yellow>{1}</>",
+      "ArgTypes": [
+        "resource",
+        "float"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasStability",
+    "type": "mission-components",
+    "displayName": "Has Stability",
+    "fields": {
+      "Name": "hasStability",
+      "Format": "Has <img id=\"stability\"/> Stability: {0}",
+      "ArgTypes": [
+        "float"
       ]
     },
     "modifiers": [],
@@ -325,9 +569,25 @@
     "displayName": "Has Technology",
     "fields": {
       "Name": "hasTechnology",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"ADB8B37D4FE86A7242D24B867BBA7C22\", \"Has Technology: {0}\")",
+      "Format": "Has Technology: {0}",
       "ArgTypes": [
         "technology"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "hasTotalProjects",
+    "type": "mission-components",
+    "displayName": "Has Total Projects",
+    "fields": {
+      "Name": "hasTotalProjects",
+      "Format": "Has {1} or more {0} projects",
+      "ArgTypes": [
+        "integer",
+        "project"
       ]
     },
     "modifiers": [],
@@ -340,7 +600,7 @@
     "displayName": "Is Country Rank",
     "fields": {
       "Name": "isCountryRank",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"7E45534D45E1785943C3AAA49D74403C\", \"Is a <yellow>{0}</> or better\")",
+      "Format": "Is a <yellow>{0}</> or better",
       "ArgTypes": [
         "countryRank"
       ]
@@ -355,9 +615,29 @@
     "displayName": "Is Planet Controller",
     "fields": {
       "Name": "isPlanetController",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"1AD03B1F4C448FE1CC0BF5B0F42CF63B\", \"Controls Planet: {0}\")",
+      "Format": "Controls Planet: {0}",
       "ArgTypes": [
         "planet"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "modifierCheck",
+    "type": "mission-components",
+    "displayName": "Modifier Check",
+    "fields": {
+      "Name": "modifierCheck",
+      "Format": "{0} {4} {5}",
+      "ArgTypes": [
+        "modifier",
+        "",
+        "",
+        "",
+        "sign",
+        "percent"
       ]
     },
     "modifiers": [],
@@ -370,7 +650,7 @@
     "displayName": "Regen Leaders",
     "fields": {
       "Name": "regenLeaders",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"1F131B7347E0E9BF63A6DDBF263B6D86\", \"<red>All leaders will be killed</>\")",
+      "Format": "<red>All leaders will be killed</>",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -383,7 +663,7 @@
     "displayName": "Remake Diplomacy",
     "fields": {
       "Name": "remakeDiplomacy",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"704084B74232B6FCF39050AE7FF8EC48\", \"<red>All diplomacy will be cleared</>\")",
+      "Format": "<red>All diplomacy will be cleared</>",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -396,9 +676,38 @@
     "displayName": "Remove Situation",
     "fields": {
       "Name": "removeSituation",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"250F8FD8466AB1793C7768B469A29403\", \"Remove <yellow>Situation</>: {0}\")",
+      "Format": "Remove <yellow>Situation</>: {0}",
       "ArgTypes": [
         "situation"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "retireLeader",
+    "type": "mission-components",
+    "displayName": "Retire Leader",
+    "fields": {
+      "Name": "retireLeader",
+      "Format": "Retire Leader",
+      "ArgTypes": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "scopeEffect",
+    "type": "mission-components",
+    "displayName": "Scope Effect",
+    "fields": {
+      "Name": "scopeEffect",
+      "Format": "{0}: \r\n    {1}",
+      "ArgTypes": [
+        "scope",
+        "missionComponent"
       ]
     },
     "modifiers": [],
@@ -411,7 +720,7 @@
     "displayName": "Set Reform",
     "fields": {
       "Name": "setReform",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"226CD699400DB6A558E92D9F2D09F1CE\", \"Set Reform {0}: {1}\")",
+      "Format": "Set Reform {0}: {1}",
       "ArgTypes": [
         "reform",
         "reformOption"
@@ -427,7 +736,7 @@
     "displayName": "Situation Local Variable",
     "fields": {
       "Name": "situationLocalVariable",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"67A53A8740EAC4DC51C6829A2D8FC892\", \"{0}: {1} {2} {3}\")",
+      "Format": "{0}: {1} {2} {3}",
       "ArgTypes": [
         "situation",
         "variable",
@@ -445,7 +754,7 @@
     "displayName": "Situation Local Variable Add",
     "fields": {
       "Name": "situationLocalVariableAdd",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"0E7982DE4F3FE10FFFCF4180224F6BFD\", \"{1}  <{2_color}>{2}</>\")",
+      "Format": "{1}  <{2_color}>{2}</>",
       "ArgTypes": [
         "situation",
         "variable",
@@ -462,7 +771,7 @@
     "displayName": "Situation Shared Variable",
     "fields": {
       "Name": "situationSharedVariable",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"67A53A8740EAC4DC51C6829A2D8FC892\", \"{0}: {1} {2} {3}\")",
+      "Format": "{0}: {1} {2} {3}",
       "ArgTypes": [
         "situation",
         "variable",
@@ -480,7 +789,7 @@
     "displayName": "Situation Shared Variable Add",
     "fields": {
       "Name": "situationSharedVariableAdd",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"DC2A838B47A827B770CDC9B43625E48E\", \"{1}  <{2_color}>{2}</>\")",
+      "Format": "{1}  <{2_color}>{2}</>",
       "ArgTypes": [
         "situation",
         "variable",
@@ -497,7 +806,22 @@
     "displayName": "Spawn Country",
     "fields": {
       "Name": "spawnCountry",
-      "Format": "",
+      "Format": {
+        "CultureInvariantString": null
+      },
+      "ArgTypes": []
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "spawnCrisis",
+    "type": "mission-components",
+    "displayName": "Spawn Crisis",
+    "fields": {
+      "Name": "spawnCrisis",
+      "Format": "A <red>Crisis</> will spawn",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -510,7 +834,9 @@
     "displayName": "Spawn Notification",
     "fields": {
       "Name": "spawnNotification",
-      "Format": "",
+      "Format": {
+        "CultureInvariantString": null
+      },
       "ArgTypes": []
     },
     "modifiers": [],
@@ -523,7 +849,7 @@
     "displayName": "Spawn Unit",
     "fields": {
       "Name": "spawnUnit",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"AB6A8BCC443628AE45723DBFD1AA342F\", \"Spawns {2} {1} size {0} Units\")",
+      "Format": "Spawns {2} {1} size {0} Units",
       "ArgTypes": [
         "unitTemplate",
         "float",
@@ -540,7 +866,7 @@
     "displayName": "Start Civil War",
     "fields": {
       "Name": "startCivilWar",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"9EB705E8400BE0CF8AC0FF97073B59AA\", \"Ignites <red>Civil War</>\")",
+      "Format": "Ignites <red>Civil War</>",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -553,7 +879,7 @@
     "displayName": "Stockpile Money",
     "fields": {
       "Name": "stockpileMoney",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"6FC399444029B9588ABB1DAAB040C338\", \"Has at least ${0} in Treasury\")",
+      "Format": "Has at least ${0} in Treasury",
       "ArgTypes": [
         "float"
       ]
@@ -568,7 +894,7 @@
     "displayName": "Terraform Planet",
     "fields": {
       "Name": "terraformPlanet",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"93166023496C5C2515366FB6137BFEA9\", \"Terraform Planet: <yellow>{0}</> <img id=\\\"arrow\\\"/> <yellow>{1}</>\")",
+      "Format": "Terraform Planet: <yellow>{0}</> <img id=\"arrow\"/> <yellow>{1}</>",
       "ArgTypes": [
         "planet",
         "planetTag"
@@ -584,7 +910,7 @@
     "displayName": "Tooltip Effect",
     "fields": {
       "Name": "tooltipEffect",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"F7CC302C413B1715C544B49FC2C86C0B\", \"{0}\")",
+      "Format": "{0}",
       "ArgTypes": []
     },
     "modifiers": [],
@@ -597,7 +923,7 @@
     "displayName": "Trigger Event",
     "fields": {
       "Name": "triggerEvent",
-      "Format": "NSLOCTEXT(\"[65F993444831F6DFE4E87DA53D33B791]\", \"9E8A38CF41D451574AB115A14C56436C\", \"Triggers Event: {0}\")",
+      "Format": "Triggers Event: {0}",
       "ArgTypes": [
         "event"
       ]

@@ -1,0 +1,1431 @@
+[
+  {
+    "id": "bureaucraticControl",
+    "type": "missions",
+    "displayName": "Bureaucratic Control",
+    "fields": {
+      "Name": "bureaucraticControl",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 40,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "taskmaster"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "controlBureaucracy",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "controlCriminalGangs",
+    "type": "missions",
+    "displayName": "Control Criminal Gangs",
+    "fields": {
+      "Name": "controlCriminalGangs",
+      "Categories": [
+        "strategy",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "shadowmaster"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "organizedCrime",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "corporateControl",
+    "type": "missions",
+    "displayName": "Corporatocracy",
+    "fields": {
+      "Name": "corporateControl",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 50,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "investor_experienced"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "controlCorporations",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "encourageDegeneracy",
+    "type": "missions",
+    "displayName": "Encourage Degeneracy",
+    "fields": {
+      "Name": "encourageDegeneracy",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "activist"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "degenerateCulture",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "encourageInfighting",
+    "type": "missions",
+    "displayName": "Encourage Infighting",
+    "fields": {
+      "Name": "encourageInfighting",
+      "Categories": [
+        "strategy",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "saboteur"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "sectarianInfighting",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "establishHumanTrafficking",
+    "type": "missions",
+    "displayName": "Establish Human Trafficking",
+    "fields": {
+      "Name": "establishHumanTrafficking",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 350,
+      "Difficulty": 70,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 50,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "arbitrary"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "humanTrafficking",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "exploit",
+    "type": "missions",
+    "displayName": "Exploit",
+    "fields": {
+      "Name": "exploit",
+      "Categories": [
+        "management"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 15,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "greedy"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "exploitedEconomy",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "forceVassalize",
+    "type": "missions",
+    "displayName": "Force Vassalize",
+    "fields": {
+      "Name": "forceVassalize",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 50,
+      "XPGain": 500,
+      "Difficulty": 100,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "capital"
+      ],
+      "StabilityMax": 10,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "gatherIntel",
+    "type": "missions",
+    "displayName": "Gather Intelligence",
+    "fields": {
+      "Name": "gatherIntel",
+      "Categories": [
+        "management"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 100,
+      "Difficulty": 10,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "neutral",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 90,
+      "Continuous": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 0,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "improveRelation",
+    "type": "missions",
+    "displayName": "Improve Relations",
+    "fields": {
+      "Name": "improveRelation",
+      "Categories": [
+        "charisma"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 100,
+      "Difficulty": 0,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "EffectTT": "Improves our relations by 5 for a maximum of 25."
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "infiltrateGovernment",
+    "type": "missions",
+    "displayName": "Infiltrate Government",
+    "fields": {
+      "Name": "infiltrateGovernment",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 50,
+      "XPGain": 250,
+      "Difficulty": 35,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "capital"
+      ],
+      "StabilityMax": 80,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "politician"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "pocketPoliticians",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "infiltrateSchoolSystem",
+    "type": "missions",
+    "displayName": "Infiltrate School System",
+    "fields": {
+      "Name": "infiltrateSchoolSystem",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 50,
+      "XPGain": 300,
+      "Difficulty": 35,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "capital"
+      ],
+      "StabilityMax": 70,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "charactertrait",
+        "B": "infiltrator"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "schoolSystems",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "influence",
+    "type": "missions",
+    "displayName": "Influence Region",
+    "fields": {
+      "Name": "influence",
+      "Categories": [
+        "charisma"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 100,
+      "Difficulty": 10,
+      "UnitType": "Unit_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 180,
+      "Continuous": true,
+      "Prerequisite": {
+        "A": "unitComponent",
+        "B": "infiltratorBase"
+      },
+      "FinishParticles": true,
+      "Severity": 0,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "EffectTT": "Each completion of this operation grants <green>~5%</> Influence in the target region"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "initiateDuel",
+    "type": "missions",
+    "displayName": "Initiate Duel",
+    "fields": {
+      "Name": "initiateDuel",
+      "Categories": [
+        "strategy",
+        "management",
+        "charisma"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 0,
+      "Difficulty": 0,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "neutral",
+        "enemy"
+      ],
+      "StabilityMax": 999,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 0,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator1",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "invest",
+    "type": "missions",
+    "displayName": "Invest",
+    "fields": {
+      "Name": "invest",
+      "Categories": [
+        "management"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 10,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 999,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "investor"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "abundantCapital",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "investigate",
+    "type": "missions",
+    "displayName": "Investigate",
+    "fields": {
+      "Name": "investigate",
+      "Categories": [
+        "strategy",
+        "subversive"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 200,
+      "Difficulty": 0,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 480,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 0,
+      "Asset": "recentInvestigation",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": "Removes any <red>hostile assets</> in the region not owned by you."
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "judicialControl",
+    "type": "missions",
+    "displayName": "Judicial Control",
+    "fields": {
+      "Name": "judicialControl",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 60,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "infiltrator"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "controlJudiciary",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "localGovernmentControl",
+    "type": "missions",
+    "displayName": "Local Government Control",
+    "fields": {
+      "Name": "localGovernmentControl",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "politician"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "localGovernment",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "lockdownRegion",
+    "type": "missions",
+    "displayName": "Lockdown Region",
+    "fields": {
+      "Name": "lockdownRegion",
+      "Categories": [
+        "management"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "taskmaster"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "lockdown",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      }
+    ]
+  },
+  {
+    "id": "massMediaControl",
+    "type": "missions",
+    "displayName": "Mass Media Control",
+    "fields": {
+      "Name": "massMediaControl",
+      "Categories": [
+        "charisma"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 75,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "networker_experienced"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "massMedia",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "mindControlDrugs",
+    "type": "missions",
+    "displayName": "Mind Control Drugs",
+    "fields": {
+      "Name": "mindControlDrugs",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 350,
+      "Difficulty": 70,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 40,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "madScientist"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "mindControlDrugs",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "network",
+    "type": "missions",
+    "displayName": "Network",
+    "fields": {
+      "Name": "network",
+      "Categories": [
+        "charisma"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 200,
+      "Difficulty": 20,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "networker"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "friendsInHighPlaces",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  },
+  {
+    "id": "oppositonControl",
+    "type": "missions",
+    "displayName": "Oppositon Control",
+    "fields": {
+      "Name": "oppositonControl",
+      "Categories": [
+        "management",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 50,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "infiltrator"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "controlOpposition",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "management"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "organizeParamilitary",
+    "type": "missions",
+    "displayName": "Organize Paramilitaries",
+    "fields": {
+      "Name": "organizeParamilitary",
+      "Categories": [
+        "strategy",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 15,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "enemy",
+        "neutral"
+      ],
+      "StabilityMax": 80,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "resistanceOrganizer"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "paramilitaries",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "organizeReinforcement",
+    "type": "missions",
+    "displayName": "Organize Reinforcements",
+    "fields": {
+      "Name": "organizeReinforcement",
+      "Categories": [
+        "strategy"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 25,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "neutral"
+      ],
+      "StabilityMax": 999,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "logistician"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "propaganda",
+    "type": "missions",
+    "displayName": "Propaganda",
+    "fields": {
+      "Name": "propaganda",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 75,
+      "Difficulty": 14,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "silverTongue"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "propaganda",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "rallyUnits",
+    "type": "missions",
+    "displayName": "Rally Units",
+    "fields": {
+      "Name": "rallyUnits",
+      "Categories": [
+        "strategy"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 100,
+      "Difficulty": 15,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "neutral"
+      ],
+      "StabilityMax": 999,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "commander"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "sabotageDiplomacy",
+    "type": "missions",
+    "displayName": "Sabotage Diplomacy",
+    "fields": {
+      "Name": "sabotageDiplomacy",
+      "Categories": [
+        "charisma",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 250,
+      "Difficulty": 40,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "saboteur"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "sabotageMilitary",
+    "type": "missions",
+    "displayName": "Sabotage Military",
+    "fields": {
+      "Name": "sabotageMilitary",
+      "Categories": [
+        "strategy",
+        "subversive"
+      ],
+      "HealthCostBase": 10,
+      "XPGain": 250,
+      "Difficulty": 40,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "friendly"
+      ],
+      "StabilityMax": 200,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "characterTrait",
+        "B": "saboteur"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      },
+      {
+        "type": "category",
+        "id": "subversive"
+      }
+    ]
+  },
+  {
+    "id": "strategize",
+    "type": "missions",
+    "displayName": "Strategize",
+    "fields": {
+      "Name": "strategize",
+      "Categories": [
+        "strategy"
+      ],
+      "HealthCostBase": 0,
+      "XPGain": 100,
+      "Difficulty": 10,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "friendly",
+        "ally",
+        "neutral",
+        "enemy"
+      ],
+      "StabilityMax": 200,
+      "Time": 90,
+      "Continuous": true,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 0,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "EffectTT": {
+        "TableId": "/Game/Localisation/English/resource_english.resource_english",
+        "Key": "strategizeEffectDesc",
+        "SourceString": null,
+        "LocalizedString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "strategy"
+      }
+    ]
+  },
+  {
+    "id": "vassalBreakFree",
+    "type": "missions",
+    "displayName": "Vassal Break Free",
+    "fields": {
+      "Name": "vassalBreakFree",
+      "Categories": [
+        "charisma"
+      ],
+      "HealthCostBase": 50,
+      "XPGain": 500,
+      "Difficulty": 120,
+      "UnitType": "TMCharacter_C",
+      "Context": [
+        "ally",
+        "enemy",
+        "capital"
+      ],
+      "StabilityMax": 25,
+      "Time": 0,
+      "Continuous": false,
+      "Prerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "FinishParticles": true,
+      "Severity": 1,
+      "Asset": "None",
+      "StaticModifier": "None",
+      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "EffectTT": {
+        "CultureInvariantString": null
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "category",
+        "id": "charisma"
+      }
+    ]
+  }
+]

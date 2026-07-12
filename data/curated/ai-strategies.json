@@ -1,0 +1,147 @@
+[
+  {
+    "id": "strategy_blue",
+    "type": "ai-strategies",
+    "displayName": "Strategy Blue",
+    "fields": {
+      "Name": "strategy_blue",
+      "Alignment": {
+        "Marxist": 0,
+        "Liberal": 1,
+        "Traditional": 0
+      },
+      "PopValue": {
+        "engineer": 1,
+        "laborer": 0.5,
+        "bureaucrat": -0.25
+      },
+      "FactionValue": {
+        "middleClass": 1,
+        "laborer": 0.5,
+        "military": 0.2,
+        "corporate": 0.1,
+        "bureaucracy": -0.5,
+        "clergy": -1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategy_green",
+    "type": "ai-strategies",
+    "displayName": "Strategy Green",
+    "fields": {
+      "Name": "strategy_green",
+      "Alignment": {
+        "Marxist": 0,
+        "Liberal": 0,
+        "Traditional": 1
+      },
+      "PopValue": {
+        "upperClass": 1,
+        "engineer": -0.2,
+        "bureaucrat": -0.2
+      },
+      "FactionValue": {
+        "upperClass": 1,
+        "clergy": 0.5,
+        "military": 0.2,
+        "laborer": 0.5,
+        "middleClass": -0.5,
+        "corporate": -1
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategy_purple",
+    "type": "ai-strategies",
+    "displayName": "Strategy Purple",
+    "fields": {
+      "Name": "strategy_purple",
+      "Alignment": {
+        "Marxist": 0.707107,
+        "Liberal": 0.707107,
+        "Traditional": 0
+      },
+      "PopValue": {
+        "middleClass": 0.25,
+        "bureaucrat": 0.5,
+        "upperClass": -0.25
+      },
+      "FactionValue": {
+        "corporate": 1,
+        "middleClass": 0.25,
+        "bureaucracy": 0.5,
+        "upperClass": -1,
+        "laborer": -0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategy_red",
+    "type": "ai-strategies",
+    "displayName": "Strategy Red",
+    "fields": {
+      "Name": "strategy_red",
+      "Alignment": {
+        "Marxist": 1,
+        "Liberal": 0,
+        "Traditional": 0
+      },
+      "PopValue": {
+        "bureaucrat": 1,
+        "intellectual": 0.5,
+        "engineer": -0.25
+      },
+      "FactionValue": {
+        "bureaucracy": 1,
+        "clergy": 0.5,
+        "military": 0.2,
+        "corporate": 0.2,
+        "laborer": -1,
+        "middleClass": -0.5,
+        "upperClass": -0.5
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "strategy_teal",
+    "type": "ai-strategies",
+    "displayName": "Strategy Teal",
+    "fields": {
+      "Name": "strategy_teal",
+      "Alignment": {
+        "Marxist": 0,
+        "Liberal": 0.707107,
+        "Traditional": 0.707107
+      },
+      "PopValue": {
+        "engineer": 1,
+        "laborer": 1,
+        "bureaucrat": -1,
+        "intellectual": -0.5
+      },
+      "FactionValue": {
+        "middleClass": 0.5,
+        "laborer": 1,
+        "military": 0.2,
+        "bureaucracy": -1,
+        "corporate": -0.2
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  }
+]
