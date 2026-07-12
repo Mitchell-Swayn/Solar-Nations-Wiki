@@ -31,11 +31,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": -1000,
-        "AIAttitudeEnum::NewEnumerator3": 10,
-        "AIAttitudeEnum::NewEnumerator1": 5,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": -1000,
+        "Afraid": 10,
+        "Friendly": 5,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -81,11 +81,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -132,11 +132,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -183,11 +183,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -232,11 +232,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -280,11 +280,11 @@
       "RemoveFlags": [],
       "AIReluctance": -30,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": -1000,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": -1000,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -330,11 +330,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -378,11 +378,11 @@
       "RemoveFlags": [],
       "AIReluctance": -25,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": -1000,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": -1000,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -427,11 +427,11 @@
       "RemoveFlags": [],
       "AIReluctance": -50,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],
@@ -485,11 +485,11 @@
       ],
       "AIReluctance": 0,
       "AttitudeEffect": {
-        "AIAttitudeEnum::NewEnumerator4": 0,
-        "AIAttitudeEnum::NewEnumerator2": 0,
-        "AIAttitudeEnum::NewEnumerator3": 0,
-        "AIAttitudeEnum::NewEnumerator1": 0,
-        "AIAttitudeEnum::NewEnumerator0": 0
+        "Domineering": 0,
+        "Hostile": 0,
+        "Afraid": 0,
+        "Friendly": 0,
+        "Neutral": 0
       }
     },
     "modifiers": [],

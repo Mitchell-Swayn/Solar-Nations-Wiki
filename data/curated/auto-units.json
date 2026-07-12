@@ -30,7 +30,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -72,7 +72,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -120,7 +120,7 @@
       ],
       "TargetSpeed": 4,
       "TargetReliability": 500,
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "situation",
@@ -162,7 +162,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -232,7 +232,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "situation",
@@ -271,7 +271,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator4",
+      "Domain": "Strategic",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -330,7 +330,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 800,
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -397,7 +397,7 @@
       ],
       "TargetSpeed": 3,
       "TargetReliability": 500,
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -444,7 +444,7 @@
       ],
       "TargetSpeed": 4,
       "TargetReliability": 500,
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -497,7 +497,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "situation",
@@ -554,7 +554,7 @@
       ],
       "TargetSpeed": 10,
       "TargetReliability": 100,
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -676,7 +676,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -736,7 +736,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -778,7 +778,7 @@
       ],
       "TargetSpeed": 2,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -822,7 +822,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -879,7 +879,7 @@
       ],
       "TargetSpeed": 12,
       "TargetReliability": 100,
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -917,7 +917,7 @@
       ],
       "TargetSpeed": 2,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -969,7 +969,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1013,7 +1013,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1058,7 +1058,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "situation",
@@ -1097,7 +1097,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator4",
+      "Domain": "Strategic",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -1142,7 +1142,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "situation",
@@ -1211,7 +1211,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1257,7 +1257,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1308,7 +1308,7 @@
       ],
       "TargetSpeed": 2,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",
@@ -1377,7 +1377,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1440,7 +1440,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1499,7 +1499,7 @@
       ],
       "TargetSpeed": 1,
       "TargetReliability": 0.5,
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "technology",
@@ -1543,7 +1543,7 @@
       ],
       "TargetSpeed": 5,
       "TargetReliability": 1,
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "ResourcePrerequisite": [],
       "TechPrerequisite": {
         "A": "None",

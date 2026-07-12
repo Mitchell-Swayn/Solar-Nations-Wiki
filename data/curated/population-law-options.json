@@ -8,11 +8,11 @@
       "Name": "livingStandards_academicPrivilege",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -53,11 +53,11 @@
       "Name": "militaryService_allowed",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [],
@@ -78,11 +78,11 @@
       "Name": "livingStandards_default",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -109,11 +109,11 @@
       "Name": "militaryService_disallowed",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -143,11 +143,11 @@
       "Name": "familyPolicy_neutering",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": false,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": false
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": false,
+        "Oppressed": true,
+        "Promoted": false
       }
     },
     "modifiers": [
@@ -181,11 +181,11 @@
       "Name": "livingStandards_extermination",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": false,
-        "CultureStatusEnum::NewEnumerator0": false,
-        "CultureStatusEnum::NewEnumerator4": false,
-        "CultureStatusEnum::NewEnumerator3": true
+        "Non Accepted": true,
+        "Accepted": false,
+        "Primary": false,
+        "Promoted": false,
+        "Oppressed": true
       }
     },
     "modifiers": [
@@ -219,11 +219,11 @@
       "Name": "militaryService_forced",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -253,11 +253,11 @@
       "Name": "livingStandards_forcedLabor",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": false,
-        "CultureStatusEnum::NewEnumerator0": false,
-        "CultureStatusEnum::NewEnumerator4": false,
-        "CultureStatusEnum::NewEnumerator3": true
+        "Non Accepted": true,
+        "Accepted": false,
+        "Primary": false,
+        "Promoted": false,
+        "Oppressed": true
       }
     },
     "modifiers": [
@@ -300,11 +300,11 @@
       "Name": "livingStandards_capitalism",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -349,11 +349,11 @@
       "Name": "familyPolicy_abortion",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -383,11 +383,11 @@
       "Name": "livingStandards_massDeportation",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": false,
-        "CultureStatusEnum::NewEnumerator0": false,
-        "CultureStatusEnum::NewEnumerator4": false,
-        "CultureStatusEnum::NewEnumerator3": true
+        "Non Accepted": true,
+        "Accepted": false,
+        "Primary": false,
+        "Promoted": false,
+        "Oppressed": true
       }
     },
     "modifiers": [
@@ -421,11 +421,11 @@
       "Name": "familyPolicy_natalism",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -455,11 +455,11 @@
       "Name": "familyPolicy_default",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [],
@@ -480,11 +480,11 @@
       "Name": "livingStandards_rationing",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": true,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": true,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -520,11 +520,11 @@
       "Name": "livingStandards_reeducation",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": false,
-        "CultureStatusEnum::NewEnumerator0": false,
-        "CultureStatusEnum::NewEnumerator4": false,
-        "CultureStatusEnum::NewEnumerator3": true
+        "Non Accepted": true,
+        "Accepted": false,
+        "Primary": false,
+        "Promoted": false,
+        "Oppressed": true
       }
     },
     "modifiers": [
@@ -558,11 +558,11 @@
       "Name": "livingStandards_welfare",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -606,11 +606,11 @@
       "Name": "livingStandards_ultimateLiberty",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [
@@ -655,11 +655,11 @@
       "Name": "livingStandards_postScarcity",
       "Icon": "",
       "Allowed": {
-        "CultureStatusEnum::NewEnumerator2": true,
-        "CultureStatusEnum::NewEnumerator1": true,
-        "CultureStatusEnum::NewEnumerator0": true,
-        "CultureStatusEnum::NewEnumerator3": false,
-        "CultureStatusEnum::NewEnumerator4": true
+        "Non Accepted": true,
+        "Accepted": true,
+        "Primary": true,
+        "Oppressed": false,
+        "Promoted": true
       }
     },
     "modifiers": [

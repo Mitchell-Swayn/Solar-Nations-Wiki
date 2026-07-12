@@ -8,7 +8,6 @@ import {
   getFlagsPath,
   getGameRoot,
   getIconsPath,
-  getTutorialModPath,
 } from './paths.ts';
 import { DEFINE_FILE_TO_SLUG } from '../src/lib/categories.ts';
 import { getCultureTraitGroup, isCultureFamilyRoot } from '../src/lib/culture.ts';
@@ -42,6 +41,7 @@ const ICON_ALIASES: Record<string, string> = {
   fascism: 'fascist', harmony: 'unity', immigrationIncentive: 'edictImmigration',
   liberal: 'civilLiberty_liberal', massDeportations: 'edictEmmigration', money: 'currency',
   progressive: 'futurist', spending_none: 'spending_low', supply: 'logistics',
+  diplomatic: 'diplomacy',
 };
 
 function resolveIconSource(icon: string): string {
@@ -472,31 +472,6 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
   }
 }
 
-function loadLocalization(modPath: string): Record<string, string> {
-  const locPath = join(modPath, 'Localization/en.json');
-  if (!existsSync(locPath)) return {};
-  return parseJsonFile(locPath) as Record<string, string>;
-}
-
-function loadDefines(modPath: string, localization: Record<string, string>) {
-  const definesDir = join(modPath, 'Defines');
-  const entries: WikiEntry[] = [];
-
-  for (const file of readdirSync(definesDir)) {
-    if (!file.endsWith('.json')) continue;
-    const slug = DEFINE_FILE_TO_SLUG[file];
-    if (!slug) continue;
-    const data = parseJsonFile(join(definesDir, file));
-    if (!Array.isArray(data)) continue;
-    for (const record of data) {
-      const entry = buildEntry(slug, record as RawRecord, localization);
-      if (entry) entries.push(entry);
-    }
-  }
-
-  return entries;
-}
-
 function localizedModifierName(record: RawRecord, localization: Record<string, string>): string {
   const id = String(record.Name);
   const lookup = new Map(Object.entries(localization).map(([key, value]) => [key.toLowerCase(), value]));
@@ -527,17 +502,10 @@ function localizedModifierName(record: RawRecord, localization: Record<string, s
   return humanizeId(id);
 }
 
-function loadModifiers(modPath: string, localization: Record<string, string>): WikiEntry[] {
-  const path = join(modPath, 'modifiers.json');
+function loadModifiers(localization: Record<string, string>): WikiEntry[] {
+  const path = join(DATA_RAW, 'Defines/ModifierProperties.json');
   if (!existsSync(path)) return [];
   const data = parseJsonFile(path) as RawRecord[];
-  if (!data.some((record) => record.Name === 'characterQuality')) {
-    data.push({
-      Name: 'characterQuality', Positivity: 'positive', IsPercent: 'Percentage',
-      Properties: {}, Icon: 'threeStar', Scaler: 'Linear', AIWeights: { base: 1 },
-      GenerateIcons: false, IsEffect: false,
-    });
-  }
   return data.map((record) => {
     const id = record.Name as string;
     const displayName = localizedModifierName(record, localization);
@@ -553,25 +521,6 @@ function loadModifiers(modPath: string, localization: Record<string, string>): W
       references: record.Icon
         ? [{ type: 'icon', id: record.Icon as string }]
         : [],
-    };
-  });
-}
-
-function loadMissionComponents(modPath: string): WikiEntry[] {
-  const path = join(modPath, 'missioncomponents.json');
-  if (!existsSync(path)) return [];
-  const data = parseJsonFile(path) as RawRecord[];
-  return data.map((record) => {
-    const id = record.Name as string;
-    return {
-      id,
-      type: 'mission-components',
-      displayName: humanizeId(id),
-      icon: typeof record.Icon === 'string' ? record.Icon : undefined,
-      fields: record,
-      modifiers: collectModifierFields(record),
-      prerequisites: collectPrerequisites(record),
-      references: [],
     };
   });
 }
@@ -598,38 +547,6 @@ function loadRawExtract(): WikiEntry[] {
     }
   }
   return entries;
-}
-
-/**
- * The shipped binary table currently exposes the complete component catalogue,
- * while the tutorial mod includes the authored gameplay data for its example
- * component. Merge those records by icon so modifiers and component properties
- * are not lost when the binary extraction is preferred.
- */
-function enrichUnitComponents(entries: WikiEntry[], modPath: string, localization: Record<string, string>) {
-  const path = join(modPath, 'Defines/UnitComponents.json');
-  if (!existsSync(path)) return;
-
-  const records = parseJsonFile(path);
-  if (!Array.isArray(records)) return;
-
-  const components = entries.filter((entry) => entry.type === 'unit-components');
-  for (const record of records as RawRecord[]) {
-    const enriched = buildEntry('unit-components', record, localization);
-    if (!enriched) continue;
-    const target = components.find((entry) =>
-      (enriched.icon && entry.icon === enriched.icon)
-      || entry.id.replace(/_/g, '') === enriched.id.replace(/_/g, ''),
-    );
-    if (!target) continue;
-
-    target.fields = { ...target.fields, ...enriched.fields };
-    target.modifiers = enriched.modifiers;
-    target.prerequisites = enriched.prerequisites;
-    target.references = [...target.references, ...enriched.references].filter(
-      (reference, index, all) => all.findIndex((item) => item.type === reference.type && item.id === reference.id) === index,
-    );
-  }
 }
 
 function buildIndex(entries: WikiEntry[], source: string): CuratedIndex {
@@ -677,35 +594,24 @@ function writeCuratedFiles(index: CuratedIndex, modifierDefs: RawRecord[]) {
 
 function main() {
   const gameRoot = getGameRoot();
-  const modPath = getTutorialModPath(gameRoot);
   const rawLocalizationPath = join(DATA_RAW, 'Localization/en.json');
   const localization = existsSync(rawLocalizationPath)
     ? (parseJsonFile(rawLocalizationPath) as Record<string, string>)
-    : loadLocalization(modPath);
+    : {};
 
-  const rawEntries = loadRawExtract();
-  const useRaw = rawEntries.length > 0;
+  const defineEntries = loadRawExtract();
+  if (defineEntries.length === 0) {
+    throw new Error('No extracted defines found in data/raw/Defines — run npm run extract first.');
+  }
+  const modifierEntries = loadModifiers(localization);
 
-  const defineEntries = useRaw ? rawEntries : loadDefines(modPath, localization);
-  const modifierEntries = loadModifiers(modPath, localization);
-  // Skip tutorialMod mission components already covered by the raw extract.
-  const extractedMissionIds = new Set(
-    defineEntries.filter((e) => e.type === 'mission-components').map((e) => e.id),
-  );
-  const missionEntries = loadMissionComponents(modPath).filter(
-    (entry) => !extractedMissionIds.has(entry.id),
-  );
-
-  if (useRaw) enrichUnitComponents(defineEntries, modPath, localization);
   applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);
-  const allEntries = [...defineEntries, ...modifierEntries, ...missionEntries];
-  const source = useRaw
-    ? 'data/raw extracted Defines + tutorialMod component data and modifiers'
-    : 'tutorialMod Defines + modifiers + mission components';
+  const allEntries = [...defineEntries, ...modifierEntries];
+  const source = 'base game defines extracted via CUE4Parse';
 
   removeUnavailableIconReferences(gameRoot, allEntries);
   const index = buildIndex(allEntries, source);
-  const modifierDefs = parseJsonFile(join(modPath, 'modifiers.json')) as RawRecord[];
+  const modifierDefs = parseJsonFile(join(DATA_RAW, 'Defines/ModifierProperties.json')) as RawRecord[];
 
   copyAssets(gameRoot);
   copyWikiIcons(gameRoot, allEntries);

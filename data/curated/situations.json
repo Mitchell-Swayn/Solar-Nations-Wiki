@@ -239,7 +239,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "false",
         "B": "None"
@@ -998,7 +998,7 @@
           "Cooldown": 3600
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -1512,7 +1512,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -1981,7 +1981,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -2593,7 +2593,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -3118,7 +3118,7 @@
           "Cooldown": 360
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -3645,7 +3645,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -4224,7 +4224,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -4789,7 +4789,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -5400,7 +5400,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -5966,7 +5966,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -6438,7 +6438,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator2",
+      "Type": "Organization",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -7012,7 +7012,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -7524,7 +7524,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -8100,7 +8100,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -8539,7 +8539,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -9040,7 +9040,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator2",
+      "Type": "Organization",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -9491,7 +9491,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -9983,7 +9983,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -10526,7 +10526,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -11105,7 +11105,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -11601,7 +11601,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "technology",
         "B": "geneticManipulation"
@@ -12136,7 +12136,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -12696,7 +12696,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -13169,7 +13169,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -13648,7 +13648,7 @@
           "Cooldown": 18000
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -14112,7 +14112,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -14555,7 +14555,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -14622,7 +14622,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -15149,7 +15149,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -15638,7 +15638,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -16092,7 +16092,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -16683,7 +16683,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -17157,7 +17157,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -17631,7 +17631,7 @@
         }
       },
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -18331,7 +18331,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "false",
         "B": "None"
@@ -18921,7 +18921,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -19511,7 +19511,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -19938,7 +19938,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -20425,7 +20425,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator2",
+      "Type": "Organization",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -21000,7 +21000,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -21477,7 +21477,7 @@
           "Cooldown": 3600
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -22001,7 +22001,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -22531,7 +22531,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -23148,7 +23148,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "technology",
         "B": "futureSociety"
@@ -23626,7 +23626,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator2",
+      "Type": "Organization",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -24129,7 +24129,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "technology",
         "B": "synthetics"
@@ -24688,7 +24688,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -25188,7 +25188,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -25804,7 +25804,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -26330,7 +26330,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -26758,7 +26758,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -27318,7 +27318,7 @@
           "Cooldown": 3600
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -27783,7 +27783,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -28315,7 +28315,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -28824,7 +28824,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -29316,7 +29316,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -29918,7 +29918,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -30454,7 +30454,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator2",
+      "Type": "Organization",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -30589,7 +30589,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -31122,7 +31122,7 @@
           "Cooldown": 0
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "technology",
         "B": "virtualSociety"
@@ -31598,7 +31598,7 @@
       "LocalVariableStart": [],
       "SharedVariableStart": [],
       "Interactions": [],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -32115,7 +32115,7 @@
           "Cooldown": 7200
         }
       ],
-      "Type": "SituationTypeEnum::NewEnumerator0",
+      "Type": "Local",
       "Prerequisite": {
         "A": "None",
         "B": "None"

@@ -6,7 +6,7 @@
     "icon": "activist",
     "fields": {
       "Name": "activist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "activist",
       "TechPrerequisite": {
@@ -37,7 +37,7 @@
     "icon": "admiral",
     "fields": {
       "Name": "admiral",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "admiral",
       "TechPrerequisite": {
@@ -68,7 +68,7 @@
     "icon": "arbitrary",
     "fields": {
       "Name": "arbitrary",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "subversive",
       "Icon": "arbitrary",
       "TechPrerequisite": {
@@ -104,7 +104,7 @@
     "icon": "artillerist",
     "fields": {
       "Name": "artillerist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "artillerist",
       "TechPrerequisite": {
@@ -135,7 +135,7 @@
     "icon": "carrier_commander",
     "fields": {
       "Name": "carrier_commander",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "carrier_commander",
       "TechPrerequisite": {
@@ -166,7 +166,7 @@
     "icon": "cautious",
     "fields": {
       "Name": "cautious",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "cautious",
       "TechPrerequisite": {
@@ -202,7 +202,7 @@
     "icon": "commander",
     "fields": {
       "Name": "commander",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "commander",
       "TechPrerequisite": {
@@ -233,7 +233,7 @@
     "icon": "commerce_raider",
     "fields": {
       "Name": "commerce_raider",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "commerce_raider",
       "TechPrerequisite": {
@@ -264,7 +264,7 @@
     "icon": "creative",
     "fields": {
       "Name": "creative",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "creative",
       "TechPrerequisite": {
@@ -305,7 +305,7 @@
     "icon": "determined",
     "fields": {
       "Name": "determined",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "determined",
       "TechPrerequisite": {
@@ -346,7 +346,7 @@
     "icon": "diplomat",
     "fields": {
       "Name": "diplomat",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "diplomat",
       "TechPrerequisite": {
@@ -377,7 +377,7 @@
     "icon": "duelist",
     "fields": {
       "Name": "duelist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "duelist",
       "TechPrerequisite": {
@@ -408,7 +408,7 @@
     "icon": "economist",
     "fields": {
       "Name": "economist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "economist",
       "TechPrerequisite": {
@@ -439,7 +439,7 @@
     "icon": "educator",
     "fields": {
       "Name": "educator",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "educator",
       "TechPrerequisite": {
@@ -470,7 +470,7 @@
     "icon": "investor_experienced",
     "fields": {
       "Name": "investor_experienced",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "investor_experienced",
       "TechPrerequisite": {
@@ -506,7 +506,7 @@
     "icon": "networker_experienced",
     "fields": {
       "Name": "networker_experienced",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "networker_experienced",
       "TechPrerequisite": {
@@ -541,7 +541,7 @@
     "icon": "field_marshal",
     "fields": {
       "Name": "field_marshal",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "field_marshal",
       "TechPrerequisite": {
@@ -576,7 +576,7 @@
     "icon": "air_ace",
     "fields": {
       "Name": "air_ace",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "air_ace",
       "TechPrerequisite": {
@@ -607,7 +607,7 @@
     "icon": "fleet_commander",
     "fields": {
       "Name": "fleet_commander",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "fleet_commander",
       "TechPrerequisite": {
@@ -642,7 +642,7 @@
     "icon": "gamer",
     "fields": {
       "Name": "gamer",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "gamer",
       "TechPrerequisite": {
@@ -683,7 +683,7 @@
     "icon": "general",
     "fields": {
       "Name": "general",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "general",
       "TechPrerequisite": {
@@ -714,7 +714,7 @@
     "icon": "greatBusinessman",
     "fields": {
       "Name": "greatBusinessman",
-      "Type": "CTraitType::NewEnumerator3",
+      "Type": "GreatPerson",
       "Category": "general",
       "Icon": "greatBusinessman",
       "TechPrerequisite": {
@@ -759,7 +759,7 @@
     "icon": "greatConqueror",
     "fields": {
       "Name": "greatConqueror",
-      "Type": "CTraitType::NewEnumerator3",
+      "Type": "GreatPerson",
       "Category": "general",
       "Icon": "greatConqueror",
       "TechPrerequisite": {
@@ -804,7 +804,7 @@
     "icon": "greatScientist",
     "fields": {
       "Name": "greatScientist",
-      "Type": "CTraitType::NewEnumerator3",
+      "Type": "GreatPerson",
       "Category": "general",
       "Icon": "greatScientist",
       "TechPrerequisite": {
@@ -849,7 +849,7 @@
     "icon": "greatStatesman",
     "fields": {
       "Name": "greatStatesman",
-      "Type": "CTraitType::NewEnumerator3",
+      "Type": "GreatPerson",
       "Category": "general",
       "Icon": "greatStatesman",
       "TechPrerequisite": {
@@ -894,7 +894,7 @@
     "icon": "greedy",
     "fields": {
       "Name": "greedy",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "greedy",
       "TechPrerequisite": {
@@ -930,7 +930,7 @@
     "icon": "hacker",
     "fields": {
       "Name": "hacker",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "hacker",
       "TechPrerequisite": {
@@ -961,7 +961,7 @@
     "icon": "hedonist",
     "fields": {
       "Name": "hedonist",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "hedonist",
       "TechPrerequisite": {
@@ -1001,7 +1001,7 @@
     "icon": "honest",
     "fields": {
       "Name": "honest",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "honest",
       "TechPrerequisite": {
@@ -1042,7 +1042,7 @@
     "icon": "imbecile",
     "fields": {
       "Name": "imbecile",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "imbecile",
       "TechPrerequisite": {
@@ -1077,7 +1077,7 @@
     "icon": "incompetent",
     "fields": {
       "Name": "incompetent",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "incompetent",
       "TechPrerequisite": {
@@ -1107,7 +1107,7 @@
     "icon": "infantry_leader",
     "fields": {
       "Name": "infantry_leader",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "infantry_leader",
       "TechPrerequisite": {
@@ -1138,7 +1138,7 @@
     "icon": "influencer",
     "fields": {
       "Name": "influencer",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "influencer",
       "TechPrerequisite": {
@@ -1169,7 +1169,7 @@
     "icon": "intelligent",
     "fields": {
       "Name": "intelligent",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "general",
       "Icon": "intelligent",
       "TechPrerequisite": {
@@ -1214,7 +1214,7 @@
     "icon": "introvert",
     "fields": {
       "Name": "introvert",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "introvert",
       "TechPrerequisite": {
@@ -1244,7 +1244,7 @@
     "icon": "investor",
     "fields": {
       "Name": "investor",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "investor",
       "TechPrerequisite": {
@@ -1275,7 +1275,7 @@
     "icon": "irritable",
     "fields": {
       "Name": "irritable",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "irritable",
       "TechPrerequisite": {
@@ -1311,7 +1311,7 @@
     "icon": "logical",
     "fields": {
       "Name": "logical",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "logical",
       "TechPrerequisite": {
@@ -1352,7 +1352,7 @@
     "icon": "logistician",
     "fields": {
       "Name": "logistician",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "logistician",
       "TechPrerequisite": {
@@ -1383,7 +1383,7 @@
     "icon": "mad_scientist",
     "fields": {
       "Name": "mad_scientist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "mad_scientist",
       "TechPrerequisite": {
@@ -1414,7 +1414,7 @@
     "icon": "maganate",
     "fields": {
       "Name": "maganate",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "maganate",
       "TechPrerequisite": {
@@ -1455,7 +1455,7 @@
     "icon": "investor_master",
     "fields": {
       "Name": "investor_master",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "investor_master",
       "TechPrerequisite": {
@@ -1486,7 +1486,7 @@
     "icon": "masterful",
     "fields": {
       "Name": "masterful",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "masterful",
       "TechPrerequisite": {
@@ -1527,7 +1527,7 @@
     "icon": "meticulous",
     "fields": {
       "Name": "meticulous",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "meticulous",
       "TechPrerequisite": {
@@ -1563,7 +1563,7 @@
     "icon": "networker",
     "fields": {
       "Name": "networker",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "networker",
       "TechPrerequisite": {
@@ -1594,7 +1594,7 @@
     "icon": "optimist",
     "fields": {
       "Name": "optimist",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "optimist",
       "TechPrerequisite": {
@@ -1635,7 +1635,7 @@
     "icon": "organized",
     "fields": {
       "Name": "organized",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "organized",
       "TechPrerequisite": {
@@ -1676,7 +1676,7 @@
     "icon": "overseer",
     "fields": {
       "Name": "overseer",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "overseer",
       "TechPrerequisite": {
@@ -1717,7 +1717,7 @@
     "icon": "paragon",
     "fields": {
       "Name": "paragon",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "paragon",
       "TechPrerequisite": {
@@ -1748,7 +1748,7 @@
     "icon": "paranoid",
     "fields": {
       "Name": "paranoid",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "subversive",
       "Icon": "paranoid",
       "TechPrerequisite": {
@@ -1779,7 +1779,7 @@
     "icon": "politician",
     "fields": {
       "Name": "politician",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "politician",
       "TechPrerequisite": {
@@ -1810,7 +1810,7 @@
     "icon": "powermonger",
     "fields": {
       "Name": "powermonger",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "powermonger",
       "TechPrerequisite": {
@@ -1851,7 +1851,7 @@
     "icon": "pretty",
     "fields": {
       "Name": "pretty",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "pretty",
       "TechPrerequisite": {
@@ -1882,7 +1882,7 @@
     "icon": "quickLearner",
     "fields": {
       "Name": "quickLearner",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "quickLearner",
       "TechPrerequisite": {
@@ -1923,7 +1923,7 @@
     "icon": "resilient",
     "fields": {
       "Name": "resilient",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "general",
       "Icon": "resilient",
       "TechPrerequisite": {
@@ -1968,7 +1968,7 @@
     "icon": "sapper",
     "fields": {
       "Name": "sapper",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "sapper",
       "TechPrerequisite": {
@@ -1999,7 +1999,7 @@
     "icon": "scientist",
     "fields": {
       "Name": "scientist",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "scientist",
       "TechPrerequisite": {
@@ -2030,7 +2030,7 @@
     "icon": "charisma",
     "fields": {
       "Name": "silver_tongue",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "charisma",
       "Icon": "charisma",
       "TechPrerequisite": {
@@ -2061,7 +2061,7 @@
     "icon": "socialite",
     "fields": {
       "Name": "socialite",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "socialite",
       "TechPrerequisite": {
@@ -2097,7 +2097,7 @@
     "icon": "software_engineer",
     "fields": {
       "Name": "software_engineer",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "software_engineer",
       "TechPrerequisite": {
@@ -2128,7 +2128,7 @@
     "icon": "strategist",
     "fields": {
       "Name": "strategist",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "strategy",
       "Icon": "strategist",
       "TechPrerequisite": {
@@ -2164,7 +2164,7 @@
     "icon": "stupid",
     "fields": {
       "Name": "stupid",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "general",
       "Icon": "stupid",
       "TechPrerequisite": {
@@ -2189,7 +2189,7 @@
     "icon": "superior",
     "fields": {
       "Name": "superior",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "general",
       "Icon": "superior",
       "TechPrerequisite": {
@@ -2234,7 +2234,7 @@
     "icon": "tank_commander",
     "fields": {
       "Name": "tank_commander",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "tank_commander",
       "TechPrerequisite": {
@@ -2265,7 +2265,7 @@
     "icon": "taskmaster",
     "fields": {
       "Name": "taskmaster",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "management",
       "Icon": "taskmaster",
       "TechPrerequisite": {
@@ -2300,7 +2300,7 @@
     "icon": "technologist",
     "fields": {
       "Name": "technologist",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "management",
       "Icon": "technologist",
       "TechPrerequisite": {
@@ -2341,7 +2341,7 @@
     "icon": "trickster",
     "fields": {
       "Name": "trickster",
-      "Type": "CTraitType::NewEnumerator0",
+      "Type": "Personality",
       "Category": "charisma",
       "Icon": "trickster",
       "TechPrerequisite": {
@@ -2382,7 +2382,7 @@
     "icon": "warmaster",
     "fields": {
       "Name": "warmaster",
-      "Type": "CTraitType::NewEnumerator1",
+      "Type": "Skill",
       "Category": "strategy",
       "Icon": "warmaster",
       "TechPrerequisite": {

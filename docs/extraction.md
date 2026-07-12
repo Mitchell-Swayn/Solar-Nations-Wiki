@@ -25,7 +25,7 @@ This runs:
 1. **`retoc unpack`** — extracts raw `.uasset` files to `data/raw/unpacked/` (first run only, ~6 GB)
 2. **`retoc to-legacy`** — converts define assets to legacy `.uexp` format in `data/raw/legacy-all/`
 3. **`tools/parse_legacy.py`** — parses binary exports into `data/raw/Defines/*.json` and `data/raw/Localization/en.json`
-4. **CUE4Parse full export** (when `tools/jmap_dumper/mappings.usmap` and the .NET SDK are present) — `tools/cue4-export` dumps every define DataTable with complete property values to `data/raw/DefinesFull/`, and `tools/convert_full_defines.py` rewrites them over `data/raw/Defines/` in the tutorialMod convention
+4. **CUE4Parse full export** (when `tools/jmap_dumper/mappings.usmap` and the .NET SDK are present) — `tools/cue4-export` dumps every define DataTable with complete property values to `data/raw/DefinesFull/`, and `tools/convert_full_defines.py` rewrites them over `data/raw/Defines/` as flat row arrays
 5. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
 
 With the full export active, all ~85 define tables are extracted with exact field names and values (planet physics, culture traits, policies, edicts, missions, espionage operations, and more), producing 3,000+ wiki pages across 70+ categories.
@@ -110,7 +110,7 @@ Localization:
 data/raw/Localization/en.json
 ```
 
-File names must match the tutorialMod convention (see `Saved/Mods/tutorialMod/README.md`).
+File names must match the table names registered in `src/lib/categories.ts`.
 
 ### 5. Regenerate wiki data
 
@@ -119,15 +119,12 @@ npm run normalize
 npm run build
 ```
 
-The normalize script prefers `data/raw/Defines/` over tutorialMod samples when present.
+The normalize script requires extracted data in `data/raw/Defines/` — everything comes from the base game (modifier definitions come from the `ModifierProperties` tables). The tutorial mod (`Saved/Mods/tutorialMod/`) is no longer used as a data source.
 
-## What is available without any extraction
+## What is available without unpacking
 
 | Source | Location | Contents |
 |--------|----------|----------|
-| tutorialMod | `Saved/Mods/tutorialMod/` | JSON schema samples (1 entry per define type) |
-| Modifiers | `tutorialMod/modifiers.json` | 174 modifier definitions |
-| Mission components | `tutorialMod/missioncomponents.json` | 40 mission component definitions |
 | Flags | `Saved/Flags/` | ~502 country flag PNGs |
 | Icons | `Saved/Icons/` | Game icon PNGs |
 

@@ -49,14 +49,18 @@ if (textureList != null)
     return;
 }
 
-const string prefix = "twilightModernity/Content/Blueprints/Struct/Defines/";
+string[] prefixes = [
+    "twilightModernity/Content/Blueprints/Struct/Defines/",
+    "twilightModernity/Content/Blueprints/Struct/Enum/",
+];
 
 int ok = 0, fail = 0;
 foreach (var (path, _) in provider.Files)
 {
-    if (!path.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)) continue;
+    var prefix = Array.Find(prefixes, p => path.StartsWith(p, StringComparison.OrdinalIgnoreCase));
+    if (prefix == null) continue;
     if (!path.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase)) continue;
-    var rel = path.Substring(prefix.Length);
+    var rel = prefix.EndsWith("Enum/") ? "Enum/" + path.Substring(prefix.Length) : path.Substring(prefix.Length);
     var outPath = Path.Combine(outDir, Path.ChangeExtension(rel, ".json"));
     Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
     try

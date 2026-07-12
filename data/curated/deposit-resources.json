@@ -17,7 +17,7 @@
       },
       "Value": 1,
       "TradeValue": 1,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -60,7 +60,7 @@
       },
       "Value": 6,
       "TradeValue": 10,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "technology",
         "B": "interplanetaryTrade"
@@ -103,7 +103,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -141,7 +141,7 @@
       },
       "Value": 0,
       "TradeValue": 5,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -179,7 +179,7 @@
       },
       "Value": 5,
       "TradeValue": 5,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "technology",
         "B": "artificialIntelligence"
@@ -231,7 +231,7 @@
       },
       "Value": 3,
       "TradeValue": 1,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -274,7 +274,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -312,7 +312,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -356,7 +356,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -404,7 +404,7 @@
       },
       "Value": 1,
       "TradeValue": 1,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -446,7 +446,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -490,7 +490,7 @@
       },
       "Value": 4,
       "TradeValue": 5,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "technology",
         "B": "industrialization"
@@ -533,7 +533,7 @@
       },
       "Value": 7,
       "TradeValue": 10,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "technology",
         "B": "nanocomposites"
@@ -586,7 +586,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -625,7 +625,7 @@
       },
       "Value": 2,
       "TradeValue": 1,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator2",
+      "AISaleWillingness": "Anyone",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -668,7 +668,7 @@
       },
       "Value": 0,
       "TradeValue": 5,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"
@@ -706,7 +706,7 @@
       },
       "Value": 20,
       "TradeValue": 20,
-      "AISaleWillingness": "AISaleWillingness::NewEnumerator1",
+      "AISaleWillingness": "Allies",
       "Prerequisite": {
         "A": "None",
         "B": "None"

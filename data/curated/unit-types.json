@@ -25,7 +25,7 @@
         "A": 255,
         "Hex": "CD89B8"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "Stats": [],
       "Cost": {
         "smallArms": 5
@@ -77,7 +77,7 @@
         "A": 255,
         "Hex": "CBC000"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "Stats": [],
       "Cost": {
         "smallArms": 5
@@ -124,7 +124,7 @@
         "A": 255,
         "Hex": "945AE0"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator3",
+      "Domain": "Space",
       "Stats": [],
       "Cost": [],
       "IsShip": true,
@@ -179,7 +179,7 @@
         "A": 255,
         "Hex": "875DD7"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator1",
+      "Domain": "Water",
       "Stats": [],
       "Cost": {
         "ships": 1
@@ -238,7 +238,7 @@
         "A": 255,
         "Hex": "9EEBFF"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "Stats": [],
       "Cost": [],
       "IsShip": false,
@@ -290,7 +290,7 @@
         "A": 255,
         "Hex": "3D9E00"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "Stats": [],
       "Cost": {
         "smallArms": 1
@@ -344,7 +344,7 @@
         "A": 255,
         "Hex": "9EEBFF"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator2",
+      "Domain": "Air",
       "Stats": [],
       "Cost": [],
       "IsShip": false,
@@ -403,7 +403,7 @@
         "A": 255,
         "Hex": "B400D6"
       },
-      "Domain": "UnitDomainEnum::NewEnumerator0",
+      "Domain": "Land",
       "Stats": [],
       "Cost": {
         "armor": 5

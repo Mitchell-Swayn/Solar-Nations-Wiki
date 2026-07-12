@@ -15,7 +15,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0,
         "G": 0.997,
@@ -57,7 +57,7 @@
       "ExperienceGain": 6,
       "Term": 7200,
       "ReassignCost": 5,
-      "ElectionType": "JobElectionType::NewEnumerator2",
+      "ElectionType": "Oligarchic",
       "Color": {
         "R": 0.997,
         "G": 0,
@@ -99,7 +99,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 30,
-      "ElectionType": "JobElectionType::NewEnumerator1",
+      "ElectionType": "Hereditary",
       "Color": {
         "R": 0.997,
         "G": 0.580799,
@@ -141,7 +141,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 5,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0,
@@ -183,7 +183,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0,
         "G": 0.943095,
@@ -225,7 +225,7 @@
       "ExperienceGain": 1,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0.370381,
@@ -261,7 +261,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.866124,
         "G": 0.997,
@@ -303,7 +303,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 1,
         "G": 0.146034,
@@ -345,7 +345,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.631568,
         "G": 0,
@@ -387,7 +387,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0.269903,
@@ -429,7 +429,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 10,
-      "ElectionType": "JobElectionType::NewEnumerator2",
+      "ElectionType": "Oligarchic",
       "Color": {
         "R": 0,
         "G": 0.997,
@@ -476,7 +476,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0.157232,
@@ -518,7 +518,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0,
         "G": 0.603249,
@@ -560,7 +560,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0,
         "G": 0.134942,
@@ -602,7 +602,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.084746,
         "G": 0,
@@ -644,7 +644,7 @@
       "ExperienceGain": 1,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.392104,
         "G": 0.997,
@@ -680,7 +680,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0,
         "G": 0.997,
@@ -722,7 +722,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0,
@@ -764,7 +764,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0.269903,
@@ -806,7 +806,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 1,
         "G": 0.146034,
@@ -848,7 +848,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 10,
-      "ElectionType": "JobElectionType::NewEnumerator1",
+      "ElectionType": "Hereditary",
       "Color": {
         "R": 0.031385,
         "G": 0.997,
@@ -895,7 +895,7 @@
       "ExperienceGain": 6,
       "Term": 10800,
       "ReassignCost": 5,
-      "ElectionType": "JobElectionType::NewEnumerator2",
+      "ElectionType": "Oligarchic",
       "Color": {
         "R": 0.997,
         "G": 0.010085,
@@ -937,7 +937,7 @@
       "ExperienceGain": 6,
       "Term": 3600,
       "ReassignCost": 5,
-      "ElectionType": "JobElectionType::NewEnumerator3",
+      "ElectionType": "Republican",
       "Color": {
         "R": 0,
         "G": 0.111625,
@@ -979,7 +979,7 @@
       "ExperienceGain": 6,
       "Term": 7200,
       "ReassignCost": 5,
-      "ElectionType": "JobElectionType::NewEnumerator2",
+      "ElectionType": "Oligarchic",
       "Color": {
         "R": 1,
         "G": 1,
@@ -1021,7 +1021,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator0",
+      "ElectionType": "At Will",
       "Color": {
         "R": 0.997,
         "G": 0.157232,
@@ -1063,7 +1063,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 1,
-      "ElectionType": "JobElectionType::NewEnumerator1",
+      "ElectionType": "Hereditary",
       "Color": {
         "R": 0.633267,
         "G": 0.021263,
@@ -1105,7 +1105,7 @@
       "ExperienceGain": 6,
       "Term": 999999,
       "ReassignCost": 15,
-      "ElectionType": "JobElectionType::NewEnumerator2",
+      "ElectionType": "Oligarchic",
       "Color": {
         "R": 0.997,
         "G": 0.580799,

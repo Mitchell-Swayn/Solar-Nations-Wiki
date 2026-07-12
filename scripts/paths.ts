@@ -20,10 +20,6 @@ export function getGameRoot(): string {
   );
 }
 
-export function getTutorialModPath(gameRoot: string): string {
-  return join(gameRoot, 'Saved/Mods/tutorialMod');
-}
-
 export function getFlagsPath(gameRoot: string): string {
   return join(gameRoot, 'Saved/Flags');
 }

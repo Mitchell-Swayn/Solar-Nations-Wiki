@@ -13,7 +13,7 @@
         "Hex": "FFFFFF"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -38,7 +38,7 @@
         "Hex": "000000"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -68,7 +68,7 @@
         "Hex": "002774"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator1"
+      "Domain": "Water"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -88,7 +88,7 @@
         "Hex": "7F6A00"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -113,7 +113,7 @@
         "Hex": "CFCFCF"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator2"
+      "Domain": "Air"
     },
     "modifiers": [
       {
@@ -138,7 +138,7 @@
         "Hex": "739D74"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -163,7 +163,7 @@
         "Hex": "AD7B00"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -204,7 +204,7 @@
         "Hex": "000436"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator3"
+      "Domain": "Space"
     },
     "modifiers": [
       {
@@ -235,7 +235,7 @@
         "Hex": "00FF90"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -260,7 +260,7 @@
         "Hex": "FF0000"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -298,7 +298,7 @@
         "Hex": "604935"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator1"
+      "Domain": "Water"
     },
     "modifiers": [
       {
@@ -327,7 +327,7 @@
         "Hex": "404040"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -352,7 +352,7 @@
         "Hex": "0026FF"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator1"
+      "Domain": "Water"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -372,7 +372,7 @@
         "Hex": "007F0E"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -392,7 +392,7 @@
         "Hex": "0092D4"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -412,7 +412,7 @@
         "Hex": "93CAD4"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator1"
+      "Domain": "Water"
     },
     "modifiers": [
       {
@@ -441,7 +441,7 @@
         "Hex": "2F004B"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator3"
+      "Domain": "Space"
     },
     "modifiers": [
       {
@@ -467,7 +467,7 @@
         "Hex": "92746F"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -492,7 +492,7 @@
         "Hex": "A7A7A7"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -517,7 +517,7 @@
         "Hex": "000000"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -547,7 +547,7 @@
         "Hex": "212E56"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {
@@ -573,7 +573,7 @@
         "Hex": "8B7845"
       },
       "SupplyBonus": 0,
-      "Domain": "UnitDomainEnum::NewEnumerator0"
+      "Domain": "Land"
     },
     "modifiers": [
       {

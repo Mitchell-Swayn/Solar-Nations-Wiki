@@ -6,7 +6,7 @@
     "icon": "colony",
     "fields": {
       "Name": "habitability_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -67,7 +67,7 @@
     "icon": "colony",
     "fields": {
       "Name": "habitability_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -135,7 +135,7 @@
     "icon": "colony",
     "fields": {
       "Name": "habitability_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -208,7 +208,7 @@
     "icon": "colony",
     "fields": {
       "Name": "habitability_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -276,7 +276,7 @@
     "icon": "colony",
     "fields": {
       "Name": "habitability_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -349,7 +349,7 @@
     "icon": "superSteel",
     "fields": {
       "Name": "chromiteTech",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "superSteel",
       "Year": 0,
       "Cost": 6,
@@ -410,7 +410,7 @@
     "icon": "airplanes3",
     "fields": {
       "Name": "airHull_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "airplanes3",
       "Year": 0,
       "Cost": 6,
@@ -481,7 +481,7 @@
     "icon": "autocannon2",
     "fields": {
       "Name": "airGuns_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "autocannon2",
       "Year": 0,
       "Cost": 6,
@@ -546,7 +546,7 @@
     "icon": "artillery3",
     "fields": {
       "Name": "landOrdinance_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "artillery3",
       "Year": 0,
       "Cost": 6,
@@ -616,7 +616,7 @@
     "icon": "engine2",
     "fields": {
       "Name": "spaceEngine_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "engine2",
       "Year": 0,
       "Cost": 6,
@@ -682,7 +682,7 @@
     "icon": "armor2",
     "fields": {
       "Name": "metalAdvance",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor2",
       "Year": 2140,
       "Cost": 20,
@@ -743,7 +743,7 @@
     "icon": "missile2",
     "fields": {
       "Name": "missiles_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "missile2",
       "Year": 0,
       "Cost": 6,
@@ -809,7 +809,7 @@
     "icon": "PDTurret2",
     "fields": {
       "Name": "pointDefense_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "PDTurret2",
       "Year": 2140,
       "Cost": 20,
@@ -895,7 +895,7 @@
     "icon": "radiator2",
     "fields": {
       "Name": "radiator_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "radiator2",
       "Year": 0,
       "Cost": 6,
@@ -955,7 +955,7 @@
     "icon": "spaceHull2",
     "fields": {
       "Name": "shipConstruction_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spaceHull2",
       "Year": 0,
       "Cost": 6,
@@ -1026,7 +1026,7 @@
     "icon": "turret2",
     "fields": {
       "Name": "turrets_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "turret2",
       "Year": 0,
       "Cost": 6,
@@ -1086,7 +1086,7 @@
     "icon": "tank2",
     "fields": {
       "Name": "landVehicles_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "tank2",
       "Year": 0,
       "Cost": 6,
@@ -1151,7 +1151,7 @@
     "icon": "aiCyberdesign",
     "fields": {
       "Name": "aiBrainImplants",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "aiCyberdesign",
       "Year": 2240,
       "Cost": 24,
@@ -1216,7 +1216,7 @@
     "icon": "electronics",
     "fields": {
       "Name": "aiHumanHybrid",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "electronics",
       "Year": 2240,
       "Cost": 24,
@@ -1286,7 +1286,7 @@
     "icon": "supercollider",
     "fields": {
       "Name": "antimatterAdvancement",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "supercollider",
       "Year": 2450,
       "Cost": 120,
@@ -1362,7 +1362,7 @@
     "icon": "missile5",
     "fields": {
       "Name": "missiles_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "missile5",
       "Year": 0,
       "Cost": 6,
@@ -1433,7 +1433,7 @@
     "icon": "artillery5",
     "fields": {
       "Name": "landOrdinance_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "artillery5",
       "Year": 0,
       "Cost": 6,
@@ -1503,7 +1503,7 @@
     "icon": "antimatter",
     "fields": {
       "Name": "antimatterPower",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "antimatter",
       "Year": 2450,
       "Cost": 120,
@@ -1572,7 +1572,7 @@
     "icon": "morale",
     "fields": {
       "Name": "armyOrganization_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "morale",
       "Year": 0,
       "Cost": 6,
@@ -1633,7 +1633,7 @@
     "icon": "morale",
     "fields": {
       "Name": "armyOrganization_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "morale",
       "Year": 0,
       "Cost": 6,
@@ -1701,7 +1701,7 @@
     "icon": "morale",
     "fields": {
       "Name": "armyOrganization_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "morale",
       "Year": 0,
       "Cost": 6,
@@ -1774,7 +1774,7 @@
     "icon": "morale",
     "fields": {
       "Name": "armyOrganization_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "morale",
       "Year": 0,
       "Cost": 6,
@@ -1842,7 +1842,7 @@
     "icon": "morale",
     "fields": {
       "Name": "armyOrganization_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "morale",
       "Year": 0,
       "Cost": 6,
@@ -1915,7 +1915,7 @@
     "icon": "gravitons",
     "fields": {
       "Name": "gravitonManipulation",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "gravitons",
       "Year": 0,
       "Cost": 6,
@@ -1979,7 +1979,7 @@
     "icon": "automatedFactory",
     "fields": {
       "Name": "industrialAutomation",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "automatedFactory",
       "Year": 0,
       "Cost": 6,
@@ -2044,7 +2044,7 @@
     "icon": "spacedArmor",
     "fields": {
       "Name": "shipAuxiliaries_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spacedArmor",
       "Year": 0,
       "Cost": 6,
@@ -2097,7 +2097,7 @@
     "icon": "empTurret1",
     "fields": {
       "Name": "empTech_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "empTurret1",
       "Year": 0,
       "Cost": 6,
@@ -2150,7 +2150,7 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "biosculpting",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterial",
       "Year": 0,
       "Cost": 6,
@@ -2220,7 +2220,7 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "biotech",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterial",
       "Year": 2300,
       "Cost": 100,
@@ -2285,7 +2285,7 @@
     "icon": "laserTurret1",
     "fields": {
       "Name": "laserTech_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "laserTurret1",
       "Year": 0,
       "Cost": 6,
@@ -2338,7 +2338,7 @@
     "icon": "armor3",
     "fields": {
       "Name": "armor_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor3",
       "Year": 0,
       "Cost": 6,
@@ -2409,7 +2409,7 @@
     "icon": "colossalCommandCenter",
     "fields": {
       "Name": "flyingFortressTech_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colossalCommandCenter",
       "Year": 0,
       "Cost": 6,
@@ -2474,7 +2474,7 @@
     "icon": "matterEnergyCovalence",
     "fields": {
       "Name": "matterEnergyCovalence",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "matterEnergyCovalence",
       "Year": 2200,
       "Cost": 60,
@@ -2545,7 +2545,7 @@
     "icon": "unity",
     "fields": {
       "Name": "culturalEconomics",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "unity",
       "Year": 0,
       "Cost": 6,
@@ -2628,7 +2628,7 @@
     "icon": "cyborg",
     "fields": {
       "Name": "cybermastery",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "cyborg",
       "Year": 0,
       "Cost": 6,
@@ -2693,7 +2693,7 @@
     "icon": "cyborg",
     "fields": {
       "Name": "cybernetics",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "cyborg",
       "Year": 0,
       "Cost": 6,
@@ -2762,7 +2762,7 @@
     "icon": "colony",
     "fields": {
       "Name": "deepSpaceColonization",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colony",
       "Year": 2300,
       "Cost": 24,
@@ -2827,7 +2827,7 @@
     "icon": "armor5",
     "fields": {
       "Name": "armor_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor5",
       "Year": 0,
       "Cost": 6,
@@ -2898,7 +2898,7 @@
     "icon": "biohazard",
     "fields": {
       "Name": "biowarfare_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "biohazard",
       "Year": 0,
       "Cost": 6,
@@ -2958,7 +2958,7 @@
     "icon": "education",
     "fields": {
       "Name": "educationTech_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "education",
       "Year": 2040,
       "Cost": 6,
@@ -3015,7 +3015,7 @@
     "icon": "education",
     "fields": {
       "Name": "educationTech_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "education",
       "Year": 2040,
       "Cost": 6,
@@ -3079,7 +3079,7 @@
     "icon": "education",
     "fields": {
       "Name": "educationTech_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "education",
       "Year": 2040,
       "Cost": 6,
@@ -3148,7 +3148,7 @@
     "icon": "education",
     "fields": {
       "Name": "educationTech_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "education",
       "Year": 2040,
       "Cost": 6,
@@ -3212,7 +3212,7 @@
     "icon": "education",
     "fields": {
       "Name": "educationTech_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "education",
       "Year": 2040,
       "Cost": 6,
@@ -3281,7 +3281,7 @@
     "icon": "laserTurret2",
     "fields": {
       "Name": "laserTech_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "laserTurret2",
       "Year": 0,
       "Cost": 6,
@@ -3341,7 +3341,7 @@
     "icon": "empTurret3",
     "fields": {
       "Name": "empTech_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "empTurret3",
       "Year": 0,
       "Cost": 6,
@@ -3406,7 +3406,7 @@
     "icon": "polarizedArmor",
     "fields": {
       "Name": "shipAuxiliaries_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "polarizedArmor",
       "Year": 0,
       "Cost": 6,
@@ -3471,7 +3471,7 @@
     "icon": "spaceHull5",
     "fields": {
       "Name": "shipConstruction_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spaceHull5",
       "Year": 0,
       "Cost": 6,
@@ -3547,7 +3547,7 @@
     "icon": "tank5",
     "fields": {
       "Name": "landVehicles_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "tank5",
       "Year": 0,
       "Cost": 6,
@@ -3617,7 +3617,7 @@
     "icon": "exoticMatter",
     "fields": {
       "Name": "exoticMatter",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "exoticMatter",
       "Year": 2450,
       "Cost": 120,
@@ -3683,7 +3683,7 @@
     "icon": "warpDrive_1",
     "fields": {
       "Name": "exoticMatterCatalysis",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "warpDrive_1",
       "Year": 0,
       "Cost": 6,
@@ -3757,7 +3757,7 @@
     "icon": "smallArms4",
     "fields": {
       "Name": "smallArms_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "smallArms4",
       "Year": 0,
       "Cost": 6,
@@ -3822,7 +3822,7 @@
     "icon": "laserTurret3",
     "fields": {
       "Name": "laserTech_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "laserTurret3",
       "Year": 0,
       "Cost": 6,
@@ -3887,7 +3887,7 @@
     "icon": "colossalCommandCenter",
     "fields": {
       "Name": "floatingFortressTech",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colossalCommandCenter",
       "Year": 0,
       "Cost": 6,
@@ -3957,7 +3957,7 @@
     "icon": "empTurret2",
     "fields": {
       "Name": "empTech_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "empTurret2",
       "Year": 0,
       "Cost": 6,
@@ -4022,7 +4022,7 @@
     "icon": "engine4",
     "fields": {
       "Name": "spaceEngine_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "engine4",
       "Year": 0,
       "Cost": 6,
@@ -4088,7 +4088,7 @@
     "icon": "laserTurret4",
     "fields": {
       "Name": "laserTech_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "laserTurret4",
       "Year": 0,
       "Cost": 6,
@@ -4148,7 +4148,7 @@
     "icon": "engine5",
     "fields": {
       "Name": "spaceEngine_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "engine5",
       "Year": 0,
       "Cost": 6,
@@ -4219,7 +4219,7 @@
     "icon": "futureSociety",
     "fields": {
       "Name": "futureSociety",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "futureSociety",
       "Year": 0,
       "Cost": 6,
@@ -4293,7 +4293,7 @@
     "icon": "galaxysmall",
     "fields": {
       "Name": "galacticAmbition",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "galaxysmall",
       "Year": 2100,
       "Cost": 6,
@@ -4374,7 +4374,7 @@
     "icon": "colony",
     "fields": {
       "Name": "galacticCivilization",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "colony",
       "Year": 2300,
       "Cost": 24,
@@ -4444,7 +4444,7 @@
     "icon": "electronics",
     "fields": {
       "Name": "artificialIntelligence",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "electronics",
       "Year": 2040,
       "Cost": 6,
@@ -4498,7 +4498,7 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "geneticEngineering",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterial",
       "Year": 2092,
       "Cost": 40,
@@ -4568,7 +4568,7 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "geneticSequencing",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterial",
       "Year": 2092,
       "Cost": 40,
@@ -4629,7 +4629,7 @@
     "icon": "flyingFortress",
     "fields": {
       "Name": "flyingFortressTech",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "flyingFortress",
       "Year": 0,
       "Cost": 6,
@@ -4689,7 +4689,7 @@
     "icon": "landcruiser",
     "fields": {
       "Name": "landCruiser_0",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "landcruiser",
       "Year": 0,
       "Cost": 6,
@@ -4754,7 +4754,7 @@
     "icon": "grayGoo",
     "fields": {
       "Name": "grayGooWeapon",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "grayGoo",
       "Year": 2360,
       "Cost": 36,
@@ -4814,7 +4814,7 @@
     "icon": "traditional",
     "fields": {
       "Name": "greatGameTheory",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "traditional",
       "Year": 2100,
       "Cost": 6,
@@ -4878,7 +4878,7 @@
     "icon": "smallArms2",
     "fields": {
       "Name": "smallArms_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "smallArms2",
       "Year": 0,
       "Cost": 6,
@@ -4943,7 +4943,7 @@
     "icon": "PDTurret5",
     "fields": {
       "Name": "pointDefense_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "PDTurret5",
       "Year": 2140,
       "Cost": 20,
@@ -5034,7 +5034,7 @@
     "icon": "smallArms1",
     "fields": {
       "Name": "smallArms_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "smallArms1",
       "Year": 0,
       "Cost": 6,
@@ -5092,7 +5092,7 @@
     "icon": "radiator5",
     "fields": {
       "Name": "radiator_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "radiator5",
       "Year": 0,
       "Cost": 6,
@@ -5157,7 +5157,7 @@
     "icon": "laserTurret5",
     "fields": {
       "Name": "laserTech_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "laserTurret5",
       "Year": 0,
       "Cost": 6,
@@ -5222,7 +5222,7 @@
     "icon": "magneticShield",
     "fields": {
       "Name": "shipAuxiliaries_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "magneticShield",
       "Year": 0,
       "Cost": 6,
@@ -5287,7 +5287,7 @@
     "icon": "autocannon4",
     "fields": {
       "Name": "airGuns_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "autocannon4",
       "Year": 0,
       "Cost": 6,
@@ -5352,7 +5352,7 @@
     "icon": "geneticMaterialUp",
     "fields": {
       "Name": "homoSuperius",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterialUp",
       "Year": 2360,
       "Cost": 36,
@@ -5425,7 +5425,7 @@
     "icon": "electronics",
     "fields": {
       "Name": "digitalHumanity",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "electronics",
       "Year": 2240,
       "Cost": 24,
@@ -5495,7 +5495,7 @@
     "icon": "communism",
     "fields": {
       "Name": "humanDeterminism",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "communism",
       "Year": 2100,
       "Cost": 6,
@@ -5563,7 +5563,7 @@
     "icon": "geneticMaterial",
     "fields": {
       "Name": "geneticManipulation",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterial",
       "Year": 2360,
       "Cost": 36,
@@ -5634,7 +5634,7 @@
     "icon": "cohesion",
     "fields": {
       "Name": "hivemindTheory",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "cohesion",
       "Year": 2100,
       "Cost": 6,
@@ -5703,7 +5703,7 @@
     "icon": "neuralNetworks",
     "fields": {
       "Name": "hypercomputation",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "neuralNetworks",
       "Year": 0,
       "Cost": 6,
@@ -5773,7 +5773,7 @@
     "icon": "exoticMatter",
     "fields": {
       "Name": "hypermaterials",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "exoticMatter",
       "Year": 0,
       "Cost": 6,
@@ -5843,7 +5843,7 @@
     "icon": "hyperphysics",
     "fields": {
       "Name": "hyperphysics",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "hyperphysics",
       "Year": 2450,
       "Cost": 120,
@@ -5918,7 +5918,7 @@
     "icon": "manpower",
     "fields": {
       "Name": "militaryIdeology",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "manpower",
       "Year": 0,
       "Cost": 6,
@@ -5997,7 +5997,7 @@
     "icon": "airplanes2",
     "fields": {
       "Name": "airHull_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "airplanes2",
       "Year": 0,
       "Cost": 6,
@@ -6063,7 +6063,7 @@
     "icon": "artillery2",
     "fields": {
       "Name": "landOrdinance_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "artillery2",
       "Year": 0,
       "Cost": 6,
@@ -6128,7 +6128,7 @@
     "icon": "engine1",
     "fields": {
       "Name": "spaceEngine_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "engine1",
       "Year": 0,
       "Cost": 6,
@@ -6187,7 +6187,7 @@
     "icon": "missile1",
     "fields": {
       "Name": "missiles_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "missile1",
       "Year": 0,
       "Cost": 6,
@@ -6246,7 +6246,7 @@
     "icon": "PDTurret1",
     "fields": {
       "Name": "pointDefense_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "PDTurret1",
       "Year": 2140,
       "Cost": 20,
@@ -6320,7 +6320,7 @@
     "icon": "radiator1",
     "fields": {
       "Name": "radiator_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "radiator1",
       "Year": 0,
       "Cost": 6,
@@ -6380,7 +6380,7 @@
     "icon": "turret1",
     "fields": {
       "Name": "turrets_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "turret1",
       "Year": 0,
       "Cost": 6,
@@ -6433,7 +6433,7 @@
     "icon": "replicatorIndustrial",
     "fields": {
       "Name": "industrialReplication",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "replicatorIndustrial",
       "Year": 0,
       "Cost": 6,
@@ -6497,7 +6497,7 @@
     "icon": "factory",
     "fields": {
       "Name": "industrialization",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "factory",
       "Year": 1800,
       "Cost": 6,
@@ -6551,7 +6551,7 @@
     "icon": "industry",
     "fields": {
       "Name": "industrialPower_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "industry",
       "Year": 0,
       "Cost": 6,
@@ -6608,7 +6608,7 @@
     "icon": "industry",
     "fields": {
       "Name": "industrialPower_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "industry",
       "Year": 0,
       "Cost": 6,
@@ -6672,7 +6672,7 @@
     "icon": "industry",
     "fields": {
       "Name": "industrialPower_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "industry",
       "Year": 0,
       "Cost": 6,
@@ -6741,7 +6741,7 @@
     "icon": "industry",
     "fields": {
       "Name": "industrialPower_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "industry",
       "Year": 0,
       "Cost": 6,
@@ -6805,7 +6805,7 @@
     "icon": "industry",
     "fields": {
       "Name": "industrialPower_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "industry",
       "Year": 0,
       "Cost": 6,
@@ -6874,7 +6874,7 @@
     "icon": "warExpansion",
     "fields": {
       "Name": "expansion_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "warExpansion",
       "Year": 0,
       "Cost": 6,
@@ -6931,7 +6931,7 @@
     "icon": "warExpansion",
     "fields": {
       "Name": "expansion_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "warExpansion",
       "Year": 0,
       "Cost": 6,
@@ -6995,7 +6995,7 @@
     "icon": "warExpansion",
     "fields": {
       "Name": "expansion_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "warExpansion",
       "Year": 0,
       "Cost": 6,
@@ -7064,7 +7064,7 @@
     "icon": "warExpansion",
     "fields": {
       "Name": "expansion_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "warExpansion",
       "Year": 0,
       "Cost": 6,
@@ -7128,7 +7128,7 @@
     "icon": "warExpansion",
     "fields": {
       "Name": "expansion_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "warExpansion",
       "Year": 0,
       "Cost": 6,
@@ -7197,7 +7197,7 @@
     "icon": "colony",
     "fields": {
       "Name": "interplanetaryColonization",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colony",
       "Year": 2240,
       "Cost": 24,
@@ -7267,7 +7267,7 @@
     "icon": "monument",
     "fields": {
       "Name": "interplanetaryCulture",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "monument",
       "Year": 2160,
       "Cost": 20,
@@ -7336,7 +7336,7 @@
     "icon": "eraInterplanetary",
     "fields": {
       "Name": "ageTech_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "eraInterplanetary",
       "Year": 0,
       "Cost": 6,
@@ -7394,7 +7394,7 @@
     "icon": "commerceZones",
     "fields": {
       "Name": "interplanetaryTrade",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "commerceZones",
       "Year": 2140,
       "Cost": 20,
@@ -7459,7 +7459,7 @@
     "icon": "colony",
     "fields": {
       "Name": "interstellarExploration",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colony",
       "Year": 2300,
       "Cost": 24,
@@ -7529,7 +7529,7 @@
     "icon": "smallArms3",
     "fields": {
       "Name": "smallArms_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "smallArms3",
       "Year": 0,
       "Cost": 6,
@@ -7599,7 +7599,7 @@
     "icon": "livingMetal",
     "fields": {
       "Name": "livingMetal",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "livingMetal",
       "Year": 2360,
       "Cost": 36,
@@ -7663,7 +7663,7 @@
     "icon": "armor4",
     "fields": {
       "Name": "armor_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor4",
       "Year": 0,
       "Cost": 6,
@@ -7729,7 +7729,7 @@
     "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "massManufacturing",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "consumerGoodsFactory",
       "Year": 0,
       "Cost": 6,
@@ -7790,7 +7790,7 @@
     "icon": "turret5",
     "fields": {
       "Name": "turrets_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "turret5",
       "Year": 0,
       "Cost": 6,
@@ -7855,7 +7855,7 @@
     "icon": "eraUnification",
     "fields": {
       "Name": "ageTech_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "eraUnification",
       "Year": 0,
       "Cost": 6,
@@ -7920,7 +7920,7 @@
     "icon": "artillery4",
     "fields": {
       "Name": "landOrdinance_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "artillery4",
       "Year": 0,
       "Cost": 6,
@@ -7985,7 +7985,7 @@
     "icon": "logistics",
     "fields": {
       "Name": "armyLogistics_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "logistics",
       "Year": 0,
       "Cost": 6,
@@ -8046,7 +8046,7 @@
     "icon": "logistics",
     "fields": {
       "Name": "armyLogistics_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "logistics",
       "Year": 0,
       "Cost": 6,
@@ -8114,7 +8114,7 @@
     "icon": "logistics",
     "fields": {
       "Name": "armyLogistics_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "logistics",
       "Year": 0,
       "Cost": 6,
@@ -8187,7 +8187,7 @@
     "icon": "logistics",
     "fields": {
       "Name": "armyLogistics_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "logistics",
       "Year": 0,
       "Cost": 6,
@@ -8255,7 +8255,7 @@
     "icon": "logistics",
     "fields": {
       "Name": "armyLogistics_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "logistics",
       "Year": 0,
       "Cost": 6,
@@ -8328,7 +8328,7 @@
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "armyTactics_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "militaryDoctrine_mobile",
       "Year": 0,
       "Cost": 6,
@@ -8391,7 +8391,7 @@
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "armyTactics_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "militaryDoctrine_mobile",
       "Year": 0,
       "Cost": 6,
@@ -8461,7 +8461,7 @@
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "armyTactics_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "militaryDoctrine_mobile",
       "Year": 0,
       "Cost": 6,
@@ -8536,7 +8536,7 @@
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "armyTactics_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "militaryDoctrine_mobile",
       "Year": 0,
       "Cost": 6,
@@ -8606,7 +8606,7 @@
     "icon": "militaryDoctrine_mobile",
     "fields": {
       "Name": "armyTactics_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "militaryDoctrine_mobile",
       "Year": 0,
       "Cost": 6,
@@ -8681,7 +8681,7 @@
     "icon": "electronics",
     "fields": {
       "Name": "mindUpload",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "electronics",
       "Year": 2240,
       "Cost": 24,
@@ -8745,7 +8745,7 @@
     "icon": "airplanes1",
     "fields": {
       "Name": "airHull_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "airplanes1",
       "Year": 0,
       "Cost": 6,
@@ -8804,7 +8804,7 @@
     "icon": "autocannon1",
     "fields": {
       "Name": "airGuns_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "autocannon1",
       "Year": 0,
       "Cost": 6,
@@ -8862,7 +8862,7 @@
     "icon": "artillery1",
     "fields": {
       "Name": "landOrdinance_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "artillery1",
       "Year": 0,
       "Cost": 6,
@@ -8920,7 +8920,7 @@
     "icon": "nanocomposites",
     "fields": {
       "Name": "nanocomposites",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "nanocomposites",
       "Year": 2200,
       "Cost": 60,
@@ -8986,7 +8986,7 @@
     "icon": "armor3",
     "fields": {
       "Name": "nanoAlloy",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor3",
       "Year": 2260,
       "Cost": 30,
@@ -9057,7 +9057,7 @@
     "icon": "nanoscopicAssembly",
     "fields": {
       "Name": "nanoscopicAssembly",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "nanoscopicAssembly",
       "Year": 2200,
       "Cost": 60,
@@ -9123,7 +9123,7 @@
     "icon": "microCooling",
     "fields": {
       "Name": "microCooling",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "microCooling",
       "Year": 2260,
       "Cost": 30,
@@ -9194,7 +9194,7 @@
     "icon": "neuralNetworks",
     "fields": {
       "Name": "neuralNetworksTech",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "neuralNetworks",
       "Year": 0,
       "Cost": 6,
@@ -9270,7 +9270,7 @@
     "icon": "fusionReactor",
     "fields": {
       "Name": "nuclearFusion",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "fusionReactor",
       "Year": 2200,
       "Cost": 24,
@@ -9336,7 +9336,7 @@
     "icon": "nuclearFuels",
     "fields": {
       "Name": "nuclearPhysics",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "nuclearFuels",
       "Year": 2000,
       "Cost": 6,
@@ -9390,7 +9390,7 @@
     "icon": "geneticMaterialUp",
     "fields": {
       "Name": "organicSupremacy",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "geneticMaterialUp",
       "Year": 2360,
       "Cost": 36,
@@ -9461,7 +9461,7 @@
     "icon": "solarFederation",
     "fields": {
       "Name": "panhumanismTech",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "solarFederation",
       "Year": 2100,
       "Cost": 6,
@@ -9538,7 +9538,7 @@
     "icon": "health",
     "fields": {
       "Name": "pharmaceuticals",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "health",
       "Year": 0,
       "Cost": 6,
@@ -9595,7 +9595,7 @@
     "icon": "armor1",
     "fields": {
       "Name": "armor_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor1",
       "Year": 0,
       "Cost": 6,
@@ -9654,7 +9654,7 @@
     "icon": "enactDecision",
     "fields": {
       "Name": "factionPrivilegePower_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "enactDecision",
       "Year": 0,
       "Cost": 6,
@@ -9719,7 +9719,7 @@
     "icon": "enactDecision",
     "fields": {
       "Name": "factionPrivilegePower_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "enactDecision",
       "Year": 0,
       "Cost": 6,
@@ -9791,7 +9791,7 @@
     "icon": "enactDecision",
     "fields": {
       "Name": "factionPrivilegePower_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "enactDecision",
       "Year": 0,
       "Cost": 6,
@@ -9868,7 +9868,7 @@
     "icon": "enactDecision",
     "fields": {
       "Name": "factionPrivilegePower_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "enactDecision",
       "Year": 0,
       "Cost": 6,
@@ -9945,7 +9945,7 @@
     "icon": "enactDecision",
     "fields": {
       "Name": "factionPrivilegePower_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "enactDecision",
       "Year": 0,
       "Cost": 6,
@@ -10022,7 +10022,7 @@
     "icon": "nanocompositeUsage",
     "fields": {
       "Name": "polymetals",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "nanocompositeUsage",
       "Year": 2200,
       "Cost": 60,
@@ -10083,7 +10083,7 @@
     "icon": "syntheticUp",
     "fields": {
       "Name": "posthumanism",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "syntheticUp",
       "Year": 0,
       "Cost": 6,
@@ -10152,7 +10152,7 @@
     "icon": "culture",
     "fields": {
       "Name": "psychology_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "culture",
       "Year": 0,
       "Cost": 6,
@@ -10213,7 +10213,7 @@
     "icon": "culture",
     "fields": {
       "Name": "psychology_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "culture",
       "Year": 0,
       "Cost": 6,
@@ -10281,7 +10281,7 @@
     "icon": "culture",
     "fields": {
       "Name": "psychology_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "culture",
       "Year": 0,
       "Cost": 6,
@@ -10354,7 +10354,7 @@
     "icon": "culture",
     "fields": {
       "Name": "psychology_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "culture",
       "Year": 0,
       "Cost": 6,
@@ -10422,7 +10422,7 @@
     "icon": "culture",
     "fields": {
       "Name": "psychology_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "culture",
       "Year": 0,
       "Cost": 6,
@@ -10495,7 +10495,7 @@
     "icon": "quantumComputers",
     "fields": {
       "Name": "quantumComputing",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "quantumComputers",
       "Year": 2240,
       "Cost": 24,
@@ -10566,7 +10566,7 @@
     "icon": "liberal",
     "fields": {
       "Name": "rationalDiligence",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "liberal",
       "Year": 2100,
       "Cost": 6,
@@ -10635,7 +10635,7 @@
     "icon": "spaceHull1",
     "fields": {
       "Name": "shipConstruction_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spaceHull1",
       "Year": 0,
       "Cost": 6,
@@ -10699,7 +10699,7 @@
     "icon": "robots",
     "fields": {
       "Name": "robotSelfRepair",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "robots",
       "Year": 0,
       "Cost": 6,
@@ -10753,7 +10753,7 @@
     "icon": "robots",
     "fields": {
       "Name": "robotics",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "robots",
       "Year": 2092,
       "Cost": 40,
@@ -10816,7 +10816,7 @@
     "icon": "neuralEngine",
     "fields": {
       "Name": "sapientMachines",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "neuralEngine",
       "Year": 0,
       "Cost": 6,
@@ -10886,7 +10886,7 @@
     "icon": "autocannon5",
     "fields": {
       "Name": "airGuns_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "autocannon5",
       "Year": 0,
       "Cost": 6,
@@ -10956,7 +10956,7 @@
     "icon": "development",
     "fields": {
       "Name": "economicOutput_1",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "development",
       "Year": 0,
       "Cost": 6,
@@ -11017,7 +11017,7 @@
     "icon": "development",
     "fields": {
       "Name": "economicOutput_2",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "development",
       "Year": 0,
       "Cost": 6,
@@ -11085,7 +11085,7 @@
     "icon": "development",
     "fields": {
       "Name": "economicOutput_3",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "development",
       "Year": 0,
       "Cost": 6,
@@ -11158,7 +11158,7 @@
     "icon": "development",
     "fields": {
       "Name": "economicOutput_4",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "development",
       "Year": 0,
       "Cost": 6,
@@ -11226,7 +11226,7 @@
     "icon": "development",
     "fields": {
       "Name": "economicOutput_5",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "development",
       "Year": 0,
       "Cost": 6,
@@ -11299,7 +11299,7 @@
     "icon": "colony",
     "fields": {
       "Name": "spaceColonies",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "colony",
       "Year": 0,
       "Cost": 6,
@@ -11352,7 +11352,7 @@
     "icon": "shipyard",
     "fields": {
       "Name": "spaceports",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "shipyard",
       "Year": 2140,
       "Cost": 20,
@@ -11417,7 +11417,7 @@
     "icon": "superconstruction",
     "fields": {
       "Name": "supermaterials",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "superconstruction",
       "Year": 2200,
       "Cost": 60,
@@ -11483,7 +11483,7 @@
     "icon": "autocannon3",
     "fields": {
       "Name": "airGuns_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "autocannon3",
       "Year": 0,
       "Cost": 6,
@@ -11553,7 +11553,7 @@
     "icon": "engine3",
     "fields": {
       "Name": "spaceEngine_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "engine3",
       "Year": 0,
       "Cost": 6,
@@ -11624,7 +11624,7 @@
     "icon": "superconstruction",
     "fields": {
       "Name": "superiorConstructs",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "superconstruction",
       "Year": 0,
       "Cost": 6,
@@ -11698,7 +11698,7 @@
     "icon": "missile3",
     "fields": {
       "Name": "missiles_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "missile3",
       "Year": 0,
       "Cost": 6,
@@ -11769,7 +11769,7 @@
     "icon": "PDTurret3",
     "fields": {
       "Name": "pointDefense_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "PDTurret3",
       "Year": 2140,
       "Cost": 20,
@@ -11860,7 +11860,7 @@
     "icon": "radiator3",
     "fields": {
       "Name": "radiator_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "radiator3",
       "Year": 0,
       "Cost": 6,
@@ -11925,7 +11925,7 @@
     "icon": "spaceHull3",
     "fields": {
       "Name": "shipConstruction_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spaceHull3",
       "Year": 0,
       "Cost": 6,
@@ -12001,7 +12001,7 @@
     "icon": "tank3",
     "fields": {
       "Name": "landVehicles_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "tank3",
       "Year": 0,
       "Cost": 6,
@@ -12071,7 +12071,7 @@
     "icon": "turret3",
     "fields": {
       "Name": "turrets_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "turret3",
       "Year": 0,
       "Cost": 6,
@@ -12136,7 +12136,7 @@
     "icon": "airplanes5",
     "fields": {
       "Name": "airHull_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "airplanes5",
       "Year": 0,
       "Cost": 6,
@@ -12207,7 +12207,7 @@
     "icon": "missile4",
     "fields": {
       "Name": "missiles_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "missile4",
       "Year": 0,
       "Cost": 6,
@@ -12273,7 +12273,7 @@
     "icon": "PDTurret4",
     "fields": {
       "Name": "pointDefense_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "PDTurret4",
       "Year": 2140,
       "Cost": 20,
@@ -12359,7 +12359,7 @@
     "icon": "radiator4",
     "fields": {
       "Name": "radiator_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "radiator4",
       "Year": 0,
       "Cost": 6,
@@ -12419,7 +12419,7 @@
     "icon": "spaceHull4",
     "fields": {
       "Name": "shipConstruction_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "spaceHull4",
       "Year": 0,
       "Cost": 6,
@@ -12490,7 +12490,7 @@
     "icon": "tank4",
     "fields": {
       "Name": "landVehicles_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "tank4",
       "Year": 0,
       "Cost": 6,
@@ -12555,7 +12555,7 @@
     "icon": "turret4",
     "fields": {
       "Name": "turrets_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "turret4",
       "Year": 0,
       "Cost": 6,
@@ -12615,7 +12615,7 @@
     "icon": "robots",
     "fields": {
       "Name": "syntheticEvolution",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "robots",
       "Year": 0,
       "Cost": 6,
@@ -12685,7 +12685,7 @@
     "icon": "synthetic",
     "fields": {
       "Name": "synthetics",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "synthetic",
       "Year": 0,
       "Cost": 6,
@@ -12749,7 +12749,7 @@
     "icon": "warpDrive",
     "fields": {
       "Name": "ageTech_3",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "warpDrive",
       "Year": 0,
       "Cost": 6,
@@ -12818,7 +12818,7 @@
     "icon": "smallArms5",
     "fields": {
       "Name": "smallArms_5",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "smallArms5",
       "Year": 0,
       "Cost": 6,
@@ -12888,7 +12888,7 @@
     "icon": "armor1",
     "fields": {
       "Name": "titaniumAlloy",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor1",
       "Year": 2140,
       "Cost": 20,
@@ -12942,7 +12942,7 @@
     "icon": "armor2",
     "fields": {
       "Name": "armor_2",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "armor2",
       "Year": 0,
       "Cost": 6,
@@ -13008,7 +13008,7 @@
     "icon": "airplanes4",
     "fields": {
       "Name": "airHull_4",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "airplanes4",
       "Year": 0,
       "Cost": 6,
@@ -13074,7 +13074,7 @@
     "icon": "tank1",
     "fields": {
       "Name": "landVehicles_1",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "tank1",
       "Year": 0,
       "Cost": 6,
@@ -13132,7 +13132,7 @@
     "icon": "electronics",
     "fields": {
       "Name": "virtualSociety",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "electronics",
       "Year": 2240,
       "Cost": 24,
@@ -13207,7 +13207,7 @@
     "icon": "warpDrive",
     "fields": {
       "Name": "warpDrive",
-      "Type": "TechType::NewEnumerator0",
+      "Type": "Technology",
       "Icon": "warpDrive",
       "Year": 0,
       "Cost": 6,
@@ -13277,7 +13277,7 @@
     "icon": "cohesion",
     "fields": {
       "Name": "zenithPrinciple",
-      "Type": "TechType::NewEnumerator1",
+      "Type": "Tradition",
       "Icon": "cohesion",
       "Year": 2100,
       "Cost": 6,

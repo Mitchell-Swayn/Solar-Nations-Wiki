@@ -29,7 +29,7 @@
       "Severity": 1,
       "Asset": "controlBureaucracy",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -77,7 +77,7 @@
       "Severity": 1,
       "Asset": "organizedCrime",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -125,7 +125,7 @@
       "Severity": 1,
       "Asset": "controlCorporations",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -173,7 +173,7 @@
       "Severity": 1,
       "Asset": "degenerateCulture",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -221,7 +221,7 @@
       "Severity": 1,
       "Asset": "sectarianInfighting",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -269,7 +269,7 @@
       "Severity": 1,
       "Asset": "humanTrafficking",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -316,7 +316,7 @@
       "Severity": 1,
       "Asset": "exploitedEconomy",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -360,7 +360,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -408,7 +408,7 @@
       "Severity": 0,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "Type": "Infiltrate",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -450,7 +450,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "Type": "Influence",
       "EffectTT": "Improves our relations by 5 for a maximum of 25."
     },
     "modifiers": [],
@@ -492,7 +492,7 @@
       "Severity": 1,
       "Asset": "pocketPoliticians",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "Type": "Infiltrate",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -540,7 +540,7 @@
       "Severity": 1,
       "Asset": "schoolSystems",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "Type": "Infiltrate",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -587,7 +587,7 @@
       "Severity": 0,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "Type": "Influence",
       "EffectTT": "Each completion of this operation grants <green>~5%</> Influence in the target region"
     },
     "modifiers": [],
@@ -631,7 +631,7 @@
       "Severity": 0,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator1",
+      "Type": "Duel",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -682,7 +682,7 @@
       "Severity": 1,
       "Asset": "abundantCapital",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "Type": "Buff",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -726,7 +726,7 @@
       "Severity": 0,
       "Asset": "recentInvestigation",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": "Removes any <red>hostile assets</> in the region not owned by you."
     },
     "modifiers": [],
@@ -772,7 +772,7 @@
       "Severity": 1,
       "Asset": "controlJudiciary",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -820,7 +820,7 @@
       "Severity": 1,
       "Asset": "localGovernment",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -867,7 +867,7 @@
       "Severity": 1,
       "Asset": "lockdown",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -910,7 +910,7 @@
       "Severity": 1,
       "Asset": "massMedia",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -954,7 +954,7 @@
       "Severity": 1,
       "Asset": "mindControlDrugs",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1000,7 +1000,7 @@
       "Severity": 1,
       "Asset": "friendsInHighPlaces",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator5",
+      "Type": "Influence",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1044,7 +1044,7 @@
       "Severity": 1,
       "Asset": "controlOpposition",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1091,7 +1091,7 @@
       "Severity": 1,
       "Asset": "paramilitaries",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "Type": "Infiltrate",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1138,7 +1138,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "Type": "Buff",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1181,7 +1181,7 @@
       "Severity": 1,
       "Asset": "propaganda",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator2",
+      "Type": "Infiltrate",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1228,7 +1228,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "Type": "Buff",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1272,7 +1272,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1320,7 +1320,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator3",
+      "Type": "Sabotage",
       "EffectTT": {
         "CultureInvariantString": null
       }
@@ -1368,7 +1368,7 @@
       "Severity": 0,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator0",
+      "Type": "Buff",
       "EffectTT": {
         "TableId": "/Game/Localisation/English/resource_english.resource_english",
         "Key": "strategizeEffectDesc",
@@ -1414,7 +1414,7 @@
       "Severity": 1,
       "Asset": "None",
       "StaticModifier": "None",
-      "Type": "CharacterObjectiveType::NewEnumerator4",
+      "Type": "Control",
       "EffectTT": {
         "CultureInvariantString": null
       }

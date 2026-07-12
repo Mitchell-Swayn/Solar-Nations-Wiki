@@ -15,7 +15,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.221695,
         "G": 0.546294,
@@ -60,7 +60,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.335069,
         "G": 0,
@@ -108,7 +108,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.618055,
         "G": 0.0678,
@@ -157,7 +157,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.161775,
         "G": 0.682292,
@@ -200,7 +200,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 1,
         "G": 0.555541,
@@ -243,7 +243,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.170772,
         "G": 0.324653,
@@ -291,7 +291,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.517361,
         "G": 0.022117,
@@ -339,7 +339,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0,
         "G": 0.091411,
@@ -387,7 +387,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.508681,
         "G": 0.246936,
@@ -431,7 +431,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.02415,
         "G": 0.222222,
@@ -484,7 +484,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.002844,
         "G": 0,
@@ -529,7 +529,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0,
         "G": 0.652778,
@@ -578,7 +578,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.456597,
         "G": 0.456597,
@@ -626,7 +626,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.263889,
         "G": 0,
@@ -669,7 +669,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.168862,
         "G": 0,
@@ -714,7 +714,7 @@
       "CreationCost": [],
       "BaseConsumes": 0,
       "ConsumesExp": 0,
-      "AIType": "ResourceTypeEnum::NewEnumerator0",
+      "AIType": "Maintenance",
       "Color": {
         "R": 0.035773,
         "G": 0.604167,

@@ -38,7 +38,7 @@
       "Name": "adminEfficiencyAdd",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "political",
       "Scaler": "Linear",
       "AIWeights": {
@@ -66,7 +66,7 @@
       "Name": "adminEfficiencyCap",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "political",
       "Scaler": "Linear",
       "AIWeights": {
@@ -94,7 +94,7 @@
       "Name": "advantageDelta",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "war",
       "Scaler": "Linear",
       "AIWeights": {
@@ -122,7 +122,7 @@
       "Name": "aiInterventionChance",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
@@ -181,7 +181,7 @@
       "Name": "allLeaderSkillsMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "leader",
       "Scaler": "Linear",
       "AIWeights": {
@@ -209,7 +209,7 @@
       "Name": "atmEarthlikenessModifier",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -237,7 +237,7 @@
       "Name": "atmPressureModifier",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -253,6 +253,64 @@
       {
         "type": "icon",
         "id": "planet"
+      }
+    ]
+  },
+  {
+    "id": "attritionRateAdd",
+    "type": "modifiers",
+    "displayName": "Attrition Rate Add",
+    "icon": "military",
+    "fields": {
+      "Name": "attritionRateAdd",
+      "Positivity": "negative",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Attrition Rate Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "baseProducesAdd",
+    "type": "modifiers",
+    "displayName": "Base Produces Add",
+    "icon": "industrial",
+    "fields": {
+      "Name": "baseProducesAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "resource": true
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Base Produces Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
       }
     ]
   },
@@ -276,6 +334,34 @@
       "GenerateIcons": false,
       "IsEffect": false,
       "DisplayName": "Battle Advantage Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "attack"
+      }
+    ]
+  },
+  {
+    "id": "battleAdvantageCountry",
+    "type": "modifiers",
+    "displayName": "Battle Advantage Country",
+    "icon": "attack",
+    "fields": {
+      "Name": "battleAdvantageCountry",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "attack",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Battle Advantage Country"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -380,7 +466,7 @@
       "Name": "carryingCapacityMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "colony",
       "Scaler": "Linear",
       "AIWeights": {
@@ -433,13 +519,13 @@
     "id": "characterQuality",
     "type": "modifiers",
     "displayName": "Character Quality",
-    "icon": "threeStar",
+    "icon": "leader",
     "fields": {
       "Name": "characterQuality",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
-      "Icon": "threeStar",
+      "Properties": [],
+      "Icon": "leader",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 1
@@ -453,7 +539,35 @@
     "references": [
       {
         "type": "icon",
-        "id": "threeStar"
+        "id": "leader"
+      }
+    ]
+  },
+  {
+    "id": "characterStartingLevel",
+    "type": "modifiers",
+    "displayName": "Character Starting Level",
+    "icon": "leader",
+    "fields": {
+      "Name": "characterStartingLevel",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "leader",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Character Starting Level"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leader"
       }
     ]
   },
@@ -466,7 +580,7 @@
       "Name": "colonialRange",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "colony",
       "Scaler": "Linear",
       "AIWeights": {
@@ -494,7 +608,7 @@
       "Name": "colonialRangeLy",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "colony",
       "Scaler": "Linear",
       "AIWeights": {
@@ -514,6 +628,34 @@
     ]
   },
   {
+    "id": "colonyManpowerValue",
+    "type": "modifiers",
+    "displayName": "Colony Manpower Value",
+    "icon": "colony",
+    "fields": {
+      "Name": "colonyManpowerValue",
+      "Positivity": "neutral",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "colony",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Colony Manpower Value"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "colony"
+      }
+    ]
+  },
+  {
     "id": "colonyProgressMult",
     "type": "modifiers",
     "displayName": "Colony Progress Mult",
@@ -522,7 +664,7 @@
       "Name": "colonyProgressMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "colony",
       "Scaler": "Linear",
       "AIWeights": {
@@ -550,7 +692,7 @@
       "Name": "rootOutInfluenceEffect",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "influence",
       "Scaler": "Linear",
       "AIWeights": {
@@ -570,6 +712,96 @@
     ]
   },
   {
+    "id": "consumerDemandAdd",
+    "type": "modifiers",
+    "displayName": "Consumer Demand Add",
+    "icon": "economic",
+    "fields": {
+      "Name": "consumerDemandAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "resource": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Consumer Demand Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
+    "id": "consumerDemandMult",
+    "type": "modifiers",
+    "displayName": "Consumer Demand Mult",
+    "icon": "economic",
+    "fields": {
+      "Name": "consumerDemandMult",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "resource": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Consumer Demand Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
+    "id": "consumerPriority",
+    "type": "modifiers",
+    "displayName": "Consumer Priority",
+    "icon": "economic",
+    "fields": {
+      "Name": "consumerPriority",
+      "Positivity": "neutral",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "resource": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Consumer Priority"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
     "id": "controllingFactionLoyalty",
     "type": "modifiers",
     "displayName": "Controlling Faction Loyalty",
@@ -578,7 +810,7 @@
       "Name": "controllingFactionLoyalty",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "enactDecision",
       "Scaler": "Linear",
       "AIWeights": {
@@ -594,6 +826,34 @@
       {
         "type": "icon",
         "id": "enactDecision"
+      }
+    ]
+  },
+  {
+    "id": "corruptionGainAdd",
+    "type": "modifiers",
+    "displayName": "Corruption Gain Add",
+    "icon": "political",
+    "fields": {
+      "Name": "corruptionGainAdd",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Corruption Gain Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
       }
     ]
   },
@@ -726,7 +986,7 @@
       "Name": "cultureIdeaCostMult",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "culture",
       "Scaler": "Linear",
       "AIWeights": {
@@ -746,6 +1006,62 @@
     ]
   },
   {
+    "id": "maxPromotedCultures",
+    "type": "modifiers",
+    "displayName": "Culture",
+    "icon": "culture",
+    "fields": {
+      "Name": "maxPromotedCultures",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "culture",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Culture"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "culture"
+      }
+    ]
+  },
+  {
+    "id": "cultureInvestmentEfficiency",
+    "type": "modifiers",
+    "displayName": "Culture Investment Efficiency",
+    "icon": "political",
+    "fields": {
+      "Name": "cultureInvestmentEfficiency",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Culture Investment Efficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
     "id": "culturePowerAdd",
     "type": "modifiers",
     "displayName": "Culture Power Add",
@@ -754,7 +1070,7 @@
       "Name": "culturePowerAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "culturePower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -782,7 +1098,7 @@
       "Name": "culturePowerMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "culturePower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -840,7 +1156,7 @@
       "Name": "protectorateAdmin",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "currency",
       "Scaler": "Linear",
       "AIWeights": {
@@ -898,7 +1214,7 @@
       "Name": "budgetModifierPopulation",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "currency",
       "Scaler": "Linear",
       "AIWeights": {
@@ -926,7 +1242,7 @@
       "Name": "currencyGainEffect",
       "Positivity": "positive",
       "IsPercent": "ToScale",
-      "Properties": {},
+      "Properties": [],
       "Icon": "currency",
       "Scaler": "Linear",
       "AIWeights": {
@@ -954,7 +1270,7 @@
       "Name": "currencyLossEffect",
       "Positivity": "negative",
       "IsPercent": "ToScale",
-      "Properties": {},
+      "Properties": [],
       "Icon": "currency",
       "Scaler": "Linear",
       "AIWeights": {
@@ -982,7 +1298,7 @@
       "Name": "debtEffectMult",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1010,7 +1326,7 @@
       "Name": "defenderAdvantageAdd",
       "Positivity": "neutral",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "defense",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1038,7 +1354,7 @@
       "Name": "deployRangeModifier",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1066,7 +1382,7 @@
       "Name": "deployRangeAdd",
       "Positivity": "neutral",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1094,7 +1410,7 @@
       "Name": "deployRangeMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1122,7 +1438,7 @@
       "Name": "deployRangeInterplanetary",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "accuracy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1150,7 +1466,7 @@
       "Name": "developmentMult",
       "Positivity": "positive",
       "IsPercent": "Multiplier",
-      "Properties": {},
+      "Properties": [],
       "Icon": "development",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1208,7 +1524,7 @@
       "Name": "developmentGrowthMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "development",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1236,7 +1552,7 @@
       "Name": "developmentGrowthAdd",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "development",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1256,6 +1572,90 @@
     ]
   },
   {
+    "id": "numDiplomatsAdd",
+    "type": "modifiers",
+    "displayName": "Diplomatic",
+    "icon": "diplomatic",
+    "fields": {
+      "Name": "numDiplomatsAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "diplomatic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Diplomatic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomatic"
+      }
+    ]
+  },
+  {
+    "id": "numDiplomatsMult",
+    "type": "modifiers",
+    "displayName": "Diplomatic",
+    "icon": "diplomatic",
+    "fields": {
+      "Name": "numDiplomatsMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "diplomatic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Diplomatic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomatic"
+      }
+    ]
+  },
+  {
+    "id": "diploEfficiency",
+    "type": "modifiers",
+    "displayName": "Diplomatic",
+    "icon": "diplomatic",
+    "fields": {
+      "Name": "diploEfficiency",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "diplomatic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Diplomatic"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomatic"
+      }
+    ]
+  },
+  {
     "id": "duplicatePolicyOptionsAdd",
     "type": "modifiers",
     "displayName": "Duplicate Policy Options Add",
@@ -1264,7 +1664,7 @@
       "Name": "duplicatePolicyOptionsAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "enactDecision",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1299,6 +1699,36 @@
       "Scaler": "Linear",
       "AIWeights": {
         "base": 5
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Economic Sector"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
+    "id": "depositAdd",
+    "type": "modifiers",
+    "displayName": "Economic Sector",
+    "icon": "economic",
+    "fields": {
+      "Name": "depositAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "deposit": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
       },
       "GenerateIcons": false,
       "IsEffect": false,
@@ -1382,7 +1812,7 @@
       "Name": "educationModifier",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "education",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1410,7 +1840,7 @@
       "Name": "educationEfficiency",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "education",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1430,6 +1860,36 @@
     ]
   },
   {
+    "id": "electionSkillImpact",
+    "type": "modifiers",
+    "displayName": "Election Skill Impact",
+    "icon": "leader",
+    "fields": {
+      "Name": "electionSkillImpact",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "skill": true
+      },
+      "Icon": "leader",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Election Skill Impact"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leader"
+      }
+    ]
+  },
+  {
     "id": "siphonMoneyTooltipModifier",
     "type": "modifiers",
     "displayName": "Embezzle Funds",
@@ -1438,7 +1898,7 @@
       "Name": "siphonMoneyTooltipModifier",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1451,6 +1911,37 @@
     "modifiers": [],
     "prerequisites": [],
     "references": []
+  },
+  {
+    "id": "employeeAdd",
+    "type": "modifiers",
+    "displayName": "Employee Add",
+    "icon": "industrial",
+    "fields": {
+      "Name": "employeeAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "industry": true,
+        "popJob": true
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Employee Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
   },
   {
     "id": "factionVariant",
@@ -1487,7 +1978,7 @@
       "Name": "characterEffortAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "energy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1507,6 +1998,211 @@
     ]
   },
   {
+    "id": "escalationAdd",
+    "type": "modifiers",
+    "displayName": "Escalation",
+    "icon": "diplomatic",
+    "fields": {
+      "Name": "escalationAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "diplomatic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Escalation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomatic"
+      }
+    ]
+  },
+  {
+    "id": "espionageDefense",
+    "type": "modifiers",
+    "displayName": "Espionage Defense",
+    "icon": "espionageDefense",
+    "fields": {
+      "Name": "espionageDefense",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "espionageDefense",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Defense"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageDefense"
+      }
+    ]
+  },
+  {
+    "id": "espionageDefenseCountry",
+    "type": "modifiers",
+    "displayName": "Espionage Defense Country",
+    "icon": "espionageDefense",
+    "fields": {
+      "Name": "espionageDefenseCountry",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "empire": true
+      },
+      "Icon": "espionageDefense",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Defense Country"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageDefense"
+      }
+    ]
+  },
+  {
+    "id": "espionageEffect",
+    "type": "modifiers",
+    "displayName": "Espionage Effect",
+    "icon": "espionagePower",
+    "fields": {
+      "Name": "espionageEffect",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "operation": false
+      },
+      "Icon": "espionagePower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Effect"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePower"
+      }
+    ]
+  },
+  {
+    "id": "espionageEffectCountry",
+    "type": "modifiers",
+    "displayName": "Espionage Effect Country",
+    "icon": "espionagePower",
+    "fields": {
+      "Name": "espionageEffectCountry",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "operation": false,
+        "empire": true
+      },
+      "Icon": "espionagePower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Effect Country"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePower"
+      }
+    ]
+  },
+  {
+    "id": "espionageOffense",
+    "type": "modifiers",
+    "displayName": "Espionage Offense",
+    "icon": "espionageOffense",
+    "fields": {
+      "Name": "espionageOffense",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "espionageOffense",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Offense"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageOffense"
+      }
+    ]
+  },
+  {
+    "id": "espionageOffenseCountry",
+    "type": "modifiers",
+    "displayName": "Espionage Offense Country",
+    "icon": "espionageOffense",
+    "fields": {
+      "Name": "espionageOffenseCountry",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "empire": true
+      },
+      "Icon": "espionageOffense",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Espionage Offense Country"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionageOffense"
+      }
+    ]
+  },
+  {
     "id": "executiveTerm",
     "type": "modifiers",
     "displayName": "Executive Term",
@@ -1515,7 +2211,7 @@
       "Name": "executiveTerm",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "enactDecision",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1626,7 +2322,7 @@
       "Name": "fortDefense",
       "Positivity": "positive",
       "IsPercent": "Multiplier",
-      "Properties": {},
+      "Properties": [],
       "Icon": "military",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1654,7 +2350,7 @@
       "Name": "genocideModifierTooltip",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1707,7 +2403,7 @@
       "Name": "habitabilityAdd",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1735,7 +2431,7 @@
       "Name": "hasBiosphereModifier",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1755,6 +2451,399 @@
     ]
   },
   {
+    "id": "hostileEspionageEffect",
+    "type": "modifiers",
+    "displayName": "Hostile Espionage Effect",
+    "icon": "espionagePower",
+    "fields": {
+      "Name": "hostileEspionageEffect",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "operation": false
+      },
+      "Icon": "espionagePower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Hostile Espionage Effect"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePower"
+      }
+    ]
+  },
+  {
+    "id": "hostileEspionageEffectCountry",
+    "type": "modifiers",
+    "displayName": "Hostile Espionage Effect Country",
+    "icon": "espionagePower",
+    "fields": {
+      "Name": "hostileEspionageEffectCountry",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "operation": false,
+        "empire": true
+      },
+      "Icon": "espionagePower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Hostile Espionage Effect Country"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePower"
+      }
+    ]
+  },
+  {
+    "id": "industryBuildCostAdd",
+    "type": "modifiers",
+    "displayName": "Industry Build Cost Add",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryBuildCostAdd",
+      "Positivity": "negative",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "industry": true,
+        "resource": true
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Build Cost Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryBuildCostMult",
+    "type": "modifiers",
+    "displayName": "Industry Build Cost Mult",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryBuildCostMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "economicCategory": false,
+        "resource": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Build Cost Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryBuildSpeedMult",
+    "type": "modifiers",
+    "displayName": "Industry Build Speed Mult",
+    "icon": "economic",
+    "fields": {
+      "Name": "industryBuildSpeedMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Build Speed Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
+    "id": "industryInputAdd",
+    "type": "modifiers",
+    "displayName": "Industry Input Add",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryInputAdd",
+      "Positivity": "negative",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "economicCategory": true,
+        "resource": true
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Input Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryInputMult",
+    "type": "modifiers",
+    "displayName": "Industry Input Mult",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryInputMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "economicCategory": false,
+        "resource": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Input Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryLimit",
+    "type": "modifiers",
+    "displayName": "Industry Limit",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryLimit",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Limit"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryOutputAdd",
+    "type": "modifiers",
+    "displayName": "Industry Output Add",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryOutputAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "industry": true,
+        "resource": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Output Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryOutputMult",
+    "type": "modifiers",
+    "displayName": "Industry Output Mult",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryOutputMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "industry": false,
+        "resource": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Output Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryOutputQuality",
+    "type": "modifiers",
+    "displayName": "Industry Output Quality",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryOutputQuality",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "industry": true
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Output Quality"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryThroughputMult",
+    "type": "modifiers",
+    "displayName": "Industry Throughput Mult",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryThroughputMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "economicCategory": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Throughput Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
+    "id": "industryUpkeepMult",
+    "type": "modifiers",
+    "displayName": "Industry Upkeep Mult",
+    "icon": "industrial",
+    "fields": {
+      "Name": "industryUpkeepMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "economicCategory": false
+      },
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Industry Upkeep Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
+      }
+    ]
+  },
+  {
     "id": "influenceGainEffect",
     "type": "modifiers",
     "displayName": "Influence Region",
@@ -1763,7 +2852,7 @@
       "Name": "influenceGainEffect",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "influence",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1791,7 +2880,7 @@
       "Name": "integrationCostMult",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1819,7 +2908,7 @@
       "Name": "interplanetaryCultureModifier",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1842,7 +2931,7 @@
       "Name": "joinOrgCost",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "diplomacy",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1862,6 +2951,34 @@
     ]
   },
   {
+    "id": "leaderHereditarySuccessionChance",
+    "type": "modifiers",
+    "displayName": "Leader Hereditary Succession Chance",
+    "icon": "leader",
+    "fields": {
+      "Name": "leaderHereditarySuccessionChance",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "leader",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Leader Hereditary Succession Chance"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "leader"
+      }
+    ]
+  },
+  {
     "id": "leaderLifeSpanAdd",
     "type": "modifiers",
     "displayName": "Leader Life Span Add",
@@ -1870,7 +2987,7 @@
       "Name": "leaderLifeSpanAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "leader",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1948,7 +3065,7 @@
       "Name": "leaderXPGain",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "leader",
       "Scaler": "Linear",
       "AIWeights": {
@@ -1968,6 +3085,34 @@
     ]
   },
   {
+    "id": "legislatureMajorityRequirement",
+    "type": "modifiers",
+    "displayName": "Legislature Majority Requirement",
+    "icon": "political",
+    "fields": {
+      "Name": "legislatureMajorityRequirement",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Legislature Majority Requirement"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
     "id": "allResourceCapacityMult",
     "type": "modifiers",
     "displayName": "Logistics Capacity",
@@ -1976,7 +3121,7 @@
       "Name": "allResourceCapacityMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "logistics",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2004,7 +3149,7 @@
       "Name": "manpowerGainEffect",
       "Positivity": "positive",
       "IsPercent": "ToScale",
-      "Properties": {},
+      "Properties": [],
       "Icon": "manpower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2032,7 +3177,7 @@
       "Name": "manpowerRecoveryRate",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "manpower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2048,6 +3193,64 @@
       {
         "type": "icon",
         "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "maxFavorsAdd",
+    "type": "modifiers",
+    "displayName": "Max Favors Add",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "maxFavorsAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "diplomacy",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Max Favors Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "maxFavorsAddCountry",
+    "type": "modifiers",
+    "displayName": "Max Favors Add Country",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "maxFavorsAddCountry",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "empire": true
+      },
+      "Icon": "diplomacy",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Max Favors Add Country"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
       }
     ]
   },
@@ -2090,7 +3293,7 @@
       "Name": "maxRulingFactionsAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "enactDecision",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2181,7 +3384,7 @@
       "Name": "unitMoraleAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "morale",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2209,7 +3412,7 @@
       "Name": "unitMoraleMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "morale",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2237,7 +3440,7 @@
       "Name": "unitSpeedMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "speed",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2265,7 +3468,7 @@
       "Name": "moraleRecoveryMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "defense",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2293,7 +3496,7 @@
       "Name": "opinionModifier",
       "Positivity": "neutral",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2352,7 +3555,7 @@
       "Name": "leaderJoinsMemberDefensive",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "opinion",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2372,6 +3575,94 @@
     ]
   },
   {
+    "id": "organizationResourceCostMult",
+    "type": "modifiers",
+    "displayName": "Organization Resource Cost Mult",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "organizationResourceCostMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "diplomacy",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Organization Resource Cost Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "partyApproval",
+    "type": "modifiers",
+    "displayName": "Party Approval",
+    "icon": "political",
+    "fields": {
+      "Name": "partyApproval",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "ideology": true
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Party Approval"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
+    "id": "partyMobilizationAdd",
+    "type": "modifiers",
+    "displayName": "Party Mobilization Add",
+    "icon": "political",
+    "fields": {
+      "Name": "partyMobilizationAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "ideology": true
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Party Mobilization Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
     "id": "planetMagneticFieldModifier",
     "type": "modifiers",
     "displayName": "Planet Magnetic Field Modifier",
@@ -2380,7 +3671,7 @@
       "Name": "planetMagneticFieldModifier",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2396,6 +3687,67 @@
       {
         "type": "icon",
         "id": "planet"
+      }
+    ]
+  },
+  {
+    "id": "policyEnactmentSpeedMult",
+    "type": "modifiers",
+    "displayName": "Policy Enactment Speed Mult",
+    "icon": "political",
+    "fields": {
+      "Name": "policyEnactmentSpeedMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "policy": false
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Policy Enactment Speed Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
+    "id": "policySupportAdd",
+    "type": "modifiers",
+    "displayName": "Policy Support Add",
+    "icon": "political",
+    "fields": {
+      "Name": "policySupportAdd",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "policy": true,
+        "index": true
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Policy Support Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
       }
     ]
   },
@@ -2425,6 +3777,36 @@
     "references": []
   },
   {
+    "id": "popWageAdd",
+    "type": "modifiers",
+    "displayName": "Pop Wage Add",
+    "icon": "economic",
+    "fields": {
+      "Name": "popWageAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "popJob": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Pop Wage Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
     "id": "lifeSpanAdd",
     "type": "modifiers",
     "displayName": "Population",
@@ -2433,7 +3815,7 @@
       "Name": "lifeSpanAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2461,7 +3843,7 @@
       "Name": "popAttrition",
       "Positivity": "negative",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2489,7 +3871,7 @@
       "Name": "immigrationPush",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2517,7 +3899,7 @@
       "Name": "immigrationPullExternal",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2545,7 +3927,7 @@
       "Name": "immigrationPull",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2573,10 +3955,10 @@
       "Name": "immigrationPushExternal",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
-      "AIWeights": {},
+      "AIWeights": [],
       "GenerateIcons": false,
       "IsEffect": false,
       "DisplayName": "Population"
@@ -2599,7 +3981,7 @@
       "Name": "genocideModifier",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2627,7 +4009,7 @@
       "Name": "automatedWorkforceAdd",
       "Positivity": "positive",
       "IsPercent": "ToScale",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2655,7 +4037,7 @@
       "Name": "automatedWorkforceMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2683,11 +4065,129 @@
       "Name": "assimilationMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 5
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Population"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "promotionRateMult",
+    "type": "modifiers",
+    "displayName": "Population",
+    "icon": "population",
+    "fields": {
+      "Name": "promotionRateMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "popJob": false
+      },
+      "Icon": "population",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Population"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "jobAddPerc",
+    "type": "modifiers",
+    "displayName": "Population",
+    "icon": "population",
+    "fields": {
+      "Name": "jobAddPerc",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "popJob": true
+      },
+      "Icon": "population",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Population"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "jobAdd",
+    "type": "modifiers",
+    "displayName": "Population",
+    "icon": "population",
+    "fields": {
+      "Name": "jobAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "popJob": true
+      },
+      "Icon": "population",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Population"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "popAmenitiesUsage",
+    "type": "modifiers",
+    "displayName": "Population",
+    "icon": "population",
+    "fields": {
+      "Name": "popAmenitiesUsage",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "population",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
       },
       "GenerateIcons": false,
       "IsEffect": false,
@@ -2711,7 +4211,7 @@
       "Name": "popGrowthMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2770,7 +4270,7 @@
       "Name": "prestigeMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2798,7 +4298,7 @@
       "Name": "integrationSpeedMult",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2826,7 +4326,7 @@
       "Name": "rulingFactionPoliticalPowerAdd",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2854,7 +4354,7 @@
       "Name": "cultureTraitMaxAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2912,7 +4412,7 @@
       "Name": "canColonizeOverride",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2940,7 +4440,7 @@
       "Name": "unitIsCarried",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "prestige",
       "Scaler": "Linear",
       "AIWeights": {
@@ -2956,6 +4456,118 @@
       {
         "type": "icon",
         "id": "prestige"
+      }
+    ]
+  },
+  {
+    "id": "occupationRazing",
+    "type": "modifiers",
+    "displayName": "Prestige",
+    "icon": "prestige",
+    "fields": {
+      "Name": "occupationRazing",
+      "Positivity": "boolean",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "prestige",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Prestige"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "prestige"
+      }
+    ]
+  },
+  {
+    "id": "empireSizePenaltyMult",
+    "type": "modifiers",
+    "displayName": "Prestige",
+    "icon": "prestige",
+    "fields": {
+      "Name": "empireSizePenaltyMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "prestige",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Prestige"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "prestige"
+      }
+    ]
+  },
+  {
+    "id": "cohesionAdd",
+    "type": "modifiers",
+    "displayName": "Prestige",
+    "icon": "prestige",
+    "fields": {
+      "Name": "cohesionAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "prestige",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Prestige"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "prestige"
+      }
+    ]
+  },
+  {
+    "id": "privateSectorDrift",
+    "type": "modifiers",
+    "displayName": "Private Sector Drift",
+    "icon": "industrial",
+    "fields": {
+      "Name": "privateSectorDrift",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "industrial",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Private Sector Drift"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "industrial"
       }
     ]
   },
@@ -3149,7 +4761,7 @@
       "Name": "projectEfficiency",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "industrial",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3238,7 +4850,7 @@
       "Name": "rangedAttackMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "deployRange",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3266,7 +4878,7 @@
       "Name": "recruitablePopulationAdd",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "manpower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3294,7 +4906,7 @@
       "Name": "recruitablePopulationMult",
       "Positivity": "neutral",
       "IsPercent": "Multiplier",
-      "Properties": {},
+      "Properties": [],
       "Icon": "manpower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3310,6 +4922,64 @@
       {
         "type": "icon",
         "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "reformEnactmentSpeedMult",
+    "type": "modifiers",
+    "displayName": "Reform Enactment Speed Mult",
+    "icon": "political",
+    "fields": {
+      "Name": "reformEnactmentSpeedMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "reform": false
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Reform Enactment Speed Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
+    "id": "reformInvestmentEfficiency",
+    "type": "modifiers",
+    "displayName": "Reform Investment Efficiency",
+    "icon": "political",
+    "fields": {
+      "Name": "reformInvestmentEfficiency",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Reform Investment Efficiency"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
       }
     ]
   },
@@ -3352,7 +5022,7 @@
       "Name": "regionRangedDefense",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "defense",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3411,7 +5081,7 @@
       "Name": "unitReinforceRateMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "manpower",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3427,6 +5097,34 @@
       {
         "type": "icon",
         "id": "manpower"
+      }
+    ]
+  },
+  {
+    "id": "reputationAdd",
+    "type": "modifiers",
+    "displayName": "Reputation",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "reputationAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "diplomacy",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Reputation"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
       }
     ]
   },
@@ -3776,6 +5474,36 @@
     "references": []
   },
   {
+    "id": "revealMapModifier",
+    "type": "modifiers",
+    "displayName": "Reveal Map Modifier",
+    "icon": "espionagePower",
+    "fields": {
+      "Name": "revealMapModifier",
+      "Positivity": "boolean",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "empire": true
+      },
+      "Icon": "espionagePower",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Reveal Map Modifier"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "espionagePower"
+      }
+    ]
+  },
+  {
     "id": "rotationEarthlikenessModifier",
     "type": "modifiers",
     "displayName": "Rotation Earthlikeness Modifier",
@@ -3784,7 +5512,7 @@
       "Name": "rotationEarthlikenessModifier",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3812,7 +5540,7 @@
       "Name": "siegeAbility",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "military",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3840,7 +5568,7 @@
       "Name": "siphonManpowerTooltipModifier",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3880,6 +5608,124 @@
     "references": []
   },
   {
+    "id": "socialMetricAdd",
+    "type": "modifiers",
+    "displayName": "Social Metric Add",
+    "icon": "political",
+    "fields": {
+      "Name": "socialMetricAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "socialMetric": true
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Social Metric Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
+    "id": "socialSpendingCostMult",
+    "type": "modifiers",
+    "displayName": "Social Spending Cost Mult",
+    "icon": "economic",
+    "fields": {
+      "Name": "socialSpendingCostMult",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "socialSpending": true
+      },
+      "Icon": "economic",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Social Spending Cost Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "economic"
+      }
+    ]
+  },
+  {
+    "id": "socialSpendingMaxAdd",
+    "type": "modifiers",
+    "displayName": "Social Spending Max Add",
+    "icon": "political",
+    "fields": {
+      "Name": "socialSpendingMaxAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "socialMetric": true
+      },
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Social Spending Max Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
+    "id": "socialSpendingMinAdd",
+    "type": "modifiers",
+    "displayName": "Social Spending Min Add",
+    "icon": "political",
+    "fields": {
+      "Name": "socialSpendingMinAdd",
+      "Positivity": "neutral",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "political",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Social Spending Min Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "political"
+      }
+    ]
+  },
+  {
     "id": "stabilityOffset",
     "type": "modifiers",
     "displayName": "Stability",
@@ -3888,7 +5734,7 @@
       "Name": "stabilityOffset",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3916,7 +5762,7 @@
       "Name": "stabilityGainFromFactions",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3944,7 +5790,7 @@
       "Name": "warExhaustionRecoveryMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -3972,7 +5818,7 @@
       "Name": "stabilityGainAdd",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4000,7 +5846,7 @@
       "Name": "stabilityGainEffect",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4050,6 +5896,34 @@
     ]
   },
   {
+    "id": "supplyLimitMult",
+    "type": "modifiers",
+    "displayName": "Supply Limit Mult",
+    "icon": "military",
+    "fields": {
+      "Name": "supplyLimitMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Supply Limit Mult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
     "id": "surfaceWaterModifier",
     "type": "modifiers",
     "displayName": "Surface Water Modifier",
@@ -4058,7 +5932,7 @@
       "Name": "surfaceWaterModifier",
       "Positivity": "boolean",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "planet",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4086,7 +5960,7 @@
       "Name": "surveyCost",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "survey",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4174,7 +6048,7 @@
       "Name": "tooltipModifier",
       "Positivity": "positive",
       "IsPercent": "Numeric",
-      "Properties": {},
+      "Properties": [],
       "Icon": "",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4197,7 +6071,7 @@
       "Name": "exportTariff",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4225,7 +6099,7 @@
       "Name": "importTariff",
       "Positivity": "neutral",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4253,7 +6127,7 @@
       "Name": "tradeBarriersAdd",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4281,7 +6155,7 @@
       "Name": "organizationTradeBarrierModifier",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "trade",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4301,6 +6175,94 @@
     ]
   },
   {
+    "id": "resourceRecovery",
+    "type": "modifiers",
+    "displayName": "Trade",
+    "icon": "trade",
+    "fields": {
+      "Name": "resourceRecovery",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "resource": false
+      },
+      "Icon": "trade",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Trade"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "trade"
+      }
+    ]
+  },
+  {
+    "id": "tyrannyPenalty",
+    "type": "modifiers",
+    "displayName": "Tyranny Penalty",
+    "icon": "corruption",
+    "fields": {
+      "Name": "tyrannyPenalty",
+      "Positivity": "negative",
+      "IsPercent": "Percentage",
+      "Properties": [],
+      "Icon": "corruption",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Tyranny Penalty"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "corruption"
+      }
+    ]
+  },
+  {
+    "id": "unitCombatWidthAdd",
+    "type": "modifiers",
+    "displayName": "Unit Combat Width Add",
+    "icon": "military",
+    "fields": {
+      "Name": "unitCombatWidthAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "unitDomain": true
+      },
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Unit Combat Width Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
     "id": "unitCommandLimitAdd",
     "type": "modifiers",
     "displayName": "Unit Command Limit Add",
@@ -4309,7 +6271,7 @@
       "Name": "unitCommandLimitAdd",
       "Positivity": "positive",
       "IsPercent": "ToScale",
-      "Properties": {},
+      "Properties": [],
       "Icon": "leader",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4392,7 +6354,7 @@
       "Name": "unitExperienceBase",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "experience",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4420,7 +6382,7 @@
       "Name": "unitExperienceGainMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "experience",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4490,6 +6452,66 @@
     "references": []
   },
   {
+    "id": "unitHPAdd",
+    "type": "modifiers",
+    "displayName": "Unit HPAdd",
+    "icon": "military",
+    "fields": {
+      "Name": "unitHPAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": {
+        "unitType": true
+      },
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Unit HPAdd"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
+    "id": "unitHPMult",
+    "type": "modifiers",
+    "displayName": "Unit HPMult",
+    "icon": "military",
+    "fields": {
+      "Name": "unitHPMult",
+      "Positivity": "positive",
+      "IsPercent": "Percentage",
+      "Properties": {
+        "unitType": true
+      },
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Unit HPMult"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
+  },
+  {
     "id": "unitMoraleDamageReduction",
     "type": "modifiers",
     "displayName": "Unit Morale Damage Reduction",
@@ -4498,7 +6520,7 @@
       "Name": "unitMoraleDamageReduction",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "morale",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4526,7 +6548,7 @@
       "Name": "unitOccupationSpeedMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "military",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4619,6 +6641,34 @@
     "modifiers": [],
     "prerequisites": [],
     "references": []
+  },
+  {
+    "id": "unitReinforcementOverride",
+    "type": "modifiers",
+    "displayName": "Unit Reinforcement Override",
+    "icon": "military",
+    "fields": {
+      "Name": "unitReinforcementOverride",
+      "Positivity": "boolean",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "military",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Unit Reinforcement Override"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "military"
+      }
+    ]
   },
   {
     "id": "unitStatAdd",
@@ -4720,7 +6770,7 @@
       "Name": "unitUpkeepMult",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "military",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4808,7 +6858,7 @@
       "Name": "unityMult",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "culture",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4836,7 +6886,7 @@
       "Name": "unrestChangeAdd",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "unrest",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4864,7 +6914,7 @@
       "Name": "warExhaustionMult",
       "Positivity": "negative",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "stability",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4892,7 +6942,7 @@
       "Name": "workforceRatioAdd",
       "Positivity": "positive",
       "IsPercent": "Percentage",
-      "Properties": {},
+      "Properties": [],
       "Icon": "population",
       "Scaler": "Linear",
       "AIWeights": {
@@ -4908,6 +6958,34 @@
       {
         "type": "icon",
         "id": "population"
+      }
+    ]
+  },
+  {
+    "id": "yearlyFavorsAdd",
+    "type": "modifiers",
+    "displayName": "Yearly Favors Add",
+    "icon": "diplomacy",
+    "fields": {
+      "Name": "yearlyFavorsAdd",
+      "Positivity": "positive",
+      "IsPercent": "Numeric",
+      "Properties": [],
+      "Icon": "diplomacy",
+      "Scaler": "Linear",
+      "AIWeights": {
+        "base": 0
+      },
+      "GenerateIcons": false,
+      "IsEffect": false,
+      "DisplayName": "Yearly Favors Add"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "diplomacy"
       }
     ]
   }

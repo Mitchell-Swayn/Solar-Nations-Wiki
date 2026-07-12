@@ -16,7 +16,7 @@
         "Hex": "C0B700"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator0": "artillery"
+        "Land": "artillery"
       }
     },
     "modifiers": [],
@@ -42,8 +42,8 @@
         "Hex": "9B6BC5"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "destroyer",
-        "UnitDomainEnum::NewEnumerator3": "spaceBattleship"
+        "Water": "destroyer",
+        "Space": "spaceBattleship"
       }
     },
     "modifiers": [],
@@ -69,11 +69,11 @@
         "Hex": "008C2F"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator4": "truck",
-        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer",
-        "UnitDomainEnum::NewEnumerator2": "airplane",
-        "UnitDomainEnum::NewEnumerator1": "destroyer",
-        "UnitDomainEnum::NewEnumerator0": "truck"
+        "Strategic": "truck",
+        "Space": "spaceDestroyer",
+        "Air": "airplane",
+        "Water": "destroyer",
+        "Land": "truck"
       }
     },
     "modifiers": [],
@@ -99,8 +99,8 @@
         "Hex": "005BC9"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "navyCarrier",
-        "UnitDomainEnum::NewEnumerator3": "spaceCarrier"
+        "Water": "navyCarrier",
+        "Space": "spaceCarrier"
       }
     },
     "modifiers": [],
@@ -126,7 +126,7 @@
         "Hex": "86C3C7"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator2": "airplane"
+        "Air": "airplane"
       }
     },
     "modifiers": [],
@@ -152,8 +152,8 @@
         "Hex": "0073C1"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "destroyer",
-        "UnitDomainEnum::NewEnumerator3": "spaceBattleship"
+        "Water": "destroyer",
+        "Space": "spaceBattleship"
       }
     },
     "modifiers": [],
@@ -179,7 +179,7 @@
         "Hex": "999999"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator2": "drone"
+        "Air": "drone"
       }
     },
     "modifiers": [],
@@ -205,7 +205,7 @@
         "Hex": "99C6CC"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator2": "airplane"
+        "Air": "airplane"
       }
     },
     "modifiers": [],
@@ -231,7 +231,7 @@
         "Hex": "2E005B"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "floatingFortress"
+        "Water": "floatingFortress"
       }
     },
     "modifiers": [],
@@ -257,7 +257,7 @@
         "Hex": "00F4C7"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator2": "flyingFortress"
+        "Air": "flyingFortress"
       }
     },
     "modifiers": [],
@@ -283,11 +283,11 @@
         "Hex": "7EAC73"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator4": "truck",
-        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer",
-        "UnitDomainEnum::NewEnumerator2": "airplane",
-        "UnitDomainEnum::NewEnumerator1": "destroyer",
-        "UnitDomainEnum::NewEnumerator0": "truck"
+        "Strategic": "truck",
+        "Space": "spaceDestroyer",
+        "Air": "airplane",
+        "Water": "destroyer",
+        "Land": "truck"
       }
     },
     "modifiers": [],
@@ -311,7 +311,7 @@
         "Hex": "0BD200"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator0": "apc"
+        "Land": "apc"
       }
     },
     "modifiers": [],
@@ -337,7 +337,7 @@
         "Hex": "00C4C6"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator2": "airplane"
+        "Air": "airplane"
       }
     },
     "modifiers": [],
@@ -361,7 +361,7 @@
         "Hex": "7E8C15"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator0": "apc"
+        "Land": "apc"
       }
     },
     "modifiers": [],
@@ -387,7 +387,7 @@
         "Hex": "000000"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator0": "landcruiser"
+        "Land": "landcruiser"
       }
     },
     "modifiers": [],
@@ -413,11 +413,11 @@
         "Hex": "BC6732"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator4": "missileRoot",
-        "UnitDomainEnum::NewEnumerator3": "missileRoot",
-        "UnitDomainEnum::NewEnumerator2": "missileRoot",
-        "UnitDomainEnum::NewEnumerator1": "missileRoot",
-        "UnitDomainEnum::NewEnumerator0": "missileRoot"
+        "Strategic": "missileRoot",
+        "Space": "missileRoot",
+        "Air": "missileRoot",
+        "Water": "missileRoot",
+        "Land": "missileRoot"
       }
     },
     "modifiers": [],
@@ -443,8 +443,8 @@
         "Hex": "6F72EF"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "destroyer",
-        "UnitDomainEnum::NewEnumerator3": "spaceDestroyer"
+        "Water": "destroyer",
+        "Space": "spaceDestroyer"
       }
     },
     "modifiers": [],
@@ -470,7 +470,7 @@
         "Hex": "CF5DCE"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator3": "airplane"
+        "Space": "airplane"
       }
     },
     "modifiers": [],
@@ -496,7 +496,7 @@
         "Hex": "0039AC"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator1": "destroyer"
+        "Water": "destroyer"
       }
     },
     "modifiers": [],
@@ -522,7 +522,7 @@
         "Hex": "D000A9"
       },
       "Model": {
-        "UnitDomainEnum::NewEnumerator0": "tank"
+        "Land": "tank"
       }
     },
     "modifiers": [],
