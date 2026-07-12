@@ -21,10 +21,6 @@ import type {
 
 type RawRecord = Record<string, unknown>;
 
-const ICON_ALIASES: Record<string, string> = {
-  industry: 'factory',
-};
-
 function stripJsonComments(text: string): string {
   return text.replace(/\/\/.*$/gm, '').replace(/,\s*([}\]])/g, '$1');
 }
@@ -320,8 +316,7 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   let copied = 0;
   const missing: string[] = [];
   for (const icon of [...requested].sort()) {
-    const sourceName = ICON_ALIASES[icon] ?? icon;
-    const source = sourceFiles.get(sourceName.toLowerCase());
+    const source = sourceFiles.get(icon.toLowerCase());
     if (!source) { missing.push(icon); continue; }
     cpSync(source, join(outputRoot, `${icon}.png`));
     copied++;
