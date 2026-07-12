@@ -352,6 +352,9 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
   const sourceFiles = indexPngFiles(sourceRoot);
   const requested = new Set(entries.map((entry) => entry.icon).filter((icon): icon is string => Boolean(icon)));
+  for (const entry of entries) {
+    if (entry.type === 'culture-traits') requested.add(getCultureTraitGroup(entry.id).icon);
+  }
 
   rmSync(outputRoot, { recursive: true, force: true });
   mkdirSync(outputRoot, { recursive: true });
