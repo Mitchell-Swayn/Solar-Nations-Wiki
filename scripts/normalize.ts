@@ -596,6 +596,38 @@ function loadRawExtract(): WikiEntry[] {
   return entries;
 }
 
+/**
+ * The shipped binary table currently exposes the complete component catalogue,
+ * while the tutorial mod includes the authored gameplay data for its example
+ * component. Merge those records by icon so modifiers and component properties
+ * are not lost when the binary extraction is preferred.
+ */
+function enrichUnitComponents(entries: WikiEntry[], modPath: string, localization: Record<string, string>) {
+  const path = join(modPath, 'Defines/UnitComponents.json');
+  if (!existsSync(path)) return;
+
+  const records = parseJsonFile(path);
+  if (!Array.isArray(records)) return;
+
+  const components = entries.filter((entry) => entry.type === 'unit-components');
+  for (const record of records as RawRecord[]) {
+    const enriched = buildEntry('unit-components', record, localization);
+    if (!enriched) continue;
+    const target = components.find((entry) =>
+      (enriched.icon && entry.icon === enriched.icon)
+      || entry.id.replace(/_/g, '') === enriched.id.replace(/_/g, ''),
+    );
+    if (!target) continue;
+
+    target.fields = { ...target.fields, ...enriched.fields };
+    target.modifiers = enriched.modifiers;
+    target.prerequisites = enriched.prerequisites;
+    target.references = [...target.references, ...enriched.references].filter(
+      (reference, index, all) => all.findIndex((item) => item.type === reference.type && item.id === reference.id) === index,
+    );
+  }
+}
+
 function buildIndex(entries: WikiEntry[], source: string): CuratedIndex {
   const index: CuratedIndex = {
     generatedAt: new Date().toISOString(),
@@ -654,10 +686,11 @@ function main() {
   const modifierEntries = loadModifiers(modPath, localization);
   const missionEntries = loadMissionComponents(modPath);
 
+  if (useRaw) enrichUnitComponents(defineEntries, modPath, localization);
   applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);
   const allEntries = [...defineEntries, ...modifierEntries, ...missionEntries];
   const source = useRaw
-    ? 'data/raw extracted Defines + tutorialMod modifiers'
+    ? 'data/raw extracted Defines + tutorialMod component data and modifiers'
     : 'tutorialMod Defines + modifiers + mission components';
 
   removeUnavailableIconReferences(gameRoot, allEntries);
