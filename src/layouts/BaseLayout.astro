@@ -14,6 +14,10 @@ const { title, description, activeType } = Astro.props;
 const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
 const categories = getCategories().filter((category) => !category.mergedInto);
 const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getIndex().byType[category.slug]?.length ?? 0]));
+const generatedDate = new Date(getIndex().generatedAt);
+const buildLabel = Number.isNaN(generatedDate.valueOf())
+  ? 'Current extraction'
+  : `Updated ${generatedDate.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Australia/Sydney' })}`;
 const searchEntries = getAllEntries().map((entry) => ({
   id: entry.id,
   name: entry.displayName,
@@ -32,16 +36,18 @@ const searchEntries = getAllEntries().map((entry) => ({
     <title>{fullTitle}</title>
   </head>
   <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="topbar">
       <a href={withBase('/')} class="brand" aria-label="Solar Nations 2 Wiki home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span><strong>Solar Nations 2</strong><small>Strategy Wiki</small></span>
       </a>
       <div class="global-search" role="search">
+        <label class="sr-only" for="global-search">Search the wiki</label>
         <span class="search-symbol" aria-hidden="true"></span>
-        <input id="global-search" type="search" placeholder="Search technologies, factions, projects..." autocomplete="off" />
+        <input id="global-search" type="search" placeholder="Search technologies, factions, projects..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="global-results" />
         <kbd>/</kbd>
-        <div id="global-results" class="global-results" hidden></div>
+        <div id="global-results" class="global-results" role="listbox" aria-label="Search results" hidden></div>
       </div>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -49,7 +55,8 @@ const searchEntries = getAllEntries().map((entry) => ({
     </header>
 
     <div class="site-frame">
-      <aside class="sidebar" id="sidebar">
+      <button class="nav-backdrop" id="nav-backdrop" type="button" aria-label="Close navigation" tabindex="-1" hidden></button>
+      <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
         <nav aria-label="Wiki sections">
           <a href={withBase('/')} class:list={['nav-home', { active: !activeType }]}>Overview</a>
           {CATEGORY_GROUPS.map((group) => (
@@ -63,10 +70,10 @@ const searchEntries = getAllEntries().map((entry) => ({
             </section>
           ))}
         </nav>
-        <p class="sidebar-note">Game data reference<br />Build 2026.07</p>
+        <p class="sidebar-note">Game data reference<br />{buildLabel}</p>
       </aside>
 
-      <main class="content"><slot /></main>
+      <main class="content" id="main-content" tabindex="-1"><slot /></main>
     </div>
 
     <footer class="site-footer">
@@ -79,22 +86,57 @@ const searchEntries = getAllEntries().map((entry) => ({
       const results = document.getElementById('global-results');
       const toggle = document.getElementById('nav-toggle');
       const sidebar = document.getElementById('sidebar');
+      const backdrop = document.getElementById('nav-backdrop');
+      let activeResult = -1;
 
       const escapeHtml = (value) => value.replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
       const renderSearch = () => {
         const query = input.value.trim().toLowerCase();
-        if (query.length < 2) { results.hidden = true; return; }
+        if (query.length < 2) { results.hidden = true; input.setAttribute('aria-expanded', 'false'); activeResult = -1; return; }
         const matches = entries.filter((entry) => entry.name.toLowerCase().includes(query) || entry.id.toLowerCase().includes(query)).slice(0, 10);
         results.innerHTML = matches.length
-          ? matches.map((entry) => `<a href="${baseUrl}${entry.path}"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
+          ? matches.map((entry, index) => `<a id="search-result-${index}" role="option" aria-selected="false" href="${baseUrl}${entry.path}"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
           : '<p>No matching entries</p>';
         results.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        activeResult = -1;
       };
       input?.addEventListener('input', renderSearch);
-      input?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { input.value = ''; results.hidden = true; input.blur(); } });
+      input?.addEventListener('keydown', (event) => {
+        const options = [...results.querySelectorAll('[role="option"]')];
+        if ((event.key === 'ArrowDown' || event.key === 'ArrowUp') && options.length) {
+          event.preventDefault();
+          activeResult = event.key === 'ArrowDown' ? (activeResult + 1) % options.length : (activeResult - 1 + options.length) % options.length;
+          options.forEach((option, index) => option.setAttribute('aria-selected', String(index === activeResult)));
+          input.setAttribute('aria-activedescendant', options[activeResult].id);
+          options[activeResult].scrollIntoView({ block: 'nearest' });
+        }
+        if (event.key === 'Enter' && activeResult >= 0) { event.preventDefault(); options[activeResult]?.click(); }
+        if (event.key === 'Escape') { input.value = ''; results.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); input.blur(); }
+      });
       document.addEventListener('keydown', (event) => { if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); input?.focus(); } });
-      document.addEventListener('click', (event) => { if (!event.target.closest('.global-search')) results.hidden = true; });
-      toggle?.addEventListener('click', () => { const open = sidebar.classList.toggle('open'); toggle.setAttribute('aria-expanded', String(open)); });
+      document.addEventListener('click', (event) => { if (!event.target.closest('.global-search')) { results.hidden = true; input.setAttribute('aria-expanded', 'false'); } });
+      const setNavigation = (open) => {
+        sidebar.classList.toggle('open', open);
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        backdrop.hidden = !open;
+        document.body.classList.toggle('nav-open', open);
+        if (open) sidebar.querySelector('a')?.focus();
+      };
+      toggle?.addEventListener('click', () => setNavigation(!sidebar.classList.contains('open')));
+      backdrop?.addEventListener('click', () => { setNavigation(false); toggle.focus(); });
+      sidebar?.addEventListener('click', (event) => { if (event.target.closest('a') && window.innerWidth <= 820) setNavigation(false); });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && sidebar.classList.contains('open')) { setNavigation(false); toggle.focus(); }
+        if (event.key === 'Tab' && sidebar.classList.contains('open')) {
+          const focusable = [...sidebar.querySelectorAll('a, button, input, select, [tabindex]:not([tabindex="-1"])')];
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+          if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+        }
+      });
     </script>
   </body>
 </html>

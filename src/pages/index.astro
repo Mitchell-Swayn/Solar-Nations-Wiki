@@ -3,14 +3,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCategories, getAllEntries, getEntriesByType } from '../lib/data';
 import { CATEGORY_GROUPS } from '../lib/categories';
 import { withBase } from '../lib/base';
+import GameIcon from '../components/GameIcon.astro';
 
 const categories = getCategories().filter((category) => !category.mergedInto);
 const allEntries = getAllEntries();
 const featured = ['technologies', 'government-reforms', 'projects', 'factions', 'unit-components', 'resources'];
+const featuredIcons: Record<string, string> = {
+  technologies: 'eraInformation',
+  'government-reforms': 'gavel',
+  projects: 'development',
+  factions: 'political',
+  'unit-components': 'defense',
+  resources: 'currency',
+};
 ---
 
 <BaseLayout title="Solar Nations 2 Wiki" description="Strategy and game data encyclopedia for Solar Nations 2">
   <header class="overview-header">
+    <div class="hero-orbits" aria-hidden="true"><span></span><span></span><span></span></div>
     <div>
       <p class="eyebrow">Community Reference</p>
       <h1>Solar Nations 2 Strategy Wiki</h1>
@@ -30,12 +40,22 @@ const featured = ['technologies', 'government-reforms', 'projects', 'factions', 
         const cat = categories.find((item) => item.slug === slug)!;
         return (
           <a href={withBase(`/${cat.slug}/`)} class="feature-link">
-            <span class="feature-index">{String(featured.indexOf(slug) + 1).padStart(2, '0')}</span>
+            <span class="feature-icon"><GameIcon name={featuredIcons[slug]} size={32} /></span>
             <div><h3>{cat.pluralLabel}</h3><p>{cat.description}</p></div>
             <strong>{getEntriesByType(slug).length}</strong>
           </a>
         );
       })}
+    </div>
+  </section>
+
+  <section class="pathway-section">
+    <div class="section-heading"><div><p class="eyebrow">Find your way</p><h2>Browse by goal</h2></div><p>Start with the part of your nation you want to understand.</p></div>
+    <div class="pathway-grid">
+      <a href={withBase('/technologies/')}><small>Research</small><strong>Plan your technology path</strong><span>Technologies, requirements, and effects ›</span></a>
+      <a href={withBase('/government-reforms/')}><small>Society</small><strong>Shape government and culture</strong><span>Reforms, factions, and cultural traits ›</span></a>
+      <a href={withBase('/resources/')}><small>Economy</small><strong>Understand production</strong><span>Resources, projects, and deposits ›</span></a>
+      <a href={withBase('/unit-components/')}><small>Military</small><strong>Design and expand</strong><span>Components, eras, and strategic sites ›</span></a>
     </div>
   </section>
 
