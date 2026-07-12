@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:03:06.558Z",
+  "generatedAt": "2026-07-12T06:06:40.684Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -10692,6 +10692,56 @@
         }
       ]
     },
+    "government-reforms:governmentSpending": {
+      "id": "governmentSpending",
+      "type": "government-reforms",
+      "displayName": "Government Spending",
+      "fields": {
+        "Name": "governmentSpending",
+        "Options": [
+          "spending_high",
+          "spending_low",
+          "spending_medium",
+          "spending_none"
+        ],
+        "Variants": [
+          "default",
+          "genetics",
+          "cyberneticsTech",
+          "virtualReality",
+          "futuristic"
+        ],
+        "Cost": 20,
+        "Cooldown": 3600,
+        "DefaultIndex": 1,
+        "Sequential": false,
+        "IsPolitical": 0,
+        "Prerequisite": {
+          "A": "None",
+          "B": "None"
+        }
+      },
+      "modifiers": [],
+      "prerequisites": [],
+      "references": [
+        {
+          "type": "government-reform-options",
+          "id": "spending_high"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "spending_low"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "spending_medium"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "spending_none"
+        }
+      ]
+    },
     "government-reforms:militaryDoctrine": {
       "id": "militaryDoctrine",
       "type": "government-reforms",
@@ -10752,6 +10802,61 @@
         }
       ]
     },
+    "government-reforms:nationalFocus": {
+      "id": "nationalFocus",
+      "type": "government-reforms",
+      "displayName": "National Focus",
+      "fields": {
+        "Name": "nationalFocus",
+        "Options": [
+          "focus_construction",
+          "focus_expansion",
+          "focus_innovation",
+          "focus_politics",
+          "focus_recruitment"
+        ],
+        "Variants": [
+          "default",
+          "genetics",
+          "cyberneticsTech",
+          "virtualReality",
+          "futuristic"
+        ],
+        "Cost": 20,
+        "Cooldown": 3600,
+        "DefaultIndex": 1,
+        "Sequential": false,
+        "IsPolitical": 0,
+        "Prerequisite": {
+          "A": "None",
+          "B": "None"
+        }
+      },
+      "modifiers": [],
+      "prerequisites": [],
+      "references": [
+        {
+          "type": "government-reform-options",
+          "id": "focus_construction"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "focus_expansion"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "focus_innovation"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "focus_politics"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "focus_recruitment"
+        }
+      ]
+    },
     "government-reforms:serviceLaw": {
       "id": "serviceLaw",
       "type": "government-reforms",
@@ -10799,6 +10904,91 @@
         {
           "type": "government-reform-options",
           "id": "serviceLaw_totalMobilization"
+        }
+      ]
+    },
+    "government-reforms:tradePolicy": {
+      "id": "tradePolicy",
+      "type": "government-reforms",
+      "displayName": "Trade Policy",
+      "fields": {
+        "Name": "tradePolicy",
+        "Options": [
+          "trade_autarky",
+          "trade_inverted",
+          "trade_protectionism"
+        ],
+        "Variants": [
+          "default",
+          "genetics",
+          "cyberneticsTech",
+          "virtualReality",
+          "futuristic"
+        ],
+        "Cost": 20,
+        "Cooldown": 3600,
+        "DefaultIndex": 1,
+        "Sequential": false,
+        "IsPolitical": 0,
+        "Prerequisite": {
+          "A": "None",
+          "B": "None"
+        }
+      },
+      "modifiers": [],
+      "prerequisites": [],
+      "references": [
+        {
+          "type": "government-reform-options",
+          "id": "trade_autarky"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "trade_inverted"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "trade_protectionism"
+        }
+      ]
+    },
+    "government-reforms:unitTraining": {
+      "id": "unitTraining",
+      "type": "government-reforms",
+      "displayName": "Unit Training",
+      "fields": {
+        "Name": "unitTraining",
+        "Options": [
+          "unitTraining_default",
+          "unitTraining_elite"
+        ],
+        "Variants": [
+          "default",
+          "genetics",
+          "cyberneticsTech",
+          "virtualReality",
+          "futuristic"
+        ],
+        "Cost": 20,
+        "Cooldown": 3600,
+        "DefaultIndex": 1,
+        "Sequential": false,
+        "IsPolitical": 0,
+        "Prerequisite": {
+          "A": "None",
+          "B": "None"
+        }
+      },
+      "modifiers": [],
+      "prerequisites": [],
+      "references": [
+        {
+          "type": "government-reform-options",
+          "id": "unitTraining_default"
+        },
+        {
+          "type": "government-reform-options",
+          "id": "unitTraining_elite"
         }
       ]
     },
@@ -25415,8 +25605,12 @@
       "government-reforms:espionagePolicy",
       "government-reforms:fiscalPolicy",
       "government-reforms:form",
+      "government-reforms:governmentSpending",
       "government-reforms:militaryDoctrine",
-      "government-reforms:serviceLaw"
+      "government-reforms:nationalFocus",
+      "government-reforms:serviceLaw",
+      "government-reforms:tradePolicy",
+      "government-reforms:unitTraining"
     ],
     "projects": [
       "projects:aiLogistics",

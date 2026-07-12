@@ -35,6 +35,10 @@ JUNK_STRINGS = {
 }
 
 REFORM_CATEGORY_PREFIXES: list[tuple[str, str]] = [
+    ("focus_", "nationalFocus"),
+    ("spending_", "governmentSpending"),
+    ("trade_", "tradePolicy"),
+    ("unitTraining_", "unitTraining"),
     ("form_", "form"),
     ("economy_", "economySystem"),
     ("bureaucracy_", "bureaucracy"),

@@ -21,7 +21,10 @@ const entries = getEntriesByType(type!);
 const position = entries.findIndex((item) => item.id === entry.id);
 const previous = position > 0 ? entries[position - 1] : undefined;
 const next = position < entries.length - 1 ? entries[position + 1] : undefined;
-const propertyCount = Object.keys(entry.fields).filter((key) => !['Name', 'Icon'].includes(key)).length;
+const optionIds = type === 'government-reforms' && Array.isArray(entry.fields.Options) ? entry.fields.Options.filter((value): value is string => typeof value === 'string') : [];
+const reformOptions = optionIds.map((optionId) => getEntry('government-reform-options', optionId)).filter((option) => option !== undefined);
+const detailFields = Object.fromEntries(Object.entries(entry.fields).filter(([key]) => key !== 'Options'));
+const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'].includes(key)).length;
 ---
 
 <BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`} description={entry.description} activeType={type}>
@@ -39,8 +42,9 @@ const propertyCount = Object.keys(entry.fields).filter((key) => !['Name', 'Icon'
       </header>
 
       {entry.prerequisites.length > 0 && <section class="article-section" id="requirements"><h2>Requirements</h2><PrerequisiteChain prerequisites={entry.prerequisites} /></section>}
+      {reformOptions.length > 0 && <section class="article-section" id="options"><h2>Reform options</h2><div class="related-options">{reformOptions.map((option) => <a href={withBase(`/government-reform-options/${option.id}/`)}>{option.icon && <GameIcon name={option.icon} size={30} />}<span><strong>{option.displayName}</strong><code>{option.id}</code></span><b>›</b></a>)}</div></section>}
       {entry.modifiers.length > 0 && <section class="article-section" id="effects"><h2>Gameplay effects</h2><ModifierList modifiers={entry.modifiers} /></section>}
-      {propertyCount > 0 && <section class="article-section" id="properties"><h2>Properties</h2><StatTable data={entry.fields} /></section>}
+      {propertyCount > 0 && <section class="article-section" id="properties"><h2>Properties</h2><StatTable data={detailFields} /></section>}
       {propertyCount === 0 && entry.modifiers.length === 0 && <section class="article-section"><h2>Data availability</h2><p class="notice">This entry is present in the game definitions, but no additional structured properties were available in the current extraction.</p></section>}
 
       <nav class="article-pager" aria-label="Adjacent entries">
@@ -54,7 +58,7 @@ const propertyCount = Object.keys(entry.fields).filter((key) => !['Name', 'Icon'
         <h2>At a glance</h2>
         <dl><div><dt>Category</dt><dd><a href={withBase(`/${type}/`)}>{category.pluralLabel}</a></dd></div><div><dt>Effects</dt><dd>{entry.modifiers.length}</dd></div><div><dt>Requirements</dt><dd>{entry.prerequisites.length}</dd></div><div><dt>Properties</dt><dd>{propertyCount}</dd></div></dl>
       </section>
-      <section class="page-nav"><h2>On this page</h2><a href="#top">Overview</a>{entry.prerequisites.length > 0 && <a href="#requirements">Requirements</a>}{entry.modifiers.length > 0 && <a href="#effects">Gameplay effects</a>}{propertyCount > 0 && <a href="#properties">Properties</a>}</section>
+      <section class="page-nav"><h2>On this page</h2><a href="#top">Overview</a>{entry.prerequisites.length > 0 && <a href="#requirements">Requirements</a>}{reformOptions.length > 0 && <a href="#options">Reform options</a>}{entry.modifiers.length > 0 && <a href="#effects">Gameplay effects</a>}{propertyCount > 0 && <a href="#properties">Properties</a>}</section>
     </aside>
   </article>
 </BaseLayout>

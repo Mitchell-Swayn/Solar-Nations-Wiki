@@ -13,6 +13,11 @@ const { type } = Astro.params;
 const category = CATEGORY_BY_SLUG[type!];
 const entries = getEntriesByType(type!).sort((a, b) => a.displayName.localeCompare(b.displayName));
 const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const reforms = type === 'government-reform-options' ? getEntriesByType('government-reforms') : [];
+const reformGroups = reforms.map((reform) => {
+  const optionIds = Array.isArray(reform.fields.Options) ? reform.fields.Options.filter((id): id is string => typeof id === 'string') : [];
+  return { reform, options: optionIds.map((id) => entries.find((entry) => entry.id === id)).filter((entry) => entry !== undefined) };
+});
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -31,15 +36,34 @@ const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
     <span id="visible-count">Showing {entries.length}</span>
   </div>
 
-  <div class="entry-directory" id="entry-directory">
-    {entries.map((entry) => (
-      <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
-        <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
-        <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
-        <span class="row-arrow" aria-hidden="true">›</span>
-      </a>
-    ))}
-  </div>
+  {reformGroups.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {reformGroups.map(({ reform, options }) => (
+        <section class="reform-option-group">
+          <header><div><p class="eyebrow">Government Reform</p><h2>{reform.displayName}</h2></div><a href={withBase(`/government-reforms/${reform.id}/`)}>View reform</a></header>
+          <div class="entry-directory">
+            {options.map((entry) => (
+              <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  ) : (
+    <div class="entry-directory" id="entry-directory">
+      {entries.map((entry) => (
+        <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
+          <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+          <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+          <span class="row-arrow" aria-hidden="true">›</span>
+        </a>
+      ))}
+    </div>
+  )}
   <p class="empty-state" id="empty-state" hidden>No entries match this filter.</p>
 </BaseLayout>
 
@@ -53,6 +77,7 @@ const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
     const query = filter.value.trim().toLowerCase();
     let visible = 0;
     rows.forEach((row) => { const show = row.dataset.search?.includes(query) ?? false; row.hidden = !show; if (show) visible++; });
+    document.querySelectorAll<HTMLElement>('.reform-option-group').forEach((group) => { group.hidden = !group.querySelector('.directory-row:not([hidden])'); });
     if (count) count.textContent = `Showing ${visible}`;
     if (empty) empty.hidden = visible > 0;
   });
@@ -60,5 +85,6 @@ const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
     document.querySelectorAll('[data-view]').forEach((item) => item.classList.remove('active'));
     button.classList.add('active');
     directory?.classList.toggle('compact', button.dataset.view === 'compact');
+    directory?.querySelectorAll('.entry-directory').forEach((list) => list.classList.toggle('compact', button.dataset.view === 'compact'));
   }));
 </script>

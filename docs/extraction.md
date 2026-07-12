@@ -27,7 +27,7 @@ This runs:
 3. **`tools/parse_legacy.py`** — parses binary exports into `data/raw/Defines/*.json` and `data/raw/Localization/en.json`
 4. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
 
-Current automated output: **1,091 verified define rows**, including 41 deposits, and **4,000+ localization keys**. Normalization adds tutorial modifier and mission-component definitions for **1,305 wiki entries** total. Earlier versions reported larger counts because schema fields and cross-table references were incorrectly treated as rows.
+Current automated output: **1,095 verified define rows**, including 41 deposits, and **4,000+ localization keys**. Normalization adds tutorial modifier and mission-component definitions for **1,309 wiki entries** total. Earlier versions reported larger counts because schema fields and cross-table references were incorrectly treated as rows.
 
 ### Limitations of automated extraction
 
