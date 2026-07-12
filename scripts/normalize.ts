@@ -36,7 +36,8 @@ const ICON_ALIASES: Record<string, string> = {
   mechanistCoalescence_migrantSituation: 'mechanistCoalescence',
   attack: 'smallArms0', entrenchment: 'fortifications', truck: 'logistics',
   culturePower: 'cultureHex', edict: 'edictGeneric', industrial: 'constructHex',
-  industry: 'machineParts', speed: 'moveSpeed',
+  industry: 'machineParts', speed: 'moveSpeed', unrest: 'stability',
+  crisis: 'crisisProgress', alignment: 'political',
 };
 
 function resolveIconSource(icon: string): string {
@@ -322,6 +323,12 @@ const ICON_SOURCE_OVERRIDES: Record<string, string> = {
   research: 'Resources/research.png',
 };
 
+// Preserve established bundle casing where the game export differs. GitHub's
+// Linux filesystem is case-sensitive even though local macOS builds are not.
+const ICON_BUNDLE_PATH_OVERRIDES: Record<string, string> = {
+  'Population.png': 'population.png',
+};
+
 // Repo-tracked icons decoded from packed textures that are missing from Saved/Icons.
 const EXTRA_ICONS_DIR = join(PROJECT_ROOT, 'data/icons-extra');
 
@@ -388,13 +395,15 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   let copied = 0;
   const missing: string[] = [];
   // Bundle every game icon, mirroring the source folder layout.
-  const bundleRelPath = (path: string) =>
-    (path.startsWith(sourceRoot)
+  const bundleRelPath = (path: string) => {
+    const relativePath = (path.startsWith(sourceRoot)
       ? relative(sourceRoot, path)
       : path.startsWith(EXTRA_ICONS_DIR)
         ? relative(EXTRA_ICONS_DIR, path)
         : basename(path)
     ).split(sep).join('/');
+    return ICON_BUNDLE_PATH_OVERRIDES[relativePath] ?? relativePath;
+  };
   const walk = (dir: string) => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       const path = join(dir, entry.name);

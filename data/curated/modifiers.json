@@ -145,6 +145,7 @@
     "id": "alignmentAdd",
     "type": "modifiers",
     "displayName": "Alignment",
+    "icon": "alignment",
     "fields": {
       "Name": "alignmentAdd",
       "Positivity": "positive",
@@ -152,6 +153,7 @@
       "Properties": {
         "alignment": true
       },
+      "Icon": "alignment",
       "Scaler": "Linear",
       "AIWeights": {
         "1": 5,
@@ -163,7 +165,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "alignment"
+      }
+    ]
   },
   {
     "id": "allLeaderSkillsMult",
@@ -594,6 +601,7 @@
     "id": "crisisSpawnChanceAdd",
     "type": "modifiers",
     "displayName": "Crisis Spawn Chance Add",
+    "icon": "crisis",
     "fields": {
       "Name": "crisisSpawnChanceAdd",
       "Positivity": "negative",
@@ -601,6 +609,7 @@
       "Properties": {
         "situation": true
       },
+      "Icon": "crisis",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -611,12 +620,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "crisis"
+      }
+    ]
   },
   {
     "id": "crisisSpawnChanceMult",
     "type": "modifiers",
     "displayName": "Crisis Spawn Chance Mult",
+    "icon": "crisis",
     "fields": {
       "Name": "crisisSpawnChanceMult",
       "Positivity": "negative",
@@ -624,6 +639,7 @@
       "Properties": {
         "situation": true
       },
+      "Icon": "crisis",
       "Scaler": "Linear",
       "AIWeights": {
         "base": 0
@@ -634,7 +650,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "crisis"
+      }
+    ]
   },
   {
     "id": "organizationUnityCollaboration",
@@ -4810,11 +4831,13 @@
     "id": "unrestChangeAdd",
     "type": "modifiers",
     "displayName": "Unrest Change",
+    "icon": "unrest",
     "fields": {
       "Name": "unrestChangeAdd",
       "Positivity": "negative",
       "IsPercent": "Percentage",
       "Properties": {},
+      "Icon": "unrest",
       "Scaler": "Linear",
       "AIWeights": {
         "base": -5
@@ -4825,7 +4848,12 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "unrest"
+      }
+    ]
   },
   {
     "id": "warExhaustionMult",

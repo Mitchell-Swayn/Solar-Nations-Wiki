@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T11:42:03.830Z",
+  "generatedAt": "2026-07-12T12:07:25.235Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:charisma": {
@@ -2207,10 +2207,10 @@
       "id": "christianityPiety",
       "type": "culture-traits",
       "displayName": "Piety",
-      "icon": "christian",
+      "icon": "unrest",
       "fields": {
         "Name": "christianityPiety",
-        "Icon": "christian"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -2223,7 +2223,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "christian"
+          "id": "unrest"
         }
       ]
     },
@@ -4762,10 +4762,10 @@
       "id": "guiltSocialPrograms",
       "type": "culture-traits",
       "displayName": "Social Programs",
-      "icon": "development",
+      "icon": "unrest",
       "fields": {
         "Name": "guiltSocialPrograms",
-        "Icon": "development"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -4783,7 +4783,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "development"
+          "id": "unrest"
         }
       ]
     },
@@ -5295,10 +5295,10 @@
       "id": "statismBureaucracy",
       "type": "culture-traits",
       "displayName": "Mega Bureaucracy",
-      "icon": "management",
+      "icon": "unrest",
       "fields": {
         "Name": "statismBureaucracy",
-        "Icon": "management"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -5317,7 +5317,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "unrest"
         }
       ]
     },
@@ -5946,10 +5946,10 @@
       "id": "stoicismStolidness",
       "type": "culture-traits",
       "displayName": "Stolid Ethos",
-      "icon": "cultural",
+      "icon": "unrest",
       "fields": {
         "Name": "stoicismStolidness",
-        "Icon": "cultural"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -5962,7 +5962,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "unrest"
         }
       ]
     },
@@ -8270,10 +8270,10 @@
       "id": "isolationistUnification",
       "type": "culture-traits",
       "displayName": "Isolated Unity",
-      "icon": "charisma",
+      "icon": "unrest",
       "fields": {
         "Name": "isolationistUnification",
-        "Icon": "charisma"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -8286,7 +8286,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "charisma"
+          "id": "unrest"
         }
       ]
     },
@@ -8445,10 +8445,10 @@
       "id": "mandateProsperity",
       "type": "culture-traits",
       "displayName": "The Golden Age",
-      "icon": "management",
+      "icon": "unrest",
       "fields": {
         "Name": "mandateProsperity",
-        "Icon": "management"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -8461,7 +8461,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "management"
+          "id": "unrest"
         }
       ]
     },
@@ -8761,10 +8761,10 @@
       "id": "polygamistSociety",
       "type": "culture-traits",
       "displayName": "Normalized Hypergamy",
-      "icon": "cultural",
+      "icon": "unrest",
       "fields": {
         "Name": "polygamistSociety",
-        "Icon": "cultural"
+        "Icon": "unrest"
       },
       "modifiers": [
         {
@@ -8777,7 +8777,7 @@
       "references": [
         {
           "type": "icon",
-          "id": "cultural"
+          "id": "unrest"
         }
       ]
     },
@@ -26491,6 +26491,7 @@
       "id": "alignmentAdd",
       "type": "modifiers",
       "displayName": "Alignment",
+      "icon": "alignment",
       "fields": {
         "Name": "alignmentAdd",
         "Positivity": "positive",
@@ -26498,6 +26499,7 @@
         "Properties": {
           "alignment": true
         },
+        "Icon": "alignment",
         "Scaler": "Linear",
         "AIWeights": {
           "1": 5,
@@ -26509,7 +26511,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "alignment"
+        }
+      ]
     },
     "modifiers:executiveTerm": {
       "id": "executiveTerm",
@@ -28180,11 +28187,13 @@
       "id": "unrestChangeAdd",
       "type": "modifiers",
       "displayName": "Unrest Change",
+      "icon": "unrest",
       "fields": {
         "Name": "unrestChangeAdd",
         "Positivity": "negative",
         "IsPercent": "Percentage",
         "Properties": {},
+        "Icon": "unrest",
         "Scaler": "Linear",
         "AIWeights": {
           "base": -5
@@ -28195,7 +28204,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "unrest"
+        }
+      ]
     },
     "modifiers:resourceCapacityMult": {
       "id": "resourceCapacityMult",
@@ -29994,6 +30008,7 @@
       "id": "crisisSpawnChanceAdd",
       "type": "modifiers",
       "displayName": "Crisis Spawn Chance Add",
+      "icon": "crisis",
       "fields": {
         "Name": "crisisSpawnChanceAdd",
         "Positivity": "negative",
@@ -30001,6 +30016,7 @@
         "Properties": {
           "situation": true
         },
+        "Icon": "crisis",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -30011,12 +30027,18 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "crisis"
+        }
+      ]
     },
     "modifiers:crisisSpawnChanceMult": {
       "id": "crisisSpawnChanceMult",
       "type": "modifiers",
       "displayName": "Crisis Spawn Chance Mult",
+      "icon": "crisis",
       "fields": {
         "Name": "crisisSpawnChanceMult",
         "Positivity": "negative",
@@ -30024,6 +30046,7 @@
         "Properties": {
           "situation": true
         },
+        "Icon": "crisis",
         "Scaler": "Linear",
         "AIWeights": {
           "base": 0
@@ -30034,7 +30057,12 @@
       },
       "modifiers": [],
       "prerequisites": [],
-      "references": []
+      "references": [
+        {
+          "type": "icon",
+          "id": "crisis"
+        }
+      ]
     },
     "modifiers:reformLocked": {
       "id": "reformLocked",

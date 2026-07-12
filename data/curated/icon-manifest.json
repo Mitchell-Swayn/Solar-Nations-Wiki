@@ -447,7 +447,7 @@
   "venussituation": "Ideology/venusSituation.png",
   "warscience": "Ideology/warscience.png",
   "workforceoppression": "Ideology/workforceOppression.png",
-  "population": "Population.png",
+  "population": "population.png",
   "administrativestate": "Reforms/administrativeState.png",
   "agrarianidyll": "Reforms/agrarianIdyll.png",
   "authority": "Reforms/authority.png",
@@ -939,6 +939,7 @@
   "recon": "recon.png",
   "survey": "survey.png",
   "trade": "trade.png",
+  "alignment": "political.png",
   "arescolonysite": "colony.png",
   "attack": "Units/smallarms0.png",
   "bigben": "Buildings/monument.png",
@@ -952,6 +953,7 @@
   "clergy_islamic": "Ideology/islam.png",
   "clergy_jewish": "Ideology/jewish.png",
   "colloseum": "Buildings/monument.png",
+  "crisis": "Ideology/crisisProgress.png",
   "culturepower": "Resources/cultureHex.png",
   "economy_hivemind": "Reforms/form_hivemind.png",
   "edict": "Reforms/edictGeneric.png",
@@ -976,5 +978,6 @@
   "titanium": "Buildings/titaniumMine.png",
   "truck": "Resources/logistics.png",
   "unittraining_default": "Ideology/militaryEducation.png",
-  "unittraining_elite": "Resources/threeStar.png"
+  "unittraining_elite": "Resources/threeStar.png",
+  "unrest": "stability.png"
 }
