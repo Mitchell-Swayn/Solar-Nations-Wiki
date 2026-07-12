@@ -1,5 +1,5 @@
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, cpSync, existsSync, rmSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { join, basename, dirname, relative, sep } from 'node:path';
 import {
   DATA_CURATED,
   DATA_RAW,
@@ -314,6 +314,12 @@ function copyIconsRecursive(src: string, dest: string) {
   }
 }
 
+// Winners for duplicated icon names where the default shortest-path rule
+// picks the wrong art (e.g. the Reforms atom instead of the Research flask).
+const ICON_SOURCE_OVERRIDES: Record<string, string> = {
+  research: 'Resources/research.png',
+};
+
 function indexPngFiles(root: string): Map<string, string> {
   const files = new Map<string, string>();
   const walk = (dir: string) => {
@@ -328,6 +334,10 @@ function indexPngFiles(root: string): Map<string, string> {
     }
   };
   if (existsSync(root)) walk(root);
+  for (const [key, rel] of Object.entries(ICON_SOURCE_OVERRIDES)) {
+    const path = join(root, rel);
+    if (existsSync(path)) files.set(key, path);
+  }
   return files;
 }
 
@@ -361,13 +371,33 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
 
   let copied = 0;
   const missing: string[] = [];
+  const written = new Set<string>();
+  const write = (source: string, target: string) => {
+    if (written.has(target.toLowerCase())) return;
+    cpSync(source, join(outputRoot, target));
+    written.add(target.toLowerCase());
+    copied++;
+  };
   for (const icon of [...requested].sort()) {
     const sourceName = resolveIconSource(icon);
     const source = sourceFiles.get(sourceName.toLowerCase());
     if (!source) { missing.push(icon); continue; }
-    cpSync(source, join(outputRoot, `${icon}.png`));
-    copied++;
+    write(source, `${icon}.png`);
   }
+  // Bundle every remaining game icon so unreferenced art stays available.
+  // Names that lose a duplicate-name collision get a directory prefix.
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) { walk(path); continue; }
+      if (!entry.name.toLowerCase().endsWith('.png')) continue;
+      const key = basename(entry.name, '.png').toLowerCase();
+      if (sourceFiles.get(key) === path) { write(path, entry.name); continue; }
+      const prefix = relative(sourceRoot, dirname(path)).split(sep).join('_');
+      write(path, `${prefix}_${entry.name}`);
+    }
+  };
+  if (existsSync(sourceRoot)) walk(sourceRoot);
   console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
 }
 
