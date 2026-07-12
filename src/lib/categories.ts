@@ -1,5 +1,12 @@
 import type { CategoryMeta } from './types';
 
+export const CATEGORY_GROUPS = [
+  { id: 'core', label: 'Empire & Economy', description: 'Research, production, resources, and development.' },
+  { id: 'society', label: 'Government & Society', description: 'Politics, cultures, leaders, and internal affairs.' },
+  { id: 'military', label: 'Military & Expansion', description: 'Unit design, planetary deposits, and strategic eras.' },
+  { id: 'reference', label: 'Game Reference', description: 'Events, situations, effects, and scripting definitions.' },
+] as const;
+
 export const CATEGORIES: CategoryMeta[] = [
   {
     slug: 'resources',
@@ -8,6 +15,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Tradeable and strategic resources that power your economy.',
     defineFile: 'Resources.json',
     priority: 1,
+    group: 'core',
   },
   {
     slug: 'modifiers',
@@ -15,6 +23,7 @@ export const CATEGORIES: CategoryMeta[] = [
     pluralLabel: 'Modifiers',
     description: 'Stat modifiers applied to countries, regions, and units.',
     priority: 2,
+    group: 'reference',
   },
   {
     slug: 'technologies',
@@ -23,6 +32,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Researchable technologies across culture, industry, and military.',
     defineFile: 'Technologies.json',
     priority: 3,
+    group: 'core',
   },
   {
     slug: 'factions',
@@ -31,6 +41,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Political factions and their alignment effects.',
     defineFile: 'Factions.json',
     priority: 4,
+    group: 'society',
   },
   {
     slug: 'faction-variants',
@@ -39,6 +50,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Variants of base factions with different modifiers.',
     defineFile: 'FactionVariants.json',
     priority: 5,
+    group: 'society',
   },
   {
     slug: 'government-reforms',
@@ -47,6 +59,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Government reform categories and their options.',
     defineFile: 'GovernmentReforms.json',
     priority: 6,
+    group: 'society',
   },
   {
     slug: 'government-reform-options',
@@ -55,6 +68,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Individual government reform choices.',
     defineFile: 'GovernmentReformOptions.json',
     priority: 7,
+    group: 'society',
   },
   {
     slug: 'projects',
@@ -63,6 +77,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Buildable projects and industries.',
     defineFile: 'Projects.json',
     priority: 8,
+    group: 'core',
   },
   {
     slug: 'unit-components',
@@ -71,6 +86,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Military unit components and upgrades.',
     defineFile: 'UnitComponents.json',
     priority: 9,
+    group: 'military',
   },
   {
     slug: 'culture-traits',
@@ -79,6 +95,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Cultural traits that shape your civilization.',
     defineFile: 'CultureTraits.json',
     priority: 10,
+    group: 'society',
   },
   {
     slug: 'character-traits',
@@ -87,6 +104,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Personality and skill traits for characters.',
     defineFile: 'CharacterTraits.json',
     priority: 11,
+    group: 'society',
   },
   {
     slug: 'character-jobs',
@@ -95,6 +113,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Government roles and character positions.',
     defineFile: 'CharacterJobs.json',
     priority: 12,
+    group: 'society',
   },
   {
     slug: 'events',
@@ -103,6 +122,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Narrative and gameplay events.',
     defineFile: 'Events.json',
     priority: 13,
+    group: 'reference',
   },
   {
     slug: 'situations',
@@ -111,6 +131,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Ongoing situations and crises.',
     defineFile: 'Situations.json',
     priority: 14,
+    group: 'reference',
   },
   {
     slug: 'eras',
@@ -119,6 +140,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Historical and future eras.',
     defineFile: 'Eras.json',
     priority: 15,
+    group: 'military',
   },
   {
     slug: 'deposits',
@@ -127,6 +149,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Regional deposits and special sites.',
     defineFile: 'Deposits.json',
     priority: 16,
+    group: 'military',
   },
   {
     slug: 'deposit-resources',
@@ -135,6 +158,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Resources extracted from deposits.',
     defineFile: 'DepositResources.json',
     priority: 17,
+    group: 'core',
   },
   {
     slug: 'static-modifiers',
@@ -143,6 +167,7 @@ export const CATEGORIES: CategoryMeta[] = [
     description: 'Bundled static modifier packages.',
     defineFile: 'StaticModifiers.json',
     priority: 18,
+    group: 'reference',
   },
   {
     slug: 'mission-components',
@@ -150,6 +175,7 @@ export const CATEGORIES: CategoryMeta[] = [
     pluralLabel: 'Mission Components',
     description: 'Diplomatic mission components.',
     priority: 19,
+    group: 'reference',
   },
 ];
 

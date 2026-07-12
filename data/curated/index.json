@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T04:50:51.712Z",
+  "generatedAt": "2026-07-12T05:00:56.951Z",
   "source": "data/raw extracted Defines + tutorialMod modifiers",
   "entries": {
     "character-jobs:algorator": {
@@ -898,8 +898,9 @@
     "character-traits:breakthrough": {
       "id": "breakthrough",
       "type": "character-traits",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Breakthrough",
       "icon": "breakthrough",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "breakthrough",
         "Icon": "breakthrough"
@@ -1420,8 +1421,9 @@
     "character-traits:health": {
       "id": "health",
       "type": "character-traits",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -3778,8 +3780,9 @@
     "culture-traits:breakthrough": {
       "id": "breakthrough",
       "type": "culture-traits",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Breakthrough",
       "icon": "breakthrough",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "breakthrough",
         "Icon": "breakthrough"
@@ -5290,8 +5293,9 @@
     "culture-traits:entrenchment": {
       "id": "entrenchment",
       "type": "culture-traits",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Entrenchment",
       "icon": "entrenchment",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "entrenchment",
         "Icon": "entrenchment"
@@ -6064,8 +6068,9 @@
     "culture-traits:health": {
       "id": "health",
       "type": "culture-traits",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -14290,8 +14295,9 @@
     "deposit-resources:health": {
       "id": "health",
       "type": "deposit-resources",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -24042,8 +24048,9 @@
     "resources:health": {
       "id": "health",
       "type": "resources",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -24096,8 +24103,9 @@
     "resources:manpower": {
       "id": "manpower",
       "type": "resources",
-      "displayName": "<img id=\"manpower\"/> <yellow>Manpower</> is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Manpower",
       "icon": "manpower",
+      "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "fields": {
         "Name": "manpower",
         "Icon": "manpower"
@@ -25266,8 +25274,9 @@
     "static-modifiers:air_attack": {
       "id": "air_attack",
       "type": "static-modifiers",
-      "displayName": "<img id=\"air_attack\"/> <blue>Air Attack</> is the damage this unit does to <blue>Air Units</>.",
+      "displayName": "Air Attack",
       "icon": "air_attack",
+      "description": "Air Attack is the damage this unit does to Air Units.",
       "fields": {
         "Name": "air_attack",
         "Icon": "air_attack"
@@ -27048,8 +27057,9 @@
     "static-modifiers:breakthrough": {
       "id": "breakthrough",
       "type": "static-modifiers",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Breakthrough",
       "icon": "breakthrough",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "breakthrough",
         "Icon": "breakthrough"
@@ -30558,8 +30568,9 @@
     "static-modifiers:entrenchment": {
       "id": "entrenchment",
       "type": "static-modifiers",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Entrenchment",
       "icon": "entrenchment",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "entrenchment",
         "Icon": "entrenchment"
@@ -31170,8 +31181,9 @@
     "static-modifiers:health": {
       "id": "health",
       "type": "static-modifiers",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -32088,8 +32100,9 @@
     "static-modifiers:land_attack": {
       "id": "land_attack",
       "type": "static-modifiers",
-      "displayName": "<img id=\"land_attack\"/> <blue>Land Attack</> is the damage this unit does to <blue>Land Units</>.",
+      "displayName": "Land Attack",
       "icon": "land_attack",
+      "description": "Land Attack is the damage this unit does to Land Units.",
       "fields": {
         "Name": "land_attack",
         "Icon": "land_attack"
@@ -32178,8 +32191,9 @@
     "static-modifiers:manpower": {
       "id": "manpower",
       "type": "static-modifiers",
-      "displayName": "<img id=\"manpower\"/> <yellow>Manpower</> is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+      "displayName": "Manpower",
       "icon": "manpower",
+      "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
       "fields": {
         "Name": "manpower",
         "Icon": "manpower"
@@ -37038,8 +37052,9 @@
     "static-modifiers:space_attack": {
       "id": "space_attack",
       "type": "static-modifiers",
-      "displayName": "<img id=\"space_attack\"/> <blue>Space Attack</> is the damage this unit does to <blue>Space Units</>.",
+      "displayName": "Space Attack",
       "icon": "space_attack",
+      "description": "Space Attack is the damage this unit does to Space Units.",
       "fields": {
         "Name": "space_attack",
         "Icon": "space_attack"
@@ -38982,8 +38997,9 @@
     "static-modifiers:water_attack": {
       "id": "water_attack",
       "type": "static-modifiers",
-      "displayName": "<img id=\"water_attack\"/> <blue>Water Attack</> is the damage this unit does to <blue>Water Units</>.",
+      "displayName": "Water Attack",
       "icon": "water_attack",
+      "description": "Water Attack is the damage this unit does to Water Units.",
       "fields": {
         "Name": "water_attack",
         "Icon": "water_attack"
@@ -40397,8 +40413,9 @@
     "technologies:breakthrough": {
       "id": "breakthrough",
       "type": "technologies",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Breakthrough",
       "icon": "breakthrough",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "breakthrough",
         "Icon": "breakthrough",
@@ -41358,8 +41375,9 @@
     "technologies:entrenchment": {
       "id": "entrenchment",
       "type": "technologies",
-      "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
+      "displayName": "Entrenchment",
       "icon": "entrenchment",
+      "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
       "fields": {
         "Name": "entrenchment",
         "Icon": "entrenchment",
@@ -48780,8 +48798,9 @@
     "unit-components:health": {
       "id": "health",
       "type": "unit-components",
-      "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+      "displayName": "Health",
       "icon": "health",
+      "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
       "fields": {
         "Name": "health",
         "Icon": "health"
@@ -56164,7 +56183,6 @@
       "character-jobs:wypl"
     ],
     "character-traits": [
-      "character-traits:health",
       "character-traits:activist",
       "character-traits:admiral",
       "character-traits:algorator",
@@ -56174,6 +56192,7 @@
       "character-traits:assimilationMult",
       "character-traits:baseEconomicOutputMult",
       "character-traits:battleAdvantageAdd",
+      "character-traits:breakthrough",
       "character-traits:capital",
       "character-traits:carrier_commander",
       "character-traits:cautious",
@@ -56205,6 +56224,7 @@
       "character-traits:greatStatesman",
       "character-traits:greedy",
       "character-traits:hacker",
+      "character-traits:health",
       "character-traits:hedonist",
       "character-traits:honest",
       "character-traits:imbecile",
@@ -56282,12 +56302,10 @@
       "character-traits:university",
       "character-traits:unrestChangeAdd",
       "character-traits:warmaster",
-      "character-traits:breakthrough",
       "character-traits:wypl",
       "character-traits:zRk"
     ],
     "culture-traits": [
-      "culture-traits:health",
       "culture-traits:adminEfficiencyAdd",
       "culture-traits:administrative",
       "culture-traits:aerodrome",
@@ -56340,6 +56358,7 @@
       "culture-traits:barracks",
       "culture-traits:baseEconomicOutputMult",
       "culture-traits:clergy_hindu",
+      "culture-traits:breakthrough",
       "culture-traits:britishAdministration",
       "culture-traits:britishAdventurism",
       "culture-traits:britishIndustrialism",
@@ -56422,6 +56441,7 @@
       "culture-traits:edictCostMult",
       "culture-traits:educationEfficiency",
       "culture-traits:enigmatic",
+      "culture-traits:entrenchment",
       "culture-traits:eugenicist",
       "culture-traits:eugenicistArmy",
       "culture-traits:eugenicistBiologists",
@@ -56463,6 +56483,7 @@
       "culture-traits:guiltSocialPrograms",
       "culture-traits:guiltWelfare",
       "culture-traits:habitabilityAdd",
+      "culture-traits:health",
       "culture-traits:hegelianCulture",
       "culture-traits:hegelianDialectics",
       "culture-traits:hegelianMastery",
@@ -56900,13 +56921,10 @@
       "culture-traits:warExhaustionRecoveryMult",
       "culture-traits:waterHard",
       "culture-traits:waterSoft",
-      "culture-traits:breakthrough",
-      "culture-traits:entrenchment",
       "culture-traits:workforceRatio",
       "culture-traits:workforceRatioAdd"
     ],
     "deposit-resources": [
-      "deposit-resources:health",
       "deposit-resources:grain",
       "deposit-resources:artificialIntelligence",
       "deposit-resources:battleAdvantageAdd",
@@ -56923,6 +56941,7 @@
       "deposit-resources:exoticGasses",
       "deposit-resources:factionLoyaltyAdd",
       "deposit-resources:fzbPpO",
+      "deposit-resources:health",
       "deposit-resources:helium3",
       "deposit-resources:hydroponics",
       "deposit-resources:iceNine",
@@ -57431,8 +57450,6 @@
       "projects:zyW2"
     ],
     "resources": [
-      "resources:health",
-      "resources:manpower",
       "resources:air",
       "resources:airCapacity",
       "resources:antimatter",
@@ -57446,8 +57463,10 @@
       "resources:geneticMaterial",
       "resources:gravitons",
       "resources:habitabilityAdd",
+      "resources:health",
       "resources:industry",
       "resources:logistics",
+      "resources:manpower",
       "resources:navyCapacity",
       "resources:neuralNetworks",
       "resources:popGrowthMult",
@@ -57510,18 +57529,13 @@
       "situations:venusSituation"
     ],
     "static-modifiers": [
-      "static-modifiers:air_attack",
-      "static-modifiers:health",
-      "static-modifiers:land_attack",
-      "static-modifiers:manpower",
-      "static-modifiers:space_attack",
-      "static-modifiers:water_attack",
       "static-modifiers:acceptedCultureEffect",
       "static-modifiers:adminEfficiency",
       "static-modifiers:adminEfficiencyAdd",
       "static-modifiers:adminEfficiencyCap",
       "static-modifiers:af1O",
       "static-modifiers:aiCheatModifier",
+      "static-modifiers:air_attack",
       "static-modifiers:alignmentAdd",
       "static-modifiers:allLeaderSkillsMult",
       "static-modifiers:allResourceCapacityMult",
@@ -57620,6 +57634,7 @@
       "static-modifiers:bankruptEffect",
       "static-modifiers:baseEconomicOutputMult",
       "static-modifiers:battleAdvantageAdd",
+      "static-modifiers:breakthrough",
       "static-modifiers:bureaucracy",
       "static-modifiers:bureaucracyCrisis",
       "static-modifiers:bureaucracyCrisis_amnestyFormsEffect",
@@ -57814,6 +57829,7 @@
       "static-modifiers:enterpriseZonesSituation_privateSecurityEffect",
       "static-modifiers:enterpriseZonesSituation_privatizedStatecraftEffect",
       "static-modifiers:entrenchEffect",
+      "static-modifiers:entrenchment",
       "static-modifiers:espionageDefense",
       "static-modifiers:espionageEffect",
       "static-modifiers:espionageFaction",
@@ -57847,6 +57863,7 @@
       "static-modifiers:habitabilityAdd",
       "static-modifiers:habitabilityEffect",
       "static-modifiers:hc9E",
+      "static-modifiers:health",
       "static-modifiers:high_income_taxEffect",
       "static-modifiers:hostileEspionageEffect",
       "static-modifiers:idealisticFoundation_charterCitiesEffect",
@@ -57896,10 +57913,12 @@
       "static-modifiers:laborerCrisis_shopStewardsEffect",
       "static-modifiers:laborerCrisis_wageEscrowEffect",
       "static-modifiers:laborerPurge",
+      "static-modifiers:land_attack",
       "static-modifiers:leaderHealthRegen",
       "static-modifiers:lifeSpanAdd",
       "static-modifiers:lowAdminEfficiencyEffect",
       "static-modifiers:low_income_taxEffect",
+      "static-modifiers:manpower",
       "static-modifiers:manpowerLinearModifier",
       "static-modifiers:marsSituation_defenseGridEffect",
       "static-modifiers:marsSituation_industrialArcologyEffect",
@@ -58168,6 +58187,7 @@
       "static-modifiers:softPowerEmpire_scholarVisasEffect",
       "static-modifiers:sowDiscontentEffect",
       "static-modifiers:spV",
+      "static-modifiers:space_attack",
       "static-modifiers:spaceCapacity",
       "static-modifiers:spaceInvasion",
       "static-modifiers:spaceport",
@@ -58277,8 +58297,7 @@
       "static-modifiers:w7A",
       "static-modifiers:warExhaustionMult",
       "static-modifiers:warModifier",
-      "static-modifiers:breakthrough",
-      "static-modifiers:entrenchment",
+      "static-modifiers:water_attack",
       "static-modifiers:workforceRatioAdd",
       "static-modifiers:wvZ",
       "static-modifiers:wz8",
@@ -58329,6 +58348,7 @@
       "technologies:biosculpting",
       "technologies:biotech",
       "technologies:biowarfare",
+      "technologies:breakthrough",
       "technologies:bureaucracy",
       "technologies:chromiteTech",
       "technologies:colonialRange",
@@ -58359,6 +58379,7 @@
       "technologies:engine4",
       "technologies:engine5",
       "technologies:enigmatic",
+      "technologies:entrenchment",
       "technologies:eraInterplanetary",
       "technologies:eraUnification",
       "technologies:espionageDefense",
@@ -58543,12 +58564,9 @@
       "technologies:warExpansion",
       "technologies:warpDrive",
       "technologies:warpDrive_1",
-      "technologies:breakthrough",
-      "technologies:entrenchment",
       "technologies:zenithPrinciple"
     ],
     "unit-components": [
-      "unit-components:health",
       "unit-components:airplanes0",
       "unit-components:airplanes1",
       "unit-components:airplanes2",
@@ -58641,6 +58659,7 @@
       "unit-components:gravitonShield",
       "unit-components:grayGoo",
       "unit-components:hGUX",
+      "unit-components:health",
       "unit-components:helicopter0",
       "unit-components:hypersonic",
       "unit-components:infantryPowerSuit",

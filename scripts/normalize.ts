@@ -170,6 +170,20 @@ function humanizeId(id: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+function cleanGameText(value: string): string {
+  return value
+    .replace(/<img\s+id="([^"]+)"\s*\/>/gi, '')
+    .replace(/<\/?[a-zA-Z][^>]*>/g, '')
+    .replace(/<\/>/g, '')
+    .replace(/\\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function isConciseTitle(value: string): boolean {
+  return value.length <= 70 && !/[.!?]\s|<[^>]+>/.test(value);
+}
+
 function buildEntry(
   type: string,
   record: RawRecord,
@@ -191,7 +205,11 @@ function buildEntry(
   }
 
   const localizedName = localize(id, localization);
-  if (localizedName && localizedName !== id) displayName = localizedName;
+  if (localizedName && localizedName !== id) {
+    const cleaned = cleanGameText(localizedName);
+    if (isConciseTitle(localizedName)) displayName = cleaned;
+    else if (cleaned) description ??= cleaned;
+  }
 
   const fields: Record<string, unknown> = {};
   for (const [key, value] of Object.entries(record)) {

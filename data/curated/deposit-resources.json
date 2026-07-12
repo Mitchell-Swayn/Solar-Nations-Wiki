@@ -1,23 +1,5 @@
 [
   {
-    "id": "health",
-    "type": "deposit-resources",
-    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "icon": "health",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
-      }
-    ]
-  },
-  {
     "id": "grain",
     "type": "deposit-resources",
     "displayName": "Agriculture",
@@ -302,6 +284,25 @@
       {
         "type": "icon",
         "id": "fzbPpO"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "type": "deposit-resources",
+    "displayName": "Health",
+    "icon": "health",
+    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
       }
     ]
   },

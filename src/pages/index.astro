@@ -1,82 +1,57 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCategories, getAllEntries } from '../lib/data';
-import { CATEGORY_BY_SLUG } from '../lib/categories';
+import { getCategories, getAllEntries, getEntriesByType } from '../lib/data';
+import { CATEGORY_GROUPS } from '../lib/categories';
 import { withBase } from '../lib/base';
 
 const categories = getCategories();
 const allEntries = getAllEntries();
+const featured = ['technologies', 'government-reforms', 'projects', 'factions', 'unit-components', 'resources'];
 ---
 
-<BaseLayout title="Solar Nations 2 Wiki" description="Data encyclopedia for Solar Nations 2">
-  <section class="hero">
-    <h1>Solar Nations 2 Wiki</h1>
-    <p class="subtitle">Auto-generated data reference for factions, technologies, resources, and more.</p>
-    <div class="search-box">
-      <input
-        type="search"
-        id="search"
-        placeholder="Search entries..."
-        autocomplete="off"
-      />
+<BaseLayout title="Solar Nations 2 Wiki" description="Strategy and game data encyclopedia for Solar Nations 2">
+  <header class="overview-header">
+    <div>
+      <p class="eyebrow">Community Reference</p>
+      <h1>Solar Nations 2 Strategy Wiki</h1>
+      <p>Explore the systems behind interplanetary government, research, industry, society, and warfare.</p>
+    </div>
+    <dl class="dataset-summary">
+      <div><dt>Entries</dt><dd>{allEntries.length.toLocaleString()}</dd></div>
+      <div><dt>Categories</dt><dd>{categories.length}</dd></div>
+      <div><dt>Source</dt><dd>Game files</dd></div>
+    </dl>
+  </header>
+
+  <section class="start-section">
+    <div class="section-heading"><div><p class="eyebrow">Quick Access</p><h2>Core game systems</h2></div></div>
+    <div class="feature-grid">
+      {featured.map((slug) => {
+        const cat = categories.find((item) => item.slug === slug)!;
+        return (
+          <a href={withBase(`/${cat.slug}/`)} class="feature-link">
+            <span class="feature-index">{String(featured.indexOf(slug) + 1).padStart(2, '0')}</span>
+            <div><h3>{cat.pluralLabel}</h3><p>{cat.description}</p></div>
+            <strong>{getEntriesByType(slug).length}</strong>
+          </a>
+        );
+      })}
     </div>
   </section>
 
-  <section class="stats">
-    <div class="stat-card">
-      <span class="stat-value">{allEntries.length}</span>
-      <span class="stat-label">Total entries</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-value">{categories.length}</span>
-      <span class="stat-label">Categories</span>
-    </div>
-  </section>
-
-  <section class="categories">
-    <h2>Categories</h2>
-    <div class="category-grid">
-      {categories.map((cat) => (
-        <a href={withBase(`/${cat.slug}/`)} class="category-card" data-category={cat.slug}>
-          <h3>{cat.pluralLabel}</h3>
-          <p>{cat.description}</p>
-        </a>
+  <section class="browse-section">
+    <div class="section-heading"><div><p class="eyebrow">Encyclopedia</p><h2>Browse by domain</h2></div><p>All extracted game definitions, organized around player decisions.</p></div>
+    <div class="domain-list">
+      {CATEGORY_GROUPS.map((group) => (
+        <section class="domain-block">
+          <header><h3>{group.label}</h3><p>{group.description}</p></header>
+          <div>
+            {categories.filter((cat) => cat.group === group.id).map((cat) => (
+              <a href={withBase(`/${cat.slug}/`)}><span>{cat.pluralLabel}</span><small>{getEntriesByType(cat.slug).length}</small></a>
+            ))}
+          </div>
+        </section>
       ))}
     </div>
   </section>
-
-  <section class="all-entries" id="search-results" hidden>
-    <h2>Search Results</h2>
-    <ul class="entry-list" id="entry-list"></ul>
-  </section>
 </BaseLayout>
-
-<script define:vars={{ entries: allEntries.map(e => ({ type: e.type, id: e.id, name: e.displayName, category: CATEGORY_BY_SLUG[e.type]?.pluralLabel ?? e.type })), baseUrl: import.meta.env.BASE_URL }}>
-  const searchInput = document.getElementById('search');
-  const resultsSection = document.getElementById('search-results');
-  const entryList = document.getElementById('entry-list');
-
-  searchInput?.addEventListener('input', (e) => {
-    const query = e.target.value.trim().toLowerCase();
-    if (!query) {
-      resultsSection.hidden = true;
-      return;
-    }
-
-    const matches = entries.filter(
-      (entry) =>
-        entry.name.toLowerCase().includes(query) ||
-        entry.id.toLowerCase().includes(query) ||
-        entry.type.toLowerCase().includes(query)
-    ).slice(0, 50);
-
-    entryList.innerHTML = matches
-      .map(
-        (entry) =>
-          `<li><a href="${baseUrl}${entry.type}/${entry.id}/"><strong>${entry.name}</strong> <span class="tag">${entry.category}</span></a></li>`
-      )
-      .join('');
-
-    resultsSection.hidden = matches.length === 0;
-  });
-</script>

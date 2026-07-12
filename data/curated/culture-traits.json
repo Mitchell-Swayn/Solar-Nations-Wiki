@@ -1,23 +1,5 @@
 [
   {
-    "id": "health",
-    "type": "culture-traits",
-    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "icon": "health",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
-      }
-    ]
-  },
-  {
     "id": "adminEfficiencyAdd",
     "type": "culture-traits",
     "displayName": "Admin Efficiency Add",
@@ -950,6 +932,25 @@
       {
         "type": "icon",
         "id": "clergy_hindu"
+      }
+    ]
+  },
+  {
+    "id": "breakthrough",
+    "type": "culture-traits",
+    "displayName": "Breakthrough",
+    "icon": "breakthrough",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "breakthrough",
+      "Icon": "breakthrough"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breakthrough"
       }
     ]
   },
@@ -2430,6 +2431,25 @@
     ]
   },
   {
+    "id": "entrenchment",
+    "type": "culture-traits",
+    "displayName": "Entrenchment",
+    "icon": "entrenchment",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "entrenchment",
+      "Icon": "entrenchment"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "entrenchment"
+      }
+    ]
+  },
+  {
     "id": "eugenicist",
     "type": "culture-traits",
     "displayName": "Eugenicist",
@@ -3164,6 +3184,25 @@
       {
         "type": "icon",
         "id": "habitabilityAdd"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "type": "culture-traits",
+    "displayName": "Health",
+    "icon": "health",
+    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
       }
     ]
   },
@@ -11030,42 +11069,6 @@
       {
         "type": "icon",
         "id": "waterSoft"
-      }
-    ]
-  },
-  {
-    "id": "breakthrough",
-    "type": "culture-traits",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "breakthrough",
-    "fields": {
-      "Name": "breakthrough",
-      "Icon": "breakthrough"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "breakthrough"
-      }
-    ]
-  },
-  {
-    "id": "entrenchment",
-    "type": "culture-traits",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "entrenchment",
-    "fields": {
-      "Name": "entrenchment",
-      "Icon": "entrenchment"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "entrenchment"
       }
     ]
   },

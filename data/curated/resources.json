@@ -1,41 +1,5 @@
 [
   {
-    "id": "health",
-    "type": "resources",
-    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "icon": "health",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
-      }
-    ]
-  },
-  {
-    "id": "manpower",
-    "type": "resources",
-    "displayName": "<img id=\"manpower\"/> <yellow>Manpower</> is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "manpower",
-      "Icon": "manpower"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
     "id": "air",
     "type": "resources",
     "displayName": "Air",
@@ -270,6 +234,25 @@
     ]
   },
   {
+    "id": "health",
+    "type": "resources",
+    "displayName": "Health",
+    "icon": "health",
+    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
+      }
+    ]
+  },
+  {
     "id": "industry",
     "type": "resources",
     "displayName": "Industrial Capacity",
@@ -302,6 +285,25 @@
       {
         "type": "icon",
         "id": "logistics"
+      }
+    ]
+  },
+  {
+    "id": "manpower",
+    "type": "resources",
+    "displayName": "Manpower",
+    "icon": "manpower",
+    "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+    "fields": {
+      "Name": "manpower",
+      "Icon": "manpower"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
       }
     ]
   },

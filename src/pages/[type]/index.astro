@@ -1,47 +1,64 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import GameIcon from '../../components/GameIcon.astro';
 import { getCategories, getEntriesByType } from '../../lib/data';
-import { CATEGORY_BY_SLUG } from '../../lib/categories';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
-  const categories = getCategories();
-  return categories.map((cat) => ({ params: { type: cat.slug } }));
+  return getCategories().map((cat) => ({ params: { type: cat.slug } }));
 }
 
 const { type } = Astro.params;
 const category = CATEGORY_BY_SLUG[type!];
-const entries = getEntriesByType(type!);
+const entries = getEntriesByType(type!).sort((a, b) => a.displayName.localeCompare(b.displayName));
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
 ---
 
-<BaseLayout title={category.pluralLabel} description={category.description}>
-  <nav class="breadcrumb">
-    <a href={withBase('/')}>Home</a> / {category.pluralLabel}
-  </nav>
+<BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><span>{group?.label}</span><span>/</span><strong>{category.pluralLabel}</strong></nav>
 
-  <header class="page-header">
-    <h1>{category.pluralLabel}</h1>
-    <p>{category.description}</p>
-    <span class="count">{entries.length} entries</span>
+  <header class="collection-header">
+    <div><p class="eyebrow">{group?.label}</p><h1>{category.pluralLabel}</h1><p>{category.description}</p></div>
+    <div class="collection-count"><strong>{entries.length}</strong><span>Entries</span></div>
   </header>
 
-  <div class="entry-grid">
+  <div class="collection-tools">
+    <label class="filter-input"><span class="search-symbol"></span><input id="entry-filter" type="search" placeholder={`Filter ${category.pluralLabel.toLowerCase()}...`} /></label>
+    <div class="view-switch" aria-label="View density">
+      <button type="button" class="active" data-view="comfortable">List</button><button type="button" data-view="compact">Compact</button>
+    </div>
+    <span id="visible-count">Showing {entries.length}</span>
+  </div>
+
+  <div class="entry-directory" id="entry-directory">
     {entries.map((entry) => (
-      <a href={withBase(`/${type}/${entry.id}/`)} class="entry-card">
-        {entry.icon && (
-          <img
-            src={withBase(`/assets/icons/${entry.icon}.png`)}
-            alt=""
-            class="entry-icon"
-            onerror="this.style.display='none'"
-          />
-        )}
-        <div class="entry-info">
-          <h2>{entry.displayName}</h2>
-          <code class="entry-id">{entry.id}</code>
-          {entry.description && <p>{entry.description}</p>}
-        </div>
+      <a href={withBase(`/${type}/${entry.id}/`)} class="directory-row" data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
+        <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+        <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+        <span class="row-arrow" aria-hidden="true">›</span>
       </a>
     ))}
   </div>
+  <p class="empty-state" id="empty-state" hidden>No entries match this filter.</p>
 </BaseLayout>
+
+<script>
+  const filter = document.getElementById('entry-filter') as HTMLInputElement;
+  const directory = document.getElementById('entry-directory');
+  const rows = [...document.querySelectorAll<HTMLElement>('.directory-row')];
+  const count = document.getElementById('visible-count');
+  const empty = document.getElementById('empty-state');
+  filter?.addEventListener('input', () => {
+    const query = filter.value.trim().toLowerCase();
+    let visible = 0;
+    rows.forEach((row) => { const show = row.dataset.search?.includes(query) ?? false; row.hidden = !show; if (show) visible++; });
+    if (count) count.textContent = `Showing ${visible}`;
+    if (empty) empty.hidden = visible > 0;
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((button) => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-view]').forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+    directory?.classList.toggle('compact', button.dataset.view === 'compact');
+  }));
+</script>

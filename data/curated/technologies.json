@@ -1271,6 +1271,38 @@
     ]
   },
   {
+    "id": "breakthrough",
+    "type": "technologies",
+    "displayName": "Breakthrough",
+    "icon": "breakthrough",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "breakthrough",
+      "Icon": "breakthrough",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breakthrough"
+      }
+    ]
+  },
+  {
     "id": "bureaucracy",
     "type": "technologies",
     "displayName": "Bureaucracy",
@@ -2197,6 +2229,38 @@
       {
         "type": "icon",
         "id": "enigmatic"
+      }
+    ]
+  },
+  {
+    "id": "entrenchment",
+    "type": "technologies",
+    "displayName": "Entrenchment",
+    "icon": "entrenchment",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "entrenchment",
+      "Icon": "entrenchment",
+      "Type": 1,
+      "Year": 0,
+      "Cost": 0,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": 0,
+        "Y": 0
+      },
+      "Domain": [],
+      "Categories": [],
+      "Dangerous": false
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "entrenchment"
       }
     ]
   },
@@ -7901,68 +7965,6 @@
       {
         "type": "icon",
         "id": "warpDrive_1"
-      }
-    ]
-  },
-  {
-    "id": "breakthrough",
-    "type": "technologies",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "breakthrough",
-    "fields": {
-      "Name": "breakthrough",
-      "Icon": "breakthrough",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "breakthrough"
-      }
-    ]
-  },
-  {
-    "id": "entrenchment",
-    "type": "technologies",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "entrenchment",
-    "fields": {
-      "Name": "entrenchment",
-      "Icon": "entrenchment",
-      "Type": 1,
-      "Year": 0,
-      "Cost": 0,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": 0,
-        "Y": 0
-      },
-      "Domain": [],
-      "Categories": [],
-      "Dangerous": false
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "entrenchment"
       }
     ]
   },

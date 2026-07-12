@@ -42,6 +42,7 @@ export interface CategoryMeta {
   description: string;
   defineFile?: string;
   priority: number;
+  group: 'core' | 'society' | 'military' | 'reference';
 }
 
 export interface CuratedIndex {

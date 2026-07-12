@@ -1,13 +1,24 @@
 ---
 import { withBase } from '../lib/base';
+import { getAllEntries, getCategories, getIndex } from '../lib/data';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../lib/categories';
 
 interface Props {
   title: string;
   description?: string;
+  activeType?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, activeType } = Astro.props;
 const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
+const categories = getCategories();
+const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getIndex().byType[category.slug]?.length ?? 0]));
+const searchEntries = getAllEntries().map((entry) => ({
+  type: entry.type,
+  id: entry.id,
+  name: entry.displayName,
+  category: CATEGORY_BY_SLUG[entry.type]?.pluralLabel ?? entry.type,
+}));
 ---
 
 <!doctype html>
@@ -15,27 +26,75 @@ const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar N
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description ?? 'Solar Nations 2 data encyclopedia'} />
+    <meta name="description" content={description ?? 'Solar Nations 2 strategy and game data encyclopedia'} />
     <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
     <title>{fullTitle}</title>
   </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a href={withBase('/')} class="site-logo">☀ Solar Nations 2 Wiki</a>
-        <nav class="site-nav">
-          <a href={withBase('/')}>Home</a>
-        </nav>
+  <body id="top">
+    <header class="topbar">
+      <a href={withBase('/')} class="brand" aria-label="Solar Nations 2 Wiki home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span><strong>Solar Nations 2</strong><small>Strategy Wiki</small></span>
+      </a>
+      <div class="global-search" role="search">
+        <span class="search-symbol" aria-hidden="true"></span>
+        <input id="global-search" type="search" placeholder="Search technologies, factions, projects..." autocomplete="off" />
+        <kbd>/</kbd>
+        <div id="global-results" class="global-results" hidden></div>
       </div>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </header>
-    <main class="container">
-      <slot />
-    </main>
+
+    <div class="site-frame">
+      <aside class="sidebar" id="sidebar">
+        <nav aria-label="Wiki sections">
+          <a href={withBase('/')} class:list={['nav-home', { active: !activeType }]}>Overview</a>
+          {CATEGORY_GROUPS.map((group) => (
+            <section class="nav-group">
+              <h2>{group.label}</h2>
+              {categories.filter((cat) => cat.group === group.id).map((cat) => (
+                <a href={withBase(`/${cat.slug}/`)} class:list={{ active: activeType === cat.slug }}>
+                  <span>{cat.pluralLabel}</span><small>{categoryCounts[cat.slug]}</small>
+                </a>
+              ))}
+            </section>
+          ))}
+        </nav>
+        <p class="sidebar-note">Game data reference<br />Build 2026.07</p>
+      </aside>
+
+      <main class="content"><slot /></main>
+    </div>
+
     <footer class="site-footer">
-      <div class="container">
-        <p>Data auto-generated from Solar Nations 2 game files. Not affiliated with Flomgus Games.</p>
-      </div>
+      <p>Unofficial Solar Nations 2 wiki. Game data belongs to Flomgus Games.</p>
+      <a href="https://github.com/Mitchell-Swayn/Solar-Nations-Wiki">Source on GitHub</a>
     </footer>
+
+    <script define:vars={{ entries: searchEntries, baseUrl: import.meta.env.BASE_URL }}>
+      const input = document.getElementById('global-search');
+      const results = document.getElementById('global-results');
+      const toggle = document.getElementById('nav-toggle');
+      const sidebar = document.getElementById('sidebar');
+
+      const escapeHtml = (value) => value.replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+      const renderSearch = () => {
+        const query = input.value.trim().toLowerCase();
+        if (query.length < 2) { results.hidden = true; return; }
+        const matches = entries.filter((entry) => entry.name.toLowerCase().includes(query) || entry.id.toLowerCase().includes(query)).slice(0, 10);
+        results.innerHTML = matches.length
+          ? matches.map((entry) => `<a href="${baseUrl}${encodeURIComponent(entry.type)}/${encodeURIComponent(entry.id)}/"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
+          : '<p>No matching entries</p>';
+        results.hidden = false;
+      };
+      input?.addEventListener('input', renderSearch);
+      input?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { input.value = ''; results.hidden = true; input.blur(); } });
+      document.addEventListener('keydown', (event) => { if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); input?.focus(); } });
+      document.addEventListener('click', (event) => { if (!event.target.closest('.global-search')) results.hidden = true; });
+      toggle?.addEventListener('click', () => { const open = sidebar.classList.toggle('open'); toggle.setAttribute('aria-expanded', String(open)); });
+    </script>
   </body>
 </html>
 

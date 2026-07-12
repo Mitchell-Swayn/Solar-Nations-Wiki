@@ -5,62 +5,56 @@ import ModifierList from '../../components/ModifierList.astro';
 import PrerequisiteChain from '../../components/PrerequisiteChain.astro';
 import GameIcon from '../../components/GameIcon.astro';
 import { getCategories, getEntry, getEntriesByType } from '../../lib/data';
-import { CATEGORY_BY_SLUG } from '../../lib/categories';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
-  const categories = getCategories();
-  const paths = [];
-  for (const cat of categories) {
-    const entries = getEntriesByType(cat.slug);
-    for (const entry of entries) {
-      paths.push({ params: { type: cat.slug, id: entry.id } });
-    }
-  }
-  return paths;
+  return getCategories().flatMap((cat) => getEntriesByType(cat.slug).map((entry) => ({ params: { type: cat.slug, id: entry.id } })));
 }
 
 const { type, id } = Astro.params;
 const entry = getEntry(type!, id!);
 const category = CATEGORY_BY_SLUG[type!];
-
-if (!entry) {
-  return Astro.redirect(`/${type}/`);
-}
+if (!entry) return Astro.redirect(withBase(`/${type}/`));
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const entries = getEntriesByType(type!);
+const position = entries.findIndex((item) => item.id === entry.id);
+const previous = position > 0 ? entries[position - 1] : undefined;
+const next = position < entries.length - 1 ? entries[position + 1] : undefined;
+const propertyCount = Object.keys(entry.fields).filter((key) => !['Name', 'Icon'].includes(key)).length;
 ---
 
-<BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`}>
-  <nav class="breadcrumb">
-    <a href={withBase('/')}>Home</a> / <a href={withBase(`/${type}/`)}>{category.pluralLabel}</a> / {entry.displayName}
-  </nav>
+<BaseLayout title={`${entry.displayName} — ${category.pluralLabel}`} description={entry.description} activeType={type}>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><a href={withBase(`/${type}/`)}>{category.pluralLabel}</a><span>/</span><strong>{entry.displayName}</strong></nav>
 
-  <header class="detail-header">
-    <div class="detail-title">
-      {entry.icon && <GameIcon name={entry.icon} size={48} />}
-      <div>
-        <h1>{entry.displayName}</h1>
-        <code class="entry-id">{entry.id}</code>
-      </div>
+  <article class="article-layout">
+    <div class="article-main">
+      <header class="article-header">
+        <p class="eyebrow">{group?.label} · {category.label}</p>
+        <div class="article-title">
+          {entry.icon && <span class="article-icon"><GameIcon name={entry.icon} size={56} /></span>}
+          <div><h1>{entry.displayName}</h1><code>{entry.id}</code></div>
+        </div>
+        {entry.description ? <p class="article-lede">{entry.description}</p> : <p class="article-lede muted">A {category.label.toLowerCase()} definition from the Solar Nations 2 game data.</p>}
+      </header>
+
+      {entry.prerequisites.length > 0 && <section class="article-section" id="requirements"><h2>Requirements</h2><PrerequisiteChain prerequisites={entry.prerequisites} /></section>}
+      {entry.modifiers.length > 0 && <section class="article-section" id="effects"><h2>Gameplay effects</h2><ModifierList modifiers={entry.modifiers} /></section>}
+      {propertyCount > 0 && <section class="article-section" id="properties"><h2>Properties</h2><StatTable data={entry.fields} /></section>}
+      {propertyCount === 0 && entry.modifiers.length === 0 && <section class="article-section"><h2>Data availability</h2><p class="notice">This entry is present in the game definitions, but no additional structured properties were available in the current extraction.</p></section>}
+
+      <nav class="article-pager" aria-label="Adjacent entries">
+        {previous ? <a href={withBase(`/${type}/${previous.id}/`)}><small>Previous</small><strong>‹ {previous.displayName}</strong></a> : <span></span>}
+        {next && <a href={withBase(`/${type}/${next.id}/`)} class="next"><small>Next</small><strong>{next.displayName} ›</strong></a>}
+      </nav>
     </div>
-    {entry.description && <p class="detail-description">{entry.description}</p>}
-  </header>
 
-  {entry.prerequisites.length > 0 && (
-    <section class="detail-section">
-      <h2>Prerequisites</h2>
-      <PrerequisiteChain prerequisites={entry.prerequisites} />
-    </section>
-  )}
-
-  {entry.modifiers.length > 0 && (
-    <section class="detail-section">
-      <h2>Modifiers</h2>
-      <ModifierList modifiers={entry.modifiers} />
-    </section>
-  )}
-
-  <section class="detail-section">
-    <h2>Properties</h2>
-    <StatTable data={entry.fields} />
-  </section>
+    <aside class="article-aside">
+      <section class="infobox">
+        <h2>At a glance</h2>
+        <dl><div><dt>Category</dt><dd><a href={withBase(`/${type}/`)}>{category.pluralLabel}</a></dd></div><div><dt>Effects</dt><dd>{entry.modifiers.length}</dd></div><div><dt>Requirements</dt><dd>{entry.prerequisites.length}</dd></div><div><dt>Properties</dt><dd>{propertyCount}</dd></div></dl>
+      </section>
+      <section class="page-nav"><h2>On this page</h2><a href="#top">Overview</a>{entry.prerequisites.length > 0 && <a href="#requirements">Requirements</a>}{entry.modifiers.length > 0 && <a href="#effects">Gameplay effects</a>}{propertyCount > 0 && <a href="#properties">Properties</a>}</section>
+    </aside>
+  </article>
 </BaseLayout>

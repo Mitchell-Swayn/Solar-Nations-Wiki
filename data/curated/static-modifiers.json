@@ -1,113 +1,5 @@
 [
   {
-    "id": "air_attack",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"air_attack\"/> <blue>Air Attack</> is the damage this unit does to <blue>Air Units</>.",
-    "icon": "air_attack",
-    "fields": {
-      "Name": "air_attack",
-      "Icon": "air_attack"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "air_attack"
-      }
-    ]
-  },
-  {
-    "id": "health",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"health\"/> <red>Health</> represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
-    "icon": "health",
-    "fields": {
-      "Name": "health",
-      "Icon": "health"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "health"
-      }
-    ]
-  },
-  {
-    "id": "land_attack",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"land_attack\"/> <blue>Land Attack</> is the damage this unit does to <blue>Land Units</>.",
-    "icon": "land_attack",
-    "fields": {
-      "Name": "land_attack",
-      "Icon": "land_attack"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "land_attack"
-      }
-    ]
-  },
-  {
-    "id": "manpower",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"manpower\"/> <yellow>Manpower</> is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
-    "icon": "manpower",
-    "fields": {
-      "Name": "manpower",
-      "Icon": "manpower"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "manpower"
-      }
-    ]
-  },
-  {
-    "id": "space_attack",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"space_attack\"/> <blue>Space Attack</> is the damage this unit does to <blue>Space Units</>.",
-    "icon": "space_attack",
-    "fields": {
-      "Name": "space_attack",
-      "Icon": "space_attack"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "space_attack"
-      }
-    ]
-  },
-  {
-    "id": "water_attack",
-    "type": "static-modifiers",
-    "displayName": "<img id=\"water_attack\"/> <blue>Water Attack</> is the damage this unit does to <blue>Water Units</>.",
-    "icon": "water_attack",
-    "fields": {
-      "Name": "water_attack",
-      "Icon": "water_attack"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "water_attack"
-      }
-    ]
-  },
-  {
     "id": "acceptedCultureEffect",
     "type": "static-modifiers",
     "displayName": "Accepted Culture Effect",
@@ -212,6 +104,25 @@
       {
         "type": "icon",
         "id": "aiCheatModifier"
+      }
+    ]
+  },
+  {
+    "id": "air_attack",
+    "type": "static-modifiers",
+    "displayName": "Air Attack",
+    "icon": "air_attack",
+    "description": "Air Attack is the damage this unit does to Air Units.",
+    "fields": {
+      "Name": "air_attack",
+      "Icon": "air_attack"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "air_attack"
       }
     ]
   },
@@ -1976,6 +1887,25 @@
       {
         "type": "icon",
         "id": "battleAdvantageAdd"
+      }
+    ]
+  },
+  {
+    "id": "breakthrough",
+    "type": "static-modifiers",
+    "displayName": "Breakthrough",
+    "icon": "breakthrough",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "breakthrough",
+      "Icon": "breakthrough"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "breakthrough"
       }
     ]
   },
@@ -5472,6 +5402,25 @@
     ]
   },
   {
+    "id": "entrenchment",
+    "type": "static-modifiers",
+    "displayName": "Entrenchment",
+    "icon": "entrenchment",
+    "description": "When an army is defending, each unit of Entrenchment greater than the enemy's Breakthrough corresponds to a +1% Damage Multiplier.",
+    "fields": {
+      "Name": "entrenchment",
+      "Icon": "entrenchment"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "entrenchment"
+      }
+    ]
+  },
+  {
     "id": "espionageDefense",
     "type": "static-modifiers",
     "displayName": "Espionage Defense",
@@ -6062,6 +6011,25 @@
       {
         "type": "icon",
         "id": "hc9E"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "type": "static-modifiers",
+    "displayName": "Health",
+    "icon": "health",
+    "description": "Health represents the constitution of the unit, and controls how easily this unit is defeated by enemy attacks. Higher Health units take fewer casualties.",
+    "fields": {
+      "Name": "health",
+      "Icon": "health"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "health"
       }
     ]
   },
@@ -6948,6 +6916,25 @@
     ]
   },
   {
+    "id": "land_attack",
+    "type": "static-modifiers",
+    "displayName": "Land Attack",
+    "icon": "land_attack",
+    "description": "Land Attack is the damage this unit does to Land Units.",
+    "fields": {
+      "Name": "land_attack",
+      "Icon": "land_attack"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "land_attack"
+      }
+    ]
+  },
+  {
     "id": "leaderHealthRegen",
     "type": "static-modifiers",
     "displayName": "Leader Health Regen",
@@ -7016,6 +7003,25 @@
       {
         "type": "icon",
         "id": "low_income_taxEffect"
+      }
+    ]
+  },
+  {
+    "id": "manpower",
+    "type": "static-modifiers",
+    "displayName": "Manpower",
+    "icon": "manpower",
+    "description": "Manpower is the number of human beings needed to supply one of these units. When a unit is destroyed in combat, the manpower inside of it dies as well.",
+    "fields": {
+      "Name": "manpower",
+      "Icon": "manpower"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "manpower"
       }
     ]
   },
@@ -11844,6 +11850,25 @@
     ]
   },
   {
+    "id": "space_attack",
+    "type": "static-modifiers",
+    "displayName": "Space Attack",
+    "icon": "space_attack",
+    "description": "Space Attack is the damage this unit does to Space Units.",
+    "fields": {
+      "Name": "space_attack",
+      "Icon": "space_attack"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "space_attack"
+      }
+    ]
+  },
+  {
     "id": "spaceCapacity",
     "type": "static-modifiers",
     "displayName": "Space Capacity",
@@ -13806,38 +13831,21 @@
     ]
   },
   {
-    "id": "breakthrough",
+    "id": "water_attack",
     "type": "static-modifiers",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "breakthrough",
+    "displayName": "Water Attack",
+    "icon": "water_attack",
+    "description": "Water Attack is the damage this unit does to Water Units.",
     "fields": {
-      "Name": "breakthrough",
-      "Icon": "breakthrough"
+      "Name": "water_attack",
+      "Icon": "water_attack"
     },
     "modifiers": [],
     "prerequisites": [],
     "references": [
       {
         "type": "icon",
-        "id": "breakthrough"
-      }
-    ]
-  },
-  {
-    "id": "entrenchment",
-    "type": "static-modifiers",
-    "displayName": "When an army is defending, each unit of <img id=\"entrenchment\"/> <yellow>Entrenchment</> greater than the enemy's <img id=\"breakthrough\"/> <yellow>Breakthrough</> corresponds to a <green>+1% Damage Multiplier</>.",
-    "icon": "entrenchment",
-    "fields": {
-      "Name": "entrenchment",
-      "Icon": "entrenchment"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "entrenchment"
+        "id": "water_attack"
       }
     ]
   },
