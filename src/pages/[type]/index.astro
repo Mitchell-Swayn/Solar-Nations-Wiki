@@ -36,7 +36,7 @@ const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic',
   domain,
   groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
 })).filter((domain) => domain.groups.length > 0);
-const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length : entries.length;
+const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length + entries.length : entries.length;
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
@@ -77,7 +77,12 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
       {factionGroups.map(({ faction, variants }) => (
         <section class="reform-option-group entry-group">
           <header><div class="culture-family-title">{faction.icon && <GameIcon name={faction.icon} size={30} />}<div><p class="eyebrow">Political Faction</p><h2>{faction.displayName}</h2></div></div><a href={withBase(`/factions/${faction.id}/`)}>View faction</a></header>
-          {variants.length > 0 ? <div class="entry-directory">
+          <div class="entry-directory">
+            <a href={withBase(`/factions/${faction.id}/`)} class="directory-row" data-search={`${faction.displayName} ${faction.id}`.toLowerCase()}>
+              <span class="directory-icon">{faction.icon ? <GameIcon name={faction.icon} size={34} /> : <span>{faction.displayName.charAt(0)}</span>}</span>
+              <span class="directory-main"><strong>{faction.displayName}</strong><code>{faction.id}</code>{faction.description && <small>{faction.description}</small>}</span>
+              <span class="row-arrow" aria-hidden="true">›</span>
+            </a>
             {variants.map((variant) => (
               <a href={withBase(`/faction-variants/${variant.id}/`)} class="directory-row" data-search={`${faction.displayName} ${variant.displayName} ${variant.id}`.toLowerCase()}>
                 <span class="directory-icon">{variant.icon ? <GameIcon name={variant.icon} size={34} /> : <span>{variant.displayName.charAt(0)}</span>}</span>
@@ -85,7 +90,7 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
                 <span class="row-arrow" aria-hidden="true">›</span>
               </a>
             ))}
-          </div> : <p class="group-empty">No extracted variants.</p>}
+          </div>
         </section>
       ))}
     </div>
