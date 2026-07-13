@@ -21,8 +21,6 @@ const members = traits
     || Number(a.fields.IdeaIndex ?? 0) - Number(b.fields.IdeaIndex ?? 0));
 const root = members.find((entry) => isCultureFamilyRoot(entry.id));
 const subtraits = members.filter((entry) => entry !== root);
-const totalEffects = members.reduce((sum, entry) => sum + entry.modifiers.length, 0);
-
 const families = [...new Map(traits.map((entry) => {
   const group = getCultureTraitGroup(entry.id);
   return [group.id, group];
@@ -75,21 +73,6 @@ const next = position < families.length - 1 ? families[position + 1] : undefined
       </nav>
     </div>
 
-    <aside class="article-aside">
-      <section class="infobox">
-        <h2>At a glance</h2>
-        <dl>
-          <div><dt>Category</dt><dd><a href={withBase('/culture-traits/')}>Culture Traits</a></dd></div>
-          <div><dt>Domain</dt><dd>{meta.domain}</dd></div>
-          <div><dt>Ideas</dt><dd>{members.length}</dd></div>
-          <div><dt>Effects</dt><dd>{totalEffects}</dd></div>
-        </dl>
-      </section>
-      <section class="page-nav">
-        <h2>In this family</h2>
-        {members.map((entry) => <a href={`#${entry.id}`}>{entry.displayName}</a>)}
-      </section>
-    </aside>
   </article>
 </BaseLayout>
 

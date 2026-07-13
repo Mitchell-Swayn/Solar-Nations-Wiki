@@ -17,3 +17,13 @@ twilightModernity/Content/GFX/Icons/Ideology/nazism.uasset
 twilightModernity/Content/GFX/Icons/Ideology/western.uasset
 twilightModernity/Content/GFX/Icons/Modifiers/piercing.uasset
 # shield.uasset is copied as entrenchment.png (Buildings/shield.png owns the shield key)
+twilightModernity/Content/GFX/Icons/Modifiers/air_attack.uasset
+twilightModernity/Content/GFX/Icons/Modifiers/land_attack.uasset
+twilightModernity/Content/GFX/Icons/Modifiers/space_attack.uasset
+twilightModernity/Content/GFX/Icons/Modifiers/water_attack.uasset
+twilightModernity/Content/GFX/Icons/laser_attack.uasset
+twilightModernity/Content/GFX/Icons/biological_attack.uasset
+twilightModernity/Content/GFX/Icons/strategic_attack.uasset
+twilightModernity/Content/GFX/Icons/gravitons.uasset
+twilightModernity/Content/GFX/Icons/Psychology.uasset
+twilightModernity/Content/GFX/Icons/missileAttack_water.uasset

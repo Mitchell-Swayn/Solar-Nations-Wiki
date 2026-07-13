@@ -1,6 +1,6 @@
 ---
 import GameIcon from './GameIcon.astro';
-import { getModifierMap, getModifierTargetIcon } from '../lib/data';
+import { getEntry, getModifierMap, getModifierTargetIcon } from '../lib/data';
 import type { ModifierRef } from '../lib/types';
 
 interface Props {
@@ -9,6 +9,10 @@ interface Props {
 
 const { modifiers } = Astro.props;
 const modifierMap = getModifierMap();
+const formatTargetName = (value: string) => value
+  .replace(/([a-z])([A-Z])/g, '$1 $2')
+  .replace(/_/g, ' ')
+  .replace(/^./, (character) => character.toUpperCase());
 const effects = modifiers.map((modifier) => {
   const definition = modifierMap.get(modifier.key);
   const numeric = typeof modifier.value === 'number' ? modifier.value : undefined;
@@ -16,13 +20,26 @@ const effects = modifiers.map((modifier) => {
     : definition?.IsPercent === 'Percentage' ? `${numeric >= 0 ? '+' : ''}${(numeric * 100).toFixed(1).replace(/\.0$/, '')}%`
     : `${numeric >= 0 ? '+' : ''}${numeric}`;
   const rawLabel = definition?.DisplayName ?? modifier.key;
-  let label = rawLabel
+  const factionVariantLabel = modifier.key === 'factionVariant' && modifier.value1 && modifier.value2
+    ? `Enables ${getEntry('factions', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)} Variant: ${getEntry('faction-variants', modifier.value2)?.displayName ?? formatTargetName(modifier.value2)}`
+    : undefined;
+  const usesResourceLabel = modifier.key === 'resourceModifier' || modifier.key.startsWith('resourceCapacity');
+  const resourceLabel = usesResourceLabel && modifier.value1
+    ? getEntry('resources', modifier.value1)?.displayName ?? getEntry('deposit-resources', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)
+    : undefined;
+  const targetFirstLabel = modifier.key === 'politicalPowerAdd' ? 'Political Power'
+    : modifier.key === 'factionPowerAdd' ? 'Faction Power'
+    : modifier.key === 'factionLoyaltyAdd' ? 'Faction Loyalty'
+    : undefined;
+  let label = factionVariantLabel ?? resourceLabel ?? (targetFirstLabel && modifier.value1
+    ? `${getEntry('factions', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)} ${targetFirstLabel}`
+    : rawLabel
     .replace(/:?\s*\{val\}/g, '')
     .replace(/\{1\}/g, modifier.value1 ?? '')
     .replace(/\{2\}/g, modifier.value2 ?? '')
     .replace(/\{3\}/g, modifier.value3 ?? '')
-    .trim() || modifier.key;
-  if (!rawLabel.includes('{1}') && modifier.value1) label += ` (${modifier.value1})`;
+    .trim() || modifier.key);
+  if (!factionVariantLabel && !resourceLabel && !targetFirstLabel && !rawLabel.includes('{1}') && modifier.value1) label += ` (${modifier.value1})`;
   const tone = numeric === undefined || !definition ? ''
     : definition.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
     : definition.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')

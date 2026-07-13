@@ -614,13 +614,13 @@
     "id": "americanNavalPrimacy",
     "type": "culture-traits",
     "displayName": "American Naval Primacy",
-    "icon": "military",
+    "icon": "water_attack",
     "fields": {
       "Name": "americanNavalPrimacy",
       "Family": "heritageAmerican",
       "Category": "heritage",
       "IdeaIndex": 4,
-      "Icon": "military"
+      "Icon": "water_attack"
     },
     "modifiers": [
       {
@@ -640,7 +640,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "water_attack"
       }
     ]
   },
@@ -6952,13 +6952,13 @@
     "id": "airCavalry",
     "type": "culture-traits",
     "displayName": "Knights of the Sky",
-    "icon": "military",
+    "icon": "air_attack",
     "fields": {
       "Name": "airCavalry",
       "Family": "militaryAirforce",
       "Category": "idea",
       "IdeaIndex": 1,
-      "Icon": "military"
+      "Icon": "air_attack"
     },
     "modifiers": [
       {
@@ -6972,7 +6972,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "air_attack"
       }
     ]
   },
@@ -8848,13 +8848,13 @@
     "id": "navyAttack",
     "type": "culture-traits",
     "displayName": "Offensive Design",
-    "icon": "military",
+    "icon": "water_attack",
     "fields": {
       "Name": "navyAttack",
       "Family": "militaryNaval",
       "Category": "idea",
       "IdeaIndex": 5,
-      "Icon": "military"
+      "Icon": "water_attack"
     },
     "modifiers": [
       {
@@ -8874,7 +8874,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "water_attack"
       }
     ]
   },
@@ -11748,13 +11748,13 @@
     "id": "spaceDominance",
     "type": "culture-traits",
     "displayName": "Space Dominance",
-    "icon": "military",
+    "icon": "space_attack",
     "fields": {
       "Name": "spaceDominance",
       "Family": "militarySpaceforce",
       "Category": "idea",
       "IdeaIndex": 6,
-      "Icon": "military"
+      "Icon": "space_attack"
     },
     "modifiers": [
       {
@@ -11780,7 +11780,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "space_attack"
       }
     ]
   },
@@ -14027,13 +14027,13 @@
     "id": "spaceAttacking",
     "type": "culture-traits",
     "displayName": "Voidforce Offense",
-    "icon": "military",
+    "icon": "space_attack",
     "fields": {
       "Name": "spaceAttacking",
       "Family": "militarySpaceforce",
       "Category": "idea",
       "IdeaIndex": 5,
-      "Icon": "military"
+      "Icon": "space_attack"
     },
     "modifiers": [
       {
@@ -14047,7 +14047,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military"
+        "id": "space_attack"
       }
     ]
   },

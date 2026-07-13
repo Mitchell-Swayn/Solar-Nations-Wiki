@@ -54,6 +54,31 @@ function resolveIconSource(icon: string): string {
   return ICON_ALIASES[icon] ?? icon;
 }
 
+// The DamageTypes table carries only a display color; the game renders attack
+// channels with the per-domain *_attack stat icons (see DamageTypes_C:
+// DomainAllStats, which composes "<domain>_attack"). Typed damage uses the
+// matching themed art from GFX/Icons.
+const DAMAGE_TYPE_ICONS: Record<string, string> = {
+  airHard: 'air_attack', airSoft: 'air_attack', airTracking: 'air_attack',
+  landHard: 'land_attack', landSoft: 'land_attack', landTracking: 'land_attack',
+  spaceHard: 'space_attack', spaceSoft: 'space_attack', spaceTracking: 'space_attack',
+  waterHard: 'water_attack', waterSoft: 'water_attack',
+  laser: 'laser_attack', biological: 'biological_attack', strategic: 'strategic_attack',
+  gravometric: 'gravitons', psychological: 'Psychology',
+  emp: 'emp', torpedo: 'torpedo0', depthCharge: 'missileAttack_water',
+};
+
+function applyDamageTypeIcons(entries: WikiEntry[]) {
+  for (const entry of entries) {
+    if (entry.type !== 'damage-types' || entry.icon) continue;
+    const icon = DAMAGE_TYPE_ICONS[entry.id];
+    if (!icon) continue;
+    entry.icon = icon;
+    entry.fields.Icon = icon;
+    entry.references.push({ type: 'icon', id: icon });
+  }
+}
+
 function stripJsonComments(text: string): string {
   return text.replace(/\/\/.*$/gm, '').replace(/,\s*([}\]])/g, '$1');
 }
@@ -451,7 +476,7 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
   // inherits the clergy faction icon. Earlier types win on id collisions.
   const targetIconTypes = [
     'resources', 'deposit-resources', 'factions', 'projects', 'situations',
-    'character-skills', 'unit-stats', 'unit-qualities', 'unit-types',
+    'character-skills', 'damage-types', 'unit-stats', 'unit-qualities', 'unit-types',
     'battle-domains', 'industries', 'sliders', 'technology-domains',
   ];
   const targetIcons = new Map<string, string>();
@@ -652,6 +677,7 @@ function main() {
   }
   const modifierEntries = loadModifiers(localization);
 
+  applyDamageTypeIcons(defineEntries);
   applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);
   const allEntries = [...defineEntries, ...modifierEntries];
   const source = 'base game defines extracted via CUE4Parse';

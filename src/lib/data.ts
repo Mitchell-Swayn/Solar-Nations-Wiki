@@ -30,6 +30,7 @@ const TARGET_ICON_TYPES = [
   'projects',
   'situations',
   'character-skills',
+  'damage-types',
   'unit-stats',
   'unit-qualities',
   'unit-types',

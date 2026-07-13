@@ -99,12 +99,5 @@ const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'
       </nav>
     </div>
 
-    <aside class="article-aside">
-      <section class="infobox">
-        <h2>At a glance</h2>
-        <dl><div><dt>Category</dt><dd><a href={withBase(`/${type}/`)}>{category.pluralLabel}</a></dd></div><div><dt>Effects</dt><dd>{entry.modifiers.length}</dd></div><div><dt>Requirements</dt><dd>{entry.prerequisites.length}</dd></div><div><dt>Properties</dt><dd>{propertyCount}</dd></div></dl>
-      </section>
-      <section class="page-nav"><h2>On this page</h2><a href="#top">Overview</a>{entry.prerequisites.length > 0 && <a href="#requirements">Requirements</a>}{reformOptions.length > 0 && <a href="#options">Reform options</a>}{factionVariants.length > 0 && <a href="#variants">Faction variants</a>}{cultureTraitGroups.length > 0 && <a href="#traits">Culture traits</a>}{entry.modifiers.length > 0 && <a href="#effects">Gameplay effects</a>}{propertyCount > 0 && <a href="#properties">Properties</a>}</section>
-    </aside>
   </article>
 </BaseLayout>

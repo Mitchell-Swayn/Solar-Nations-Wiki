@@ -3,6 +3,7 @@
     "id": "airTracking",
     "type": "damage-types",
     "displayName": "Aerial Missile",
+    "icon": "air_attack",
     "fields": {
       "Name": "airTracking",
       "Notes": "Aerial Missiles",
@@ -12,16 +13,23 @@
         "B": 0.402891,
         "A": 1,
         "Hex": "00C8AA"
-      }
+      },
+      "Icon": "air_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "air_attack"
+      }
+    ]
   },
   {
     "id": "airHard",
     "type": "damage-types",
     "displayName": "Air Hard",
+    "icon": "air_attack",
     "fields": {
       "Name": "airHard",
       "Notes": {
@@ -33,16 +41,23 @@
         "B": 0.396593,
         "A": 1,
         "Hex": "84B1A9"
-      }
+      },
+      "Icon": "air_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "air_attack"
+      }
+    ]
   },
   {
     "id": "airSoft",
     "type": "damage-types",
     "displayName": "Air Soft",
+    "icon": "air_attack",
     "fields": {
       "Name": "airSoft",
       "Notes": {
@@ -54,16 +69,23 @@
         "B": 0.585069,
         "A": 1,
         "Hex": "45BFC9"
-      }
+      },
+      "Icon": "air_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "air_attack"
+      }
+    ]
   },
   {
     "id": "biological",
     "type": "damage-types",
     "displayName": "Biological Damage",
+    "icon": "biological_attack",
     "fields": {
       "Name": "biological",
       "Notes": {
@@ -75,16 +97,23 @@
         "B": 0.103302,
         "A": 1,
         "Hex": "3DCA5A"
-      }
+      },
+      "Icon": "biological_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "biological_attack"
+      }
+    ]
   },
   {
     "id": "depthCharge",
     "type": "damage-types",
     "displayName": "Depth Charge",
+    "icon": "missileAttack_water",
     "fields": {
       "Name": "depthCharge",
       "Notes": {
@@ -96,16 +125,23 @@
         "B": 0.059027,
         "A": 1,
         "Hex": "0F0044"
-      }
+      },
+      "Icon": "missileAttack_water"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "missileAttack_water"
+      }
+    ]
   },
   {
     "id": "emp",
     "type": "damage-types",
     "displayName": "Emp",
+    "icon": "emp",
     "fields": {
       "Name": "emp",
       "Notes": {
@@ -117,16 +153,23 @@
         "B": 1,
         "A": 1,
         "Hex": "93E8FF"
-      }
+      },
+      "Icon": "emp"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "emp"
+      }
+    ]
   },
   {
     "id": "gravometric",
     "type": "damage-types",
     "displayName": "Gravometric",
+    "icon": "gravitons",
     "fields": {
       "Name": "gravometric",
       "Notes": {
@@ -138,16 +181,23 @@
         "B": 0.263359,
         "A": 1,
         "Hex": "CF268C"
-      }
+      },
+      "Icon": "gravitons"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "gravitons"
+      }
+    ]
   },
   {
     "id": "landHard",
     "type": "damage-types",
     "displayName": "Land Hard",
+    "icon": "land_attack",
     "fields": {
       "Name": "landHard",
       "Notes": {
@@ -159,16 +209,23 @@
         "B": 0,
         "A": 1,
         "Hex": "444900"
-      }
+      },
+      "Icon": "land_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "land_attack"
+      }
+    ]
   },
   {
     "id": "landTracking",
     "type": "damage-types",
     "displayName": "Land Missile",
+    "icon": "land_attack",
     "fields": {
       "Name": "landTracking",
       "Notes": "Special Forces, Characters",
@@ -178,16 +235,23 @@
         "B": 1,
         "A": 1,
         "Hex": "52E3FF"
-      }
+      },
+      "Icon": "land_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "land_attack"
+      }
+    ]
   },
   {
     "id": "landSoft",
     "type": "damage-types",
     "displayName": "Land Soft",
+    "icon": "land_attack",
     "fields": {
       "Name": "landSoft",
       "Notes": {
@@ -199,16 +263,23 @@
         "B": 0,
         "A": 1,
         "Hex": "05BB00"
-      }
+      },
+      "Icon": "land_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "land_attack"
+      }
+    ]
   },
   {
     "id": "psychological",
     "type": "damage-types",
     "displayName": "Psychological Damage",
+    "icon": "Psychology",
     "fields": {
       "Name": "psychological",
       "Notes": "Spiritual Warfare",
@@ -218,16 +289,23 @@
         "B": 0.472222,
         "A": 1,
         "Hex": "B300B7"
-      }
+      },
+      "Icon": "Psychology"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "Psychology"
+      }
+    ]
   },
   {
     "id": "spaceHard",
     "type": "damage-types",
     "displayName": "Space Heavy",
+    "icon": "space_attack",
     "fields": {
       "Name": "spaceHard",
       "Notes": "Space big guns",
@@ -237,16 +315,23 @@
         "B": 0.188705,
         "A": 1,
         "Hex": "AF0078"
-      }
+      },
+      "Icon": "space_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "space_attack"
+      }
+    ]
   },
   {
     "id": "spaceSoft",
     "type": "damage-types",
     "displayName": "Space Light",
+    "icon": "space_attack",
     "fields": {
       "Name": "spaceSoft",
       "Notes": "Space Autocannon",
@@ -256,16 +341,23 @@
         "B": 0.085069,
         "A": 1,
         "Hex": "490052"
-      }
+      },
+      "Icon": "space_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "space_attack"
+      }
+    ]
   },
   {
     "id": "spaceTracking",
     "type": "damage-types",
     "displayName": "Space Missile",
+    "icon": "space_attack",
     "fields": {
       "Name": "spaceTracking",
       "Notes": "Space missiles",
@@ -275,16 +367,23 @@
         "B": 0.279938,
         "A": 1,
         "Hex": "915990"
-      }
+      },
+      "Icon": "space_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "space_attack"
+      }
+    ]
   },
   {
     "id": "strategic",
     "type": "damage-types",
     "displayName": "Strategic Damage",
+    "icon": "strategic_attack",
     "fields": {
       "Name": "strategic",
       "Notes": {
@@ -296,16 +395,23 @@
         "B": 0.174503,
         "A": 1,
         "Hex": "A09974"
-      }
+      },
+      "Icon": "strategic_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "strategic_attack"
+      }
+    ]
   },
   {
     "id": "laser",
     "type": "damage-types",
     "displayName": "Thermal Laser Damage",
+    "icon": "laser_attack",
     "fields": {
       "Name": "laser",
       "Notes": "Red lasers",
@@ -315,16 +421,23 @@
         "B": 0.037471,
         "A": 1,
         "Hex": "A73636"
-      }
+      },
+      "Icon": "laser_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "laser_attack"
+      }
+    ]
   },
   {
     "id": "torpedo",
     "type": "damage-types",
     "displayName": "Torpedo",
+    "icon": "torpedo0",
     "fields": {
       "Name": "torpedo",
       "Notes": {
@@ -336,16 +449,23 @@
         "B": 0.664931,
         "A": 1,
         "Hex": "79B1D5"
-      }
+      },
+      "Icon": "torpedo0"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "torpedo0"
+      }
+    ]
   },
   {
     "id": "waterHard",
     "type": "damage-types",
     "displayName": "Water Hard",
+    "icon": "water_attack",
     "fields": {
       "Name": "waterHard",
       "Notes": {
@@ -357,16 +477,23 @@
         "B": 0.237847,
         "A": 1,
         "Hex": "4C0086"
-      }
+      },
+      "Icon": "water_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "water_attack"
+      }
+    ]
   },
   {
     "id": "waterSoft",
     "type": "damage-types",
     "displayName": "Water Soft",
+    "icon": "water_attack",
     "fields": {
       "Name": "waterSoft",
       "Notes": {
@@ -378,10 +505,16 @@
         "B": 0.654514,
         "A": 1,
         "Hex": "0E00D4"
-      }
+      },
+      "Icon": "water_attack"
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "water_attack"
+      }
+    ]
   }
 ]
