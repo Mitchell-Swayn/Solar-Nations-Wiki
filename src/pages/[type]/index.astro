@@ -33,7 +33,7 @@ const cultureGroups = type === 'culture-traits' ? Object.values(entries.reduce((
   groups[meta.id].entries.push(entry);
   return groups;
 }, {} as Record<string, { meta: ReturnType<typeof getCultureTraitGroup>; entries: typeof entries }>)) : [];
-const cultureDomains = ['Species & Faith', 'Cultural', 'Economic', 'Diplomatic', 'Administrative', 'Military'].map((domain) => ({
+const cultureDomains = ['Species', 'Religion', 'Heritage', 'Idea', 'Special'].map((domain) => ({
   domain,
   groups: cultureGroups.filter((cultureGroup) => cultureGroup.meta.domain === domain).sort((a, b) => a.meta.label.localeCompare(b.meta.label)),
 })).filter((domain) => domain.groups.length > 0);
