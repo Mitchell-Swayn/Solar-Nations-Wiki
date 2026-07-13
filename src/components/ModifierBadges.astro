@@ -27,7 +27,14 @@ const effects = modifiers.map((modifier) => {
     : definition.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
     : definition.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')
     : '';
-  return { value, icon: getModifierTargetIcon(modifier.value1) ?? definition?.Icon, label, tone };
+  const targetIcon = getModifierTargetIcon(modifier.value1);
+  return {
+    value,
+    icon: definition?.Icon,
+    targetIcon: targetIcon !== definition?.Icon ? targetIcon : undefined,
+    label,
+    tone,
+  };
 });
 ---
 
@@ -37,6 +44,7 @@ const effects = modifiers.map((modifier) => {
       <span class:list={['effect', effect.tone]}>
         <b>{effect.value}</b>
         {effect.icon && <GameIcon name={effect.icon} size={16} />}
+        {effect.targetIcon && <GameIcon name={effect.targetIcon} size={16} />}
         <span>{effect.label}</span>
       </span>
     ))}

@@ -41,12 +41,13 @@ function formatTarget(mod: ModifierRef): string {
     <tbody>
       {modifiers.map((mod) => {
         const def = modifierMap.get(mod.key);
-        const icon = getModifierTargetIcon(mod.value1) ?? def?.Icon;
+        const targetIcon = getModifierTargetIcon(mod.value1);
         return (
           <tr>
             <td>
               <span class="modifier-name">
-                {icon && <GameIcon name={icon} size={20} />}
+                {def?.Icon && <GameIcon name={def.Icon} size={20} />}
+                {targetIcon && targetIcon !== def?.Icon && <GameIcon name={targetIcon} size={20} />}
                 <a href={withBase(`/modifiers/${mod.key}/`)}>{def?.DisplayName ?? mod.key}</a>
               </span>
             </td>

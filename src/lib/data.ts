@@ -21,10 +21,31 @@ export function getEntriesByType(type: string): WikiEntry[] {
   return ids.map((id) => index.entries[id]).filter(Boolean);
 }
 
-// Icon for a modifier's target when it names a resource (e.g. resourceCapacityMult -> robots).
+// Entry types a modifier target id may refer to, in lookup order
+// (e.g. resourceCapacityMult -> robots, factionLoyaltyAdd -> military).
+const TARGET_ICON_TYPES = [
+  'resources',
+  'deposit-resources',
+  'factions',
+  'projects',
+  'situations',
+  'character-skills',
+  'unit-stats',
+  'unit-qualities',
+  'unit-types',
+  'battle-domains',
+  'industries',
+  'sliders',
+  'technology-domains',
+];
+
 export function getModifierTargetIcon(target?: string): string | undefined {
   if (!target) return undefined;
-  return getEntry('resources', target)?.icon ?? getEntry('deposit-resources', target)?.icon ?? undefined;
+  for (const type of TARGET_ICON_TYPES) {
+    const icon = index.entries[`${type}:${target}`]?.icon;
+    if (icon) return icon;
+  }
+  return undefined;
 }
 
 export function getEntry(type: string, id: string): WikiEntry | undefined {
