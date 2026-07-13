@@ -33,7 +33,7 @@ const ICON_ALIASES: Record<string, string> = {
   bioweaponSituation: 'unleashBioweaponSituation', marsSituation: 'planet',
   mechanistCoalescence_migrantSituation: 'mechanistCoalescence',
   attack: 'smallArms0', entrenchment: 'fortifications', truck: 'logistics',
-  culturePower: 'cultureHex', edict: 'edictGeneric', industrial: 'constructHex',
+  culturePower: 'cultureHex', edict: 'edictGeneric',
   industry: 'machineParts', speed: 'moveSpeed', unrest: 'stability',
   crisis: 'crisisProgress', alignment: 'political',
   ascendedAutomation: 'ascendedAI', ascendedDigital: 'ascendedCybernetic', ascendedMutation: 'ascendedGenetic',

@@ -12,3 +12,4 @@ twilightModernity/Content/GFX/Icons/Resources/Computers.uasset
 twilightModernity/Content/GFX/Icons/Ideology/conservative.uasset
 twilightModernity/Content/GFX/Icons/Ideology/traditional.uasset
 twilightModernity/Content/GFX/Icons/Corruption.uasset
+twilightModernity/Content/GFX/Icons/factory.uasset
