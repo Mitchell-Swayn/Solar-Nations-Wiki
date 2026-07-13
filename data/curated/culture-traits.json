@@ -482,12 +482,12 @@
     "id": "americanFreedom",
     "type": "culture-traits",
     "displayName": "American Freedom",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "americanFreedom",
       "Family": "heritageAmerican",
       "Category": "heritage",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -507,7 +507,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -778,12 +778,12 @@
     "id": "aristocraticLoyalty",
     "type": "culture-traits",
     "displayName": "Aristocratic Bonds",
-    "icon": "political",
+    "icon": "upperClass",
     "fields": {
       "Name": "aristocraticLoyalty",
       "Family": "aristocratic",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -797,7 +797,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "upperClass"
       }
     ]
   },
@@ -1090,12 +1090,12 @@
     "id": "spaceRecruitment",
     "type": "culture-traits",
     "displayName": "Astronaut Recruitment Drive",
-    "icon": "industrial",
+    "icon": "shipyard",
     "fields": {
       "Name": "spaceRecruitment",
       "Family": "militarySpaceforce",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "shipyard"
     },
     "modifiers": [
       {
@@ -1109,7 +1109,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "shipyard"
       }
     ]
   },
@@ -1149,12 +1149,12 @@
     "id": "spaceTraining",
     "type": "culture-traits",
     "displayName": "Astronautical Training",
-    "icon": "industrial",
+    "icon": "shipyard",
     "fields": {
       "Name": "spaceTraining",
       "Family": "militarySpaceforce",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "shipyard"
     },
     "modifiers": [
       {
@@ -1168,7 +1168,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "shipyard"
       }
     ]
   },
@@ -1282,12 +1282,12 @@
     "id": "statismAuthority",
     "type": "culture-traits",
     "displayName": "Authoritarianism",
-    "icon": "political",
+    "icon": "upperClass",
     "fields": {
       "Name": "statismAuthority",
       "Family": "idea_statism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -1301,7 +1301,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "upperClass"
       }
     ]
   },
@@ -1493,12 +1493,12 @@
     "id": "consumersBreadAndCircus",
     "type": "culture-traits",
     "displayName": "Bread and Circuses",
-    "icon": "political",
+    "icon": "laborer",
     "fields": {
       "Name": "consumersBreadAndCircus",
       "Family": "consumerCulture",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "laborer"
     },
     "modifiers": [
       {
@@ -1518,7 +1518,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "laborer"
       }
     ]
   },
@@ -2062,12 +2062,12 @@
     "id": "tribalismClans",
     "type": "culture-traits",
     "displayName": "Clan Above All",
-    "icon": "cultural",
+    "icon": "upperClass",
     "fields": {
       "Name": "tribalismClans",
       "Family": "idea_tribalism",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -2081,7 +2081,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "upperClass"
       }
     ]
   },
@@ -2089,12 +2089,12 @@
     "id": "marxismClassWar",
     "type": "culture-traits",
     "displayName": "Class Warfare",
-    "icon": "political",
+    "icon": "laborer",
     "fields": {
       "Name": "marxismClassWar",
       "Family": "religion_marxist",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "laborer"
     },
     "modifiers": [
       {
@@ -2114,7 +2114,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "laborer"
       }
     ]
   },
@@ -2122,12 +2122,12 @@
     "id": "utopianismCollectivism",
     "type": "culture-traits",
     "displayName": "Collective Struggle",
-    "icon": "cultural",
+    "icon": "laborer",
     "fields": {
       "Name": "utopianismCollectivism",
       "Family": "idea_utopianism",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "laborer"
     },
     "modifiers": [
       {
@@ -2141,7 +2141,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "laborer"
       }
     ]
   },
@@ -2308,12 +2308,12 @@
     "id": "thriftyCommerce",
     "type": "culture-traits",
     "displayName": "Commercial Focus",
-    "icon": "industrial",
+    "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "thriftyCommerce",
       "Family": "thrifty",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "consumerGoodsFactory"
     },
     "modifiers": [
       {
@@ -2327,7 +2327,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "consumerGoodsFactory"
       }
     ]
   },
@@ -2607,12 +2607,12 @@
     "id": "traditionalismConservatism",
     "type": "culture-traits",
     "displayName": "Conservatism",
-    "icon": "political",
+    "icon": "upperClass",
     "fields": {
       "Name": "traditionalismConservatism",
       "Family": "idea_traditionalism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -2631,7 +2631,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "upperClass"
       }
     ]
   },
@@ -2639,12 +2639,12 @@
     "id": "monumentalistExpansion",
     "type": "culture-traits",
     "displayName": "Constant Construction",
-    "icon": "industrial",
+    "icon": "infrastructure",
     "fields": {
       "Name": "monumentalistExpansion",
       "Family": "monumentalist",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "infrastructure"
     },
     "modifiers": [
       {
@@ -2658,7 +2658,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "infrastructure"
       }
     ]
   },
@@ -2867,12 +2867,12 @@
     "id": "judaismConviction",
     "type": "culture-traits",
     "displayName": "Conviction",
-    "icon": "jewish",
+    "icon": "clergy",
     "fields": {
       "Name": "judaismConviction",
       "Family": "religion_jewish",
       "Category": "religion",
-      "Icon": "jewish"
+      "Icon": "clergy"
     },
     "modifiers": [
       {
@@ -2892,7 +2892,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "jewish"
+        "id": "clergy"
       }
     ]
   },
@@ -2983,12 +2983,12 @@
     "id": "assimilationistAutonomy",
     "type": "culture-traits",
     "displayName": "Cultural Autonomy",
-    "icon": "cultural",
+    "icon": "separatist",
     "fields": {
       "Name": "assimilationistAutonomy",
       "Family": "assimilationist",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "separatist"
     },
     "modifiers": [
       {
@@ -3002,7 +3002,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "separatist"
       }
     ]
   },
@@ -3944,12 +3944,12 @@
     "id": "occultElitism",
     "type": "culture-traits",
     "displayName": "Elite Cabals",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "occultElitism",
       "Family": "religion_occult",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -3963,7 +3963,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -4139,12 +4139,12 @@
     "id": "diligentEntrepreneurship",
     "type": "culture-traits",
     "displayName": "Entrepreneurship",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "diligentEntrepreneurship",
       "Family": "diligent",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -4158,7 +4158,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -4197,12 +4197,12 @@
     "id": "marxismEquity",
     "type": "culture-traits",
     "displayName": "Equalitarianism",
-    "icon": "political",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "marxismEquity",
       "Family": "religion_marxist",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -4216,7 +4216,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -4224,12 +4224,12 @@
     "id": "utopianismEquality",
     "type": "culture-traits",
     "displayName": "Equality Ethos",
-    "icon": "political",
+    "icon": "laborer",
     "fields": {
       "Name": "utopianismEquality",
       "Family": "idea_utopianism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "laborer"
     },
     "modifiers": [
       {
@@ -4248,7 +4248,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "laborer"
       }
     ]
   },
@@ -4410,12 +4410,12 @@
     "id": "occultEvil",
     "type": "culture-traits",
     "displayName": "Evil is a point of view",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "occultEvil",
       "Family": "religion_occult",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -4429,7 +4429,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -4676,12 +4676,12 @@
     "id": "islamFanaticism",
     "type": "culture-traits",
     "displayName": "Fanaticism",
-    "icon": "islam",
+    "icon": "clergy",
     "fields": {
       "Name": "islamFanaticism",
       "Family": "religion_islam",
       "Category": "religion",
-      "Icon": "islam"
+      "Icon": "clergy"
     },
     "modifiers": [
       {
@@ -4695,7 +4695,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "islam"
+        "id": "clergy"
       }
     ]
   },
@@ -4930,12 +4930,12 @@
     "id": "defensiveFortification",
     "type": "culture-traits",
     "displayName": "Fortified Defence",
-    "icon": "industrial",
+    "icon": "fortifications",
     "fields": {
       "Name": "defensiveFortification",
       "Family": "militaristDefensive",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "fortifications"
     },
     "modifiers": [
       {
@@ -4949,7 +4949,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "fortifications"
       }
     ]
   },
@@ -5057,12 +5057,12 @@
     "id": "transformationFuturism",
     "type": "culture-traits",
     "displayName": "Futuristic Orientation",
-    "icon": "industrial",
+    "icon": "university",
     "fields": {
       "Name": "transformationFuturism",
       "Family": "idea_transformationism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "university"
     },
     "modifiers": [
       {
@@ -5076,7 +5076,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "university"
       }
     ]
   },
@@ -5281,12 +5281,12 @@
     "id": "mandatePolitics",
     "type": "culture-traits",
     "displayName": "Heavenly Kingdom",
-    "icon": "cultural",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "mandatePolitics",
       "Family": "mandateOfHeaven",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -5300,7 +5300,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -5668,12 +5668,12 @@
     "id": "individualismInitiative",
     "type": "culture-traits",
     "displayName": "Individual Initiative",
-    "icon": "industrial",
+    "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "individualismInitiative",
       "Family": "idea_individualism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "consumerGoodsFactory"
     },
     "modifiers": [
       {
@@ -5687,7 +5687,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "consumerGoodsFactory"
       }
     ]
   },
@@ -5737,12 +5737,12 @@
     "id": "eugenicistIndustry",
     "type": "culture-traits",
     "displayName": "Industrial Geneticism",
-    "icon": "industrial",
+    "icon": "geneticMaterialFactory",
     "fields": {
       "Name": "eugenicistIndustry",
       "Family": "eugenicist",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "geneticMaterialFactory"
     },
     "modifiers": [
       {
@@ -5756,7 +5756,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "geneticMaterialFactory"
       }
     ]
   },
@@ -5764,12 +5764,12 @@
     "id": "robophileIndustry",
     "type": "culture-traits",
     "displayName": "Industrial Mechanization",
-    "icon": "industrial",
+    "icon": "robotFactory",
     "fields": {
       "Name": "robophileIndustry",
       "Family": "robophile",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "robotFactory"
     },
     "modifiers": [
       {
@@ -5783,7 +5783,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "robotFactory"
       }
     ]
   },
@@ -6186,12 +6186,12 @@
     "id": "intellectualismElite",
     "type": "culture-traits",
     "displayName": "Intellectual Elite",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "intellectualismElite",
       "Family": "idea_intellectualism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -6211,7 +6211,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -6660,12 +6660,12 @@
     "id": "traditionalismHierarchy",
     "type": "culture-traits",
     "displayName": "Just Hierarchy",
-    "icon": "cultural",
+    "icon": "upperClass",
     "fields": {
       "Name": "traditionalismHierarchy",
       "Family": "idea_traditionalism",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -6684,7 +6684,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "upperClass"
       }
     ]
   },
@@ -6782,12 +6782,12 @@
     "id": "landCommander",
     "type": "culture-traits",
     "displayName": "Land Commandery",
-    "icon": "cultural",
+    "icon": "strategy",
     "fields": {
       "Name": "landCommander",
       "Family": "militaryLand",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "strategy"
     },
     "modifiers": [
       {
@@ -6801,7 +6801,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "strategy"
       }
     ]
   },
@@ -6866,12 +6866,12 @@
     "id": "socialContractLaw",
     "type": "culture-traits",
     "displayName": "Law and Order",
-    "icon": "political",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "socialContractLaw",
       "Family": "socialContract",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -6885,7 +6885,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -7004,12 +7004,12 @@
     "id": "tribalismLoyalty",
     "type": "culture-traits",
     "displayName": "Loyalty to the Tribe",
-    "icon": "political",
+    "icon": "military",
     "fields": {
       "Name": "tribalismLoyalty",
       "Family": "idea_tribalism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "military"
     },
     "modifiers": [
       {
@@ -7023,7 +7023,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "military"
       }
     ]
   },
@@ -7114,12 +7114,12 @@
     "id": "monumentalistInfrastructure",
     "type": "culture-traits",
     "displayName": "Macroscopic Infrastructure",
-    "icon": "industrial",
+    "icon": "infrastructure",
     "fields": {
       "Name": "monumentalistInfrastructure",
       "Family": "monumentalist",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "infrastructure"
     },
     "modifiers": [
       {
@@ -7133,7 +7133,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "infrastructure"
       }
     ]
   },
@@ -7287,12 +7287,12 @@
     "id": "urbanophileConstruction",
     "type": "culture-traits",
     "displayName": "Mass Construction",
-    "icon": "industrial",
+    "icon": "infrastructure",
     "fields": {
       "Name": "urbanophileConstruction",
       "Family": "urbanophile",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "infrastructure"
     },
     "modifiers": [
       {
@@ -7306,7 +7306,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "infrastructure"
       }
     ]
   },
@@ -7367,12 +7367,12 @@
     "id": "thriftyExploitation",
     "type": "culture-traits",
     "displayName": "Mass Exploitation",
-    "icon": "industrial",
+    "icon": "extraction",
     "fields": {
       "Name": "thriftyExploitation",
       "Family": "thrifty",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "extraction"
     },
     "modifiers": [
       {
@@ -7386,7 +7386,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "extraction"
       }
     ]
   },
@@ -7394,12 +7394,12 @@
     "id": "industryMastery",
     "type": "culture-traits",
     "displayName": "Mass Industrialization",
-    "icon": "industrial",
+    "icon": "factory",
     "fields": {
       "Name": "industryMastery",
       "Family": "industrious",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "factory"
     },
     "modifiers": [
       {
@@ -7413,7 +7413,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "factory"
       }
     ]
   },
@@ -7594,12 +7594,12 @@
     "id": "plutocraticMaterialism",
     "type": "culture-traits",
     "displayName": "Material Definition",
-    "icon": "industrial",
+    "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "plutocraticMaterialism",
       "Family": "plutocratic",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "consumerGoodsFactory"
     },
     "modifiers": [
       {
@@ -7613,7 +7613,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "consumerGoodsFactory"
       }
     ]
   },
@@ -7621,12 +7621,12 @@
     "id": "atheistPolitics",
     "type": "culture-traits",
     "displayName": "Material Politics",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "atheistPolitics",
       "Family": "religion_atheist",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -7640,7 +7640,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -7728,12 +7728,12 @@
     "id": "plutocraticMechanics",
     "type": "culture-traits",
     "displayName": "Mechanics of Trade",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "plutocraticMechanics",
       "Family": "plutocratic",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -7752,7 +7752,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -7786,12 +7786,12 @@
     "id": "robophileMechanism",
     "type": "culture-traits",
     "displayName": "Mechanist Politics",
-    "icon": "cultural",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "robophileMechanism",
       "Family": "robophile",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -7805,7 +7805,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -7839,12 +7839,12 @@
     "id": "statismBureaucracy",
     "type": "culture-traits",
     "displayName": "Mega Bureaucracy",
-    "icon": "cultural",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "statismBureaucracy",
       "Family": "idea_statism",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -7863,7 +7863,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -7929,12 +7929,12 @@
     "id": "quantityMilitarism",
     "type": "culture-traits",
     "displayName": "Militarized Society",
-    "icon": "political",
+    "icon": "military",
     "fields": {
       "Name": "quantityMilitarism",
       "Family": "militaristQuantity",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "military"
     },
     "modifiers": [
       {
@@ -7948,7 +7948,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "military"
       }
     ]
   },
@@ -7983,12 +7983,12 @@
     "id": "defensiveMilitaryIndustry",
     "type": "culture-traits",
     "displayName": "Military Fortification State",
-    "icon": "industrial",
+    "icon": "military liason",
     "fields": {
       "Name": "defensiveMilitaryIndustry",
       "Family": "militaristDefensive",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "military liason"
     },
     "modifiers": [
       {
@@ -8002,7 +8002,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "military liason"
       }
     ]
   },
@@ -8230,12 +8230,12 @@
     "id": "moumentalistPsychology",
     "type": "culture-traits",
     "displayName": "National Monuments",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "moumentalistPsychology",
       "Family": "monumentalist",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -8249,7 +8249,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -8434,12 +8434,12 @@
     "id": "innovativeFunding",
     "type": "culture-traits",
     "displayName": "Novel Financing",
-    "icon": "industrial",
+    "icon": "university",
     "fields": {
       "Name": "innovativeFunding",
       "Family": "innovative",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "university"
     },
     "modifiers": [
       {
@@ -8459,7 +8459,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "university"
       }
     ]
   },
@@ -8664,12 +8664,12 @@
     "id": "pridefulOrchestration",
     "type": "culture-traits",
     "displayName": "Orchestrated Events",
-    "icon": "cultural",
+    "icon": "charisma",
     "fields": {
       "Name": "pridefulOrchestration",
       "Family": "prideful",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "charisma"
     },
     "modifiers": [
       {
@@ -8683,7 +8683,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "charisma"
       }
     ]
   },
@@ -8983,12 +8983,12 @@
     "id": "passivistPolitics",
     "type": "culture-traits",
     "displayName": "Passive Politics",
-    "icon": "political",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "passivistPolitics",
       "Family": "passivist",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -9008,7 +9008,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -9162,12 +9162,12 @@
     "id": "individualismAutonomy",
     "type": "culture-traits",
     "displayName": "Personal Autonomy",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "individualismAutonomy",
       "Family": "idea_individualism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -9181,7 +9181,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -9215,12 +9215,12 @@
     "id": "moralismPiety",
     "type": "culture-traits",
     "displayName": "Pious Culture",
-    "icon": "industrial",
+    "icon": "monument",
     "fields": {
       "Name": "moralismPiety",
       "Family": "idea_moralism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "monument"
     },
     "modifiers": [
       {
@@ -9239,7 +9239,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "monument"
       }
     ]
   },
@@ -9405,12 +9405,12 @@
     "id": "influencePolitics",
     "type": "culture-traits",
     "displayName": "Political Influence",
-    "icon": "cultural",
+    "icon": "charisma",
     "fields": {
       "Name": "influencePolitics",
       "Family": "influential",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "charisma"
     },
     "modifiers": [
       {
@@ -9424,7 +9424,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "charisma"
       }
     ]
   },
@@ -9490,12 +9490,12 @@
     "id": "eugenicistPolitics",
     "type": "culture-traits",
     "displayName": "Politics of Eugenics",
-    "icon": "cultural",
+    "icon": "middleClass",
     "fields": {
       "Name": "eugenicistPolitics",
       "Family": "eugenicist",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -9509,7 +9509,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "middleClass"
       }
     ]
   },
@@ -9737,12 +9737,12 @@
     "id": "diligentLeadership",
     "type": "culture-traits",
     "displayName": "Powerful Leadership",
-    "icon": "cultural",
+    "icon": "management",
     "fields": {
       "Name": "diligentLeadership",
       "Family": "diligent",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "management"
     },
     "modifiers": [
       {
@@ -9756,7 +9756,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "management"
       }
     ]
   },
@@ -10317,12 +10317,12 @@
     "id": "offensiveTraining",
     "type": "culture-traits",
     "displayName": "Rapid Retraining",
-    "icon": "cultural",
+    "icon": "strategy",
     "fields": {
       "Name": "offensiveTraining",
       "Family": "militaristOffensive",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "strategy"
     },
     "modifiers": [
       {
@@ -10336,7 +10336,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "strategy"
       }
     ]
   },
@@ -10344,12 +10344,12 @@
     "id": "intellectualismMeritocracy",
     "type": "culture-traits",
     "displayName": "Rational Meritocracy",
-    "icon": "political",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "intellectualismMeritocracy",
       "Family": "idea_intellectualism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -10363,7 +10363,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -10397,12 +10397,12 @@
     "id": "hegelianPolitics",
     "type": "culture-traits",
     "displayName": "Real Politics",
-    "icon": "fascist",
+    "icon": "clergy",
     "fields": {
       "Name": "hegelianPolitics",
       "Family": "religion_hegelian",
       "Category": "religion",
-      "Icon": "fascist"
+      "Icon": "clergy"
     },
     "modifiers": [
       {
@@ -10416,7 +10416,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "fascist"
+        "id": "clergy"
       }
     ]
   },
@@ -10534,12 +10534,12 @@
     "id": "prosperismIndustry",
     "type": "culture-traits",
     "displayName": "Relentless Industrialization",
-    "icon": "industrial",
+    "icon": "factory",
     "fields": {
       "Name": "prosperismIndustry",
       "Family": "idea_prosperism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "factory"
     },
     "modifiers": [
       {
@@ -10553,7 +10553,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "factory"
       }
     ]
   },
@@ -10759,12 +10759,12 @@
     "id": "traditionalismRituals",
     "type": "culture-traits",
     "displayName": "Rites of Passage",
-    "icon": "industrial",
+    "icon": "monument",
     "fields": {
       "Name": "traditionalismRituals",
       "Family": "idea_traditionalism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "monument"
     },
     "modifiers": [
       {
@@ -10778,7 +10778,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "monument"
       }
     ]
   },
@@ -10965,12 +10965,12 @@
     "id": "intellectualismScience",
     "type": "culture-traits",
     "displayName": "Scientific Pursuit",
-    "icon": "industrial",
+    "icon": "university",
     "fields": {
       "Name": "intellectualismScience",
       "Family": "idea_intellectualism",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "university"
     },
     "modifiers": [
       {
@@ -10984,7 +10984,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "university"
       }
     ]
   },
@@ -11019,12 +11019,12 @@
     "id": "diplomacyUnderstanding",
     "type": "culture-traits",
     "displayName": "Seeking Understanding",
-    "icon": "political",
+    "icon": "clergy",
     "fields": {
       "Name": "diplomacyUnderstanding",
       "Family": "diplomatic",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "clergy"
     },
     "modifiers": [
       {
@@ -11043,7 +11043,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "clergy"
       }
     ]
   },
@@ -11103,12 +11103,12 @@
     "id": "individualismSelfReliance",
     "type": "culture-traits",
     "displayName": "Self Sufficiency",
-    "icon": "cultural",
+    "icon": "corporate",
     "fields": {
       "Name": "individualismSelfReliance",
       "Family": "idea_individualism",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -11122,7 +11122,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "corporate"
       }
     ]
   },
@@ -11378,12 +11378,12 @@
     "id": "thriftySociety",
     "type": "culture-traits",
     "displayName": "Society of Commerce",
-    "icon": "political",
+    "icon": "corporate",
     "fields": {
       "Name": "thriftySociety",
       "Family": "thrifty",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "corporate"
     },
     "modifiers": [
       {
@@ -11402,7 +11402,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "corporate"
       }
     ]
   },
@@ -11870,12 +11870,12 @@
     "id": "islamSubmission",
     "type": "culture-traits",
     "displayName": "Submission to Allah",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "islamSubmission",
       "Family": "religion_islam",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -11895,7 +11895,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -11929,12 +11929,12 @@
     "id": "airDesigning",
     "type": "culture-traits",
     "displayName": "Superior Airframes",
-    "icon": "industrial",
+    "icon": "airplaneFactory",
     "fields": {
       "Name": "airDesigning",
       "Family": "militaryAirforce",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "airplaneFactory"
     },
     "modifiers": [
       {
@@ -11948,7 +11948,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "airplaneFactory"
       }
     ]
   },
@@ -12311,12 +12311,12 @@
     "id": "polygamistChaos",
     "type": "culture-traits",
     "displayName": "Thriving in Chaos",
-    "icon": "political",
+    "icon": "laborer",
     "fields": {
       "Name": "polygamistChaos",
       "Family": "polygamist",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "laborer"
     },
     "modifiers": [
       {
@@ -12330,7 +12330,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "laborer"
       }
     ]
   },
@@ -12364,12 +12364,12 @@
     "id": "christianityTithes",
     "type": "culture-traits",
     "displayName": "Tithes to the Church",
-    "icon": "political",
+    "icon": "clergy",
     "fields": {
       "Name": "christianityTithes",
       "Family": "religion_christian",
       "Category": "religion",
-      "Icon": "political"
+      "Icon": "clergy"
     },
     "modifiers": [
       {
@@ -12395,7 +12395,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "clergy"
       }
     ]
   },
@@ -12886,12 +12886,12 @@
     "id": "obliterationUnification",
     "type": "culture-traits",
     "displayName": "Ultimate Unity",
-    "icon": "cultural",
+    "icon": "bureaucracy",
     "fields": {
       "Name": "obliterationUnification",
       "Family": "idea_obliterationOfSelf",
       "Category": "idea",
-      "Icon": "cultural"
+      "Icon": "bureaucracy"
     },
     "modifiers": [
       {
@@ -12905,7 +12905,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "bureaucracy"
       }
     ]
   },
@@ -12913,12 +12913,12 @@
     "id": "traditionalismAncestors",
     "type": "culture-traits",
     "displayName": "Understanding of Ancestors",
-    "icon": "political",
+    "icon": "upperClass",
     "fields": {
       "Name": "traditionalismAncestors",
       "Family": "idea_traditionalism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "upperClass"
     },
     "modifiers": [
       {
@@ -12932,7 +12932,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "upperClass"
       }
     ]
   },
@@ -13220,12 +13220,12 @@
     "id": "prosperismAmbition",
     "type": "culture-traits",
     "displayName": "Unmatched Ambition",
-    "icon": "political",
+    "icon": "middleClass",
     "fields": {
       "Name": "prosperismAmbition",
       "Family": "idea_prosperism",
       "Category": "idea",
-      "Icon": "political"
+      "Icon": "middleClass"
     },
     "modifiers": [
       {
@@ -13239,7 +13239,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "political"
+        "id": "middleClass"
       }
     ]
   },
@@ -13404,12 +13404,12 @@
     "id": "urbanophileMonuments",
     "type": "culture-traits",
     "displayName": "Urban Monumentalism",
-    "icon": "industrial",
+    "icon": "monument",
     "fields": {
       "Name": "urbanophileMonuments",
       "Family": "urbanophile",
       "Category": "idea",
-      "Icon": "industrial"
+      "Icon": "monument"
     },
     "modifiers": [
       {
@@ -13423,7 +13423,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "industrial"
+        "id": "monument"
       }
     ]
   },

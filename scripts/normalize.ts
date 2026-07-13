@@ -446,11 +446,21 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
       .filter((modifier) => modifier.icon)
       .map((modifier) => [modifier.id, modifier.icon as string]),
   );
-  const resourceIcons = new Map(
-    entries
-      .filter((entry) => (entry.type === 'resources' || entry.type === 'deposit-resources') && entry.icon)
-      .map((entry) => [entry.id, entry.icon as string]),
-  );
+  // Icons for the entry a modifier's first target names (faction, resource,
+  // project, ...), so e.g. christianityTithes (factionLoyaltyAdd -> clergy)
+  // inherits the clergy faction icon. Earlier types win on id collisions.
+  const targetIconTypes = [
+    'resources', 'deposit-resources', 'factions', 'projects', 'situations',
+    'character-skills', 'unit-stats', 'unit-qualities', 'unit-types',
+    'battle-domains', 'industries', 'sliders', 'technology-domains',
+  ];
+  const targetIcons = new Map<string, string>();
+  for (const type of targetIconTypes) {
+    for (const entry of entries) {
+      if (entry.type !== type || !entry.icon || targetIcons.has(entry.id)) continue;
+      targetIcons.set(entry.id, entry.icon);
+    }
+  }
   const rootIcons = new Map(
     entries
       .filter((entry) => entry.type === 'culture-traits' && !entry.fields.Family && entry.icon)
@@ -464,7 +474,7 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
     const candidates = !family
       ? [entry.icon, familyIcon]
       : [
-          resourceIcons.get(firstModifier?.value1 ?? ''),
+          targetIcons.get(firstModifier?.value1 ?? ''),
           modifierIcons.get(firstModifier?.key ?? ''),
           familyIcon,
         ];

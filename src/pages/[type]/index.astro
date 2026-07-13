@@ -68,9 +68,26 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
     <div class="collection-count"><strong>{directoryCount}</strong><span>{reformGroups.length > 0 ? `${reforms.length} reforms` : factionGroups.length > 0 ? `${entries.length} factions` : 'Entries'}</span></div>
   </header>
 
+  {cultureDomains.length > 0 && (
+    <nav class="culture-index" aria-labelledby="culture-index-title">
+      <h2 id="culture-index-title">Contents</h2>
+      <ol>
+        {cultureDomains.map(({ domain, groups }) => (
+          <li>
+            <a class="culture-index-domain" href={`#culture-domain-${domain.toLowerCase()}`}>{domain}</a>
+            <ol>
+              {groups.map(({ meta }) => (
+                <li><a class="culture-index-family" href={`#trait-family-${meta.id}`}><GameIcon name={meta.icon} size={18} /><span>{meta.label}</span></a></li>
+              ))}
+            </ol>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )}
+
   <div class="collection-tools">
     <label class="filter-input"><span class="search-symbol"></span><input id="entry-filter" type="search" placeholder={`Filter ${category.pluralLabel.toLowerCase()}...`} /></label>
-    <label class="tool-select"><span class="sr-only">Filter by entry type</span><select id="entry-kind"><option value="all">All entries</option><option value="effects">With effects</option></select></label>
     <span id="visible-count">Showing {directoryCount}</span>
   </div>
 
@@ -155,10 +172,10 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
   ) : cultureDomains.length > 0 ? (
     <div class="grouped-directory culture-directory" id="entry-directory">
       {cultureDomains.map(({ domain, groups }) => (
-        <section class="culture-domain">
+        <section class="culture-domain" id={`culture-domain-${domain.toLowerCase()}`}>
           <header><p class="eyebrow">Culture Domain</p><h2>{domain}</h2></header>
           {groups.map(({ meta, entries: familyEntries }) => (
-            <section class="reform-option-group culture-family entry-group">
+            <section class="reform-option-group culture-family entry-group" id={`trait-family-${meta.id}`}>
               <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a></header>
               <div class="entry-directory">
                 {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))).map((entry) => (
@@ -192,7 +209,6 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
 
 <script>
   const filter = document.getElementById('entry-filter') as HTMLInputElement;
-  const kind = document.getElementById('entry-kind') as HTMLSelectElement;
   const rows = [...document.querySelectorAll<HTMLElement>('.directory-row')];
   const count = document.getElementById('visible-count');
   const empty = document.getElementById('empty-state');
@@ -201,8 +217,7 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
     let visible = 0;
     rows.forEach((row) => {
       const matchesText = row.dataset.search?.includes(query) ?? false;
-      const matchesKind = kind.value === 'all' || row.classList.contains('with-effects');
-      const show = matchesText && matchesKind;
+      const show = matchesText;
       row.hidden = !show;
       if (show) visible++;
     });
@@ -212,5 +227,4 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
     if (empty) empty.hidden = visible > 0;
   };
   filter?.addEventListener('input', updateRows);
-  kind?.addEventListener('change', updateRows);
 </script>
