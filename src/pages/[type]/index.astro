@@ -71,10 +71,6 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
   <div class="collection-tools">
     <label class="filter-input"><span class="search-symbol"></span><input id="entry-filter" type="search" placeholder={`Filter ${category.pluralLabel.toLowerCase()}...`} /></label>
     <label class="tool-select"><span class="sr-only">Filter by entry type</span><select id="entry-kind"><option value="all">All entries</option><option value="effects">With effects</option></select></label>
-    <div class="view-switch" aria-label="View density">
-      <button type="button" class="active" data-view="comfortable" aria-pressed="true">List</button><button type="button" data-view="compact" aria-pressed="false">Compact</button>
-    </div>
-    <label class="id-toggle"><input id="show-ids" type="checkbox" checked /> IDs</label>
     <span id="visible-count">Showing {directoryCount}</span>
   </div>
 
@@ -197,8 +193,6 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
 <script>
   const filter = document.getElementById('entry-filter') as HTMLInputElement;
   const kind = document.getElementById('entry-kind') as HTMLSelectElement;
-  const showIds = document.getElementById('show-ids') as HTMLInputElement;
-  const directory = document.getElementById('entry-directory');
   const rows = [...document.querySelectorAll<HTMLElement>('.directory-row')];
   const count = document.getElementById('visible-count');
   const empty = document.getElementById('empty-state');
@@ -219,25 +213,4 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
   };
   filter?.addEventListener('input', updateRows);
   kind?.addEventListener('change', updateRows);
-  const setIds = (visible: boolean) => {
-    document.body.classList.toggle('hide-entry-ids', !visible);
-    showIds.checked = visible;
-    localStorage.setItem('wiki-show-ids', String(visible));
-  };
-  showIds?.addEventListener('change', () => setIds(showIds.checked));
-  setIds(localStorage.getItem('wiki-show-ids') !== 'false');
-  const setView = (view: string) => {
-    document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((item) => {
-      const active = item.dataset.view === view;
-      item.classList.toggle('active', active);
-      item.setAttribute('aria-pressed', String(active));
-    });
-    directory?.classList.toggle('compact', view === 'compact');
-    directory?.querySelectorAll('.entry-directory').forEach((list) => list.classList.toggle('compact', view === 'compact'));
-    localStorage.setItem('wiki-view', view);
-  };
-  document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((button) => button.addEventListener('click', () => {
-    setView(button.dataset.view ?? 'comfortable');
-  }));
-  setView(localStorage.getItem('wiki-view') ?? 'comfortable');
 </script>

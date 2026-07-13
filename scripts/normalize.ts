@@ -21,7 +21,9 @@ import type {
 type RawRecord = Record<string, unknown>;
 
 const ICON_ALIASES: Record<string, string> = {
-  rareMetals: 'rareMetalsMine', titanium: 'titaniumMine',
+  // Entries marked (game) mirror the MiscIcons map baked into the
+  // ModernityGameState blueprint — the game's own icon-name resolution.
+  rareMetals: 'gold', titanium: 'earthMetal', // (game)
   clergy_atheist: 'atheist', clergy_christian: 'christian', clergy_communist: 'communist',
   clergy_fascist: 'fascist', clergy_hindu: 'hindu', clergy_islamic: 'islam', clergy_jewish: 'jewish',
   laborer_proletariat: 'communist', military_conscript: 'conscript', military_mercenary: 'mercenary',
@@ -32,14 +34,19 @@ const ICON_ALIASES: Record<string, string> = {
   metaverseServer: 'holonet', northernSpaceport: 'spaceport2', redSquare: 'monument',
   bioweaponSituation: 'unleashBioweaponSituation', marsSituation: 'planet',
   mechanistCoalescence_migrantSituation: 'mechanistCoalescence',
-  attack: 'smallArms0', entrenchment: 'fortifications', truck: 'logistics',
+  attack: 'smallArms0', truck: 'logistics',
   culturePower: 'cultureHex', edict: 'edictGeneric',
-  industry: 'machineParts', speed: 'moveSpeed', unrest: 'stability',
-  crisis: 'crisisProgress', alignment: 'political',
+  industry: 'machineParts', speed: 'moveSpeed', // (game)
+  unrest: 'combatPower', alignment: 'cultureCircle', // (game)
+  industrial: 'industryThroughput', breakthrough: 'piercing', // (game)
+  crisis: 'crisisProgress',
   ascendedAutomation: 'ascendedAI', ascendedDigital: 'ascendedCybernetic', ascendedMutation: 'ascendedGenetic',
-  fascism: 'fascist', harmony: 'unity', immigrationIncentive: 'edictImmigration',
-  liberal: 'civilLiberty_liberal', massDeportations: 'edictEmmigration', money: 'currency',
-  progressive: 'futurist', spending_none: 'spending_low', supply: 'logistics',
+  fascism: 'nazism', // (game)
+  harmony: 'unity', immigrationIncentive: 'edictImmigration',
+  liberal: 'western', // (game)
+  massDeportations: 'edictEmmigration', money: 'currency',
+  progressive: 'technocracy', // (game)
+  spending_none: 'spending_low', supply: 'logistics',
   diplomatic: 'diplomacy',
 };
 

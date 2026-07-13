@@ -18,6 +18,8 @@ var textureList = args.Length > 3 ? args[3] : null;
 var provider = new DefaultFileProvider(paksDir, SearchOption.TopDirectoryOnly,
     new VersionContainer(EGame.GAME_UE5_7));
 provider.MappingsContainer = new FileUsmapTypeMappingsProvider(usmapPath);
+if (Environment.GetEnvironmentVariable("CUE4_READ_SCRIPT") == "1")
+    provider.ReadScriptData = true;
 provider.Initialize();
 provider.Mount();
 
@@ -49,10 +51,12 @@ if (textureList != null)
     return;
 }
 
-string[] prefixes = [
-    "twilightModernity/Content/Blueprints/Struct/Defines/",
-    "twilightModernity/Content/Blueprints/Struct/Enum/",
-];
+// Optional override, e.g. CUE4_PREFIXES="twilightModernity/Content/Blueprints/Widgets/"
+string[] prefixes = Environment.GetEnvironmentVariable("CUE4_PREFIXES")?.Split(',')
+    ?? [
+        "twilightModernity/Content/Blueprints/Struct/Defines/",
+        "twilightModernity/Content/Blueprints/Struct/Enum/",
+    ];
 
 int ok = 0, fail = 0;
 foreach (var (path, _) in provider.Files)
@@ -61,6 +65,7 @@ foreach (var (path, _) in provider.Files)
     if (prefix == null) continue;
     if (!path.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase)) continue;
     var rel = prefix.EndsWith("Enum/") ? "Enum/" + path.Substring(prefix.Length) : path.Substring(prefix.Length);
+    if (rel.Length == 0 || rel.StartsWith('.')) rel = Path.GetFileName(path);
     var outPath = Path.Combine(outDir, Path.ChangeExtension(rel, ".json"));
     Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
     try
