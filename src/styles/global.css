@@ -211,6 +211,7 @@ code, kbd { font-family: var(--mono); }
 .culture-trait-family > header h3 { margin: 0; font-size: 16px; }
 .culture-trait-family > header .eyebrow { margin-bottom: 3px; }
 .culture-trait-family > header > a { flex: 0 0 auto; font-size: 11px; }
+.culture-trait-family .entry-directory { margin-top: 0; }
 .notice { margin: 0; padding: 14px 16px; color: var(--text-muted); background: #edf1ef; border-left: 3px solid var(--border-strong); font-size: 12px; }
 .article-aside { position: sticky; top: calc(var(--topbar) + 24px); }
 .infobox, .page-nav { margin-bottom: 24px; border-top: 3px solid var(--ink-2); }

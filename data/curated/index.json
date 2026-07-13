@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T03:56:27.625Z",
+  "generatedAt": "2026-07-13T03:59:19.820Z",
   "source": "base game defines extracted via CUE4Parse",
   "entries": {
     "ai-strategies:strategy_red": {
@@ -7049,6 +7049,7 @@
         "Name": "humanityAggression",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 0,
         "Icon": "military"
       },
       "modifiers": [
@@ -7075,6 +7076,7 @@
         "Name": "humanityPsychology",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 1,
         "Icon": "stability"
       },
       "modifiers": [
@@ -7101,6 +7103,7 @@
         "Name": "humanityAdaptability",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 2,
         "Icon": "planet"
       },
       "modifiers": [
@@ -7132,6 +7135,7 @@
         "Name": "humanityTribalism",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 3,
         "Icon": "population"
       },
       "modifiers": [
@@ -7158,6 +7162,7 @@
         "Name": "humanityPolitics",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 4,
         "Icon": "stability"
       },
       "modifiers": [
@@ -7184,6 +7189,7 @@
         "Name": "humanityInnovation",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 5,
         "Icon": "education"
       },
       "modifiers": [
@@ -7210,6 +7216,7 @@
         "Name": "humanitySupremacy",
         "Family": "species_human",
         "Category": "species",
+        "IdeaIndex": 6,
         "Icon": "morale"
       },
       "modifiers": [
@@ -7301,6 +7308,7 @@
         "Name": "roboticComputation",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -7327,6 +7335,7 @@
         "Name": "roboticAnalytics",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 1,
         "Icon": "currency"
       },
       "modifiers": [
@@ -7353,6 +7362,7 @@
         "Name": "roboticWorkforce",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 2,
         "Icon": "population"
       },
       "modifiers": [
@@ -7379,6 +7389,7 @@
         "Name": "roboticMilitary",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 3,
         "Icon": "military"
       },
       "modifiers": [
@@ -7415,6 +7426,7 @@
         "Name": "roboticMechanics",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 4,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -7441,6 +7453,7 @@
         "Name": "roboticEnigmatics",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 5,
         "Icon": "research"
       },
       "modifiers": [
@@ -7468,6 +7481,7 @@
         "Name": "roboticMastery",
         "Family": "species_robotic",
         "Category": "species",
+        "IdeaIndex": 6,
         "Icon": "stability"
       },
       "modifiers": [
@@ -7548,6 +7562,7 @@
         "Name": "christianityPiety",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -7574,6 +7589,7 @@
         "Name": "christianityDevotion",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -7600,6 +7616,7 @@
         "Name": "christianityWorship",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -7626,6 +7643,7 @@
         "Name": "christianityUnity",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "education"
       },
       "modifiers": [
@@ -7657,6 +7675,7 @@
         "Name": "christianityTithes",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "clergy"
       },
       "modifiers": [
@@ -7696,6 +7715,7 @@
         "Name": "christianityConversions",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "population"
       },
       "modifiers": [
@@ -7722,6 +7742,7 @@
         "Name": "christianityDeusVult",
         "Family": "religion_christian",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "stability"
       },
       "modifiers": [
@@ -7808,6 +7829,7 @@
         "Name": "islamQuran",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "morale"
       },
       "modifiers": [
@@ -7834,6 +7856,7 @@
         "Name": "islamFanaticism",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "clergy"
       },
       "modifiers": [
@@ -7861,6 +7884,7 @@
         "Name": "islamSubmission",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -7894,6 +7918,7 @@
         "Name": "islamWorship",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "culture"
       },
       "modifiers": [
@@ -7920,6 +7945,7 @@
         "Name": "islamTerror",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -7957,6 +7983,7 @@
         "Name": "islamUnification",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "speed"
       },
       "modifiers": [
@@ -7983,6 +8010,7 @@
         "Name": "islamGlobalIntifada",
         "Family": "religion_islam",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -8054,6 +8082,7 @@
         "Name": "judaismUsury",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "industry"
       },
       "modifiers": [
@@ -8080,6 +8109,7 @@
         "Name": "judaismConviction",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "clergy"
       },
       "modifiers": [
@@ -8113,6 +8143,7 @@
         "Name": "judaismMonotheism",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "culture"
       },
       "modifiers": [
@@ -8144,6 +8175,7 @@
         "Name": "judaismOrganization",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "morale"
       },
       "modifiers": [
@@ -8170,6 +8202,7 @@
         "Name": "judaismInternationalism",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "diplomacyCapacity"
       },
       "modifiers": [
@@ -8197,6 +8230,7 @@
         "Name": "judaismAncients",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "culture"
       },
       "modifiers": [
@@ -8223,6 +8257,7 @@
         "Name": "judaismChosen",
         "Family": "religion_jewish",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -8299,6 +8334,7 @@
         "Name": "marxismEquity",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -8326,6 +8362,7 @@
         "Name": "marxismPraxis",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "logistics"
       },
       "modifiers": [
@@ -8352,6 +8389,7 @@
         "Name": "marxismRevolution",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "culture"
       },
       "modifiers": [
@@ -8383,6 +8421,7 @@
         "Name": "marxismClassWar",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "laborer"
       },
       "modifiers": [
@@ -8416,6 +8455,7 @@
         "Name": "marxismInternationale",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "diplomacyCapacity"
       },
       "modifiers": [
@@ -8443,6 +8483,7 @@
         "Name": "marxismMaterialism",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "education"
       },
       "modifiers": [
@@ -8475,6 +8516,7 @@
         "Name": "marxismStruggleSession",
         "Family": "religion_marxist",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "morale"
       },
       "modifiers": [
@@ -8548,6 +8590,7 @@
         "Name": "occultRitual",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "morale"
       },
       "modifiers": [
@@ -8574,6 +8617,7 @@
         "Name": "occultMagic",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -8600,6 +8644,7 @@
         "Name": "occultEvil",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -8627,6 +8672,7 @@
         "Name": "occultElitism",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -8654,6 +8700,7 @@
         "Name": "occultIdeology",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "logistics"
       },
       "modifiers": [
@@ -8680,6 +8727,7 @@
         "Name": "occultUnion",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "culture"
       },
       "modifiers": [
@@ -8706,6 +8754,7 @@
         "Name": "occultForbiddenKnowledge",
         "Family": "religion_occult",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "education"
       },
       "modifiers": [
@@ -8785,6 +8834,7 @@
         "Name": "atheistSkepticism",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -8811,6 +8861,7 @@
         "Name": "atheistMaterialism",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "industry"
       },
       "modifiers": [
@@ -8838,6 +8889,7 @@
         "Name": "atheistPolitics",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -8865,6 +8917,7 @@
         "Name": "atheistWorldliness",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "consumerGoods"
       },
       "modifiers": [
@@ -8892,6 +8945,7 @@
         "Name": "atheistEducation",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "education"
       },
       "modifiers": [
@@ -8918,6 +8972,7 @@
         "Name": "atheistHumanism",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "political"
       },
       "modifiers": [
@@ -8944,6 +8999,7 @@
         "Name": "atheistScientism",
         "Family": "religion_atheist",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "research"
       },
       "modifiers": [
@@ -9018,6 +9074,7 @@
         "Name": "hegelianWorldview",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "population"
       },
       "modifiers": [
@@ -9044,6 +9101,7 @@
         "Name": "hegelianPolitics",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "clergy"
       },
       "modifiers": [
@@ -9071,6 +9129,7 @@
         "Name": "hegelianSpiritualism",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "culture"
       },
       "modifiers": [
@@ -9097,6 +9156,7 @@
         "Name": "hegelianDialectics",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "education"
       },
       "modifiers": [
@@ -9123,6 +9183,7 @@
         "Name": "hegelianCulture",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "population"
       },
       "modifiers": [
@@ -9149,6 +9210,7 @@
         "Name": "hegelianSupremacy",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "culture"
       },
       "modifiers": [
@@ -9175,6 +9237,7 @@
         "Name": "hegelianMastery",
         "Family": "religion_hegelian",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "morale"
       },
       "modifiers": [
@@ -9255,6 +9318,7 @@
         "Name": "hinduismReincarnation",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 0,
         "Icon": "culture"
       },
       "modifiers": [
@@ -9281,6 +9345,7 @@
         "Name": "hinduismCastes",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 1,
         "Icon": "stability"
       },
       "modifiers": [
@@ -9313,6 +9378,7 @@
         "Name": "hinduismCommunity",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -9339,6 +9405,7 @@
         "Name": "hinduismSpiritualism",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 3,
         "Icon": "culture"
       },
       "modifiers": [
@@ -9365,6 +9432,7 @@
         "Name": "hinduismCulture",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 4,
         "Icon": "diplomacyCapacity"
       },
       "modifiers": [
@@ -9392,6 +9460,7 @@
         "Name": "hinduismPolytheism",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 5,
         "Icon": "colony"
       },
       "modifiers": [
@@ -9418,6 +9487,7 @@
         "Name": "hinduismMastery",
         "Family": "religion_hindu",
         "Category": "religion",
+        "IdeaIndex": 6,
         "Icon": "morale"
       },
       "modifiers": [
@@ -9492,6 +9562,7 @@
         "Name": "moralismVirtue",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "stability"
       },
       "modifiers": [
@@ -9523,6 +9594,7 @@
         "Name": "moralismDiscipline",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -9549,6 +9621,7 @@
         "Name": "moralismRighteousness",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "culture"
       },
       "modifiers": [
@@ -9581,6 +9654,7 @@
         "Name": "moralismJustWar",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -9613,6 +9687,7 @@
         "Name": "moralismPiety",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "monument"
       },
       "modifiers": [
@@ -9645,6 +9720,7 @@
         "Name": "moralismOrder",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "political"
       },
       "modifiers": [
@@ -9676,6 +9752,7 @@
         "Name": "moralismCrusade",
         "Family": "idea_moralism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "military"
       },
       "modifiers": [
@@ -9749,6 +9826,7 @@
         "Name": "prosperismGrowth",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "industry"
       },
       "modifiers": [
@@ -9782,6 +9860,7 @@
         "Name": "prosperismWealth",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "industry"
       },
       "modifiers": [
@@ -9808,6 +9887,7 @@
         "Name": "prosperismOpportunity",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "population"
       },
       "modifiers": [
@@ -9839,6 +9919,7 @@
         "Name": "prosperismAmbition",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -9866,6 +9947,7 @@
         "Name": "prosperismIndustry",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "factory"
       },
       "modifiers": [
@@ -9893,6 +9975,7 @@
         "Name": "prosperismDevelopment",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "colony"
       },
       "modifiers": [
@@ -9919,6 +10002,7 @@
         "Name": "prosperismProgress",
         "Family": "idea_prosperism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -9987,6 +10071,7 @@
         "Name": "individualismFreedom",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "population"
       },
       "modifiers": [
@@ -10018,6 +10103,7 @@
         "Name": "individualismInitiative",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "consumerGoodsFactory"
       },
       "modifiers": [
@@ -10045,6 +10131,7 @@
         "Name": "individualismInnovation",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "research"
       },
       "modifiers": [
@@ -10071,6 +10158,7 @@
         "Name": "individualismAutonomy",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -10098,6 +10186,7 @@
         "Name": "individualismEntrepreneurship",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "commerce"
       },
       "modifiers": [
@@ -10125,6 +10214,7 @@
         "Name": "individualismLiberty",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "enactDecision"
       },
       "modifiers": [
@@ -10151,6 +10241,7 @@
         "Name": "individualismSelfReliance",
         "Family": "idea_individualism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -10220,6 +10311,7 @@
         "Name": "intellectualismReason",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "education"
       },
       "modifiers": [
@@ -10246,6 +10338,7 @@
         "Name": "intellectualismScience",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "university"
       },
       "modifiers": [
@@ -10273,6 +10366,7 @@
         "Name": "intellectualismProgress",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "research"
       },
       "modifiers": [
@@ -10299,6 +10393,7 @@
         "Name": "intellectualismElite",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -10332,6 +10427,7 @@
         "Name": "intellectualismEnlightenment",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "education"
       },
       "modifiers": [
@@ -10358,6 +10454,7 @@
         "Name": "intellectualismAcademia",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "leader"
       },
       "modifiers": [
@@ -10384,6 +10481,7 @@
         "Name": "intellectualismMeritocracy",
         "Family": "idea_intellectualism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -10453,6 +10551,7 @@
         "Name": "utopianismVision",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "culture"
       },
       "modifiers": [
@@ -10479,6 +10578,7 @@
         "Name": "utopianismReform",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "enactDecision"
       },
       "modifiers": [
@@ -10505,6 +10605,7 @@
         "Name": "utopianismEquality",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "laborer"
       },
       "modifiers": [
@@ -10537,6 +10638,7 @@
         "Name": "utopianismZeal",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "morale"
       },
       "modifiers": [
@@ -10563,6 +10665,7 @@
         "Name": "utopianismDreams",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -10589,6 +10692,7 @@
         "Name": "utopianismSocialism",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -10615,6 +10719,7 @@
         "Name": "utopianismCollectivism",
         "Family": "idea_utopianism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "laborer"
       },
       "modifiers": [
@@ -10685,6 +10790,7 @@
         "Name": "guiltReparations",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "currency"
       },
       "modifiers": [
@@ -10716,6 +10822,7 @@
         "Name": "guiltSocialPrograms",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -10747,6 +10854,7 @@
         "Name": "guiltAssimilation",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "population"
       },
       "modifiers": [
@@ -10778,6 +10886,7 @@
         "Name": "guiltAtonement",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -10810,6 +10919,7 @@
         "Name": "guiltCompensation",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -10837,6 +10947,7 @@
         "Name": "guiltDiversity",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "population"
       },
       "modifiers": [
@@ -10863,6 +10974,7 @@
         "Name": "guiltWelfare",
         "Family": "idea_guiltComplex",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "population"
       },
       "modifiers": [
@@ -10926,6 +11038,7 @@
         "Name": "transformationProgress",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -10952,6 +11065,7 @@
         "Name": "transformationFuturism",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "university"
       },
       "modifiers": [
@@ -10979,6 +11093,7 @@
         "Name": "transformationVision",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -11005,6 +11120,7 @@
         "Name": "transformationInnovation",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "enactDecision"
       },
       "modifiers": [
@@ -11031,6 +11147,7 @@
         "Name": "transformationEvolution",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "education"
       },
       "modifiers": [
@@ -11057,6 +11174,7 @@
         "Name": "transformationChange",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "stability"
       },
       "modifiers": [
@@ -11083,6 +11201,7 @@
         "Name": "transformationNewWorld",
         "Family": "idea_transformationism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "colony"
       },
       "modifiers": [
@@ -11153,6 +11272,7 @@
         "Name": "obliterationCollective",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "culture"
       },
       "modifiers": [
@@ -11184,6 +11304,7 @@
         "Name": "obliterationConformity",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "population"
       },
       "modifiers": [
@@ -11210,6 +11331,7 @@
         "Name": "obliterationObedience",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -11241,6 +11363,7 @@
         "Name": "obliterationDevotion",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "morale"
       },
       "modifiers": [
@@ -11267,6 +11390,7 @@
         "Name": "obliterationSubmission",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "political"
       },
       "modifiers": [
@@ -11293,6 +11417,7 @@
         "Name": "obliterationSacrifice",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -11319,6 +11444,7 @@
         "Name": "obliterationUnification",
         "Family": "idea_obliterationOfSelf",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -11388,6 +11514,7 @@
         "Name": "statismControl",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "political"
       },
       "modifiers": [
@@ -11414,6 +11541,7 @@
         "Name": "statismBureaucracy",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -11446,6 +11574,7 @@
         "Name": "statismOrder",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -11472,6 +11601,7 @@
         "Name": "statismMobilization",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -11498,6 +11628,7 @@
         "Name": "statismPlanning",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industry"
       },
       "modifiers": [
@@ -11525,6 +11656,7 @@
         "Name": "statismAuthority",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -11552,6 +11684,7 @@
         "Name": "statismCentralization",
         "Family": "idea_statism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "logistics"
       },
       "modifiers": [
@@ -11626,6 +11759,7 @@
         "Name": "tribalismWarriors",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -11657,6 +11791,7 @@
         "Name": "tribalismKinship",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "culture"
       },
       "modifiers": [
@@ -11688,6 +11823,7 @@
         "Name": "tribalismFerocity",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -11715,6 +11851,7 @@
         "Name": "tribalismTradition",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -11746,6 +11883,7 @@
         "Name": "tribalismRaiding",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "speed"
       },
       "modifiers": [
@@ -11772,6 +11910,7 @@
         "Name": "tribalismLoyalty",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -11799,6 +11938,7 @@
         "Name": "tribalismClans",
         "Family": "idea_tribalism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -11873,6 +12013,7 @@
         "Name": "traditionalismContinuity",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "stability"
       },
       "modifiers": [
@@ -11899,6 +12040,7 @@
         "Name": "traditionalismHierarchy",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -11931,6 +12073,7 @@
         "Name": "traditionalismCulture",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "culture"
       },
       "modifiers": [
@@ -11957,6 +12100,7 @@
         "Name": "traditionalismConservatism",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -11989,6 +12133,7 @@
         "Name": "traditionalismAncestors",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -12016,6 +12161,7 @@
         "Name": "traditionalismRituals",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "monument"
       },
       "modifiers": [
@@ -12043,6 +12189,7 @@
         "Name": "traditionalismStability",
         "Family": "idea_traditionalism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "stability"
       },
       "modifiers": [
@@ -12118,6 +12265,7 @@
         "Name": "stoicismResilience",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "military"
       },
       "modifiers": [
@@ -12145,6 +12293,7 @@
         "Name": "stoicismDiscipline",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -12171,6 +12320,7 @@
         "Name": "stoicismEndurance",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -12202,6 +12352,7 @@
         "Name": "stoicismPerseverance",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -12233,6 +12384,7 @@
         "Name": "stoicismFortitude",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "stability"
       },
       "modifiers": [
@@ -12259,6 +12411,7 @@
         "Name": "stoicismStolidness",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -12285,6 +12438,7 @@
         "Name": "stoicismDefiance",
         "Family": "idea_stoicism",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "defense"
       },
       "modifiers": [
@@ -12353,6 +12507,7 @@
         "Name": "nuclearFamilyCohesion",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -12379,6 +12534,7 @@
         "Name": "nuclearFamilyProsperity",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "industry"
       },
       "modifiers": [
@@ -12405,6 +12561,7 @@
         "Name": "nuclearFamilySociety",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "political"
       },
       "modifiers": [
@@ -12431,6 +12588,7 @@
         "Name": "nuclearFamilyResourceful",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "population"
       },
       "modifiers": [
@@ -12457,6 +12615,7 @@
         "Name": "nuclearFamilyTradition",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "culture"
       },
       "modifiers": [
@@ -12483,6 +12642,7 @@
         "Name": "nuclearFamilyCommunity",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -12509,6 +12669,7 @@
         "Name": "nuclearFamilyMastery",
         "Family": "nuclearFamily",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "culture"
       },
       "modifiers": [
@@ -12572,6 +12733,7 @@
         "Name": "explorersDaring",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "leader"
       },
       "modifiers": [
@@ -12598,6 +12760,7 @@
         "Name": "explorersAdventure",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "population"
       },
       "modifiers": [
@@ -12629,6 +12792,7 @@
         "Name": "explorersInterplanetary",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "colony"
       },
       "modifiers": [
@@ -12655,6 +12819,7 @@
         "Name": "explorersColonization",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "spaceCapacity"
       },
       "modifiers": [
@@ -12682,6 +12847,7 @@
         "Name": "explorersAdvancement",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "morale"
       },
       "modifiers": [
@@ -12709,6 +12875,7 @@
         "Name": "explorersEmpire",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "currency"
       },
       "modifiers": [
@@ -12735,6 +12902,7 @@
         "Name": "explorersMastery",
         "Family": "frontierSpirit",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "cultural"
       },
       "modifiers": [
@@ -12815,6 +12983,7 @@
         "Name": "firearmsTraining",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -12841,6 +13010,7 @@
         "Name": "firearmsConsumption",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "industry"
       },
       "modifiers": [
@@ -12868,6 +13038,7 @@
         "Name": "firearmsResistance",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -12899,6 +13070,7 @@
         "Name": "firearmsPractice",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "military"
       },
       "modifiers": [
@@ -12925,6 +13097,7 @@
         "Name": "firearmsOrganization",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "morale"
       },
       "modifiers": [
@@ -12952,6 +13125,7 @@
         "Name": "firearmsConscription",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -12978,6 +13152,7 @@
         "Name": "firearmsMastery",
         "Family": "firearmAffinity",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "stability"
       },
       "modifiers": [
@@ -13053,6 +13228,7 @@
         "Name": "consumersCommerce",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "currency"
       },
       "modifiers": [
@@ -13079,6 +13255,7 @@
         "Name": "consumersPolitics",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "education"
       },
       "modifiers": [
@@ -13111,6 +13288,7 @@
         "Name": "consumersEconomy",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -13138,6 +13316,7 @@
         "Name": "consumersBreadAndCircus",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "laborer"
       },
       "modifiers": [
@@ -13171,6 +13350,7 @@
         "Name": "consumersExport",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -13197,6 +13377,7 @@
         "Name": "consumersInnovation",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "political"
       },
       "modifiers": [
@@ -13223,6 +13404,7 @@
         "Name": "consumersMastery",
         "Family": "consumerCulture",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "consumerGoods"
       },
       "modifiers": [
@@ -13292,6 +13474,7 @@
         "Name": "passivistEthics",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -13318,6 +13501,7 @@
         "Name": "passivistPlacation",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -13350,6 +13534,7 @@
         "Name": "passivistCommunalism",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "population"
       },
       "modifiers": [
@@ -13381,6 +13566,7 @@
         "Name": "passivistPolitics",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -13414,6 +13600,7 @@
         "Name": "passivistDefense",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -13447,6 +13634,7 @@
         "Name": "passivistRhetoric",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "culture"
       },
       "modifiers": [
@@ -13473,6 +13661,7 @@
         "Name": "passivistMastery",
         "Family": "passivist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "political"
       },
       "modifiers": [
@@ -13552,6 +13741,7 @@
         "Name": "assimilationistCulture",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "population"
       },
       "modifiers": [
@@ -13578,6 +13768,7 @@
         "Name": "assimilationistPolitical",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "political"
       },
       "modifiers": [
@@ -13604,6 +13795,7 @@
         "Name": "assimilationistAutonomy",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "separatist"
       },
       "modifiers": [
@@ -13631,6 +13823,7 @@
         "Name": "assimilationistControl",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "political"
       },
       "modifiers": [
@@ -13657,6 +13850,7 @@
         "Name": "assimilationistEthics",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industry"
       },
       "modifiers": [
@@ -13690,6 +13884,7 @@
         "Name": "assimilationistMilitary",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -13716,6 +13911,7 @@
         "Name": "assimilationistMastery",
         "Family": "assimilationist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "population"
       },
       "modifiers": [
@@ -13795,6 +13991,7 @@
         "Name": "insularSuperiority",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "population"
       },
       "modifiers": [
@@ -13826,6 +14023,7 @@
         "Name": "insularIsolation",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -13857,6 +14055,7 @@
         "Name": "insularUnity",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "education"
       },
       "modifiers": [
@@ -13888,6 +14087,7 @@
         "Name": "insularPolitics",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -13920,6 +14120,7 @@
         "Name": "insularTraditions",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "population"
       },
       "modifiers": [
@@ -13946,6 +14147,7 @@
         "Name": "insularAdaption",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -13972,6 +14174,7 @@
         "Name": "insularMastery",
         "Family": "insular",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "logistics"
       },
       "modifiers": [
@@ -14047,6 +14250,7 @@
         "Name": "urbanophileInfrastructure",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -14073,6 +14277,7 @@
         "Name": "urbanophilePopulation",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "colony"
       },
       "modifiers": [
@@ -14099,6 +14304,7 @@
         "Name": "urbanophileConstruction",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "infrastructure"
       },
       "modifiers": [
@@ -14126,6 +14332,7 @@
         "Name": "urbanophileMonuments",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "monument"
       },
       "modifiers": [
@@ -14153,6 +14360,7 @@
         "Name": "urbanophileOrganization",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "political"
       },
       "modifiers": [
@@ -14179,6 +14387,7 @@
         "Name": "urbanophileGrowth",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "steel"
       },
       "modifiers": [
@@ -14206,6 +14415,7 @@
         "Name": "urbanophileMastery",
         "Family": "urbanophile",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -14274,6 +14484,7 @@
         "Name": "pridefulArrogance",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -14306,6 +14517,7 @@
         "Name": "pridefulAmbition",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -14332,6 +14544,7 @@
         "Name": "pridefulOrchestration",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "charisma"
       },
       "modifiers": [
@@ -14359,6 +14572,7 @@
         "Name": "pridefulUnity",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "culture"
       },
       "modifiers": [
@@ -14385,6 +14599,7 @@
         "Name": "pridefulDictation",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "political"
       },
       "modifiers": [
@@ -14411,6 +14626,7 @@
         "Name": "pridefulAggression",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -14437,6 +14653,7 @@
         "Name": "pridefulMastery",
         "Family": "prideful",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "enactDecision"
       },
       "modifiers": [
@@ -14505,6 +14722,7 @@
         "Name": "robophileRobotics",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -14532,6 +14750,7 @@
         "Name": "robophileTechnicians",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "education"
       },
       "modifiers": [
@@ -14558,6 +14777,7 @@
         "Name": "robophileMechanism",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -14585,6 +14805,7 @@
         "Name": "robophileIndustry",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "robotFactory"
       },
       "modifiers": [
@@ -14612,6 +14833,7 @@
         "Name": "robophileConstruction",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -14638,6 +14860,7 @@
         "Name": "robophileArmy",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "robots"
       },
       "modifiers": [
@@ -14665,6 +14888,7 @@
         "Name": "robophileMastery",
         "Family": "robophile",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "robots"
       },
       "modifiers": [
@@ -14729,6 +14953,7 @@
         "Name": "eugenicistResearch",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -14756,6 +14981,7 @@
         "Name": "eugenicistBiologists",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "education"
       },
       "modifiers": [
@@ -14782,6 +15008,7 @@
         "Name": "eugenicistPolitics",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -14809,6 +15036,7 @@
         "Name": "eugenicistIndustry",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "geneticMaterialFactory"
       },
       "modifiers": [
@@ -14836,6 +15064,7 @@
         "Name": "eugenicistManipulation",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "population"
       },
       "modifiers": [
@@ -14862,6 +15091,7 @@
         "Name": "eugenicistArmy",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "geneticMaterial"
       },
       "modifiers": [
@@ -14889,6 +15119,7 @@
         "Name": "eugenicistMastery",
         "Family": "eugenicist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "geneticMaterial"
       },
       "modifiers": [
@@ -14958,6 +15189,7 @@
         "Name": "irridentistExpansion",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -14984,6 +15216,7 @@
         "Name": "irridentistAdministration",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "political"
       },
       "modifiers": [
@@ -15010,6 +15243,7 @@
         "Name": "irridentistDiplomacy",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -15042,6 +15276,7 @@
         "Name": "irridentistColonization",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "colony"
       },
       "modifiers": [
@@ -15068,6 +15303,7 @@
         "Name": "irridentistCulture",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "culture"
       },
       "modifiers": [
@@ -15099,6 +15335,7 @@
         "Name": "irridentistUnification",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "stability"
       },
       "modifiers": [
@@ -15125,6 +15362,7 @@
         "Name": "irridentistMastery",
         "Family": "irridentist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -15193,6 +15431,7 @@
         "Name": "isolationistNationalism",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "culture"
       },
       "modifiers": [
@@ -15219,6 +15458,7 @@
         "Name": "isolationistInsularity",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "population"
       },
       "modifiers": [
@@ -15245,6 +15485,7 @@
         "Name": "isolationistDefense",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -15271,6 +15512,7 @@
         "Name": "isolationistIntrospection",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "education"
       },
       "modifiers": [
@@ -15297,6 +15539,7 @@
         "Name": "isolationistUpwardConstruction",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -15323,6 +15566,7 @@
         "Name": "isolationistUnification",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -15349,6 +15593,7 @@
         "Name": "isolationistMastery",
         "Family": "isolationist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "stability"
       },
       "modifiers": [
@@ -15417,6 +15662,7 @@
         "Name": "mandateObligations",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "industry"
       },
       "modifiers": [
@@ -15443,6 +15689,7 @@
         "Name": "mandateSuperiority",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "political"
       },
       "modifiers": [
@@ -15474,6 +15721,7 @@
         "Name": "mandateEconomy",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -15500,6 +15748,7 @@
         "Name": "mandatePolitics",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -15527,6 +15776,7 @@
         "Name": "mandateCommand",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -15554,6 +15804,7 @@
         "Name": "mandateProsperity",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -15580,6 +15831,7 @@
         "Name": "mandateMastery",
         "Family": "mandateOfHeaven",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "defense"
       },
       "modifiers": [
@@ -15655,6 +15907,7 @@
         "Name": "socialContractSociety",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "stability"
       },
       "modifiers": [
@@ -15681,6 +15934,7 @@
         "Name": "socialContractLaw",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "bureaucracy"
       },
       "modifiers": [
@@ -15708,6 +15962,7 @@
         "Name": "socialContractPolitics",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -15735,6 +15990,7 @@
         "Name": "socialContractStatism",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "culture"
       },
       "modifiers": [
@@ -15761,6 +16017,7 @@
         "Name": "socialContractControl",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "morale"
       },
       "modifiers": [
@@ -15787,6 +16044,7 @@
         "Name": "socialContractOrganization",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -15813,6 +16071,7 @@
         "Name": "socialContractMastery",
         "Family": "socialContract",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "enactDecision"
       },
       "modifiers": [
@@ -15892,6 +16151,7 @@
         "Name": "polygamistChaos",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "laborer"
       },
       "modifiers": [
@@ -15919,6 +16179,7 @@
         "Name": "polygamistFamily",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "population"
       },
       "modifiers": [
@@ -15945,6 +16206,7 @@
         "Name": "polygamistManagement",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -15972,6 +16234,7 @@
         "Name": "polygamistHierarchy",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -15998,6 +16261,7 @@
         "Name": "polygamistSociety",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "unrest"
       },
       "modifiers": [
@@ -16024,6 +16288,7 @@
         "Name": "polygamistPsychology",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industry"
       },
       "modifiers": [
@@ -16050,6 +16315,7 @@
         "Name": "polygamistMastery",
         "Family": "polygamist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "culture"
       },
       "modifiers": [
@@ -16123,6 +16389,7 @@
         "Name": "easygoingCulture",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "culture"
       },
       "modifiers": [
@@ -16149,6 +16416,7 @@
         "Name": "easygoingCarefree",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "population"
       },
       "modifiers": [
@@ -16175,6 +16443,7 @@
         "Name": "easygoingComplacency",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "political"
       },
       "modifiers": [
@@ -16201,6 +16470,7 @@
         "Name": "easygoingAsceticism",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "industry"
       },
       "modifiers": [
@@ -16232,6 +16502,7 @@
         "Name": "easygoingPeace",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -16258,6 +16529,7 @@
         "Name": "easygoingWorldview",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "diplomacyCapacity"
       },
       "modifiers": [
@@ -16285,6 +16557,7 @@
         "Name": "easygoingMastery",
         "Family": "easygoing",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "population"
       },
       "modifiers": [
@@ -16363,6 +16636,7 @@
         "Name": "diligentExperience",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "leader"
       },
       "modifiers": [
@@ -16389,6 +16663,7 @@
         "Name": "diligentWorkEthic",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "currency"
       },
       "modifiers": [
@@ -16415,6 +16690,7 @@
         "Name": "diligentLeadership",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "management"
       },
       "modifiers": [
@@ -16442,6 +16718,7 @@
         "Name": "diligentWorkflow",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "education"
       },
       "modifiers": [
@@ -16468,6 +16745,7 @@
         "Name": "diligentEntrepreneurship",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -16495,6 +16773,7 @@
         "Name": "diligentConstruction",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -16521,6 +16800,7 @@
         "Name": "diligentMastery",
         "Family": "diligent",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "experience"
       },
       "modifiers": [
@@ -16599,6 +16879,7 @@
         "Name": "ludditeCulture",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -16625,6 +16906,7 @@
         "Name": "ludditeCrusade",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -16651,6 +16933,7 @@
         "Name": "ludditePurity",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "population"
       },
       "modifiers": [
@@ -16677,6 +16960,7 @@
         "Name": "ludditeImprovisation",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -16703,6 +16987,7 @@
         "Name": "ludditePower",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "stability"
       },
       "modifiers": [
@@ -16729,6 +17014,7 @@
         "Name": "ludditeSupremacy",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "morale"
       },
       "modifiers": [
@@ -16755,6 +17041,7 @@
         "Name": "ludditeMastery",
         "Family": "luddite",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "research"
       },
       "modifiers": [
@@ -16828,6 +17115,7 @@
         "Name": "monumentalistConstruction",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -16854,6 +17142,7 @@
         "Name": "monumentalistExpansion",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "infrastructure"
       },
       "modifiers": [
@@ -16881,6 +17170,7 @@
         "Name": "monumentalistIndustry",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "industry"
       },
       "modifiers": [
@@ -16908,6 +17198,7 @@
         "Name": "monumentalistInfrastructure",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "infrastructure"
       },
       "modifiers": [
@@ -16935,6 +17226,7 @@
         "Name": "monumentalistOrganization",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "culture"
       },
       "modifiers": [
@@ -16961,6 +17253,7 @@
         "Name": "moumentalistPsychology",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -16988,6 +17281,7 @@
         "Name": "monumentalistMastery",
         "Family": "monumentalist",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -17046,6 +17340,7 @@
         "Name": "offensiveSupply",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "speed"
       },
       "modifiers": [
@@ -17072,6 +17367,7 @@
         "Name": "offensiveAttack",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -17098,6 +17394,7 @@
         "Name": "offensiveSieges",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -17124,6 +17421,7 @@
         "Name": "offensiveTraining",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "strategy"
       },
       "modifiers": [
@@ -17151,6 +17449,7 @@
         "Name": "offensivePersistence",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "defense"
       },
       "modifiers": [
@@ -17177,6 +17476,7 @@
         "Name": "offensiveLegions",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -17208,6 +17508,7 @@
         "Name": "offensiveMastery",
         "Family": "militaristOffensive",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "military"
       },
       "modifiers": [
@@ -17273,6 +17574,7 @@
         "Name": "defensiveFortification",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "fortifications"
       },
       "modifiers": [
@@ -17300,6 +17602,7 @@
         "Name": "defensiveResistance",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -17326,6 +17629,7 @@
         "Name": "defensivePsychology",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -17352,6 +17656,7 @@
         "Name": "defensiveBattlements",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "military"
       },
       "modifiers": [
@@ -17379,6 +17684,7 @@
         "Name": "defensiveUnits",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "morale"
       },
       "modifiers": [
@@ -17405,6 +17711,7 @@
         "Name": "defensiveMilitaryIndustry",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military liason"
       },
       "modifiers": [
@@ -17432,6 +17739,7 @@
         "Name": "defensiveMastery",
         "Family": "militaristDefensive",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "leader"
       },
       "modifiers": [
@@ -17507,6 +17815,7 @@
         "Name": "aristocraticLoyalty",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "upperClass"
       },
       "modifiers": [
@@ -17534,6 +17843,7 @@
         "Name": "aristocraticMilitary",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -17561,6 +17871,7 @@
         "Name": "aristocraticAmbition",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "industry"
       },
       "modifiers": [
@@ -17588,6 +17899,7 @@
         "Name": "aristocraticLeadership",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "leader"
       },
       "modifiers": [
@@ -17614,6 +17926,7 @@
         "Name": "aristocraticCulture",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "population"
       },
       "modifiers": [
@@ -17640,6 +17953,7 @@
         "Name": "aristocraticEconomics",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "leader"
       },
       "modifiers": [
@@ -17671,6 +17985,7 @@
         "Name": "aristocraticSupremacy",
         "Family": "aristocratic",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "culture"
       },
       "modifiers": [
@@ -17745,6 +18060,7 @@
         "Name": "plutocraticMerit",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "research"
       },
       "modifiers": [
@@ -17771,6 +18087,7 @@
         "Name": "plutocraticMechanics",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -17803,6 +18120,7 @@
         "Name": "plutocraticMaterialism",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "consumerGoodsFactory"
       },
       "modifiers": [
@@ -17830,6 +18148,7 @@
         "Name": "plutocraticFinancing",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -17856,6 +18175,7 @@
         "Name": "plutocraticInvestment",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -17882,6 +18202,7 @@
         "Name": "plutocraticLeadership",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "defense"
       },
       "modifiers": [
@@ -17908,6 +18229,7 @@
         "Name": "plutocraticSupremacy",
         "Family": "plutocratic",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "education"
       },
       "modifiers": [
@@ -17976,6 +18298,7 @@
         "Name": "innovativeResearch",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "education"
       },
       "modifiers": [
@@ -18002,6 +18325,7 @@
         "Name": "innovativeFunding",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "university"
       },
       "modifiers": [
@@ -18035,6 +18359,7 @@
         "Name": "innovativeEngineering",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -18061,6 +18386,7 @@
         "Name": "innovativeLeadership",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "leader"
       },
       "modifiers": [
@@ -18087,6 +18413,7 @@
         "Name": "innovativeStrategy",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "experience"
       },
       "modifiers": [
@@ -18125,6 +18452,7 @@
         "Name": "innovativeAdministration",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "political"
       },
       "modifiers": [
@@ -18151,6 +18479,7 @@
         "Name": "innovativeSupremacy",
         "Family": "innovative",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "research"
       },
       "modifiers": [
@@ -18208,6 +18537,7 @@
         "Name": "qualityDiscipline",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "military"
       },
       "modifiers": [
@@ -18234,6 +18564,7 @@
         "Name": "qualityOrganization",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "experience"
       },
       "modifiers": [
@@ -18260,6 +18591,7 @@
         "Name": "qualityTraining",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -18286,6 +18618,7 @@
         "Name": "qualityElitism",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -18317,6 +18650,7 @@
         "Name": "qualityCommand",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "leader"
       },
       "modifiers": [
@@ -18343,6 +18677,7 @@
         "Name": "qualityTactics",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -18376,6 +18711,7 @@
         "Name": "qualityMastery",
         "Family": "militaristQuality",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "military"
       },
       "modifiers": [
@@ -18439,6 +18775,7 @@
         "Name": "quantityOverwhelm",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "military"
       },
       "modifiers": [
@@ -18465,6 +18802,7 @@
         "Name": "quantityCommand",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "leader"
       },
       "modifiers": [
@@ -18491,6 +18829,7 @@
         "Name": "quantityOrganization",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "defense"
       },
       "modifiers": [
@@ -18522,6 +18861,7 @@
         "Name": "quantityHumanWave",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "stability"
       },
       "modifiers": [
@@ -18548,6 +18888,7 @@
         "Name": "quantityMilitarism",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -18575,6 +18916,7 @@
         "Name": "quantityWarmachine",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "culture"
       },
       "modifiers": [
@@ -18601,6 +18943,7 @@
         "Name": "quantityMastery",
         "Family": "militaristQuantity",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "military"
       },
       "modifiers": [
@@ -18670,6 +19013,7 @@
         "Name": "spaceTraining",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "shipyard"
       },
       "modifiers": [
@@ -18697,6 +19041,7 @@
         "Name": "spaceMorale",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -18724,6 +19069,7 @@
         "Name": "spaceLogistics",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "speed"
       },
       "modifiers": [
@@ -18750,6 +19096,7 @@
         "Name": "spaceRecruitment",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "shipyard"
       },
       "modifiers": [
@@ -18777,6 +19124,7 @@
         "Name": "spaceResources",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "currency"
       },
       "modifiers": [
@@ -18803,6 +19151,7 @@
         "Name": "spaceAttacking",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -18830,6 +19179,7 @@
         "Name": "spaceDominance",
         "Family": "militarySpaceforce",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "military"
       },
       "modifiers": [
@@ -18901,6 +19251,7 @@
         "Name": "airDesigning",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "airplaneFactory"
       },
       "modifiers": [
@@ -18928,6 +19279,7 @@
         "Name": "airCavalry",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "military"
       },
       "modifiers": [
@@ -18955,6 +19307,7 @@
         "Name": "airLandSupport",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "military"
       },
       "modifiers": [
@@ -18982,6 +19335,7 @@
         "Name": "airCommand",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "leader"
       },
       "modifiers": [
@@ -19008,6 +19362,7 @@
         "Name": "airReconaissance",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -19035,6 +19390,7 @@
         "Name": "airSuperiority",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -19062,6 +19418,7 @@
         "Name": "airMastery",
         "Family": "militaryAirforce",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "speed"
       },
       "modifiers": [
@@ -19126,6 +19483,7 @@
         "Name": "navyCommerce",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "currency"
       },
       "modifiers": [
@@ -19152,6 +19510,7 @@
         "Name": "navyMorale",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -19179,6 +19538,7 @@
         "Name": "navyCommand",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "leader"
       },
       "modifiers": [
@@ -19205,6 +19565,7 @@
         "Name": "navyRecruitment",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -19231,6 +19592,7 @@
         "Name": "navyTactics",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -19266,6 +19628,7 @@
         "Name": "navyAttack",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "military"
       },
       "modifiers": [
@@ -19299,6 +19662,7 @@
         "Name": "navyMastery",
         "Family": "militaryNaval",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "navyCapacity"
       },
       "modifiers": [
@@ -19358,6 +19722,7 @@
         "Name": "landReinforcement",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "manpower"
       },
       "modifiers": [
@@ -19385,6 +19750,7 @@
         "Name": "landInfantry",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "cultural"
       },
       "modifiers": [
@@ -19412,6 +19778,7 @@
         "Name": "landArtillery",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "cultural"
       },
       "modifiers": [
@@ -19439,6 +19806,7 @@
         "Name": "landTanks",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "cultural"
       },
       "modifiers": [
@@ -19466,6 +19834,7 @@
         "Name": "landOrganization",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industry"
       },
       "modifiers": [
@@ -19493,6 +19862,7 @@
         "Name": "landCommander",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "strategy"
       },
       "modifiers": [
@@ -19520,6 +19890,7 @@
         "Name": "landMastery",
         "Family": "militaryLand",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "morale"
       },
       "modifiers": [
@@ -19584,6 +19955,7 @@
         "Name": "industryDiligence",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "population"
       },
       "modifiers": [
@@ -19611,6 +19983,7 @@
         "Name": "industryProduction",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "logistics"
       },
       "modifiers": [
@@ -19637,6 +20010,7 @@
         "Name": "industryConstruction",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -19663,6 +20037,7 @@
         "Name": "industryTrading",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "industry"
       },
       "modifiers": [
@@ -19696,6 +20071,7 @@
         "Name": "industryMechanization",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -19722,6 +20098,7 @@
         "Name": "industryWorking",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "industry"
       },
       "modifiers": [
@@ -19748,6 +20125,7 @@
         "Name": "industryMastery",
         "Family": "industrious",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "factory"
       },
       "modifiers": [
@@ -19812,6 +20190,7 @@
         "Name": "thriftyCommerce",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "consumerGoodsFactory"
       },
       "modifiers": [
@@ -19839,6 +20218,7 @@
         "Name": "thriftyResources",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "currency"
       },
       "modifiers": [
@@ -19865,6 +20245,7 @@
         "Name": "thriftySociety",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "corporate"
       },
       "modifiers": [
@@ -19897,6 +20278,7 @@
         "Name": "thriftyExploitation",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "extraction"
       },
       "modifiers": [
@@ -19924,6 +20306,7 @@
         "Name": "thriftyExpansion",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "colony"
       },
       "modifiers": [
@@ -19950,6 +20333,7 @@
         "Name": "thriftyInnovation",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "education"
       },
       "modifiers": [
@@ -19976,6 +20360,7 @@
         "Name": "thriftyMastery",
         "Family": "thrifty",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "currency"
       },
       "modifiers": [
@@ -20039,6 +20424,7 @@
         "Name": "influencePsychology",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "political"
       },
       "modifiers": [
@@ -20065,6 +20451,7 @@
         "Name": "influenceOrganization",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "morale"
       },
       "modifiers": [
@@ -20091,6 +20478,7 @@
         "Name": "influenceMicromanagement",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "stability"
       },
       "modifiers": [
@@ -20123,6 +20511,7 @@
         "Name": "influenceAdministration",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "political"
       },
       "modifiers": [
@@ -20149,6 +20538,7 @@
         "Name": "influencePolitics",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "charisma"
       },
       "modifiers": [
@@ -20176,6 +20566,7 @@
         "Name": "influenceOrchestration",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "political"
       },
       "modifiers": [
@@ -20202,6 +20593,7 @@
         "Name": "influenceMastery",
         "Family": "influential",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -20271,6 +20663,7 @@
         "Name": "diplomacyEnvoys",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 0,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -20297,6 +20690,7 @@
         "Name": "diplomacyUnderstanding",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 1,
         "Icon": "clergy"
       },
       "modifiers": [
@@ -20329,6 +20723,7 @@
         "Name": "diplomacyConciliation",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 2,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -20355,6 +20750,7 @@
         "Name": "diplomacyAlliances",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 3,
         "Icon": "culture"
       },
       "modifiers": [
@@ -20381,6 +20777,7 @@
         "Name": "diplomacyUnity",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 4,
         "Icon": "culture"
       },
       "modifiers": [
@@ -20407,6 +20804,7 @@
         "Name": "diplomacyNetworking",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 5,
         "Icon": "stability"
       },
       "modifiers": [
@@ -20433,6 +20831,7 @@
         "Name": "diplomacyMastery",
         "Family": "diplomatic",
         "Category": "idea",
+        "IdeaIndex": 6,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -20501,6 +20900,7 @@
         "Name": "americanFrontierism",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 0,
         "Icon": "colony"
       },
       "modifiers": [
@@ -20527,6 +20927,7 @@
         "Name": "americanFreedom",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 1,
         "Icon": "middleClass"
       },
       "modifiers": [
@@ -20560,6 +20961,7 @@
         "Name": "americanIngenuity",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 2,
         "Icon": "research"
       },
       "modifiers": [
@@ -20586,6 +20988,7 @@
         "Name": "americanWorkEthic",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 3,
         "Icon": "currency"
       },
       "modifiers": [
@@ -20612,6 +21015,7 @@
         "Name": "americanNavalPrimacy",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 4,
         "Icon": "military"
       },
       "modifiers": [
@@ -20645,6 +21049,7 @@
         "Name": "americanAstrogation",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 5,
         "Icon": "morale"
       },
       "modifiers": [
@@ -20672,6 +21077,7 @@
         "Name": "americanHegemony",
         "Family": "heritageAmerican",
         "Category": "heritage",
+        "IdeaIndex": 6,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -20741,6 +21147,7 @@
         "Name": "britishStoicism",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 0,
         "Icon": "stability"
       },
       "modifiers": [
@@ -20767,6 +21174,7 @@
         "Name": "britishPoliteness",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 1,
         "Icon": "opinion"
       },
       "modifiers": [
@@ -20793,6 +21201,7 @@
         "Name": "britishAdventurism",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 2,
         "Icon": "navyCapacity"
       },
       "modifiers": [
@@ -20826,6 +21235,7 @@
         "Name": "britishIndustrialism",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 3,
         "Icon": "industrial"
       },
       "modifiers": [
@@ -20852,6 +21262,7 @@
         "Name": "britishLegacy",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 4,
         "Icon": "prestige"
       },
       "modifiers": [
@@ -20878,6 +21289,7 @@
         "Name": "britishInnovation",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 5,
         "Icon": "education"
       },
       "modifiers": [
@@ -20904,6 +21316,7 @@
         "Name": "britishAdministration",
         "Family": "heritageBritish",
         "Category": "heritage",
+        "IdeaIndex": 6,
         "Icon": "edict"
       },
       "modifiers": [

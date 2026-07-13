@@ -584,10 +584,11 @@ function buildCultureIdeaEntries(
 ): WikiEntry[] {
   if (!Array.isArray(record.Ideas)) return [];
   const entries: WikiEntry[] = [];
-  for (const idea of record.Ideas as RawRecord[]) {
+  for (const [index, idea] of (record.Ideas as RawRecord[]).entries()) {
     const entry = buildEntry(
       'culture-traits',
-      { ...idea, Family: record.Name, Category: record.Category },
+      // IdeaIndex preserves the array order, which is the in-game unlock order.
+      { ...idea, Family: record.Name, Category: record.Category, IdeaIndex: index },
       localization,
     );
     if (entry) entries.push(entry);

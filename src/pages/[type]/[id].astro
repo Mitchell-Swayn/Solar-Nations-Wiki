@@ -4,9 +4,10 @@ import StatTable from '../../components/StatTable.astro';
 import ModifierList from '../../components/ModifierList.astro';
 import PrerequisiteChain from '../../components/PrerequisiteChain.astro';
 import GameIcon from '../../components/GameIcon.astro';
+import ModifierBadges from '../../components/ModifierBadges.astro';
 import { getCategories, getEntry, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
-import { getCultureTraitGroup } from '../../lib/culture';
+import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -28,14 +29,20 @@ const optionIds = type === 'government-reforms' && Array.isArray(entry.fields.Op
 const reformOptions = optionIds.map((optionId) => getEntry('government-reform-options', optionId)).filter((option) => option !== undefined);
 const factionVariants = type === 'factions' ? getEntriesByType('faction-variants').filter((variant) => variant.fields.BaseFaction === entry.id) : [];
 const cultureTraitIds = type === 'cultures' && Array.isArray(entry.fields.Traits) ? entry.fields.Traits.filter((value): value is string => typeof value === 'string') : [];
-const cultureTraitGroups = Object.values(cultureTraitIds.reduce((groups, traitId) => {
+const allCultureTraits = type === 'cultures' ? getEntriesByType('culture-traits') : [];
+const selectedCultureTraitGroups = Object.values(cultureTraitIds.reduce((groups, traitId) => {
   const trait = getEntry('culture-traits', traitId);
   if (!trait) return groups;
   const meta = getCultureTraitGroup(traitId);
-  groups[meta.id] ??= { meta, traits: [] };
-  groups[meta.id].traits.push(trait);
+  groups[meta.id] ??= { meta };
   return groups;
-}, {} as Record<string, { meta: ReturnType<typeof getCultureTraitGroup>; traits: NonNullable<ReturnType<typeof getEntry>>[] }>)).sort((a, b) => a.meta.domain.localeCompare(b.meta.domain) || a.meta.label.localeCompare(b.meta.label));
+}, {} as Record<string, { meta: ReturnType<typeof getCultureTraitGroup> }>));
+const cultureTraitGroups = selectedCultureTraitGroups.map(({ meta }) => ({
+  meta,
+  traits: allCultureTraits
+    .filter((trait) => getCultureTraitGroup(trait.id).id === meta.id)
+    .sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id)) || a.displayName.localeCompare(b.displayName)),
+})).sort((a, b) => a.meta.domain.localeCompare(b.meta.domain) || a.meta.label.localeCompare(b.meta.label));
 const detailFields = Object.fromEntries(Object.entries(entry.fields).filter(([key]) => key !== 'Options' && !(type === 'cultures' && key === 'Traits')));
 const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'].includes(key)).length;
 ---
@@ -67,8 +74,15 @@ const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'
                   <div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">{meta.domain} · Trait Family</p><h3>{meta.label}</h3></div></div>
                   <a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a>
                 </header>
-                <div class="related-options">
-                  {traits.map((trait) => <a href={withBase(`/culture-traits/${meta.id}/#${trait.id}`)}><GameIcon name={trait.icon ?? meta.icon} size={30} /><span><strong>{trait.displayName}</strong><code>{trait.id}</code></span><b>›</b></a>)}
+                <div class="entry-directory">
+                  {traits.map((trait) => (
+                    <a href={withBase(`/culture-traits/${meta.id}/#${trait.id}`)} class:list={['directory-row', { 'with-effects': trait.modifiers.length > 0 }]}>
+                      <span class="directory-icon"><GameIcon name={trait.icon ?? meta.icon} size={34} /></span>
+                      <span class="directory-main"><strong>{trait.displayName}</strong><code>{trait.id}</code>{trait.description && <small>{trait.description}</small>}</span>
+                      <ModifierBadges modifiers={trait.modifiers} />
+                      <span class="row-arrow" aria-hidden="true">›</span>
+                    </a>
+                  ))}
                 </div>
               </section>
             ))}

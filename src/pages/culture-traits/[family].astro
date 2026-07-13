@@ -16,7 +16,9 @@ const traits = getEntriesByType('culture-traits');
 const meta = getCultureTraitGroup(traits.find((entry) => getCultureTraitGroup(entry.id).id === family)!.id);
 const members = traits
   .filter((entry) => getCultureTraitGroup(entry.id).id === family)
-  .sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id)) || a.displayName.localeCompare(b.displayName));
+  .sort((a, b) =>
+    Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))
+    || Number(a.fields.IdeaIndex ?? 0) - Number(b.fields.IdeaIndex ?? 0));
 const root = members.find((entry) => isCultureFamilyRoot(entry.id));
 const subtraits = members.filter((entry) => entry !== root);
 const totalEffects = members.reduce((sum, entry) => sum + entry.modifiers.length, 0);

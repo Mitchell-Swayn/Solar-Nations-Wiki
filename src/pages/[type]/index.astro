@@ -178,7 +178,7 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
             <section class="reform-option-group culture-family entry-group" id={`trait-family-${meta.id}`}>
               <header><div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">Trait Family</p><h3>{meta.label}</h3></div></div><a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a></header>
               <div class="entry-directory">
-                {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))).map((entry) => (
+                {[...familyEntries].sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id)) || Number(a.fields.IdeaIndex ?? 0) - Number(b.fields.IdeaIndex ?? 0)).map((entry) => (
                   <a href={withBase(`/culture-traits/${meta.id}/#${entry.id}`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${domain} ${meta.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
                     <span class="directory-icon"><GameIcon name={entry.icon ?? meta.icon} size={34} /></span>
                     <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
