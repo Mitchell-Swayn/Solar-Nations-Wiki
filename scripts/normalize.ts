@@ -10,7 +10,6 @@ import {
   getIconsPath,
 } from './paths.ts';
 import { DEFINE_FILE_TO_SLUG } from '../src/lib/categories.ts';
-import { getCultureTraitGroup, isCultureFamilyRoot } from '../src/lib/culture.ts';
 import type {
   CuratedIndex,
   ModifierRef,
@@ -389,9 +388,6 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
   const sourceFiles = indexIconSources(gameRoot);
   const requested = new Set(entries.map((entry) => entry.icon).filter((icon): icon is string => Boolean(icon)));
-  for (const entry of entries) {
-    if (entry.type === 'culture-traits') requested.add(getCultureTraitGroup(entry.id).icon);
-  }
 
   rmSync(outputRoot, { recursive: true, force: true });
   mkdirSync(outputRoot, { recursive: true });
@@ -448,12 +444,18 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
       .filter((entry) => (entry.type === 'resources' || entry.type === 'deposit-resources') && entry.icon)
       .map((entry) => [entry.id, entry.icon as string]),
   );
+  const rootIcons = new Map(
+    entries
+      .filter((entry) => entry.type === 'culture-traits' && !entry.fields.Family && entry.icon)
+      .map((entry) => [entry.id, entry.icon as string]),
+  );
   for (const entry of entries) {
     if (entry.type !== 'culture-traits') continue;
-    const familyIcon = getCultureTraitGroup(entry.id).icon;
+    const family = typeof entry.fields.Family === 'string' ? entry.fields.Family : undefined;
+    const familyIcon = rootIcons.get(family ?? entry.id) ?? 'cultural';
     const firstModifier = entry.modifiers[0];
-    const candidates = isCultureFamilyRoot(entry.id)
-      ? [familyIcon]
+    const candidates = !family
+      ? [entry.icon, familyIcon]
       : [
           resourceIcons.get(firstModifier?.value1 ?? ''),
           modifierIcons.get(firstModifier?.key ?? ''),
@@ -543,8 +545,35 @@ function loadRawExtract(): WikiEntry[] {
     if (!Array.isArray(data)) continue;
     for (const record of data) {
       const entry = buildEntry(slug, record as RawRecord, localization);
-      if (entry) entries.push(entry);
+      if (!entry) continue;
+      entries.push(entry);
+      if (slug === 'culture-traits') {
+        entries.push(...buildCultureIdeaEntries(record as RawRecord, localization));
+        delete entry.fields.Ideas;
+      }
     }
+  }
+  return entries;
+}
+
+/**
+ * Each culture trait family row nests its idea sub-traits in an Ideas array
+ * (1 family trait + 7 ideas in the shipped data). Promote every idea to its
+ * own wiki entry, tagged with the family root id and the game's category.
+ */
+function buildCultureIdeaEntries(
+  record: RawRecord,
+  localization: Record<string, string>,
+): WikiEntry[] {
+  if (!Array.isArray(record.Ideas)) return [];
+  const entries: WikiEntry[] = [];
+  for (const idea of record.Ideas as RawRecord[]) {
+    const entry = buildEntry(
+      'culture-traits',
+      { ...idea, Family: record.Name, Category: record.Category },
+      localization,
+    );
+    if (entry) entries.push(entry);
   }
   return entries;
 }

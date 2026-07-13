@@ -1,48 +1,43 @@
-export type CultureDomain = 'Species & Faith' | 'Cultural' | 'Economic' | 'Diplomatic' | 'Administrative' | 'Military';
+import { getEntriesByType } from './data';
+import type { WikiEntry } from './types';
 
-const FAMILY_ALIASES: Record<string, string> = {
-  speciesHuman: 'humanity', speciesRobot: 'robotic', christian: 'christianity',
-  communist: 'marxism', fascist: 'hegelian', jewish: 'judaism',
-  moumentalist: 'monumentalist', social: 'socialContract',
+export type CultureDomain = 'Species' | 'Religion' | 'Idea' | 'Heritage' | 'Special';
+
+const CATEGORY_DOMAINS: Record<string, CultureDomain> = {
+  species: 'Species',
+  religion: 'Religion',
+  idea: 'Idea',
+  heritage: 'Heritage',
+  special: 'Special',
 };
 
-const FAMILY_ICONS: Record<string, string> = {
-  humanity: 'speciesHuman', robotic: 'speciesRobot', christianity: 'christian', islam: 'islam',
-  judaism: 'jewish', marxism: 'communist', occult: 'occult', atheist: 'atheist',
-  hegelian: 'fascist', hinduism: 'hindu',
-};
+let traitById: Map<string, WikiEntry> | undefined;
 
-const ECONOMIC = new Set(['consumers', 'diligent', 'industry', 'innovative', 'plutocratic', 'prosperism', 'robophile', 'thrifty', 'urbanophile']);
-const DIPLOMATIC = new Set(['assimilationist', 'diplomacy', 'influence', 'irridentist', 'isolationist']);
-const ADMINISTRATIVE = new Set(['aristocratic', 'individualism', 'mandate', 'socialContract', 'statism']);
-const MILITARY = new Set(['air', 'defensive', 'explorers', 'firearms', 'land', 'navy', 'offensive', 'quality', 'quantity', 'space']);
-const FAITH = new Set(Object.keys(FAMILY_ICONS));
-
-function rawFamily(id: string): string {
-  if (id === 'speciesHuman' || id === 'speciesRobot') return id;
-  return id.match(/^([a-z]+?)(?=[A-Z_]|$)/)?.[1] ?? id;
+function traits(): Map<string, WikiEntry> {
+  traitById ??= new Map(getEntriesByType('culture-traits').map((entry) => [entry.id, entry]));
+  return traitById;
 }
 
-function humanize(value: string): string {
-  return value.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, (char) => char.toUpperCase());
+function familyRoot(id: string): WikiEntry | undefined {
+  const entry = traits().get(id);
+  if (!entry) return undefined;
+  const family = typeof entry.fields.Family === 'string' ? entry.fields.Family : undefined;
+  return family ? traits().get(family) : entry;
 }
 
 export function getCultureTraitGroup(id: string) {
-  const raw = rawFamily(id);
-  const family = FAMILY_ALIASES[id] ?? FAMILY_ALIASES[raw] ?? raw;
-  const domain: CultureDomain = FAITH.has(family) ? 'Species & Faith'
-    : ECONOMIC.has(family) ? 'Economic'
-    : DIPLOMATIC.has(family) ? 'Diplomatic'
-    : ADMINISTRATIVE.has(family) ? 'Administrative'
-    : MILITARY.has(family) ? 'Military'
-    : 'Cultural';
-  const icon = FAMILY_ICONS[family] ?? ({ Economic: 'economic', Diplomatic: 'charisma', Administrative: 'management', Military: 'strategy', Cultural: 'cultural' } as Record<string, string>)[domain] ?? 'cultural';
-  return { id: family, label: humanize(family), domain, icon };
+  const root = familyRoot(id);
+  const category = typeof root?.fields.Category === 'string' ? root.fields.Category : '';
+  return {
+    id: root?.id ?? id,
+    label: root?.displayName ?? id,
+    domain: CATEGORY_DOMAINS[category] ?? 'Idea',
+    icon: root?.icon ?? 'cultural',
+  };
 }
 
 export function isCultureFamilyRoot(id: string): boolean {
-  const family = getCultureTraitGroup(id).id;
-  return id === family || FAMILY_ALIASES[id] === family;
+  return !traits().get(id)?.fields.Family;
 }
 
 export function getCultureTraitPath(id: string): string {
