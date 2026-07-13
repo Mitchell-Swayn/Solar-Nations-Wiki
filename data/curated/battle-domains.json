@@ -2,7 +2,7 @@
   {
     "id": "air",
     "type": "battle-domains",
-    "displayName": "Air",
+    "displayName": "air",
     "fields": {
       "Name": "air",
       "CombatWidth": 1,

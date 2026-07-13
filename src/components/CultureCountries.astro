@@ -1,0 +1,78 @@
+---
+import type { ScenarioCountry } from '../lib/types';
+import { getCountryPath } from '../lib/countries';
+import { withBase } from '../lib/base';
+
+interface Props {
+  scenarioId: string;
+  countries: Array<{
+    country: ScenarioCountry;
+    relationship: 'Primary' | 'Promoted' | 'Accepted' | 'Oppressed' | 'Present';
+    culturePopulation: number;
+    cultureShare: number;
+    regionCount: number;
+  }>;
+}
+
+const { scenarioId, countries } = Astro.props;
+const flagPath = (flag: string) => withBase(`/assets/flags/${encodeURIComponent(flag)}`);
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+const percent = new Intl.NumberFormat('en', { style: 'percent', maximumFractionDigits: 1 });
+---
+
+{countries.length > 0 ? (
+  <div class="culture-country-list">
+    {countries.map(({ country, relationship, culturePopulation, cultureShare, regionCount }) => (
+      <a class="culture-country" href={withBase(getCountryPath(scenarioId, country.id))}>
+        <span class="culture-country-flag"><img src={flagPath(country.flag)} alt="" loading="lazy" decoding="async" data-auto-loading /></span>
+        <span class="culture-country-name">
+          <strong>{country.name}</strong>
+          <small>{country.logicTag}</small>
+          {regionCount > 0 && <small class="culture-geography">{compactNumber.format(culturePopulation)} people · {percent.format(cultureShare)} · {regionCount} {regionCount === 1 ? 'region' : 'regions'}</small>}
+        </span>
+        <span class:list={['culture-country-role', relationship.toLowerCase()]}>{relationship}</span>
+        <b aria-hidden="true">›</b>
+      </a>
+    ))}
+  </div>
+) : (
+  <p class="notice">No starting countries use this culture in this scenario.</p>
+)}
+
+<style>
+  .culture-country-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .culture-country {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) auto 10px;
+    align-items: center;
+    gap: 11px;
+    min-height: 72px;
+    padding: 8px 11px;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .culture-country:hover { color: var(--text); border-color: var(--border-strong); box-shadow: inset 3px 0 0 var(--accent); }
+  .culture-country-flag { display: grid; place-items: center; width: 48px; height: 32px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--border); border-radius: 3px; }
+  .culture-country-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .culture-country-name, .culture-country-name strong, .culture-country-name small { display: block; min-width: 0; }
+  .culture-country-name strong, .culture-country-name small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .culture-country-name strong { font-size: 12px; }
+  .culture-country-name small { margin-top: 3px; color: var(--text-muted); font-family: var(--mono); font-size: 8px; }
+  .culture-country-name .culture-geography { margin-top: 4px; font-family: var(--font); font-size: 8px; }
+  .culture-country-role { padding: 3px 6px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; font-size: 7px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+  .culture-country-role.primary { color: var(--accent-dark); background: #f4e4d1; }
+  .culture-country-role.promoted { color: var(--teal); background: #e6f1ef; }
+  .culture-country-role.oppressed { color: var(--negative); background: #f7e7e5; }
+  .culture-country-role.present { color: var(--link); background: #e9eff4; }
+  .culture-country > b { color: var(--border-strong); font-size: 17px; font-weight: 400; }
+  @media (max-width: 760px) {
+    .culture-country-list { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 460px) {
+    .culture-country { grid-template-columns: 42px minmax(0, 1fr) 10px; }
+    .culture-country-flag { width: 42px; height: 28px; }
+    .culture-country-role { display: none; }
+  }
+</style>

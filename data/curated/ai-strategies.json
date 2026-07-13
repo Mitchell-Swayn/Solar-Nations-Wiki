@@ -2,7 +2,7 @@
   {
     "id": "strategy_blue",
     "type": "ai-strategies",
-    "displayName": "Strategy Blue",
+    "displayName": "strategy_blue",
     "fields": {
       "Name": "strategy_blue",
       "Alignment": {
@@ -31,7 +31,7 @@
   {
     "id": "strategy_green",
     "type": "ai-strategies",
-    "displayName": "Strategy Green",
+    "displayName": "strategy_green",
     "fields": {
       "Name": "strategy_green",
       "Alignment": {
@@ -60,7 +60,7 @@
   {
     "id": "strategy_purple",
     "type": "ai-strategies",
-    "displayName": "Strategy Purple",
+    "displayName": "strategy_purple",
     "fields": {
       "Name": "strategy_purple",
       "Alignment": {
@@ -88,7 +88,7 @@
   {
     "id": "strategy_red",
     "type": "ai-strategies",
-    "displayName": "Strategy Red",
+    "displayName": "strategy_red",
     "fields": {
       "Name": "strategy_red",
       "Alignment": {
@@ -118,7 +118,7 @@
   {
     "id": "strategy_teal",
     "type": "ai-strategies",
-    "displayName": "Strategy Teal",
+    "displayName": "strategy_teal",
     "fields": {
       "Name": "strategy_teal",
       "Alignment": {

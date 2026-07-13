@@ -2,7 +2,7 @@
   {
     "id": "NewRow",
     "type": "character-equipment",
-    "displayName": "New Row",
+    "displayName": "NewRow",
     "icon": "",
     "fields": {
       "Name": "NewRow",

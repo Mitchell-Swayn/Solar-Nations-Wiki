@@ -1,0 +1,275 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import GameIcon from '../../../components/GameIcon.astro';
+import CultureTraitFamilies from '../../../components/CultureTraitFamilies.astro';
+import ScenarioTabs from '../../../components/ScenarioTabs.astro';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS, isWebsiteEntry } from '../../../lib/categories';
+import { getCountryPath, getCountryScenarios } from '../../../lib/countries';
+import { getDisplayName, getEntriesByType, getEntry } from '../../../lib/data';
+import { withBase } from '../../../lib/base';
+import { getRegionPath } from '../../../lib/regions';
+
+export function getStaticPaths() {
+  return getCountryScenarios().flatMap((scenario) => scenario.countries.map((country) => ({
+    params: { scenario: scenario.id, country: country.id },
+    props: { scenario, country },
+  })));
+}
+
+const { scenario, country } = Astro.props;
+const category = CATEGORY_BY_SLUG.countries;
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const flagPath = withBase(`/assets/flags/${encodeURIComponent(country.flag)}`);
+const number = new Intl.NumberFormat('en', { maximumFractionDigits: 0 });
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 2 });
+const percent = new Intl.NumberFormat('en', { style: 'percent', maximumFractionDigits: 1 });
+const entryFor = (type: string, id: string) => {
+  return getEntry(type, id)
+    ?? getEntriesByType(type).find((entry) => entry.id.toLowerCase() === id.toLowerCase());
+};
+const label = (types: string[], id: string) => {
+  for (const type of types) {
+    const entry = entryFor(type, id);
+    if (entry) return entry.displayName;
+  }
+  return getDisplayName(types, id)
+    ?? id.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/_/g, ' ').replace(/^./, (character) => character.toUpperCase());
+};
+const reformDetails = country.reforms.filter((reform) => isWebsiteEntry('government-reforms', reform.id)).map((reform) => {
+  const definition = entryFor('government-reforms', reform.id);
+  const options = Array.isArray(definition?.fields.Options) ? definition.fields.Options.filter((value): value is string => typeof value === 'string') : [];
+  const optionId = options[reform.optionIndex];
+  const option = optionId ? entryFor('government-reform-options', optionId) : undefined;
+  return { ...reform, name: definition?.displayName ?? label(['government-reforms'], reform.id), isPolitical: definition?.fields.IsPolitical === 'Politics', optionId, option, optionName: option?.displayName ?? (optionId ? label(['government-reform-options'], optionId) : `Option ${reform.optionIndex + 1}`) };
+});
+const politicalReforms = reformDetails.filter((reform) => reform.isPolitical);
+const policyReforms = reformDetails.filter((reform) => !reform.isPolitical);
+const primaryCultureName = country.primaryCulture ? label(['cultures'], country.primaryCulture) : undefined;
+const primaryCultureEntry = country.primaryCulture ? entryFor('cultures', country.primaryCulture) : undefined;
+const primaryCultureState = country.primaryCulture ? scenario.cultures.find((culture) => culture.id === country.primaryCulture) : undefined;
+const primaryCultureTraitIds = primaryCultureState?.traits ?? [];
+const governmentFormEntry = country.governmentForm ? entryFor('government-reform-options', country.governmentForm) : undefined;
+const governmentTypeEntry = country.governmentType ? entryFor('government-types', country.governmentType) : undefined;
+const capitalName = country.capitalRegionName ?? country.capital;
+const overlord = country.overlord ? scenario.countries.find((entry) => entry.id === country.overlord) : undefined;
+const weightedDevelopment = country.population > 0 ? country.regions.reduce((sum, region) => sum + region.development * region.population, 0) / country.population : 0;
+const weightedEducation = country.population > 0 ? country.regions.reduce((sum, region) => sum + region.education * region.population, 0) / country.population : 0;
+const countryScenarioTabs = getCountryScenarios().flatMap((candidate) => {
+  const matchingCountry = candidate.countries.find((item) => item.id === country.id);
+  return matchingCountry ? [{
+    id: candidate.id,
+    label: candidate.name,
+    href: withBase(getCountryPath(candidate.id, matchingCountry.id)),
+    active: candidate.id === scenario.id,
+  }] : [];
+});
+---
+
+<BaseLayout title={`${country.name} — ${scenario.name}`} description={`${country.name} starting country details in the ${scenario.name} scenario.`} activeType="countries">
+  <Breadcrumbs group={group?.label} category="Countries" categoryHref="/countries/" current={country.name} />
+
+  <article class="article-layout country-article">
+    <div class="article-main">
+      <header class="article-header country-title-header">
+        <p class="eyebrow">{scenario.name} · Country</p>
+        <div class="country-title">
+          <span class="country-title-flag"><img src={flagPath} alt={`${country.name} flag`} width="192" height="128" loading="eager" decoding="async" fetchpriority="high" /></span>
+          <div><h1>{country.name}</h1><code>{country.id} · {country.logicTag}</code></div>
+        </div>
+        <p class="article-lede">Starting country data extracted from the {scenario.name} base-game scenario.</p>
+      </header>
+
+      <ScenarioTabs tabs={countryScenarioTabs} />
+
+      <dl class="country-stats">
+        <div><span class="metric-icon"><GameIcon name="population" size={24} /></span><dt>Population</dt><dd>{number.format(country.population)}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="prestige" size={24} /></span><dt>Capital region</dt><dd>{capitalName || 'None'}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="territory" size={24} /></span><dt>Territory</dt><dd>{country.regions.length} regions · {country.planets.length} planetary {country.planets.length === 1 ? 'body' : 'bodies'}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="stability" size={24} /></span><dt>Stability</dt><dd>{country.integrity.toLocaleString()}%</dd></div>
+        <div><span class="metric-icon"><GameIcon name="development" size={24} /></span><dt>Development</dt><dd>{percent.format(weightedDevelopment)}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="education" size={24} /></span><dt>Education</dt><dd>{percent.format(weightedEducation)}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="currency" size={24} /></span><dt>Treasury</dt><dd class:list={{ negative: country.treasury < 0 }}>{compactNumber.format(country.treasury)}</dd></div>
+        <div><span class="metric-icon"><GameIcon name="controlGovernment" size={24} /></span><dt>Status</dt><dd>{country.selectable ? 'Player selectable' : country.isRebel ? 'Rebel country' : 'AI country'}</dd></div>
+      </dl>
+
+      {country.selectable?.lore && (
+        <section class="article-section scenario-briefing" id="briefing">
+          <div class="section-heading-inline"><div><p class="eyebrow">Playable-country briefing</p><h2>{country.selectable.name || country.name}</h2></div><span>{scenario.name}</span></div>
+          <div class="briefing-copy">{country.selectable.lore.split(/\n{2,}/).map((paragraph) => <p>{paragraph}</p>)}</div>
+        </section>
+      )}
+
+      <section class="article-section" id="government">
+        <h2>Government</h2>
+        <div class="country-facts">
+          <div><small>Government type</small><strong>{governmentTypeEntry?.displayName ?? (country.governmentType ? label(['government-types'], country.governmentType) : 'None')}</strong></div>
+          <div><small>Government form</small>{governmentFormEntry ? <a href={withBase(`/government-reform-options/${governmentFormEntry.id}/`)}>{governmentFormEntry.displayName}</a> : <strong>{country.governmentForm ? label(['government-reform-options'], country.governmentForm) : 'None'}</strong>}</div>
+          <div><small>Primary culture</small>{country.primaryCulture && entryFor('cultures', country.primaryCulture) ? <a href={withBase(`/cultures/${entryFor('cultures', country.primaryCulture)!.id}/`)}>{primaryCultureName}</a> : <strong>{primaryCultureName ?? 'None'}</strong>}</div>
+          <div><small>Overlord</small>{overlord ? <a href={withBase(getCountryPath(scenario.id, overlord.id))}>{overlord.name}</a> : <strong>Independent</strong>}</div>
+        </div>
+        <div class="government-reform-groups">
+          {[
+            { title: 'Politics', reforms: politicalReforms },
+            { title: 'Policies', reforms: policyReforms },
+          ].map((reformGroup) => (
+            <div class="reform-group">
+              <h3>{reformGroup.title}</h3>
+              <div class="reform-list">
+                {reformGroup.reforms.map((reform) => (
+                  <div>
+                    <span class="detail-icon">{reform.option?.icon && <GameIcon name={reform.option.icon} size={24} />}</span>
+                    <span class="reform-choice"><small>{reform.name}</small>{reform.option ? <a href={withBase(`/government-reform-options/${reform.option.id}/`)}>{reform.optionName}</a> : <strong>{reform.optionName}</strong>}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="article-section" id="cultures">
+        <h2>Cultures</h2>
+        <div class="culture-groups">
+          <div><h3>Primary</h3>{country.primaryCulture && entryFor('cultures', country.primaryCulture) ? <a class="culture-chip primary" href={withBase(`/cultures/${entryFor('cultures', country.primaryCulture)!.id}/`)}>{primaryCultureName}</a> : primaryCultureName ? <span class="culture-chip primary">{primaryCultureName}</span> : <p class="notice">No primary culture.</p>}</div>
+          <div><h3>Accepted</h3><div class="chip-list">{country.acceptedCultures.map((id) => { const entry = entryFor('cultures', id); return entry ? <a class="culture-chip" href={withBase(`/cultures/${entry.id}/`)}>{entry.displayName}</a> : <span class="culture-chip">{label(['cultures'], id)}</span>; })}</div></div>
+          {country.promotedCultures.length > 0 && <div><h3>Promoted</h3><div class="chip-list">{country.promotedCultures.map((id) => { const entry = entryFor('cultures', id); return entry ? <a class="culture-chip" href={withBase(`/cultures/${entry.id}/`)}>{entry.displayName}</a> : <span class="culture-chip">{label(['cultures'], id)}</span>; })}</div></div>}
+          {country.oppressedCultures.length > 0 && <div><h3>Oppressed</h3><div class="chip-list">{country.oppressedCultures.map((id) => { const entry = entryFor('cultures', id); return entry ? <a class="culture-chip oppressed" href={withBase(`/cultures/${entry.id}/`)}>{entry.displayName}</a> : <span class="culture-chip oppressed">{label(['cultures'], id)}</span>; })}</div></div>}
+        </div>
+      </section>
+
+      {primaryCultureTraitIds.length > 0 && (
+        <section class="article-section" id="primary-culture-traits">
+          <h2>Primary culture traits</h2>
+          <CultureTraitFamilies traitIds={primaryCultureTraitIds} />
+        </section>
+      )}
+
+      {country.factions.length > 0 && (
+        <section class="article-section" id="factions">
+          <h2>Factions</h2>
+          <div class="country-table faction-table">
+            <div class="table-header"><span>Faction</span><span>Power</span><span>Loyalty</span><span>Status</span></div>
+            {country.factions.map((faction) => (
+              <div><span class="table-identity">{entryFor('factions', faction.id)?.icon && <GameIcon name={entryFor('factions', faction.id)!.icon!} size={22} />}{entryFor('factions', faction.id) ? <a href={withBase(`/factions/${entryFor('factions', faction.id)!.id}/`)}>{entryFor('factions', faction.id)!.displayName}</a> : <span>{label(['factions'], faction.id)}</span>}</span><span>{percent.format(faction.power)}</span><span>{percent.format(faction.loyalty)}</span><strong>{faction.isRuling ? 'Ruling' : faction.variant ? label(['faction-variants'], faction.variant) : '—'}</strong></div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section class="article-section" id="territory">
+        <h2>Starting territory</h2>
+        <div class="country-table region-table">
+          <div class="table-header"><span class="table-header-label"><GameIcon name="territory" size={18} />Region</span><span class="table-header-label"><GameIcon name="planet" size={18} />Planetary body</span><span class="table-header-label"><GameIcon name="population" size={18} />Population</span><span class="table-header-label"><GameIcon name="development" size={18} />Development</span></div>
+          {country.regions.map((region) => {
+            const planetaryBody = entryFor('planetary-bodies', region.planet);
+            return (
+              <div class:list={{ capital: region.id === country.capitalRegion }}>
+                <strong><a href={withBase(getRegionPath(scenario.id, region.id))}>{region.name}</a>{region.id === country.capitalRegion && <small>Capital</small>}</strong>
+                <span class="table-identity planetary-body-identity">
+                  {planetaryBody?.icon && <GameIcon name={planetaryBody.icon} size={26} />}
+                  {planetaryBody
+                    ? <a href={withBase(`/planetary-bodies/${planetaryBody.id}/`)}>{planetaryBody.displayName}</a>
+                    : <span>{label(['planetary-bodies'], region.planet)}</span>}
+                </span>
+                <span>{compactNumber.format(region.population)}</span>
+                <span>{percent.format(region.development)}</span>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {country.technologies.length > 0 && (
+        <section class="article-section" id="technologies">
+          <h2>Starting technologies</h2>
+          <div class="technology-list">{country.technologies.map((id) => { const entry = entryFor('technologies', id); return entry ? <a href={withBase(`/technologies/${entry.id}/`)}>{entry.icon && <GameIcon name={entry.icon} size={18} />}<span>{entry.displayName}</span></a> : <span>{label(['technologies'], id)}</span>; })}</div>
+        </section>
+      )}
+
+      {(country.stockpile.length > 0 || country.tradeBalance.length > 0 || country.taxes.length > 0 || country.staticModifiers.length > 0) && (
+        <section class="article-section" id="economy">
+          <h2>Economy and effects</h2>
+          {country.stockpile.length > 0 && <div class="detail-subsection"><h3>Government stockpile</h3><dl class="value-list">{country.stockpile.map((item) => { const entry = entryFor('resources', item.id); return <div><dt>{entry?.icon && <GameIcon name={entry.icon} size={21} />}{entry ? <a href={withBase(`/resources/${entry.id}/`)}>{entry.displayName}</a> : <span>{label(['resources'], item.id)}</span>}</dt><dd>{number.format(item.value)}</dd></div>; })}</dl></div>}
+          {country.tradeBalance.length > 0 && <div class="detail-subsection"><h3>Starting resource balance</h3><dl class="value-list">{country.tradeBalance.map((item) => { const entry = entryFor('resources', item.id); return <div><dt>{entry?.icon && <GameIcon name={entry.icon} size={21} />}{entry ? <a href={withBase(`/resources/${entry.id}/`)}>{entry.displayName}</a> : <span>{label(['resources'], item.id)}</span>}</dt><dd class:list={{ positive: item.value > 0, negative: item.value < 0 }}>{item.value > 0 ? '+' : ''}{number.format(item.value)}</dd></div>; })}</dl></div>}
+          {country.taxes.length > 0 && <div class="detail-subsection"><h3>Tax rates</h3><dl class="value-list">{country.taxes.map((item) => <div><dt>{label([], item.id)}</dt><dd>{percent.format(item.value)}</dd></div>)}</dl></div>}
+          {country.staticModifiers.length > 0 && <div class="detail-subsection"><h3>Static modifiers</h3><div class="technology-list">{country.staticModifiers.map((id) => { const entry = entryFor('static-modifiers', id); return entry ? <a href={withBase(`/static-modifiers/${entry.id}/`)}>{entry.icon && <GameIcon name={entry.icon} size={18} />}<span>{entry.displayName}</span></a> : <span>{label(['static-modifiers'], id)}</span>; })}</div></div>}
+        </section>
+      )}
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .country-title { display: flex; align-items: center; gap: 22px; }
+  .country-title h1 { margin: 0 0 6px; font-size: clamp(30px, 4vw, 46px); }
+  .country-title code { color: var(--text-muted); font-size: 10px; }
+  .country-title-flag { display: grid; place-items: center; width: 112px; height: 72px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 5px; box-shadow: 0 4px 12px rgb(20 32 38 / 12%); }
+  .country-title-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .country-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 24px 0 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+  .country-stats div { display: grid; grid-template-columns: 24px minmax(0, 1fr); grid-template-rows: auto auto; align-items: center; column-gap: 10px; min-width: 0; padding: 11px 15px; background: var(--surface); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .country-stats .metric-icon { display: grid; grid-row: 1 / 3; grid-column: 1; place-items: center; width: 24px; height: 24px; }
+  .country-stats dt, .country-stats dd { grid-column: 2; min-width: 0; }
+  .country-stats dt { color: var(--text-muted); font-size: 8px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .country-stats dd { overflow: hidden; margin: 3px 0 0; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+  .country-stats dd.negative { color: var(--negative); }
+  .section-heading-inline { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 9px; border-bottom: 2px solid var(--ink-2); }
+  .article-section .section-heading-inline h2 { margin: 3px 0 0; padding: 0; border: 0; }
+  .section-heading-inline > span { color: var(--text-muted); font-size: 9px; }
+  .briefing-copy { max-width: 880px; padding: 6px 2px; }
+  .briefing-copy p { color: #46545a; font-size: 13px; line-height: 1.75; white-space: pre-line; }
+  .country-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px; }
+  .country-facts > div { padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .country-facts small, .country-facts strong, .country-facts a { display: block; }
+  .country-facts small { margin-bottom: 5px; color: var(--text-muted); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+  .country-facts strong, .country-facts a { overflow: hidden; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+  .government-reform-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .reform-group h3 { margin: 0 0 9px; color: var(--text-muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+  .reform-list { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .reform-list > div { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: center; gap: 10px; min-height: 58px; padding: 9px 11px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .detail-icon { display: grid; place-items: center; width: 28px; height: 28px; }
+  .reform-choice { display: block; min-width: 0; text-align: left; }
+  .reform-choice > small { display: block; overflow: hidden; margin: 0 0 3px; color: var(--text-muted); font-size: 8px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+  .reform-choice > a, .reform-choice > strong { display: block; overflow: hidden; min-width: 0; color: var(--link); font-size: 11px; line-height: 1.25; text-align: left; text-overflow: ellipsis; white-space: nowrap; }
+  .reform-choice > strong { color: var(--text); }
+  .culture-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 28px; }
+  .culture-groups h3, .detail-subsection h3 { margin: 0 0 9px; color: var(--text-muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+  .chip-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .culture-chip { display: inline-flex; padding: 5px 9px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 999px; font-size: 10px; }
+  .culture-chip.primary { color: var(--accent-dark); border-color: #d6a46b; }
+  .culture-chip.oppressed { color: var(--negative); }
+  .country-table { border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); }
+  .country-table > div { display: grid; align-items: center; min-height: 39px; background: var(--surface); border-right: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong); font-size: 10px; }
+  .country-table > div > * { min-width: 0; padding: 8px 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .country-table .table-header { min-height: 31px; color: var(--text-muted); background: var(--surface-2); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+  .country-table .table-header-label { display: flex; align-items: center; gap: 7px; }
+  .faction-table > div { grid-template-columns: minmax(140px, 1fr) 90px 90px 110px; }
+  .faction-table strong { color: var(--teal); font-size: 9px; }
+  .country-table .table-identity { display: flex; align-items: center; gap: 8px; }
+  .table-identity > a, .table-identity > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .planetary-body-identity { min-height: 42px; }
+  .region-table > div { grid-template-columns: minmax(180px, 1.25fr) minmax(170px, 1.15fr) minmax(130px, .7fr) minmax(140px, .75fr); }
+  .region-table > div.capital { box-shadow: inset 3px 0 0 var(--accent); }
+  .region-table strong small { margin-left: 7px; padding: 2px 5px; color: var(--accent-dark); background: #f4e4d1; border-radius: 999px; font-size: 7px; text-transform: uppercase; }
+  .technology-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .technology-list a, .technology-list > span { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 5px 9px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 9px; }
+  .technology-list a:hover { color: var(--accent-dark); border-color: var(--border-strong); }
+  .detail-subsection + .detail-subsection { margin-top: 24px; }
+  .value-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; }
+  .value-list div { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 8px 11px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 10px; }
+  .value-list dt { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .value-list dt a, .value-list dt span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .value-list dd { margin: 0; font-variant-numeric: tabular-nums; font-weight: 700; }
+  .value-list dd.positive { color: var(--positive); }
+  .value-list dd.negative { color: var(--negative); }
+  @media (max-width: 900px) {
+    .country-stats, .country-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 650px) {
+    .country-title { align-items: flex-start; flex-direction: column; }
+    .country-title-flag { width: 92px; height: 60px; }
+    .country-stats, .country-facts, .culture-groups, .government-reform-groups, .value-list { grid-template-columns: 1fr; }
+    .country-table { overflow-x: auto; }
+    .country-table > div { min-width: 620px; }
+  }
+</style>

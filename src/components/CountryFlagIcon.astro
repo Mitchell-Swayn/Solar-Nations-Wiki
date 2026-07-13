@@ -1,0 +1,32 @@
+---
+import { withBase } from '../lib/base';
+
+interface Props {
+  flag: string;
+  countryName: string;
+  size?: number;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+
+const { flag, countryName, size = 34, loading, fetchpriority } = Astro.props;
+const height = Math.round(size * 2 / 3);
+const adaptiveLoading = loading === undefined;
+---
+
+<img
+  class="country-flag-icon"
+  src={withBase(`/assets/flags/${encodeURIComponent(flag)}`)}
+  alt=""
+  title={`${countryName} flag`}
+  width={size}
+  height={height}
+  loading={loading ?? 'lazy'}
+  decoding="async"
+  fetchpriority={fetchpriority}
+  data-auto-loading={adaptiveLoading || undefined}
+/>
+
+<style>
+  .country-flag-icon { object-fit: cover; vertical-align: middle; border: 1px solid var(--border); border-radius: 3px; box-shadow: 0 1px 2px rgb(20 32 38 / 10%); }
+</style>

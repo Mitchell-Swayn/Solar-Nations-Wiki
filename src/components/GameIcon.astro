@@ -5,21 +5,29 @@ import manifest from '../../data/curated/icon-manifest.json';
 interface Props {
   name: string;
   size?: number;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
 }
 
-const { name, size = 32 } = Astro.props;
-const path = (manifest as Record<string, string>)[name.toLowerCase()] ?? `${name}.png`;
-const src = withBase(`/wiki-icons/${path}`);
+const { name, size = 32, loading, fetchpriority } = Astro.props;
+const path = (manifest as Record<string, string>)[name.toLowerCase()];
+const src = path ? withBase(`/wiki-icons/${path}`) : undefined;
+const adaptiveLoading = loading === undefined;
 ---
 
-<img
-  src={src}
-  alt=""
-  width={size}
-  height={size}
-  class="game-icon"
-  onerror="this.style.display='none'"
-/>
+{src && (
+  <img
+    src={src}
+    alt=""
+    width={size}
+    height={size}
+    class="game-icon"
+    loading={loading ?? 'lazy'}
+    decoding="async"
+    fetchpriority={fetchpriority}
+    data-auto-loading={adaptiveLoading || undefined}
+  />
+)}
 
 <style>
   .game-icon {

@@ -2,7 +2,7 @@
   {
     "id": "aiJoinAnnounce_ally",
     "type": "notifications",
-    "displayName": "Ai Join Announce Ally",
+    "displayName": "aiJoinAnnounce_ally",
     "fields": {
       "Name": "aiJoinAnnounce_ally",
       "Image": "warExpansion",
@@ -20,7 +20,7 @@
   {
     "id": "aiJoinAnnounce_enemy",
     "type": "notifications",
-    "displayName": "Ai Join Announce Enemy",
+    "displayName": "aiJoinAnnounce_enemy",
     "fields": {
       "Name": "aiJoinAnnounce_enemy",
       "Image": "warExpansion",
@@ -38,7 +38,7 @@
   {
     "id": "aiJoinWar",
     "type": "notifications",
-    "displayName": "Ai Join War",
+    "displayName": "aiJoinWar",
     "fields": {
       "Name": "aiJoinWar",
       "Image": "warIcon",
@@ -56,7 +56,7 @@
   {
     "id": "badPuppet",
     "type": "notifications",
-    "displayName": "Bad Puppet",
+    "displayName": "badPuppet",
     "fields": {
       "Name": "badPuppet",
       "Image": "puppetWarning",
@@ -74,7 +74,7 @@
   {
     "id": "callAlly",
     "type": "notifications",
-    "displayName": "Call Ally",
+    "displayName": "callAlly",
     "fields": {
       "Name": "callAlly",
       "Image": "alliance",
@@ -92,7 +92,7 @@
   {
     "id": "canAddCultureIdea",
     "type": "notifications",
-    "displayName": "Can Add Culture Idea",
+    "displayName": "canAddCultureIdea",
     "fields": {
       "Name": "canAddCultureIdea",
       "Image": "stabilityPurple",
@@ -110,7 +110,7 @@
   {
     "id": "canAddCultureTrait",
     "type": "notifications",
-    "displayName": "Can Add Culture Trait",
+    "displayName": "canAddCultureTrait",
     "fields": {
       "Name": "canAddCultureTrait",
       "Image": "stabilityPurple",
@@ -128,7 +128,7 @@
   {
     "id": "characterDeathNotification",
     "type": "notifications",
-    "displayName": "Character Death Notification",
+    "displayName": "characterDeathNotification",
     "fields": {
       "Name": "characterDeathNotification",
       "Image": "skull",
@@ -146,7 +146,7 @@
   {
     "id": "colonyCompleted",
     "type": "notifications",
-    "displayName": "Colony Completed",
+    "displayName": "colonyCompleted",
     "fields": {
       "Name": "colonyCompleted",
       "Image": "colony",
@@ -164,7 +164,7 @@
   {
     "id": "complexPeaceDeal",
     "type": "notifications",
-    "displayName": "Complex Peace Deal",
+    "displayName": "complexPeaceDeal",
     "fields": {
       "Name": "complexPeaceDeal",
       "Image": "peaceDeal",
@@ -182,7 +182,7 @@
   {
     "id": "crisisSpawn",
     "type": "notifications",
-    "displayName": "Crisis Spawn",
+    "displayName": "crisisSpawn",
     "fields": {
       "Name": "crisisSpawn",
       "Image": "combatPower",
@@ -200,7 +200,7 @@
   {
     "id": "debtNotification",
     "type": "notifications",
-    "displayName": "Debt Notification",
+    "displayName": "debtNotification",
     "fields": {
       "Name": "debtNotification",
       "Image": "dollars",
@@ -218,7 +218,7 @@
   {
     "id": "diploMessage",
     "type": "notifications",
-    "displayName": "Diplo Message",
+    "displayName": "diploMessage",
     "fields": {
       "Name": "diploMessage",
       "Image": "condition",
@@ -236,7 +236,7 @@
   {
     "id": "dispute",
     "type": "notifications",
-    "displayName": "Dispute",
+    "displayName": "dispute",
     "fields": {
       "Name": "dispute",
       "Image": "condition",
@@ -254,7 +254,7 @@
   {
     "id": "edictInvalidated",
     "type": "notifications",
-    "displayName": "Edict Invalidated",
+    "displayName": "edictInvalidated",
     "fields": {
       "Name": "edictInvalidated",
       "Image": "edictCancel",
@@ -272,7 +272,7 @@
   {
     "id": "electionNotification",
     "type": "notifications",
-    "displayName": "Election Notification",
+    "displayName": "electionNotification",
     "fields": {
       "Name": "electionNotification",
       "Image": "condition",
@@ -290,7 +290,7 @@
   {
     "id": "focusClear",
     "type": "notifications",
-    "displayName": "Focus Clear",
+    "displayName": "focusClear",
     "fields": {
       "Name": "focusClear",
       "Image": "condition",
@@ -308,7 +308,7 @@
   {
     "id": "highStability",
     "type": "notifications",
-    "displayName": "High Stability",
+    "displayName": "highStability",
     "fields": {
       "Name": "highStability",
       "Image": "stability",
@@ -326,7 +326,7 @@
   {
     "id": "hostileOperation",
     "type": "notifications",
-    "displayName": "Hostile Operation",
+    "displayName": "hostileOperation",
     "fields": {
       "Name": "hostileOperation",
       "Image": "espionage",
@@ -344,7 +344,7 @@
   {
     "id": "impendingRevolt",
     "type": "notifications",
-    "displayName": "Impending Revolt",
+    "displayName": "impendingRevolt",
     "fields": {
       "Name": "impendingRevolt",
       "Image": "combatPower_yellow",
@@ -362,7 +362,7 @@
   {
     "id": "incomingDiplomacy",
     "type": "notifications",
-    "displayName": "Incoming Diplomacy",
+    "displayName": "incomingDiplomacy",
     "fields": {
       "Name": "incomingDiplomacy",
       "Image": "condition",
@@ -380,7 +380,7 @@
   {
     "id": "incomingPeace",
     "type": "notifications",
-    "displayName": "Incoming Peace",
+    "displayName": "incomingPeace",
     "fields": {
       "Name": "incomingPeace",
       "Image": "condition",
@@ -398,7 +398,7 @@
   {
     "id": "integrationComplete",
     "type": "notifications",
-    "displayName": "Integration Complete",
+    "displayName": "integrationComplete",
     "fields": {
       "Name": "integrationComplete",
       "Image": "territory",
@@ -416,7 +416,7 @@
   {
     "id": "leftOrganization",
     "type": "notifications",
-    "displayName": "Left Organization",
+    "displayName": "leftOrganization",
     "fields": {
       "Name": "leftOrganization",
       "Image": "allianceBroken",
@@ -434,7 +434,7 @@
   {
     "id": "lowAdminEfficiency",
     "type": "notifications",
-    "displayName": "Low Admin Efficiency",
+    "displayName": "lowAdminEfficiency",
     "fields": {
       "Name": "lowAdminEfficiency",
       "Image": "adminEffWarning",
@@ -452,7 +452,7 @@
   {
     "id": "nuclearUltimatum",
     "type": "notifications",
-    "displayName": "Nuclear Ultimatum",
+    "displayName": "nuclearUltimatum",
     "fields": {
       "Name": "nuclearUltimatum",
       "Image": "nuclearFuels",
@@ -470,7 +470,7 @@
   {
     "id": "nuclearUltimatum_refuse",
     "type": "notifications",
-    "displayName": "Nuclear Ultimatum Refuse",
+    "displayName": "nuclearUltimatum_refuse",
     "fields": {
       "Name": "nuclearUltimatum_refuse",
       "Image": "condition",
@@ -488,7 +488,7 @@
   {
     "id": "orgVoteBegun",
     "type": "notifications",
-    "displayName": "Org Vote Begun",
+    "displayName": "orgVoteBegun",
     "fields": {
       "Name": "orgVoteBegun",
       "Image": "form_republic",
@@ -506,7 +506,7 @@
   {
     "id": "orgVoteFailed",
     "type": "notifications",
-    "displayName": "Org Vote Failed",
+    "displayName": "orgVoteFailed",
     "fields": {
       "Name": "orgVoteFailed",
       "Image": "form_republic",
@@ -524,7 +524,7 @@
   {
     "id": "orgVotePassed",
     "type": "notifications",
-    "displayName": "Org Vote Passed",
+    "displayName": "orgVotePassed",
     "fields": {
       "Name": "orgVotePassed",
       "Image": "form_republic",
@@ -542,7 +542,7 @@
   {
     "id": "peaceDeal",
     "type": "notifications",
-    "displayName": "Peace Deal",
+    "displayName": "peaceDeal",
     "fields": {
       "Name": "peaceDeal",
       "Image": "peaceDeal",
@@ -560,7 +560,7 @@
   {
     "id": "possibleFormable",
     "type": "notifications",
-    "displayName": "Possible Formable",
+    "displayName": "possibleFormable",
     "fields": {
       "Name": "possibleFormable",
       "Image": "cohesion",
@@ -578,7 +578,7 @@
   {
     "id": "regionInvasion",
     "type": "notifications",
-    "displayName": "Region Invasion",
+    "displayName": "regionInvasion",
     "fields": {
       "Name": "regionInvasion",
       "Image": "invasion",
@@ -596,7 +596,7 @@
   {
     "id": "regionOccupation",
     "type": "notifications",
-    "displayName": "Region Occupation",
+    "displayName": "regionOccupation",
     "fields": {
       "Name": "regionOccupation",
       "Image": "territory",
@@ -612,9 +612,27 @@
     "references": []
   },
   {
+    "id": "techNotification",
+    "type": "notifications",
+    "displayName": "Research Finished!",
+    "fields": {
+      "Name": "techNotification",
+      "Image": "research",
+      "Tooltip": "techNotification",
+      "Lifetime": 60,
+      "Urgency": 1,
+      "CreateBoxWidget": false,
+      "PopupImmediately": false,
+      "Sound": "click3_science"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
     "id": "researchComplete",
     "type": "notifications",
-    "displayName": "Research Complete",
+    "displayName": "researchComplete",
     "fields": {
       "Name": "researchComplete",
       "Image": "research",
@@ -632,7 +650,7 @@
   {
     "id": "resourceShortage",
     "type": "notifications",
-    "displayName": "Resource Shortage",
+    "displayName": "resourceShortage",
     "fields": {
       "Name": "resourceShortage",
       "Image": "resourceShortage",
@@ -650,7 +668,7 @@
   {
     "id": "revoltThreshold",
     "type": "notifications",
-    "displayName": "Revolt Threshold",
+    "displayName": "revoltThreshold",
     "fields": {
       "Name": "revoltThreshold",
       "Image": "combatPower",
@@ -668,7 +686,7 @@
   {
     "id": "selectMission",
     "type": "notifications",
-    "displayName": "Select Mission",
+    "displayName": "selectMission",
     "fields": {
       "Name": "selectMission",
       "Image": "condition",
@@ -686,7 +704,7 @@
   {
     "id": "situationMissionPossible",
     "type": "notifications",
-    "displayName": "Situation Mission Possible",
+    "displayName": "situationMissionPossible",
     "fields": {
       "Name": "situationMissionPossible",
       "Image": "condition",
@@ -704,7 +722,7 @@
   {
     "id": "splinterCulture",
     "type": "notifications",
-    "displayName": "Splinter Culture",
+    "displayName": "splinterCulture",
     "fields": {
       "Name": "splinterCulture",
       "Image": "culture",
@@ -722,7 +740,7 @@
   {
     "id": "strikeDefenseFailure",
     "type": "notifications",
-    "displayName": "Strike Defense Failure",
+    "displayName": "strikeDefenseFailure",
     "fields": {
       "Name": "strikeDefenseFailure",
       "Image": "rangeDefense",
@@ -740,7 +758,7 @@
   {
     "id": "strikeDefenseSuccess",
     "type": "notifications",
-    "displayName": "Strike Defense Success",
+    "displayName": "strikeDefenseSuccess",
     "fields": {
       "Name": "strikeDefenseSuccess",
       "Image": "rangeDefense",
@@ -758,7 +776,7 @@
   {
     "id": "strikeFailure",
     "type": "notifications",
-    "displayName": "Strike Failure",
+    "displayName": "strikeFailure",
     "fields": {
       "Name": "strikeFailure",
       "Image": "accuracy",
@@ -776,7 +794,7 @@
   {
     "id": "strikeSuccess",
     "type": "notifications",
-    "displayName": "Strike Success",
+    "displayName": "strikeSuccess",
     "fields": {
       "Name": "strikeSuccess",
       "Image": "accuracy",
@@ -792,27 +810,9 @@
     "references": []
   },
   {
-    "id": "techNotification",
-    "type": "notifications",
-    "displayName": "Tech Notification",
-    "fields": {
-      "Name": "techNotification",
-      "Image": "research",
-      "Tooltip": "techNotification",
-      "Lifetime": 60,
-      "Urgency": 1,
-      "CreateBoxWidget": false,
-      "PopupImmediately": false,
-      "Sound": "click3_science"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "tooManyCharacters",
     "type": "notifications",
-    "displayName": "Too Many Characters",
+    "displayName": "tooManyCharacters",
     "fields": {
       "Name": "tooManyCharacters",
       "Image": "leader",
@@ -830,7 +830,7 @@
   {
     "id": "transferOccupation",
     "type": "notifications",
-    "displayName": "Transfer Occupation",
+    "displayName": "transferOccupation",
     "fields": {
       "Name": "transferOccupation",
       "Image": "territoryTrade",
@@ -848,7 +848,7 @@
   {
     "id": "unrestWarning",
     "type": "notifications",
-    "displayName": "Unrest Warning",
+    "displayName": "unrestWarning",
     "fields": {
       "Name": "unrestWarning",
       "Image": "combatPower",
@@ -866,7 +866,7 @@
   {
     "id": "unrestWarningSevere",
     "type": "notifications",
-    "displayName": "Unrest Warning Severe",
+    "displayName": "unrestWarningSevere",
     "fields": {
       "Name": "unrestWarningSevere",
       "Image": "combatPower",
@@ -884,7 +884,7 @@
   {
     "id": "warDeclared",
     "type": "notifications",
-    "displayName": "War Declared",
+    "displayName": "warDeclared",
     "fields": {
       "Name": "warDeclared",
       "Image": "warIcon",
@@ -902,7 +902,7 @@
   {
     "id": "warEscalated",
     "type": "notifications",
-    "displayName": "War Escalated",
+    "displayName": "warEscalated",
     "fields": {
       "Name": "warEscalated",
       "Image": "escalation",
@@ -920,7 +920,7 @@
   {
     "id": "warResolved",
     "type": "notifications",
-    "displayName": "War Resolved",
+    "displayName": "warResolved",
     "fields": {
       "Name": "warResolved",
       "Image": "diplomat",

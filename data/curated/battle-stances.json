@@ -2,7 +2,7 @@
   {
     "id": "aggressiveStance",
     "type": "battle-stances",
-    "displayName": "Aggressive Stance",
+    "displayName": "aggressiveStance",
     "icon": "accuracy",
     "fields": {
       "Name": "aggressiveStance",
@@ -35,7 +35,7 @@
   {
     "id": "fightingRetreat",
     "type": "battle-stances",
-    "displayName": "Fighting Retreat",
+    "displayName": "fightingRetreat",
     "icon": "fightingRetreat",
     "fields": {
       "Name": "fightingRetreat",
@@ -68,7 +68,7 @@
   {
     "id": "forcedMarch",
     "type": "battle-stances",
-    "displayName": "Forced March",
+    "displayName": "forcedMarch",
     "icon": "speed",
     "fields": {
       "Name": "forcedMarch",

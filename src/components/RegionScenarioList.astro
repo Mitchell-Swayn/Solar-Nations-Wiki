@@ -1,0 +1,72 @@
+---
+import ScenarioTabs from './ScenarioTabs.astro';
+import GameIcon from './GameIcon.astro';
+import CountryFlagIcon from './CountryFlagIcon.astro';
+import { getCountryScenarios } from '../lib/countries';
+import { getEntry } from '../lib/data';
+import { getRegionOwner, getRegionPath, getRegionTerrainIcon } from '../lib/regions';
+import { withBase } from '../lib/base';
+
+interface Props {
+  planetId?: string;
+  depositId?: string;
+}
+
+const { planetId, depositId } = Astro.props;
+const states = getCountryScenarios().map((scenario) => ({
+  scenario,
+  regions: scenario.regions.filter((region) =>
+    (planetId === undefined || region.planet === planetId)
+    && (depositId === undefined || region.deposits.some((deposit) => deposit.id === depositId))),
+}));
+const tabs = states.map((state) => ({
+  id: state.scenario.id,
+  label: state.scenario.name,
+  href: `?scenario=${state.scenario.id}`,
+}));
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+const quantity = (region: typeof states[number]['regions'][number]) => region.deposits.find((deposit) => deposit.id === depositId)?.quantity;
+---
+
+<section class="article-section region-presence" id="regions">
+  <h2>Regions</h2>
+  <ScenarioTabs tabs={tabs} switchPanels />
+  {states.map((state, index) => (
+    <div id={`scenario-panel-${state.scenario.id}`} data-scenario-panel={state.scenario.id} hidden={index > 0}>
+      <p class="region-summary"><strong>{state.regions.length}</strong> starting {state.regions.length === 1 ? 'region' : 'regions'} in {state.scenario.name}</p>
+      {state.regions.length > 0 ? <div class="region-presence-list">
+        {state.regions.map((region) => {
+          const owner = getRegionOwner(state.scenario, region);
+          const specialization = region.specialization ? getEntry('specializations', region.specialization) : undefined;
+          const icon = getRegionTerrainIcon(region);
+          return <a class="region-presence-row" href={withBase(getRegionPath(state.scenario.id, region.id))}>
+            <span class="region-presence-icon"><GameIcon name={icon} size={30} /></span>
+            <span class="region-presence-name"><strong>{region.name}</strong><small>{region.regionType === 'planetary' ? 'Unpopulated region' : specialization?.displayName ?? 'No specialization'}</small></span>
+            {owner ? <span class="region-owner"><CountryFlagIcon flag={owner.flag} countryName={owner.name} size={30} /><span>{owner.name}</span></span> : <span class="region-owner muted">Unowned</span>}
+            <span class="region-presence-value">{depositId ? <><strong>{quantity(region)?.toLocaleString()}</strong><small>Quantity</small></> : <><strong>{compactNumber.format(region.population)}</strong><small>Population</small></>}</span>
+          </a>;
+        })}
+      </div> : <p class="notice">No regions in this scenario.</p>}
+    </div>
+  ))}
+</section>
+
+<style>
+  .region-presence .scenario-tabs { margin-top: 12px; }
+  .region-summary { margin: 0 0 9px; color: var(--text-muted); font-size: 10px; }
+  .region-presence-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .region-presence-row { display: grid; grid-template-columns: 34px minmax(0, 1fr) minmax(110px, .8fr) auto; align-items: center; gap: 10px; min-height: 58px; padding: 8px 11px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .region-presence-row:hover { color: var(--text); border-color: var(--border-strong); box-shadow: inset 3px 0 0 var(--accent); }
+  .region-presence-icon { display: grid; place-items: center; width: 34px; height: 34px; }
+  .region-presence-name, .region-presence-value { min-width: 0; }
+  .region-presence-name strong, .region-presence-name small, .region-presence-value strong, .region-presence-value small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .region-presence-name strong { font-size: 11px; }
+  .region-presence-name small, .region-presence-value small { margin-top: 2px; color: var(--text-muted); font-size: 8px; }
+  .region-owner { display: flex; align-items: center; gap: 7px; min-width: 0; font-size: 9px; }
+  .region-owner span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .region-owner.muted { color: var(--text-muted); }
+  .region-presence-value { text-align: right; }
+  .region-presence-value strong { color: var(--ink); font-size: 11px; }
+  @media (max-width: 950px) { .region-presence-list { grid-template-columns: 1fr; } }
+  @media (max-width: 580px) { .region-presence-row { grid-template-columns: 34px minmax(0, 1fr) auto; } .region-owner { display: none; } }
+</style>

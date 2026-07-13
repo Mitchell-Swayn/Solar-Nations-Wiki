@@ -12,6 +12,7 @@ const USMAP = join(PROJECT_ROOT, 'tools/jmap_dumper/mappings.usmap');
 const CUE4_EXPORT_DIR = join(PROJECT_ROOT, 'tools/cue4-export');
 const CONVERT_SCRIPT = join(PROJECT_ROOT, 'tools/convert_full_defines.py');
 const DEFINES_FULL = join(DATA_RAW, 'DefinesFull');
+const STAR_MAP_RAW = join(DATA_RAW, 'StarMap');
 
 function runParseLegacy() {
   console.log('Parsing legacy UE exports into Defines JSON...');
@@ -119,6 +120,20 @@ function runFullExport(gameRoot: string) {
   );
   console.log('Converting full exports to Defines JSON...');
   execSync(`python3 "${CONVERT_SCRIPT}"`, { stdio: 'inherit', cwd: PROJECT_ROOT });
+
+  console.log('Exporting celestial display names from the star map...');
+  execSync(
+    `dotnet run --project "${CUE4_EXPORT_DIR}" -- "${getPaksPath(gameRoot)}" "${USMAP}" "${STAR_MAP_RAW}"`,
+    {
+      stdio: 'inherit',
+      env: {
+        ...process.env,
+        CUE4_PREFIXES: 'twilightModernity/Content/TopDownBP/Maps/',
+        CUE4_READ_SCRIPT: '1',
+        CUE4_STARMAP: '1',
+      },
+    },
+  );
 }
 
 function main() {

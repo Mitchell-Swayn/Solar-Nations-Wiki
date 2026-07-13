@@ -543,6 +543,46 @@
     ]
   },
   {
+    "id": "rareMetals",
+    "type": "deposits",
+    "displayName": "Heavy Metals",
+    "icon": "rareMetals",
+    "fields": {
+      "Name": "rareMetals",
+      "Icon": "rareMetals",
+      "Cosmetic": [],
+      "Color": {
+        "R": 0.760417,
+        "G": 0.529255,
+        "B": 0,
+        "A": 1,
+        "Hex": "E2C100"
+      },
+      "Special": false,
+      "SurveyFindChance": 0.1,
+      "SurveyFindAmount": 5
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "consumerGoods",
+        "value": 1
+      },
+      {
+        "key": "politicalPowerAdd",
+        "value1": "upperClass",
+        "value": 0.04
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "rareMetals"
+      }
+    ]
+  },
+  {
     "id": "helium3",
     "type": "deposits",
     "displayName": "Helium-3",
@@ -930,7 +970,7 @@
   {
     "id": "oil",
     "type": "deposits",
-    "displayName": "Oil",
+    "displayName": "oil",
     "icon": "oil",
     "fields": {
       "Name": "oil",
@@ -1154,46 +1194,6 @@
       {
         "type": "icon",
         "id": "nuclearFuels"
-      }
-    ]
-  },
-  {
-    "id": "rareMetals",
-    "type": "deposits",
-    "displayName": "Rare Metals",
-    "icon": "rareMetals",
-    "fields": {
-      "Name": "rareMetals",
-      "Icon": "rareMetals",
-      "Cosmetic": [],
-      "Color": {
-        "R": 0.760417,
-        "G": 0.529255,
-        "B": 0,
-        "A": 1,
-        "Hex": "E2C100"
-      },
-      "Special": false,
-      "SurveyFindChance": 0.1,
-      "SurveyFindAmount": 5
-    },
-    "modifiers": [
-      {
-        "key": "resourceModifier",
-        "value1": "consumerGoods",
-        "value": 1
-      },
-      {
-        "key": "politicalPowerAdd",
-        "value1": "upperClass",
-        "value": 0.04
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "rareMetals"
       }
     ]
   },

@@ -6695,6 +6695,56 @@
     ]
   },
   {
+    "id": "entrenchmentEquipment_1",
+    "type": "unit-components",
+    "displayName": "Entrenching Tools",
+    "icon": "experience",
+    "fields": {
+      "Name": "entrenchmentEquipment_1",
+      "ID": 202,
+      "Icon": "experience",
+      "Cost": {
+        "industry": 0.0003
+      },
+      "Size": 0,
+      "Domains": [
+        "Land"
+      ],
+      "Attributes": [
+        "entrenchment"
+      ],
+      "AttributeExclusion": [],
+      "Upgrade": "entrenchmentEquipment_2",
+      "Limit": 1,
+      "Speed": 0,
+      "Manpower": 0,
+      "RequiredAttributes": [],
+      "RequiredNotAttributes": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "titaniumAlloy"
+      },
+      "Archetype": "None",
+      "ArchetypeWeight": 0,
+      "PointCost": 0,
+      "IsTemplate": false
+    },
+    "modifiers": [
+      {
+        "key": "unitStatAdd",
+        "value1": "entrenchment",
+        "value": 18
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "experience"
+      }
+    ]
+  },
+  {
     "id": "laserTurret_6",
     "type": "unit-components",
     "displayName": "Eraser Beam",
@@ -10097,56 +10147,6 @@
     ]
   },
   {
-    "id": "entrenchmentEquipment_1",
-    "type": "unit-components",
-    "displayName": "Improved Support Equipment",
-    "icon": "experience",
-    "fields": {
-      "Name": "entrenchmentEquipment_1",
-      "ID": 202,
-      "Icon": "experience",
-      "Cost": {
-        "industry": 0.0003
-      },
-      "Size": 0,
-      "Domains": [
-        "Land"
-      ],
-      "Attributes": [
-        "entrenchment"
-      ],
-      "AttributeExclusion": [],
-      "Upgrade": "entrenchmentEquipment_2",
-      "Limit": 1,
-      "Speed": 0,
-      "Manpower": 0,
-      "RequiredAttributes": [],
-      "RequiredNotAttributes": [],
-      "Prerequisite": {
-        "A": "technology",
-        "B": "titaniumAlloy"
-      },
-      "Archetype": "None",
-      "ArchetypeWeight": 0,
-      "PointCost": 0,
-      "IsTemplate": false
-    },
-    "modifiers": [
-      {
-        "key": "unitStatAdd",
-        "value1": "entrenchment",
-        "value": 18
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "experience"
-      }
-    ]
-  },
-  {
     "id": "tankCannon_1",
     "type": "unit-components",
     "displayName": "Improved Tank Cannon",
@@ -10445,7 +10445,7 @@
   {
     "id": "insulator_5",
     "type": "unit-components",
-    "displayName": "Insulator 5",
+    "displayName": "insulator_5",
     "icon": "empDefense5",
     "fields": {
       "Name": "insulator_5",
@@ -12490,86 +12490,6 @@
     ]
   },
   {
-    "id": "smallArms_6",
-    "type": "unit-components",
-    "displayName": "Phaser Rifle",
-    "icon": "smallArms6",
-    "fields": {
-      "Name": "smallArms_6",
-      "ID": 1200,
-      "Icon": "smallArms6",
-      "Cost": {
-        "industry": 0.006,
-        "manpower": 0.001,
-        "antimatter": 0.001
-      },
-      "Size": 1,
-      "Domains": [
-        "Land"
-      ],
-      "Attributes": [
-        "infantry"
-      ],
-      "AttributeExclusion": [
-        "artillery",
-        "tank"
-      ],
-      "Upgrade": "None",
-      "Limit": 1,
-      "Speed": 1,
-      "Manpower": 1,
-      "RequiredAttributes": [],
-      "RequiredNotAttributes": [],
-      "Prerequisite": {
-        "A": "technology",
-        "B": "smallArms_6"
-      },
-      "Archetype": "infantry",
-      "ArchetypeWeight": 1,
-      "PointCost": 0,
-      "IsTemplate": true
-    },
-    "modifiers": [
-      {
-        "key": "unitAttackAdd",
-        "value1": "landSoft",
-        "value": 10
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "health",
-        "value": 400
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "sizeLimit",
-        "value": 2
-      },
-      {
-        "key": "unitStatAdd",
-        "value1": "entrenchment",
-        "value": 140
-      },
-      {
-        "key": "unitAttackAdd",
-        "value1": "strategic",
-        "value": 3
-      },
-      {
-        "key": "unitQualityAdd",
-        "value1": "screenAbility",
-        "value": 2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "smallArms6"
-      }
-    ]
-  },
-  {
     "id": "armor_1",
     "type": "unit-components",
     "displayName": "Polarized Steel Armor",
@@ -12945,7 +12865,7 @@
   {
     "id": "reconEquipment",
     "type": "unit-components",
-    "displayName": "Recon Equipment",
+    "displayName": "Recon Company",
     "icon": "recon",
     "fields": {
       "Name": "reconEquipment",
@@ -13072,6 +12992,86 @@
       {
         "type": "icon",
         "id": "railgunTurret5"
+      }
+    ]
+  },
+  {
+    "id": "smallArms_6",
+    "type": "unit-components",
+    "displayName": "Remote Force Projector",
+    "icon": "smallArms6",
+    "fields": {
+      "Name": "smallArms_6",
+      "ID": 1200,
+      "Icon": "smallArms6",
+      "Cost": {
+        "industry": 0.006,
+        "manpower": 0.001,
+        "antimatter": 0.001
+      },
+      "Size": 1,
+      "Domains": [
+        "Land"
+      ],
+      "Attributes": [
+        "infantry"
+      ],
+      "AttributeExclusion": [
+        "artillery",
+        "tank"
+      ],
+      "Upgrade": "None",
+      "Limit": 1,
+      "Speed": 1,
+      "Manpower": 1,
+      "RequiredAttributes": [],
+      "RequiredNotAttributes": [],
+      "Prerequisite": {
+        "A": "technology",
+        "B": "smallArms_6"
+      },
+      "Archetype": "infantry",
+      "ArchetypeWeight": 1,
+      "PointCost": 0,
+      "IsTemplate": true
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackAdd",
+        "value1": "landSoft",
+        "value": 10
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "health",
+        "value": 400
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "sizeLimit",
+        "value": 2
+      },
+      {
+        "key": "unitStatAdd",
+        "value1": "entrenchment",
+        "value": 140
+      },
+      {
+        "key": "unitAttackAdd",
+        "value1": "strategic",
+        "value": 3
+      },
+      {
+        "key": "unitQualityAdd",
+        "value1": "screenAbility",
+        "value": 2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "smallArms6"
       }
     ]
   },
@@ -13684,7 +13684,7 @@
   {
     "id": "submarineEngine",
     "type": "unit-components",
-    "displayName": "Submarine Engine",
+    "displayName": "submarineEngine",
     "icon": "water",
     "fields": {
       "Name": "submarineEngine",
@@ -15623,7 +15623,7 @@
   {
     "id": "supportRailgun",
     "type": "unit-components",
-    "displayName": "Support Railgun",
+    "displayName": "supportRailgun",
     "icon": "railgunTurret1",
     "fields": {
       "Name": "supportRailgun",

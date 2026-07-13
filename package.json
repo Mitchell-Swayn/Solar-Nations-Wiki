@@ -8,10 +8,12 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "audit": "npm run build && node tools/audit-built-site.mjs",
     "build:local": "npm run data && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "extract": "tsx scripts/extract.ts",
+    "extract:scenarios": "tsx scripts/extract-scenarios.ts",
     "normalize": "tsx scripts/normalize.ts",
     "data": "npm run extract && npm run normalize"
   },
@@ -20,6 +22,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.30",
+    "linkedom": "^0.18.12",
+    "sharp": "^0.35.3",
     "tsx": "^4.20.3"
   }
 }

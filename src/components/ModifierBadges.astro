@@ -1,18 +1,17 @@
 ---
 import GameIcon from './GameIcon.astro';
-import { getEntry, getModifierMap, getModifierTargetIcon } from '../lib/data';
+import { getDisplayName, getModifierMap, getModifierTargetIcon } from '../lib/data';
+import { formatModifierTemplate } from '../lib/modifier-format';
 import type { ModifierRef } from '../lib/types';
 
 interface Props {
   modifiers: ModifierRef[];
+  showScalingScope?: boolean;
 }
 
-const { modifiers } = Astro.props;
+const { modifiers, showScalingScope = false } = Astro.props;
 const modifierMap = getModifierMap();
-const formatTargetName = (value: string) => value
-  .replace(/([a-z])([A-Z])/g, '$1 $2')
-  .replace(/_/g, ' ')
-  .replace(/^./, (character) => character.toUpperCase());
+const targetName = (types: string[], value: string) => getDisplayName(types, value) ?? value;
 const effects = modifiers.map((modifier) => {
   const definition = modifierMap.get(modifier.key);
   const numeric = typeof modifier.value === 'number' ? modifier.value : undefined;
@@ -21,43 +20,89 @@ const effects = modifiers.map((modifier) => {
     : `${numeric >= 0 ? '+' : ''}${numeric}`;
   const rawLabel = definition?.DisplayName ?? modifier.key;
   const factionVariantLabel = modifier.key === 'factionVariant' && modifier.value1 && modifier.value2
-    ? `Enables ${getEntry('factions', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)} Variant: ${getEntry('faction-variants', modifier.value2)?.displayName ?? formatTargetName(modifier.value2)}`
+    ? `Enables ${targetName(['factions'], modifier.value1)} Variant: ${targetName(['faction-variants'], modifier.value2)}`
     : undefined;
   const usesResourceLabel = modifier.key === 'resourceModifier' || modifier.key.startsWith('resourceCapacity');
   const resourceLabel = usesResourceLabel && modifier.value1
-    ? getEntry('resources', modifier.value1)?.displayName ?? getEntry('deposit-resources', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)
+    ? targetName(['resources', 'deposit-resources'], modifier.value1)
+    : undefined;
+  const resourceIncomeLabel = modifier.key === 'resourceIncomeMult' ? 'Resource Income' : undefined;
+  const projectCostLabel = modifier.key === 'projectBuildCostMult' && modifier.value1
+    ? `${targetName(['projects'], modifier.value1)} Cost`
+    : undefined;
+  const researchLabel = modifier.key === 'researchMult' && modifier.value1
+    ? `${targetName(['technology-domains'], modifier.value1)} Research`
+    : undefined;
+  const unitAttackLabel = (modifier.key === 'unitAttackAdd' || modifier.key === 'unitAttackMult') && modifier.value1
+    ? `${targetName(['damage-types'], modifier.value1)} Attack`
+    : undefined;
+  const unitStatLabel = modifier.key === 'unitStatMult' && modifier.value1
+    ? `${modifier.value2 ? targetName(['unit-archetypes'], modifier.value2) : ''} ${targetName(['unit-stats'], modifier.value1)}`.trim()
+    : undefined;
+  const unitMoraleLabel = modifier.key === 'unitMoraleMult' && modifier.value1
+    ? `${targetName(['battle-domains'], modifier.value1)} Unit Morale`
+    : undefined;
+  const leaderSkillLabel = modifier.key === 'leaderSkillAdd' && modifier.value1
+    ? `${targetName(['character-skills'], modifier.value1)} Skill`
+    : undefined;
+  const unitQualityLabel = modifier.key === 'unitQualityMult'
+    ? modifier.value1 ? `${targetName(['unit-archetypes'], modifier.value1)} Unit Quality` : 'Unit Quality'
+    : undefined;
+  const reinforceRateLabel = modifier.key === 'unitReinforceRateMult' && modifier.value1
+    ? `${targetName(['battle-domains'], modifier.value1)} Reinforce Rate`
+    : undefined;
+  const vulnerabilityLabel = (modifier.key === 'unitVulnAdd' || modifier.key === 'unitVulnMult') && modifier.value1
+    ? `${targetName(['damage-types'], modifier.value1).replace(/\s+Domain\b/i, '').replace(/\s+Unit Damage\b/i, '')} Vulnerability`
     : undefined;
   const targetFirstLabel = modifier.key === 'politicalPowerAdd' ? 'Political Power'
     : modifier.key === 'factionPowerAdd' ? 'Faction Power'
     : modifier.key === 'factionLoyaltyAdd' ? 'Faction Loyalty'
+    : modifier.key === 'unitCostMult' ? 'Unit Cost'
     : undefined;
-  let label = factionVariantLabel ?? resourceLabel ?? (targetFirstLabel && modifier.value1
-    ? `${getEntry('factions', modifier.value1)?.displayName ?? formatTargetName(modifier.value1)} ${targetFirstLabel}`
-    : rawLabel
-    .replace(/:?\s*\{val\}/g, '')
-    .replace(/\{1\}/g, modifier.value1 ?? '')
-    .replace(/\{2\}/g, modifier.value2 ?? '')
-    .replace(/\{3\}/g, modifier.value3 ?? '')
-    .trim() || modifier.key);
-  if (!factionVariantLabel && !resourceLabel && !targetFirstLabel && !rawLabel.includes('{1}') && modifier.value1) label += ` (${modifier.value1})`;
+  const targetDisplayName = modifier.value1 && modifier.key === 'unitCostMult'
+    ? targetName(['resources', 'deposit-resources'], modifier.value1)
+    : modifier.value1 ? targetName(['factions'], modifier.value1) : undefined;
+  let label = factionVariantLabel ?? resourceLabel ?? resourceIncomeLabel ?? projectCostLabel ?? researchLabel ?? unitAttackLabel ?? unitStatLabel ?? unitMoraleLabel ?? leaderSkillLabel ?? unitQualityLabel ?? reinforceRateLabel ?? vulnerabilityLabel ?? (targetFirstLabel && modifier.value1
+    ? `${targetDisplayName} ${targetFirstLabel}`
+    : formatModifierTemplate(modifier, rawLabel) || modifier.key);
   const tone = numeric === undefined || !definition ? ''
     : definition.Positivity === 'positive' ? (numeric >= 0 ? 'good' : 'bad')
     : definition.Positivity === 'negative' ? (numeric < 0 ? 'good' : 'bad')
     : '';
-  const targetIcon = getModifierTargetIcon(modifier.value1);
+  const targetIcon = getModifierTargetIcon(modifier.key, modifier.value1);
   return {
     value,
     icon: definition?.Icon,
     targetIcon: targetIcon !== definition?.Icon ? targetIcon : undefined,
     label,
     tone,
+    scope: modifier.scope,
   };
 });
+const scalingGroups = [...new Set(effects.map((effect) => effect.scope).filter(Boolean))].map((scope) => ({
+  scope,
+  label: scope === 'Shortage' ? 'Shortage modifier'
+    : scope === 'Surplus' ? 'Surplus modifier'
+    : `${scope} modifier`,
+  effects: effects.filter((effect) => effect.scope === scope),
+}));
 ---
 
 {effects.length > 0 && (
   <span class="row-effects">
-    {effects.map((effect) => (
+    {showScalingScope ? scalingGroups.map((group) => (
+      <span class="scaling-effect-group">
+        <small class="scaling-effect-label">{group.label}</small>
+        {group.effects.map((effect) => (
+          <span class:list={['effect', effect.tone]}>
+            <b>{effect.value}</b>
+            {effect.icon && <GameIcon name={effect.icon} size={16} />}
+            {effect.targetIcon && <GameIcon name={effect.targetIcon} size={16} />}
+            <span>{effect.label}</span>
+          </span>
+        ))}
+      </span>
+    )) : effects.map((effect) => (
       <span class:list={['effect', effect.tone]}>
         <b>{effect.value}</b>
         {effect.icon && <GameIcon name={effect.icon} size={16} />}
@@ -67,3 +112,9 @@ const effects = modifiers.map((modifier) => {
     ))}
   </span>
 )}
+
+<style>
+  .scaling-effect-group { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+  .scaling-effect-group + .scaling-effect-group { margin-top: 5px; }
+  .scaling-effect-label { color: var(--text-muted); font-size: 9px; font-weight: 700; letter-spacing: .06em; line-height: 1.2; text-transform: uppercase; }
+</style>

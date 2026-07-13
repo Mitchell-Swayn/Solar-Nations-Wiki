@@ -1577,7 +1577,7 @@
   {
     "id": "consumerGoodsFactory",
     "type": "projects",
-    "displayName": "Consumer Goods Industry",
+    "displayName": "Consumer Goods Factory",
     "icon": "consumerGoodsFactory",
     "fields": {
       "Name": "consumerGoodsFactory",
@@ -1647,7 +1647,7 @@
   {
     "id": "covalenceFactory",
     "type": "projects",
-    "displayName": "Covalence Factory",
+    "displayName": "covalenceFactory",
     "icon": "covalenceFactory",
     "fields": {
       "Name": "covalenceFactory",
@@ -2769,7 +2769,7 @@
   {
     "id": "generationShip",
     "type": "projects",
-    "displayName": "Generation Ship",
+    "displayName": "generationShip",
     "icon": "generationShip",
     "fields": {
       "Name": "generationShip",
@@ -4129,7 +4129,7 @@
   {
     "id": "metaverseServer",
     "type": "projects",
-    "displayName": "Metaverse Server",
+    "displayName": "metaverseServer",
     "icon": "metaverseServer",
     "fields": {
       "Name": "metaverseServer",

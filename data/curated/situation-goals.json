@@ -2,7 +2,7 @@
   {
     "id": "cedeProvince",
     "type": "situation-goals",
-    "displayName": "Cede Province",
+    "displayName": "cedeProvince",
     "icon": "alliance",
     "fields": {
       "Name": "cedeProvince",
@@ -29,7 +29,7 @@
   {
     "id": "cedeRegion",
     "type": "situation-goals",
-    "displayName": "Cede Region",
+    "displayName": "cedeRegion",
     "icon": "territory",
     "fields": {
       "Name": "cedeRegion",
@@ -83,7 +83,7 @@
   {
     "id": "joinOrg",
     "type": "situation-goals",
-    "displayName": "Join Org",
+    "displayName": "joinOrg",
     "icon": "alliance",
     "fields": {
       "Name": "joinOrg",
@@ -110,7 +110,7 @@
   {
     "id": "leaveOrg",
     "type": "situation-goals",
-    "displayName": "Leave Org",
+    "displayName": "leaveOrg",
     "icon": "retreat",
     "fields": {
       "Name": "leaveOrg",
@@ -137,7 +137,7 @@
   {
     "id": "peace",
     "type": "situation-goals",
-    "displayName": "Peace",
+    "displayName": "peace",
     "icon": "diplomat",
     "fields": {
       "Name": "peace",
@@ -164,7 +164,7 @@
   {
     "id": "warReps",
     "type": "situation-goals",
-    "displayName": "War Reps",
+    "displayName": "warReps",
     "icon": "dollars",
     "fields": {
       "Name": "warReps",

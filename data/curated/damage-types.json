@@ -140,7 +140,7 @@
   {
     "id": "emp",
     "type": "damage-types",
-    "displayName": "Emp",
+    "displayName": "EMP",
     "icon": "emp",
     "fields": {
       "Name": "emp",
@@ -196,7 +196,7 @@
   {
     "id": "landHard",
     "type": "damage-types",
-    "displayName": "Land Hard",
+    "displayName": "Land Domain Hard Unit Damage",
     "icon": "land_attack",
     "fields": {
       "Name": "landHard",
@@ -209,6 +209,34 @@
         "B": 0,
         "A": 1,
         "Hex": "444900"
+      },
+      "Icon": "land_attack"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "land_attack"
+      }
+    ]
+  },
+  {
+    "id": "landSoft",
+    "type": "damage-types",
+    "displayName": "Land Domain Soft Unit Damage",
+    "icon": "land_attack",
+    "fields": {
+      "Name": "landSoft",
+      "Notes": {
+        "CultureInvariantString": null
+      },
+      "Color": {
+        "R": 0.00156,
+        "G": 0.496527,
+        "B": 0,
+        "A": 1,
+        "Hex": "05BB00"
       },
       "Icon": "land_attack"
     },
@@ -235,34 +263,6 @@
         "B": 1,
         "A": 1,
         "Hex": "52E3FF"
-      },
-      "Icon": "land_attack"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "land_attack"
-      }
-    ]
-  },
-  {
-    "id": "landSoft",
-    "type": "damage-types",
-    "displayName": "Land Soft",
-    "icon": "land_attack",
-    "fields": {
-      "Name": "landSoft",
-      "Notes": {
-        "CultureInvariantString": null
-      },
-      "Color": {
-        "R": 0.00156,
-        "G": 0.496527,
-        "B": 0,
-        "A": 1,
-        "Hex": "05BB00"
       },
       "Icon": "land_attack"
     },

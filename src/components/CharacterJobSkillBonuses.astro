@@ -1,0 +1,59 @@
+---
+import type { ModifierRef } from '../lib/types';
+import { getEntry } from '../lib/data';
+import GameIcon from './GameIcon.astro';
+import ModifierList from './ModifierList.astro';
+
+interface Props {
+  skillModifiers: Record<string, ModifierRef[]>;
+}
+
+const { skillModifiers } = Astro.props;
+const groups = Object.entries(skillModifiers).map(([skillId, modifiers]) => {
+  const skill = getEntry('character-skills', skillId);
+  return {
+    id: skillId,
+    name: skill?.displayName ?? skillId,
+    icon: skill?.icon,
+    modifiers,
+  };
+});
+---
+
+<div class="skill-bonus-groups">
+  {groups.map((group) => (
+    <section class="skill-bonus-group">
+      <h3>
+        {group.icon && <GameIcon name={group.icon} size={24} />}
+        <span>{group.name}</span>
+        <small>per level</small>
+      </h3>
+      <ModifierList modifiers={group.modifiers} />
+    </section>
+  ))}
+</div>
+
+<style>
+  .skill-bonus-groups {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .skill-bonus-group {
+    min-width: 0;
+  }
+
+  .skill-bonus-group h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+  }
+
+  .skill-bonus-group h3 small {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+</style>

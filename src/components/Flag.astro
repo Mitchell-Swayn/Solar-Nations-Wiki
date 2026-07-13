@@ -4,10 +4,12 @@ import { withBase } from '../lib/base';
 interface Props {
   name: string;
   size?: number;
+  loading?: 'eager' | 'lazy';
 }
 
-const { name, size = 48 } = Astro.props;
+const { name, size = 48, loading } = Astro.props;
 const src = withBase(`/assets/flags/${name}.png`);
+const adaptiveLoading = loading === undefined;
 ---
 
 <img
@@ -16,6 +18,9 @@ const src = withBase(`/assets/flags/${name}.png`);
   width={size}
   height={Math.round(size * 0.67)}
   class="flag"
+  loading={loading ?? 'lazy'}
+  decoding="async"
+  data-auto-loading={adaptiveLoading || undefined}
   onerror="this.style.display='none'"
 />
 

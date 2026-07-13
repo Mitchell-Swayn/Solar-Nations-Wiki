@@ -2,7 +2,7 @@
   {
     "id": "heritage",
     "type": "religion-trait-categories",
-    "displayName": "Heritage",
+    "displayName": "heritage",
     "fields": {
       "Name": "heritage",
       "ChangeCost": 999,
@@ -15,7 +15,7 @@
   {
     "id": "tene",
     "type": "religion-trait-categories",
-    "displayName": "Tene",
+    "displayName": "tene",
     "fields": {
       "Name": "tene",
       "ChangeCost": 25,
@@ -28,7 +28,7 @@
   {
     "id": "trait",
     "type": "religion-trait-categories",
-    "displayName": "Trait",
+    "displayName": "trait",
     "fields": {
       "Name": "trait",
       "ChangeCost": 10,

@@ -2,7 +2,7 @@
   {
     "id": "religion_catholic",
     "type": "religions",
-    "displayName": "Religion Catholic",
+    "displayName": "religion_catholic",
     "fields": {
       "Name": "religion_catholic",
       "MapColor": {

@@ -2,7 +2,7 @@
   {
     "id": "earthMagneticField",
     "type": "space-objects",
-    "displayName": "Earth Magnetic Field",
+    "displayName": "earthMagneticField",
     "fields": {
       "Name": "earthMagneticField",
       "Parent": "earth",
@@ -22,7 +22,7 @@
   {
     "id": "hygiea",
     "type": "space-objects",
-    "displayName": "Hygiea",
+    "displayName": "hygiea",
     "fields": {
       "Name": "hygiea",
       "Parent": "sol",
@@ -48,7 +48,7 @@
   {
     "id": "jupiterAsteroids",
     "type": "space-objects",
-    "displayName": "Jupiter Asteroids",
+    "displayName": "jupiterAsteroids",
     "fields": {
       "Name": "jupiterAsteroids",
       "Parent": "jupiter",
@@ -69,7 +69,7 @@
   {
     "id": "jupiterMagneticField",
     "type": "space-objects",
-    "displayName": "Jupiter Magnetic Field",
+    "displayName": "jupiterMagneticField",
     "fields": {
       "Name": "jupiterMagneticField",
       "Parent": "jupiter",
@@ -89,7 +89,7 @@
   {
     "id": "kuiperBelt",
     "type": "space-objects",
-    "displayName": "Kuiper Belt",
+    "displayName": "kuiperBelt",
     "fields": {
       "Name": "kuiperBelt",
       "Parent": "sol",
@@ -115,7 +115,7 @@
   {
     "id": "pallas",
     "type": "space-objects",
-    "displayName": "Pallas",
+    "displayName": "pallas",
     "fields": {
       "Name": "pallas",
       "Parent": "sol",

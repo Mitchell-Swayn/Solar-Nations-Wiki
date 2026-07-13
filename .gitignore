@@ -40,3 +40,4 @@ tools/extractor/**/bin/
 tools/extractor/**/obj/
 tools/cue4-export/bin/
 tools/cue4-export/obj/
+tools/gvas-export/target/

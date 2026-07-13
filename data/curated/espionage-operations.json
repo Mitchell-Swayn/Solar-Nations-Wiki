@@ -604,7 +604,7 @@
   {
     "id": "robotRevolution",
     "type": "espionage-operations",
-    "displayName": "Robot Revolution",
+    "displayName": "robotRevolution",
     "icon": "unleashScrapCode",
     "fields": {
       "Name": "robotRevolution",

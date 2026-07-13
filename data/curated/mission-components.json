@@ -2,7 +2,7 @@
   {
     "id": "addCulturePower",
     "type": "mission-components",
-    "displayName": "Add Culture Power",
+    "displayName": "addCulturePower",
     "fields": {
       "Name": "addCulturePower",
       "Format": "<img id=\"culturePower\"/> Culture Power: +<yellow>{0}</>",
@@ -17,7 +17,7 @@
   {
     "id": "addCultureTrait",
     "type": "mission-components",
-    "displayName": "Add Culture Trait",
+    "displayName": "addCultureTrait",
     "fields": {
       "Name": "addCultureTrait",
       "Format": "Add Culture Trait: <yellow>{0}</>",
@@ -32,7 +32,7 @@
   {
     "id": "addCurrency",
     "type": "mission-components",
-    "displayName": "Add Currency",
+    "displayName": "addCurrency",
     "fields": {
       "Name": "addCurrency",
       "Format": "Treasury: <{0_color}>${0}</>",
@@ -47,7 +47,7 @@
   {
     "id": "addCurrencyPopulation",
     "type": "mission-components",
-    "displayName": "Add Currency Population",
+    "displayName": "addCurrencyPopulation",
     "fields": {
       "Name": "addCurrencyPopulation",
       "Format": "Treasury: <{0_color}>${0}</>",
@@ -62,7 +62,7 @@
   {
     "id": "addCurrencyYears",
     "type": "mission-components",
-    "displayName": "Add Currency Years",
+    "displayName": "addCurrencyYears",
     "fields": {
       "Name": "addCurrencyYears",
       "Format": "Treasury: <{0_color}>${0}</>",
@@ -77,7 +77,7 @@
   {
     "id": "addDevelopment",
     "type": "mission-components",
-    "displayName": "Add Development",
+    "displayName": "addDevelopment",
     "fields": {
       "Name": "addDevelopment",
       "Format": "<img id=\"development\"/> Development: +<yellow>{0}</>",
@@ -92,7 +92,7 @@
   {
     "id": "addEducation",
     "type": "mission-components",
-    "displayName": "Add Education",
+    "displayName": "addEducation",
     "fields": {
       "Name": "addEducation",
       "Format": "<img id=\"education\"/> Education:  +{0}",
@@ -107,7 +107,7 @@
   {
     "id": "addMission",
     "type": "mission-components",
-    "displayName": "Add Mission",
+    "displayName": "addMission",
     "fields": {
       "Name": "addMission",
       "Format": "Add Mission: {0}",
@@ -122,7 +122,7 @@
   {
     "id": "addSituation",
     "type": "mission-components",
-    "displayName": "Add Situation",
+    "displayName": "addSituation",
     "fields": {
       "Name": "addSituation",
       "Format": "Add <yellow>Situation</>: {0}",
@@ -137,7 +137,7 @@
   {
     "id": "addStability",
     "type": "mission-components",
-    "displayName": "Add Stability",
+    "displayName": "addStability",
     "fields": {
       "Name": "addStability",
       "Format": "<{0_color}>{0}</> <img id=\"stability\"/> <yellow>Stability</>",
@@ -152,7 +152,7 @@
   {
     "id": "addStaticModifier",
     "type": "mission-components",
-    "displayName": "Add Static Modifier",
+    "displayName": "addStaticModifier",
     "fields": {
       "Name": "addStaticModifier",
       "Format": "For {1}: {0}",
@@ -168,7 +168,7 @@
   {
     "id": "addTechnology",
     "type": "mission-components",
-    "displayName": "Add Technology",
+    "displayName": "addTechnology",
     "fields": {
       "Name": "addTechnology",
       "Format": "Add Technology: <yellow>{0}</>",
@@ -183,7 +183,7 @@
   {
     "id": "armySize",
     "type": "mission-components",
-    "displayName": "Army Size",
+    "displayName": "armySize",
     "fields": {
       "Name": "armySize",
       "Format": "Military Size Greater than {0}",
@@ -198,7 +198,7 @@
   {
     "id": "atWarWith",
     "type": "mission-components",
-    "displayName": "At War With",
+    "displayName": "atWarWith",
     "fields": {
       "Name": "atWarWith",
       "Format": "Is at war with {0}",
@@ -213,7 +213,7 @@
   {
     "id": "buildProject",
     "type": "mission-components",
-    "displayName": "Build Project",
+    "displayName": "buildProject",
     "fields": {
       "Name": "buildProject",
       "Format": "{0} has at least {2} levels of {1}",
@@ -230,7 +230,7 @@
   {
     "id": "changeColonyProgress",
     "type": "mission-components",
-    "displayName": "Change Colony Progress",
+    "displayName": "changeColonyProgress",
     "fields": {
       "Name": "changeColonyProgress",
       "Format": "{0} colonization progress: <yellow>{1}</>",
@@ -246,7 +246,7 @@
   {
     "id": "conquerTerritory",
     "type": "mission-components",
-    "displayName": "Conquer Territory",
+    "displayName": "conquerTerritory",
     "fields": {
       "Name": "conquerTerritory",
       "Format": "Owns and Controls {0}",
@@ -261,7 +261,7 @@
   {
     "id": "damageRegion",
     "type": "mission-components",
-    "displayName": "Damage Region",
+    "displayName": "damageRegion",
     "fields": {
       "Name": "damageRegion",
       "Format": "Take <red>{0}</> Strategic Damage",
@@ -276,7 +276,7 @@
   {
     "id": "destroySituations",
     "type": "mission-components",
-    "displayName": "Destroy Situations",
+    "displayName": "destroySituations",
     "fields": {
       "Name": "destroySituations",
       "Format": "<red>All situations will be cleared</>",
@@ -289,7 +289,7 @@
   {
     "id": "federalizeOrganization",
     "type": "mission-components",
-    "displayName": "Federalize Organization",
+    "displayName": "federalizeOrganization",
     "fields": {
       "Name": "federalizeOrganization",
       "Format": "<yellow>Federalize</> Organization",
@@ -300,24 +300,9 @@
     "references": []
   },
   {
-    "id": "formCountry",
-    "type": "mission-components",
-    "displayName": "Form Country",
-    "fields": {
-      "Name": "formCountry",
-      "Format": "<yellow>Form Country</>: {0}",
-      "ArgTypes": [
-        "cosmeticTag"
-      ]
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "formablePopulation",
     "type": "mission-components",
-    "displayName": "Formable Population",
+    "displayName": "formablePopulation",
     "fields": {
       "Name": "formablePopulation",
       "Format": "80% of {0} Accepted Population",
@@ -330,9 +315,24 @@
     "references": []
   },
   {
+    "id": "formCountry",
+    "type": "mission-components",
+    "displayName": "formCountry",
+    "fields": {
+      "Name": "formCountry",
+      "Format": "<yellow>Form Country</>: {0}",
+      "ArgTypes": [
+        "cosmeticTag"
+      ]
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
     "id": "hasCurrency",
     "type": "mission-components",
-    "displayName": "Has Currency",
+    "displayName": "hasCurrency",
     "fields": {
       "Name": "hasCurrency",
       "Format": "Has at least ${0} in Treasury",
@@ -345,7 +345,7 @@
   {
     "id": "hasDevelopment",
     "type": "mission-components",
-    "displayName": "Has Development",
+    "displayName": "hasDevelopment",
     "fields": {
       "Name": "hasDevelopment",
       "Format": "<img id=\"development\"/> Development >= <yellow>{0}</>",
@@ -360,7 +360,7 @@
   {
     "id": "hasEducation",
     "type": "mission-components",
-    "displayName": "Has Education",
+    "displayName": "hasEducation",
     "fields": {
       "Name": "hasEducation",
       "Format": "<img id=\"education\"/> Education >= {0}",
@@ -375,7 +375,7 @@
   {
     "id": "hasLoyalists",
     "type": "mission-components",
-    "displayName": "Has Loyalists",
+    "displayName": "hasLoyalists",
     "fields": {
       "Name": "hasLoyalists",
       "Format": "Has at least <yellow>{0}</> loyalists",
@@ -390,7 +390,7 @@
   {
     "id": "hasNumPrivileges",
     "type": "mission-components",
-    "displayName": "Has Num Privileges",
+    "displayName": "hasNumPrivileges",
     "fields": {
       "Name": "hasNumPrivileges",
       "Format": "{0}: Has at least {1} privilege(s)",
@@ -406,7 +406,7 @@
   {
     "id": "hasPlanetPopulation",
     "type": "mission-components",
-    "displayName": "Has Planet Population",
+    "displayName": "hasPlanetPopulation",
     "fields": {
       "Name": "hasPlanetPopulation",
       "Format": "{0}: Has at least <yellow>{1}</> population",
@@ -422,7 +422,7 @@
   {
     "id": "hasPlanetProjects",
     "type": "mission-components",
-    "displayName": "Has Planet Projects",
+    "displayName": "hasPlanetProjects",
     "fields": {
       "Name": "hasPlanetProjects",
       "Format": "{0}: Has {2} or more {1} Projects",
@@ -439,7 +439,7 @@
   {
     "id": "hasProjectAny",
     "type": "mission-components",
-    "displayName": "Has Project Any",
+    "displayName": "hasProjectAny",
     "fields": {
       "Name": "hasProjectAny",
       "Format": "Has any {0} of level {1} or greater",
@@ -455,7 +455,7 @@
   {
     "id": "hasProjects",
     "type": "mission-components",
-    "displayName": "Has Projects",
+    "displayName": "hasProjects",
     "fields": {
       "Name": "hasProjects",
       "Format": "Has {1} or more {0} Projects",
@@ -471,7 +471,7 @@
   {
     "id": "hasReform",
     "type": "mission-components",
-    "displayName": "Has Reform",
+    "displayName": "hasReform",
     "fields": {
       "Name": "hasReform",
       "Format": "Has Reform {0}: {1}",
@@ -487,7 +487,7 @@
   {
     "id": "hasRelations",
     "type": "mission-components",
-    "displayName": "Has Relations",
+    "displayName": "hasRelations",
     "fields": {
       "Name": "hasRelations",
       "Format": "Opinion of {0} greater than {1}",
@@ -503,7 +503,7 @@
   {
     "id": "hasResource",
     "type": "mission-components",
-    "displayName": "Has Resource",
+    "displayName": "hasResource",
     "fields": {
       "Name": "hasResource",
       "Format": "Has at least {1} quality of {0}",
@@ -519,7 +519,7 @@
   {
     "id": "hasResourceBalance",
     "type": "mission-components",
-    "displayName": "Has Resource Balance",
+    "displayName": "hasResourceBalance",
     "fields": {
       "Name": "hasResourceBalance",
       "Format": "{0} balance > <yellow>{1}</>",
@@ -535,7 +535,7 @@
   {
     "id": "hasResourceCapacity",
     "type": "mission-components",
-    "displayName": "Has Resource Capacity",
+    "displayName": "hasResourceCapacity",
     "fields": {
       "Name": "hasResourceCapacity",
       "Format": "Total {0} > <yellow>{1}</>",
@@ -551,7 +551,7 @@
   {
     "id": "hasStability",
     "type": "mission-components",
-    "displayName": "Has Stability",
+    "displayName": "hasStability",
     "fields": {
       "Name": "hasStability",
       "Format": "Has <img id=\"stability\"/> Stability: {0}",
@@ -566,7 +566,7 @@
   {
     "id": "hasTechnology",
     "type": "mission-components",
-    "displayName": "Has Technology",
+    "displayName": "hasTechnology",
     "fields": {
       "Name": "hasTechnology",
       "Format": "Has Technology: {0}",
@@ -581,7 +581,7 @@
   {
     "id": "hasTotalProjects",
     "type": "mission-components",
-    "displayName": "Has Total Projects",
+    "displayName": "hasTotalProjects",
     "fields": {
       "Name": "hasTotalProjects",
       "Format": "Has {1} or more {0} projects",
@@ -597,7 +597,7 @@
   {
     "id": "isCountryRank",
     "type": "mission-components",
-    "displayName": "Is Country Rank",
+    "displayName": "isCountryRank",
     "fields": {
       "Name": "isCountryRank",
       "Format": "Is a <yellow>{0}</> or better",
@@ -612,7 +612,7 @@
   {
     "id": "isPlanetController",
     "type": "mission-components",
-    "displayName": "Is Planet Controller",
+    "displayName": "isPlanetController",
     "fields": {
       "Name": "isPlanetController",
       "Format": "Controls Planet: {0}",
@@ -627,7 +627,7 @@
   {
     "id": "modifierCheck",
     "type": "mission-components",
-    "displayName": "Modifier Check",
+    "displayName": "modifierCheck",
     "fields": {
       "Name": "modifierCheck",
       "Format": "{0} {4} {5}",
@@ -647,7 +647,7 @@
   {
     "id": "regenLeaders",
     "type": "mission-components",
-    "displayName": "Regen Leaders",
+    "displayName": "regenLeaders",
     "fields": {
       "Name": "regenLeaders",
       "Format": "<red>All leaders will be killed</>",
@@ -660,7 +660,7 @@
   {
     "id": "remakeDiplomacy",
     "type": "mission-components",
-    "displayName": "Remake Diplomacy",
+    "displayName": "remakeDiplomacy",
     "fields": {
       "Name": "remakeDiplomacy",
       "Format": "<red>All diplomacy will be cleared</>",
@@ -673,7 +673,7 @@
   {
     "id": "removeSituation",
     "type": "mission-components",
-    "displayName": "Remove Situation",
+    "displayName": "removeSituation",
     "fields": {
       "Name": "removeSituation",
       "Format": "Remove <yellow>Situation</>: {0}",
@@ -688,7 +688,7 @@
   {
     "id": "retireLeader",
     "type": "mission-components",
-    "displayName": "Retire Leader",
+    "displayName": "retireLeader",
     "fields": {
       "Name": "retireLeader",
       "Format": "Retire Leader",
@@ -701,7 +701,7 @@
   {
     "id": "scopeEffect",
     "type": "mission-components",
-    "displayName": "Scope Effect",
+    "displayName": "scopeEffect",
     "fields": {
       "Name": "scopeEffect",
       "Format": "{0}: \r\n    {1}",
@@ -717,7 +717,7 @@
   {
     "id": "setReform",
     "type": "mission-components",
-    "displayName": "Set Reform",
+    "displayName": "setReform",
     "fields": {
       "Name": "setReform",
       "Format": "Set Reform {0}: {1}",
@@ -733,7 +733,7 @@
   {
     "id": "situationLocalVariable",
     "type": "mission-components",
-    "displayName": "Situation Local Variable",
+    "displayName": "situationLocalVariable",
     "fields": {
       "Name": "situationLocalVariable",
       "Format": "{0}: {1} {2} {3}",
@@ -751,7 +751,7 @@
   {
     "id": "situationLocalVariableAdd",
     "type": "mission-components",
-    "displayName": "Situation Local Variable Add",
+    "displayName": "situationLocalVariableAdd",
     "fields": {
       "Name": "situationLocalVariableAdd",
       "Format": "{1}  <{2_color}>{2}</>",
@@ -768,7 +768,7 @@
   {
     "id": "situationSharedVariable",
     "type": "mission-components",
-    "displayName": "Situation Shared Variable",
+    "displayName": "situationSharedVariable",
     "fields": {
       "Name": "situationSharedVariable",
       "Format": "{0}: {1} {2} {3}",
@@ -786,7 +786,7 @@
   {
     "id": "situationSharedVariableAdd",
     "type": "mission-components",
-    "displayName": "Situation Shared Variable Add",
+    "displayName": "situationSharedVariableAdd",
     "fields": {
       "Name": "situationSharedVariableAdd",
       "Format": "{1}  <{2_color}>{2}</>",
@@ -803,7 +803,7 @@
   {
     "id": "spawnCountry",
     "type": "mission-components",
-    "displayName": "Spawn Country",
+    "displayName": "spawnCountry",
     "fields": {
       "Name": "spawnCountry",
       "Format": {
@@ -818,7 +818,7 @@
   {
     "id": "spawnCrisis",
     "type": "mission-components",
-    "displayName": "Spawn Crisis",
+    "displayName": "spawnCrisis",
     "fields": {
       "Name": "spawnCrisis",
       "Format": "A <red>Crisis</> will spawn",
@@ -831,7 +831,7 @@
   {
     "id": "spawnNotification",
     "type": "mission-components",
-    "displayName": "Spawn Notification",
+    "displayName": "spawnNotification",
     "fields": {
       "Name": "spawnNotification",
       "Format": {
@@ -846,7 +846,7 @@
   {
     "id": "spawnUnit",
     "type": "mission-components",
-    "displayName": "Spawn Unit",
+    "displayName": "spawnUnit",
     "fields": {
       "Name": "spawnUnit",
       "Format": "Spawns {2} {1} size {0} Units",
@@ -863,7 +863,7 @@
   {
     "id": "startCivilWar",
     "type": "mission-components",
-    "displayName": "Start Civil War",
+    "displayName": "startCivilWar",
     "fields": {
       "Name": "startCivilWar",
       "Format": "Ignites <red>Civil War</>",
@@ -876,7 +876,7 @@
   {
     "id": "stockpileMoney",
     "type": "mission-components",
-    "displayName": "Stockpile Money",
+    "displayName": "stockpileMoney",
     "fields": {
       "Name": "stockpileMoney",
       "Format": "Has at least ${0} in Treasury",
@@ -891,7 +891,7 @@
   {
     "id": "terraformPlanet",
     "type": "mission-components",
-    "displayName": "Terraform Planet",
+    "displayName": "terraformPlanet",
     "fields": {
       "Name": "terraformPlanet",
       "Format": "Terraform Planet: <yellow>{0}</> <img id=\"arrow\"/> <yellow>{1}</>",
@@ -907,7 +907,7 @@
   {
     "id": "tooltipEffect",
     "type": "mission-components",
-    "displayName": "Tooltip Effect",
+    "displayName": "tooltipEffect",
     "fields": {
       "Name": "tooltipEffect",
       "Format": "{0}",
@@ -920,7 +920,7 @@
   {
     "id": "triggerEvent",
     "type": "mission-components",
-    "displayName": "Trigger Event",
+    "displayName": "triggerEvent",
     "fields": {
       "Name": "triggerEvent",
       "Format": "Triggers Event: {0}",

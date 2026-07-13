@@ -8,12 +8,6 @@
       "Name": "administrativeState",
       "EnactCost": 0.1,
       "Icon": "administrativeState",
-      "BenefitModifier": {
-        "(Key=\"politicalPowerAdd\",Value1=\"bureaucracy\",Value2=\"\",Value3=\"\")": 0.2
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -24,7 +18,19 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "politicalPowerAdd",
+        "value1": "bureaucracy",
+        "value": 0.2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -42,14 +48,6 @@
       "Name": "agrarianIdyll",
       "EnactCost": 0.1,
       "Icon": "agrarianIdyll",
-      "BenefitModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"openFarm\",Value2=\"\",Value3=\"\")": 2,
-        "(Key=\"projectEfficiency\",Value1=\"hydroponics\",Value2=\"\",Value3=\"\")": 1,
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -60,7 +58,30 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "openFarm",
+        "value": 2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "hydroponics",
+        "value": 1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -78,13 +99,6 @@
       "Name": "aiDirectiveDevelopment",
       "EnactCost": 0.1,
       "Icon": "edictGeneric",
-      "BenefitModifier": {
-        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"resourceUsageAdd\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 100,
-        "(Key=\"resourceUsagePopulation\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 1
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": true,
@@ -95,7 +109,25 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "neuralNetworks",
+        "value": 100,
+        "scope": "Cost"
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "neuralNetworks",
+        "value": 1,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -113,13 +145,6 @@
       "Name": "aiDirectiveIndustrial",
       "EnactCost": 0.1,
       "Icon": "edictGeneric",
-      "BenefitModifier": {
-        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      },
-      "CostModifier": {
-        "(Key=\"resourceUsageAdd\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 100,
-        "(Key=\"resourceUsagePopulation\",Value1=\"neuralNetworks\",Value2=\"\",Value3=\"\")": 1
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": true,
@@ -130,7 +155,25 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "resourceUsageAdd",
+        "value1": "neuralNetworks",
+        "value": 100,
+        "scope": "Cost"
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "neuralNetworks",
+        "value": 1,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -148,12 +191,6 @@
       "Name": "breadAndCircuses",
       "EnactCost": 0.1,
       "Icon": "breadAndCircuses",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.025
-      },
-      "CostModifier": {
-        "(Key=\"resourceUsagePopulation\",Value1=\"industry\",Value2=\"\",Value3=\"\")": 4
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -164,7 +201,19 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.025,
+        "scope": "Benefit"
+      },
+      {
+        "key": "resourceUsagePopulation",
+        "value1": "industry",
+        "value": 4,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -182,12 +231,6 @@
       "Name": "brutalSuppression",
       "EnactCost": 1.5,
       "Icon": "brutalSuppression",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -198,7 +241,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.05,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -216,13 +270,6 @@
       "Name": "capitalismUnleashed",
       "EnactCost": 0.1,
       "Icon": "capitalismUnleashed",
-      "BenefitModifier": {
-        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -233,7 +280,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "economicOutputMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -251,13 +314,6 @@
       "Name": "confusopoly",
       "EnactCost": 0.1,
       "Icon": "confusopoly",
-      "BenefitModifier": {
-        "(Key=\"resourceIncomeMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
-        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -268,7 +324,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -280,18 +352,12 @@
   {
     "id": "constructionFocus",
     "type": "edicts",
-    "displayName": "Construction Focus",
+    "displayName": "Construction Subsidy",
     "icon": "constructionFocus",
     "fields": {
       "Name": "constructionFocus",
       "EnactCost": 0.1,
       "Icon": "constructionFocus",
-      "BenefitModifier": {
-        "(Key=\"projectBuildSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -302,7 +368,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -320,12 +397,6 @@
       "Name": "massPlanning",
       "EnactCost": 0.1,
       "Icon": "massPlanning",
-      "BenefitModifier": {
-        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -336,7 +407,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.15,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -354,13 +436,6 @@
       "Name": "immigrationPushEdict",
       "EnactCost": 0.1,
       "Icon": "edictGeneric",
-      "BenefitModifier": {
-        "(Key=\"immigrationPush\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
-        "(Key=\"immigrationPushExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": true,
@@ -371,7 +446,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPush",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "immigrationPushExternal",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -383,18 +474,12 @@
   {
     "id": "empireEducationFocus",
     "type": "edicts",
-    "displayName": "Empire Education Focus",
+    "displayName": "empireEducationFocus",
     "icon": "industrySubsidy",
     "fields": {
       "Name": "empireEducationFocus",
       "EnactCost": 1,
       "Icon": "industrySubsidy",
-      "BenefitModifier": {
-        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -405,7 +490,18 @@
       },
       "Type": "Empire"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.2,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -417,18 +513,12 @@
   {
     "id": "empireLeadershipFocus",
     "type": "edicts",
-    "displayName": "Empire Leadership Focus",
+    "displayName": "empireLeadershipFocus",
     "icon": "industrySubsidy",
     "fields": {
       "Name": "empireLeadershipFocus",
       "EnactCost": 1,
       "Icon": "industrySubsidy",
-      "BenefitModifier": {
-        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -439,7 +529,18 @@
       },
       "Type": "Empire"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.2,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -457,12 +558,6 @@
       "Name": "resourceFocus",
       "EnactCost": 0.1,
       "Icon": "resourceFocus",
-      "BenefitModifier": {
-        "(Key=\"resourceModifier\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -473,7 +568,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value": 1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -491,14 +597,6 @@
       "Name": "feudalAuthority",
       "EnactCost": 0.1,
       "Icon": "feudalAuthority",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01,
-        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-        "(Key=\"controllingFactionLoyalty\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -509,7 +607,28 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Benefit"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "controllingFactionLoyalty",
+        "value": 0.05,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -527,13 +646,6 @@
       "Name": "immigrationPullEdict",
       "EnactCost": 0.1,
       "Icon": "edictGeneric",
-      "BenefitModifier": {
-        "(Key=\"immigrationPull\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
-        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": true,
@@ -544,7 +656,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPull",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -562,12 +690,6 @@
       "Name": "taxationFocus",
       "EnactCost": 0.1,
       "Icon": "taxationFocus",
-      "BenefitModifier": {
-        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -578,7 +700,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -590,18 +723,12 @@
   {
     "id": "industryFocus",
     "type": "edicts",
-    "displayName": "Industry Focus",
+    "displayName": "Industrial Subsidy",
     "icon": "industrySubsidy",
     "fields": {
       "Name": "industryFocus",
       "EnactCost": 0.1,
       "Icon": "industrySubsidy",
-      "BenefitModifier": {
-        "(Key=\"resourceCapacityMult\",Value1=\"industry\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -612,7 +739,19 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "industry",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -630,13 +769,6 @@
       "Name": "localAutonomy",
       "EnactCost": 0.1,
       "Icon": "localAutonomy",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01,
-        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -647,7 +779,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Benefit"
+      },
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.05,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -665,12 +813,6 @@
       "Name": "logisticsFocus",
       "EnactCost": 0.1,
       "Icon": "logisticsFocus",
-      "BenefitModifier": {
-        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -681,7 +823,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -699,12 +852,6 @@
       "Name": "martialLaw",
       "EnactCost": 0.5,
       "Icon": "martialLaw",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.02
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -715,7 +862,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.02,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -733,12 +891,6 @@
       "Name": "massCurfews",
       "EnactCost": 0.25,
       "Icon": "massCurfews",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.015
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -749,7 +901,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.015,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -767,13 +930,6 @@
       "Name": "militaryParade",
       "EnactCost": 0.1,
       "Icon": "militaryParade",
-      "BenefitModifier": {
-        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.01
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -784,7 +940,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.01,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -802,12 +974,6 @@
       "Name": "partyPolitics",
       "EnactCost": 0.1,
       "Icon": "partyPolitics",
-      "BenefitModifier": {
-        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -818,7 +984,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.15,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -836,12 +1013,6 @@
       "Name": "porkBarrelPolitics",
       "EnactCost": 0.1,
       "Icon": "edictGeneric",
-      "BenefitModifier": {
-        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -852,7 +1023,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -870,12 +1052,6 @@
       "Name": "psychoeconomics",
       "EnactCost": 0.1,
       "Icon": "psychoeconomics",
-      "BenefitModifier": {
-        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -886,7 +1062,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -904,13 +1091,6 @@
       "Name": "developmentFocus",
       "EnactCost": 0.1,
       "Icon": "developmentFocus",
-      "BenefitModifier": {
-        "(Key=\"developmentGrowthMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-        "(Key=\"economicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -921,7 +1101,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "developmentGrowthMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "economicOutputMult",
+        "value": 0.2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -933,19 +1129,12 @@
   {
     "id": "reinforcementFocus",
     "type": "edicts",
-    "displayName": "Reinforcement Focus",
+    "displayName": "Rapid Reinforcement",
     "icon": "rapidReinforcement",
     "fields": {
       "Name": "reinforcementFocus",
       "EnactCost": 0.1,
       "Icon": "rapidReinforcement",
-      "BenefitModifier": {
-        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2,
-        "(Key=\"manpowerRecoveryRate\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -956,7 +1145,23 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.2,
+        "scope": "Benefit"
+      },
+      {
+        "key": "manpowerRecoveryRate",
+        "value": 0.5,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -974,13 +1179,6 @@
       "Name": "researchGrants",
       "EnactCost": 0.1,
       "Icon": "researchGrants",
-      "BenefitModifier": {
-        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.15,
-        "(Key=\"resourceModifier\",Value1=\"research\",Value2=\"\",Value3=\"\")": 1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -991,7 +1189,24 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.15,
+        "scope": "Benefit"
+      },
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1009,12 +1224,6 @@
       "Name": "socialCapitalism",
       "EnactCost": 0.1,
       "Icon": "socialCapitalism",
-      "BenefitModifier": {
-        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -1025,7 +1234,18 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1043,14 +1263,6 @@
       "Name": "struggleSessions",
       "EnactCost": 1,
       "Icon": "struggleSessions",
-      "BenefitModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.025,
-        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25,
-        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      },
-      "CostModifier": {
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.25
-      },
       "EdictEffect": [],
       "MinInfluence": 0,
       "ForeignAllowed": false,
@@ -1061,7 +1273,28 @@
       },
       "Type": "Regional"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.025,
+        "scope": "Benefit"
+      },
+      {
+        "key": "unityMult",
+        "value": 0.25,
+        "scope": "Benefit"
+      },
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.1,
+        "scope": "Benefit"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.25,
+        "scope": "Cost"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

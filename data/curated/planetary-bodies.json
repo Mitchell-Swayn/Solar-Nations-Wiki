@@ -1,269 +1,9 @@
 [
   {
-    "id": "40a2",
-    "type": "planetary-bodies",
-    "displayName": "40a2",
-    "fields": {
-      "Name": "40a2",
-      "SizeofEarth": 46,
-      "ATMPressure": 1,
-      "GravityASL": 5,
-      "TemperatureEarthlikeness": 1,
-      "AtmEarthlikeness": 1,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": true,
-      "SurfaceWater": true,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.17195,
-        "G": 1,
-        "B": 0.846514,
-        "A": 1,
-        "Hex": "73FFED"
-      },
-      "CloudColor": {
-        "R": 0.554892,
-        "G": 1,
-        "B": 0.976779,
-        "A": 1,
-        "Hex": "C5FFFD"
-      },
-      "SurfaceTexture": "40a2",
-      "CloudTexture": "40a2_cloud",
-      "TerrainTexture": null,
-      "ProvinceTable": "othermap_small_csv",
-      "ProvinceFindTable": "othermap_small_find",
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_small",
-      "HeightMap": "blank_black",
-      "NormalMap": "40a2_norm",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.15926,
-        "G": 0.357598,
-        "B": 0.550347,
-        "A": 1,
-        "Hex": "6FA1C4"
-      },
-      "Symbol": "earth",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "oxygen": 3,
-        "niceAtmosphere": 1,
-        "gravityLow": 1,
-        "curiosities": 2,
-        "titanium": 5,
-        "iron": 10,
-        "lithium": 4
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "40a3",
-    "type": "planetary-bodies",
-    "displayName": "40a3",
-    "fields": {
-      "Name": "40a3",
-      "SizeofEarth": 16,
-      "ATMPressure": 0,
-      "GravityASL": 5,
-      "TemperatureEarthlikeness": 0.2,
-      "AtmEarthlikeness": 0,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": true,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.621528,
-        "G": 0.621528,
-        "B": 0.621528,
-        "A": 1,
-        "Hex": "CFCFCF"
-      },
-      "CloudColor": {
-        "R": 0,
-        "G": 0,
-        "B": 0,
-        "A": 1,
-        "Hex": "000000"
-      },
-      "SurfaceTexture": "40a3",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": null,
-      "ProvinceTable": "othermap_small_csv",
-      "ProvinceFindTable": "othermap_small_find",
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_small",
-      "HeightMap": "blank_black",
-      "NormalMap": "40a2_norm",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.433781,
-        "G": 0.492897,
-        "B": 0.550347,
-        "A": 1,
-        "Hex": "B0BBC4"
-      },
-      "Symbol": "earth",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "iceNine": 1,
-        "noAtmosphere": 1,
-        "gravityLow": 1,
-        "cryoOrganics": 3,
-        "nuclearFuels": 1,
-        "lithium": 9
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "40eridaniA",
-    "type": "planetary-bodies",
-    "displayName": "40eridani A",
-    "fields": {
-      "Name": "40eridaniA",
-      "SizeofEarth": 142,
-      "ATMPressure": 1,
-      "GravityASL": 9.8,
-      "TemperatureEarthlikeness": 1,
-      "AtmEarthlikeness": 1,
-      "RotationEarthlikeness": true,
-      "IsTerrestrial": true,
-      "HasMagneticField": true,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 1,
-        "G": 0.706761,
-        "B": 0.487847,
-        "A": 1,
-        "Hex": "FFDBBA"
-      },
-      "CloudColor": {
-        "R": 0.461805,
-        "G": 0.334743,
-        "B": 0.144914,
-        "A": 1,
-        "Hex": "B59D6A"
-      },
-      "SurfaceTexture": "40eridaniA",
-      "CloudTexture": "40eridaniA_cloud",
-      "TerrainTexture": "spaceTerrain",
-      "ProvinceTable": "othermap_medium_csv",
-      "ProvinceFindTable": "othermap_medium_find",
-      "SuperProvinceTable": "Superprovinces",
-      "ProvinceTexture": "othermap_medium",
-      "HeightMap": "blank_black",
-      "NormalMap": "40eridaniA_norm",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.53125,
-        "G": 0.21894,
-        "B": 0,
-        "A": 1,
-        "Hex": "C18100"
-      },
-      "Symbol": "earth",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 33,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "oxygen": 2,
-        "niceAtmosphere": 1,
-        "gravityEarthlike": 1
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1,
-        "oil": 0.15
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4,
-        "oil": 2
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "40eridaniA2",
     "type": "planetary-bodies",
-    "displayName": "40eridani A2",
+    "displayName": "40 Eridani A-2",
+    "icon": "planet-40eridaniA2",
     "fields": {
       "Name": "40eridaniA2",
       "SizeofEarth": 43,
@@ -343,188 +83,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "40eridaniA3",
-    "type": "planetary-bodies",
-    "displayName": "40eridani A3",
-    "fields": {
-      "Name": "40eridaniA3",
-      "SizeofEarth": 760,
-      "ATMPressure": 1,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 1,
-      "AtmEarthlikeness": 1,
-      "RotationEarthlikeness": true,
-      "IsTerrestrial": false,
-      "HasMagneticField": true,
-      "SurfaceWater": true,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.367766,
-        "G": 0.861111,
-        "B": 0.719399,
-        "A": 1,
-        "Hex": "A3EFDD"
-      },
-      "CloudColor": {
-        "R": 0,
-        "G": 0,
-        "B": 0,
-        "A": 1,
-        "Hex": "000000"
-      },
-      "SurfaceTexture": "40EridaniC",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": "spaceTerrain",
-      "ProvinceTable": "othermap_small_csv",
-      "ProvinceFindTable": "othermap_small_find",
-      "SuperProvinceTable": "Superprovinces",
-      "ProvinceTexture": "othermap_small",
-      "HeightMap": "blank_black",
-      "NormalMap": "flatNormal",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0,
-        "G": 0.53125,
-        "B": 0.518409,
-        "A": 1,
-        "Hex": "00C1BF"
-      },
-      "Symbol": "earth",
-      "HasRings": true,
-      "RingData": {
-        "Start": 0.1,
-        "End": 4,
-        "Texture": "planetNineRings"
-      },
-      "Tilt": 33,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "oxygen": 6,
-        "niceAtmosphere": 1,
-        "gravityEarthlike": 1,
-        "placidGiant": 1,
-        "magneticAntimatter": 3,
-        "helium3": 5,
-        "exoticGasses": 4
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "40eridaniA3-1",
-    "type": "planetary-bodies",
-    "displayName": "40eridani A3-1",
-    "fields": {
-      "Name": "40eridaniA3-1",
-      "SizeofEarth": 79,
-      "ATMPressure": 1,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 1,
-      "AtmEarthlikeness": 1,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": false,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.154224,
-        "G": 0.569444,
-        "B": 0.569444,
-        "A": 1,
-        "Hex": "6DC7C7"
-      },
-      "CloudColor": {
-        "R": 1,
-        "G": 1,
-        "B": 1,
-        "A": 1,
-        "Hex": "FFFFFF"
-      },
-      "SurfaceTexture": "40EridaniC1",
-      "CloudTexture": "40EridaniC1_cloud",
-      "TerrainTexture": "spaceTerrain",
-      "ProvinceTable": "othermap_medium_csv",
-      "ProvinceFindTable": "othermap_medium_find",
-      "SuperProvinceTable": "Superprovinces",
-      "ProvinceTexture": "othermap_medium",
-      "HeightMap": "40EridaniC1_height",
-      "NormalMap": "40EridaniC1_norm",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.153396,
-        "G": 0.359228,
-        "B": 0.53125,
-        "A": 1,
-        "Hex": "6DA2C1"
-      },
-      "Symbol": "earth",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0.1,
-        "End": 4,
-        "Texture": null
-      },
-      "Tilt": 33,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "oxygen": 1,
-        "niceAtmosphere": 1,
-        "gravityEarthlike": 1,
-        "sunlight": 1,
-        "radiation": 1,
-        "palladium": 4,
-        "iron": 8
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniA2"
+      }
+    ]
   },
   {
     "id": "40eridaniA4",
     "type": "planetary-bodies",
-    "displayName": "40eridani A4",
+    "displayName": "40 Eridani A-3",
+    "icon": "planet-40eridaniA4",
     "fields": {
       "Name": "40eridaniA4",
       "SizeofEarth": 19,
@@ -604,12 +174,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniA4"
+      }
+    ]
   },
   {
     "id": "40eridaniM1",
     "type": "planetary-bodies",
-    "displayName": "40eridani M1",
+    "displayName": "40Eridani-M1",
+    "icon": "planet-40eridaniM1",
     "fields": {
       "Name": "40eridaniM1",
       "SizeofEarth": 0.5,
@@ -695,12 +271,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniM1"
+      }
+    ]
   },
   {
     "id": "40eridaniM2",
     "type": "planetary-bodies",
-    "displayName": "40eridani M2",
+    "displayName": "40Eridani-M2",
+    "icon": "planet-40eridaniM2",
     "fields": {
       "Name": "40eridaniM2",
       "SizeofEarth": 0.5,
@@ -786,12 +368,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniM2"
+      }
+    ]
   },
   {
     "id": "40eridaniM3",
     "type": "planetary-bodies",
-    "displayName": "40eridani M3",
+    "displayName": "40Eridani-M3",
+    "icon": "planet-40eridaniM3",
     "fields": {
       "Name": "40eridaniM3",
       "SizeofEarth": 0.5,
@@ -877,12 +465,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniM3"
+      }
+    ]
   },
   {
     "id": "aegir",
     "type": "planetary-bodies",
     "displayName": "Aegir",
+    "icon": "planet-aegir",
     "fields": {
       "Name": "aegir",
       "SizeofEarth": 1028,
@@ -963,12 +557,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-aegir"
+      }
+    ]
   },
   {
     "id": "aegir1",
     "type": "planetary-bodies",
-    "displayName": "Aegir1",
+    "displayName": "Aegir-1",
+    "icon": "planet-aegir1",
     "fields": {
       "Name": "aegir1",
       "SizeofEarth": 78,
@@ -1059,12 +659,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-aegir1"
+      }
+    ]
   },
   {
     "id": "aegir1_devastated",
     "type": "planetary-bodies",
-    "displayName": "Aegir1 Devastated",
+    "displayName": "aegir1_devastated",
+    "icon": "planet-aegir1_devastated",
     "fields": {
       "Name": "aegir1_devastated",
       "SizeofEarth": 78,
@@ -1156,12 +762,104 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-aegir1_devastated"
+      }
+    ]
+  },
+  {
+    "id": "centauriA",
+    "type": "planetary-bodies",
+    "displayName": "Alpha Centauri",
+    "icon": "planet-centauriA",
+    "fields": {
+      "Name": "centauriA",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.971768,
+        "B": 0.944011,
+        "A": 1,
+        "Hex": "FFFCF9"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-centauriA"
+      }
+    ]
   },
   {
     "id": "altair4",
     "type": "planetary-bodies",
-    "displayName": "Altair4",
+    "displayName": "Altair 4",
+    "icon": "planet-altair4",
     "fields": {
       "Name": "altair4",
       "SizeofEarth": 130,
@@ -1244,12 +942,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-altair4"
+      }
+    ]
   },
   {
     "id": "ariel",
     "type": "planetary-bodies",
     "displayName": "Ariel",
+    "icon": "planet-ariel",
     "fields": {
       "Name": "ariel",
       "SizeofEarth": 4.2,
@@ -1338,12 +1042,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-ariel"
+      }
+    ]
   },
   {
     "id": "callisto",
     "type": "planetary-bodies",
     "displayName": "Callisto",
+    "icon": "planet-callisto",
     "fields": {
       "Name": "callisto",
       "SizeofEarth": 37.7,
@@ -1431,172 +1141,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "centauriA",
-    "type": "planetary-bodies",
-    "displayName": "Centauri A",
-    "fields": {
-      "Name": "centauriA",
-      "SizeofEarth": 10000,
-      "ATMPressure": 0,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 0,
-      "AtmEarthlikeness": 0,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": false,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.979167,
-        "G": 0.699107,
-        "B": 0,
-        "A": 1,
-        "Hex": "FDDA00"
-      },
-      "CloudColor": {
-        "R": 0,
-        "G": 0,
-        "B": 0,
-        "A": 1,
-        "Hex": "000000"
-      },
-      "SurfaceTexture": "Sun",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": null,
-      "ProvinceTable": "othermap_medium_csv",
-      "ProvinceFindTable": null,
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_medium",
-      "HeightMap": null,
-      "NormalMap": null,
-      "LightTexture": null,
-      "ThemeColor": {
-        "R": 1,
-        "G": 0.971768,
-        "B": 0.944011,
-        "A": 1,
-        "Hex": "FFFCF9"
-      },
-      "Symbol": "sol",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": [],
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "centauriB",
-    "type": "planetary-bodies",
-    "displayName": "Centauri B",
-    "fields": {
-      "Name": "centauriB",
-      "SizeofEarth": 10000,
-      "ATMPressure": 0,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 0,
-      "AtmEarthlikeness": 0,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": false,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.979167,
-        "G": 0.699107,
-        "B": 0,
-        "A": 1,
-        "Hex": "FDDA00"
-      },
-      "CloudColor": {
-        "R": 0,
-        "G": 0,
-        "B": 0,
-        "A": 1,
-        "Hex": "000000"
-      },
-      "SurfaceTexture": "Sun",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": null,
-      "ProvinceTable": "othermap_medium_csv",
-      "ProvinceFindTable": null,
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_medium",
-      "HeightMap": null,
-      "NormalMap": null,
-      "LightTexture": null,
-      "ThemeColor": {
-        "R": 1,
-        "G": 0.376631,
-        "B": 0.165271,
-        "A": 1,
-        "Hex": "FFA571"
-      },
-      "Symbol": "sol",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": [],
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-callisto"
+      }
+    ]
   },
   {
     "id": "ceres",
     "type": "planetary-bodies",
     "displayName": "Ceres",
+    "icon": "planet-ceres",
     "fields": {
       "Name": "ceres",
       "SizeofEarth": 7.38,
@@ -1681,12 +1237,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-ceres"
+      }
+    ]
   },
   {
     "id": "charon",
     "type": "planetary-bodies",
     "displayName": "Charon",
+    "icon": "planet-charon",
     "fields": {
       "Name": "charon",
       "SizeofEarth": 9.5,
@@ -1775,12 +1337,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-charon"
+      }
+    ]
   },
   {
     "id": "deimos",
     "type": "planetary-bodies",
     "displayName": "Deimos",
+    "icon": "planet-deimos",
     "fields": {
       "Name": "deimos",
       "SizeofEarth": 0.5,
@@ -1866,12 +1434,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-deimos"
+      }
+    ]
   },
   {
     "id": "dione",
     "type": "planetary-bodies",
     "displayName": "Dione",
+    "icon": "planet-dione",
     "fields": {
       "Name": "dione",
       "SizeofEarth": 8.8,
@@ -1960,12 +1534,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-dione"
+      }
+    ]
   },
   {
     "id": "earth",
     "type": "planetary-bodies",
     "displayName": "Earth",
+    "icon": "planet-earth",
     "fields": {
       "Name": "earth",
       "SizeofEarth": 100,
@@ -2045,12 +1625,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-earth"
+      }
+    ]
   },
   {
     "id": "earth_devastated",
     "type": "planetary-bodies",
-    "displayName": "Earth Devastated",
+    "displayName": "earth_devastated",
+    "icon": "planet-earth_devastated",
     "fields": {
       "Name": "earth_devastated",
       "SizeofEarth": 100,
@@ -2131,12 +1717,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-earth_devastated"
+      }
+    ]
   },
   {
     "id": "enceladus",
     "type": "planetary-bodies",
     "displayName": "Enceladus",
+    "icon": "planet-enceladus",
     "fields": {
       "Name": "enceladus",
       "SizeofEarth": 4,
@@ -2227,12 +1819,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-enceladus"
+      }
+    ]
   },
   {
     "id": "europa",
     "type": "planetary-bodies",
     "displayName": "Europa",
+    "icon": "planet-europa",
     "fields": {
       "Name": "europa",
       "SizeofEarth": 24.4,
@@ -2322,12 +1920,119 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-europa"
+      }
+    ]
+  },
+  {
+    "id": "siriusA3-1",
+    "type": "planetary-bodies",
+    "displayName": "Ferraxis",
+    "icon": "planet-siriusA3-1",
+    "fields": {
+      "Name": "siriusA3-1",
+      "SizeofEarth": 87,
+      "ATMPressure": 12,
+      "GravityASL": 6,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.155322,
+        "B": 0,
+        "A": 1,
+        "Hex": "FF6E00"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusA3-1",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.250265,
+        "B": 0.048217,
+        "A": 1,
+        "Hex": "B6893E"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "superAtmosphere": 1,
+        "radiation": 1,
+        "gravityEarthlike": 1,
+        "exoticGasses": 1,
+        "palladium": 1,
+        "iron": 22,
+        "rareMetals": 10,
+        "lithium": 8,
+        "titanium": 8
+      },
+      "CloudLayers": [
+        {
+          "Texture": "VenusCloud",
+          "Material": "VenusCloudMat_Red",
+          "Scale": 1.05
+        }
+      ],
+      "SurveyFindChances": {
+        "iron": 0.5,
+        "titanium": 0.5,
+        "rareMetals": 0.5,
+        "curiosities": 0.25
+      },
+      "SurveyFindAmounts": {
+        "titanium": 5,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusA3-1"
+      }
+    ]
   },
   {
     "id": "ganymede",
     "type": "planetary-bodies",
     "displayName": "Ganymede",
+    "icon": "planet-ganymede",
     "fields": {
       "Name": "ganymede",
       "SizeofEarth": 41.2,
@@ -2415,12 +2120,104 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-ganymede"
+      }
+    ]
+  },
+  {
+    "id": "centauriB",
+    "type": "planetary-bodies",
+    "displayName": "Hadar",
+    "icon": "planet-centauriB",
+    "fields": {
+      "Name": "centauriB",
+      "SizeofEarth": 10000,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.979167,
+        "G": 0.699107,
+        "B": 0,
+        "A": 1,
+        "Hex": "FDDA00"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "Sun",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": null,
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": null,
+      "NormalMap": null,
+      "LightTexture": null,
+      "ThemeColor": {
+        "R": 1,
+        "G": 0.376631,
+        "B": 0.165271,
+        "A": 1,
+        "Hex": "FFA571"
+      },
+      "Symbol": "sol",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": [],
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-centauriB"
+      }
+    ]
   },
   {
     "id": "planetNine",
     "type": "planetary-bodies",
-    "displayName": "Haephestus",
+    "displayName": "Haphaestus",
+    "icon": "planet-planetNine",
     "fields": {
       "Name": "planetNine",
       "SizeofEarth": 267,
@@ -2500,12 +2297,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-planetNine"
+      }
+    ]
   },
   {
     "id": "iapetus",
     "type": "planetary-bodies",
     "displayName": "Iapetus",
+    "icon": "planet-iapetus",
     "fields": {
       "Name": "iapetus",
       "SizeofEarth": 11.5,
@@ -2594,12 +2397,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-iapetus"
+      }
+    ]
   },
   {
     "id": "io",
     "type": "planetary-bodies",
     "displayName": "Io",
+    "icon": "planet-io",
     "fields": {
       "Name": "io",
       "SizeofEarth": 28.5,
@@ -2688,12 +2497,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-io"
+      }
+    ]
   },
   {
     "id": "jupiter",
     "type": "planetary-bodies",
     "displayName": "Jupiter",
+    "icon": "planet-jupiter",
     "fields": {
       "Name": "jupiter",
       "SizeofEarth": 1121,
@@ -2773,12 +2588,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-jupiter"
+      }
+    ]
   },
   {
     "id": "planetNineMoon1",
     "type": "planetary-bodies",
     "displayName": "Lethe",
+    "icon": "planet-planetNineMoon1",
     "fields": {
       "Name": "planetNineMoon1",
       "SizeofEarth": 8,
@@ -2870,12 +2691,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-planetNineMoon1"
+      }
+    ]
   },
   {
     "id": "luna",
     "type": "planetary-bodies",
     "displayName": "Luna",
+    "icon": "planet-luna",
     "fields": {
       "Name": "luna",
       "SizeofEarth": 27.2,
@@ -2960,12 +2787,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-luna"
+      }
+    ]
   },
   {
     "id": "mars",
     "type": "planetary-bodies",
     "displayName": "Mars",
+    "icon": "planet-mars",
     "fields": {
       "Name": "mars",
       "SizeofEarth": 50,
@@ -3051,12 +2884,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-mars"
+      }
+    ]
   },
   {
     "id": "mercury",
     "type": "planetary-bodies",
     "displayName": "Mercury",
+    "icon": "planet-mercury",
     "fields": {
       "Name": "mercury",
       "SizeofEarth": 38,
@@ -3143,12 +2982,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-mercury"
+      }
+    ]
   },
   {
     "id": "neptune",
     "type": "planetary-bodies",
     "displayName": "Neptune",
+    "icon": "planet-neptune",
     "fields": {
       "Name": "neptune",
       "SizeofEarth": 388,
@@ -3228,12 +3073,17 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-neptune"
+      }
+    ]
   },
   {
     "id": "nonSurveyed",
     "type": "planetary-bodies",
-    "displayName": "Non Surveyed",
+    "displayName": "nonSurveyed",
     "fields": {
       "Name": "nonSurveyed",
       "SizeofEarth": 100,
@@ -3314,6 +3164,7 @@
     "id": "oberon",
     "type": "planetary-bodies",
     "displayName": "Oberon",
+    "icon": "planet-oberon",
     "fields": {
       "Name": "oberon",
       "SizeofEarth": 11.3,
@@ -3402,12 +3253,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-oberon"
+      }
+    ]
   },
   {
     "id": "pallas",
     "type": "planetary-bodies",
     "displayName": "Pallas",
+    "icon": "planet-pallas",
     "fields": {
       "Name": "pallas",
       "SizeofEarth": 2,
@@ -3487,12 +3344,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-pallas"
+      }
+    ]
   },
   {
     "id": "phobos",
     "type": "planetary-bodies",
     "displayName": "Phobos",
+    "icon": "planet-phobos",
     "fields": {
       "Name": "phobos",
       "SizeofEarth": 0.5,
@@ -3578,12 +3441,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-phobos"
+      }
+    ]
   },
   {
     "id": "pluto",
     "type": "planetary-bodies",
     "displayName": "Pluto",
+    "icon": "planet-pluto",
     "fields": {
       "Name": "pluto",
       "SizeofEarth": 18.5,
@@ -3672,12 +3541,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-pluto"
+      }
+    ]
   },
   {
     "id": "proteus",
     "type": "planetary-bodies",
     "displayName": "Proteus",
+    "icon": "planet-proteus",
     "fields": {
       "Name": "proteus",
       "SizeofEarth": 4,
@@ -3766,12 +3641,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proteus"
+      }
+    ]
   },
   {
     "id": "proximaCentauri",
     "type": "planetary-bodies",
-    "displayName": "Proxima Centauri",
+    "displayName": "Proxima",
+    "icon": "planet-proximaCentauri",
     "fields": {
       "Name": "proximaCentauri",
       "SizeofEarth": 10000,
@@ -3846,12 +3727,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proximaCentauri"
+      }
+    ]
   },
   {
     "id": "proxima1",
     "type": "planetary-bodies",
-    "displayName": "Proxima1",
+    "displayName": "Proxima A",
+    "icon": "planet-proxima1",
     "fields": {
       "Name": "proxima1",
       "SizeofEarth": 68,
@@ -3931,12 +3818,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proxima1"
+      }
+    ]
   },
   {
     "id": "proxima2",
     "type": "planetary-bodies",
-    "displayName": "Proxima2",
+    "displayName": "Proxima B",
+    "icon": "planet-proxima2",
     "fields": {
       "Name": "proxima2",
       "SizeofEarth": 102,
@@ -4015,12 +3908,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proxima2"
+      }
+    ]
   },
   {
     "id": "proxima3",
     "type": "planetary-bodies",
-    "displayName": "Proxima3",
+    "displayName": "Proxima C",
+    "icon": "planet-proxima3",
     "fields": {
       "Name": "proxima3",
       "SizeofEarth": 56,
@@ -4105,12 +4004,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proxima3"
+      }
+    ]
   },
   {
     "id": "proxima4",
     "type": "planetary-bodies",
-    "displayName": "Proxima4",
+    "displayName": "Proxima D",
+    "icon": "planet-proxima4",
     "fields": {
       "Name": "proxima4",
       "SizeofEarth": 480,
@@ -4191,12 +4096,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proxima4"
+      }
+    ]
   },
   {
     "id": "proxima4-1",
     "type": "planetary-bodies",
-    "displayName": "Proxima4-1",
+    "displayName": "Proxima D-1",
+    "icon": "planet-proxima4-1",
     "fields": {
       "Name": "proxima4-1",
       "SizeofEarth": 24,
@@ -4276,12 +4187,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-proxima4-1"
+      }
+    ]
   },
   {
     "id": "rhea",
     "type": "planetary-bodies",
     "displayName": "Rhea",
+    "icon": "planet-rhea",
     "fields": {
       "Name": "rhea",
       "SizeofEarth": 12,
@@ -4370,12 +4287,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-rhea"
+      }
+    ]
   },
   {
     "id": "saturn",
     "type": "planetary-bodies",
     "displayName": "Saturn",
+    "icon": "planet-saturn",
     "fields": {
       "Name": "saturn",
       "SizeofEarth": 945,
@@ -4455,12 +4378,112 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-saturn"
+      }
+    ]
+  },
+  {
+    "id": "40eridaniA3-1",
+    "type": "planetary-bodies",
+    "displayName": "Sigma Draconis 1",
+    "icon": "planet-40eridaniA3-1",
+    "fields": {
+      "Name": "40eridaniA3-1",
+      "SizeofEarth": 79,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.154224,
+        "G": 0.569444,
+        "B": 0.569444,
+        "A": 1,
+        "Hex": "6DC7C7"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 1,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "40EridaniC1",
+      "CloudTexture": "40EridaniC1_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "40EridaniC1_height",
+      "NormalMap": "40EridaniC1_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.153396,
+        "G": 0.359228,
+        "B": 0.53125,
+        "A": 1,
+        "Hex": "6DA2C1"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 1,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "sunlight": 1,
+        "radiation": 1,
+        "palladium": 4,
+        "iron": 8
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniA3-1"
+      }
+    ]
   },
   {
     "id": "sirius",
     "type": "planetary-bodies",
     "displayName": "Sirius",
+    "icon": "planet-sirius",
     "fields": {
       "Name": "sirius",
       "SizeofEarth": 10000,
@@ -4535,182 +4558,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "siriusA1",
-    "type": "planetary-bodies",
-    "displayName": "Sirius A1",
-    "fields": {
-      "Name": "siriusA1",
-      "SizeofEarth": 30,
-      "ATMPressure": 0,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 0,
-      "AtmEarthlikeness": 0,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": false,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.479167,
-        "G": 0.316682,
-        "B": 0.262033,
-        "A": 1,
-        "Hex": "B8998C"
-      },
-      "CloudColor": {
-        "R": 1,
-        "G": 1,
-        "B": 1,
-        "A": 0,
-        "Hex": "FFFFFF"
-      },
-      "SurfaceTexture": "siriusA1",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": "spaceTerrain",
-      "ProvinceTable": "othermap_small_csv",
-      "ProvinceFindTable": "othermap_small_find",
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_small",
-      "HeightMap": "blank_black",
-      "NormalMap": "flatNormal",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.467014,
-        "G": 0.312399,
-        "B": 0.304654,
-        "A": 1,
-        "Hex": "B69896"
-      },
-      "Symbol": "mercury",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "noAtmosphere": 1,
-        "iron": 14,
-        "gravityLow": 1,
-        "rareMetals": 6
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "siriusA2",
-    "type": "planetary-bodies",
-    "displayName": "Sirius A2",
-    "fields": {
-      "Name": "siriusA2",
-      "SizeofEarth": 62,
-      "ATMPressure": 0,
-      "GravityASL": 0,
-      "TemperatureEarthlikeness": 0,
-      "AtmEarthlikeness": 0,
-      "RotationEarthlikeness": false,
-      "IsTerrestrial": true,
-      "HasMagneticField": false,
-      "SurfaceWater": false,
-      "HasBiosphere": false,
-      "AtmColor": {
-        "R": 0.262153,
-        "G": 0.200806,
-        "B": 0.196457,
-        "A": 1,
-        "Hex": "8C7C7B"
-      },
-      "CloudColor": {
-        "R": 1,
-        "G": 1,
-        "B": 1,
-        "A": 0,
-        "Hex": "FFFFFF"
-      },
-      "SurfaceTexture": "siriusC",
-      "CloudTexture": "blank_black",
-      "TerrainTexture": "spaceTerrain",
-      "ProvinceTable": "othermap_small_csv",
-      "ProvinceFindTable": "othermap_small_find",
-      "SuperProvinceTable": null,
-      "ProvinceTexture": "othermap_small",
-      "HeightMap": "blank_black",
-      "NormalMap": "siriusC_norm",
-      "LightTexture": "lights",
-      "ThemeColor": {
-        "R": 0.467014,
-        "G": 0.312399,
-        "B": 0.304654,
-        "A": 1,
-        "Hex": "B69896"
-      },
-      "Symbol": "mercury",
-      "HasRings": false,
-      "RingData": {
-        "Start": 0,
-        "End": 0,
-        "Texture": null
-      },
-      "Tilt": 0,
-      "RandomDeposits": [],
-      "SurfaceModel": "sphere21",
-      "GlobalDeposits": {
-        "noAtmosphere": 1,
-        "iceNine": 2,
-        "gravityLow": 1,
-        "lithium": 6
-      },
-      "CloudLayers": [],
-      "SurveyFindChances": {
-        "water": 0.1,
-        "iron": 0.5,
-        "nuclearFuels": 0.2,
-        "rareMetals": 0.1,
-        "curiosities": 0.1
-      },
-      "SurveyFindAmounts": {
-        "water": 6,
-        "iron": 4,
-        "nuclearFuels": 4,
-        "rareMetals": 5,
-        "curiosities": 4
-      },
-      "TidallyLocked": false,
-      "DamageTag": "None"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-sirius"
+      }
+    ]
   },
   {
     "id": "siriusA3",
     "type": "planetary-bodies",
-    "displayName": "Sirius A3",
+    "displayName": "Sirius A-1",
+    "icon": "planet-siriusA3",
     "fields": {
       "Name": "siriusA3",
       "SizeofEarth": 1650,
@@ -4791,17 +4650,23 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusA3"
+      }
+    ]
   },
   {
-    "id": "siriusA3-1",
+    "id": "siriusA1",
     "type": "planetary-bodies",
-    "displayName": "Sirius A3-1",
+    "displayName": "Sirius A-2",
+    "icon": "planet-siriusA1",
     "fields": {
-      "Name": "siriusA3-1",
-      "SizeofEarth": 87,
-      "ATMPressure": 12,
-      "GravityASL": 6,
+      "Name": "siriusA1",
+      "SizeofEarth": 30,
+      "ATMPressure": 0,
+      "GravityASL": 0,
       "TemperatureEarthlikeness": 0,
       "AtmEarthlikeness": 0,
       "RotationEarthlikeness": false,
@@ -4810,11 +4675,11 @@
       "SurfaceWater": false,
       "HasBiosphere": false,
       "AtmColor": {
-        "R": 1,
-        "G": 0.155322,
-        "B": 0,
+        "R": 0.479167,
+        "G": 0.316682,
+        "B": 0.262033,
         "A": 1,
-        "Hex": "FF6E00"
+        "Hex": "B8998C"
       },
       "CloudColor": {
         "R": 1,
@@ -4823,7 +4688,7 @@
         "A": 0,
         "Hex": "FFFFFF"
       },
-      "SurfaceTexture": "siriusA3-1",
+      "SurfaceTexture": "siriusA1",
       "CloudTexture": "blank_black",
       "TerrainTexture": "spaceTerrain",
       "ProvinceTable": "othermap_small_csv",
@@ -4835,10 +4700,10 @@
       "LightTexture": "lights",
       "ThemeColor": {
         "R": 0.467014,
-        "G": 0.250265,
-        "B": 0.048217,
+        "G": 0.312399,
+        "B": 0.304654,
         "A": 1,
-        "Hex": "B6893E"
+        "Hex": "B69896"
       },
       "Symbol": "mercury",
       "HasRings": false,
@@ -4851,31 +4716,21 @@
       "RandomDeposits": [],
       "SurfaceModel": "sphere21",
       "GlobalDeposits": {
-        "superAtmosphere": 1,
-        "radiation": 1,
-        "gravityEarthlike": 1,
-        "exoticGasses": 1,
-        "palladium": 1,
-        "iron": 22,
-        "rareMetals": 10,
-        "lithium": 8,
-        "titanium": 8
+        "noAtmosphere": 1,
+        "iron": 14,
+        "gravityLow": 1,
+        "rareMetals": 6
       },
-      "CloudLayers": [
-        {
-          "Texture": "VenusCloud",
-          "Material": "VenusCloudMat_Red",
-          "Scale": 1.05
-        }
-      ],
+      "CloudLayers": [],
       "SurveyFindChances": {
+        "water": 0.1,
         "iron": 0.5,
-        "titanium": 0.5,
-        "rareMetals": 0.5,
-        "curiosities": 0.25
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
       },
       "SurveyFindAmounts": {
-        "titanium": 5,
+        "water": 6,
         "iron": 4,
         "nuclearFuels": 4,
         "rareMetals": 5,
@@ -4886,12 +4741,109 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusA1"
+      }
+    ]
+  },
+  {
+    "id": "siriusA2",
+    "type": "planetary-bodies",
+    "displayName": "Sirius A-3",
+    "icon": "planet-siriusA2",
+    "fields": {
+      "Name": "siriusA2",
+      "SizeofEarth": 62,
+      "ATMPressure": 0,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 0,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": false,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.262153,
+        "G": 0.200806,
+        "B": 0.196457,
+        "A": 1,
+        "Hex": "8C7C7B"
+      },
+      "CloudColor": {
+        "R": 1,
+        "G": 1,
+        "B": 1,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "SurfaceTexture": "siriusC",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "siriusC_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.467014,
+        "G": 0.312399,
+        "B": 0.304654,
+        "A": 1,
+        "Hex": "B69896"
+      },
+      "Symbol": "mercury",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "noAtmosphere": 1,
+        "iceNine": 2,
+        "gravityLow": 1,
+        "lithium": 6
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusA2"
+      }
+    ]
   },
   {
     "id": "siriusB",
     "type": "planetary-bodies",
     "displayName": "Sirius B",
+    "icon": "planet-siriusB",
     "fields": {
       "Name": "siriusB",
       "SizeofEarth": 10000,
@@ -4966,12 +4918,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusB"
+      }
+    ]
   },
   {
     "id": "siriusB1",
     "type": "planetary-bodies",
-    "displayName": "Sirius B1",
+    "displayName": "Sirius B-1",
+    "icon": "planet-siriusB1",
     "fields": {
       "Name": "siriusB1",
       "SizeofEarth": 46,
@@ -5052,12 +5010,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-siriusB1"
+      }
+    ]
   },
   {
     "id": "sol",
     "type": "planetary-bodies",
     "displayName": "Sol",
+    "icon": "planet-sol",
     "fields": {
       "Name": "sol",
       "SizeofEarth": 10000,
@@ -5132,12 +5096,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-sol"
+      }
+    ]
   },
   {
     "id": "stableOrbit",
     "type": "planetary-bodies",
-    "displayName": "Stable Orbit",
+    "displayName": "stableOrbit",
+    "icon": "stableOrbit",
     "fields": {
       "Name": "stableOrbit",
       "SizeofEarth": 4,
@@ -5212,12 +5182,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "stableOrbit"
+      }
+    ]
   },
   {
     "id": "planetNineMoon2",
     "type": "planetary-bodies",
     "displayName": "Tartarus",
+    "icon": "planet-planetNineMoon2",
     "fields": {
       "Name": "planetNineMoon2",
       "SizeofEarth": 24,
@@ -5314,12 +5290,299 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-planetNineMoon2"
+      }
+    ]
+  },
+  {
+    "id": "40eridaniA3",
+    "type": "planetary-bodies",
+    "displayName": "Tau Ceti 1",
+    "icon": "planet-40eridaniA3",
+    "fields": {
+      "Name": "40eridaniA3",
+      "SizeofEarth": 760,
+      "ATMPressure": 1,
+      "GravityASL": 0,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": false,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.367766,
+        "G": 0.861111,
+        "B": 0.719399,
+        "A": 1,
+        "Hex": "A3EFDD"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40EridaniC",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "flatNormal",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0,
+        "G": 0.53125,
+        "B": 0.518409,
+        "A": 1,
+        "Hex": "00C1BF"
+      },
+      "Symbol": "earth",
+      "HasRings": true,
+      "RingData": {
+        "Start": 0.1,
+        "End": 4,
+        "Texture": "planetNineRings"
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 6,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1,
+        "placidGiant": 1,
+        "magneticAntimatter": 3,
+        "helium3": 5,
+        "exoticGasses": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniA3"
+      }
+    ]
+  },
+  {
+    "id": "40a2",
+    "type": "planetary-bodies",
+    "displayName": "Tau Ceti 1-1",
+    "icon": "planet-40a2",
+    "fields": {
+      "Name": "40a2",
+      "SizeofEarth": 46,
+      "ATMPressure": 1,
+      "GravityASL": 5,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": true,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.17195,
+        "G": 1,
+        "B": 0.846514,
+        "A": 1,
+        "Hex": "73FFED"
+      },
+      "CloudColor": {
+        "R": 0.554892,
+        "G": 1,
+        "B": 0.976779,
+        "A": 1,
+        "Hex": "C5FFFD"
+      },
+      "SurfaceTexture": "40a2",
+      "CloudTexture": "40a2_cloud",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "40a2_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.15926,
+        "G": 0.357598,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "6FA1C4"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 3,
+        "niceAtmosphere": 1,
+        "gravityLow": 1,
+        "curiosities": 2,
+        "titanium": 5,
+        "iron": 10,
+        "lithium": 4
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40a2"
+      }
+    ]
+  },
+  {
+    "id": "40a3",
+    "type": "planetary-bodies",
+    "displayName": "Tau Ceti 1-2",
+    "icon": "planet-40a3",
+    "fields": {
+      "Name": "40a3",
+      "SizeofEarth": 16,
+      "ATMPressure": 0,
+      "GravityASL": 5,
+      "TemperatureEarthlikeness": 0.2,
+      "AtmEarthlikeness": 0,
+      "RotationEarthlikeness": false,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 0.621528,
+        "G": 0.621528,
+        "B": 0.621528,
+        "A": 1,
+        "Hex": "CFCFCF"
+      },
+      "CloudColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0,
+        "A": 1,
+        "Hex": "000000"
+      },
+      "SurfaceTexture": "40a3",
+      "CloudTexture": "blank_black",
+      "TerrainTexture": null,
+      "ProvinceTable": "othermap_small_csv",
+      "ProvinceFindTable": "othermap_small_find",
+      "SuperProvinceTable": null,
+      "ProvinceTexture": "othermap_small",
+      "HeightMap": "blank_black",
+      "NormalMap": "40a2_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.433781,
+        "G": 0.492897,
+        "B": 0.550347,
+        "A": 1,
+        "Hex": "B0BBC4"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 0,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "iceNine": 1,
+        "noAtmosphere": 1,
+        "gravityLow": 1,
+        "cryoOrganics": 3,
+        "nuclearFuels": 1,
+        "lithium": 9
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40a3"
+      }
+    ]
   },
   {
     "id": "mars_terraform3",
     "type": "planetary-bodies",
     "displayName": "Terraformed Mars",
+    "icon": "planet-mars_terraform3",
     "fields": {
       "Name": "mars_terraform3",
       "SizeofEarth": 50,
@@ -5408,12 +5671,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-mars_terraform3"
+      }
+    ]
   },
   {
     "id": "mars_terraform1",
     "type": "planetary-bodies",
     "displayName": "Terraformed Mars (1/3)",
+    "icon": "planet-mars_terraform1",
     "fields": {
       "Name": "mars_terraform1",
       "SizeofEarth": 50,
@@ -5499,12 +5768,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-mars_terraform1"
+      }
+    ]
   },
   {
     "id": "mars_terraform2",
     "type": "planetary-bodies",
     "displayName": "Terraformed Mars (2/3)",
+    "icon": "planet-mars_terraform2",
     "fields": {
       "Name": "mars_terraform2",
       "SizeofEarth": 50,
@@ -5592,12 +5867,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-mars_terraform2"
+      }
+    ]
   },
   {
     "id": "venus_terraform3",
     "type": "planetary-bodies",
     "displayName": "Terraformed Venus",
+    "icon": "planet-venus_terraform3",
     "fields": {
       "Name": "venus_terraform3",
       "SizeofEarth": 100,
@@ -5685,12 +5966,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-venus_terraform3"
+      }
+    ]
   },
   {
     "id": "venus_terraform1",
     "type": "planetary-bodies",
     "displayName": "Terraformed Venus (1/3)",
+    "icon": "planet-venus_terraform1",
     "fields": {
       "Name": "venus_terraform1",
       "SizeofEarth": 100,
@@ -5777,12 +6064,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-venus_terraform1"
+      }
+    ]
   },
   {
     "id": "venus_terraform2",
     "type": "planetary-bodies",
     "displayName": "Terraformed Venus (2/3)",
+    "icon": "planet-venus_terraform2",
     "fields": {
       "Name": "venus_terraform2",
       "SizeofEarth": 100,
@@ -5870,12 +6163,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-venus_terraform2"
+      }
+    ]
   },
   {
     "id": "tethys",
     "type": "planetary-bodies",
     "displayName": "Tethys",
+    "icon": "planet-tethys",
     "fields": {
       "Name": "tethys",
       "SizeofEarth": 8.4,
@@ -5961,12 +6260,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-tethys"
+      }
+    ]
   },
   {
     "id": "tiamat",
     "type": "planetary-bodies",
     "displayName": "Tiamat",
+    "icon": "planet-tiamat",
     "fields": {
       "Name": "tiamat",
       "SizeofEarth": 115,
@@ -6049,12 +6354,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-tiamat"
+      }
+    ]
   },
   {
     "id": "titan",
     "type": "planetary-bodies",
     "displayName": "Titan",
+    "icon": "planet-titan",
     "fields": {
       "Name": "titan",
       "SizeofEarth": 41.2,
@@ -6151,12 +6462,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-titan"
+      }
+    ]
   },
   {
     "id": "titania",
     "type": "planetary-bodies",
     "displayName": "Titania",
+    "icon": "planet-titania",
     "fields": {
       "Name": "titania",
       "SizeofEarth": 11.4,
@@ -6246,12 +6563,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-titania"
+      }
+    ]
   },
   {
     "id": "triton",
     "type": "planetary-bodies",
     "displayName": "Triton",
+    "icon": "planet-triton",
     "fields": {
       "Name": "triton",
       "SizeofEarth": 13,
@@ -6340,12 +6663,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-triton"
+      }
+    ]
   },
   {
     "id": "uranus",
     "type": "planetary-bodies",
     "displayName": "Uranus",
+    "icon": "planet-uranus",
     "fields": {
       "Name": "uranus",
       "SizeofEarth": 400,
@@ -6425,12 +6754,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-uranus"
+      }
+    ]
   },
   {
     "id": "venus",
     "type": "planetary-bodies",
     "displayName": "Venus",
+    "icon": "planet-venus",
     "fields": {
       "Name": "venus",
       "SizeofEarth": 100,
@@ -6522,12 +6857,18 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-venus"
+      }
+    ]
   },
   {
     "id": "vesta",
     "type": "planetary-bodies",
     "displayName": "Vesta",
+    "icon": "planet-vesta",
     "fields": {
       "Name": "vesta",
       "SizeofEarth": 4.12,
@@ -6612,6 +6953,103 @@
     },
     "modifiers": [],
     "prerequisites": [],
-    "references": []
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-vesta"
+      }
+    ]
+  },
+  {
+    "id": "40eridaniA",
+    "type": "planetary-bodies",
+    "displayName": "Vulcanis",
+    "icon": "planet-40eridaniA",
+    "fields": {
+      "Name": "40eridaniA",
+      "SizeofEarth": 142,
+      "ATMPressure": 1,
+      "GravityASL": 9.8,
+      "TemperatureEarthlikeness": 1,
+      "AtmEarthlikeness": 1,
+      "RotationEarthlikeness": true,
+      "IsTerrestrial": true,
+      "HasMagneticField": true,
+      "SurfaceWater": false,
+      "HasBiosphere": false,
+      "AtmColor": {
+        "R": 1,
+        "G": 0.706761,
+        "B": 0.487847,
+        "A": 1,
+        "Hex": "FFDBBA"
+      },
+      "CloudColor": {
+        "R": 0.461805,
+        "G": 0.334743,
+        "B": 0.144914,
+        "A": 1,
+        "Hex": "B59D6A"
+      },
+      "SurfaceTexture": "40eridaniA",
+      "CloudTexture": "40eridaniA_cloud",
+      "TerrainTexture": "spaceTerrain",
+      "ProvinceTable": "othermap_medium_csv",
+      "ProvinceFindTable": "othermap_medium_find",
+      "SuperProvinceTable": "Superprovinces",
+      "ProvinceTexture": "othermap_medium",
+      "HeightMap": "blank_black",
+      "NormalMap": "40eridaniA_norm",
+      "LightTexture": "lights",
+      "ThemeColor": {
+        "R": 0.53125,
+        "G": 0.21894,
+        "B": 0,
+        "A": 1,
+        "Hex": "C18100"
+      },
+      "Symbol": "earth",
+      "HasRings": false,
+      "RingData": {
+        "Start": 0,
+        "End": 0,
+        "Texture": null
+      },
+      "Tilt": 33,
+      "RandomDeposits": [],
+      "SurfaceModel": "sphere21",
+      "GlobalDeposits": {
+        "oxygen": 2,
+        "niceAtmosphere": 1,
+        "gravityEarthlike": 1
+      },
+      "CloudLayers": [],
+      "SurveyFindChances": {
+        "water": 0.1,
+        "iron": 0.5,
+        "nuclearFuels": 0.2,
+        "rareMetals": 0.1,
+        "curiosities": 0.1,
+        "oil": 0.15
+      },
+      "SurveyFindAmounts": {
+        "water": 6,
+        "iron": 4,
+        "nuclearFuels": 4,
+        "rareMetals": 5,
+        "curiosities": 4,
+        "oil": 2
+      },
+      "TidallyLocked": false,
+      "DamageTag": "None"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "planet-40eridaniA"
+      }
+    ]
   }
 ]

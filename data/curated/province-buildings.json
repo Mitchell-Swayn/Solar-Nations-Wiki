@@ -2,7 +2,7 @@
   {
     "id": "2_commerceCity",
     "type": "province-buildings",
-    "displayName": "2 Commerce City",
+    "displayName": "2_commerceCity",
     "icon": "city",
     "fields": {
       "Name": "2_commerceCity",
@@ -42,7 +42,7 @@
   {
     "id": "2_fortressCity",
     "type": "province-buildings",
-    "displayName": "2 Fortress City",
+    "displayName": "2_fortressCity",
     "icon": "city",
     "fields": {
       "Name": "2_fortressCity",
@@ -77,7 +77,7 @@
   {
     "id": "2_industrialCity",
     "type": "province-buildings",
-    "displayName": "2 Industrial City",
+    "displayName": "2_industrialCity",
     "icon": "city",
     "fields": {
       "Name": "2_industrialCity",
@@ -112,7 +112,7 @@
   {
     "id": "airport",
     "type": "province-buildings",
-    "displayName": "Airport",
+    "displayName": "airport",
     "icon": "airport",
     "fields": {
       "Name": "airport",
@@ -170,7 +170,7 @@
   {
     "id": "city",
     "type": "province-buildings",
-    "displayName": "City",
+    "displayName": "city",
     "icon": "city",
     "fields": {
       "Name": "city",
@@ -201,7 +201,7 @@
   {
     "id": "port",
     "type": "province-buildings",
-    "displayName": "Port",
+    "displayName": "port",
     "icon": "navalBase",
     "fields": {
       "Name": "port",
@@ -259,7 +259,7 @@
   {
     "id": "supplyBase",
     "type": "province-buildings",
-    "displayName": "Supply Base",
+    "displayName": "supplyBase",
     "icon": "supplyUp",
     "fields": {
       "Name": "supplyBase",

@@ -2,7 +2,7 @@
   {
     "id": "administrative",
     "type": "map-modes",
-    "displayName": "Administrative",
+    "displayName": "administrative",
     "icon": "gavel",
     "fields": {
       "Name": "administrative",
@@ -212,7 +212,7 @@
   {
     "id": "formable",
     "type": "map-modes",
-    "displayName": "Formable",
+    "displayName": "formable",
     "icon": "",
     "fields": {
       "Name": "formable",
@@ -274,7 +274,7 @@
   {
     "id": "intel",
     "type": "map-modes",
-    "displayName": "Intel",
+    "displayName": "intel",
     "icon": "intel",
     "fields": {
       "Name": "intel",
@@ -308,7 +308,7 @@
   {
     "id": "migration",
     "type": "map-modes",
-    "displayName": "Migration",
+    "displayName": "migration",
     "icon": "migrationLaw_openBorders",
     "fields": {
       "Name": "migration",
@@ -368,7 +368,7 @@
   {
     "id": "organization",
     "type": "map-modes",
-    "displayName": "Organization",
+    "displayName": "organization",
     "icon": "alliance",
     "fields": {
       "Name": "organization",
@@ -398,7 +398,7 @@
   {
     "id": "peacedeal",
     "type": "map-modes",
-    "displayName": "Peacedeal",
+    "displayName": "peacedeal",
     "icon": "",
     "fields": {
       "Name": "peacedeal",
@@ -432,7 +432,7 @@
   {
     "id": "political",
     "type": "map-modes",
-    "displayName": "Political",
+    "displayName": "political",
     "icon": "colony",
     "fields": {
       "Name": "political",
@@ -524,7 +524,7 @@
   {
     "id": "recruitment",
     "type": "map-modes",
-    "displayName": "Recruitment",
+    "displayName": "recruitment",
     "icon": "",
     "fields": {
       "Name": "recruitment",
@@ -558,7 +558,7 @@
   {
     "id": "region",
     "type": "map-modes",
-    "displayName": "Region",
+    "displayName": "region",
     "icon": "territory",
     "fields": {
       "Name": "region",
@@ -588,7 +588,7 @@
   {
     "id": "relevance",
     "type": "map-modes",
-    "displayName": "Relevance",
+    "displayName": "relevance",
     "icon": "",
     "fields": {
       "Name": "relevance",
@@ -688,7 +688,7 @@
   {
     "id": "terrain",
     "type": "map-modes",
-    "displayName": "Terrain",
+    "displayName": "terrain",
     "icon": "olympusMons",
     "fields": {
       "Name": "terrain",

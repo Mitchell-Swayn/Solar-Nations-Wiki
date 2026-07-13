@@ -1,0 +1,958 @@
+{
+  "land_attack": {
+    "displayName": "Land Attack",
+    "source": "modifiers_english.uasset"
+  },
+  "space_attack": {
+    "displayName": "Space Attack",
+    "source": "modifiers_english.uasset"
+  },
+  "water_attack": {
+    "displayName": "Water Attack",
+    "source": "modifiers_english.uasset"
+  },
+  "air_attack": {
+    "displayName": "Air Attack",
+    "source": "modifiers_english.uasset"
+  },
+  "health": {
+    "displayName": "Health",
+    "source": "modifiers_english.uasset"
+  },
+  "evasion": {
+    "displayName": "Evasion",
+    "source": "modifiers_english.uasset"
+  },
+  "size": {
+    "displayName": "Size",
+    "source": "modifiers_english.uasset"
+  },
+  "damageWeight": {
+    "displayName": "Damage Weight",
+    "source": "modifiers_english.uasset"
+  },
+  "upperClass": {
+    "displayName": "Aristocrat",
+    "source": "modifiers_english.uasset"
+  },
+  "soldier": {
+    "displayName": "Soldier",
+    "source": "modifiers_english.uasset"
+  },
+  "bureaucrat": {
+    "displayName": "Bureaucrat",
+    "source": "modifiers_english.uasset"
+  },
+  "incompetent": {
+    "displayName": "Incompetent",
+    "source": "modifiers_english.uasset"
+  },
+  "waste": {
+    "displayName": "Waste",
+    "source": "modifiers_english.uasset"
+  },
+  "water": {
+    "displayName": "Water",
+    "source": "modifiers_english.uasset"
+  },
+  "helium3": {
+    "displayName": "Helium-3",
+    "source": "modifiers_english.uasset"
+  },
+  "antimatter": {
+    "displayName": "Antimatter",
+    "source": "modifiers_english.uasset"
+  },
+  "energy": {
+    "displayName": "Energy",
+    "source": "modifiers_english.uasset"
+  },
+  "electronics": {
+    "displayName": "Electronics",
+    "source": "modifiers_english.uasset"
+  },
+  "robots": {
+    "displayName": "Robots",
+    "source": "modifiers_english.uasset"
+  },
+  "geneticMaterial": {
+    "displayName": "Genetic Material",
+    "source": "modifiers_english.uasset"
+  },
+  "nanocomposites": {
+    "displayName": "Nanocomposites",
+    "source": "modifiers_english.uasset"
+  },
+  "robotics": {
+    "displayName": "Robotics",
+    "source": "modifiers_english.uasset"
+  },
+  "space": {
+    "displayName": "Space",
+    "source": "modifiers_english.uasset"
+  },
+  "laborer": {
+    "displayName": "Laborer",
+    "source": "modifiers_english1.uasset"
+  },
+  "steel": {
+    "displayName": "Steel",
+    "source": "modifiers_english1.uasset"
+  },
+  "consumerGoods": {
+    "displayName": "Manufacturing",
+    "source": "resource_english.uasset"
+  },
+  "manufacturing": {
+    "displayName": "energy",
+    "source": "resource_english.uasset"
+  },
+  "grain": {
+    "displayName": "Agriculture",
+    "source": "resource_english.uasset"
+  },
+  "supply": {
+    "displayName": "Supply",
+    "source": "resource_english.uasset"
+  },
+  "neuralNetworks": {
+    "displayName": "Neural Networks",
+    "source": "resource_english.uasset"
+  },
+  "exoticMatter": {
+    "displayName": "Exotic Matter",
+    "source": "resource_english.uasset"
+  },
+  "form_monarchy": {
+    "displayName": "Monarchy",
+    "source": "resource_english.uasset"
+  },
+  "form": {
+    "displayName": "Government Form",
+    "source": "resource_english.uasset"
+  },
+  "economySystem": {
+    "displayName": "Economic System",
+    "source": "resource_english.uasset"
+  },
+  "traditional": {
+    "displayName": "outlook_luddite",
+    "source": "resource_english.uasset"
+  },
+  "civilLiberties": {
+    "displayName": "Civil Liberties",
+    "source": "resource_english.uasset"
+  },
+  "liberal": {
+    "displayName": "familypolicy",
+    "source": "resource_english.uasset"
+  },
+  "militaryDoctrine": {
+    "displayName": "Military Doctrine",
+    "source": "resource_english.uasset"
+  },
+  "subversive": {
+    "displayName": "diplomaticstance_isolationist",
+    "source": "resource_english.uasset"
+  },
+  "marxist": {
+    "displayName": "education",
+    "source": "resource_english.uasset"
+  },
+  "influence": {
+    "displayName": "Influence Region",
+    "source": "resource_english.uasset"
+  },
+  "exploit": {
+    "displayName": "Exploit",
+    "source": "resource_english.uasset"
+  },
+  "industry": {
+    "displayName": "Industrial Capacity",
+    "source": "resource_english.uasset"
+  },
+  "infrastructure": {
+    "displayName": "Infrastructure",
+    "source": "resource_english.uasset"
+  },
+  "extraction": {
+    "displayName": "Resource Extraction",
+    "source": "resource_english.uasset"
+  },
+  "openFarm": {
+    "displayName": "Open-Air Farming",
+    "source": "resource_english.uasset"
+  },
+  "hydroponics": {
+    "displayName": "Hydroponics Farm",
+    "source": "resource_english.uasset"
+  },
+  "nuclearReactor": {
+    "displayName": "Nuclear Reactor",
+    "source": "resource_english.uasset"
+  },
+  "oilApplication": {
+    "displayName": "Petrochemicals Industry",
+    "source": "resource_english.uasset"
+  },
+  "geneticMaterialFactory": {
+    "displayName": "Genetic Material Factory",
+    "source": "resource_english.uasset"
+  },
+  "robotFactory": {
+    "displayName": "Robot Assembly Plants",
+    "source": "resource_english.uasset"
+  },
+  "barracks": {
+    "displayName": "Barracks",
+    "source": "resource_english.uasset"
+  },
+  "aerodrome": {
+    "displayName": "Aerodrome",
+    "source": "resource_english.uasset"
+  },
+  "navalPort": {
+    "displayName": "Seaport",
+    "source": "resource_english.uasset"
+  },
+  "spaceport": {
+    "displayName": "Spaceport",
+    "source": "resource_english.uasset"
+  },
+  "bureaucracy": {
+    "displayName": "Bureaucracy",
+    "source": "resource_english.uasset"
+  },
+  "heavyIndustry": {
+    "displayName": "Heavy Industry",
+    "source": "resource_english.uasset"
+  },
+  "middleClass": {
+    "displayName": "Middle Class",
+    "source": "resource_english.uasset"
+  },
+  "separatist": {
+    "displayName": "Separatist",
+    "source": "resource_english.uasset"
+  },
+  "academia": {
+    "displayName": "Scientists",
+    "source": "resource_english.uasset"
+  },
+  "corporate": {
+    "displayName": "Corporate",
+    "source": "resource_english.uasset"
+  },
+  "clergy": {
+    "displayName": "Clergy",
+    "source": "resource_english.uasset"
+  },
+  "dependents": {
+    "displayName": "Dependents",
+    "source": "resource_english.uasset"
+  },
+  "popular": {
+    "displayName": "Popular",
+    "source": "resource_english.uasset"
+  },
+  "land": {
+    "displayName": "Land",
+    "source": "resource_english.uasset"
+  },
+  "strategic": {
+    "displayName": "Strategic",
+    "source": "resource_english.uasset"
+  },
+  "strategy": {
+    "displayName": "Strategy",
+    "source": "resource_english.uasset"
+  },
+  "management": {
+    "displayName": "Management",
+    "source": "resource_english.uasset"
+  },
+  "charisma": {
+    "displayName": "Charisma",
+    "source": "resource_english.uasset"
+  },
+  "landSoft": {
+    "displayName": "Land Soft",
+    "source": "resource_english.uasset"
+  },
+  "landHard": {
+    "displayName": "Land Hard",
+    "source": "resource_english.uasset"
+  },
+  "landTracking": {
+    "displayName": "Land Missile",
+    "source": "resource_english.uasset"
+  },
+  "waterSoft": {
+    "displayName": "Water Soft",
+    "source": "resource_english.uasset"
+  },
+  "waterHard": {
+    "displayName": "Water Hard",
+    "source": "resource_english.uasset"
+  },
+  "torpedo": {
+    "displayName": "Torpedo",
+    "source": "resource_english.uasset"
+  },
+  "depthCharge": {
+    "displayName": "Depth Charge",
+    "source": "resource_english.uasset"
+  },
+  "airSoft": {
+    "displayName": "Air Soft",
+    "source": "resource_english.uasset"
+  },
+  "airTracking": {
+    "displayName": "Aerial Missile",
+    "source": "resource_english.uasset"
+  },
+  "spaceSoft": {
+    "displayName": "Space Light",
+    "source": "resource_english.uasset"
+  },
+  "spaceHard": {
+    "displayName": "Space Heavy",
+    "source": "resource_english.uasset"
+  },
+  "spaceTracking": {
+    "displayName": "Space Missile",
+    "source": "resource_english.uasset"
+  },
+  "laser": {
+    "displayName": "Laser",
+    "source": "resource_english.uasset"
+  },
+  "biological": {
+    "displayName": "Biological",
+    "source": "resource_english.uasset"
+  },
+  "entrenchment": {
+    "displayName": "Entrenchment",
+    "source": "resource_english.uasset"
+  },
+  "breakthrough": {
+    "displayName": "Breakthrough",
+    "source": "resource_english.uasset"
+  },
+  "manpower": {
+    "displayName": "Manpower",
+    "source": "resource_english.uasset"
+  },
+  "speed": {
+    "displayName": "Speed",
+    "source": "resource_english.uasset"
+  },
+  "infantry": {
+    "displayName": "Infantry",
+    "source": "resource_english.uasset"
+  },
+  "airHard": {
+    "displayName": "Air Hard",
+    "source": "resource_english.uasset"
+  },
+  "capital": {
+    "displayName": "colonyspec",
+    "source": "resource_english.uasset"
+  },
+  "interceptor": {
+    "displayName": "Interceptor",
+    "source": "resource_english.uasset"
+  },
+  "tank": {
+    "displayName": "Tank",
+    "source": "resource_english.uasset"
+  },
+  "artillery": {
+    "displayName": "Artillery",
+    "source": "resource_english.uasset"
+  },
+  "sizeLimit": {
+    "displayName": "Size Limit",
+    "source": "resource_english.uasset"
+  },
+  "electronicsFactory": {
+    "displayName": "Electronics Factory",
+    "source": "resource_english.uasset"
+  },
+  "military": {
+    "displayName": "Military",
+    "source": "resource_english.uasset"
+  },
+  "commerce": {
+    "displayName": "Commerce",
+    "source": "resource_english.uasset"
+  },
+  "munitionDefense": {
+    "displayName": "Munition Defense Batteries",
+    "source": "resource_english.uasset"
+  },
+  "ruling": {
+    "displayName": "Rulership",
+    "source": "resource_english.uasset"
+  },
+  "culture": {
+    "displayName": "Culture",
+    "source": "resource_english.uasset"
+  },
+  "income_tax": {
+    "displayName": "Income Taxes",
+    "source": "resource_english.uasset"
+  },
+  "research": {
+    "displayName": "Research",
+    "source": "resource_english.uasset"
+  },
+  "population": {
+    "displayName": "Population",
+    "source": "resource_english.uasset"
+  },
+  "consumerGoodsFactory": {
+    "displayName": "Consumer Goods Industry",
+    "source": "resource_english.uasset"
+  },
+  "steelRefinery": {
+    "displayName": "Steel Refinery",
+    "source": "resource_english.uasset"
+  },
+  "university": {
+    "displayName": "University",
+    "source": "resource_english.uasset"
+  },
+  "fortifications": {
+    "displayName": "Fortifications",
+    "source": "resource_english.uasset"
+  },
+  "commercialZones": {
+    "displayName": "Commercial Zones",
+    "source": "resource_english.uasset"
+  },
+  "screen": {
+    "displayName": "Screen",
+    "source": "resource_english.uasset"
+  },
+  "superSteel": {
+    "displayName": "Chromite",
+    "source": "resource_english.uasset"
+  },
+  "superSteelFactory": {
+    "displayName": "Chromite Refinery",
+    "source": "resource_english.uasset"
+  },
+  "powerGrid": {
+    "displayName": "Power Grid",
+    "source": "resource_english.uasset"
+  },
+  "digitalAssembly": {
+    "displayName": "Digital Assembly",
+    "source": "resource_english.uasset"
+  },
+  "neuralNetworkFactory": {
+    "displayName": "AI Training Supercomputer",
+    "source": "resource_english.uasset"
+  },
+  "antimatterHarvester": {
+    "displayName": "Antimatter Collecter",
+    "source": "resource_english.uasset"
+  },
+  "monument": {
+    "displayName": "Monument",
+    "source": "resource_english.uasset"
+  },
+  "psychological": {
+    "displayName": "Psychological",
+    "source": "resource_english.uasset"
+  },
+  "closeAirSupport": {
+    "displayName": "Close Air Support",
+    "source": "resource_english.uasset"
+  },
+  "escalation": {
+    "displayName": "Escalation",
+    "source": "resource_english.uasset"
+  },
+  "deployRange": {
+    "displayName": "Deploy Range",
+    "source": "resource_english.uasset"
+  },
+  "spaceCapacity": {
+    "displayName": "Spacefleet Capacity",
+    "source": "resource_english.uasset"
+  },
+  "airCapacity": {
+    "displayName": "Airforce Limit",
+    "source": "resource_english.uasset"
+  },
+  "navyCapacity": {
+    "displayName": "Naval Capacity",
+    "source": "resource_english.uasset"
+  },
+  "logistics": {
+    "displayName": "Logistics Capacity",
+    "source": "resource_english.uasset"
+  },
+  "diplomacyCapacity": {
+    "displayName": "Diplomatic Capacity",
+    "source": "resource_english.uasset"
+  },
+  "factory": {
+    "displayName": "Factory",
+    "source": "resource_english.uasset"
+  },
+  "strategicCapacity": {
+    "displayName": "Strategic Capacity",
+    "source": "resource_english.uasset"
+  },
+  "missileSilo": {
+    "displayName": "Missile Silo",
+    "source": "resource_english.uasset"
+  },
+  "missileDefense": {
+    "displayName": "Missile Defense",
+    "source": "resource_english.uasset"
+  },
+  "missileSaturation": {
+    "displayName": "Missile Saturation",
+    "source": "resource_english.uasset"
+  },
+  "logisticsAbility": {
+    "displayName": "Logistics",
+    "source": "resource_english.uasset"
+  },
+  "medicalAbility": {
+    "displayName": "Medical Ability",
+    "source": "resource_english.uasset"
+  },
+  "energyQuality": {
+    "displayName": "Energy",
+    "source": "resource_english.uasset"
+  },
+  "reconAbility": {
+    "displayName": "Reconaissance",
+    "source": "resource_english.uasset"
+  },
+  "blitzAbility": {
+    "displayName": "Spearhead Tactics",
+    "source": "resource_english.uasset"
+  },
+  "bombardmentAbility": {
+    "displayName": "Bombardment",
+    "source": "resource_english.uasset"
+  },
+  "screenAbility": {
+    "displayName": "Screening Efficiency",
+    "source": "resource_english.uasset"
+  },
+  "droidOrchestration": {
+    "displayName": "Droid Orchestration",
+    "source": "resource_english.uasset"
+  },
+  "neuralEngineQuality": {
+    "displayName": "Neural Orchestration",
+    "source": "resource_english.uasset"
+  },
+  "robotic": {
+    "displayName": "Robotic",
+    "source": "resource_english.uasset"
+  },
+  "supercollider": {
+    "displayName": "Supercollider",
+    "source": "resource_english.uasset"
+  },
+  "neuralHarvester": {
+    "displayName": "Neural Harvester",
+    "source": "resource_english.uasset"
+  },
+  "serviceIndustry": {
+    "displayName": "Service Industry",
+    "source": "resource_english.uasset"
+  },
+  "willpowerCapacity": {
+    "displayName": "Sapiessence",
+    "source": "resource_english.uasset"
+  },
+  "logisticsHub": {
+    "displayName": "Logistics Hub",
+    "source": "resource_english.uasset"
+  },
+  "urbanization": {
+    "displayName": "Urbanization",
+    "source": "resource_english.uasset"
+  },
+  "automatedFactory": {
+    "displayName": "Automated Factory",
+    "source": "resource_english.uasset"
+  },
+  "cloneVats": {
+    "displayName": "Clone Vats",
+    "source": "resource_english.uasset"
+  },
+  "geneClinics": {
+    "displayName": "Gene Clinics",
+    "source": "resource_english.uasset"
+  },
+  "enigmatic": {
+    "displayName": "Enigmatic",
+    "source": "resource_english.uasset"
+  },
+  "genetics": {
+    "displayName": "Genetic Evolution",
+    "source": "resource_english.uasset"
+  },
+  "supercomputer": {
+    "displayName": "Supercomputer",
+    "source": "resource_english.uasset"
+  },
+  "resourceTax": {
+    "displayName": "Resource Tax",
+    "source": "resource_english.uasset"
+  },
+  "unity": {
+    "displayName": "Unity",
+    "source": "resource_english.uasset"
+  },
+  "iceNine": {
+    "displayName": "Ice-9",
+    "source": "resource_english.uasset"
+  },
+  "cryoOrganics": {
+    "displayName": "Cryo-Organics",
+    "source": "resource_english.uasset"
+  },
+  "exoticGasses": {
+    "displayName": "Exotic Refining",
+    "source": "resource_english.uasset"
+  },
+  "palladium": {
+    "displayName": "Palladium",
+    "source": "resource_english.uasset"
+  },
+  "thorium": {
+    "displayName": "Thorium",
+    "source": "resource_english.uasset"
+  },
+  "lqdMethane": {
+    "displayName": "Liquid Methane",
+    "source": "resource_english.uasset"
+  },
+  "mechanist_progress": {
+    "displayName": "Progress",
+    "source": "resource_english.uasset"
+  },
+  "mechanist_17Support": {
+    "displayName": "Seventeen Council Support",
+    "source": "resource_english.uasset"
+  },
+  "americanPolitics_congressSupport": {
+    "displayName": "Congress Support",
+    "source": "resource_english.uasset"
+  },
+  "casteSystem_rigidity": {
+    "displayName": "Rigidity",
+    "source": "resource_english.uasset"
+  },
+  "russia_siegeMentality": {
+    "displayName": "Siege Mentality",
+    "source": "resource_english.uasset"
+  },
+  "rome_legitemacy": {
+    "displayName": "Legitemacy",
+    "source": "resource_english.uasset"
+  },
+  "thule_rage": {
+    "displayName": "Rage",
+    "source": "resource_english.uasset"
+  },
+  "thule_schizo": {
+    "displayName": "Forbidden Knowledge",
+    "source": "resource_english.uasset"
+  },
+  "cia_surveillance": {
+    "displayName": "Surveillance",
+    "source": "resource_english.uasset"
+  },
+  "cia_sublimation": {
+    "displayName": "Protocol Development",
+    "source": "resource_english.uasset"
+  },
+  "jehova_tribulation": {
+    "displayName": "Tribulation",
+    "source": "resource_english.uasset"
+  },
+  "backwardsSociety_progress": {
+    "displayName": "Civilization Progress",
+    "source": "resource_english.uasset"
+  },
+  "ascensionGenetic_progress": {
+    "displayName": "Genome Sequencing Progress",
+    "source": "resource_english.uasset"
+  },
+  "ascendedGenetic_mental": {
+    "displayName": "Mental Superiority",
+    "source": "resource_english.uasset"
+  },
+  "ascendedGenetic_physical": {
+    "displayName": "Physical Enhancements",
+    "source": "resource_english.uasset"
+  },
+  "ascendedGenetic_social": {
+    "displayName": "Social Improvements",
+    "source": "resource_english.uasset"
+  },
+  "ascensionRobotic_progress": {
+    "displayName": "Progress",
+    "source": "resource_english.uasset"
+  },
+  "AiServer": {
+    "displayName": "AI Server Farm",
+    "source": "resource_english.uasset"
+  },
+  "ascendedAi_aiPower": {
+    "displayName": "AI Ultrassociation",
+    "source": "resource_english.uasset"
+  },
+  "ascensionAi_progress": {
+    "displayName": "Progress",
+    "source": "resource_english.uasset"
+  },
+  "clergy_communist": {
+    "displayName": "Radical Activists",
+    "source": "resource_english.uasset"
+  },
+  "clergy_fascist": {
+    "displayName": "Fascist Ideocrats",
+    "source": "resource_english.uasset"
+  },
+  "clergy_christian": {
+    "displayName": "Christian Theocrats",
+    "source": "resource_english.uasset"
+  },
+  "clergy_islamic": {
+    "displayName": "Sharia Hardliners",
+    "source": "resource_english.uasset"
+  },
+  "clergy_jewish": {
+    "displayName": "Jewish Elders",
+    "source": "resource_english.uasset"
+  },
+  "clergy_hindu": {
+    "displayName": "Brahmins",
+    "source": "resource_english.uasset"
+  },
+  "researchCooperative": {
+    "displayName": "Research Cooperative",
+    "source": "resource_english.uasset"
+  },
+  "culturalExchange": {
+    "displayName": "Cultural Exchange",
+    "source": "resource_english.uasset"
+  },
+  "allianceCohesion": {
+    "displayName": "Cohesion",
+    "source": "resource_english.uasset"
+  },
+  "demographicCrisisIntensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "cultureWar_rightPower": {
+    "displayName": "Right-Wing Influence",
+    "source": "resource_english.uasset"
+  },
+  "cultureWar_leftPower": {
+    "displayName": "Left-Wing Influence",
+    "source": "resource_english.uasset"
+  },
+  "eliteBetrayalSeverity": {
+    "displayName": "Progress",
+    "source": "resource_english.uasset"
+  },
+  "polycrisis_progress": {
+    "displayName": "Progress",
+    "source": "resource_english.uasset"
+  },
+  "polycrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "letheTreasure": {
+    "displayName": "Lethe's Treasure",
+    "source": "resource_english.uasset"
+  },
+  "incomeTax": {
+    "displayName": "Income Tax",
+    "source": "resource_english.uasset"
+  },
+  "irregular": {
+    "displayName": "Irregular",
+    "source": "resource_english.uasset"
+  },
+  "bureaucracyCrisis": {
+    "displayName": "Bureaucratic Betrayal",
+    "source": "resource_english.uasset"
+  },
+  "bureaucracyCrisis_intensity": {
+    "displayName": "Crisis Intensity",
+    "source": "resource_english.uasset"
+  },
+  "corporateCrisis": {
+    "displayName": "Corporate Chaos",
+    "source": "resource_english.uasset"
+  },
+  "corporateCrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "middleClassCrisis": {
+    "displayName": "Middle Class Manipulations",
+    "source": "resource_english.uasset"
+  },
+  "middleClassCrisis_intensity": {
+    "displayName": "Crisis Intensity",
+    "source": "resource_english.uasset"
+  },
+  "laborerCrisis": {
+    "displayName": "Rural Rebellion",
+    "source": "resource_english.uasset"
+  },
+  "laborerCrisis_intensity": {
+    "displayName": "Crisis Intensity",
+    "source": "resource_english.uasset"
+  },
+  "upperClassCrisis": {
+    "displayName": "Elite Extremism",
+    "source": "resource_english.uasset"
+  },
+  "upperClassCrisis_intensity": {
+    "displayName": "Crisis Intensity",
+    "source": "resource_english.uasset"
+  },
+  "clergyCrisis": {
+    "displayName": "Clerical Collapse",
+    "source": "resource_english.uasset"
+  },
+  "separatistCrisis": {
+    "displayName": "Separatist Strikes",
+    "source": "resource_english.uasset"
+  },
+  "militaryCrisis": {
+    "displayName": "Military Machinations",
+    "source": "resource_english.uasset"
+  },
+  "roboticsCrisis": {
+    "displayName": "Technological Singularity",
+    "source": "resource_english.uasset"
+  },
+  "roboticsCrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "laborer_hivemind": {
+    "displayName": "Menial Drones",
+    "source": "resource_english.uasset"
+  },
+  "middleClass_hivemind": {
+    "displayName": "Complex Drones",
+    "source": "resource_english.uasset"
+  },
+  "upperClass_hivemind": {
+    "displayName": "Mastercontroller Drones",
+    "source": "resource_english.uasset"
+  },
+  "corporate_hivemind": {
+    "displayName": "Industrial Node",
+    "source": "resource_english.uasset"
+  },
+  "bureaucracy_hivemind": {
+    "displayName": "Administrative Node",
+    "source": "resource_english.uasset"
+  },
+  "clergy_hivemind": {
+    "displayName": "Morality Node",
+    "source": "resource_english.uasset"
+  },
+  "military_hivemind": {
+    "displayName": "War Drones",
+    "source": "resource_english.uasset"
+  },
+  "separatistCrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "superhumanCrisis": {
+    "displayName": "Eugenics Unleashed",
+    "source": "resource_english.uasset"
+  },
+  "superhumanCrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "laborer_automated": {
+    "displayName": "Automated Workforce",
+    "source": "resource_english.uasset"
+  },
+  "clergyCrisis_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "gravometric": {
+    "displayName": "Gravometric",
+    "source": "resource_english.uasset"
+  },
+  "economicPerfection": {
+    "displayName": "Economic Perfection",
+    "source": "resource_english.uasset"
+  },
+  "militaryPerfection": {
+    "displayName": "Military Perfection",
+    "source": "resource_english.uasset"
+  },
+  "politicalPerfection": {
+    "displayName": "Political Perfection",
+    "source": "resource_english.uasset"
+  },
+  "espionageFaction": {
+    "displayName": "Spy Agency",
+    "source": "resource_english.uasset"
+  },
+  "bioweaponSituation_cureProgress": {
+    "displayName": "Cure Progress",
+    "source": "resource_english.uasset"
+  },
+  "bioweaponSituation_intensity": {
+    "displayName": "Spread",
+    "source": "resource_english.uasset"
+  },
+  "counterespionage": {
+    "displayName": "Counter Espionage",
+    "source": "resource_english.uasset"
+  },
+  "dirtyBombOperation": {
+    "displayName": "Dirty Bomb",
+    "source": "resource_english.uasset"
+  },
+  "unleashScrapCodeSituation_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "unleashScrapCodeSituation_cureProgress": {
+    "displayName": "Antivirus Progress",
+    "source": "resource_english.uasset"
+  },
+  "robotRevolutionSituation_cureProgress": {
+    "displayName": "Loyalty Circuits Progress",
+    "source": "resource_english.uasset"
+  },
+  "robotRevolutionSituation_intensity": {
+    "displayName": "Intensity",
+    "source": "resource_english.uasset"
+  },
+  "revolutionaryFervor": {
+    "displayName": "Revolutionary Fervor",
+    "source": "resource_english.uasset"
+  }
+}

@@ -73,8 +73,7 @@
   {
     "id": "roboticsCrisisEvent",
     "type": "events",
-    "displayName": "roboticsCrisisEvent_title",
-    "description": "roboticsCrisisEvent_desc",
+    "displayName": "roboticsCrisisEvent",
     "fields": {
       "Name": "roboticsCrisisEvent",
       "Title": "roboticsCrisisEvent_title",
@@ -126,8 +125,7 @@
   {
     "id": "testEvent",
     "type": "events",
-    "displayName": "test Event {empire}",
-    "description": "{adj} cool",
+    "displayName": "testEvent",
     "fields": {
       "Name": "testEvent",
       "Title": "test Event {empire}",

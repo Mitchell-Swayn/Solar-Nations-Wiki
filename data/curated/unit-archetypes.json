@@ -163,7 +163,7 @@
   {
     "id": "drone",
     "type": "unit-archetypes",
-    "displayName": "Drone",
+    "displayName": "drone",
     "fields": {
       "Name": "drone",
       "TypeFormat": "Drone Swarm",
@@ -189,7 +189,7 @@
   {
     "id": "fighter",
     "type": "unit-archetypes",
-    "displayName": "Fighter",
+    "displayName": "fighter",
     "fields": {
       "Name": "fighter",
       "TypeFormat": "Airforce",

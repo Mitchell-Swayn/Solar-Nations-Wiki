@@ -33,6 +33,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "popGrowthMult",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -75,6 +83,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -117,6 +153,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -128,7 +192,7 @@
   {
     "id": "ceo",
     "type": "character-jobs",
-    "displayName": "Ceo",
+    "displayName": "ceo",
     "icon": "form_corporation",
     "fields": {
       "Name": "ceo",
@@ -159,6 +223,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -201,6 +293,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "stabilityGainAdd",
+          "value": 0.02
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -237,6 +337,30 @@
       "MajorJob": false
     },
     "modifiers": [],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "battleAdvantageAdd",
+          "value": 5
+        }
+      ],
+      "management": [
+        {
+          "key": "unitReinforceRateMult",
+          "value": 0.025
+        },
+        {
+          "key": "unitSpeedMult",
+          "value": 0.025
+        }
+      ],
+      "charisma": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.025
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -279,6 +403,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "projectUpkeepMult",
+          "value": -0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -321,6 +453,22 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "unitReinforceRateMult",
+          "value": 0.02
+        },
+        {
+          "key": "unitAttackMult",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -363,6 +511,23 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "charisma": [
+        {
+          "key": "baseEconomicOutputMult",
+          "value": 0.025
+        },
+        {
+          "key": "assimilationMult",
+          "value": -0.05
+        },
+        {
+          "key": "factionPowerAdd",
+          "value1": "bureaucracy",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -405,6 +570,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "projectBuildCostMult",
+          "value": -0.02
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -452,6 +625,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -494,6 +695,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unrestChangeAdd",
+          "value": -0.002
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -536,6 +745,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "baseEconomicOutputMult",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -578,6 +795,19 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.025
+        },
+        {
+          "key": "factionPowerAdd",
+          "value1": "middleClass",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -620,6 +850,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "projectEfficiency",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -656,6 +894,34 @@
       "MajorJob": false
     },
     "modifiers": [],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitReinforceRateMult",
+          "value": 0.025
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "baseEconomicOutputMult",
+          "value": 0.01
+        }
+      ],
+      "charisma": [
+        {
+          "key": "rulingFactionPoliticalPowerAdd",
+          "value": 0.01
+        },
+        {
+          "key": "adminEfficiencyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -698,6 +964,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "baseEconomicOutputMult",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -740,6 +1014,19 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "adminEfficiencyAdd",
+          "value": 0.01
+        },
+        {
+          "key": "factionPowerAdd",
+          "value1": "corporate",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -782,6 +1069,14 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "management": [
+        {
+          "key": "projectBuildCostMult",
+          "value": -0.02
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -824,6 +1119,22 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "unitReinforceRateMult",
+          "value": 0.02
+        },
+        {
+          "key": "unitAttackMult",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -871,6 +1182,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -913,6 +1252,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -955,6 +1322,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -997,6 +1392,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -1039,6 +1462,19 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "factionPowerAdd",
+          "value": -0.005
+        },
+        {
+          "key": "factionPowerAdd",
+          "value1": "clergy",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -1081,6 +1517,26 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "espionageEffect",
+          "value": 0.025
+        }
+      ],
+      "management": [
+        {
+          "key": "espionageDefense",
+          "value": 0.05
+        }
+      ],
+      "charisma": [
+        {
+          "key": "espionageOffense",
+          "value": 0.05
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {
@@ -1123,6 +1579,34 @@
         "scope": "Character"
       }
     ],
+    "skillModifiers": {
+      "strategy": [
+        {
+          "key": "unitMoraleMult",
+          "value": 0.01
+        },
+        {
+          "key": "recruitablePopulationMult",
+          "value": 0.01
+        }
+      ],
+      "management": [
+        {
+          "key": "economicOutputMult",
+          "value": 0.02
+        },
+        {
+          "key": "resourceIncomeMult",
+          "value": 0.02
+        }
+      ],
+      "charisma": [
+        {
+          "key": "factionLoyaltyAdd",
+          "value": 0.01
+        }
+      ]
+    },
     "prerequisites": [],
     "references": [
       {

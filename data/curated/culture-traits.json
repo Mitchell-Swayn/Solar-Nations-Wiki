@@ -470,7 +470,7 @@
   {
     "id": "americanAstrogation",
     "type": "culture-traits",
-    "displayName": "American Astrogation",
+    "displayName": "americanAstrogation",
     "icon": "morale",
     "fields": {
       "Name": "americanAstrogation",
@@ -498,7 +498,7 @@
   {
     "id": "americanFreedom",
     "type": "culture-traits",
-    "displayName": "American Freedom",
+    "displayName": "americanFreedom",
     "icon": "middleClass",
     "fields": {
       "Name": "americanFreedom",
@@ -532,7 +532,7 @@
   {
     "id": "americanFrontierism",
     "type": "culture-traits",
-    "displayName": "American Frontierism",
+    "displayName": "americanFrontierism",
     "icon": "colony",
     "fields": {
       "Name": "americanFrontierism",
@@ -559,7 +559,7 @@
   {
     "id": "americanHegemony",
     "type": "culture-traits",
-    "displayName": "American Hegemony",
+    "displayName": "americanHegemony",
     "icon": "prestige",
     "fields": {
       "Name": "americanHegemony",
@@ -586,7 +586,7 @@
   {
     "id": "americanIngenuity",
     "type": "culture-traits",
-    "displayName": "American Ingenuity",
+    "displayName": "americanIngenuity",
     "icon": "research",
     "fields": {
       "Name": "americanIngenuity",
@@ -613,7 +613,7 @@
   {
     "id": "americanNavalPrimacy",
     "type": "culture-traits",
-    "displayName": "American Naval Primacy",
+    "displayName": "americanNavalPrimacy",
     "icon": "water_attack",
     "fields": {
       "Name": "americanNavalPrimacy",
@@ -647,7 +647,7 @@
   {
     "id": "americanWorkEthic",
     "type": "culture-traits",
-    "displayName": "American Work Ethic",
+    "displayName": "americanWorkEthic",
     "icon": "currency",
     "fields": {
       "Name": "americanWorkEthic",
@@ -1124,13 +1124,13 @@
     "id": "spaceRecruitment",
     "type": "culture-traits",
     "displayName": "Astronaut Recruitment Drive",
-    "icon": "shipyard",
+    "icon": "industrial",
     "fields": {
       "Name": "spaceRecruitment",
       "Family": "militarySpaceforce",
       "Category": "idea",
       "IdeaIndex": 3,
-      "Icon": "shipyard"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -1144,7 +1144,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "shipyard"
+        "id": "industrial"
       }
     ]
   },
@@ -1572,7 +1572,7 @@
   {
     "id": "britishAdministration",
     "type": "culture-traits",
-    "displayName": "British Administration",
+    "displayName": "britishAdministration",
     "icon": "edict",
     "fields": {
       "Name": "britishAdministration",
@@ -1599,7 +1599,7 @@
   {
     "id": "britishAdventurism",
     "type": "culture-traits",
-    "displayName": "British Adventurism",
+    "displayName": "britishAdventurism",
     "icon": "navyCapacity",
     "fields": {
       "Name": "britishAdventurism",
@@ -1633,7 +1633,7 @@
   {
     "id": "britishIndustrialism",
     "type": "culture-traits",
-    "displayName": "British Industrialism",
+    "displayName": "britishIndustrialism",
     "icon": "industrial",
     "fields": {
       "Name": "britishIndustrialism",
@@ -1660,7 +1660,7 @@
   {
     "id": "britishInnovation",
     "type": "culture-traits",
-    "displayName": "British Innovation",
+    "displayName": "britishInnovation",
     "icon": "education",
     "fields": {
       "Name": "britishInnovation",
@@ -1687,7 +1687,7 @@
   {
     "id": "britishLegacy",
     "type": "culture-traits",
-    "displayName": "British Legacy",
+    "displayName": "britishLegacy",
     "icon": "prestige",
     "fields": {
       "Name": "britishLegacy",
@@ -1714,7 +1714,7 @@
   {
     "id": "britishPoliteness",
     "type": "culture-traits",
-    "displayName": "British Politeness",
+    "displayName": "britishPoliteness",
     "icon": "opinion",
     "fields": {
       "Name": "britishPoliteness",
@@ -1741,7 +1741,7 @@
   {
     "id": "britishStoicism",
     "type": "culture-traits",
-    "displayName": "British Stoicism",
+    "displayName": "britishStoicism",
     "icon": "stability",
     "fields": {
       "Name": "britishStoicism",
@@ -4482,13 +4482,13 @@
     "id": "eugenicistArmy",
     "type": "culture-traits",
     "displayName": "Eugenic Army",
-    "icon": "geneticMaterial",
+    "icon": "military",
     "fields": {
       "Name": "eugenicistArmy",
       "Family": "eugenicist",
       "Category": "idea",
       "IdeaIndex": 5,
-      "Icon": "geneticMaterial"
+      "Icon": "military"
     },
     "modifiers": [
       {
@@ -4502,7 +4502,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "geneticMaterial"
+        "id": "military"
       }
     ]
   },
@@ -5083,13 +5083,13 @@
     "id": "defensiveFortification",
     "type": "culture-traits",
     "displayName": "Fortified Defence",
-    "icon": "fortifications",
+    "icon": "industrial",
     "fields": {
       "Name": "defensiveFortification",
       "Family": "militaristDefensive",
       "Category": "idea",
       "IdeaIndex": 0,
-      "Icon": "fortifications"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -5103,7 +5103,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "fortifications"
+        "id": "industrial"
       }
     ]
   },
@@ -5472,7 +5472,7 @@
   {
     "id": "heritageAmerican",
     "type": "culture-traits",
-    "displayName": "Heritage American",
+    "displayName": "heritageAmerican",
     "icon": "cultural",
     "fields": {
       "Name": "heritageAmerican",
@@ -5514,7 +5514,7 @@
   {
     "id": "heritageBritish",
     "type": "culture-traits",
-    "displayName": "Heritage British",
+    "displayName": "heritageBritish",
     "icon": "cultural",
     "fields": {
       "Name": "heritageBritish",
@@ -5911,13 +5911,13 @@
     "id": "eugenicistIndustry",
     "type": "culture-traits",
     "displayName": "Industrial Geneticism",
-    "icon": "geneticMaterialFactory",
+    "icon": "industrial",
     "fields": {
       "Name": "eugenicistIndustry",
       "Family": "eugenicist",
       "Category": "idea",
       "IdeaIndex": 3,
-      "Icon": "geneticMaterialFactory"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -5931,7 +5931,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "geneticMaterialFactory"
+        "id": "industrial"
       }
     ]
   },
@@ -5939,13 +5939,13 @@
     "id": "robophileIndustry",
     "type": "culture-traits",
     "displayName": "Industrial Mechanization",
-    "icon": "robotFactory",
+    "icon": "industrial",
     "fields": {
       "Name": "robophileIndustry",
       "Family": "robophile",
       "Category": "idea",
       "IdeaIndex": 3,
-      "Icon": "robotFactory"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -5959,7 +5959,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "robotFactory"
+        "id": "industrial"
       }
     ]
   },
@@ -7284,7 +7284,7 @@
   {
     "id": "ludditeMastery",
     "type": "culture-traits",
-    "displayName": "Luddite Mastery",
+    "displayName": "ludditeMastery",
     "icon": "research",
     "fields": {
       "Name": "ludditeMastery",
@@ -8218,13 +8218,13 @@
     "id": "defensiveMilitaryIndustry",
     "type": "culture-traits",
     "displayName": "Military Fortification State",
-    "icon": "military liason",
+    "icon": "industrial",
     "fields": {
       "Name": "defensiveMilitaryIndustry",
       "Family": "militaristDefensive",
       "Category": "idea",
       "IdeaIndex": 5,
-      "Icon": "military liason"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -8238,7 +8238,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "military liason"
+        "id": "industrial"
       }
     ]
   },
@@ -8680,13 +8680,13 @@
     "id": "innovativeFunding",
     "type": "culture-traits",
     "displayName": "Novel Financing",
-    "icon": "university",
+    "icon": "industrial",
     "fields": {
       "Name": "innovativeFunding",
       "Family": "innovative",
       "Category": "idea",
       "IdeaIndex": 1,
-      "Icon": "university"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -8706,7 +8706,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "university"
+        "id": "industrial"
       }
     ]
   },
@@ -11207,13 +11207,13 @@
     "id": "robophileArmy",
     "type": "culture-traits",
     "displayName": "Roboticized Army",
-    "icon": "robots",
+    "icon": "military",
     "fields": {
       "Name": "robophileArmy",
       "Family": "robophile",
       "Category": "idea",
       "IdeaIndex": 5,
-      "Icon": "robots"
+      "Icon": "military"
     },
     "modifiers": [
       {
@@ -11227,7 +11227,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "robots"
+        "id": "military"
       }
     ]
   },
@@ -12279,13 +12279,13 @@
     "id": "airDesigning",
     "type": "culture-traits",
     "displayName": "Superior Airframes",
-    "icon": "airplaneFactory",
+    "icon": "industrial",
     "fields": {
       "Name": "airDesigning",
       "Family": "militaryAirforce",
       "Category": "idea",
       "IdeaIndex": 0,
-      "Icon": "airplaneFactory"
+      "Icon": "industrial"
     },
     "modifiers": [
       {
@@ -12299,7 +12299,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "airplaneFactory"
+        "id": "industrial"
       }
     ]
   },
@@ -12646,7 +12646,7 @@
   {
     "id": "thriftyExpansion",
     "type": "culture-traits",
-    "displayName": "Thrifty Expansion",
+    "displayName": "thriftyExpansion",
     "icon": "colony",
     "fields": {
       "Name": "thriftyExpansion",
@@ -12974,7 +12974,7 @@
   {
     "id": "traitSuperiorGenes",
     "type": "culture-traits",
-    "displayName": "Trait Superior Genes",
+    "displayName": "traitSuperiorGenes",
     "icon": "cultural",
     "fields": {
       "Name": "traitSuperiorGenes",
@@ -13550,13 +13550,13 @@
     "id": "explorersMastery",
     "type": "culture-traits",
     "displayName": "Universal Exploration",
-    "icon": "cultural",
+    "icon": "prestige",
     "fields": {
       "Name": "explorersMastery",
       "Family": "frontierSpirit",
       "Category": "idea",
       "IdeaIndex": 6,
-      "Icon": "cultural"
+      "Icon": "prestige"
     },
     "modifiers": [
       {
@@ -13574,7 +13574,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "cultural"
+        "id": "prestige"
       }
     ]
   },

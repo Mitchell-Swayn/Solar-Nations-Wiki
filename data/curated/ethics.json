@@ -97,7 +97,7 @@
   {
     "id": "moralist",
     "type": "ethics",
-    "displayName": "Moralist",
+    "displayName": "moralist",
     "icon": "",
     "fields": {
       "Name": "moralist",
@@ -173,7 +173,7 @@
   {
     "id": "theocratic",
     "type": "ethics",
-    "displayName": "Theocratic",
+    "displayName": "theocratic",
     "icon": "",
     "fields": {
       "Name": "theocratic",
@@ -211,7 +211,7 @@
   {
     "id": "utopian",
     "type": "ethics",
-    "displayName": "Utopian",
+    "displayName": "utopian",
     "icon": "",
     "fields": {
       "Name": "utopian",

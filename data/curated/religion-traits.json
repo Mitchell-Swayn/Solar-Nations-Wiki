@@ -2,7 +2,7 @@
   {
     "id": "heritage_atheist",
     "type": "religion-traits",
-    "displayName": "Heritage Atheist",
+    "displayName": "heritage_atheist",
     "icon": "atheist",
     "fields": {
       "Name": "heritage_atheist",
@@ -102,7 +102,7 @@
   {
     "id": "heritage_christian",
     "type": "religion-traits",
-    "displayName": "Heritage Christian",
+    "displayName": "heritage_christian",
     "icon": "christian",
     "fields": {
       "Name": "heritage_christian",
@@ -208,7 +208,7 @@
   {
     "id": "heritage_hindu",
     "type": "religion-traits",
-    "displayName": "Heritage Hindu",
+    "displayName": "heritage_hindu",
     "icon": "hindu",
     "fields": {
       "Name": "heritage_hindu",
@@ -311,7 +311,7 @@
   {
     "id": "heritage_islamic",
     "type": "religion-traits",
-    "displayName": "Heritage Islamic",
+    "displayName": "heritage_islamic",
     "icon": "islam",
     "fields": {
       "Name": "heritage_islamic",
@@ -416,7 +416,7 @@
   {
     "id": "heritage_jewish",
     "type": "religion-traits",
-    "displayName": "Heritage Jewish",
+    "displayName": "heritage_jewish",
     "icon": "jewish",
     "fields": {
       "Name": "heritage_jewish",
@@ -515,7 +515,7 @@
   {
     "id": "heritage_marxist",
     "type": "religion-traits",
-    "displayName": "Heritage Marxist",
+    "displayName": "heritage_marxist",
     "icon": "communist",
     "fields": {
       "Name": "heritage_marxist",
@@ -616,7 +616,7 @@
   {
     "id": "heritage_occult",
     "type": "religion-traits",
-    "displayName": "Heritage Occult",
+    "displayName": "heritage_occult",
     "icon": "occult",
     "fields": {
       "Name": "heritage_occult",
@@ -705,7 +705,7 @@
   {
     "id": "tenet_chosenPeople",
     "type": "religion-traits",
-    "displayName": "Tenet Chosen People",
+    "displayName": "tenet_chosenPeople",
     "icon": "",
     "fields": {
       "Name": "tenet_chosenPeople",
@@ -731,7 +731,7 @@
   {
     "id": "tenet_papacy",
     "type": "religion-traits",
-    "displayName": "Tenet Papacy",
+    "displayName": "tenet_papacy",
     "icon": "",
     "fields": {
       "Name": "tenet_papacy",
@@ -757,7 +757,7 @@
   {
     "id": "tenet_pilgrimage",
     "type": "religion-traits",
-    "displayName": "Tenet Pilgrimage",
+    "displayName": "tenet_pilgrimage",
     "icon": "",
     "fields": {
       "Name": "tenet_pilgrimage",
@@ -783,7 +783,7 @@
   {
     "id": "tenet_syncretic",
     "type": "religion-traits",
-    "displayName": "Tenet Syncretic",
+    "displayName": "tenet_syncretic",
     "icon": "",
     "fields": {
       "Name": "tenet_syncretic",
@@ -809,7 +809,7 @@
   {
     "id": "tenet_warlike",
     "type": "religion-traits",
-    "displayName": "Tenet Warlike",
+    "displayName": "tenet_warlike",
     "icon": "",
     "fields": {
       "Name": "tenet_warlike",

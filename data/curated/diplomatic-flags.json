@@ -446,7 +446,7 @@
   {
     "id": "war",
     "type": "diplomatic-flags",
-    "displayName": "War",
+    "displayName": "war",
     "icon": "war",
     "fields": {
       "Name": "war",

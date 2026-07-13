@@ -2,7 +2,7 @@
   {
     "id": "abundantCapital",
     "type": "assets",
-    "displayName": "Abundant Capital",
+    "displayName": "abundantCapital",
     "icon": "money",
     "fields": {
       "Name": "abundantCapital",
@@ -40,7 +40,7 @@
   {
     "id": "controlBureaucracy",
     "type": "assets",
-    "displayName": "Control Bureaucracy",
+    "displayName": "controlBureaucracy",
     "icon": "supply",
     "fields": {
       "Name": "controlBureaucracy",
@@ -76,7 +76,7 @@
   {
     "id": "controlCorporations",
     "type": "assets",
-    "displayName": "Control Corporations",
+    "displayName": "controlCorporations",
     "icon": "supply",
     "fields": {
       "Name": "controlCorporations",
@@ -113,7 +113,7 @@
   {
     "id": "controlJudiciary",
     "type": "assets",
-    "displayName": "Control Judiciary",
+    "displayName": "controlJudiciary",
     "icon": "supply",
     "fields": {
       "Name": "controlJudiciary",
@@ -150,7 +150,7 @@
   {
     "id": "controlOpposition",
     "type": "assets",
-    "displayName": "Control Opposition",
+    "displayName": "controlOpposition",
     "icon": "supply",
     "fields": {
       "Name": "controlOpposition",
@@ -183,7 +183,7 @@
   {
     "id": "crimeWave",
     "type": "assets",
-    "displayName": "Crime Wave",
+    "displayName": "crimeWave",
     "icon": "supply",
     "fields": {
       "Name": "crimeWave",
@@ -217,7 +217,7 @@
   {
     "id": "cyberAttack",
     "type": "assets",
-    "displayName": "Cyber Attack",
+    "displayName": "cyberAttack",
     "icon": "supply",
     "fields": {
       "Name": "cyberAttack",
@@ -255,7 +255,7 @@
   {
     "id": "degenerateCulture",
     "type": "assets",
-    "displayName": "Degenerate Culture",
+    "displayName": "degenerateCulture",
     "icon": "supply",
     "fields": {
       "Name": "degenerateCulture",
@@ -291,7 +291,7 @@
   {
     "id": "doubleAgents",
     "type": "assets",
-    "displayName": "Double Agents",
+    "displayName": "doubleAgents",
     "icon": "supply",
     "fields": {
       "Name": "doubleAgents",
@@ -322,7 +322,7 @@
   {
     "id": "drugTrade",
     "type": "assets",
-    "displayName": "Drug Trade",
+    "displayName": "drugTrade",
     "icon": "supply",
     "fields": {
       "Name": "drugTrade",
@@ -357,7 +357,7 @@
   {
     "id": "friendsInHighPlaces",
     "type": "assets",
-    "displayName": "Friends In High Places",
+    "displayName": "friendsInHighPlaces",
     "icon": "charisma",
     "fields": {
       "Name": "friendsInHighPlaces",
@@ -382,7 +382,7 @@
   {
     "id": "humanTrafficking",
     "type": "assets",
-    "displayName": "Human Trafficking",
+    "displayName": "humanTrafficking",
     "icon": "supply",
     "fields": {
       "Name": "humanTrafficking",
@@ -416,7 +416,7 @@
   {
     "id": "localGovernment",
     "type": "assets",
-    "displayName": "Local Government",
+    "displayName": "localGovernment",
     "icon": "supply",
     "fields": {
       "Name": "localGovernment",
@@ -442,7 +442,7 @@
   {
     "id": "lockdown",
     "type": "assets",
-    "displayName": "Lockdown",
+    "displayName": "lockdown",
     "icon": "supply",
     "fields": {
       "Name": "lockdown",
@@ -486,7 +486,7 @@
   {
     "id": "militaryCommanders",
     "type": "assets",
-    "displayName": "Military Commanders",
+    "displayName": "militaryCommanders",
     "icon": "supply",
     "fields": {
       "Name": "militaryCommanders",
@@ -522,7 +522,7 @@
   {
     "id": "mindControlDrugs",
     "type": "assets",
-    "displayName": "Mind Control Drugs",
+    "displayName": "mindControlDrugs",
     "icon": "supply",
     "fields": {
       "Name": "mindControlDrugs",
@@ -555,7 +555,7 @@
   {
     "id": "navalBase",
     "type": "assets",
-    "displayName": "Naval Base",
+    "displayName": "navalBase",
     "icon": "supply",
     "fields": {
       "Name": "navalBase",
@@ -589,7 +589,7 @@
   {
     "id": "organizedCrime",
     "type": "assets",
-    "displayName": "Organized Crime",
+    "displayName": "organizedCrime",
     "icon": "supply",
     "fields": {
       "Name": "organizedCrime",
@@ -624,7 +624,7 @@
   {
     "id": "pandemic",
     "type": "assets",
-    "displayName": "Pandemic",
+    "displayName": "pandemic",
     "icon": "supply",
     "fields": {
       "Name": "pandemic",
@@ -656,7 +656,7 @@
   {
     "id": "paramilitaries",
     "type": "assets",
-    "displayName": "Paramilitaries",
+    "displayName": "paramilitaries",
     "icon": "supply",
     "fields": {
       "Name": "paramilitaries",
@@ -686,7 +686,7 @@
   {
     "id": "pocketPoliticians",
     "type": "assets",
-    "displayName": "Pocket Politicians",
+    "displayName": "pocketPoliticians",
     "icon": "supply",
     "fields": {
       "Name": "pocketPoliticians",
@@ -760,7 +760,7 @@
   {
     "id": "recentInvestigation",
     "type": "assets",
-    "displayName": "Recent Investigation",
+    "displayName": "recentInvestigation",
     "icon": "supply",
     "fields": {
       "Name": "recentInvestigation",
@@ -790,7 +790,7 @@
   {
     "id": "slaveTrade",
     "type": "assets",
-    "displayName": "Slave Trade",
+    "displayName": "slaveTrade",
     "icon": "supply",
     "fields": {
       "Name": "slaveTrade",
@@ -829,7 +829,7 @@
   {
     "id": "surveillance",
     "type": "assets",
-    "displayName": "Surveillance",
+    "displayName": "surveillance",
     "icon": "supply",
     "fields": {
       "Name": "surveillance",

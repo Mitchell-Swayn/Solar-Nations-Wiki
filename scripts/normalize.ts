@@ -1,5 +1,6 @@
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, cpSync, existsSync, rmSync } from 'node:fs';
 import { join, basename, dirname, relative, sep } from 'node:path';
+import sharp from 'sharp';
 import {
   DATA_CURATED,
   DATA_RAW,
@@ -17,8 +18,78 @@ import type {
   WikiEntry,
   WikiReference,
 } from '../src/lib/types.ts';
+import { extractScenarios } from './extract-scenarios.ts';
 
 type RawRecord = Record<string, unknown>;
+
+type StarMapActor = {
+  Type?: string;
+  Tag?: string;
+  CosmeticTag?: string;
+  DisplayName?: string;
+};
+
+type ResolutionIssue = {
+  kind: 'display-name' | 'localization' | 'icon';
+  type: string;
+  id: string;
+  field?: string;
+  source?: string;
+  value?: string;
+};
+
+const unresolvedValues: ResolutionIssue[] = [];
+const inferredValues: ResolutionIssue[] = [];
+
+function recordUnresolved(issue: ResolutionIssue) {
+  unresolvedValues.push(issue);
+}
+
+let starMapDisplayNames: Map<string, string> | undefined;
+
+function loadStarMapDisplayNames(): Map<string, string> {
+  if (starMapDisplayNames) return starMapDisplayNames;
+
+  const candidatesById = new Map<string, StarMapActor[]>();
+  const starMapPath = join(DATA_RAW, 'StarMap/TopDownExampleMap.json');
+  if (existsSync(starMapPath)) {
+    const actors = parseJsonFile(starMapPath);
+    if (Array.isArray(actors)) {
+      for (const actor of actors as StarMapActor[]) {
+        if (!actor.DisplayName) continue;
+        for (const rawId of [actor.Tag, actor.CosmeticTag]) {
+          if (!rawId) continue;
+          const id = rawId.toLowerCase();
+          const candidates = candidatesById.get(id) ?? [];
+          if (!candidates.includes(actor)) candidates.push(actor);
+          candidatesById.set(id, candidates);
+        }
+      }
+    }
+  }
+
+  starMapDisplayNames = new Map();
+  for (const [id, candidates] of candidatesById) {
+    // A star and an orbiting world can share a case-insensitive tag (notably
+    // 40eridaniA). Planets.json describes the surface world, so prefer its
+    // Planet/MinorObject actor over the containing star actor.
+    const actor = [...candidates].sort((a, b) => {
+      const rank = (value: StarMapActor) => value.Type === 'Planet_C' ? 0
+        : value.Type === 'MinorObject_C' ? 1
+          : value.Type === 'StableOrbit_C' ? 2
+            : value.Type === 'Star_C' ? 3
+              : 4;
+      return rank(a) - rank(b);
+    })[0];
+    if (actor?.DisplayName) starMapDisplayNames.set(id, cleanGameText(actor.DisplayName));
+  }
+  return starMapDisplayNames;
+}
+
+function localizedValue(value: unknown, localization: Record<string, string>): string | undefined {
+  if (typeof value !== 'string') return undefined;
+  return localization[value] ?? localization[value.toLowerCase()];
+}
 
 const ICON_ALIASES: Record<string, string> = {
   // Entries marked (game) mirror the MiscIcons map baked into the
@@ -68,6 +139,27 @@ const DAMAGE_TYPE_ICONS: Record<string, string> = {
   emp: 'emp', torpedo: 'torpedo0', depthCharge: 'missileAttack_water',
 };
 
+const ENTRY_DISPLAY_NAME_OVERRIDES: Record<string, string> = {
+  // The game uses EMP as an acronym everywhere it appears in localized
+  // component and technology names, but the damage-type row has only `emp`.
+  'damage-types:emp': 'EMP',
+};
+
+const ENTRY_DISPLAY_NAME_LOCALIZATION_KEYS: Record<string, string> = {
+  // The `manpower` localization is a full explanatory tooltip. The resource
+  // string table provides its standalone display name under this key.
+  'resources:manpower': 'manpowerlinearmodifier',
+  // Static modifier rows add serialization-oriented suffixes or use the
+  // resulting state name, while their player-facing labels live on the
+  // corresponding situation/action localization keys.
+  'static-modifiers:americanPolitics_corruptionPurged': 'americanpolitics_purgecorruption',
+  'static-modifiers:americanPolitics_dividedPolitics': 'americanpolitics_empiredivided',
+  'static-modifiers:americanPolitics_renewedMilitary': 'americanpolitics_renewmilitary',
+  'static-modifiers:americanPolitics_renewedUnity': 'americanpolitics_renewunity',
+  'static-modifiers:navalInvasion': 'navalinvasionpenalty',
+  'static-modifiers:spaceInvasion': 'spaceinvasionpenalty',
+};
+
 function applyDamageTypeIcons(entries: WikiEntry[]) {
   for (const entry of entries) {
     if (entry.type !== 'damage-types' || entry.icon) continue;
@@ -76,6 +168,7 @@ function applyDamageTypeIcons(entries: WikiEntry[]) {
     entry.icon = icon;
     entry.fields.Icon = icon;
     entry.references.push({ type: 'icon', id: icon });
+    inferredValues.push({ kind: 'icon', type: entry.type, id: entry.id, source: 'damage-type-icon-map', value: icon });
   }
 }
 
@@ -112,6 +205,17 @@ function extractModifiers(obj: unknown): ModifierRef[] {
   return modifiers;
 }
 
+function extractSkillModifiers(raw: unknown): Record<string, ModifierRef[]> | undefined {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return undefined;
+  const skillModifiers: Record<string, ModifierRef[]> = {};
+  for (const [skill, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) continue;
+    const modifiers = extractModifiers((value as Record<string, unknown>).Map);
+    if (modifiers.length > 0) skillModifiers[skill] = modifiers;
+  }
+  return Object.keys(skillModifiers).length > 0 ? skillModifiers : undefined;
+}
+
 function collectModifierFields(record: RawRecord): ModifierRef[] {
   const fields = [
     'Modifier',
@@ -131,11 +235,19 @@ function collectModifierFields(record: RawRecord): ModifierRef[] {
     'DepositModifier',
     'BigModifier',
     'InitialModifier',
+    'BenefitModifier',
+    'CostModifier',
+    'SpecialModifier',
+    'LoyaltyScaledModifier',
+    'PowerScaledModifier',
   ];
   const scopes: Record<string, string> = {
     PrimaryModifier: 'Primary', RegionModifier: 'Region', EmpireModifier: 'Empire',
     PopModifier: 'Population', JobModifier: 'Job', CharacterModifiers: 'Character',
     DepositModifier: 'Deposit', SurplusModifier: 'Surplus', ShortageModifier: 'Shortage',
+    BenefitModifier: 'Benefit', CostModifier: 'Cost',
+    SpecialModifier: 'Special', LoyaltyScaledModifier: 'Loyalty-scaled',
+    PowerScaledModifier: 'Power-scaled',
   };
   return fields.flatMap((field) => extractModifiers(record[field]).map((modifier) => ({ ...modifier, scope: scopes[field] })));
 }
@@ -220,21 +332,6 @@ function collectReferences(record: RawRecord, type: string): WikiReference[] {
   return refs;
 }
 
-function localize(
-  value: unknown,
-  localization: Record<string, string>,
-): string | undefined {
-  if (typeof value !== 'string') return undefined;
-  return localization[value] ?? localization[value.toLowerCase()] ?? value;
-}
-
-function humanizeId(id: string): string {
-  return id
-    .replace(/_/g, ' ')
-    .replace(/([a-z])([A-Z])/g, '$1 $2')
-    .replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
 function cleanGameText(value: string): string {
   return value
     .replace(/<img\s+id="([^"]+)"\s*\/>/gi, '')
@@ -249,31 +346,152 @@ function isConciseTitle(value: string): boolean {
   return value.length <= 70 && !/[.!?]\s|<[^>]+>/.test(value);
 }
 
+function canonicalLocalizationTitle(id: string, localization: Record<string, string>): string | undefined {
+  const canonicalId = id.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  const candidates = Object.entries(localization)
+    .filter(([key, value]) => key.replace(/[^a-z0-9]/gi, '').toLowerCase() === canonicalId
+      && isConciseTitle(value)
+      && !/\{[^}]+\}/.test(value))
+    .map(([, value]) => cleanGameText(value));
+  const uniqueCandidates = [...new Set(candidates)];
+  return uniqueCandidates.length === 1 ? uniqueCandidates[0] : undefined;
+}
+
+function verifiedDisplayName(
+  id: string,
+  displayNames: Record<string, { displayName?: string; source?: string }>,
+): string | undefined {
+  const canonicalId = id.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  const candidates = Object.entries(displayNames)
+    .filter(([key, value]) => key.replace(/[^a-z0-9]/gi, '').toLowerCase() === canonicalId && value.displayName)
+    .map(([, value]) => cleanGameText(value.displayName!));
+  const uniqueCandidates = [...new Set(candidates)];
+  if (uniqueCandidates.length === 1) return uniqueCandidates[0];
+  const exactLocalizedValues = Object.values(displayNames)
+    .map((value) => value.displayName ? cleanGameText(value.displayName) : undefined)
+    .filter((value): value is string => value === id);
+  return exactLocalizedValues.length > 0 ? id : undefined;
+}
+
+function highlightedLocalizationTitle(id: string, localizedText: string): string | undefined {
+  const canonical = (value: string) => value.replace(/[^a-z0-9]/gi, '').toLowerCase().replace(/s$/, '');
+  const candidates = [...localizedText.matchAll(/<(?:yellow|red|green|blue|cyan)>([^<]+)<\/>/gi)]
+    .map((match) => match[1].trim())
+    .filter((value) => canonical(value) === canonical(id));
+  const uniqueCandidates = [...new Set(candidates)];
+  return uniqueCandidates.length === 1 ? uniqueCandidates[0] : undefined;
+}
+
 function buildEntry(
   type: string,
   record: RawRecord,
   localization: Record<string, string>,
+  targetLocalization: Record<string, { displayName?: string; source?: string }> = {},
 ): WikiEntry | null {
   const id = record.Name;
   if (typeof id !== 'string' || !id) return null;
 
-  const titleFields = ['Title', 'Description', 'Text', 'Name'];
-  let displayName = humanizeId(id);
+  const titleFields = ['Title', 'Description', 'Text'];
+  let displayName = id;
+  let hasDisplayNameSource = false;
   let description: string | undefined;
 
   for (const field of titleFields) {
-    const localized = localize(record[field], localization);
-    if (localized && field !== 'Name') {
+    const rawValue = record[field];
+    const localized = localizedValue(rawValue, localization);
+    if (typeof rawValue === 'string' && !localized) {
+      recordUnresolved({ kind: 'localization', type, id, field, value: rawValue });
+    }
+    if (localized) {
       if (field === 'Description' || field === 'Text') description = localized;
-      else displayName = localized;
+      else {
+        displayName = localized;
+        hasDisplayNameSource = true;
+      }
     }
   }
 
-  const localizedName = localize(id, localization);
-  if (localizedName && localizedName !== id) {
+  const localizedName = localizedValue(id, localization);
+  if (localizedName) {
     const cleaned = cleanGameText(localizedName);
-    if (isConciseTitle(localizedName)) displayName = cleaned;
+    if (isConciseTitle(localizedName)) {
+      displayName = cleaned;
+      hasDisplayNameSource = true;
+    }
     else if (cleaned) description ??= cleaned;
+  }
+  const localizedTargetName = verifiedDisplayName(id, targetLocalization);
+  if (!hasDisplayNameSource && localizedTargetName) {
+    displayName = cleanGameText(localizedTargetName);
+    hasDisplayNameSource = true;
+  }
+  const canonicalLocalizedName = canonicalLocalizationTitle(id, localization);
+  if (!hasDisplayNameSource && canonicalLocalizedName) {
+    displayName = canonicalLocalizedName;
+    hasDisplayNameSource = true;
+  }
+  if (!hasDisplayNameSource && localizedName) {
+    const highlightedTitle = highlightedLocalizationTitle(id, localizedName);
+    if (highlightedTitle) {
+      displayName = highlightedTitle;
+      hasDisplayNameSource = true;
+    }
+  }
+  if (type === 'planetary-bodies') {
+    const starMapDisplayName = loadStarMapDisplayNames().get(id.toLowerCase());
+    if (starMapDisplayName) {
+      displayName = starMapDisplayName;
+      hasDisplayNameSource = true;
+    }
+  }
+  if (!hasDisplayNameSource && type === 'static-modifiers') {
+    const unsuffixedId = id.replace(/_?Effect$/, '');
+    const unsuffixedTitle = canonicalLocalizationTitle(unsuffixedId, localization)
+      ?? verifiedDisplayName(unsuffixedId, targetLocalization);
+    if (unsuffixedTitle) {
+      displayName = unsuffixedTitle;
+      hasDisplayNameSource = true;
+    }
+  }
+  if (!hasDisplayNameSource && type === 'notifications') {
+    const notificationTitle = canonicalLocalizationTitle(`${id}T`, localization)
+      ?? canonicalLocalizationTitle(`${id}Title`, localization);
+    if (notificationTitle) {
+      displayName = notificationTitle;
+      hasDisplayNameSource = true;
+    }
+  }
+  // GovtForms stores bare ids (for example `republic`), while the game's
+  // corresponding localized names use the `form_` prefix shared by the
+  // government-reform options (for example `form_republic` -> `Republic`).
+  if (type === 'government-forms') {
+    const localizedFormName = localizedValue(`form_${id}`, localization);
+    if (localizedFormName) {
+      displayName = cleanGameText(localizedFormName);
+      hasDisplayNameSource = true;
+    }
+  }
+  if (type === 'policy-options' && id === 'resourceIncome') {
+    displayName = 'Resource Income';
+    hasDisplayNameSource = true;
+  }
+  const displayNameLocalizationKey = ENTRY_DISPLAY_NAME_LOCALIZATION_KEYS[`${type}:${id}`];
+  if (displayNameLocalizationKey) {
+    const localizedDisplayName = localizedValue(displayNameLocalizationKey, localization);
+    if (localizedDisplayName) {
+      displayName = cleanGameText(localizedDisplayName);
+      hasDisplayNameSource = true;
+    } else {
+      recordUnresolved({ kind: 'localization', type, id, field: 'Name', source: displayNameLocalizationKey, value: displayNameLocalizationKey });
+    }
+  }
+  const displayNameOverride = ENTRY_DISPLAY_NAME_OVERRIDES[`${type}:${id}`];
+  if (displayNameOverride) {
+    displayName = displayNameOverride;
+    hasDisplayNameSource = true;
+  }
+  if (!hasDisplayNameSource) {
+    recordUnresolved({ kind: 'display-name', type, id, source: 'entry-id', value: id });
   }
 
   const fields: Record<string, unknown> = {};
@@ -297,6 +515,11 @@ function buildEntry(
         'DepositModifier',
         'BigModifier',
         'InitialModifier',
+        'BenefitModifier',
+        'CostModifier',
+        'SpecialModifier',
+        'LoyaltyScaledModifier',
+        'PowerScaledModifier',
       ].includes(key)
     ) {
       continue;
@@ -304,51 +527,69 @@ function buildEntry(
     fields[key] = value;
   }
 
+  // Planet portraits are generated from their game surface texture. Definitions
+  // without a renderable surface (orbital placeholders) retain their Symbol.
+  const planetPortrait = type === 'planetary-bodies'
+    && existsSync(join(PROJECT_ROOT, 'data', 'icons-extra', 'PlanetPortraits', `planet-${id}.png`))
+      ? `planet-${id}`
+      : undefined;
+  const icon = planetPortrait
+    ?? (typeof record.Icon === 'string'
+      ? record.Icon
+      : type === 'planetary-bodies' && typeof record.Symbol === 'string'
+        ? record.Symbol
+        : undefined);
+  const references = collectReferences(record, type);
+  if (icon && !references.some((reference) => reference.type === 'icon' && reference.id === icon)) {
+    references.push({ type: 'icon', id: icon });
+  }
+
   return {
     id,
     type,
     displayName,
-    icon: typeof record.Icon === 'string' ? record.Icon : undefined,
+    icon,
     description,
     fields,
     modifiers: collectModifierFields(record),
+    skillModifiers: extractSkillModifiers(record.SkillModifiers),
     prerequisites: collectPrerequisites(record),
-    references: collectReferences(record, type),
+    references,
   };
 }
 
-function copyAssets(gameRoot: string) {
-  const flagsSrc = getFlagsPath(gameRoot);
-  const iconsSrc = getIconsPath(gameRoot);
-  const flagsDest = join(PUBLIC_ASSETS, 'flags');
-  const iconsDest = join(PUBLIC_ASSETS, 'icons');
+async function optimizePng(source: string, target: string, width = 128, height = 128) {
+  mkdirSync(dirname(target), { recursive: true });
+  await sharp(source)
+    .resize({ width, height, fit: 'inside', withoutEnlargement: true })
+    .png({ compressionLevel: 9, palette: true, quality: 90 })
+    .toFile(target);
+}
 
-  mkdirSync(flagsDest, { recursive: true });
-  mkdirSync(iconsDest, { recursive: true });
-
-  if (existsSync(flagsSrc)) {
-    for (const file of readdirSync(flagsSrc)) {
-      if (file.endsWith('.png')) {
-        cpSync(join(flagsSrc, file), join(flagsDest, file));
-      }
-    }
-  }
-
-  if (existsSync(iconsSrc)) {
-    copyIconsRecursive(iconsSrc, iconsDest);
+async function optimizePngBatch(files: Array<{ source: string; target: string; width?: number; height?: number }>) {
+  const concurrency = 16;
+  for (let index = 0; index < files.length; index += concurrency) {
+    await Promise.all(files.slice(index, index + concurrency).map((file) =>
+      optimizePng(file.source, file.target, file.width, file.height)));
   }
 }
 
-function copyIconsRecursive(src: string, dest: string) {
-  mkdirSync(dest, { recursive: true });
-  for (const entry of readdirSync(src, { withFileTypes: true })) {
-    const srcPath = join(src, entry.name);
-    const destPath = join(dest, entry.name);
-    if (entry.isDirectory()) {
-      copyIconsRecursive(srcPath, destPath);
-    } else if (entry.name.endsWith('.png')) {
-      cpSync(srcPath, destPath);
-    }
+async function copyAssets(gameRoot: string) {
+  const flagsSrc = getFlagsPath(gameRoot);
+  const flagsDest = join(PUBLIC_ASSETS, 'flags');
+  const iconsDest = join(PUBLIC_ASSETS, 'icons');
+
+  rmSync(flagsDest, { recursive: true, force: true });
+  // Game icons are exposed through /wiki-icons. Remove the legacy duplicate.
+  rmSync(iconsDest, { recursive: true, force: true });
+  mkdirSync(flagsDest, { recursive: true });
+
+  if (existsSync(flagsSrc)) {
+    const flags = readdirSync(flagsSrc)
+      .filter((file) => file.endsWith('.png'))
+      .map((file) => ({ source: join(flagsSrc, file), target: join(flagsDest, file), width: 192, height: 128 }));
+    await optimizePngBatch(flags);
+    console.log(`Flag bundle: ${flags.length} optimized`);
   }
 }
 
@@ -369,10 +610,66 @@ const EXTRA_ICONS_DIR = join(PROJECT_ROOT, 'data/icons-extra');
 
 function indexIconSources(gameRoot: string): Map<string, string> {
   const files = indexPngFiles(getIconsPath(gameRoot));
+  // Scoped aliases preserve assets whose basenames collide across game icon
+  // folders, such as CharacterTraits/logical and Ideology/logical.
+  for (const [key, path] of indexPngFiles(join(getIconsPath(gameRoot), 'CharacterTraits'))) {
+    files.set(`charactertrait:${key}`, path);
+  }
+  // Terrain ids overlap with other icon basenames. Scoped aliases guarantee
+  // terrain entries use the game's terrain illustrations rather than whichever
+  // same-named icon wins the general shortest-path lookup.
+  for (const [key, path] of indexPngFiles(join(getIconsPath(gameRoot), 'Terrain'))) {
+    files.set(`terrain:${key}`, path);
+  }
   for (const [key, path] of indexPngFiles(EXTRA_ICONS_DIR)) {
     if (!files.has(key)) files.set(key, path);
   }
   return files;
+}
+
+function applyCharacterTraitIconAliases(entries: WikiEntry[], gameRoot: string) {
+  const allIcons = indexIconSources(gameRoot);
+  const characterTraitIcons = indexPngFiles(join(getIconsPath(gameRoot), 'CharacterTraits'));
+  for (const entry of entries) {
+    if (entry.type !== 'character-traits' || !entry.icon) continue;
+    const sourceIcon = entry.icon;
+    const key = sourceIcon.toLowerCase();
+    const scopedSource = characterTraitIcons.get(key);
+    if (!scopedSource || allIcons.get(key) === scopedSource) continue;
+    const alias = `charactertrait:${sourceIcon}`;
+    entry.icon = alias;
+    entry.references = entry.references.filter((reference) => reference.type !== 'icon');
+    entry.references.push({ type: 'icon', id: alias });
+    inferredValues.push({ kind: 'icon', type: entry.type, id: entry.id, source: 'type-scoped-character-trait-icon', value: alias });
+  }
+}
+
+function applyTerrainTypeIcons(entries: WikiEntry[], gameRoot: string) {
+  const terrainIcons = indexPngFiles(join(getIconsPath(gameRoot), 'Terrain'));
+  for (const entry of entries) {
+    if (entry.type !== 'terrain-types') continue;
+    const sourceId = terrainIcons.has(entry.id.toLowerCase())
+      ? entry.id
+      : entry.id === 'river' && terrainIcons.has('ocean')
+        ? 'ocean'
+        : undefined;
+    if (!sourceId) {
+      recordUnresolved({ kind: 'icon', type: entry.type, id: entry.id, field: 'Icon', source: 'terrain-image' });
+      continue;
+    }
+    const icon = `terrain:${sourceId}`;
+    entry.icon = icon;
+    entry.fields.Icon = icon;
+    entry.references = entry.references.filter((reference) => reference.type !== 'icon');
+    entry.references.push({ type: 'icon', id: icon });
+    inferredValues.push({
+      kind: 'icon',
+      type: entry.type,
+      id: entry.id,
+      source: sourceId === entry.id ? 'terrain-image' : 'terrain-ocean-fallback',
+      value: icon,
+    });
+  }
 }
 
 function indexPngFiles(root: string): Map<string, string> {
@@ -405,6 +702,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
     const sourceName = resolveIconSource(entry.icon);
     if (!sourceFiles.has(sourceName.toLowerCase())) {
       missing.add(sourceName);
+      recordUnresolved({ kind: 'icon', type: entry.type, id: entry.id, field: 'Icon', source: 'icon-manifest', value: entry.icon });
       entry.icon = undefined;
       delete entry.fields.Icon;
       entry.references = entry.references.filter((reference) => reference.type !== 'icon');
@@ -415,7 +713,7 @@ function removeUnavailableIconReferences(gameRoot: string, entries: WikiEntry[])
   if (missing.size > 0) console.log(`  Missing: ${[...missing].sort().join(', ')}`);
 }
 
-function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
+async function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   const sourceRoot = getIconsPath(gameRoot);
   const outputRoot = join(PROJECT_ROOT, 'public/wiki-icons');
   const sourceFiles = indexIconSources(gameRoot);
@@ -424,7 +722,6 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   rmSync(outputRoot, { recursive: true, force: true });
   mkdirSync(outputRoot, { recursive: true });
 
-  let copied = 0;
   const missing: string[] = [];
   // Bundle every game icon, mirroring the source folder layout.
   const bundleRelPath = (path: string) => {
@@ -436,19 +733,20 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
     ).split(sep).join('/');
     return ICON_BUNDLE_PATH_OVERRIDES[relativePath] ?? relativePath;
   };
+  const iconFiles: Array<{ source: string; target: string; width?: number; height?: number }> = [];
   const walk = (dir: string) => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       const path = join(dir, entry.name);
       if (entry.isDirectory()) { walk(path); continue; }
       if (!entry.name.toLowerCase().endsWith('.png')) continue;
       const target = join(outputRoot, ...bundleRelPath(path).split('/'));
-      mkdirSync(dirname(target), { recursive: true });
-      cpSync(path, target);
-      copied++;
+      const isTerrain = path.includes(`${sep}Terrain${sep}`);
+      iconFiles.push({ source: path, target, width: isTerrain ? 192 : 128, height: 128 });
     }
   };
   if (existsSync(sourceRoot)) walk(sourceRoot);
   if (existsSync(EXTRA_ICONS_DIR)) walk(EXTRA_ICONS_DIR);
+  await optimizePngBatch(iconFiles);
   // Manifest maps lowercased icon names (and aliases) to bundle paths.
   const manifest: Record<string, string> = {};
   for (const [key, path] of sourceFiles) manifest[key] = bundleRelPath(path);
@@ -459,7 +757,7 @@ function copyWikiIcons(gameRoot: string, entries: WikiEntry[]) {
   }
   mkdirSync(DATA_CURATED, { recursive: true });
   writeFileSync(join(DATA_CURATED, 'icon-manifest.json'), JSON.stringify(manifest, null, 2));
-  console.log(`Wiki icon bundle: ${copied} copied, ${missing.length} unavailable`);
+  console.log(`Wiki icon bundle: ${iconFiles.length} optimized, ${missing.length} unavailable`);
 }
 
 function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry[], gameRoot: string) {
@@ -491,21 +789,32 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
       .filter((entry) => entry.type === 'culture-traits' && !entry.fields.Family && entry.icon)
       .map((entry) => [entry.id, entry.icon as string]),
   );
+  const entryFallbackIcons: Record<string, string> = {
+    explorersMastery: 'prestige',
+  };
   for (const entry of entries) {
     if (entry.type !== 'culture-traits') continue;
     const family = typeof entry.fields.Family === 'string' ? entry.fields.Family : undefined;
     const familyIcon = rootIcons.get(family ?? entry.id) ?? 'cultural';
     const firstModifier = entry.modifiers[0];
-    const candidates = !family
-      ? [entry.icon, familyIcon]
-      : [
-          targetIcons.get(firstModifier?.value1 ?? ''),
-          modifierIcons.get(firstModifier?.key ?? ''),
-          familyIcon,
+    const prefersModifierIcon = firstModifier?.key === 'unitCostMult' || firstModifier?.key === 'projectBuildCostMult';
+    const candidates: Array<{ icon?: string; source: string }> = !family
+      ? [{ icon: entry.icon, source: 'source-field' }, { icon: familyIcon, source: rootIcons.has(entry.id) ? 'family' : 'default-cultural' }]
+      : prefersModifierIcon ? [
+          { icon: modifierIcons.get(firstModifier.key), source: 'modifier' },
+          { icon: targetIcons.get(firstModifier.value1 ?? ''), source: 'target' },
+          { icon: familyIcon, source: rootIcons.has(family) ? 'family' : 'default-cultural' },
+        ] : [
+          { icon: targetIcons.get(firstModifier?.value1 ?? ''), source: 'target' },
+          { icon: modifierIcons.get(firstModifier?.key ?? ''), source: 'modifier' },
+          { icon: entryFallbackIcons[entry.id], source: 'entry-fallback' },
+          { icon: familyIcon, source: rootIcons.has(family) ? 'family' : 'default-cultural' },
         ];
-    const icon = candidates.find(available);
+    const resolution = candidates.find((candidate) => available(candidate.icon));
+    const icon = resolution?.icon;
     entry.references = entry.references.filter((reference) => reference.type !== 'icon');
     if (!icon) {
+      recordUnresolved({ kind: 'icon', type: entry.type, id: entry.id, field: 'Icon', source: 'culture-trait-icon-resolution' });
       entry.icon = undefined;
       delete entry.fields.Icon;
       continue;
@@ -513,37 +822,32 @@ function applyCultureTraitIcons(entries: WikiEntry[], modifierEntries: WikiEntry
     entry.icon = icon;
     entry.fields.Icon = icon;
     entry.references.push({ type: 'icon', id: icon });
+    if (resolution?.source !== 'source-field') {
+      inferredValues.push({ kind: 'icon', type: entry.type, id: entry.id, source: resolution?.source, value: icon });
+    }
   }
 }
 
-function localizedModifierName(record: RawRecord, localization: Record<string, string>): string {
+function modifierConceptName(template: string): string {
+  const withoutValues = cleanGameText(template)
+    .replace(/\$?\{val\}/g, '')
+    .replace(/\{[123](?:_img)?\}/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return (withoutValues.includes(':') ? withoutValues.slice(0, withoutValues.indexOf(':')) : withoutValues)
+    .replace(/\s+([.,;)])/g, '$1')
+    .replace(/\(\s*\)/g, '')
+    .trim();
+}
+
+function localizedModifierTemplate(record: RawRecord, localization: Record<string, string>): string {
   const id = String(record.Name);
+  if (id === 'leaderXPGain') return 'Leader Experience Gain: {val}';
   const lookup = new Map(Object.entries(localization).map(([key, value]) => [key.toLowerCase(), value]));
-  const localizationOverrides: Record<string, string> = {
-    unitReinforceRateMult: 'reinforceRate',
-  };
-  const candidates = [localizationOverrides[id], id].filter((candidate): candidate is string => Boolean(candidate));
-  let base = id;
-  const suffixes = ['TooltipModifier', 'PopulationMult', 'Population', 'CurrencyAdd', 'Interplanetary', 'Modifier', 'Effect', 'Override', 'Mult', 'Add', 'Max', 'Cost', 'Cap'];
-  for (let i = 0; i < 4; i++) {
-    const suffix = suffixes.find((candidate) => base.endsWith(candidate));
-    if (!suffix) break;
-    base = base.slice(0, -suffix.length);
-    candidates.push(base);
-  }
-  const genericIcons = new Set(['political', 'military', 'industrial', 'defense', 'war', 'planet']);
-  for (const candidate of candidates) {
-    const localized = lookup.get(candidate.toLowerCase());
-    if (localized) return cleanGameText(localized);
-  }
-  if (typeof record.Icon === 'string' && !genericIcons.has(record.Icon)) {
-    const localized = lookup.get(record.Icon.toLowerCase());
-    if (localized) {
-      const cleaned = cleanGameText(localized);
-      if (cleaned.length <= 80 && !/[.!?]\s/.test(cleaned)) return cleaned;
-    }
-  }
-  return humanizeId(id);
+  const localized = lookup.get(id.toLowerCase());
+  if (localized) return localized;
+  recordUnresolved({ kind: 'display-name', type: 'modifiers', id, source: 'modifier-id', value: id });
+  return id;
 }
 
 function loadModifiers(localization: Record<string, string>): WikiEntry[] {
@@ -552,8 +856,9 @@ function loadModifiers(localization: Record<string, string>): WikiEntry[] {
   const data = parseJsonFile(path) as RawRecord[];
   return data.map((record) => {
     const id = record.Name as string;
-    const displayName = localizedModifierName(record, localization);
-    record.DisplayName = displayName;
+    const displayTemplate = localizedModifierTemplate(record, localization);
+    const displayName = modifierConceptName(displayTemplate) || id;
+    record.DisplayName = displayTemplate;
     return {
       id,
       type: 'modifiers',
@@ -577,6 +882,15 @@ function loadRawExtract(): WikiEntry[] {
   const localization = existsSync(localizationPath)
     ? (parseJsonFile(localizationPath) as Record<string, string>)
     : {};
+  const targetLocalizationPath = join(DATA_RAW, 'Localization/modifier-targets.json');
+  const modifierTargetLocalization = existsSync(targetLocalizationPath)
+    ? (parseJsonFile(targetLocalizationPath) as Record<string, { displayName?: string; source?: string }>)
+    : {};
+  const displayNameLocalizationPath = join(DATA_RAW, 'Localization/display-names.json');
+  const displayNameLocalization = existsSync(displayNameLocalizationPath)
+    ? (parseJsonFile(displayNameLocalizationPath) as Record<string, { displayName?: string; source?: string }>)
+    : {};
+  const targetLocalization = { ...displayNameLocalization, ...modifierTargetLocalization };
 
   const entries: WikiEntry[] = [];
   for (const file of readdirSync(rawDefines)) {
@@ -586,11 +900,11 @@ function loadRawExtract(): WikiEntry[] {
     const data = parseJsonFile(join(rawDefines, file));
     if (!Array.isArray(data)) continue;
     for (const record of data) {
-      const entry = buildEntry(slug, record as RawRecord, localization);
+      const entry = buildEntry(slug, record as RawRecord, localization, targetLocalization);
       if (!entry) continue;
       entries.push(entry);
       if (slug === 'culture-traits') {
-        entries.push(...buildCultureIdeaEntries(record as RawRecord, localization));
+        entries.push(...buildCultureIdeaEntries(record as RawRecord, localization, targetLocalization));
         delete entry.fields.Ideas;
       }
     }
@@ -606,6 +920,7 @@ function loadRawExtract(): WikiEntry[] {
 function buildCultureIdeaEntries(
   record: RawRecord,
   localization: Record<string, string>,
+  targetLocalization: Record<string, { displayName?: string; source?: string }>,
 ): WikiEntry[] {
   if (!Array.isArray(record.Ideas)) return [];
   const entries: WikiEntry[] = [];
@@ -615,6 +930,7 @@ function buildCultureIdeaEntries(
       // IdeaIndex preserves the array order, which is the in-game unlock order.
       { ...idea, Family: record.Name, Category: record.Category, IdeaIndex: index },
       localization,
+      targetLocalization,
     );
     if (entry) entries.push(entry);
   }
@@ -654,6 +970,34 @@ function writeCuratedFiles(index: CuratedIndex, modifierDefs: RawRecord[]) {
     join(DATA_CURATED, 'modifiers.json'),
     JSON.stringify(modifierDefs, null, 2),
   );
+  const modifierTargetsPath = join(DATA_RAW, 'Localization/modifier-targets.json');
+  if (existsSync(modifierTargetsPath)) {
+    writeFileSync(
+      join(DATA_CURATED, 'modifier-targets.json'),
+      JSON.stringify(parseJsonFile(modifierTargetsPath), null, 2),
+    );
+  }
+  const countBy = (values: ResolutionIssue[], key: keyof ResolutionIssue) => Object.fromEntries(
+    [...new Set(values.map((value) => value[key]).filter(Boolean) as string[])]
+      .sort()
+      .map((value) => [value, values.filter((issue) => issue[key] === value).length]),
+  );
+  const report = {
+    generatedAt: index.generatedAt,
+    unresolved: {
+      count: unresolvedValues.length,
+      byKind: countBy(unresolvedValues, 'kind'),
+      byType: countBy(unresolvedValues, 'type'),
+      values: [...unresolvedValues].sort((a, b) => a.type.localeCompare(b.type) || a.id.localeCompare(b.id) || (a.field ?? '').localeCompare(b.field ?? '')),
+    },
+    inferred: {
+      count: inferredValues.length,
+      byKind: countBy(inferredValues, 'kind'),
+      bySource: countBy(inferredValues, 'source'),
+      values: [...inferredValues].sort((a, b) => a.type.localeCompare(b.type) || a.id.localeCompare(b.id)),
+    },
+  };
+  writeFileSync(join(DATA_CURATED, 'normalization-report.json'), JSON.stringify(report, null, 2));
 
   for (const [type, keys] of Object.entries(index.byType)) {
     const entries = keys.map((k) => index.entries[k]);
@@ -664,7 +1008,7 @@ function writeCuratedFiles(index: CuratedIndex, modifierDefs: RawRecord[]) {
   }
 }
 
-function main() {
+async function main() {
   const gameRoot = getGameRoot();
   const rawLocalizationPath = join(DATA_RAW, 'Localization/en.json');
   const localization = existsSync(rawLocalizationPath)
@@ -679,6 +1023,8 @@ function main() {
 
   applyDamageTypeIcons(defineEntries);
   applyCultureTraitIcons(defineEntries, modifierEntries, gameRoot);
+  applyCharacterTraitIconAliases(defineEntries, gameRoot);
+  applyTerrainTypeIcons(defineEntries, gameRoot);
   const allEntries = [...defineEntries, ...modifierEntries];
   const source = 'base game defines extracted via CUE4Parse';
 
@@ -686,8 +1032,11 @@ function main() {
   const index = buildIndex(allEntries, source);
   const modifierDefs = parseJsonFile(join(DATA_RAW, 'Defines/ModifierProperties.json')) as RawRecord[];
 
-  copyAssets(gameRoot);
-  copyWikiIcons(gameRoot, allEntries);
+  // Scenario extraction ensures all referenced flags exist; the web bundle is
+  // optimized afterward so those source-sized files are not shipped as-is.
+  extractScenarios();
+  await copyAssets(gameRoot);
+  await copyWikiIcons(gameRoot, allEntries);
   writeCuratedFiles(index, modifierDefs);
 
   console.log(`Normalized ${allEntries.length} entries from ${source}`);
@@ -696,4 +1045,7 @@ function main() {
   }
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

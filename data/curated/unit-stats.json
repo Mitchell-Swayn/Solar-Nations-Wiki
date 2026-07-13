@@ -63,6 +63,7 @@
     "id": "damageWeight",
     "type": "unit-stats",
     "displayName": "Damage Weight",
+    "description": "Multiplies by the size of the unit to determine how much this unit draws fire. Units with low damage weight will take less damage, but other units in the army will take more.",
     "fields": {
       "Name": "damageWeight",
       "Display": true,
@@ -77,6 +78,7 @@
     "id": "deployRange",
     "type": "unit-stats",
     "displayName": "Deploy Range",
+    "description": "Deployment Range controls the maximum range of Ranged Attacks. This range is only as large as its smallest component.",
     "fields": {
       "Name": "deployRange",
       "Display": false,
@@ -209,6 +211,7 @@
     "id": "rangedCombatWidth",
     "type": "unit-stats",
     "displayName": "Ranged CW",
+    "description": "Ranged Combat Width allows for more units to participate in Ranged Attacks at once.",
     "fields": {
       "Name": "rangedCombatWidth",
       "Display": false,
@@ -236,7 +239,7 @@
   {
     "id": "reconWeight",
     "type": "unit-stats",
-    "displayName": "Recon Weight",
+    "displayName": "reconWeight",
     "fields": {
       "Name": "reconWeight",
       "Display": true,
@@ -250,7 +253,7 @@
   {
     "id": "shield",
     "type": "unit-stats",
-    "displayName": "Shield",
+    "displayName": "Shields",
     "description": "Shields absorb damage linearly each day of battle. They are effective when stacked with high Armor or Evasion.",
     "fields": {
       "Name": "shield",
@@ -294,7 +297,7 @@
   {
     "id": "smallArms_attack",
     "type": "unit-stats",
-    "displayName": "Small Arms Attack",
+    "displayName": "smallArms_attack",
     "fields": {
       "Name": "smallArms_attack",
       "Display": true,
@@ -308,7 +311,7 @@
   {
     "id": "smallArms_vuln",
     "type": "unit-stats",
-    "displayName": "Small Arms Vuln",
+    "displayName": "smallArms_vuln",
     "fields": {
       "Name": "smallArms_vuln",
       "Display": true,
@@ -352,7 +355,7 @@
   {
     "id": "strategic_attack",
     "type": "unit-stats",
-    "displayName": "Strategic Attack",
+    "displayName": "strategic_attack",
     "fields": {
       "Name": "strategic_attack",
       "Display": true,

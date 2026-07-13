@@ -2501,7 +2501,7 @@
   {
     "id": "han",
     "type": "cultures",
-    "displayName": "Han",
+    "displayName": "han",
     "fields": {
       "Name": "han",
       "MapColor": {
@@ -3336,7 +3336,7 @@
   {
     "id": "lao",
     "type": "cultures",
-    "displayName": "Lao",
+    "displayName": "lao",
     "fields": {
       "Name": "lao",
       "MapColor": {
@@ -7506,7 +7506,7 @@
   {
     "id": "zimbabwean",
     "type": "cultures",
-    "displayName": "Zimbabwean",
+    "displayName": "zimbabwean",
     "fields": {
       "Name": "zimbabwean",
       "MapColor": {

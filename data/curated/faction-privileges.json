@@ -13,19 +13,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectBuildCostMult\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": -0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "infrastructure",
+        "value": -0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -48,23 +50,23 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "educationTech_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"assimilationMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "factionLoyaltyAdd",
         "value1": "middleClass",
         "value": -0.1
+      },
+      {
+        "key": "assimilationMult",
+        "value": 0.25,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -89,15 +91,12 @@
       "PowerChange": 0.05,
       "LoyaltyImpact": 0,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "factionPrivilegePower_2"
       },
       "MaxLevel": 999,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -128,15 +127,12 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -172,19 +168,20 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "armyOrganization_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"siegeAbility\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "siegeAbility",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -207,15 +204,12 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -245,20 +239,25 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"protectorateAdmin\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
-        "(Key=\"adminEfficiencyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "protectorateAdmin",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "adminEfficiencyAdd",
+        "value": -0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -281,19 +280,21 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "educationTech_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"monument\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "monument",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -316,19 +317,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"resourceMult\",Value1=\"electronics\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceMult",
+        "value1": "electronics",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -351,15 +354,12 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -389,19 +389,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"budgetModifier\",Value1=\"population\",Value2=\"\",Value3=\"\")": -2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "budgetModifier",
+        "value1": "population",
+        "value": -2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -424,19 +426,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -459,19 +462,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"factionEffectMult\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "factionEffectMult",
+        "value1": "laborer",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -494,15 +499,12 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -536,19 +538,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.3
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.3,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -571,15 +574,12 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -613,19 +613,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "habitability_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"debtEffectMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "debtEffectMult",
+        "value": -0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -648,15 +649,12 @@
       "PowerChange": 0.025,
       "LoyaltyImpact": 0,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "factionPrivilegePower_1"
       },
       "MaxLevel": 999,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -690,19 +688,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderSkillAdd\",Value1=\"charisma\",Value2=\"\",Value3=\"\")": 2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "charisma",
+        "value": 2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -725,19 +725,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.15
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.15,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -760,19 +761,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -795,21 +797,32 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.05,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "factionPrivilegePower_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"espionageEffect\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5,
-        "(Key=\"factionPowerAdd\",Value1=\"laborer\",Value2=\"\",Value3=\"\")": 0.2,
-        "(Key=\"factionPowerAdd\",Value1=\"middleClass\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "espionageEffect",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "laborer",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "middleClass",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -832,15 +845,12 @@
       "PowerChange": 0.025,
       "LoyaltyImpact": 0,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 999,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -874,23 +884,23 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"stabilityOffset\",Value1=\"\",Value2=\"\",Value3=\"\")": 10
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "factionLoyaltyAdd",
         "value1": "laborer",
         "value": -0.1
+      },
+      {
+        "key": "stabilityOffset",
+        "value": 10,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -915,20 +925,25 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.3,
-        "(Key=\"projectBuildSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.3,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "projectBuildSpeedMult",
+        "value": 1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -951,19 +966,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectUpkeepMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectUpkeepMult",
+        "value": -0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -986,19 +1002,20 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1021,19 +1038,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": -0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderSkillAdd\",Value1=\"management\",Value2=\"\",Value3=\"\")": 2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "management",
+        "value": 2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1056,19 +1075,21 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderSkillAdd\",Value1=\"strategy\",Value2=\"\",Value3=\"\")": 2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderSkillAdd",
+        "value1": "strategy",
+        "value": 2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1091,20 +1112,26 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "habitability_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"researchMult\",Value1=\"enigmatic\",Value2=\"\",Value3=\"\")": 0.5,
-        "(Key=\"projectBuildCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value1": "enigmatic",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1127,19 +1154,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": -0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "industrialPower_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"workforceRatioAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "workforceRatioAdd",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1162,19 +1190,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": -0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immigrationPullExternal",
+        "value": 1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1197,23 +1226,27 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"immigrationPull\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
-        "(Key=\"immigrationPullExternal\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "assimilationMult",
         "value": 0.33
+      },
+      {
+        "key": "immigrationPull",
+        "value": 1,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "immigrationPullExternal",
+        "value": 0.25,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -1238,19 +1271,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"resourceModifier\",Value1=\"research\",Value2=\"\",Value3=\"\")": 5
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 5,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1273,19 +1308,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"educationEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "educationEfficiency",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1308,19 +1344,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "educationTech_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"privilegeGrantCost\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "privilegeGrantCost",
+        "value": -0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1343,19 +1380,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "educationTech_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"resourceCapacityMult\",Value1=\"diplomacyCapacity\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "diplomacyCapacity",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1378,19 +1417,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"sliderMaxAdd\",Value1=\"resourceTax\",Value2=\"\",Value3=\"\")": 0.5
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "sliderMaxAdd",
+        "value1": "resourceTax",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1413,19 +1454,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "industrialPower_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "infrastructure",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1448,22 +1491,22 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "tradeBarriersAdd",
         "value": -0.05
+      },
+      {
+        "key": "projectEfficiency",
+        "value": 0.2,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -1488,20 +1531,25 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1,
-        "(Key=\"popAttrition\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.0001
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "popAttrition",
+        "value": 0.0001,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1524,22 +1572,23 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"infrastructure\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "unitMoraleMult",
         "value": 0.1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "infrastructure",
+        "value": 0.2,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -1564,19 +1613,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "armyOrganization_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"integrationCostMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.05,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1599,19 +1649,20 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"warExhaustionMult\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "warExhaustionMult",
+        "value": -0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1634,15 +1685,12 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "factionPrivilegePower_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -1676,19 +1724,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "habitability_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.05
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.05,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1711,19 +1760,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitStatMult\",Value1=\"breakthrough\",Value2=\"\",Value3=\"\")": 0.05
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.05,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1746,19 +1797,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"manpowerRecoveryRate\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "manpowerRecoveryRate",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1781,20 +1833,27 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitStatMult\",Value1=\"breakthrough\",Value2=\"\",Value3=\"\")": 0.1,
-        "(Key=\"unitStatMult\",Value1=\"health\",Value2=\"\",Value3=\"\")": -0.05
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitStatMult",
+        "value1": "breakthrough",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "unitStatMult",
+        "value1": "health",
+        "value": -0.05,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1817,23 +1876,24 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitCostMult\",Value1=\"industry\",Value2=\"\",Value3=\"\")": -0.05
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "factionEffectMult",
         "value1": "corporate",
         "value": 0.2
+      },
+      {
+        "key": "unitCostMult",
+        "value1": "industry",
+        "value": -0.05,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -1858,23 +1918,24 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "habitability_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"robotFactory\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "factionLoyaltyAdd",
         "value1": "upperClass",
         "value": -0.1
+      },
+      {
+        "key": "projectEfficiency",
+        "value1": "robotFactory",
+        "value": 0.2,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -1899,19 +1960,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"logisticsHub\",Value2=\"\",Value3=\"\")": 1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "logisticsHub",
+        "value": 1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1934,19 +1997,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectBuildCostMult\",Value1=\"monument\",Value2=\"\",Value3=\"\")": -0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "monument",
+        "value": -0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -1969,19 +2034,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2004,19 +2070,20 @@
       "PowerChange": 0,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "industrialPower_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"allResourceCapacityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "allResourceCapacityMult",
+        "value": 1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2039,23 +2106,23 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "industrialPower_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unityMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "factionEffectMult",
         "value1": "middleClass",
         "value": 0.2
+      },
+      {
+        "key": "unityMult",
+        "value": 0.5,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -2080,22 +2147,22 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "industrialPower_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"edictBenefitMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
         "key": "tradeBarriersAdd",
         "value": 0.1
+      },
+      {
+        "key": "edictBenefitMult",
+        "value": 0.2,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -2120,19 +2187,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitExperienceGainMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitExperienceGainMult",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2155,20 +2223,25 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.05,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "factionPrivilegePower_3"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.05,
-        "(Key=\"factionLoyaltyAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.05,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "factionLoyaltyAdd",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2191,19 +2264,20 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"edictBenefitMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "edictBenefitMult",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2226,19 +2300,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unrestChangeAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": -0.08
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unrestChangeAdd",
+        "value": -0.08,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2261,20 +2336,27 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitQualityMult\",Value1=\"infantry\",Value2=\"\",Value3=\"\")": 0.25,
-        "(Key=\"unitQualityMult\",Value1=\"irregular\",Value2=\"\",Value3=\"\")": 0.5
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitQualityMult",
+        "value1": "infantry",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "unitQualityMult",
+        "value1": "irregular",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2297,19 +2379,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "expansion_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"fortDefense\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "fortDefense",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2332,15 +2415,12 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "psychology_5"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -2376,15 +2456,12 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": []
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -2418,19 +2495,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "habitability_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"projectEfficiency\",Value1=\"electronicsFactory\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value1": "electronicsFactory",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2453,19 +2532,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "pyschology_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"rulingFactionPoliticalPowerAdd\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.5
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "rulingFactionPoliticalPowerAdd",
+        "value": 0.5,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2488,20 +2568,27 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"resourceCapacityMult\",Value1=\"navyCapacity\",Value2=\"\",Value3=\"\")": 0.2,
-        "(Key=\"resourceCapacityMult\",Value1=\"spaceCapacity\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "navyCapacity",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "resourceCapacityMult",
+        "value1": "spaceCapacity",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2524,17 +2611,12 @@
       "PowerChange": 0.15,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitReinforceRateMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 1
-      }
+      "EnactmentTime": 3600
     },
     "modifiers": [
       {
@@ -2553,6 +2635,11 @@
         "key": "budgetModifier",
         "value1": "population",
         "value": -2
+      },
+      {
+        "key": "unitReinforceRateMult",
+        "value": 1,
+        "scope": "Power-scaled"
       }
     ],
     "prerequisites": [],
@@ -2577,19 +2664,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "armyOrganization_4"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"unitSpeedMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.1
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "unitSpeedMult",
+        "value": 0.1,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2612,19 +2700,20 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_2"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"baseEconomicOutputMult\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2647,20 +2736,25 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "technology",
         "B": "economicOutput_1"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"leaderXPGain\",Value1=\"\",Value2=\"\",Value3=\"\")": 1,
-        "(Key=\"characterQuality\",Value1=\"\",Value2=\"\",Value3=\"\")": 0.25
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "leaderXPGain",
+        "value": 1,
+        "scope": "Power-scaled"
+      },
+      {
+        "key": "characterQuality",
+        "value": 0.25,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2683,19 +2777,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"researchMult\",Value1=\"military\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value1": "military",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {
@@ -2718,19 +2814,21 @@
       "PowerChange": 0.1,
       "LoyaltyImpact": 0.1,
       "SpecialTgt": "None",
-      "SpecialModifier": [],
       "Prerequisite": {
         "A": "None",
         "B": "None"
       },
       "MaxLevel": 1,
-      "EnactmentTime": 3600,
-      "LoyaltyScaledModifier": [],
-      "PowerScaledModifier": {
-        "(Key=\"resourceMult\",Value1=\"consumerGoods\",Value2=\"\",Value3=\"\")": 0.2
-      }
+      "EnactmentTime": 3600
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "resourceMult",
+        "value1": "consumerGoods",
+        "value": 0.2,
+        "scope": "Power-scaled"
+      }
+    ],
     "prerequisites": [],
     "references": [
       {

@@ -2,7 +2,7 @@
   {
     "id": "immigrationIncentive",
     "type": "region-interactions",
-    "displayName": "Immigration Incentive",
+    "displayName": "immigrationIncentive",
     "icon": "immigrationIncentive",
     "fields": {
       "Name": "immigrationIncentive",
@@ -20,7 +20,7 @@
   {
     "id": "massDeportations",
     "type": "region-interactions",
-    "displayName": "Mass Deportations",
+    "displayName": "massDeportations",
     "icon": "massDeportations",
     "fields": {
       "Name": "massDeportations",
@@ -38,7 +38,7 @@
   {
     "id": "NewRow_1",
     "type": "region-interactions",
-    "displayName": "New Row 1",
+    "displayName": "NewRow_1",
     "icon": "",
     "fields": {
       "Name": "NewRow_1",
@@ -56,7 +56,7 @@
   {
     "id": "NewRow_2",
     "type": "region-interactions",
-    "displayName": "New Row 2",
+    "displayName": "NewRow_2",
     "icon": "",
     "fields": {
       "Name": "NewRow_2",

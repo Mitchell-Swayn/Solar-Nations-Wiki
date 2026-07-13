@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ScenarioTabs from '../../components/ScenarioTabs.astro';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
+import { getCountryPath, getCountryScenarios } from '../../lib/countries';
+import { withBase } from '../../lib/base';
+
+const category = CATEGORY_BY_SLUG.countries;
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const scenarios = getCountryScenarios();
+const total = scenarios.reduce((sum, scenario) => sum + scenario.countries.length, 0);
+const scenarioTabs = scenarios.map((scenario) => ({
+  id: scenario.id,
+  label: scenario.name,
+  href: `${withBase('/countries/')}?scenario=${encodeURIComponent(scenario.id)}`,
+}));
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+const flagPath = (flag: string) => withBase(`/assets/flags/${encodeURIComponent(flag)}`);
+const countriesForDirectory = (countries: typeof scenarios[number]['countries']) => [...countries].sort((left, right) =>
+  Number(Boolean(right.selectable)) - Number(Boolean(left.selectable))
+  || left.name.localeCompare(right.name));
+---
+
+<BaseLayout title="Countries" description={category.description} activeType="countries">
+  <Breadcrumbs group={group?.label} category="Countries" />
+
+  <header class="collection-header countries-header">
+    <div><p class="eyebrow">{group?.label}</p><h1>Countries</h1><p>{category.description}</p></div>
+    <div class="collection-count"><strong>{total}</strong><span>Scenario entries</span></div>
+  </header>
+
+  <ScenarioTabs tabs={scenarioTabs} switchPanels />
+
+  <div class="collection-tools">
+    <label class="filter-input"><span class="sr-only">Filter countries</span><span class="search-symbol"></span><input id="country-filter" type="search" placeholder="Filter countries..." /></label>
+    <span id="visible-count">Showing {scenarios[0]?.countries.length ?? 0}</span>
+  </div>
+
+  <div class="scenario-country-directory">
+    {scenarios.map((scenario, index) => (
+      <section id={`scenario-panel-${scenario.id}`} class="country-scenario" data-scenario data-scenario-panel={scenario.id} hidden={index > 0}>
+        <header>
+          <div><p class="eyebrow">Base-game scenario</p><h2>{scenario.name}</h2></div>
+          <p><strong>{scenario.countries.length}</strong> countries · <strong>{scenario.selectableCount}</strong> linked country briefings</p>
+        </header>
+        <div class="country-grid">
+          {countriesForDirectory(scenario.countries).map((country) => (
+            <a
+              class="country-row"
+              href={withBase(getCountryPath(scenario.id, country.id))}
+              data-country
+              data-search={`${country.name} ${country.logicTag} ${country.capitalRegionName ?? country.capital}`.toLowerCase()}
+            >
+              <span class="country-flag"><img src={flagPath(country.flag)} alt="" loading="lazy" decoding="async" data-auto-loading /></span>
+              <span class="country-name"><strong>{country.name}</strong><small>{country.logicTag}</small></span>
+              <span class="country-summary"><small>{country.regions.length} regions</small><strong>{compactNumber.format(country.population)}</strong></span>
+              {country.selectable && <span class="playable-mark" title="Country with scenario content">Content</span>}
+              <b aria-hidden="true">›</b>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+  <p class="empty-state" id="empty-state" hidden>No countries match this filter.</p>
+</BaseLayout>
+
+<script>
+  const filter = document.getElementById('country-filter') as HTMLInputElement;
+  const rows = [...document.querySelectorAll<HTMLElement>('[data-country]')];
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-scenario]')];
+  const count = document.getElementById('visible-count');
+  const empty = document.getElementById('empty-state');
+  const applyFilter = () => {
+    const query = filter.value.trim().toLowerCase();
+    const activeScenario = document.querySelector<HTMLElement>('[data-scenario-tabs] [aria-selected="true"]')?.dataset.scenarioId;
+    let visible = 0;
+    for (const row of rows) {
+      row.hidden = !row.dataset.search?.includes(query);
+    }
+    for (const section of sections) {
+      const active = section.dataset.scenarioPanel === activeScenario;
+      const matches = [...section.querySelectorAll<HTMLElement>('[data-country]')].filter((row) => !row.hidden).length;
+      section.hidden = !active || matches === 0;
+      if (active) visible = matches;
+    }
+    if (count) count.textContent = `Showing ${visible}`;
+    if (empty) empty.hidden = visible !== 0;
+  };
+  filter?.addEventListener('input', applyFilter);
+  document.querySelector('[data-scenario-tabs]')?.addEventListener('click', () => queueMicrotask(applyFilter));
+  window.addEventListener('popstate', () => queueMicrotask(applyFilter));
+  applyFilter();
+</script>
+
+<style>
+  .countries-header > div:first-child { max-width: 760px; }
+  .scenario-country-directory { margin-top: 32px; }
+  .country-scenario > header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 12px;
+    padding-bottom: 11px;
+    border-bottom: 2px solid var(--ink-2);
+  }
+  .country-scenario h2 { margin: 3px 0 0; font-size: 21px; }
+  .country-scenario > header > p { margin: 0; color: var(--text-muted); font-size: 11px; }
+  .country-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .country-row {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) auto auto 12px;
+    align-items: center;
+    gap: 12px;
+    min-height: 68px;
+    padding: 9px 12px;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .country-row:hover { color: var(--text); border-color: var(--border-strong); box-shadow: inset 3px 0 0 var(--accent); }
+  .country-flag { display: grid; place-items: center; width: 54px; height: 36px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--border); border-radius: 3px; }
+  .country-flag img { width: 100%; height: 100%; object-fit: cover; }
+  .country-name, .country-name strong, .country-name small { display: block; min-width: 0; }
+  .country-name strong { overflow: hidden; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+  .country-name small { overflow: hidden; margin-top: 3px; color: var(--text-muted); font-family: var(--mono); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+  .country-summary { min-width: 70px; text-align: right; }
+  .country-summary small, .country-summary strong { display: block; }
+  .country-summary small { color: var(--text-muted); font-size: 9px; }
+  .country-summary strong { margin-top: 2px; font-size: 11px; }
+  .playable-mark { padding: 3px 6px; color: var(--teal); background: #e6f1ef; border-radius: 999px; font-size: 8px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+  .country-row > b { color: var(--border-strong); font-size: 18px; font-weight: 400; }
+  @media (max-width: 980px) {
+    .country-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .country-scenario > header { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .country-row { grid-template-columns: 46px minmax(0, 1fr) auto 10px; }
+    .country-flag { width: 46px; height: 31px; }
+    .country-summary { display: none; }
+    .playable-mark { font-size: 7px; }
+  }
+</style>

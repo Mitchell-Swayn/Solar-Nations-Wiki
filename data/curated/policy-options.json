@@ -1,5 +1,26 @@
 [
   {
+    "id": "researchSpeed",
+    "type": "policy-options",
+    "displayName": "{1} Research Speed: {val}",
+    "fields": {
+      "Name": "researchSpeed",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "corporate"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
     "id": "adminEfficiency",
     "type": "policy-options",
     "displayName": "Administration",
@@ -933,27 +954,6 @@
     "references": []
   },
   {
-    "id": "researchSpeed",
-    "type": "policy-options",
-    "displayName": "Research Speed",
-    "fields": {
-      "Name": "researchSpeed",
-      "BenefitEnabled": true,
-      "CostEnabled": false,
-      "BuffFactions": [
-        "corporate"
-      ]
-    },
-    "modifiers": [
-      {
-        "key": "researchMult",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "resourceCapacity",
     "type": "policy-options",
     "displayName": "Resource Capacity",
@@ -975,6 +975,27 @@
         "key": "resourceCapacityMult",
         "value1": "logistics",
         "value": 0.025
+      }
+    ],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "resourceIncome",
+    "type": "policy-options",
+    "displayName": "Resource Income",
+    "fields": {
+      "Name": "resourceIncome",
+      "BenefitEnabled": true,
+      "CostEnabled": false,
+      "BuffFactions": [
+        "laborer"
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.05
       }
     ],
     "prerequisites": [],
@@ -1024,27 +1045,6 @@
       {
         "key": "stabilityGainAdd",
         "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "resourceIncome",
-    "type": "policy-options",
-    "displayName": "Strategic Resource Income",
-    "fields": {
-      "Name": "resourceIncome",
-      "BenefitEnabled": true,
-      "CostEnabled": false,
-      "BuffFactions": [
-        "laborer"
-      ]
-    },
-    "modifiers": [
-      {
-        "key": "resourceIncomeMult",
-        "value": 0.05
       }
     ],
     "prerequisites": [],
@@ -1149,7 +1149,7 @@
   {
     "id": "unitMoraleRecovery",
     "type": "policy-options",
-    "displayName": "Unit Morale Recovery",
+    "displayName": "unitMoraleRecovery",
     "fields": {
       "Name": "unitMoraleRecovery",
       "BenefitEnabled": true,

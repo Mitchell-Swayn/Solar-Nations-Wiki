@@ -639,6 +639,11 @@ def parse_events() -> list[dict]:
 def extract_localization() -> dict[str, str]:
     loc_dir = UNPACKED_ROOT / "twilightModernity/Content/Localisation/English"
     loc: dict[str, str] = {}
+    # String-table keys are lower camelCase as well as lowercase. Restrict the
+    # first character to lowercase so single-word, title-cased display values
+    # (for example `upperClass` -> `Upper Class`) are not mistaken for keys.
+    generic_key = re.compile(r"^[a-z][A-Za-z0-9_]*$")
+    modifier_key = re.compile(r"^[A-Za-z][A-Za-z0-9_]*$")
 
     if not loc_dir.exists():
         return loc
@@ -646,21 +651,125 @@ def extract_localization() -> dict[str, str]:
     for path in sorted(loc_dir.glob("*.uasset")):
         strings = strings_from_file(path)
         for i, s in enumerate(strings):
-            if not re.match(r"^[a-z][a-z0-9_]*$", s) or len(s) < 3:
+            if not generic_key.fullmatch(s) or len(s) < 3:
                 continue
             if i + 1 >= len(strings):
                 continue
             nxt = strings[i + 1]
             if not nxt or nxt in JUNK_STRINGS:
                 continue
-            if re.match(r"^[a-z][a-z0-9_]*$", nxt) and not (" " in nxt):
+            if generic_key.fullmatch(nxt):
                 continue
             if nxt.startswith("(") or len(nxt) > 300:
                 continue
             if s not in loc or len(nxt) > len(loc[s]):
                 loc[s] = nxt
 
+    # Modifier localization keys are camelCase, so the generic lowercase-key
+    # parser intentionally cannot see them. These two source tables contain
+    # alternating modifier key/template pairs; require the game's {val}
+    # placeholder (except factionVariant, whose template has targets only) so
+    # adjacent asset metadata cannot be mistaken for localization.
+    for path in sorted(loc_dir.glob("modifiers_english*.uasset")):
+        strings = strings_from_file(path)
+        for i, key in enumerate(strings[:-1]):
+            template = strings[i + 1]
+            if not modifier_key.fullmatch(key):
+                continue
+            if "{val}" not in template and key != "factionVariant":
+                continue
+            loc[key] = template
+
     return loc
+
+
+def extract_display_name_localization() -> dict[str, dict[str, str]]:
+    """Extract concise, standalone labels without losing source provenance.
+
+    Some string tables reuse a key for both a short label and a long tooltip.
+    The general localization dictionary intentionally retains the richer text;
+    this companion index preserves the short display name for entry titles.
+    """
+    loc_dir = UNPACKED_ROOT / "twilightModernity/Content/Localisation/English"
+    key_pattern = re.compile(r"^[a-z][A-Za-z0-9_]*$")
+    display_names: dict[str, dict[str, str]] = {}
+
+    if not loc_dir.exists():
+        return display_names
+
+    for path in sorted(loc_dir.glob("*.uasset")):
+        strings = strings_from_file(path)
+        for index, key in enumerate(strings[:-1]):
+            value = strings[index + 1]
+            if not key_pattern.fullmatch(key):
+                continue
+            if not value or len(value) > 70 or value in JUNK_STRINGS:
+                continue
+            if re.search(r"[.!?]\s|<[^>]+>|\{[^}]+\}", value):
+                continue
+            if key_pattern.fullmatch(value):
+                continue
+            candidate = {"displayName": value, "source": path.name}
+            existing = display_names.get(key)
+            if existing is None or (
+                existing["displayName"].casefold() == key.casefold()
+                and value.casefold() != key.casefold()
+            ):
+                display_names[key] = candidate
+
+    return display_names
+
+
+def extract_modifier_target_localization() -> dict[str, dict[str, str]]:
+    loc_dir = UNPACKED_ROOT / "twilightModernity/Content/Localisation/English"
+    key_pattern = re.compile(r"^[A-Za-z][A-Za-z0-9_]*$")
+    targets: dict[str, dict[str, str]] = {}
+    used_target_ids: set[str] = set()
+
+    def collect_targets(value: object) -> None:
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if isinstance(key, str) and key.startswith('(Key="'):
+                    for target in re.findall(r'Value[123]="([^"]*)"', key):
+                        if target:
+                            used_target_ids.add(target)
+                collect_targets(child)
+        elif isinstance(value, list):
+            for child in value:
+                collect_targets(child)
+
+    for define_path in OUTPUT_DEFINES.glob("*.json"):
+        try:
+            collect_targets(json.loads(define_path.read_text()))
+        except (json.JSONDecodeError, OSError):
+            continue
+    source_names = (
+        "modifiers_english.uasset",
+        "modifiers_english1.uasset",
+        "resource_english.uasset",
+    )
+    target_ids_by_casefold: dict[str, list[str]] = {}
+    for target_id in used_target_ids:
+        target_ids_by_casefold.setdefault(target_id.casefold(), []).append(target_id)
+
+    for source_name in source_names:
+        path = loc_dir / source_name
+        if not path.exists():
+            continue
+        strings = strings_from_file(path)
+        for i, key in enumerate(strings[:-1]):
+            display_name = strings[i + 1]
+            matching_target_ids = target_ids_by_casefold.get(key.casefold(), [])
+            if not key_pattern.fullmatch(key) or not matching_target_ids:
+                continue
+            if not display_name or len(display_name) > 70:
+                continue
+            if "{" in display_name or "<" in display_name or "." in display_name:
+                continue
+            for target_id in matching_target_ids:
+                targets.setdefault(target_id, {"displayName": display_name, "source": source_name})
+
+    return targets
 
 
 def ensure_legacy_assets() -> None:
@@ -722,6 +831,18 @@ def parse_situations() -> list[dict]:
 
 
 def main() -> int:
+    if "--localization-only" in sys.argv:
+        loc = extract_localization()
+        write_json(OUTPUT_LOC / "en.json", loc)
+        display_names = extract_display_name_localization()
+        write_json(OUTPUT_LOC / "display-names.json", display_names)
+        targets = extract_modifier_target_localization()
+        write_json(OUTPUT_LOC / "modifier-targets.json", targets)
+        print(f"Localization/en.json: {len(loc)} keys")
+        print(f"Localization/display-names.json: {len(display_names)} keys")
+        print(f"Localization/modifier-targets.json: {len(targets)} keys")
+        return 0
+
     ensure_legacy_assets()
 
     parsers: list[tuple[str, callable]] = [
@@ -762,6 +883,12 @@ def main() -> int:
     loc = extract_localization()
     write_json(OUTPUT_LOC / "en.json", loc)
     print(f"  Localization/en.json: {len(loc)} keys")
+    display_names = extract_display_name_localization()
+    write_json(OUTPUT_LOC / "display-names.json", display_names)
+    print(f"  Localization/display-names.json: {len(display_names)} keys")
+    targets = extract_modifier_target_localization()
+    write_json(OUTPUT_LOC / "modifier-targets.json", targets)
+    print(f"  Localization/modifier-targets.json: {len(targets)} keys")
 
     manifest = {
         "extractedAt": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),

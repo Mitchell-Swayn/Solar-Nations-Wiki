@@ -1,7 +1,8 @@
 ---
 import type { ModifierRef } from '../lib/types';
-import { getEntry, getModifierMap, getModifierTargetIcon } from '../lib/data';
+import { getCanonicalModifierKey, getDisplayName, getModifierMap, getModifierTargetIcon } from '../lib/data';
 import { withBase } from '../lib/base';
+import { formatModifierTemplate } from '../lib/modifier-format';
 import GameIcon from './GameIcon.astro';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 const { modifiers } = Astro.props;
 const modifierMap = getModifierMap();
 const showScope = modifiers.some((modifier) => modifier.scope);
+const targetName = (types: string[], value: string) => getDisplayName(types, value) ?? value;
 
 function formatValue(mod: ModifierRef): string {
   const def = modifierMap.get(mod.key);
@@ -22,34 +24,71 @@ function formatValue(mod: ModifierRef): string {
   return `${val >= 0 ? '+' : ''}${val}`;
 }
 
+function valueTone(mod: ModifierRef): string {
+  const def = modifierMap.get(mod.key);
+  if (typeof mod.value !== 'number') return '';
+  if (def?.Positivity === 'positive') return mod.value >= 0 ? 'positive' : 'negative';
+  if (def?.Positivity === 'negative') return mod.value < 0 ? 'positive' : 'negative';
+  return '';
+}
+
 function formatName(mod: ModifierRef): string {
   const def = modifierMap.get(mod.key);
+  if ((mod.key === 'unitVulnAdd' || mod.key === 'unitVulnMult') && mod.value1) {
+    const damageType = targetName(['damage-types'], mod.value1)
+      .replace(/\s+Domain\b/i, '')
+      .replace(/\s+Unit Damage\b/i, '');
+    return `${damageType} Vulnerability`;
+  }
   if ((mod.key === 'resourceModifier' || mod.key.startsWith('resourceCapacity')) && mod.value1) {
-    return getEntry('resources', mod.value1)?.displayName ?? getEntry('deposit-resources', mod.value1)?.displayName ?? mod.value1;
+    return targetName(['resources', 'deposit-resources'], mod.value1);
+  }
+  if (mod.key === 'resourceIncomeMult') return 'Resource Income';
+  if (mod.key === 'projectBuildCostMult' && mod.value1) {
+    return `${targetName(['projects'], mod.value1)} Cost`;
+  }
+  if (mod.key === 'researchMult' && mod.value1) {
+    return `${targetName(['technology-domains'], mod.value1)} Research`;
+  }
+  if ((mod.key === 'unitAttackAdd' || mod.key === 'unitAttackMult') && mod.value1) {
+    return `${targetName(['damage-types'], mod.value1)} Attack`;
+  }
+  if (mod.key === 'unitStatMult' && mod.value1) {
+    const archetype = mod.value2 ? targetName(['unit-archetypes'], mod.value2) : '';
+    const stat = targetName(['unit-stats'], mod.value1);
+    return `${archetype} ${stat}`.trim();
+  }
+  if (mod.key === 'unitMoraleMult' && mod.value1) {
+    return `${targetName(['battle-domains'], mod.value1)} Unit Morale`;
+  }
+  if (mod.key === 'leaderSkillAdd' && mod.value1) {
+    return `${targetName(['character-skills'], mod.value1)} Skill`;
+  }
+  if (mod.key === 'unitQualityMult') {
+    return mod.value1 ? `${targetName(['unit-archetypes'], mod.value1)} Unit Quality` : 'Unit Quality';
+  }
+  if (mod.key === 'unitReinforceRateMult' && mod.value1) {
+    return `${targetName(['battle-domains'], mod.value1)} Reinforce Rate`;
   }
   if (mod.key === 'factionVariant' && mod.value1 && mod.value2) {
-    const humanize = (value: string) => value
-      .replace(/([a-z])([A-Z])/g, '$1 $2')
-      .replace(/_/g, ' ')
-      .replace(/^./, (character) => character.toUpperCase());
-    const faction = getEntry('factions', mod.value1)?.displayName ?? humanize(mod.value1);
-    const variant = getEntry('faction-variants', mod.value2)?.displayName ?? humanize(mod.value2);
+    const faction = targetName(['factions'], mod.value1);
+    const variant = targetName(['faction-variants'], mod.value2);
     return `Enables ${faction} Variant: ${variant}`;
   }
   const targetFirstLabel = mod.key === 'politicalPowerAdd' ? 'Political Power'
     : mod.key === 'factionPowerAdd' ? 'Faction Power'
     : mod.key === 'factionLoyaltyAdd' ? 'Faction Loyalty'
+    : mod.key === 'unitCostMult' ? 'Unit Cost'
     : undefined;
-  if (!targetFirstLabel || !mod.value1) return def?.DisplayName ?? mod.key;
-  const faction = getEntry('factions', mod.value1)?.displayName ?? mod.value1
-    .replace(/([a-z])([A-Z])/g, '$1 $2')
-    .replace(/_/g, ' ')
-    .replace(/^./, (character) => character.toUpperCase());
+  if (!targetFirstLabel || !mod.value1) return formatModifierTemplate(mod, def?.DisplayName ?? mod.key) || mod.key;
+  const faction = mod.key === 'unitCostMult'
+    ? targetName(['resources', 'deposit-resources'], mod.value1)
+    : targetName(['factions'], mod.value1);
   return `${faction} ${targetFirstLabel}`;
 }
 
 function formatTarget(mod: ModifierRef): string {
-  if (mod.key === 'politicalPowerAdd' || mod.key === 'factionPowerAdd' || mod.key === 'factionLoyaltyAdd' || mod.key === 'factionVariant' || mod.key === 'resourceModifier' || mod.key.startsWith('resourceCapacity')) return '';
+  if (mod.key === 'politicalPowerAdd' || mod.key === 'factionPowerAdd' || mod.key === 'factionLoyaltyAdd' || mod.key === 'unitCostMult' || mod.key === 'factionVariant' || mod.key === 'resourceModifier' || mod.key.startsWith('resourceCapacity') || mod.key === 'projectBuildCostMult' || mod.key === 'researchMult' || mod.key === 'unitAttackAdd' || mod.key === 'unitAttackMult' || mod.key === 'unitStatMult' || mod.key === 'unitMoraleMult' || mod.key === 'leaderSkillAdd' || mod.key === 'unitQualityMult' || mod.key === 'unitReinforceRateMult' || mod.key === 'unitVulnAdd' || mod.key === 'unitVulnMult') return '';
   const parts = [mod.value1, mod.value2, mod.value3].filter(Boolean);
   return parts.length ? ` (${parts.join(', ')})` : '';
 }
@@ -68,17 +107,17 @@ function formatTarget(mod: ModifierRef): string {
     <tbody>
       {modifiers.map((mod) => {
         const def = modifierMap.get(mod.key);
-        const targetIcon = getModifierTargetIcon(mod.value1);
+        const targetIcon = getModifierTargetIcon(mod.key, mod.value1);
         return (
           <tr>
             <td>
               <span class="modifier-name">
                 {def?.Icon && <GameIcon name={def.Icon} size={20} />}
                 {targetIcon && targetIcon !== def?.Icon && <GameIcon name={targetIcon} size={20} />}
-                <a href={withBase(`/modifiers/${mod.key}/`)}>{formatName(mod)}</a>
+                <a href={withBase(`/modifiers/${getCanonicalModifierKey(mod.key)}/`)}>{formatName(mod)}</a>
               </span>
             </td>
-            <td class={def?.Positivity === 'positive' ? 'positive' : def?.Positivity === 'negative' ? 'negative' : ''}>
+            <td class={valueTone(mod)}>
               {formatValue(mod)}
             </td>
             <td class="target">{formatTarget(mod)}</td>

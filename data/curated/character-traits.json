@@ -1308,7 +1308,7 @@
     "id": "logical",
     "type": "character-traits",
     "displayName": "Logical",
-    "icon": "logical",
+    "icon": "charactertrait:logical",
     "fields": {
       "Name": "logical",
       "Type": "Personality",
@@ -1341,7 +1341,7 @@
     "references": [
       {
         "type": "icon",
-        "id": "logical"
+        "id": "charactertrait:logical"
       }
     ]
   },

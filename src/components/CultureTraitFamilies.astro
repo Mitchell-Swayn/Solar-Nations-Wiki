@@ -1,0 +1,48 @@
+---
+import GameIcon from './GameIcon.astro';
+import ModifierBadges from './ModifierBadges.astro';
+import { getEntry, getEntriesByType } from '../lib/data';
+import { getCultureTraitGroup, isCultureFamilyRoot } from '../lib/culture';
+import { withBase } from '../lib/base';
+
+interface Props {
+  traitIds: string[];
+}
+
+const { traitIds } = Astro.props;
+const allCultureTraits = getEntriesByType('culture-traits');
+const selectedGroups = Object.values(traitIds.reduce((groups, traitId) => {
+  const trait = getEntry('culture-traits', traitId);
+  if (!trait) return groups;
+  const meta = getCultureTraitGroup(traitId);
+  groups[meta.id] ??= { meta };
+  return groups;
+}, {} as Record<string, { meta: ReturnType<typeof getCultureTraitGroup> }>));
+const cultureTraitGroups = selectedGroups.map(({ meta }) => ({
+  meta,
+  traits: allCultureTraits
+    .filter((trait) => getCultureTraitGroup(trait.id).id === meta.id)
+    .sort((a, b) => Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id)) || a.displayName.localeCompare(b.displayName)),
+}));
+---
+
+<div class="culture-trait-families">
+  {cultureTraitGroups.map(({ meta, traits }) => (
+    <section class="culture-trait-family">
+      <header>
+        <div class="culture-family-title"><GameIcon name={meta.icon} size={30} /><div><p class="eyebrow">{meta.domain} · Trait Family</p><h3>{meta.label}</h3></div></div>
+        <a href={withBase(`/culture-traits/${meta.id}/`)}>View family</a>
+      </header>
+      <div class="entry-directory">
+        {traits.map((trait) => (
+          <a href={withBase(`/culture-traits/${meta.id}/#${trait.id}`)} class:list={['directory-row', { 'with-effects': trait.modifiers.length > 0 }]}>
+            <span class="directory-icon"><GameIcon name={trait.icon ?? meta.icon} size={34} /></span>
+            <span class="directory-main"><strong>{trait.displayName}</strong><code>{trait.id}</code>{trait.description && <small>{trait.description}</small>}</span>
+            <ModifierBadges modifiers={trait.modifiers} />
+            <span class="row-arrow" aria-hidden="true">›</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</div>

@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ModifierList from '../../components/ModifierList.astro';
 import GameIcon from '../../components/GameIcon.astro';
 import { getEntriesByType } from '../../lib/data';
-import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
+import { getCultureTraitFamilyDescription, getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -12,6 +14,8 @@ export function getStaticPaths() {
 }
 
 const { family } = Astro.params;
+const category = CATEGORY_BY_SLUG['culture-traits'];
+const categoryGroup = CATEGORY_GROUPS.find((item) => item.id === category.group);
 const traits = getEntriesByType('culture-traits');
 const meta = getCultureTraitGroup(traits.find((entry) => getCultureTraitGroup(entry.id).id === family)!.id);
 const members = traits
@@ -19,6 +23,11 @@ const members = traits
   .sort((a, b) =>
     Number(isCultureFamilyRoot(b.id)) - Number(isCultureFamilyRoot(a.id))
     || Number(a.fields.IdeaIndex ?? 0) - Number(b.fields.IdeaIndex ?? 0));
+const memberIds = new Set(members.map((entry) => entry.id));
+const startingCultures = getEntriesByType('cultures')
+  .filter((culture) => Array.isArray(culture.fields.Traits)
+    && culture.fields.Traits.some((trait) => typeof trait === 'string' && memberIds.has(trait)))
+  .sort((a, b) => a.displayName.localeCompare(b.displayName));
 const root = members.find((entry) => isCultureFamilyRoot(entry.id));
 const subtraits = members.filter((entry) => entry !== root);
 const families = [...new Map(traits.map((entry) => {
@@ -28,20 +37,21 @@ const families = [...new Map(traits.map((entry) => {
 const position = families.findIndex((item) => item.id === family);
 const previous = position > 0 ? families[position - 1] : undefined;
 const next = position < families.length - 1 ? families[position + 1] : undefined;
+const familyDescription = getCultureTraitFamilyDescription(meta.id);
 ---
 
-<BaseLayout title={`${meta.label} — Culture Traits`} description={`${meta.label} culture trait family and its ideas.`} activeType="culture-traits">
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><a href={withBase('/culture-traits/')}>Culture Traits</a><span>/</span><strong>{meta.label}</strong></nav>
+<BaseLayout title={`${meta.label} — Culture Traits`} description={familyDescription} activeType="culture-traits">
+  <Breadcrumbs group={categoryGroup?.label} category={category.pluralLabel} categoryHref="/culture-traits/" current={meta.label} />
 
   <article class="article-layout">
     <div class="article-main">
       <header class="article-header">
         <p class="eyebrow">{meta.domain} · Trait Family</p>
         <div class="article-title">
-          <span class="article-icon"><GameIcon name={root?.icon ?? meta.icon} size={56} /></span>
+          <span class="article-icon"><GameIcon name={root?.icon ?? meta.icon} size={56} loading="eager" fetchpriority="high" /></span>
           <div><h1>{meta.label}</h1><code>{meta.id}</code></div>
         </div>
-        <p class="article-lede">{root ? `The ${meta.label} trait family and its ${subtraits.length} ideas.` : `A family of ${subtraits.length} culture ideas in the ${meta.domain.toLowerCase()} domain.`}</p>
+        <p class="article-lede">{familyDescription}</p>
       </header>
 
       {root && (
@@ -66,6 +76,23 @@ const next = position < families.length - 1 ? families[position + 1] : undefined
           {entry.modifiers.length > 0 ? <ModifierList modifiers={entry.modifiers} /> : <p class="notice">No effects extracted for this idea.</p>}
         </section>
       ))}
+
+      <section class="article-section" id="cultures">
+        <header class="starting-cultures-header">
+          <div>
+            <h2>Starting cultures</h2>
+            <p>Cultures with {meta.label} among their starting traits.</p>
+          </div>
+          <span>{startingCultures.length} {startingCultures.length === 1 ? 'culture' : 'cultures'}</span>
+        </header>
+        {startingCultures.length > 0 ? (
+          <ul class="starting-cultures">
+            {startingCultures.map((culture) => (
+              <li><a href={withBase(`/cultures/${culture.id}/`)}><i aria-hidden="true"></i><span>{culture.displayName}</span><b aria-hidden="true">›</b></a></li>
+            ))}
+          </ul>
+        ) : <p class="notice">No cultures start the game with this trait family.</p>}
+      </section>
 
       <nav class="article-pager" aria-label="Adjacent trait families">
         {previous ? <a href={withBase(`/culture-traits/${previous.id}/`)}><small>Previous family</small><strong>‹ {previous.label}</strong></a> : <span></span>}
@@ -103,5 +130,98 @@ const next = position < families.length - 1 ? families[position + 1] : undefined
   }
   .trait-member {
     scroll-margin-top: 5rem;
+  }
+  .starting-cultures-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--ink-2);
+  }
+  .article-section .starting-cultures-header h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .starting-cultures-header p {
+    margin: 0.35rem 0 0;
+    color: var(--text-muted, #888);
+    font-size: 0.75rem;
+  }
+  .starting-cultures-header > span {
+    flex: 0 0 auto;
+    padding: 0.3rem 0.65rem;
+    color: var(--text-muted, #888);
+    background: var(--surface-2);
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  .starting-cultures {
+    margin: 0;
+    padding: 0;
+    columns: 3 11rem;
+    column-gap: 2rem;
+    list-style: none;
+  }
+  .starting-cultures li {
+    break-inside: avoid;
+  }
+  .starting-cultures li a {
+    display: grid;
+    grid-template-columns: 5px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 0;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.3rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.75rem;
+  }
+  .starting-cultures li a:hover {
+    color: var(--accent-dark);
+    background: rgb(255 255 255 / 48%);
+  }
+  .starting-cultures i {
+    width: 5px;
+    height: 5px;
+    background: var(--border-strong);
+    border-radius: 50%;
+    transition: background 120ms ease, transform 120ms ease;
+  }
+  .starting-cultures a:hover i {
+    background: var(--accent);
+    transform: scale(1.35);
+  }
+  .starting-cultures a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .starting-cultures a b {
+    color: var(--border-strong);
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateX(-3px);
+    transition: color 120ms ease, opacity 120ms ease, transform 120ms ease;
+  }
+  .starting-cultures a:hover b,
+  .starting-cultures a:focus-visible b {
+    color: var(--accent);
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @media (max-width: 760px) {
+    .starting-cultures-header {
+      align-items: flex-start;
+    }
+    .starting-cultures {
+      columns: 1;
+    }
   }
 </style>

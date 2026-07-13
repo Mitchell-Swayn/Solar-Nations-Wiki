@@ -2,7 +2,7 @@
   {
     "id": "chauvinism",
     "type": "ideology-traits",
-    "displayName": "Chauvinism",
+    "displayName": "chauvinism",
     "fields": {
       "Name": "chauvinism",
       "AlignmentR": 0.33,
@@ -16,7 +16,7 @@
   {
     "id": "clericalDominance",
     "type": "ideology-traits",
-    "displayName": "Clerical Dominance",
+    "displayName": "clericalDominance",
     "fields": {
       "Name": "clericalDominance",
       "AlignmentR": 0.25,
@@ -44,7 +44,7 @@
   {
     "id": "deathWorship",
     "type": "ideology-traits",
-    "displayName": "Death Worship",
+    "displayName": "deathWorship",
     "fields": {
       "Name": "deathWorship",
       "AlignmentR": 0.25,
@@ -58,7 +58,7 @@
   {
     "id": "diplomaticPrimacy",
     "type": "ideology-traits",
-    "displayName": "Diplomatic Primacy",
+    "displayName": "diplomaticPrimacy",
     "fields": {
       "Name": "diplomaticPrimacy",
       "AlignmentR": 0,
@@ -72,7 +72,7 @@
   {
     "id": "distributism",
     "type": "ideology-traits",
-    "displayName": "Distributism",
+    "displayName": "distributism",
     "fields": {
       "Name": "distributism",
       "AlignmentR": 0.25,
@@ -86,7 +86,7 @@
   {
     "id": "divineEmpire",
     "type": "ideology-traits",
-    "displayName": "Divine Empire",
+    "displayName": "divineEmpire",
     "fields": {
       "Name": "divineEmpire",
       "AlignmentR": 0.5,
@@ -100,7 +100,7 @@
   {
     "id": "esotericism",
     "type": "ideology-traits",
-    "displayName": "Esotericism",
+    "displayName": "esotericism",
     "fields": {
       "Name": "esotericism",
       "AlignmentR": 0.2,
@@ -128,7 +128,7 @@
   {
     "id": "futurism",
     "type": "ideology-traits",
-    "displayName": "Futurism",
+    "displayName": "futurism",
     "fields": {
       "Name": "futurism",
       "AlignmentR": 0.2,
@@ -142,7 +142,7 @@
   {
     "id": "gleichschaltung",
     "type": "ideology-traits",
-    "displayName": "Gleichschaltung",
+    "displayName": "gleichschaltung",
     "fields": {
       "Name": "gleichschaltung",
       "AlignmentR": 0.33,
@@ -156,7 +156,7 @@
   {
     "id": "idealistic",
     "type": "ideology-traits",
-    "displayName": "Idealistic",
+    "displayName": "idealistic",
     "fields": {
       "Name": "idealistic",
       "AlignmentR": 0.25,
@@ -170,7 +170,7 @@
   {
     "id": "imperialism",
     "type": "ideology-traits",
-    "displayName": "Imperialism",
+    "displayName": "imperialism",
     "fields": {
       "Name": "imperialism",
       "AlignmentR": 0.25,
@@ -184,7 +184,7 @@
   {
     "id": "infirmocentric",
     "type": "ideology-traits",
-    "displayName": "Infirmocentric",
+    "displayName": "infirmocentric",
     "fields": {
       "Name": "infirmocentric",
       "AlignmentR": 0.25,
@@ -198,7 +198,7 @@
   {
     "id": "interventionism",
     "type": "ideology-traits",
-    "displayName": "Interventionism",
+    "displayName": "interventionism",
     "fields": {
       "Name": "interventionism",
       "AlignmentR": 0.1,
@@ -226,7 +226,7 @@
   {
     "id": "meritocracy",
     "type": "ideology-traits",
-    "displayName": "Meritocracy",
+    "displayName": "meritocracy",
     "fields": {
       "Name": "meritocracy",
       "AlignmentR": 0,
@@ -254,7 +254,7 @@
   {
     "id": "pacifism",
     "type": "ideology-traits",
-    "displayName": "Pacifism",
+    "displayName": "pacifism",
     "fields": {
       "Name": "pacifism",
       "AlignmentR": 0,
@@ -282,7 +282,7 @@
   {
     "id": "puritySpiral",
     "type": "ideology-traits",
-    "displayName": "Purity Spiral",
+    "displayName": "puritySpiral",
     "fields": {
       "Name": "puritySpiral",
       "AlignmentR": 0.5,
@@ -296,7 +296,7 @@
   {
     "id": "realistic",
     "type": "ideology-traits",
-    "displayName": "Realistic",
+    "displayName": "realistic",
     "fields": {
       "Name": "realistic",
       "AlignmentR": -0.1,
@@ -310,7 +310,7 @@
   {
     "id": "repressiveTolerance",
     "type": "ideology-traits",
-    "displayName": "Repressive Tolerance",
+    "displayName": "repressiveTolerance",
     "fields": {
       "Name": "repressiveTolerance",
       "AlignmentR": 0,
@@ -324,7 +324,7 @@
   {
     "id": "stateCapitalism",
     "type": "ideology-traits",
-    "displayName": "State Capitalism",
+    "displayName": "stateCapitalism",
     "fields": {
       "Name": "stateCapitalism",
       "AlignmentR": 0,
@@ -338,7 +338,7 @@
   {
     "id": "stateWorship",
     "type": "ideology-traits",
-    "displayName": "State Worship",
+    "displayName": "stateWorship",
     "fields": {
       "Name": "stateWorship",
       "AlignmentR": 0.33,
@@ -380,7 +380,7 @@
   {
     "id": "universalism",
     "type": "ideology-traits",
-    "displayName": "Universalism",
+    "displayName": "universalism",
     "fields": {
       "Name": "universalism",
       "AlignmentR": -0.1,
@@ -394,7 +394,7 @@
   {
     "id": "utopianism",
     "type": "ideology-traits",
-    "displayName": "Utopianism",
+    "displayName": "utopianism",
     "fields": {
       "Name": "utopianism",
       "AlignmentR": 0.25,
@@ -408,7 +408,7 @@
   {
     "id": "warmonger",
     "type": "ideology-traits",
-    "displayName": "Warmonger",
+    "displayName": "warmonger",
     "fields": {
       "Name": "warmonger",
       "AlignmentR": 0.2,

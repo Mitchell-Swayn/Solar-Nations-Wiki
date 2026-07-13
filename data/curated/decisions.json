@@ -1,70 +1,5 @@
 [
   {
-    "id": "terraformingMars",
-    "type": "decisions",
-    "displayName": "Terraforming Mars",
-    "fields": {
-      "Name": "terraformingMars",
-      "VisibleCondition": [
-        {
-          "Type": "isPlanetController",
-          "Args": [
-            "mars"
-          ]
-        }
-      ],
-      "Mission": {
-        "Name": "Mars Terraforming: Atmospherics",
-        "Icon": "terraforming",
-        "OwnerFaction": "None",
-        "Conditions": [
-          {
-            "Type": "hasPlanetProjects",
-            "Args": [
-              "mars",
-              "atmosformer",
-              "3"
-            ]
-          }
-        ],
-        "Rewards": [
-          {
-            "Type": "terraformPlanet",
-            "Args": [
-              "mars",
-              "mars_terraform1"
-            ]
-          },
-          {
-            "Type": "addStability",
-            "Args": [
-              "5"
-            ]
-          },
-          {
-            "Type": "addMission",
-            "Args": [
-              "marsTerraform2"
-            ]
-          },
-          {
-            "Type": "spawnNotification",
-            "Args": [
-              "terraformNotification",
-              "mars",
-              "atmospheric"
-            ]
-          }
-        ],
-        "StartTime": 0,
-        "Type": "terraformingMars"
-      }
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "terraformingVenus",
     "type": "decisions",
     "displayName": "Terraforming Venus",
@@ -123,6 +58,71 @@
         ],
         "StartTime": 0,
         "Type": "terraformingVenus"
+      }
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "terraformingMars",
+    "type": "decisions",
+    "displayName": "terraformingMars",
+    "fields": {
+      "Name": "terraformingMars",
+      "VisibleCondition": [
+        {
+          "Type": "isPlanetController",
+          "Args": [
+            "mars"
+          ]
+        }
+      ],
+      "Mission": {
+        "Name": "Mars Terraforming: Atmospherics",
+        "Icon": "terraforming",
+        "OwnerFaction": "None",
+        "Conditions": [
+          {
+            "Type": "hasPlanetProjects",
+            "Args": [
+              "mars",
+              "atmosformer",
+              "3"
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Type": "terraformPlanet",
+            "Args": [
+              "mars",
+              "mars_terraform1"
+            ]
+          },
+          {
+            "Type": "addStability",
+            "Args": [
+              "5"
+            ]
+          },
+          {
+            "Type": "addMission",
+            "Args": [
+              "marsTerraform2"
+            ]
+          },
+          {
+            "Type": "spawnNotification",
+            "Args": [
+              "terraformNotification",
+              "mars",
+              "atmospheric"
+            ]
+          }
+        ],
+        "StartTime": 0,
+        "Type": "terraformingMars"
       }
     },
     "modifiers": [],

@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import ScenarioTabs from '../../../components/ScenarioTabs.astro';
+import GameIcon from '../../../components/GameIcon.astro';
+import CountryFlagIcon from '../../../components/CountryFlagIcon.astro';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../../lib/categories';
+import { getEntry, getDisplayName } from '../../../lib/data';
+import { getCountryPath } from '../../../lib/countries';
+import { getRegionOwner, getRegionPath, getRegionScenarios, getRegionTerrainIcon } from '../../../lib/regions';
+import { withBase } from '../../../lib/base';
+
+export function getStaticPaths() {
+  return getRegionScenarios().flatMap((scenario) => scenario.regions.map((region) => ({
+    params: { scenario: scenario.id, region: region.id },
+    props: { scenario, region },
+  })));
+}
+
+const { scenario, region } = Astro.props as {
+  scenario: ReturnType<typeof getRegionScenarios>[number];
+  region: ReturnType<typeof getRegionScenarios>[number]['regions'][number];
+};
+const category = CATEGORY_BY_SLUG.regions;
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const owner = getRegionOwner(scenario, region);
+const planet = getEntry('planetary-bodies', region.planet);
+const specialization = region.specialization ? getEntry('specializations', region.specialization) : undefined;
+const isCapital = owner?.capitalRegion === region.id;
+const regionIcon = getRegionTerrainIcon(region);
+const number = new Intl.NumberFormat('en', { maximumFractionDigits: 0 });
+const percent = new Intl.NumberFormat('en', { style: 'percent', maximumFractionDigits: 1 });
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+const scenarioTabs = getRegionScenarios().flatMap((candidate) => {
+  const match = candidate.regions.find((item) => item.name === region.name && item.planet === region.planet);
+  return match ? [{ id: candidate.id, label: candidate.name, href: withBase(getRegionPath(candidate.id, match.id)), active: candidate.id === scenario.id }] : [];
+});
+const scenarioRegions = scenario.regions;
+const position = scenarioRegions.findIndex((item) => item.id === region.id);
+const previous = position > 0 ? scenarioRegions[position - 1] : undefined;
+const next = position < scenarioRegions.length - 1 ? scenarioRegions[position + 1] : undefined;
+---
+
+<BaseLayout title={`${region.name} — ${scenario.name}`} description={`${region.name} starting-region details in the ${scenario.name} scenario.`} activeType="regions">
+  <Breadcrumbs group={group?.label} category="Regions" categoryHref="/regions/" current={region.name} />
+  <article class="article-layout region-article"><div class="article-main">
+    <header class="article-header">
+      <p class="eyebrow">{scenario.name} · Region</p>
+      <div class="article-title">
+        <span class="article-icon"><GameIcon name={regionIcon} size={56} loading="eager" fetchpriority="high" /></span>
+        <div><h1>{region.name}</h1><code>{region.id}</code></div>
+      </div>
+      <p class="article-lede">{region.regionType === 'planetary' ? 'An unpopulated starting region' : 'A populated starting region'} on {planet?.displayName ?? region.planet}{owner ? ` controlled by ${owner.name}` : ' with no starting owner'}.</p>
+    </header>
+
+    <ScenarioTabs tabs={scenarioTabs} />
+
+    <dl class="region-metrics">
+      <div><GameIcon name="population" size={24} /><dt>Population</dt><dd>{number.format(region.population)}</dd></div>
+      <div><GameIcon name="development" size={24} /><dt>Development</dt><dd>{region.regionType === 'economic' ? percent.format(region.development) : '—'}</dd></div>
+      <div><GameIcon name="education" size={24} /><dt>Education</dt><dd>{region.regionType === 'economic' ? percent.format(region.education) : '—'}</dd></div>
+      <div><GameIcon name="territory" size={24} /><dt>Provinces</dt><dd>{region.provinceCount.toLocaleString()}</dd></div>
+      <div><GameIcon name="planet" size={24} /><dt>Planetary body</dt><dd>{planet ? <a href={withBase(`/planetary-bodies/${planet.id}/`)}>{planet.displayName}</a> : region.planet}</dd></div>
+    </dl>
+
+    <section class="article-section" id="administration"><h2>Administration</h2><div class="region-facts">
+      <div><small>Owner</small>{owner ? <a class="owner-link" href={withBase(getCountryPath(scenario.id, owner.id))}><CountryFlagIcon flag={owner.flag} countryName={owner.name} size={30} /><strong>{owner.name}</strong></a> : <strong>Unowned</strong>}</div>
+      <div><small>Status</small><strong>{isCapital ? 'Capital region' : region.regionType === 'planetary' ? 'Unpopulated region' : 'Populated region'}</strong></div>
+      <div><small>Specialization</small>{specialization ? <a class="fact-link" href={withBase(`/specializations/${specialization.id}/`)}>{specialization.icon && <GameIcon name={specialization.icon} size={24} />}<strong>{specialization.displayName}</strong></a> : <strong>None</strong>}</div>
+      <div><small>Planetary body</small>{planet ? <a class="fact-link" href={withBase(`/planetary-bodies/${planet.id}/`)}>{planet.icon && <GameIcon name={planet.icon} size={24} />}<strong>{planet.displayName}</strong></a> : <strong>{region.planet}</strong>}</div>
+    </div></section>
+
+    <section class="article-section" id="terrain"><h2>Terrain</h2>
+      {region.terrains.length > 0 ? <div class="region-terrains">{region.terrains.map((item) => {
+        const terrain = getEntry('terrain-types', item.id);
+        return terrain ? <a href={withBase(`/terrain-types/${terrain.id}/`)}>
+          <span>{terrain.icon && <GameIcon name={terrain.icon} size={30} />}</span>
+          <span><strong>{terrain.displayName}</strong><small>{item.provinces} {item.provinces === 1 ? 'province' : 'provinces'}</small></span>
+        </a> : <div><span></span><span><strong>{item.id}</strong><small>{item.provinces} {item.provinces === 1 ? 'province' : 'provinces'}</small></span></div>;
+      })}</div> : <p class="notice">No province terrain data.</p>}
+    </section>
+
+    <section class="article-section" id="deposits"><h2>Deposits</h2>
+      {region.deposits.length > 0 ? <div class="region-deposits">{region.deposits.map((item) => {
+        const deposit = getEntry('deposits', item.id);
+        return <a href={deposit ? withBase(`/deposits/${deposit.id}/`) : undefined} class:list={{ unavailable: !deposit }}>
+          <span>{deposit?.icon && <GameIcon name={deposit.icon} size={30} />}</span>
+          <span><strong>{deposit?.displayName ?? getDisplayName(['deposits'], item.id) ?? item.id}</strong><small>{item.id}</small></span>
+          <b>{item.quantity.toLocaleString()}</b>
+        </a>;
+      })}</div> : <p class="notice">No starting deposits.</p>}
+    </section>
+
+    <section class="article-section" id="cultures"><h2>Population by culture</h2>
+      {region.cultures.length > 0 ? <div class="region-cultures">{region.cultures.map((item) => {
+        const culture = getEntry('cultures', item.id);
+        return <a href={culture ? withBase(`/cultures/${culture.id}/?scenario=${scenario.id}`) : undefined} class:list={{ unavailable: !culture }}>
+          <span><strong>{culture?.displayName ?? getDisplayName(['cultures'], item.id) ?? item.id}</strong><small>{percent.format(item.share)} of region</small></span>
+          <b>{compactNumber.format(region.population * item.share)}</b>
+        </a>;
+      })}</div> : <p class="notice">No starting population cultures.</p>}
+    </section>
+
+    <nav class="article-pager" aria-label="Adjacent regions">
+      {previous ? <a href={withBase(getRegionPath(scenario.id, previous.id))}><small>Previous</small><strong>‹ {previous.name}</strong></a> : <span></span>}
+      {next && <a href={withBase(getRegionPath(scenario.id, next.id))} class="next"><small>Next</small><strong>{next.name} ›</strong></a>}
+    </nav>
+  </div></article>
+</BaseLayout>
+
+<style>
+  .region-metrics { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 24px 0 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+  .region-metrics > div { display: grid; grid-template-columns: 28px minmax(0, 1fr); grid-template-rows: auto auto; align-items: center; gap: 2px 9px; padding: 11px 14px; background: var(--surface); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .region-metrics :global(.game-icon) { grid-row: 1 / 3; }
+  .region-metrics dt { color: var(--text-muted); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+  .region-metrics dd { overflow: hidden; margin: 0; font-size: 11px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+  .region-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .region-facts > div { min-width: 0; padding: 11px 13px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .region-facts small { display: block; margin-bottom: 6px; color: var(--text-muted); font-size: 8px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+  .owner-link, .fact-link { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .owner-link strong, .fact-link strong { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+  .region-deposits, .region-cultures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .region-terrains { display: flex; flex-wrap: wrap; gap: 8px; }
+  .region-terrains > a, .region-terrains > div { display: grid; grid-template-columns: 34px auto; align-items: center; gap: 8px; min-width: 150px; padding: 8px 11px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .region-terrains strong, .region-terrains small { display: block; }
+  .region-terrains strong { font-size: 10px; }
+  .region-terrains small { margin-top: 2px; color: var(--text-muted); font-size: 8px; }
+  .region-deposits > a, .region-cultures > a { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: 9px; min-height: 56px; padding: 8px 11px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .region-cultures > a { grid-template-columns: minmax(0, 1fr) auto; }
+  .region-deposits > a:hover, .region-cultures > a:hover { border-color: var(--border-strong); }
+  .region-deposits strong, .region-deposits small, .region-cultures strong, .region-cultures small { display: block; }
+  .region-deposits strong, .region-cultures strong { font-size: 10px; }
+  .region-deposits small, .region-cultures small { margin-top: 2px; color: var(--text-muted); font-size: 8px; }
+  .region-deposits b, .region-cultures b { color: var(--ink); font-size: 12px; }
+  .unavailable { pointer-events: none; }
+  @media (max-width: 850px) { .region-metrics, .region-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 580px) { .region-deposits, .region-cultures { grid-template-columns: 1fr; } }
+</style>

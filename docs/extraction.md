@@ -26,7 +26,29 @@ This runs:
 2. **`retoc to-legacy`** — converts define assets to legacy `.uexp` format in `data/raw/legacy-all/`
 3. **`tools/parse_legacy.py`** — parses binary exports into `data/raw/Defines/*.json` and `data/raw/Localization/en.json`
 4. **CUE4Parse full export** (when `tools/jmap_dumper/mappings.usmap` and the .NET SDK are present) — `tools/cue4-export` dumps every define DataTable with complete property values to `data/raw/DefinesFull/`, and `tools/convert_full_defines.py` rewrites them over `data/raw/Defines/` as flat row arrays
-5. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
+5. **`tools/gvas-export` + `scripts/extract-scenarios.ts`** — parses both base-game GVAS scenario saves, keeps their country states separate, joins countries to starting regions, and validates/copies every referenced flag
+6. **`tools/extract_packed_icons.py`** — decodes packed icons and renders static planetary portraits from the game's equirectangular surface textures (requires ImageMagick)
+7. **`scripts/normalize.ts`** — writes `data/curated/` and copies flags/icons
+
+The scenario parser requires Rust/Cargo. It reads:
+
+```
+Saved/Scenarios/Modern Day.sav
+Saved/Scenarios/scenario_default.sav
+```
+
+and writes separate curated datasets:
+
+```
+data/curated/scenarios/age-of-information.json
+data/curated/scenarios/twilight-of-modernity.json
+```
+
+Each country record includes its source key and logic tag, name, flag, colour,
+capital, government, reforms, cultures, factions, technologies, stockpiles,
+taxes, territory, population, and scenario briefing where the briefing tag
+matches a country. Unmatched briefing records remain in the scenario's
+`profiles` array instead of being silently discarded.
 
 With the full export active, all ~85 define tables are extracted with exact field names and values (planet physics, culture traits, policies, edicts, missions, espionage operations, and more), producing 3,000+ wiki pages across 70+ categories.
 
@@ -127,6 +149,7 @@ The normalize script requires extracted data in `data/raw/Defines/` — everythi
 |--------|----------|----------|
 | Flags | `Saved/Flags/` | ~502 country flag PNGs |
 | Icons | `Saved/Icons/` | Game icon PNGs |
+| Countries | `Saved/Scenarios/*.sav` | Scenario-specific country, government, culture, economy, and territory data |
 
 ## Verifying extraction
 

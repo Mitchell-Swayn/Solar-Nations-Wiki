@@ -1,5 +1,47 @@
 [
   {
+    "id": "americanPolitics_newAmericanCenturyEffect",
+    "type": "static-modifiers",
+    "displayName": "A New American Century",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_newAmericanCenturyEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "baseEconomicOutputMult",
+        "value": 0.2
+      },
+      {
+        "key": "resourceIncomeMult",
+        "value": 0.2
+      },
+      {
+        "key": "popGrowthMult",
+        "value": 0.2
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": 0.25
+      },
+      {
+        "key": "allResourceCapacityMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "futurist_accelerationClubsEffect",
     "type": "static-modifiers",
     "displayName": "Acceleration Clubs",
@@ -748,7 +790,7 @@
   {
     "id": "amenitiesEffect",
     "type": "static-modifiers",
-    "displayName": "Amenities Effect",
+    "displayName": "amenitiesEffect",
     "icon": "",
     "fields": {
       "Name": "amenitiesEffect",
@@ -760,269 +802,6 @@
     "modifiers": [
       {
         "key": "industryThroughputMult",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_combinedArmsEffect",
-    "type": "static-modifiers",
-    "displayName": "American Politics Combined Arms Effect",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_combinedArmsEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unitAttackMult",
-        "value": 0.1
-      },
-      {
-        "key": "unitMoraleMult",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_corruptionPurged",
-    "type": "static-modifiers",
-    "displayName": "American Politics Corruption Purged",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_corruptionPurged",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "factionLoyaltyAdd",
-        "value1": "bureaucracy",
-        "value": -0.05
-      },
-      {
-        "key": "stabilityGainAdd",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_culturalRenewalEffect",
-    "type": "static-modifiers",
-    "displayName": "American Politics Cultural Renewal Effect",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_culturalRenewalEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "projectEfficiency",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_dividedPolitics",
-    "type": "static-modifiers",
-    "displayName": "American Politics Divided Politics",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_dividedPolitics",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "privilegeGrantCost",
-        "value": -0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_newAmericanCenturyEffect",
-    "type": "static-modifiers",
-    "displayName": "American Politics New American Century Effect",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_newAmericanCenturyEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "baseEconomicOutputMult",
-        "value": 0.2
-      },
-      {
-        "key": "resourceIncomeMult",
-        "value": 0.2
-      },
-      {
-        "key": "popGrowthMult",
-        "value": 0.2
-      },
-      {
-        "key": "unitMoraleMult",
-        "value": 0.25
-      },
-      {
-        "key": "allResourceCapacityMult",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_renewedMilitary",
-    "type": "static-modifiers",
-    "displayName": "American Politics Renewed Military",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_renewedMilitary",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unitReinforceRateMult",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_renewedUnity",
-    "type": "static-modifiers",
-    "displayName": "American Politics Renewed Unity",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_renewedUnity",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unityMult",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_siliconValleyEffect",
-    "type": "static-modifiers",
-    "displayName": "American Politics Silicon Valley Effect",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_siliconValleyEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "researchMult",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "americanPolitics_spaceColonizationEffect",
-    "type": "static-modifiers",
-    "displayName": "American Politics Space Colonization Effect",
-    "icon": "",
-    "fields": {
-      "Name": "americanPolitics_spaceColonizationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "surveyEfficiency",
-        "value": 0.25
-      },
-      {
-        "key": "colonyProgressMult",
         "value": 0.25
       }
     ],
@@ -1116,6 +895,40 @@
         "key": "factionLoyaltyAdd",
         "value1": "laborer",
         "value": 0.06
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "mechanistCoalescence_antiImperialismEffect",
+    "type": "static-modifiers",
+    "displayName": "Anti-Imperialist Expansion",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_antiImperialismEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": 5
+      },
+      {
+        "key": "integrationCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "warExhaustionMult",
+        "value": -0.2
       }
     ],
     "prerequisites": [],
@@ -1225,7 +1038,7 @@
   {
     "id": "atmospherePressureEffect",
     "type": "static-modifiers",
-    "displayName": "Atmosphere Pressure Effect",
+    "displayName": "atmospherePressureEffect",
     "icon": "",
     "fields": {
       "Name": "atmospherePressureEffect",
@@ -1267,6 +1080,33 @@
       {
         "key": "warExhaustionMult",
         "value": -0.35
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "mechanistCoalescence_roboticArmyEffect",
+    "type": "static-modifiers",
+    "displayName": "Authorize the Robotic Army",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_roboticArmyEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "resourceCapacityMult",
+        "value1": "robots",
+        "value": 0.2
       }
     ],
     "prerequisites": [],
@@ -1587,6 +1427,37 @@
     ]
   },
   {
+    "id": "mechanistCoalescence_primeRadiantEffect",
+    "type": "static-modifiers",
+    "displayName": "Awaken the Prime Radiant",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_primeRadiantEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.1
+      },
+      {
+        "key": "situationVariableAdd",
+        "value1": "mechanist_17Support",
+        "value": 0.02
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "bankruptEffect",
     "type": "static-modifiers",
     "displayName": "Bankruptcy",
@@ -1711,6 +1582,32 @@
         "key": "crisisSpawnChanceAdd",
         "value1": "separatistCrisis",
         "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "unitedColoniesSituation_beltColonizationEffect",
+    "type": "static-modifiers",
+    "displayName": "Belt Colonization",
+    "icon": "",
+    "fields": {
+      "Name": "unitedColoniesSituation_beltColonizationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.25
       }
     ],
     "prerequisites": [],
@@ -1906,47 +1803,9 @@
     ]
   },
   {
-    "id": "capitalRegionModifier",
-    "type": "static-modifiers",
-    "displayName": "Capital Region",
-    "icon": "",
-    "fields": {
-      "Name": "capitalRegionModifier",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "projectEfficiency",
-        "value": 0.1
-      },
-      {
-        "key": "adminEfficiencyAdd",
-        "value": 0.5
-      },
-      {
-        "key": "projectBuildSpeedMult",
-        "value": 1
-      },
-      {
-        "key": "unrestChangeAdd",
-        "value": -0.05
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
     "id": "casteSystem_brahminGovernanceEffect",
     "type": "static-modifiers",
-    "displayName": "Caste System Brahmin Governance Effect",
+    "displayName": "Brahmin Governance",
     "icon": "",
     "fields": {
       "Name": "casteSystem_brahminGovernanceEffect",
@@ -1976,12 +1835,12 @@
     ]
   },
   {
-    "id": "casteSystem_hinduPassivityEffect",
+    "id": "jovianCorporation_callistoEffect",
     "type": "static-modifiers",
-    "displayName": "Caste System Hindu Passivity Effect",
+    "displayName": "Callisto",
     "icon": "",
     "fields": {
-      "Name": "casteSystem_hinduPassivityEffect",
+      "Name": "jovianCorporation_callistoEffect",
       "Icon": "",
       "FinishEffect": [],
       "Hidden": false,
@@ -1989,12 +1848,9 @@
     },
     "modifiers": [
       {
-        "key": "integrationCostMult",
-        "value": -0.1
-      },
-      {
-        "key": "workforceRatioAdd",
-        "value": 0.1
+        "key": "resourceModifier",
+        "value1": "culture",
+        "value": 2
       }
     ],
     "prerequisites": [],
@@ -2006,12 +1862,12 @@
     ]
   },
   {
-    "id": "casteSystem_meritocraticGovernmentEffect",
+    "id": "capitalRegionModifier",
     "type": "static-modifiers",
-    "displayName": "Caste System Meritocratic Government Effect",
+    "displayName": "Capital Region",
     "icon": "",
     "fields": {
-      "Name": "casteSystem_meritocraticGovernmentEffect",
+      "Name": "capitalRegionModifier",
       "Icon": "",
       "FinishEffect": [],
       "Hidden": false,
@@ -2019,85 +1875,20 @@
     },
     "modifiers": [
       {
-        "key": "situationVariableAdd",
-        "value1": "casteSystem_rigidity",
-        "value": -0.005
-      },
-      {
-        "key": "factionPowerAdd",
-        "value1": "middleClass",
+        "key": "projectEfficiency",
         "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "casteSystem_ultimateKarmaEffect",
-    "type": "static-modifiers",
-    "displayName": "Caste System Ultimate Karma Effect",
-    "icon": "",
-    "fields": {
-      "Name": "casteSystem_ultimateKarmaEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "situationVariableAdd",
-        "value1": "casteSystem_rigidity",
-        "value": 0.05
       },
       {
-        "key": "unityMult",
+        "key": "adminEfficiencyAdd",
         "value": 0.5
       },
       {
-        "key": "factionPowerAdd",
-        "value1": "clergy",
-        "value": 0.1
+        "key": "projectBuildSpeedMult",
+        "value": 1
       },
       {
-        "key": "projectBuildCostMult",
-        "value": -0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "casteSystem_unrestrainedInnovationEffect",
-    "type": "static-modifiers",
-    "displayName": "Caste System Unrestrained Innovation Effect",
-    "icon": "",
-    "fields": {
-      "Name": "casteSystem_unrestrainedInnovationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "situationVariableAdd",
-        "value1": "casteSystem_rigidity",
-        "value": -0.005
-      },
-      {
-        "key": "educationEfficiency",
-        "value": 0.1
+        "key": "unrestChangeAdd",
+        "value": -0.05
       }
     ],
     "prerequisites": [],
@@ -2142,7 +1933,7 @@
   {
     "id": "characterCapturedEffect",
     "type": "static-modifiers",
-    "displayName": "Character Captured Effect",
+    "displayName": "characterCapturedEffect",
     "icon": "",
     "fields": {
       "Name": "characterCapturedEffect",
@@ -2570,7 +2361,7 @@
   {
     "id": "cohesionEffect",
     "type": "static-modifiers",
-    "displayName": "Cohesion Effect",
+    "displayName": "cohesionEffect",
     "icon": "",
     "fields": {
       "Name": "cohesionEffect",
@@ -2587,6 +2378,36 @@
       {
         "key": "stabilityGainAdd",
         "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "americanPolitics_combinedArmsEffect",
+    "type": "static-modifiers",
+    "displayName": "Combined Arms Revival",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_combinedArmsEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unitAttackMult",
+        "value": 0.1
+      },
+      {
+        "key": "unitMoraleMult",
+        "value": 0.1
       }
     ],
     "prerequisites": [],
@@ -2897,6 +2718,32 @@
       {
         "key": "interplanetaryCultureModifier",
         "value": 0.16
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "americanPolitics_culturalRenewalEffect",
+    "type": "static-modifiers",
+    "displayName": "Cultural Renewal",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_culturalRenewalEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "projectEfficiency",
+        "value": 0.1
       }
     ],
     "prerequisites": [],
@@ -4311,9 +4158,40 @@
     ]
   },
   {
+    "id": "russiaSituation_dealWithOligarchsEffect",
+    "type": "static-modifiers",
+    "displayName": "Deal with the Oligarchs",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_dealWithOligarchsEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "upperClass",
+        "value": 0.1
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "debtEffect",
     "type": "static-modifiers",
-    "displayName": "Debt Effect",
+    "displayName": "Debt",
     "icon": "",
     "fields": {
       "Name": "debtEffect",
@@ -4361,6 +4239,33 @@
       {
         "key": "warExhaustionMult",
         "value": -0.03
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation_borderDefenseEffect",
+    "type": "static-modifiers",
+    "displayName": "Defend the Borderlands",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_borderDefenseEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unitStatAdd",
+        "value1": "entrenchment",
+        "value": 25
       }
     ],
     "prerequisites": [],
@@ -5612,7 +5517,7 @@
   {
     "id": "difficultyEffect",
     "type": "static-modifiers",
-    "displayName": "Difficulty Effect",
+    "displayName": "Difficulty",
     "icon": "",
     "fields": {
       "Name": "difficultyEffect",
@@ -7348,6 +7253,32 @@
     ]
   },
   {
+    "id": "americanPolitics_dividedPolitics",
+    "type": "static-modifiers",
+    "displayName": "Empire Divided",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_dividedPolitics",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "privilegeGrantCost",
+        "value": -0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "expansionist_endlessFrontierEffect",
     "type": "static-modifiers",
     "displayName": "Endless Frontier",
@@ -7383,9 +7314,41 @@
     ]
   },
   {
+    "id": "jovianCorporation_enforcersEffect",
+    "type": "static-modifiers",
+    "displayName": "Enforcers",
+    "icon": "",
+    "fields": {
+      "Name": "jovianCorporation_enforcersEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "military",
+        "value": 0.1
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "corporate",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "entrenchEffect",
     "type": "static-modifiers",
-    "displayName": "Entrench Effect",
+    "displayName": "entrenchEffect",
     "icon": "entrenchment",
     "fields": {
       "Name": "entrenchEffect",
@@ -7475,6 +7438,37 @@
     ]
   },
   {
+    "id": "russiaSituation_eurasianismEffect",
+    "type": "static-modifiers",
+    "displayName": "Eurasianism",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_eurasianismEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "assimilationMult",
+        "value": 0.25
+      },
+      {
+        "key": "resourceModifier",
+        "value1": "culture",
+        "value": 2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "expModifier",
     "type": "static-modifiers",
     "displayName": "Experience",
@@ -7538,7 +7532,7 @@
   {
     "id": "exploitEffect",
     "type": "static-modifiers",
-    "displayName": "Exploit Effect",
+    "displayName": "Exploit",
     "icon": "",
     "fields": {
       "Name": "exploitEffect",
@@ -7646,7 +7640,7 @@
   {
     "id": "falseFlagEffect",
     "type": "static-modifiers",
-    "displayName": "False Flag Effect",
+    "displayName": "falseFlagEffect",
     "icon": "",
     "fields": {
       "Name": "falseFlagEffect",
@@ -8101,6 +8095,36 @@
     ]
   },
   {
+    "id": "jovianCorporation_ganymedeEffect",
+    "type": "static-modifiers",
+    "displayName": "Ganymede",
+    "icon": "",
+    "fields": {
+      "Name": "jovianCorporation_ganymedeEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.2
+      },
+      {
+        "key": "surveyEfficiency",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "expansionist_garrisonWorldsEffect",
     "type": "static-modifiers",
     "displayName": "Garrison Worlds",
@@ -8442,7 +8466,7 @@
   {
     "id": "gravitationEffect",
     "type": "static-modifiers",
-    "displayName": "Gravitation Effect",
+    "displayName": "gravitationEffect",
     "icon": "",
     "fields": {
       "Name": "gravitationEffect",
@@ -8534,7 +8558,7 @@
   {
     "id": "habitabilityEffect",
     "type": "static-modifiers",
-    "displayName": "Habitability Effect",
+    "displayName": "Habitability",
     "icon": "",
     "fields": {
       "Name": "habitabilityEffect",
@@ -8626,7 +8650,7 @@
   {
     "id": "high_income_taxEffect",
     "type": "static-modifiers",
-    "displayName": "High Income Tax Effect",
+    "displayName": "high_income_taxEffect",
     "icon": "",
     "fields": {
       "Name": "high_income_taxEffect",
@@ -8644,6 +8668,36 @@
       {
         "key": "stabilityGainAdd",
         "value": -1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "casteSystem_hinduPassivityEffect",
+    "type": "static-modifiers",
+    "displayName": "Hindu Passivity",
+    "icon": "",
+    "fields": {
+      "Name": "casteSystem_hinduPassivityEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "integrationCostMult",
+        "value": -0.1
+      },
+      {
+        "key": "workforceRatioAdd",
+        "value": 0.1
       }
     ],
     "prerequisites": [],
@@ -8777,6 +8831,32 @@
     ]
   },
   {
+    "id": "mechanistCoalescence_ideologicalWeaponsEffect",
+    "type": "static-modifiers",
+    "displayName": "Ideological Weapons Program",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_ideologicalWeaponsEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "espionageOffense",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "unleashBioweaponSituation_immuneStockpilesEffect",
     "type": "static-modifiers",
     "displayName": "Immune Stockpiles",
@@ -8810,7 +8890,7 @@
   {
     "id": "income_tax_taxEffect",
     "type": "static-modifiers",
-    "displayName": "Income Tax Tax Effect",
+    "displayName": "income_tax_taxEffect",
     "icon": "",
     "fields": {
       "Name": "income_tax_taxEffect",
@@ -8882,7 +8962,7 @@
   {
     "id": "integrationEffect",
     "type": "static-modifiers",
-    "displayName": "Integration Effect",
+    "displayName": "Integration",
     "icon": "",
     "fields": {
       "Name": "integrationEffect",
@@ -8908,7 +8988,7 @@
   {
     "id": "intentionalFailEffect",
     "type": "static-modifiers",
-    "displayName": "Intentional Fail Effect",
+    "displayName": "intentionalFailEffect",
     "icon": "",
     "fields": {
       "Name": "intentionalFailEffect",
@@ -8921,6 +9001,32 @@
       {
         "key": "operationDifficulty",
         "value": -25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation_internalPoliticsEffect",
+    "type": "static-modifiers",
+    "displayName": "Internal Politics",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_internalPoliticsEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "privilegeGrantCost",
+        "value": -0.2
       }
     ],
     "prerequisites": [],
@@ -8963,12 +9069,12 @@
     ]
   },
   {
-    "id": "jovianCorporation_callistoEffect",
+    "id": "unitedColoniesSituation_interplanetaryTransportEffect",
     "type": "static-modifiers",
-    "displayName": "Jovian Corporation Callisto Effect",
+    "displayName": "Interplanetary Transport",
     "icon": "",
     "fields": {
-      "Name": "jovianCorporation_callistoEffect",
+      "Name": "unitedColoniesSituation_interplanetaryTransportEffect",
       "Icon": "",
       "FinishEffect": [],
       "Hidden": false,
@@ -8976,98 +9082,12 @@
     },
     "modifiers": [
       {
-        "key": "resourceModifier",
-        "value1": "culture",
-        "value": 2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "jovianCorporation_enforcersEffect",
-    "type": "static-modifiers",
-    "displayName": "Jovian Corporation Enforcers Effect",
-    "icon": "",
-    "fields": {
-      "Name": "jovianCorporation_enforcersEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "factionLoyaltyAdd",
-        "value1": "military",
-        "value": 0.1
+        "key": "integrationCostMult",
+        "value": -0.1
       },
       {
-        "key": "factionPowerAdd",
-        "value1": "corporate",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "jovianCorporation_ganymedeEffect",
-    "type": "static-modifiers",
-    "displayName": "Jovian Corporation Ganymede Effect",
-    "icon": "",
-    "fields": {
-      "Name": "jovianCorporation_ganymedeEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "colonyProgressMult",
+        "key": "unityMult",
         "value": 0.2
-      },
-      {
-        "key": "surveyEfficiency",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "jovianCorporation_workerAutomationEffect",
-    "type": "static-modifiers",
-    "displayName": "Jovian Corporation Worker Automation Effect",
-    "icon": "",
-    "fields": {
-      "Name": "jovianCorporation_workerAutomationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "projectBuildCostMult",
-        "value1": "automatedFactory",
-        "value": -0.25
       }
     ],
     "prerequisites": [],
@@ -9453,35 +9473,9 @@
     ]
   },
   {
-    "id": "lowAdminEfficiencyEffect",
-    "type": "static-modifiers",
-    "displayName": "Low Admin Efficiency Effect",
-    "icon": "",
-    "fields": {
-      "Name": "lowAdminEfficiencyEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "assimilationOffense",
-        "value": -1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
     "id": "low_income_taxEffect",
     "type": "static-modifiers",
-    "displayName": "Low Income Tax Effect",
+    "displayName": "low_income_taxEffect",
     "icon": "",
     "fields": {
       "Name": "low_income_taxEffect",
@@ -9499,6 +9493,32 @@
         "key": "factionLoyaltyAdd",
         "value1": "laborer",
         "value": -0.3
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "lowAdminEfficiencyEffect",
+    "type": "static-modifiers",
+    "displayName": "lowAdminEfficiencyEffect",
+    "icon": "",
+    "fields": {
+      "Name": "lowAdminEfficiencyEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "assimilationOffense",
+        "value": -1
       }
     ],
     "prerequisites": [],
@@ -9860,6 +9880,32 @@
     ]
   },
   {
+    "id": "unitedColoniesSituation_martianMilitaryEffect",
+    "type": "static-modifiers",
+    "displayName": "Martian Military",
+    "icon": "",
+    "fields": {
+      "Name": "unitedColoniesSituation_martianMilitaryEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unitMoraleMult",
+        "value": 0.15
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "marsSituation_defenseGridEffect",
     "type": "static-modifiers",
     "displayName": "Martian: Defense Grid",
@@ -10075,193 +10121,6 @@
     ]
   },
   {
-    "id": "mechanistCoalescence_antiImperialismEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence Anti Imperialism Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_antiImperialismEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "opinionModifier",
-        "value": 5
-      },
-      {
-        "key": "integrationCostMult",
-        "value": -0.1
-      },
-      {
-        "key": "warExhaustionMult",
-        "value": -0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "mechanistCoalescence_finalCountdownEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence Final Countdown Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_finalCountdownEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "opinionModifier",
-        "value": -25
-      },
-      {
-        "key": "integrationCostMult",
-        "value": -0.3
-      },
-      {
-        "key": "unitSpeedMult",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "mechanistCoalescence_ideologicalWeaponsEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence Ideological Weapons Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_ideologicalWeaponsEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "espionageOffense",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "mechanistCoalescence_newMechanistManEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence New Mechanist Man Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_newMechanistManEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unitVulnMult",
-        "value1": "psychological",
-        "value": -0.2
-      },
-      {
-        "key": "unityMult",
-        "value": 0.2
-      },
-      {
-        "key": "espionageDefense",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "mechanistCoalescence_primeRadiantEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence Prime Radiant Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_primeRadiantEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "researchMult",
-        "value": 0.1
-      },
-      {
-        "key": "situationVariableAdd",
-        "value1": "mechanist_17Support",
-        "value": 0.02
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "mechanistCoalescence_roboticArmyEffect",
-    "type": "static-modifiers",
-    "displayName": "Mechanist Coalescence Robotic Army Effect",
-    "icon": "",
-    "fields": {
-      "Name": "mechanistCoalescence_roboticArmyEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "resourceCapacityMult",
-        "value1": "robots",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
     "id": "unleashMemeticVirusSituation_publicMemoryEffect",
     "type": "static-modifiers",
     "displayName": "Memetic Virus: Public Memory",
@@ -10324,9 +10183,41 @@
     ]
   },
   {
+    "id": "casteSystem_meritocraticGovernmentEffect",
+    "type": "static-modifiers",
+    "displayName": "Meritocratic Government",
+    "icon": "",
+    "fields": {
+      "Name": "casteSystem_meritocraticGovernmentEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "casteSystem_rigidity",
+        "value": -0.005
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "middleClass",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "middle_income_taxEffect",
     "type": "static-modifiers",
-    "displayName": "Middle Income Tax Effect",
+    "displayName": "middle_income_taxEffect",
     "icon": "",
     "fields": {
       "Name": "middle_income_taxEffect",
@@ -10828,7 +10719,7 @@
   {
     "id": "navalInvasion",
     "type": "static-modifiers",
-    "displayName": "Naval Invasion",
+    "displayName": "Naval Invasion Penalty",
     "icon": "",
     "fields": {
       "Name": "navalInvasion",
@@ -10884,7 +10775,7 @@
   {
     "id": "offensivePlanningEffect",
     "type": "static-modifiers",
-    "displayName": "Offensive Planning Effect",
+    "displayName": "offensivePlanningEffect",
     "icon": "attack",
     "fields": {
       "Name": "offensivePlanningEffect",
@@ -11305,7 +11196,7 @@
   {
     "id": "parachuteMechanic_effect",
     "type": "static-modifiers",
-    "displayName": "Parachute Mechanic Effect",
+    "displayName": "parachuteMechanic_effect",
     "icon": "",
     "fields": {
       "Name": "parachuteMechanic_effect",
@@ -13804,7 +13695,7 @@
   {
     "id": "populationDensityEffect",
     "type": "static-modifiers",
-    "displayName": "Population Density Effect",
+    "displayName": "Population Density",
     "icon": "",
     "fields": {
       "Name": "populationDensityEffect",
@@ -14261,7 +14152,7 @@
   {
     "id": "property_taxEffect",
     "type": "static-modifiers",
-    "displayName": "Property Tax Effect",
+    "displayName": "property_taxEffect",
     "icon": "",
     "fields": {
       "Name": "property_taxEffect",
@@ -14411,6 +14302,37 @@
       {
         "key": "warExhaustionMult",
         "value": -0.03
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "americanPolitics_corruptionPurged",
+    "type": "static-modifiers",
+    "displayName": "Purge Corruption",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_corruptionPurged",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "factionLoyaltyAdd",
+        "value1": "bureaucracy",
+        "value": -0.05
+      },
+      {
+        "key": "stabilityGainAdd",
+        "value": 0.1
       }
     ],
     "prerequisites": [],
@@ -14784,7 +14706,7 @@
   {
     "id": "recentReferendumEffect",
     "type": "static-modifiers",
-    "displayName": "Recent Referendum Effect",
+    "displayName": "recentReferendumEffect",
     "icon": "",
     "fields": {
       "Name": "recentReferendumEffect",
@@ -14929,6 +14851,58 @@
     ]
   },
   {
+    "id": "americanPolitics_renewedMilitary",
+    "type": "static-modifiers",
+    "displayName": "Renewed Military",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_renewedMilitary",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unitReinforceRateMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "americanPolitics_renewedUnity",
+    "type": "static-modifiers",
+    "displayName": "Renewed Unity",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_renewedUnity",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unityMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "egalitarianism_republicOfEqualsEffect",
     "type": "static-modifiers",
     "displayName": "Republic of Equals",
@@ -14997,7 +14971,7 @@
   {
     "id": "resourceTax_taxEffect",
     "type": "static-modifiers",
-    "displayName": "Resource Tax Tax Effect",
+    "displayName": "resourceTax_taxEffect",
     "icon": "",
     "fields": {
       "Name": "resourceTax_taxEffect",
@@ -15108,7 +15082,7 @@
   {
     "id": "revanchismEffect",
     "type": "static-modifiers",
-    "displayName": "Revanchism Effect",
+    "displayName": "Revanchism",
     "icon": "",
     "fields": {
       "Name": "revanchismEffect",
@@ -15771,208 +15745,6 @@
       {
         "key": "projectEfficiency",
         "value": 0.06
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_borderDefenseEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Border Defense Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_borderDefenseEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unitStatAdd",
-        "value1": "entrenchment",
-        "value": 25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_dealWithOligarchsEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Deal With Oligarchs Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_dealWithOligarchsEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "factionLoyaltyAdd",
-        "value1": "upperClass",
-        "value": 0.1
-      },
-      {
-        "key": "unityMult",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_eurasianismEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Eurasianism Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_eurasianismEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "assimilationMult",
-        "value": 0.25
-      },
-      {
-        "key": "resourceModifier",
-        "value1": "culture",
-        "value": 2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_internalPoliticsEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Internal Politics Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_internalPoliticsEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "privilegeGrantCost",
-        "value": -0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_spaceColonizationEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Space Colonization Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_spaceColonizationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "colonyProgressMult",
-        "value": 0.25
-      },
-      {
-        "key": "popGrowthMult",
-        "value": 0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_stabilizationEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Stabilization Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_stabilizationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "projectBuildCostMult",
-        "value": -0.1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "russiaSituation_technologicalAdvanceEffect",
-    "type": "static-modifiers",
-    "displayName": "Russia Situation Technological Advance Effect",
-    "icon": "",
-    "fields": {
-      "Name": "russiaSituation_technologicalAdvanceEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "resourceModifier",
-        "value1": "research",
-        "value": 1
-      },
-      {
-        "key": "unitCostMult",
-        "value": -0.05
       }
     ],
     "prerequisites": [],
@@ -17763,6 +17535,32 @@
     ]
   },
   {
+    "id": "americanPolitics_siliconValleyEffect",
+    "type": "static-modifiers",
+    "displayName": "Silicon Valley",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_siliconValleyEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "researchMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "futurist_skunkworksEffect",
     "type": "static-modifiers",
     "displayName": "Skunkworks",
@@ -17855,9 +17653,69 @@
     ]
   },
   {
+    "id": "americanPolitics_spaceColonizationEffect",
+    "type": "static-modifiers",
+    "displayName": "Space Colonization",
+    "icon": "",
+    "fields": {
+      "Name": "americanPolitics_spaceColonizationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "surveyEfficiency",
+        "value": 0.25
+      },
+      {
+        "key": "colonyProgressMult",
+        "value": 0.25
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation_spaceColonizationEffect",
+    "type": "static-modifiers",
+    "displayName": "Space Colonization Program",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_spaceColonizationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "colonyProgressMult",
+        "value": 0.25
+      },
+      {
+        "key": "popGrowthMult",
+        "value": 0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "spaceInvasion",
     "type": "static-modifiers",
-    "displayName": "Space Invasion",
+    "displayName": "Space Invasion Penalty",
     "icon": "",
     "fields": {
       "Name": "spaceInvasion",
@@ -17900,6 +17758,32 @@
       {
         "key": "espionageDefense",
         "value": 0.01
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "russiaSituation_stabilizationEffect",
+    "type": "static-modifiers",
+    "displayName": "Stabilization",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_stabilizationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
       }
     ],
     "prerequisites": [],
@@ -18004,7 +17888,7 @@
   {
     "id": "stealthEffect",
     "type": "static-modifiers",
-    "displayName": "Stealth Effect",
+    "displayName": "Stealth",
     "icon": "",
     "fields": {
       "Name": "stealthEffect",
@@ -18030,7 +17914,7 @@
   {
     "id": "strategizeEffect",
     "type": "static-modifiers",
-    "displayName": "Strategize Effect",
+    "displayName": "Strategize",
     "icon": "",
     "fields": {
       "Name": "strategizeEffect",
@@ -18282,6 +18166,37 @@
     ]
   },
   {
+    "id": "russiaSituation_technologicalAdvanceEffect",
+    "type": "static-modifiers",
+    "displayName": "Technological Recovery",
+    "icon": "",
+    "fields": {
+      "Name": "russiaSituation_technologicalAdvanceEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "resourceModifier",
+        "value1": "research",
+        "value": 1
+      },
+      {
+        "key": "unitCostMult",
+        "value": -0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "traditionalist_templeSchoolsEffect",
     "type": "static-modifiers",
     "displayName": "Temple Schools",
@@ -18373,6 +18288,40 @@
     ]
   },
   {
+    "id": "mechanistCoalescence_finalCountdownEffect",
+    "type": "static-modifiers",
+    "displayName": "The Final Countdown",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_finalCountdownEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "opinionModifier",
+        "value": -25
+      },
+      {
+        "key": "integrationCostMult",
+        "value": -0.3
+      },
+      {
+        "key": "unitSpeedMult",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "thuleSituation_lastNorthEffect",
     "type": "static-modifiers",
     "displayName": "The Last North",
@@ -18396,6 +18345,41 @@
       {
         "key": "resourceCapacityMult",
         "value1": "spaceCapacity",
+        "value": 0.2
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "mechanistCoalescence_newMechanistManEffect",
+    "type": "static-modifiers",
+    "displayName": "The New Mechanist Man",
+    "icon": "",
+    "fields": {
+      "Name": "mechanistCoalescence_newMechanistManEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "unitVulnMult",
+        "value1": "psychological",
+        "value": -0.2
+      },
+      {
+        "key": "unityMult",
+        "value": 0.2
+      },
+      {
+        "key": "espionageDefense",
         "value": 0.2
       }
     ],
@@ -18873,9 +18857,49 @@
     ]
   },
   {
+    "id": "casteSystem_ultimateKarmaEffect",
+    "type": "static-modifiers",
+    "displayName": "Ultimate Karma",
+    "icon": "",
+    "fields": {
+      "Name": "casteSystem_ultimateKarmaEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "casteSystem_rigidity",
+        "value": 0.05
+      },
+      {
+        "key": "unityMult",
+        "value": 0.5
+      },
+      {
+        "key": "factionPowerAdd",
+        "value1": "clergy",
+        "value": 0.1
+      },
+      {
+        "key": "projectBuildCostMult",
+        "value": -0.1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
     "id": "unitSizeEffect",
     "type": "static-modifiers",
-    "displayName": "Unit Size Effect",
+    "displayName": "unitSizeEffect",
     "icon": "",
     "fields": {
       "Name": "unitSizeEffect",
@@ -18899,91 +18923,9 @@
     ]
   },
   {
-    "id": "unitedColoniesSituation_beltColonizationEffect",
-    "type": "static-modifiers",
-    "displayName": "United Colonies Situation Belt Colonization Effect",
-    "icon": "",
-    "fields": {
-      "Name": "unitedColoniesSituation_beltColonizationEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "colonyProgressMult",
-        "value": 0.25
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "unitedColoniesSituation_interplanetaryTransportEffect",
-    "type": "static-modifiers",
-    "displayName": "United Colonies Situation Interplanetary Transport Effect",
-    "icon": "",
-    "fields": {
-      "Name": "unitedColoniesSituation_interplanetaryTransportEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "integrationCostMult",
-        "value": -0.1
-      },
-      {
-        "key": "unityMult",
-        "value": 0.2
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
-    "id": "unitedColoniesSituation_martianMilitaryEffect",
-    "type": "static-modifiers",
-    "displayName": "United Colonies Situation Martian Military Effect",
-    "icon": "",
-    "fields": {
-      "Name": "unitedColoniesSituation_martianMilitaryEffect",
-      "Icon": "",
-      "FinishEffect": [],
-      "Hidden": false,
-      "DefaultTime": 360
-    },
-    "modifiers": [
-      {
-        "key": "unitMoraleMult",
-        "value": 0.15
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": ""
-      }
-    ]
-  },
-  {
     "id": "unrestEffect",
     "type": "static-modifiers",
-    "displayName": "Unrest Effect",
+    "displayName": "Unrest",
     "icon": "",
     "fields": {
       "Name": "unrestEffect",
@@ -19038,6 +18980,37 @@
       {
         "key": "assimilationMult",
         "value": -5
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "casteSystem_unrestrainedInnovationEffect",
+    "type": "static-modifiers",
+    "displayName": "Unrestrained Innovation",
+    "icon": "",
+    "fields": {
+      "Name": "casteSystem_unrestrainedInnovationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "situationVariableAdd",
+        "value1": "casteSystem_rigidity",
+        "value": -0.005
+      },
+      {
+        "key": "educationEfficiency",
+        "value": 0.1
       }
     ],
     "prerequisites": [],
@@ -19304,7 +19277,7 @@
   {
     "id": "warModifier",
     "type": "static-modifiers",
-    "displayName": "War Modifier",
+    "displayName": "warModifier",
     "icon": "",
     "fields": {
       "Name": "warModifier",
@@ -19318,6 +19291,33 @@
         "key": "situationVariableAdd",
         "value1": "russia_siegeMentality",
         "value": 0.05
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": ""
+      }
+    ]
+  },
+  {
+    "id": "jovianCorporation_workerAutomationEffect",
+    "type": "static-modifiers",
+    "displayName": "Worker Automation",
+    "icon": "",
+    "fields": {
+      "Name": "jovianCorporation_workerAutomationEffect",
+      "Icon": "",
+      "FinishEffect": [],
+      "Hidden": false,
+      "DefaultTime": 360
+    },
+    "modifiers": [
+      {
+        "key": "projectBuildCostMult",
+        "value1": "automatedFactory",
+        "value": -0.25
       }
     ],
     "prerequisites": [],

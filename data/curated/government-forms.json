@@ -20,7 +20,7 @@
   {
     "id": "empire",
     "type": "government-forms",
-    "displayName": "Empire",
+    "displayName": "Autocracy",
     "icon": "",
     "fields": {
       "Name": "empire",
@@ -56,7 +56,7 @@
   {
     "id": "nonState",
     "type": "government-forms",
-    "displayName": "Non State",
+    "displayName": "Non-State Entity",
     "icon": "",
     "fields": {
       "Name": "nonState",

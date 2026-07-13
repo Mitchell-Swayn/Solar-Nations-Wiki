@@ -1,8 +1,8 @@
 ---
 import { withBase } from '../lib/base';
-import { getAllEntries, getCategories, getIndex } from '../lib/data';
+import { getCategories, getCategoryCount, getIndex } from '../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../lib/categories';
-import { getCultureTraitPath } from '../lib/culture';
+import { getCountryScenarios } from '../lib/countries';
 
 interface Props {
   title: string;
@@ -13,17 +13,13 @@ interface Props {
 const { title, description, activeType } = Astro.props;
 const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
 const categories = getCategories().filter((category) => !category.mergedInto);
-const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getIndex().byType[category.slug]?.length ?? 0]));
+const activeCategoryGroup = activeType ? CATEGORY_BY_SLUG[activeType]?.group : undefined;
+const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getCategoryCount(category.slug)]));
 const generatedDate = new Date(getIndex().generatedAt);
 const buildLabel = Number.isNaN(generatedDate.valueOf())
   ? 'Current extraction'
   : `Updated ${generatedDate.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Australia/Sydney' })}`;
-const searchEntries = getAllEntries().map((entry) => ({
-  id: entry.id,
-  name: entry.displayName,
-  category: CATEGORY_BY_SLUG[entry.type]?.pluralLabel ?? entry.type,
-  path: entry.type === 'culture-traits' ? getCultureTraitPath(entry.id).slice(1) : `${entry.type}/${entry.id}/`,
-}));
+const scenarioIds = getCountryScenarios().map((scenario) => scenario.id);
 ---
 
 <!doctype html>
@@ -60,20 +56,22 @@ const searchEntries = getAllEntries().map((entry) => ({
         <nav aria-label="Wiki sections">
           <a href={withBase('/')} class:list={['nav-home', { active: !activeType }]}>Overview</a>
           {CATEGORY_GROUPS.map((group) => (
-            <section class="nav-group">
-              <h2>{group.label}</h2>
-              {categories.filter((cat) => cat.group === group.id).map((cat) => (
-                <a href={withBase(`/${cat.slug}/`)} class:list={{ active: activeType === cat.slug }}>
-                  <span>{cat.pluralLabel}</span><small>{categoryCounts[cat.slug]}</small>
-                </a>
-              ))}
-            </section>
+            <details class="nav-group" open={group.id !== 'reference' || activeCategoryGroup === group.id}>
+              <summary>{group.label}</summary>
+              <div>
+                {categories.filter((cat) => cat.group === group.id).map((cat) => (
+                  <a href={withBase(`/${cat.slug}/`)} class:list={{ active: activeType === cat.slug }}>
+                    <span>{cat.pluralLabel}</span><small>{categoryCounts[cat.slug]}</small>
+                  </a>
+                ))}
+              </div>
+            </details>
           ))}
         </nav>
         <p class="sidebar-note">Game data reference<br />{buildLabel}</p>
       </aside>
 
-      <main class="content" id="main-content" tabindex="-1"><slot /></main>
+      <main class="content"><span id="main-content" class="main-focus-target" tabindex="-1"></span><slot /></main>
     </div>
 
     <footer class="site-footer">
@@ -81,27 +79,94 @@ const searchEntries = getAllEntries().map((entry) => ({
       <a href="https://github.com/Mitchell-Swayn/Solar-Nations-Wiki">Source on GitHub</a>
     </footer>
 
-    <script define:vars={{ entries: searchEntries, baseUrl: import.meta.env.BASE_URL }}>
+    <script define:vars={{ baseUrl: import.meta.env.BASE_URL, scenarioIds }}>
       const input = document.getElementById('global-search');
       const results = document.getElementById('global-results');
       const toggle = document.getElementById('nav-toggle');
       const sidebar = document.getElementById('sidebar');
       const backdrop = document.getElementById('nav-backdrop');
       let activeResult = -1;
+      let searchEntries = [];
+      let searchEntriesPromise;
+
+      const loadSearchEntries = () => {
+        searchEntriesPromise ??= fetch(`${baseUrl}search-index.json`)
+          .then((response) => {
+            if (!response.ok) throw new Error(`Search index request failed with ${response.status}`);
+            return response.json();
+          })
+          .then((loadedEntries) => (searchEntries = loadedEntries));
+        return searchEntriesPromise;
+      };
+
+      const sidebarScrollKey = 'solar-nations-wiki:sidebar-scroll';
+      const saveSidebarScroll = () => {
+        if (!sidebar) return;
+        try { sessionStorage.setItem(sidebarScrollKey, String(sidebar.scrollTop)); } catch { /* Storage may be unavailable. */ }
+      };
+      const restoreSidebarScroll = () => {
+        if (!sidebar) return;
+        try {
+          const savedPosition = Number(sessionStorage.getItem(sidebarScrollKey));
+          if (Number.isFinite(savedPosition)) sidebar.scrollTop = savedPosition;
+        } catch { /* Storage may be unavailable. */ }
+      };
+      requestAnimationFrame(restoreSidebarScroll);
+      sidebar?.addEventListener('scroll', saveSidebarScroll, { passive: true });
+      sidebar?.addEventListener('click', (event) => { if (event.target.closest('a')) saveSidebarScroll(); }, { capture: true });
+      window.addEventListener('pagehide', saveSidebarScroll);
+
+      const validScenarios = new Set(scenarioIds);
+      const activeScenario = () => {
+        const requested = new URL(window.location.href).searchParams.get('scenario');
+        if (requested && validScenarios.has(requested)) return requested;
+        const selected = document.querySelector('[data-scenario-tabs] [data-scenario-id][aria-selected="true"]')?.dataset.scenarioId;
+        return selected && validScenarios.has(selected) ? selected : undefined;
+      };
+      const syncScenarioLinks = () => {
+        const scenario = activeScenario();
+        if (!scenario) return;
+        const current = new URL(window.location.href);
+        if (current.searchParams.get('scenario') !== scenario) {
+          current.searchParams.set('scenario', scenario);
+          history.replaceState(history.state, '', current);
+        }
+        for (const link of document.querySelectorAll('a[href]')) {
+          const rawHref = link.getAttribute('href');
+          if (!rawHref || rawHref.startsWith('#')) continue;
+          const url = new URL(rawHref, window.location.href);
+          if (url.origin !== window.location.origin) continue;
+          const targetScenario = link.dataset.scenarioId;
+          url.searchParams.set('scenario', targetScenario && validScenarios.has(targetScenario) ? targetScenario : scenario);
+          link.href = url.href;
+        }
+      };
 
       const escapeHtml = (value) => value.replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
-      const renderSearch = () => {
+      const renderSearch = async () => {
         const query = input.value.trim().toLowerCase();
         if (query.length < 2) { results.hidden = true; input.setAttribute('aria-expanded', 'false'); activeResult = -1; return; }
-        const matches = entries.filter((entry) => entry.name.toLowerCase().includes(query) || entry.id.toLowerCase().includes(query)).slice(0, 10);
+        try {
+          await loadSearchEntries();
+        } catch {
+          if (input.value.trim().toLowerCase() !== query) return;
+          results.innerHTML = '<p>Search is temporarily unavailable</p>';
+          results.hidden = false;
+          input.setAttribute('aria-expanded', 'true');
+          return;
+        }
+        if (input.value.trim().toLowerCase() !== query) return;
+        const matches = searchEntries.filter((entry) => entry.name.toLowerCase().includes(query) || entry.id.toLowerCase().includes(query)).slice(0, 10);
         results.innerHTML = matches.length
           ? matches.map((entry, index) => `<a id="search-result-${index}" role="option" aria-selected="false" href="${baseUrl}${entry.path}"><span><strong>${escapeHtml(entry.name)}</strong><small>${escapeHtml(entry.id)}</small></span><em>${escapeHtml(entry.category)}</em></a>`).join('')
           : '<p>No matching entries</p>';
         results.hidden = false;
         input.setAttribute('aria-expanded', 'true');
         activeResult = -1;
+        syncScenarioLinks();
       };
-      input?.addEventListener('input', renderSearch);
+      input?.addEventListener('focus', () => { void loadSearchEntries(); }, { once: true });
+      input?.addEventListener('input', () => { void renderSearch(); });
       input?.addEventListener('keydown', (event) => {
         const options = [...results.querySelectorAll('[role="option"]')];
         if ((event.key === 'ArrowDown' || event.key === 'ArrowUp') && options.length) {
@@ -137,6 +202,25 @@ const searchEntries = getAllEntries().map((entry) => ({
           if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
         }
       });
+      document.addEventListener('click', (event) => {
+        if (event.target.closest('[data-scenario-id]')) setTimeout(syncScenarioLinks, 0);
+      });
+      window.addEventListener('popstate', () => setTimeout(syncScenarioLinks, 0));
+      syncScenarioLinks();
+
+      const updateAdaptiveImageLoading = () => {
+        for (const image of document.querySelectorAll('img[data-auto-loading]')) {
+          let element = image;
+          let documentTop = 0;
+          while (element) {
+            documentTop += element.offsetTop;
+            element = element.offsetParent;
+          }
+          image.loading = documentTop < window.innerHeight ? 'eager' : 'lazy';
+        }
+      };
+      updateAdaptiveImageLoading();
+      window.addEventListener('resize', updateAdaptiveImageLoading, { passive: true });
     </script>
   </body>
 </html>

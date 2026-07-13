@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCategories, getAllEntries, getEntriesByType } from '../lib/data';
+import { getCategories, getAllEntries, getCategoryCount, getEntriesByType } from '../lib/data';
 import { CATEGORY_GROUPS } from '../lib/categories';
 import { withBase } from '../lib/base';
 import GameIcon from '../components/GameIcon.astro';
 
 const categories = getCategories().filter((category) => !category.mergedInto);
 const allEntries = getAllEntries();
+const entryCount = allEntries.length + getCategoryCount('countries');
 const featured = ['technologies', 'government-reforms', 'projects', 'factions', 'unit-components', 'resources'];
 const featuredIcons: Record<string, string> = {
   technologies: 'eraInformation',
@@ -27,7 +28,7 @@ const featuredIcons: Record<string, string> = {
       <p>Explore the systems behind interplanetary government, research, industry, society, and warfare.</p>
     </div>
     <dl class="dataset-summary">
-      <div><dt>Entries</dt><dd>{allEntries.length.toLocaleString()}</dd></div>
+      <div><dt>Entries</dt><dd>{entryCount.toLocaleString()}</dd></div>
       <div><dt>Categories</dt><dd>{categories.length}</dd></div>
       <div><dt>Source</dt><dd>Game files</dd></div>
     </dl>
@@ -67,7 +68,7 @@ const featuredIcons: Record<string, string> = {
           <header><h3>{group.label}</h3><p>{group.description}</p></header>
           <div>
             {categories.filter((cat) => cat.group === group.id).map((cat) => (
-              <a href={withBase(`/${cat.slug}/`)}><span>{cat.pluralLabel}</span><small>{getEntriesByType(cat.slug).length}</small></a>
+              <a href={withBase(`/${cat.slug}/`)}><span>{cat.pluralLabel}</span><small>{getCategoryCount(cat.slug)}</small></a>
             ))}
           </div>
         </section>

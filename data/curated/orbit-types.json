@@ -2,7 +2,7 @@
   {
     "id": "equatorial",
     "type": "orbit-types",
-    "displayName": "Equatorial",
+    "displayName": "equatorial",
     "fields": {
       "Name": "equatorial",
       "InnerRadius": 1.1,
@@ -37,7 +37,7 @@
   {
     "id": "highOrbit",
     "type": "orbit-types",
-    "displayName": "High Orbit",
+    "displayName": "highOrbit",
     "fields": {
       "Name": "highOrbit",
       "InnerRadius": 4,

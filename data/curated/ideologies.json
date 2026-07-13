@@ -2,7 +2,7 @@
   {
     "id": "conservativePopulist",
     "type": "ideologies",
-    "displayName": "Conservative Populist",
+    "displayName": "conservativePopulist",
     "fields": {
       "Name": "conservativePopulist",
       "Color": {
@@ -24,7 +24,7 @@
   {
     "id": "culturalMarxism",
     "type": "ideologies",
-    "displayName": "Cultural Marxism",
+    "displayName": "culturalMarxism",
     "fields": {
       "Name": "culturalMarxism",
       "Color": {
@@ -46,7 +46,7 @@
   {
     "id": "esotericMechanism",
     "type": "ideologies",
-    "displayName": "Esoteric Mechanism",
+    "displayName": "esotericMechanism",
     "fields": {
       "Name": "esotericMechanism",
       "Color": {
@@ -68,7 +68,7 @@
   {
     "id": "islamism",
     "type": "ideologies",
-    "displayName": "Islamism",
+    "displayName": "islamism",
     "fields": {
       "Name": "islamism",
       "Color": {
@@ -90,7 +90,7 @@
   {
     "id": "libertarian",
     "type": "ideologies",
-    "displayName": "Libertarian",
+    "displayName": "libertarian",
     "fields": {
       "Name": "libertarian",
       "Color": {
@@ -134,7 +134,7 @@
   {
     "id": "nationalHinduism",
     "type": "ideologies",
-    "displayName": "National Hinduism",
+    "displayName": "nationalHinduism",
     "fields": {
       "Name": "nationalHinduism",
       "Color": {
@@ -156,7 +156,7 @@
   {
     "id": "neoliberal",
     "type": "ideologies",
-    "displayName": "Neoliberal",
+    "displayName": "neoliberal",
     "fields": {
       "Name": "neoliberal",
       "Color": {
@@ -178,7 +178,7 @@
   {
     "id": "russianNationalism",
     "type": "ideologies",
-    "displayName": "Russian Nationalism",
+    "displayName": "russianNationalism",
     "fields": {
       "Name": "russianNationalism",
       "Color": {
@@ -200,7 +200,7 @@
   {
     "id": "traditionalism",
     "type": "ideologies",
-    "displayName": "Traditionalism",
+    "displayName": "traditionalism",
     "fields": {
       "Name": "traditionalism",
       "Color": {

@@ -24,7 +24,7 @@
   {
     "id": "integration_speed",
     "type": "policies",
-    "displayName": "Integration Speed",
+    "displayName": "integration_speed",
     "fields": {
       "Name": "integration_speed",
       "Options": [
@@ -46,7 +46,7 @@
   {
     "id": "militarization",
     "type": "policies",
-    "displayName": "Militarization",
+    "displayName": "militarization",
     "fields": {
       "Name": "militarization",
       "Options": [],

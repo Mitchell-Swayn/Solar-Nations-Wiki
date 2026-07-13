@@ -22,25 +22,6 @@
     "references": []
   },
   {
-    "id": "Algorithmic Flagging",
-    "type": "default-policies",
-    "displayName": "Algorithmic Flagging",
-    "fields": {
-      "Name": "Algorithmic Flagging",
-      "Description": {
-        "CultureInvariantString": null
-      },
-      "Benefits": [
-        "adminEfficiency"
-      ],
-      "Costs": [],
-      "Faction": "bureaucracy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
     "id": "Antitrust Enforcement",
     "type": "default-policies",
     "displayName": "Antitrust Enforcement",
@@ -76,6 +57,31 @@
       ],
       "Costs": [],
       "Faction": "upperClass"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Spiritual Awakening",
+    "type": "default-policies",
+    "displayName": "Awakened Spirituality",
+    "fields": {
+      "Name": "Spiritual Awakening",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "unityMult",
+        "unityMult",
+        "unityMult",
+        "unityMult"
+      ],
+      "Costs": [
+        "researchMult",
+        "educationEff"
+      ],
+      "Faction": "clergy"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -139,28 +145,6 @@
         "economicOutput"
       ],
       "Faction": "military"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "Civilian Firearms",
-    "type": "default-policies",
-    "displayName": "Civilian Firearms",
-    "fields": {
-      "Name": "Civilian Firearms",
-      "Description": {
-        "CultureInvariantString": null
-      },
-      "Benefits": [
-        "infantryPrimacy",
-        "manpowerCapacity"
-      ],
-      "Costs": [
-        "stabilityGain"
-      ],
-      "Faction": "laborer"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -342,7 +326,7 @@
   {
     "id": "Ethics are Weakness",
     "type": "default-policies",
-    "displayName": "Ethics Are Weakness",
+    "displayName": "Ethics are Weakness",
     "fields": {
       "Name": "Ethics are Weakness",
       "Description": {
@@ -388,7 +372,7 @@
   {
     "id": "Freedom of Speech",
     "type": "default-policies",
-    "displayName": "Freedom Of Speech",
+    "displayName": "Freedom of Speech",
     "fields": {
       "Name": "Freedom of Speech",
       "Description": {
@@ -458,9 +442,31 @@
     "references": []
   },
   {
+    "id": "Red Tape",
+    "type": "default-policies",
+    "displayName": "Increased Red Tape",
+    "fields": {
+      "Name": "Red Tape",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "stabilityGain",
+        "stabilityGain"
+      ],
+      "Costs": [
+        "reformCost"
+      ],
+      "Faction": "bureaucracy"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
     "id": "Lax Regulations",
     "type": "default-policies",
-    "displayName": "Lax Regulations",
+    "displayName": "Lax Regulation",
     "fields": {
       "Name": "Lax Regulations",
       "Description": {
@@ -513,30 +519,6 @@
       ],
       "Costs": [
         "educationEff"
-      ],
-      "Faction": "bureaucracy"
-    },
-    "modifiers": [],
-    "prerequisites": [],
-    "references": []
-  },
-  {
-    "id": "Mass Surveillance",
-    "type": "default-policies",
-    "displayName": "Mass Surveillance",
-    "fields": {
-      "Name": "Mass Surveillance",
-      "Description": {
-        "CultureInvariantString": null
-      },
-      "Benefits": [
-        "factionLoyaltyBureaucracy",
-        "stabilityGain",
-        "warExhaustion",
-        "warExhaustion"
-      ],
-      "Costs": [
-        "budgetModifierPopulationPolicy"
       ],
       "Faction": "bureaucracy"
     },
@@ -776,21 +758,18 @@
     "references": []
   },
   {
-    "id": "Red Tape",
+    "id": "Algorithmic Flagging",
     "type": "default-policies",
-    "displayName": "Red Tape",
+    "displayName": "Red Flag Laws",
     "fields": {
-      "Name": "Red Tape",
+      "Name": "Algorithmic Flagging",
       "Description": {
         "CultureInvariantString": null
       },
       "Benefits": [
-        "stabilityGain",
-        "stabilityGain"
+        "adminEfficiency"
       ],
-      "Costs": [
-        "reformCost"
-      ],
+      "Costs": [],
       "Faction": "bureaucracy"
     },
     "modifiers": [],
@@ -798,25 +777,22 @@
     "references": []
   },
   {
-    "id": "Spiritual Awakening",
+    "id": "Civilian Firearms",
     "type": "default-policies",
-    "displayName": "Spiritual Awakening",
+    "displayName": "Right to Bear Arms",
     "fields": {
-      "Name": "Spiritual Awakening",
+      "Name": "Civilian Firearms",
       "Description": {
         "CultureInvariantString": null
       },
       "Benefits": [
-        "unityMult",
-        "unityMult",
-        "unityMult",
-        "unityMult"
+        "infantryPrimacy",
+        "manpowerCapacity"
       ],
       "Costs": [
-        "researchMult",
-        "educationEff"
+        "stabilityGain"
       ],
-      "Faction": "clergy"
+      "Faction": "laborer"
     },
     "modifiers": [],
     "prerequisites": [],
@@ -858,6 +834,30 @@
         "unitySpeed"
       ],
       "Faction": "corporate"
+    },
+    "modifiers": [],
+    "prerequisites": [],
+    "references": []
+  },
+  {
+    "id": "Mass Surveillance",
+    "type": "default-policies",
+    "displayName": "Telescreens for All",
+    "fields": {
+      "Name": "Mass Surveillance",
+      "Description": {
+        "CultureInvariantString": null
+      },
+      "Benefits": [
+        "factionLoyaltyBureaucracy",
+        "stabilityGain",
+        "warExhaustion",
+        "warExhaustion"
+      ],
+      "Costs": [
+        "budgetModifierPopulationPolicy"
+      ],
+      "Faction": "bureaucracy"
     },
     "modifiers": [],
     "prerequisites": [],

@@ -2,7 +2,7 @@
   {
     "id": "bureaucraticControl",
     "type": "missions",
-    "displayName": "Bureaucratic Control",
+    "displayName": "bureaucraticControl",
     "fields": {
       "Name": "bureaucraticControl",
       "Categories": [
@@ -50,7 +50,7 @@
   {
     "id": "controlCriminalGangs",
     "type": "missions",
-    "displayName": "Control Criminal Gangs",
+    "displayName": "controlCriminalGangs",
     "fields": {
       "Name": "controlCriminalGangs",
       "Categories": [
@@ -146,7 +146,7 @@
   {
     "id": "encourageDegeneracy",
     "type": "missions",
-    "displayName": "Encourage Degeneracy",
+    "displayName": "encourageDegeneracy",
     "fields": {
       "Name": "encourageDegeneracy",
       "Categories": [
@@ -194,7 +194,7 @@
   {
     "id": "encourageInfighting",
     "type": "missions",
-    "displayName": "Encourage Infighting",
+    "displayName": "encourageInfighting",
     "fields": {
       "Name": "encourageInfighting",
       "Categories": [
@@ -242,7 +242,7 @@
   {
     "id": "establishHumanTrafficking",
     "type": "missions",
-    "displayName": "Establish Human Trafficking",
+    "displayName": "establishHumanTrafficking",
     "fields": {
       "Name": "establishHumanTrafficking",
       "Categories": [
@@ -333,7 +333,7 @@
   {
     "id": "forceVassalize",
     "type": "missions",
-    "displayName": "Force Vassalize",
+    "displayName": "forceVassalize",
     "fields": {
       "Name": "forceVassalize",
       "Categories": [
@@ -465,7 +465,7 @@
   {
     "id": "infiltrateGovernment",
     "type": "missions",
-    "displayName": "Infiltrate Government",
+    "displayName": "infiltrateGovernment",
     "fields": {
       "Name": "infiltrateGovernment",
       "Categories": [
@@ -513,7 +513,7 @@
   {
     "id": "infiltrateSchoolSystem",
     "type": "missions",
-    "displayName": "Infiltrate School System",
+    "displayName": "infiltrateSchoolSystem",
     "fields": {
       "Name": "infiltrateSchoolSystem",
       "Categories": [
@@ -745,7 +745,7 @@
   {
     "id": "judicialControl",
     "type": "missions",
-    "displayName": "Judicial Control",
+    "displayName": "judicialControl",
     "fields": {
       "Name": "judicialControl",
       "Categories": [
@@ -793,7 +793,7 @@
   {
     "id": "localGovernmentControl",
     "type": "missions",
-    "displayName": "Local Government Control",
+    "displayName": "localGovernmentControl",
     "fields": {
       "Name": "localGovernmentControl",
       "Categories": [
@@ -841,7 +841,7 @@
   {
     "id": "lockdownRegion",
     "type": "missions",
-    "displayName": "Lockdown Region",
+    "displayName": "lockdownRegion",
     "fields": {
       "Name": "lockdownRegion",
       "Categories": [
@@ -884,7 +884,7 @@
   {
     "id": "massMediaControl",
     "type": "missions",
-    "displayName": "Mass Media Control",
+    "displayName": "massMediaControl",
     "fields": {
       "Name": "massMediaControl",
       "Categories": [
@@ -927,7 +927,7 @@
   {
     "id": "mindControlDrugs",
     "type": "missions",
-    "displayName": "Mind Control Drugs",
+    "displayName": "mindControlDrugs",
     "fields": {
       "Name": "mindControlDrugs",
       "Categories": [
@@ -1017,7 +1017,7 @@
   {
     "id": "oppositonControl",
     "type": "missions",
-    "displayName": "Oppositon Control",
+    "displayName": "oppositonControl",
     "fields": {
       "Name": "oppositonControl",
       "Categories": [
@@ -1245,7 +1245,7 @@
   {
     "id": "sabotageDiplomacy",
     "type": "missions",
-    "displayName": "Sabotage Diplomacy",
+    "displayName": "sabotageDiplomacy",
     "fields": {
       "Name": "sabotageDiplomacy",
       "Categories": [
@@ -1293,7 +1293,7 @@
   {
     "id": "sabotageMilitary",
     "type": "missions",
-    "displayName": "Sabotage Military",
+    "displayName": "sabotageMilitary",
     "fields": {
       "Name": "sabotageMilitary",
       "Categories": [
@@ -1388,7 +1388,7 @@
   {
     "id": "vassalBreakFree",
     "type": "missions",
-    "displayName": "Vassal Break Free",
+    "displayName": "vassalBreakFree",
     "fields": {
       "Name": "vassalBreakFree",
       "Categories": [

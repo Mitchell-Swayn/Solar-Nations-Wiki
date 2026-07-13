@@ -1,0 +1,22 @@
+---
+import { withBase } from '../lib/base';
+
+interface Props {
+  group?: string;
+  category: string;
+  categoryHref?: string;
+  current?: string;
+}
+
+const { group, category, categoryHref, current } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href={withBase('/')}>Wiki</a>
+  {group && <><span>/</span><span>{group}</span></>}
+  <span>/</span>
+  {current && categoryHref
+    ? <a href={withBase(categoryHref)}>{category}</a>
+    : <strong>{category}</strong>}
+  {current && <><span>/</span><strong>{current}</strong></>}
+</nav>

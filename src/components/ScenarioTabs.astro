@@ -1,0 +1,83 @@
+---
+interface ScenarioTab {
+  id: string;
+  label: string;
+  href: string;
+  active?: boolean;
+}
+
+interface Props {
+  tabs: ScenarioTab[];
+  switchPanels?: boolean;
+}
+
+const { tabs, switchPanels = false } = Astro.props;
+---
+
+<nav class="scenario-tabs" aria-label="Scenario" data-scenario-tabs data-switch-panels={switchPanels ? '' : undefined}>
+  <span>Scenario</span>
+  <div role="tablist" aria-label="Scenario configuration">
+    {tabs.map((tab, index) => (
+      <a
+        href={tab.href}
+        role="tab"
+        class:list={{ active: tab.active ?? (switchPanels && index === 0) }}
+        aria-selected={tab.active ?? (switchPanels && index === 0) ? 'true' : 'false'}
+        aria-controls={switchPanels ? `scenario-panel-${tab.id}` : undefined}
+        data-scenario-id={tab.id}
+      >{tab.label}</a>
+    ))}
+  </div>
+</nav>
+
+<script>
+  const initializeScenarioTabs = (tabRoot: HTMLElement) => {
+    if (!tabRoot.hasAttribute('data-switch-panels')) return;
+    const tabs = [...tabRoot.querySelectorAll<HTMLAnchorElement>('[data-scenario-id]')];
+    const panels = [...document.querySelectorAll<HTMLElement>('[data-scenario-panel]')];
+    const available = new Set(tabs.map((tab) => tab.dataset.scenarioId));
+
+    const activate = (id: string, updateHistory = false) => {
+      if (!available.has(id)) return;
+      for (const tab of tabs) {
+        const active = tab.dataset.scenarioId === id;
+        tab.classList.toggle('active', active);
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+      }
+      for (const panel of panels) panel.hidden = panel.dataset.scenarioPanel !== id;
+      if (updateHistory) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('scenario', id);
+        history.pushState({ scenario: id }, '', url);
+      }
+    };
+
+    for (const tab of tabs) tab.addEventListener('click', (event) => {
+      event.preventDefault();
+      activate(tab.dataset.scenarioId ?? '', true);
+    });
+    window.addEventListener('popstate', () => {
+      const requested = new URL(window.location.href).searchParams.get('scenario');
+      activate(requested && available.has(requested) ? requested : tabs[0]?.dataset.scenarioId ?? '');
+    });
+    const requested = new URL(window.location.href).searchParams.get('scenario');
+    activate(requested && available.has(requested) ? requested : tabs[0]?.dataset.scenarioId ?? '');
+  };
+
+  document.querySelectorAll<HTMLElement>('[data-scenario-tabs]').forEach(initializeScenarioTabs);
+</script>
+
+<style>
+  .scenario-tabs { display: flex; align-items: center; gap: 12px; margin: 20px 0 24px; padding: 5px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 5px; }
+  .scenario-tabs > span { flex: 0 0 auto; padding-left: 8px; color: var(--text-muted); font-size: 8px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+  .scenario-tabs > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; width: min(100%, 520px); }
+  .scenario-tabs a { display: grid; place-items: center; min-height: 34px; padding: 6px 14px; color: var(--text-muted); border: 1px solid transparent; border-radius: 3px; font-size: 10px; font-weight: 700; text-align: center; }
+  .scenario-tabs a:hover { color: var(--text); background: var(--surface); }
+  .scenario-tabs a.active { color: var(--accent-dark); background: var(--surface); border-color: var(--border-strong); box-shadow: 0 1px 3px rgb(20 32 38 / 8%); }
+  @media (max-width: 650px) {
+    .scenario-tabs { align-items: stretch; flex-direction: column; gap: 4px; }
+    .scenario-tabs > span { padding: 4px 6px 2px; }
+    .scenario-tabs > div { width: 100%; }
+  }
+</style>

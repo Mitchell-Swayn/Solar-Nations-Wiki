@@ -1451,9 +1451,8 @@
   {
     "id": "ascendedAutomation",
     "type": "situations",
-    "displayName": "Ascended Automation",
+    "displayName": "ascendedAutomation",
     "icon": "ascendedAutomation",
-    "description": "ascendedAutomationDesc",
     "fields": {
       "Name": "ascendedAutomation",
       "Description": "ascendedAutomationDesc",
@@ -1960,9 +1959,8 @@
   {
     "id": "ascendedDigital",
     "type": "situations",
-    "displayName": "Ascended Digital",
+    "displayName": "ascendedDigital",
     "icon": "ascendedDigital",
-    "description": "ascendedDigitalDesc",
     "fields": {
       "Name": "ascendedDigital",
       "Description": "ascendedDigitalDesc",
@@ -2429,9 +2427,8 @@
   {
     "id": "ascendedMutation",
     "type": "situations",
-    "displayName": "Ascended Mutation",
+    "displayName": "ascendedMutation",
     "icon": "ascendedMutation",
-    "description": "ascendedMutationDesc",
     "fields": {
       "Name": "ascendedMutation",
       "Description": "ascendedMutationDesc",
@@ -6373,9 +6370,9 @@
   {
     "id": "culturalExchange",
     "type": "situations",
-    "displayName": "Cultural Exchange",
+    "displayName": "Culture Exchange",
     "icon": "culturalExchange",
-    "description": "An organization devoted to fostering collective cultural growth and innovation. This allows for members to share insights into unity technology.",
+    "description": "<red>NOT IMPLEMENTED</>",
     "fields": {
       "Name": "culturalExchange",
       "Description": "culturalExchangeDesc",
@@ -7440,7 +7437,6 @@
     "type": "situations",
     "displayName": "Defense of the Rodina",
     "icon": "russiaSituation",
-    "description": "russiaSituationDesc",
     "fields": {
       "Name": "russiaSituation",
       "Description": "russiaSituationDesc",
@@ -17579,9 +17575,8 @@
   {
     "id": "marsSituation",
     "type": "situations",
-    "displayName": "Mars Situation",
+    "displayName": "marsSituation",
     "icon": "marsSituation",
-    "description": "marsSituationDesc",
     "fields": {
       "Name": "marsSituation",
       "Description": "marsSituationDesc",
@@ -18103,7 +18098,6 @@
     "type": "situations",
     "displayName": "Mechanist Coalescence",
     "icon": "mechanistCoalescence",
-    "description": "mechanistCoalescenceDesc",
     "fields": {
       "Name": "mechanistCoalescence",
       "Description": "mechanistCoalescenceDesc",
@@ -21409,7 +21403,6 @@
     "type": "situations",
     "displayName": "Mining Corporation",
     "icon": "jovianCorporation",
-    "description": "jovianCorporationDesc",
     "fields": {
       "Name": "jovianCorporation",
       "Description": "jovianCorporationDesc",
@@ -27193,7 +27186,6 @@
     "type": "situations",
     "displayName": "State of the Politburo",
     "icon": "ccpPolitburo",
-    "description": "ccpPolitburoDesc",
     "fields": {
       "Name": "ccpPolitburo",
       "Description": "ccpPolitburoDesc",
@@ -27764,7 +27756,6 @@
     "type": "situations",
     "displayName": "Synthetic God",
     "icon": "robotCountrySituation",
-    "description": "robotCountrySituationDesc",
     "fields": {
       "Name": "robotCountrySituation",
       "Description": "robotCountrySituationDesc",
@@ -28735,7 +28726,6 @@
     "type": "situations",
     "displayName": "Technological Singularity",
     "icon": "roboticsCrisis",
-    "description": "roboticsCrisisDesc",
     "fields": {
       "Name": "roboticsCrisis",
       "Description": "roboticsCrisisDesc",
@@ -29779,7 +29769,6 @@
     "type": "situations",
     "displayName": "The Polycrisis",
     "icon": "culturalDecay",
-    "description": "polycrisisDesc",
     "fields": {
       "Name": "polycrisis",
       "Description": "polycrisisDesc",

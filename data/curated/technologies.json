@@ -610,72 +610,6 @@
     ]
   },
   {
-    "id": "spaceEngine_2",
-    "type": "technologies",
-    "displayName": "Advanced Astronautics",
-    "icon": "engine2",
-    "fields": {
-      "Name": "spaceEngine_2",
-      "Type": "Technology",
-      "Icon": "engine2",
-      "Year": 0,
-      "Cost": 6,
-      "Prerequisites": [
-        "spaceEngine_1"
-      ],
-      "Exclusives": [],
-      "Tier": 2,
-      "Location": {
-        "X": 400,
-        "Y": 1100
-      },
-      "Domain": [
-        "militaryTech"
-      ],
-      "Categories": [
-        "military",
-        "navy"
-      ],
-      "Dangerous": false,
-      "HiddenPrerequisite": {
-        "A": "None",
-        "B": "None"
-      },
-      "PreviousTechRequirementPerc": 0
-    },
-    "modifiers": [
-      {
-        "key": "unitTransportSpeedAdd",
-        "value1": "space",
-        "value": 1
-      }
-    ],
-    "prerequisites": [
-      {
-        "type": "technology",
-        "id": "spaceEngine_1"
-      }
-    ],
-    "references": [
-      {
-        "type": "icon",
-        "id": "engine2"
-      },
-      {
-        "type": "domain",
-        "id": "militaryTech"
-      },
-      {
-        "type": "category",
-        "id": "military"
-      },
-      {
-        "type": "category",
-        "id": "navy"
-      }
-    ]
-  },
-  {
     "id": "metalAdvance",
     "type": "technologies",
     "displayName": "Advanced Metals",
@@ -2403,6 +2337,77 @@
     ]
   },
   {
+    "id": "spaceEngine_3",
+    "type": "technologies",
+    "displayName": "Cold Fusion Engine",
+    "icon": "engine3",
+    "fields": {
+      "Name": "spaceEngine_3",
+      "Type": "Technology",
+      "Icon": "engine3",
+      "Year": 0,
+      "Cost": 6,
+      "Prerequisites": [
+        "spaceEngine_2",
+        "ageTech_1"
+      ],
+      "Exclusives": [],
+      "Tier": 3,
+      "Location": {
+        "X": 1000,
+        "Y": 1100
+      },
+      "Domain": [
+        "militaryTech"
+      ],
+      "Categories": [
+        "military",
+        "navy"
+      ],
+      "Dangerous": false,
+      "HiddenPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "PreviousTechRequirementPerc": 0
+    },
+    "modifiers": [
+      {
+        "key": "unitTransportSpeedAdd",
+        "value1": "space",
+        "value": 1
+      }
+    ],
+    "prerequisites": [
+      {
+        "type": "technology",
+        "id": "spaceEngine_2"
+      },
+      {
+        "type": "technology",
+        "id": "ageTech_1"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine3"
+      },
+      {
+        "type": "domain",
+        "id": "militaryTech"
+      },
+      {
+        "type": "category",
+        "id": "military"
+      },
+      {
+        "type": "category",
+        "id": "navy"
+      }
+    ]
+  },
+  {
     "id": "flyingFortressTech_2",
     "type": "technologies",
     "displayName": "Colossal Airframes",
@@ -3396,6 +3401,72 @@
       {
         "type": "category",
         "id": "emp"
+      }
+    ]
+  },
+  {
+    "id": "spaceEngine_2",
+    "type": "technologies",
+    "displayName": "Engine Miniaturization",
+    "icon": "engine2",
+    "fields": {
+      "Name": "spaceEngine_2",
+      "Type": "Technology",
+      "Icon": "engine2",
+      "Year": 0,
+      "Cost": 6,
+      "Prerequisites": [
+        "spaceEngine_1"
+      ],
+      "Exclusives": [],
+      "Tier": 2,
+      "Location": {
+        "X": 400,
+        "Y": 1100
+      },
+      "Domain": [
+        "militaryTech"
+      ],
+      "Categories": [
+        "military",
+        "navy"
+      ],
+      "Dangerous": false,
+      "HiddenPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "PreviousTechRequirementPerc": 0
+    },
+    "modifiers": [
+      {
+        "key": "unitTransportSpeedAdd",
+        "value1": "space",
+        "value": 1
+      }
+    ],
+    "prerequisites": [
+      {
+        "type": "technology",
+        "id": "spaceEngine_1"
+      }
+    ],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine2"
+      },
+      {
+        "type": "domain",
+        "id": "militaryTech"
+      },
+      {
+        "type": "category",
+        "id": "military"
+      },
+      {
+        "type": "category",
+        "id": "navy"
       }
     ]
   },
@@ -6118,65 +6189,6 @@
       {
         "type": "category",
         "id": "artillery"
-      }
-    ]
-  },
-  {
-    "id": "spaceEngine_1",
-    "type": "technologies",
-    "displayName": "Improved Astronautics",
-    "icon": "engine1",
-    "fields": {
-      "Name": "spaceEngine_1",
-      "Type": "Technology",
-      "Icon": "engine1",
-      "Year": 0,
-      "Cost": 6,
-      "Prerequisites": [],
-      "Exclusives": [],
-      "Tier": 1,
-      "Location": {
-        "X": -200,
-        "Y": 1100
-      },
-      "Domain": [
-        "militaryTech"
-      ],
-      "Categories": [
-        "military",
-        "navy"
-      ],
-      "Dangerous": false,
-      "HiddenPrerequisite": {
-        "A": "None",
-        "B": "None"
-      },
-      "PreviousTechRequirementPerc": 0
-    },
-    "modifiers": [
-      {
-        "key": "unitTransportSpeedAdd",
-        "value1": "space",
-        "value": 1
-      }
-    ],
-    "prerequisites": [],
-    "references": [
-      {
-        "type": "icon",
-        "id": "engine1"
-      },
-      {
-        "type": "domain",
-        "id": "militaryTech"
-      },
-      {
-        "type": "category",
-        "id": "military"
-      },
-      {
-        "type": "category",
-        "id": "navy"
       }
     ]
   },
@@ -9264,6 +9276,65 @@
     ]
   },
   {
+    "id": "spaceEngine_1",
+    "type": "technologies",
+    "displayName": "Nuclear Engine Optimization",
+    "icon": "engine1",
+    "fields": {
+      "Name": "spaceEngine_1",
+      "Type": "Technology",
+      "Icon": "engine1",
+      "Year": 0,
+      "Cost": 6,
+      "Prerequisites": [],
+      "Exclusives": [],
+      "Tier": 1,
+      "Location": {
+        "X": -200,
+        "Y": 1100
+      },
+      "Domain": [
+        "militaryTech"
+      ],
+      "Categories": [
+        "military",
+        "navy"
+      ],
+      "Dangerous": false,
+      "HiddenPrerequisite": {
+        "A": "None",
+        "B": "None"
+      },
+      "PreviousTechRequirementPerc": 0
+    },
+    "modifiers": [
+      {
+        "key": "unitTransportSpeedAdd",
+        "value1": "space",
+        "value": 1
+      }
+    ],
+    "prerequisites": [],
+    "references": [
+      {
+        "type": "icon",
+        "id": "engine1"
+      },
+      {
+        "type": "domain",
+        "id": "militaryTech"
+      },
+      {
+        "type": "category",
+        "id": "military"
+      },
+      {
+        "type": "category",
+        "id": "navy"
+      }
+    ]
+  },
+  {
     "id": "nuclearFusion",
     "type": "technologies",
     "displayName": "Nuclear Fusion",
@@ -11543,77 +11614,6 @@
       {
         "type": "category",
         "id": "airGuns"
-      }
-    ]
-  },
-  {
-    "id": "spaceEngine_3",
-    "type": "technologies",
-    "displayName": "Superior Astronautics",
-    "icon": "engine3",
-    "fields": {
-      "Name": "spaceEngine_3",
-      "Type": "Technology",
-      "Icon": "engine3",
-      "Year": 0,
-      "Cost": 6,
-      "Prerequisites": [
-        "spaceEngine_2",
-        "ageTech_1"
-      ],
-      "Exclusives": [],
-      "Tier": 3,
-      "Location": {
-        "X": 1000,
-        "Y": 1100
-      },
-      "Domain": [
-        "militaryTech"
-      ],
-      "Categories": [
-        "military",
-        "navy"
-      ],
-      "Dangerous": false,
-      "HiddenPrerequisite": {
-        "A": "None",
-        "B": "None"
-      },
-      "PreviousTechRequirementPerc": 0
-    },
-    "modifiers": [
-      {
-        "key": "unitTransportSpeedAdd",
-        "value1": "space",
-        "value": 1
-      }
-    ],
-    "prerequisites": [
-      {
-        "type": "technology",
-        "id": "spaceEngine_2"
-      },
-      {
-        "type": "technology",
-        "id": "ageTech_1"
-      }
-    ],
-    "references": [
-      {
-        "type": "icon",
-        "id": "engine3"
-      },
-      {
-        "type": "domain",
-        "id": "militaryTech"
-      },
-      {
-        "type": "category",
-        "id": "military"
-      },
-      {
-        "type": "category",
-        "id": "navy"
       }
     ]
   },

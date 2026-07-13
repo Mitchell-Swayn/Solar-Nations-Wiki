@@ -2,7 +2,7 @@
   {
     "id": "agency",
     "type": "psychology",
-    "displayName": "Agency",
+    "displayName": "agency",
     "icon": "",
     "fields": {
       "Name": "agency",
@@ -44,7 +44,7 @@
   {
     "id": "conformity",
     "type": "psychology",
-    "displayName": "Conformity",
+    "displayName": "conformity",
     "icon": "",
     "fields": {
       "Name": "conformity",
@@ -86,7 +86,7 @@
   {
     "id": "harmony",
     "type": "psychology",
-    "displayName": "Harmony",
+    "displayName": "harmony",
     "icon": "harmony",
     "fields": {
       "Name": "harmony",
@@ -136,7 +136,7 @@
   {
     "id": "trust",
     "type": "psychology",
-    "displayName": "Trust",
+    "displayName": "trust",
     "icon": "",
     "fields": {
       "Name": "trust",

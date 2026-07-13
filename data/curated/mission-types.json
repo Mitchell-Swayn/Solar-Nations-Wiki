@@ -2,7 +2,7 @@
   {
     "id": "armyBuildup",
     "type": "mission-types",
-    "displayName": "Army Buildup",
+    "displayName": "armyBuildup",
     "icon": "manpower",
     "fields": {
       "Name": "armyBuildup",
@@ -21,7 +21,7 @@
   {
     "id": "buildProject",
     "type": "mission-types",
-    "displayName": "Build Project",
+    "displayName": "buildProject",
     "icon": "infrastructure",
     "fields": {
       "Name": "buildProject",
@@ -40,7 +40,7 @@
   {
     "id": "conquerTerritory",
     "type": "mission-types",
-    "displayName": "Conquer Territory",
+    "displayName": "conquerTerritory",
     "icon": "colony",
     "fields": {
       "Name": "conquerTerritory",
@@ -59,7 +59,7 @@
   {
     "id": "researchTech",
     "type": "mission-types",
-    "displayName": "Research Tech",
+    "displayName": "researchTech",
     "icon": "research",
     "fields": {
       "Name": "researchTech",
@@ -78,7 +78,7 @@
   {
     "id": "selectReform",
     "type": "mission-types",
-    "displayName": "Select Reform",
+    "displayName": "selectReform",
     "icon": "enactDecision",
     "fields": {
       "Name": "selectReform",

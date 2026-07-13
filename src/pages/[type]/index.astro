@@ -1,14 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import GameIcon from '../../components/GameIcon.astro';
+import CountryFlagIcon from '../../components/CountryFlagIcon.astro';
 import ModifierBadges from '../../components/ModifierBadges.astro';
+import CharacterJobSkillBadges from '../../components/CharacterJobSkillBadges.astro';
+import ScenarioTabs from '../../components/ScenarioTabs.astro';
 import { getCategories, getEntriesByType } from '../../lib/data';
 import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
 import { getCultureTraitGroup, isCultureFamilyRoot } from '../../lib/culture';
+import { getCountryScenarios, getCultureIconCountry } from '../../lib/countries';
 import { withBase } from '../../lib/base';
 
 export function getStaticPaths() {
-  return getCategories().map((cat) => ({ params: { type: cat.slug } }));
+  return getCategories().filter((cat) => cat.slug !== 'countries').map((cat) => ({ params: { type: cat.slug } }));
 }
 
 const { type } = Astro.params;
@@ -16,17 +21,62 @@ const category = CATEGORY_BY_SLUG[type!];
 if (category.mergedInto) return Astro.redirect(withBase(`/${category.mergedInto}/`));
 const entries = getEntriesByType(type!).sort((a, b) => a.displayName.localeCompare(b.displayName));
 const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
-const reforms = type === 'government-reforms' ? entries : [];
+const GOVERNMENT_REFORM_GAME_ORDER = [
+  'form', 'economySystem', 'civilLiberties', 'militaryDoctrine', 'espionagePolicy',
+  'nationalFocus', 'serviceLaw', 'educationLaw', 'tradePolicy', 'roboticsLaw',
+  'nanocompositeLaw', 'adminStance', 'migrationLaw', 'governmentSpending',
+  'fiscalPolicy', 'welfareSpending', 'espionageFunding', 'colonyPolicy',
+];
+const reforms = type === 'government-reforms' ? [
+  ...GOVERNMENT_REFORM_GAME_ORDER.flatMap((id) => entries.filter((entry) => entry.id === id)),
+  ...entries.filter((entry) => !GOVERNMENT_REFORM_GAME_ORDER.includes(entry.id)),
+] : [];
 const reformOptionEntries = type === 'government-reforms' ? getEntriesByType('government-reform-options').sort((a, b) => a.displayName.localeCompare(b.displayName)) : [];
 const reformGroups = reforms.map((reform) => {
   const optionIds = Array.isArray(reform.fields.Options) ? reform.fields.Options.filter((id): id is string => typeof id === 'string') : [];
   return { reform, options: optionIds.map((id) => reformOptionEntries.find((entry) => entry.id === id)).filter((entry) => entry !== undefined) };
 });
+const governmentReformSections = type === 'government-reforms' ? [
+  { id: 'politics', label: 'Politics', groups: reformGroups.filter(({ reform }) => reform.fields.IsPolitical === 'Politics') },
+  { id: 'policies', label: 'Policies', groups: reformGroups.filter(({ reform }) => reform.fields.IsPolitical !== 'Politics') },
+].filter((section) => section.groups.length > 0) : [];
 const factionVariants = type === 'factions' ? getEntriesByType('faction-variants').sort((a, b) => a.displayName.localeCompare(b.displayName)) : [];
 const factionGroups = type === 'factions' ? entries.map((faction) => ({
   faction,
   variants: factionVariants.filter((variant) => variant.fields.BaseFaction === faction.id),
 })) : [];
+const privilegeFactions = type === 'faction-privileges' ? getEntriesByType('factions') : [];
+const factionPrivilegeGroups = type === 'faction-privileges' ? [
+  { faction: undefined, id: 'all', label: 'All Factions', entries: entries.filter((entry) => entry.fields.Faction === 'all') },
+  ...privilegeFactions.map((faction) => ({
+    faction,
+    id: faction.id,
+    label: faction.displayName,
+    entries: entries.filter((entry) => entry.fields.Faction === faction.id),
+  })),
+].filter((privilegeGroup) => privilegeGroup.entries.length > 0) : [];
+const characterTraitGroups = type === 'character-traits' ? [
+  { id: 'general', label: 'General' },
+  { id: 'strategy', label: 'Strategy' },
+  { id: 'management', label: 'Management' },
+  { id: 'charisma', label: 'Charisma' },
+  { id: 'subversive', label: 'Subversive' },
+].map((traitCategory) => ({
+  ...traitCategory,
+  entries: entries.filter((entry) => entry.fields.Category === traitCategory.id),
+})).filter((traitCategory) => traitCategory.entries.length > 0) : [];
+const characterJobGroups = type === 'character-jobs' ? [
+  { id: 'ruler', label: 'Ruler' },
+  { id: 'economyMinister', label: 'Economy Minister' },
+  { id: 'interiorMinister', label: 'Interior Minister' },
+  { id: 'defenseMinister', label: 'Defense Minister' },
+  { id: 'unitCommander', label: 'Commander' },
+  { id: 'governRegion', label: 'Governor' },
+  { id: 'spymaster', label: 'Spymaster' },
+].map((jobArchetype) => ({
+  ...jobArchetype,
+  entries: entries.filter((entry) => entry.fields.JobArchetype === jobArchetype.id),
+})).filter((jobArchetype) => jobArchetype.entries.length > 0) : [];
 const cultureGroups = type === 'culture-traits' ? Object.values(entries.reduce((groups, entry) => {
   const meta = getCultureTraitGroup(entry.id);
   groups[meta.id] ??= { meta, entries: [] };
@@ -70,17 +120,28 @@ const componentFamilies = type === 'unit-components' ? Object.values(entries.red
   families[id] ??= { id, label: componentFamilyLabel(id), entries: [] };
   families[id].entries.push(entry);
   return families;
-}, {} as Record<string, { id: string; label: string; entries: typeof entries }>)).sort((a, b) => a.label.localeCompare(b.label)) : [];
+}, {} as Record<string, { id: string; label: string; entries: typeof entries }>)).map((family) => ({
+  ...family,
+  entries: family.entries.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' })),
+})).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' })) : [];
+const cultureIndexScenarios = type === 'cultures' ? getCountryScenarios() : [];
+const cultureIndexTabs = cultureIndexScenarios.map((scenario) => ({
+  id: scenario.id,
+  label: scenario.name,
+  href: `?scenario=${scenario.id}`,
+}));
 const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : factionGroups.length > 0 ? factionVariants.length + entries.length : entries.length;
 ---
 
 <BaseLayout title={category.pluralLabel} description={category.description} activeType={type}>
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/')}>Wiki</a><span>/</span><span>{group?.label}</span><span>/</span><strong>{category.pluralLabel}</strong></nav>
+  <Breadcrumbs group={group?.label} category={category.pluralLabel} />
 
   <header class="collection-header">
     <div><p class="eyebrow">{group?.label}</p><h1>{category.pluralLabel}</h1><p>{category.description}</p></div>
     <div class="collection-count"><strong>{directoryCount}</strong><span>{reformGroups.length > 0 ? `${reforms.length} reforms` : factionGroups.length > 0 ? `${entries.length} factions` : 'Entries'}</span></div>
   </header>
+
+  {cultureIndexTabs.length > 0 && <ScenarioTabs tabs={cultureIndexTabs} switchPanels />}
 
   {cultureDomains.length > 0 && (
     <nav class="culture-index" aria-labelledby="culture-index-title">
@@ -108,25 +169,30 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
   )}
 
   <div class="collection-tools">
-    <label class="filter-input"><span class="search-symbol"></span><input id="entry-filter" type="search" placeholder={`Filter ${category.pluralLabel.toLowerCase()}...`} /></label>
+    <label class="filter-input"><span class="sr-only">Filter {category.pluralLabel.toLowerCase()}</span><span class="search-symbol"></span><input id="entry-filter" type="search" placeholder={`Filter ${category.pluralLabel.toLowerCase()}...`} /></label>
     <span id="visible-count">Showing {directoryCount}</span>
   </div>
 
-  {reformGroups.length > 0 ? (
-    <div class="grouped-directory" id="entry-directory">
-      {reformGroups.map(({ reform, options }) => (
-        <section class="reform-option-group entry-group">
-          <header><div><p class="eyebrow">Government Reform</p><h2>{reform.displayName}</h2></div><a href={withBase(`/government-reforms/${reform.id}/`)}>View reform</a></header>
-          <div class="entry-directory">
-            {options.map((entry) => (
-              <a href={withBase(`/government-reform-options/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
-                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
-                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
-                <ModifierBadges modifiers={entry.modifiers} />
-                <span class="row-arrow" aria-hidden="true">›</span>
-              </a>
-            ))}
-          </div>
+  {governmentReformSections.length > 0 ? (
+    <div class="grouped-directory government-reform-directory" id="entry-directory">
+      {governmentReformSections.map((reformSection) => (
+        <section class="government-reform-kind" id={`government-reforms-${reformSection.id}`}>
+          <header><p class="eyebrow">Government</p><h2>{reformSection.label}</h2></header>
+          {reformSection.groups.map(({ reform, options }) => (
+            <section class="reform-option-group entry-group">
+              <header><div><h3>{reform.displayName}</h3></div><a href={withBase(`/government-reforms/${reform.id}/`)}>View reform</a></header>
+              <div class="entry-directory">
+                {options.map((entry) => (
+                  <a href={withBase(`/government-reform-options/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${reformSection.label} ${reform.displayName} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                    <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                    <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                    <ModifierBadges modifiers={entry.modifiers} />
+                    <span class="row-arrow" aria-hidden="true">›</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
         </section>
       ))}
     </div>
@@ -154,6 +220,30 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
         </section>
       ))}
     </div>
+  ) : factionPrivilegeGroups.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {factionPrivilegeGroups.map((privilegeGroup) => (
+        <section class="reform-option-group entry-group">
+          <header>
+            <div class="culture-family-title">
+              {privilegeGroup.faction?.icon && <GameIcon name={privilegeGroup.faction.icon} size={30} />}
+              <div><p class="eyebrow">Faction</p><h2>{privilegeGroup.label}</h2></div>
+            </div>
+            {privilegeGroup.faction && <a href={withBase(`/factions/${privilegeGroup.faction.id}/`)}>View faction</a>}
+          </header>
+          <div class="entry-directory">
+            {privilegeGroup.entries.map((entry) => (
+              <a href={withBase(`/faction-privileges/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${privilegeGroup.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <ModifierBadges modifiers={entry.modifiers} />
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   ) : componentFamilies.length > 0 ? (
     <div class="grouped-directory" id="entry-directory">
       {componentFamilies.map((family) => (
@@ -165,6 +255,45 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
                 <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
                 <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
                 <ModifierBadges modifiers={entry.modifiers} />
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  ) : characterTraitGroups.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {characterTraitGroups.map((traitGroup) => (
+        <section class="reform-option-group entry-group">
+          <header><div><p class="eyebrow">Character Trait Category</p><h2>{traitGroup.label}</h2></div><span>{traitGroup.entries.length} trait{traitGroup.entries.length === 1 ? '' : 's'}</span></header>
+          <div class="entry-directory">
+            {traitGroup.entries.map((entry) => (
+              <a href={withBase(`/character-traits/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${traitGroup.label} ${entry.fields.Category ?? ''} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <ModifierBadges modifiers={entry.modifiers} />
+                <span class="row-arrow" aria-hidden="true">›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  ) : characterJobGroups.length > 0 ? (
+    <div class="grouped-directory" id="entry-directory">
+      {characterJobGroups.map((jobGroup) => (
+        <section class="reform-option-group entry-group">
+          <header><div><p class="eyebrow">Job Archetype</p><h2>{jobGroup.label}</h2></div><span>{jobGroup.entries.length} job{jobGroup.entries.length === 1 ? '' : 's'}</span></header>
+          <div class="entry-directory">
+            {jobGroup.entries.map((entry) => (
+              <a href={withBase(`/character-jobs/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 || entry.skillModifiers }]} data-search={`${jobGroup.label} ${entry.displayName} ${entry.id}`.toLowerCase()}>
+                <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+                <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
+                <span class="character-job-effects">
+                  <ModifierBadges modifiers={entry.modifiers} />
+                  {entry.skillModifiers && <CharacterJobSkillBadges skillModifiers={entry.skillModifiers} />}
+                </span>
                 <span class="row-arrow" aria-hidden="true">›</span>
               </a>
             ))}
@@ -220,14 +349,24 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
     </div>
   ) : (
     <div class="entry-directory" id="entry-directory">
-      {entries.map((entry) => (
-        <a href={withBase(`/${type}/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0 }]} data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
-          <span class="directory-icon">{entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
-          <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && <small>{entry.description}</small>}</span>
-          <ModifierBadges modifiers={entry.modifiers} />
-          <span class="row-arrow" aria-hidden="true">›</span>
-        </a>
-      ))}
+      {entries.map((entry) => {
+        const cultureIconStates = cultureIndexScenarios.map((scenario) => ({
+          scenarioId: scenario.id,
+          country: getCultureIconCountry(entry.id, scenario.id),
+        }));
+        return (
+          <a href={withBase(`/${type}/${entry.id}/`)} class:list={['directory-row', { 'with-effects': entry.modifiers.length > 0, 'planetary-body-row': type === 'planetary-bodies' }]} data-search={`${entry.displayName} ${entry.id}`.toLowerCase()}>
+            <span class="directory-icon">
+              {type === 'cultures' ? cultureIconStates.map((state, index) => (
+                <span data-scenario-panel={state.scenarioId} hidden={index > 0}>{state.country ? <CountryFlagIcon flag={state.country.flag} countryName={state.country.name} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}</span>
+              )) : entry.icon ? <GameIcon name={entry.icon} size={34} /> : <span>{entry.displayName.charAt(0)}</span>}
+            </span>
+            <span class="directory-main"><strong>{entry.displayName}</strong><code>{entry.id}</code>{entry.description && !(type === 'resources' && entry.id === 'manpower') && <small>{entry.description}</small>}</span>
+            <ModifierBadges modifiers={entry.modifiers} showScalingScope={type === 'resources'} />
+            <span class="row-arrow" aria-hidden="true">›</span>
+          </a>
+        );
+      })}
     </div>
   )}
   <p class="empty-state" id="empty-state" hidden>No entries match this filter.</p>
@@ -248,6 +387,7 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
       if (show) visible++;
     });
     document.querySelectorAll<HTMLElement>('.entry-group').forEach((group) => { group.hidden = !group.querySelector('.directory-row:not([hidden])'); });
+    document.querySelectorAll<HTMLElement>('.government-reform-kind').forEach((group) => { group.hidden = !group.querySelector('.entry-group:not([hidden])'); });
     document.querySelectorAll<HTMLElement>('.culture-subgroup').forEach((subgroup) => { subgroup.hidden = !subgroup.querySelector('.entry-group:not([hidden])'); });
     document.querySelectorAll<HTMLElement>('.culture-domain').forEach((domain) => { domain.hidden = !domain.querySelector('.culture-subgroup:not([hidden])'); });
     if (count) count.textContent = `Showing ${visible}`;
@@ -255,3 +395,11 @@ const directoryCount = reformGroups.length > 0 ? reformOptionEntries.length : fa
   };
   filter?.addEventListener('input', updateRows);
 </script>
+
+<style>
+  .government-reform-kind { margin-bottom: 52px; }
+  .government-reform-kind > header { margin-bottom: 24px; padding-bottom: 10px; border-bottom: 3px solid var(--ink-2); }
+  .government-reform-kind > header .eyebrow { margin-bottom: 4px; }
+  .government-reform-kind > header h2 { margin: 0; font-size: 24px; }
+  .government-reform-kind .reform-option-group > header h3 { margin: 0; font-size: 18px; }
+</style>

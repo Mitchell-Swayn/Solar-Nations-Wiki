@@ -1,0 +1,6739 @@
+{
+  "generatedAt": "2026-07-13T13:56:22.536Z",
+  "unresolved": {
+    "count": 445,
+    "byKind": {
+      "display-name": 430,
+      "localization": 15
+    },
+    "byType": {
+      "ai-strategies": 5,
+      "assets": 24,
+      "auto-units": 7,
+      "battle-domains": 1,
+      "battle-stances": 3,
+      "character-equipment": 1,
+      "character-interactions": 3,
+      "character-jobs": 1,
+      "consumer-demand": 12,
+      "culture-trait-categories": 2,
+      "culture-traits": 19,
+      "cultures": 3,
+      "decisions": 1,
+      "default-policies": 6,
+      "deposits": 1,
+      "diplomatic-actions": 1,
+      "diplomatic-flags": 1,
+      "diplomatic-missions": 2,
+      "edicts": 2,
+      "empire-missions": 6,
+      "espionage-operations": 1,
+      "ethics": 3,
+      "events": 6,
+      "faction-variants": 4,
+      "global-flags": 2,
+      "government-reform-options": 21,
+      "ideologies": 9,
+      "ideology-traits": 23,
+      "map-modes": 11,
+      "mission-components": 61,
+      "mission-types": 5,
+      "missions": 17,
+      "modifiers": 13,
+      "notifications": 51,
+      "orbit-types": 2,
+      "organization-votes": 2,
+      "planetary-bodies": 4,
+      "policies": 2,
+      "policy-options": 1,
+      "projects": 3,
+      "province-buildings": 7,
+      "psychology": 4,
+      "region-interactions": 4,
+      "religion-trait-categories": 3,
+      "religion-traits": 12,
+      "religions": 1,
+      "situation-goals": 6,
+      "situations": 15,
+      "space-objects": 6,
+      "space-zone-types": 4,
+      "specializations": 3,
+      "static-modifiers": 20,
+      "trade-categories": 2,
+      "unit-archetypes": 2,
+      "unit-components": 3,
+      "unit-stats": 4,
+      "unit-types": 7
+    },
+    "values": [
+      {
+        "kind": "display-name",
+        "type": "ai-strategies",
+        "id": "strategy_blue",
+        "source": "entry-id",
+        "value": "strategy_blue"
+      },
+      {
+        "kind": "display-name",
+        "type": "ai-strategies",
+        "id": "strategy_green",
+        "source": "entry-id",
+        "value": "strategy_green"
+      },
+      {
+        "kind": "display-name",
+        "type": "ai-strategies",
+        "id": "strategy_purple",
+        "source": "entry-id",
+        "value": "strategy_purple"
+      },
+      {
+        "kind": "display-name",
+        "type": "ai-strategies",
+        "id": "strategy_red",
+        "source": "entry-id",
+        "value": "strategy_red"
+      },
+      {
+        "kind": "display-name",
+        "type": "ai-strategies",
+        "id": "strategy_teal",
+        "source": "entry-id",
+        "value": "strategy_teal"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "abundantCapital",
+        "source": "entry-id",
+        "value": "abundantCapital"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "controlBureaucracy",
+        "source": "entry-id",
+        "value": "controlBureaucracy"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "controlCorporations",
+        "source": "entry-id",
+        "value": "controlCorporations"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "controlJudiciary",
+        "source": "entry-id",
+        "value": "controlJudiciary"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "controlOpposition",
+        "source": "entry-id",
+        "value": "controlOpposition"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "crimeWave",
+        "source": "entry-id",
+        "value": "crimeWave"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "cyberAttack",
+        "source": "entry-id",
+        "value": "cyberAttack"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "degenerateCulture",
+        "source": "entry-id",
+        "value": "degenerateCulture"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "doubleAgents",
+        "source": "entry-id",
+        "value": "doubleAgents"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "drugTrade",
+        "source": "entry-id",
+        "value": "drugTrade"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "friendsInHighPlaces",
+        "source": "entry-id",
+        "value": "friendsInHighPlaces"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "humanTrafficking",
+        "source": "entry-id",
+        "value": "humanTrafficking"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "localGovernment",
+        "source": "entry-id",
+        "value": "localGovernment"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "lockdown",
+        "source": "entry-id",
+        "value": "lockdown"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "militaryCommanders",
+        "source": "entry-id",
+        "value": "militaryCommanders"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "mindControlDrugs",
+        "source": "entry-id",
+        "value": "mindControlDrugs"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "navalBase",
+        "source": "entry-id",
+        "value": "navalBase"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "organizedCrime",
+        "source": "entry-id",
+        "value": "organizedCrime"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "pandemic",
+        "source": "entry-id",
+        "value": "pandemic"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "paramilitaries",
+        "source": "entry-id",
+        "value": "paramilitaries"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "pocketPoliticians",
+        "source": "entry-id",
+        "value": "pocketPoliticians"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "recentInvestigation",
+        "source": "entry-id",
+        "value": "recentInvestigation"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "slaveTrade",
+        "source": "entry-id",
+        "value": "slaveTrade"
+      },
+      {
+        "kind": "display-name",
+        "type": "assets",
+        "id": "surveillance",
+        "source": "entry-id",
+        "value": "surveillance"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Aquatic Unit",
+        "source": "entry-id",
+        "value": "Aquatic Unit"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Astronautical Unit",
+        "source": "entry-id",
+        "value": "Astronautical Unit"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Extermination Unit",
+        "source": "entry-id",
+        "value": "Extermination Unit"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Fighter",
+        "source": "entry-id",
+        "value": "Fighter"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Mobile Termination Unit",
+        "source": "entry-id",
+        "value": "Mobile Termination Unit"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Robotic Infantry",
+        "source": "entry-id",
+        "value": "Robotic Infantry"
+      },
+      {
+        "kind": "display-name",
+        "type": "auto-units",
+        "id": "Spec Ops",
+        "source": "entry-id",
+        "value": "Spec Ops"
+      },
+      {
+        "kind": "display-name",
+        "type": "battle-domains",
+        "id": "air",
+        "source": "entry-id",
+        "value": "air"
+      },
+      {
+        "kind": "display-name",
+        "type": "battle-stances",
+        "id": "aggressiveStance",
+        "source": "entry-id",
+        "value": "aggressiveStance"
+      },
+      {
+        "kind": "display-name",
+        "type": "battle-stances",
+        "id": "fightingRetreat",
+        "source": "entry-id",
+        "value": "fightingRetreat"
+      },
+      {
+        "kind": "display-name",
+        "type": "battle-stances",
+        "id": "forcedMarch",
+        "source": "entry-id",
+        "value": "forcedMarch"
+      },
+      {
+        "kind": "display-name",
+        "type": "character-equipment",
+        "id": "NewRow",
+        "source": "entry-id",
+        "value": "NewRow"
+      },
+      {
+        "kind": "display-name",
+        "type": "character-interactions",
+        "id": "coupGovernment",
+        "source": "entry-id",
+        "value": "coupGovernment"
+      },
+      {
+        "kind": "display-name",
+        "type": "character-interactions",
+        "id": "NewRow",
+        "source": "entry-id",
+        "value": "NewRow"
+      },
+      {
+        "kind": "display-name",
+        "type": "character-interactions",
+        "id": "retire",
+        "source": "entry-id",
+        "value": "retire"
+      },
+      {
+        "kind": "display-name",
+        "type": "character-jobs",
+        "id": "ceo",
+        "source": "entry-id",
+        "value": "ceo"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "1",
+        "source": "entry-id",
+        "value": "1"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "10",
+        "source": "entry-id",
+        "value": "10"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "11",
+        "source": "entry-id",
+        "value": "11"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "12",
+        "source": "entry-id",
+        "value": "12"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "2",
+        "source": "entry-id",
+        "value": "2"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "3",
+        "source": "entry-id",
+        "value": "3"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "4",
+        "source": "entry-id",
+        "value": "4"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "5",
+        "source": "entry-id",
+        "value": "5"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "6",
+        "source": "entry-id",
+        "value": "6"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "7",
+        "source": "entry-id",
+        "value": "7"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "8",
+        "source": "entry-id",
+        "value": "8"
+      },
+      {
+        "kind": "display-name",
+        "type": "consumer-demand",
+        "id": "9",
+        "source": "entry-id",
+        "value": "9"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-trait-categories",
+        "id": "heritage",
+        "source": "entry-id",
+        "value": "heritage"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-trait-categories",
+        "id": "trait",
+        "source": "entry-id",
+        "value": "trait"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanAstrogation",
+        "source": "entry-id",
+        "value": "americanAstrogation"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanFreedom",
+        "source": "entry-id",
+        "value": "americanFreedom"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanFrontierism",
+        "source": "entry-id",
+        "value": "americanFrontierism"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanHegemony",
+        "source": "entry-id",
+        "value": "americanHegemony"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanIngenuity",
+        "source": "entry-id",
+        "value": "americanIngenuity"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanNavalPrimacy",
+        "source": "entry-id",
+        "value": "americanNavalPrimacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "americanWorkEthic",
+        "source": "entry-id",
+        "value": "americanWorkEthic"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishAdministration",
+        "source": "entry-id",
+        "value": "britishAdministration"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishAdventurism",
+        "source": "entry-id",
+        "value": "britishAdventurism"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishIndustrialism",
+        "source": "entry-id",
+        "value": "britishIndustrialism"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishInnovation",
+        "source": "entry-id",
+        "value": "britishInnovation"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishLegacy",
+        "source": "entry-id",
+        "value": "britishLegacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishPoliteness",
+        "source": "entry-id",
+        "value": "britishPoliteness"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "britishStoicism",
+        "source": "entry-id",
+        "value": "britishStoicism"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "heritageAmerican",
+        "source": "entry-id",
+        "value": "heritageAmerican"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "heritageBritish",
+        "source": "entry-id",
+        "value": "heritageBritish"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "ludditeMastery",
+        "source": "entry-id",
+        "value": "ludditeMastery"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "thriftyExpansion",
+        "source": "entry-id",
+        "value": "thriftyExpansion"
+      },
+      {
+        "kind": "display-name",
+        "type": "culture-traits",
+        "id": "traitSuperiorGenes",
+        "source": "entry-id",
+        "value": "traitSuperiorGenes"
+      },
+      {
+        "kind": "display-name",
+        "type": "cultures",
+        "id": "han",
+        "source": "entry-id",
+        "value": "han"
+      },
+      {
+        "kind": "display-name",
+        "type": "cultures",
+        "id": "lao",
+        "source": "entry-id",
+        "value": "lao"
+      },
+      {
+        "kind": "display-name",
+        "type": "cultures",
+        "id": "zimbabwean",
+        "source": "entry-id",
+        "value": "zimbabwean"
+      },
+      {
+        "kind": "display-name",
+        "type": "decisions",
+        "id": "terraformingMars",
+        "source": "entry-id",
+        "value": "terraformingMars"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Freedom Unleashed",
+        "source": "entry-id",
+        "value": "Freedom Unleashed"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Martial Education",
+        "source": "entry-id",
+        "value": "Martial Education"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Noble Obligations",
+        "source": "entry-id",
+        "value": "Noble Obligations"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Nudge Army",
+        "source": "entry-id",
+        "value": "Nudge Army"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Provincial Autonomy",
+        "source": "entry-id",
+        "value": "Provincial Autonomy"
+      },
+      {
+        "kind": "display-name",
+        "type": "default-policies",
+        "id": "Psychocultivation",
+        "source": "entry-id",
+        "value": "Psychocultivation"
+      },
+      {
+        "kind": "display-name",
+        "type": "deposits",
+        "id": "oil",
+        "source": "entry-id",
+        "value": "oil"
+      },
+      {
+        "kind": "display-name",
+        "type": "diplomatic-actions",
+        "id": "releaseHostage",
+        "source": "entry-id",
+        "value": "releaseHostage"
+      },
+      {
+        "kind": "display-name",
+        "type": "diplomatic-flags",
+        "id": "war",
+        "source": "entry-id",
+        "value": "war"
+      },
+      {
+        "kind": "display-name",
+        "type": "diplomatic-missions",
+        "id": "deescalate",
+        "source": "entry-id",
+        "value": "deescalate"
+      },
+      {
+        "kind": "display-name",
+        "type": "diplomatic-missions",
+        "id": "escalate",
+        "source": "entry-id",
+        "value": "escalate"
+      },
+      {
+        "kind": "display-name",
+        "type": "edicts",
+        "id": "empireEducationFocus",
+        "source": "entry-id",
+        "value": "empireEducationFocus"
+      },
+      {
+        "kind": "display-name",
+        "type": "edicts",
+        "id": "empireLeadershipFocus",
+        "source": "entry-id",
+        "value": "empireLeadershipFocus"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Mars Terraforming: Atmospherics",
+        "source": "entry-id",
+        "value": "Mars Terraforming: Atmospherics"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Mars Terraforming: Biosphere",
+        "source": "entry-id",
+        "value": "Mars Terraforming: Biosphere"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Mars Terraforming: Hydrology",
+        "source": "entry-id",
+        "value": "Mars Terraforming: Hydrology"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Venus Terraforming: Atmospherics",
+        "source": "entry-id",
+        "value": "Venus Terraforming: Atmospherics"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Venus Terraforming: Biosphere",
+        "source": "entry-id",
+        "value": "Venus Terraforming: Biosphere"
+      },
+      {
+        "kind": "display-name",
+        "type": "empire-missions",
+        "id": "Venus Terraforming: Hydrology",
+        "source": "entry-id",
+        "value": "Venus Terraforming: Hydrology"
+      },
+      {
+        "kind": "display-name",
+        "type": "espionage-operations",
+        "id": "robotRevolution",
+        "source": "entry-id",
+        "value": "robotRevolution"
+      },
+      {
+        "kind": "display-name",
+        "type": "ethics",
+        "id": "moralist",
+        "source": "entry-id",
+        "value": "moralist"
+      },
+      {
+        "kind": "display-name",
+        "type": "ethics",
+        "id": "theocratic",
+        "source": "entry-id",
+        "value": "theocratic"
+      },
+      {
+        "kind": "display-name",
+        "type": "ethics",
+        "id": "utopian",
+        "source": "entry-id",
+        "value": "utopian"
+      },
+      {
+        "kind": "display-name",
+        "type": "events",
+        "id": "roboticsCrisisEvent",
+        "source": "entry-id",
+        "value": "roboticsCrisisEvent"
+      },
+      {
+        "kind": "localization",
+        "type": "events",
+        "id": "roboticsCrisisEvent",
+        "field": "Text",
+        "value": "roboticsCrisisEvent_desc"
+      },
+      {
+        "kind": "localization",
+        "type": "events",
+        "id": "roboticsCrisisEvent",
+        "field": "Title",
+        "value": "roboticsCrisisEvent_title"
+      },
+      {
+        "kind": "display-name",
+        "type": "events",
+        "id": "testEvent",
+        "source": "entry-id",
+        "value": "testEvent"
+      },
+      {
+        "kind": "localization",
+        "type": "events",
+        "id": "testEvent",
+        "field": "Text",
+        "value": "{adj} cool"
+      },
+      {
+        "kind": "localization",
+        "type": "events",
+        "id": "testEvent",
+        "field": "Title",
+        "value": "test Event {empire}"
+      },
+      {
+        "kind": "display-name",
+        "type": "faction-variants",
+        "id": "clergy_atheist",
+        "source": "entry-id",
+        "value": "clergy_atheist"
+      },
+      {
+        "kind": "display-name",
+        "type": "faction-variants",
+        "id": "laborer_proletariat",
+        "source": "entry-id",
+        "value": "laborer_proletariat"
+      },
+      {
+        "kind": "display-name",
+        "type": "faction-variants",
+        "id": "military_conscript",
+        "source": "entry-id",
+        "value": "military_conscript"
+      },
+      {
+        "kind": "display-name",
+        "type": "faction-variants",
+        "id": "military_mercenary",
+        "source": "entry-id",
+        "value": "military_mercenary"
+      },
+      {
+        "kind": "display-name",
+        "type": "global-flags",
+        "id": "robotCountryGlobalFlag",
+        "source": "entry-id",
+        "value": "robotCountryGlobalFlag"
+      },
+      {
+        "kind": "display-name",
+        "type": "global-flags",
+        "id": "superhumanCountryGlobalFlag",
+        "source": "entry-id",
+        "value": "superhumanCountryGlobalFlag"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_organism",
+        "source": "entry-id",
+        "value": "aiLaw_organism"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_outlawed",
+        "source": "entry-id",
+        "value": "aiLaw_outlawed"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_patriotic",
+        "source": "entry-id",
+        "value": "aiLaw_patriotic"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_private",
+        "source": "entry-id",
+        "value": "aiLaw_private"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_propaganda",
+        "source": "entry-id",
+        "value": "aiLaw_propaganda"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "aiLaw_surveillance",
+        "source": "entry-id",
+        "value": "aiLaw_surveillance"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "armyOrg_ideological",
+        "source": "entry-id",
+        "value": "armyOrg_ideological"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "armyOrg_levy",
+        "source": "entry-id",
+        "value": "armyOrg_levy"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "armyOrg_professional",
+        "source": "entry-id",
+        "value": "armyOrg_professional"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "armyOrg_standing",
+        "source": "entry-id",
+        "value": "armyOrg_standing"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "estateTax_none",
+        "source": "entry-id",
+        "value": "estateTax_none"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "incomeTax_extreme",
+        "source": "entry-id",
+        "value": "incomeTax_extreme"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "incomeTax_high",
+        "source": "entry-id",
+        "value": "incomeTax_high"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "incomeTax_low",
+        "source": "entry-id",
+        "value": "incomeTax_low"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "incomeTax_medium",
+        "source": "entry-id",
+        "value": "incomeTax_medium"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "incomeTax_none",
+        "source": "entry-id",
+        "value": "incomeTax_none"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "NewRow_0",
+        "source": "entry-id",
+        "value": "NewRow_0"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "unitTraining_default",
+        "source": "entry-id",
+        "value": "unitTraining_default"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "unitTraining_desperate",
+        "source": "entry-id",
+        "value": "unitTraining_desperate"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "unitTraining_elite",
+        "source": "entry-id",
+        "value": "unitTraining_elite"
+      },
+      {
+        "kind": "display-name",
+        "type": "government-reform-options",
+        "id": "unitTraining_rushed",
+        "source": "entry-id",
+        "value": "unitTraining_rushed"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "conservativePopulist",
+        "source": "entry-id",
+        "value": "conservativePopulist"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "culturalMarxism",
+        "source": "entry-id",
+        "value": "culturalMarxism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "esotericMechanism",
+        "source": "entry-id",
+        "value": "esotericMechanism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "islamism",
+        "source": "entry-id",
+        "value": "islamism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "libertarian",
+        "source": "entry-id",
+        "value": "libertarian"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "nationalHinduism",
+        "source": "entry-id",
+        "value": "nationalHinduism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "neoliberal",
+        "source": "entry-id",
+        "value": "neoliberal"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "russianNationalism",
+        "source": "entry-id",
+        "value": "russianNationalism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideologies",
+        "id": "traditionalism",
+        "source": "entry-id",
+        "value": "traditionalism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "chauvinism",
+        "source": "entry-id",
+        "value": "chauvinism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "clericalDominance",
+        "source": "entry-id",
+        "value": "clericalDominance"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "deathWorship",
+        "source": "entry-id",
+        "value": "deathWorship"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "diplomaticPrimacy",
+        "source": "entry-id",
+        "value": "diplomaticPrimacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "distributism",
+        "source": "entry-id",
+        "value": "distributism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "divineEmpire",
+        "source": "entry-id",
+        "value": "divineEmpire"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "esotericism",
+        "source": "entry-id",
+        "value": "esotericism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "futurism",
+        "source": "entry-id",
+        "value": "futurism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "gleichschaltung",
+        "source": "entry-id",
+        "value": "gleichschaltung"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "idealistic",
+        "source": "entry-id",
+        "value": "idealistic"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "imperialism",
+        "source": "entry-id",
+        "value": "imperialism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "infirmocentric",
+        "source": "entry-id",
+        "value": "infirmocentric"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "interventionism",
+        "source": "entry-id",
+        "value": "interventionism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "meritocracy",
+        "source": "entry-id",
+        "value": "meritocracy"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "pacifism",
+        "source": "entry-id",
+        "value": "pacifism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "puritySpiral",
+        "source": "entry-id",
+        "value": "puritySpiral"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "realistic",
+        "source": "entry-id",
+        "value": "realistic"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "repressiveTolerance",
+        "source": "entry-id",
+        "value": "repressiveTolerance"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "stateCapitalism",
+        "source": "entry-id",
+        "value": "stateCapitalism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "stateWorship",
+        "source": "entry-id",
+        "value": "stateWorship"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "universalism",
+        "source": "entry-id",
+        "value": "universalism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "utopianism",
+        "source": "entry-id",
+        "value": "utopianism"
+      },
+      {
+        "kind": "display-name",
+        "type": "ideology-traits",
+        "id": "warmonger",
+        "source": "entry-id",
+        "value": "warmonger"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "administrative",
+        "source": "entry-id",
+        "value": "administrative"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "formable",
+        "source": "entry-id",
+        "value": "formable"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "intel",
+        "source": "entry-id",
+        "value": "intel"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "migration",
+        "source": "entry-id",
+        "value": "migration"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "organization",
+        "source": "entry-id",
+        "value": "organization"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "peacedeal",
+        "source": "entry-id",
+        "value": "peacedeal"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "political",
+        "source": "entry-id",
+        "value": "political"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "recruitment",
+        "source": "entry-id",
+        "value": "recruitment"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "region",
+        "source": "entry-id",
+        "value": "region"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "relevance",
+        "source": "entry-id",
+        "value": "relevance"
+      },
+      {
+        "kind": "display-name",
+        "type": "map-modes",
+        "id": "terrain",
+        "source": "entry-id",
+        "value": "terrain"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addCulturePower",
+        "source": "entry-id",
+        "value": "addCulturePower"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addCultureTrait",
+        "source": "entry-id",
+        "value": "addCultureTrait"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addCurrency",
+        "source": "entry-id",
+        "value": "addCurrency"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addCurrencyPopulation",
+        "source": "entry-id",
+        "value": "addCurrencyPopulation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addCurrencyYears",
+        "source": "entry-id",
+        "value": "addCurrencyYears"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addDevelopment",
+        "source": "entry-id",
+        "value": "addDevelopment"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addEducation",
+        "source": "entry-id",
+        "value": "addEducation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addMission",
+        "source": "entry-id",
+        "value": "addMission"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addSituation",
+        "source": "entry-id",
+        "value": "addSituation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addStability",
+        "source": "entry-id",
+        "value": "addStability"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addStaticModifier",
+        "source": "entry-id",
+        "value": "addStaticModifier"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "addTechnology",
+        "source": "entry-id",
+        "value": "addTechnology"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "armySize",
+        "source": "entry-id",
+        "value": "armySize"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "atWarWith",
+        "source": "entry-id",
+        "value": "atWarWith"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "buildProject",
+        "source": "entry-id",
+        "value": "buildProject"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "changeColonyProgress",
+        "source": "entry-id",
+        "value": "changeColonyProgress"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "conquerTerritory",
+        "source": "entry-id",
+        "value": "conquerTerritory"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "damageRegion",
+        "source": "entry-id",
+        "value": "damageRegion"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "destroySituations",
+        "source": "entry-id",
+        "value": "destroySituations"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "federalizeOrganization",
+        "source": "entry-id",
+        "value": "federalizeOrganization"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "formablePopulation",
+        "source": "entry-id",
+        "value": "formablePopulation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "formCountry",
+        "source": "entry-id",
+        "value": "formCountry"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasCurrency",
+        "source": "entry-id",
+        "value": "hasCurrency"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasDevelopment",
+        "source": "entry-id",
+        "value": "hasDevelopment"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasEducation",
+        "source": "entry-id",
+        "value": "hasEducation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasLoyalists",
+        "source": "entry-id",
+        "value": "hasLoyalists"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasNumPrivileges",
+        "source": "entry-id",
+        "value": "hasNumPrivileges"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasPlanetPopulation",
+        "source": "entry-id",
+        "value": "hasPlanetPopulation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasPlanetProjects",
+        "source": "entry-id",
+        "value": "hasPlanetProjects"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasProjectAny",
+        "source": "entry-id",
+        "value": "hasProjectAny"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasProjects",
+        "source": "entry-id",
+        "value": "hasProjects"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasReform",
+        "source": "entry-id",
+        "value": "hasReform"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasRelations",
+        "source": "entry-id",
+        "value": "hasRelations"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasResource",
+        "source": "entry-id",
+        "value": "hasResource"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasResourceBalance",
+        "source": "entry-id",
+        "value": "hasResourceBalance"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasResourceCapacity",
+        "source": "entry-id",
+        "value": "hasResourceCapacity"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasStability",
+        "source": "entry-id",
+        "value": "hasStability"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasTechnology",
+        "source": "entry-id",
+        "value": "hasTechnology"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "hasTotalProjects",
+        "source": "entry-id",
+        "value": "hasTotalProjects"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "isCountryRank",
+        "source": "entry-id",
+        "value": "isCountryRank"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "isPlanetController",
+        "source": "entry-id",
+        "value": "isPlanetController"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "modifierCheck",
+        "source": "entry-id",
+        "value": "modifierCheck"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "regenLeaders",
+        "source": "entry-id",
+        "value": "regenLeaders"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "remakeDiplomacy",
+        "source": "entry-id",
+        "value": "remakeDiplomacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "removeSituation",
+        "source": "entry-id",
+        "value": "removeSituation"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "retireLeader",
+        "source": "entry-id",
+        "value": "retireLeader"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "scopeEffect",
+        "source": "entry-id",
+        "value": "scopeEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "setReform",
+        "source": "entry-id",
+        "value": "setReform"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "situationLocalVariable",
+        "source": "entry-id",
+        "value": "situationLocalVariable"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "situationLocalVariableAdd",
+        "source": "entry-id",
+        "value": "situationLocalVariableAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "situationSharedVariable",
+        "source": "entry-id",
+        "value": "situationSharedVariable"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "situationSharedVariableAdd",
+        "source": "entry-id",
+        "value": "situationSharedVariableAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "spawnCountry",
+        "source": "entry-id",
+        "value": "spawnCountry"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "spawnCrisis",
+        "source": "entry-id",
+        "value": "spawnCrisis"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "spawnNotification",
+        "source": "entry-id",
+        "value": "spawnNotification"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "spawnUnit",
+        "source": "entry-id",
+        "value": "spawnUnit"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "startCivilWar",
+        "source": "entry-id",
+        "value": "startCivilWar"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "stockpileMoney",
+        "source": "entry-id",
+        "value": "stockpileMoney"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "terraformPlanet",
+        "source": "entry-id",
+        "value": "terraformPlanet"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "tooltipEffect",
+        "source": "entry-id",
+        "value": "tooltipEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-components",
+        "id": "triggerEvent",
+        "source": "entry-id",
+        "value": "triggerEvent"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-types",
+        "id": "armyBuildup",
+        "source": "entry-id",
+        "value": "armyBuildup"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-types",
+        "id": "buildProject",
+        "source": "entry-id",
+        "value": "buildProject"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-types",
+        "id": "conquerTerritory",
+        "source": "entry-id",
+        "value": "conquerTerritory"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-types",
+        "id": "researchTech",
+        "source": "entry-id",
+        "value": "researchTech"
+      },
+      {
+        "kind": "display-name",
+        "type": "mission-types",
+        "id": "selectReform",
+        "source": "entry-id",
+        "value": "selectReform"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "bureaucraticControl",
+        "source": "entry-id",
+        "value": "bureaucraticControl"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "controlCriminalGangs",
+        "source": "entry-id",
+        "value": "controlCriminalGangs"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "encourageDegeneracy",
+        "source": "entry-id",
+        "value": "encourageDegeneracy"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "encourageInfighting",
+        "source": "entry-id",
+        "value": "encourageInfighting"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "establishHumanTrafficking",
+        "source": "entry-id",
+        "value": "establishHumanTrafficking"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "forceVassalize",
+        "source": "entry-id",
+        "value": "forceVassalize"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "infiltrateGovernment",
+        "source": "entry-id",
+        "value": "infiltrateGovernment"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "infiltrateSchoolSystem",
+        "source": "entry-id",
+        "value": "infiltrateSchoolSystem"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "judicialControl",
+        "source": "entry-id",
+        "value": "judicialControl"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "localGovernmentControl",
+        "source": "entry-id",
+        "value": "localGovernmentControl"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "lockdownRegion",
+        "source": "entry-id",
+        "value": "lockdownRegion"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "massMediaControl",
+        "source": "entry-id",
+        "value": "massMediaControl"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "mindControlDrugs",
+        "source": "entry-id",
+        "value": "mindControlDrugs"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "oppositonControl",
+        "source": "entry-id",
+        "value": "oppositonControl"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "sabotageDiplomacy",
+        "source": "entry-id",
+        "value": "sabotageDiplomacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "sabotageMilitary",
+        "source": "entry-id",
+        "value": "sabotageMilitary"
+      },
+      {
+        "kind": "display-name",
+        "type": "missions",
+        "id": "vassalBreakFree",
+        "source": "entry-id",
+        "value": "vassalBreakFree"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "budgetModifierPopulation",
+        "source": "modifier-id",
+        "value": "budgetModifierPopulation"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "cohesionAdd",
+        "source": "modifier-id",
+        "value": "cohesionAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "escalationAdd",
+        "source": "modifier-id",
+        "value": "escalationAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "industryLimit",
+        "source": "modifier-id",
+        "value": "industryLimit"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "jobAddPerc",
+        "source": "modifier-id",
+        "value": "jobAddPerc"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "joinOrgCost",
+        "source": "modifier-id",
+        "value": "joinOrgCost"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "policySupportAdd",
+        "source": "modifier-id",
+        "value": "policySupportAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "popAmenitiesUsage",
+        "source": "modifier-id",
+        "value": "popAmenitiesUsage"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "privateSectorDrift",
+        "source": "modifier-id",
+        "value": "privateSectorDrift"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "socialSpendingMaxAdd",
+        "source": "modifier-id",
+        "value": "socialSpendingMaxAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "socialSpendingMinAdd",
+        "source": "modifier-id",
+        "value": "socialSpendingMinAdd"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "supplyLimitMult",
+        "source": "modifier-id",
+        "value": "supplyLimitMult"
+      },
+      {
+        "kind": "display-name",
+        "type": "modifiers",
+        "id": "tooltipModifier",
+        "source": "modifier-id",
+        "value": "tooltipModifier"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "aiJoinAnnounce_ally",
+        "source": "entry-id",
+        "value": "aiJoinAnnounce_ally"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "aiJoinAnnounce_enemy",
+        "source": "entry-id",
+        "value": "aiJoinAnnounce_enemy"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "aiJoinWar",
+        "source": "entry-id",
+        "value": "aiJoinWar"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "badPuppet",
+        "source": "entry-id",
+        "value": "badPuppet"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "callAlly",
+        "source": "entry-id",
+        "value": "callAlly"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "canAddCultureIdea",
+        "source": "entry-id",
+        "value": "canAddCultureIdea"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "canAddCultureTrait",
+        "source": "entry-id",
+        "value": "canAddCultureTrait"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "characterDeathNotification",
+        "source": "entry-id",
+        "value": "characterDeathNotification"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "colonyCompleted",
+        "source": "entry-id",
+        "value": "colonyCompleted"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "complexPeaceDeal",
+        "source": "entry-id",
+        "value": "complexPeaceDeal"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "crisisSpawn",
+        "source": "entry-id",
+        "value": "crisisSpawn"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "debtNotification",
+        "source": "entry-id",
+        "value": "debtNotification"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "diploMessage",
+        "source": "entry-id",
+        "value": "diploMessage"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "dispute",
+        "source": "entry-id",
+        "value": "dispute"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "edictInvalidated",
+        "source": "entry-id",
+        "value": "edictInvalidated"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "electionNotification",
+        "source": "entry-id",
+        "value": "electionNotification"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "focusClear",
+        "source": "entry-id",
+        "value": "focusClear"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "highStability",
+        "source": "entry-id",
+        "value": "highStability"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "hostileOperation",
+        "source": "entry-id",
+        "value": "hostileOperation"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "impendingRevolt",
+        "source": "entry-id",
+        "value": "impendingRevolt"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "incomingDiplomacy",
+        "source": "entry-id",
+        "value": "incomingDiplomacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "incomingPeace",
+        "source": "entry-id",
+        "value": "incomingPeace"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "integrationComplete",
+        "source": "entry-id",
+        "value": "integrationComplete"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "leftOrganization",
+        "source": "entry-id",
+        "value": "leftOrganization"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "lowAdminEfficiency",
+        "source": "entry-id",
+        "value": "lowAdminEfficiency"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "nuclearUltimatum",
+        "source": "entry-id",
+        "value": "nuclearUltimatum"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "nuclearUltimatum_refuse",
+        "source": "entry-id",
+        "value": "nuclearUltimatum_refuse"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "orgVoteBegun",
+        "source": "entry-id",
+        "value": "orgVoteBegun"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "orgVoteFailed",
+        "source": "entry-id",
+        "value": "orgVoteFailed"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "orgVotePassed",
+        "source": "entry-id",
+        "value": "orgVotePassed"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "peaceDeal",
+        "source": "entry-id",
+        "value": "peaceDeal"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "possibleFormable",
+        "source": "entry-id",
+        "value": "possibleFormable"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "regionInvasion",
+        "source": "entry-id",
+        "value": "regionInvasion"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "regionOccupation",
+        "source": "entry-id",
+        "value": "regionOccupation"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "researchComplete",
+        "source": "entry-id",
+        "value": "researchComplete"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "resourceShortage",
+        "source": "entry-id",
+        "value": "resourceShortage"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "revoltThreshold",
+        "source": "entry-id",
+        "value": "revoltThreshold"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "selectMission",
+        "source": "entry-id",
+        "value": "selectMission"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "situationMissionPossible",
+        "source": "entry-id",
+        "value": "situationMissionPossible"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "splinterCulture",
+        "source": "entry-id",
+        "value": "splinterCulture"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "strikeDefenseFailure",
+        "source": "entry-id",
+        "value": "strikeDefenseFailure"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "strikeDefenseSuccess",
+        "source": "entry-id",
+        "value": "strikeDefenseSuccess"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "strikeFailure",
+        "source": "entry-id",
+        "value": "strikeFailure"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "strikeSuccess",
+        "source": "entry-id",
+        "value": "strikeSuccess"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "tooManyCharacters",
+        "source": "entry-id",
+        "value": "tooManyCharacters"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "transferOccupation",
+        "source": "entry-id",
+        "value": "transferOccupation"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "unrestWarning",
+        "source": "entry-id",
+        "value": "unrestWarning"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "unrestWarningSevere",
+        "source": "entry-id",
+        "value": "unrestWarningSevere"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "warDeclared",
+        "source": "entry-id",
+        "value": "warDeclared"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "warEscalated",
+        "source": "entry-id",
+        "value": "warEscalated"
+      },
+      {
+        "kind": "display-name",
+        "type": "notifications",
+        "id": "warResolved",
+        "source": "entry-id",
+        "value": "warResolved"
+      },
+      {
+        "kind": "display-name",
+        "type": "orbit-types",
+        "id": "equatorial",
+        "source": "entry-id",
+        "value": "equatorial"
+      },
+      {
+        "kind": "display-name",
+        "type": "orbit-types",
+        "id": "highOrbit",
+        "source": "entry-id",
+        "value": "highOrbit"
+      },
+      {
+        "kind": "display-name",
+        "type": "organization-votes",
+        "id": "inviteMember",
+        "source": "entry-id",
+        "value": "inviteMember"
+      },
+      {
+        "kind": "display-name",
+        "type": "organization-votes",
+        "id": "kickMember",
+        "source": "entry-id",
+        "value": "kickMember"
+      },
+      {
+        "kind": "display-name",
+        "type": "planetary-bodies",
+        "id": "aegir1_devastated",
+        "source": "entry-id",
+        "value": "aegir1_devastated"
+      },
+      {
+        "kind": "display-name",
+        "type": "planetary-bodies",
+        "id": "earth_devastated",
+        "source": "entry-id",
+        "value": "earth_devastated"
+      },
+      {
+        "kind": "display-name",
+        "type": "planetary-bodies",
+        "id": "nonSurveyed",
+        "source": "entry-id",
+        "value": "nonSurveyed"
+      },
+      {
+        "kind": "display-name",
+        "type": "planetary-bodies",
+        "id": "stableOrbit",
+        "source": "entry-id",
+        "value": "stableOrbit"
+      },
+      {
+        "kind": "display-name",
+        "type": "policies",
+        "id": "integration_speed",
+        "source": "entry-id",
+        "value": "integration_speed"
+      },
+      {
+        "kind": "display-name",
+        "type": "policies",
+        "id": "militarization",
+        "source": "entry-id",
+        "value": "militarization"
+      },
+      {
+        "kind": "display-name",
+        "type": "policy-options",
+        "id": "unitMoraleRecovery",
+        "source": "entry-id",
+        "value": "unitMoraleRecovery"
+      },
+      {
+        "kind": "display-name",
+        "type": "projects",
+        "id": "covalenceFactory",
+        "source": "entry-id",
+        "value": "covalenceFactory"
+      },
+      {
+        "kind": "display-name",
+        "type": "projects",
+        "id": "generationShip",
+        "source": "entry-id",
+        "value": "generationShip"
+      },
+      {
+        "kind": "display-name",
+        "type": "projects",
+        "id": "metaverseServer",
+        "source": "entry-id",
+        "value": "metaverseServer"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "2_commerceCity",
+        "source": "entry-id",
+        "value": "2_commerceCity"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "2_fortressCity",
+        "source": "entry-id",
+        "value": "2_fortressCity"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "2_industrialCity",
+        "source": "entry-id",
+        "value": "2_industrialCity"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "airport",
+        "source": "entry-id",
+        "value": "airport"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "city",
+        "source": "entry-id",
+        "value": "city"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "port",
+        "source": "entry-id",
+        "value": "port"
+      },
+      {
+        "kind": "display-name",
+        "type": "province-buildings",
+        "id": "supplyBase",
+        "source": "entry-id",
+        "value": "supplyBase"
+      },
+      {
+        "kind": "display-name",
+        "type": "psychology",
+        "id": "agency",
+        "source": "entry-id",
+        "value": "agency"
+      },
+      {
+        "kind": "display-name",
+        "type": "psychology",
+        "id": "conformity",
+        "source": "entry-id",
+        "value": "conformity"
+      },
+      {
+        "kind": "display-name",
+        "type": "psychology",
+        "id": "harmony",
+        "source": "entry-id",
+        "value": "harmony"
+      },
+      {
+        "kind": "display-name",
+        "type": "psychology",
+        "id": "trust",
+        "source": "entry-id",
+        "value": "trust"
+      },
+      {
+        "kind": "display-name",
+        "type": "region-interactions",
+        "id": "immigrationIncentive",
+        "source": "entry-id",
+        "value": "immigrationIncentive"
+      },
+      {
+        "kind": "display-name",
+        "type": "region-interactions",
+        "id": "massDeportations",
+        "source": "entry-id",
+        "value": "massDeportations"
+      },
+      {
+        "kind": "display-name",
+        "type": "region-interactions",
+        "id": "NewRow_1",
+        "source": "entry-id",
+        "value": "NewRow_1"
+      },
+      {
+        "kind": "display-name",
+        "type": "region-interactions",
+        "id": "NewRow_2",
+        "source": "entry-id",
+        "value": "NewRow_2"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-trait-categories",
+        "id": "heritage",
+        "source": "entry-id",
+        "value": "heritage"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-trait-categories",
+        "id": "tene",
+        "source": "entry-id",
+        "value": "tene"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-trait-categories",
+        "id": "trait",
+        "source": "entry-id",
+        "value": "trait"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_atheist",
+        "source": "entry-id",
+        "value": "heritage_atheist"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_christian",
+        "source": "entry-id",
+        "value": "heritage_christian"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_hindu",
+        "source": "entry-id",
+        "value": "heritage_hindu"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_islamic",
+        "source": "entry-id",
+        "value": "heritage_islamic"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_jewish",
+        "source": "entry-id",
+        "value": "heritage_jewish"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_marxist",
+        "source": "entry-id",
+        "value": "heritage_marxist"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "heritage_occult",
+        "source": "entry-id",
+        "value": "heritage_occult"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "tenet_chosenPeople",
+        "source": "entry-id",
+        "value": "tenet_chosenPeople"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "tenet_papacy",
+        "source": "entry-id",
+        "value": "tenet_papacy"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "tenet_pilgrimage",
+        "source": "entry-id",
+        "value": "tenet_pilgrimage"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "tenet_syncretic",
+        "source": "entry-id",
+        "value": "tenet_syncretic"
+      },
+      {
+        "kind": "display-name",
+        "type": "religion-traits",
+        "id": "tenet_warlike",
+        "source": "entry-id",
+        "value": "tenet_warlike"
+      },
+      {
+        "kind": "display-name",
+        "type": "religions",
+        "id": "religion_catholic",
+        "source": "entry-id",
+        "value": "religion_catholic"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "cedeProvince",
+        "source": "entry-id",
+        "value": "cedeProvince"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "cedeRegion",
+        "source": "entry-id",
+        "value": "cedeRegion"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "joinOrg",
+        "source": "entry-id",
+        "value": "joinOrg"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "leaveOrg",
+        "source": "entry-id",
+        "value": "leaveOrg"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "peace",
+        "source": "entry-id",
+        "value": "peace"
+      },
+      {
+        "kind": "display-name",
+        "type": "situation-goals",
+        "id": "warReps",
+        "source": "entry-id",
+        "value": "warReps"
+      },
+      {
+        "kind": "display-name",
+        "type": "situations",
+        "id": "ascendedAutomation",
+        "source": "entry-id",
+        "value": "ascendedAutomation"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "ascendedAutomation",
+        "field": "Description",
+        "value": "ascendedAutomationDesc"
+      },
+      {
+        "kind": "display-name",
+        "type": "situations",
+        "id": "ascendedDigital",
+        "source": "entry-id",
+        "value": "ascendedDigital"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "ascendedDigital",
+        "field": "Description",
+        "value": "ascendedDigitalDesc"
+      },
+      {
+        "kind": "display-name",
+        "type": "situations",
+        "id": "ascendedMutation",
+        "source": "entry-id",
+        "value": "ascendedMutation"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "ascendedMutation",
+        "field": "Description",
+        "value": "ascendedMutationDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "ccpPolitburo",
+        "field": "Description",
+        "value": "ccpPolitburoDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "jovianCorporation",
+        "field": "Description",
+        "value": "jovianCorporationDesc"
+      },
+      {
+        "kind": "display-name",
+        "type": "situations",
+        "id": "marsSituation",
+        "source": "entry-id",
+        "value": "marsSituation"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "marsSituation",
+        "field": "Description",
+        "value": "marsSituationDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "mechanistCoalescence",
+        "field": "Description",
+        "value": "mechanistCoalescenceDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "polycrisis",
+        "field": "Description",
+        "value": "polycrisisDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "robotCountrySituation",
+        "field": "Description",
+        "value": "robotCountrySituationDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "roboticsCrisis",
+        "field": "Description",
+        "value": "roboticsCrisisDesc"
+      },
+      {
+        "kind": "localization",
+        "type": "situations",
+        "id": "russiaSituation",
+        "field": "Description",
+        "value": "russiaSituationDesc"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "earthMagneticField",
+        "source": "entry-id",
+        "value": "earthMagneticField"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "hygiea",
+        "source": "entry-id",
+        "value": "hygiea"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "jupiterAsteroids",
+        "source": "entry-id",
+        "value": "jupiterAsteroids"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "jupiterMagneticField",
+        "source": "entry-id",
+        "value": "jupiterMagneticField"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "kuiperBelt",
+        "source": "entry-id",
+        "value": "kuiperBelt"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-objects",
+        "id": "pallas",
+        "source": "entry-id",
+        "value": "pallas"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-zone-types",
+        "id": "highOrbit",
+        "source": "entry-id",
+        "value": "highOrbit"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-zone-types",
+        "id": "interplanetarySpace",
+        "source": "entry-id",
+        "value": "interplanetarySpace"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-zone-types",
+        "id": "lowOrbit",
+        "source": "entry-id",
+        "value": "lowOrbit"
+      },
+      {
+        "kind": "display-name",
+        "type": "space-zone-types",
+        "id": "middleOrbit",
+        "source": "entry-id",
+        "value": "middleOrbit"
+      },
+      {
+        "kind": "display-name",
+        "type": "specializations",
+        "id": "defaultSpec",
+        "source": "entry-id",
+        "value": "defaultSpec"
+      },
+      {
+        "kind": "display-name",
+        "type": "specializations",
+        "id": "protectorateSpec",
+        "source": "entry-id",
+        "value": "protectorateSpec"
+      },
+      {
+        "kind": "display-name",
+        "type": "specializations",
+        "id": "unintegratedSpec",
+        "source": "entry-id",
+        "value": "unintegratedSpec"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "amenitiesEffect",
+        "source": "entry-id",
+        "value": "amenitiesEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "atmospherePressureEffect",
+        "source": "entry-id",
+        "value": "atmospherePressureEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "characterCapturedEffect",
+        "source": "entry-id",
+        "value": "characterCapturedEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "cohesionEffect",
+        "source": "entry-id",
+        "value": "cohesionEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "entrenchEffect",
+        "source": "entry-id",
+        "value": "entrenchEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "falseFlagEffect",
+        "source": "entry-id",
+        "value": "falseFlagEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "gravitationEffect",
+        "source": "entry-id",
+        "value": "gravitationEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "high_income_taxEffect",
+        "source": "entry-id",
+        "value": "high_income_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "income_tax_taxEffect",
+        "source": "entry-id",
+        "value": "income_tax_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "intentionalFailEffect",
+        "source": "entry-id",
+        "value": "intentionalFailEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "low_income_taxEffect",
+        "source": "entry-id",
+        "value": "low_income_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "lowAdminEfficiencyEffect",
+        "source": "entry-id",
+        "value": "lowAdminEfficiencyEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "middle_income_taxEffect",
+        "source": "entry-id",
+        "value": "middle_income_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "offensivePlanningEffect",
+        "source": "entry-id",
+        "value": "offensivePlanningEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "parachuteMechanic_effect",
+        "source": "entry-id",
+        "value": "parachuteMechanic_effect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "property_taxEffect",
+        "source": "entry-id",
+        "value": "property_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "recentReferendumEffect",
+        "source": "entry-id",
+        "value": "recentReferendumEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "resourceTax_taxEffect",
+        "source": "entry-id",
+        "value": "resourceTax_taxEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "unitSizeEffect",
+        "source": "entry-id",
+        "value": "unitSizeEffect"
+      },
+      {
+        "kind": "display-name",
+        "type": "static-modifiers",
+        "id": "warModifier",
+        "source": "entry-id",
+        "value": "warModifier"
+      },
+      {
+        "kind": "display-name",
+        "type": "trade-categories",
+        "id": "misc",
+        "source": "entry-id",
+        "value": "misc"
+      },
+      {
+        "kind": "display-name",
+        "type": "trade-categories",
+        "id": "territory",
+        "source": "entry-id",
+        "value": "territory"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-archetypes",
+        "id": "drone",
+        "source": "entry-id",
+        "value": "drone"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-archetypes",
+        "id": "fighter",
+        "source": "entry-id",
+        "value": "fighter"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-components",
+        "id": "insulator_5",
+        "source": "entry-id",
+        "value": "insulator_5"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-components",
+        "id": "submarineEngine",
+        "source": "entry-id",
+        "value": "submarineEngine"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-components",
+        "id": "supportRailgun",
+        "source": "entry-id",
+        "value": "supportRailgun"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-stats",
+        "id": "reconWeight",
+        "source": "entry-id",
+        "value": "reconWeight"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-stats",
+        "id": "smallArms_attack",
+        "source": "entry-id",
+        "value": "smallArms_attack"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-stats",
+        "id": "smallArms_vuln",
+        "source": "entry-id",
+        "value": "smallArms_vuln"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-stats",
+        "id": "strategic_attack",
+        "source": "entry-id",
+        "value": "strategic_attack"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Anti-Tank (Generic)",
+        "source": "entry-id",
+        "value": "Anti-Tank (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Artillery (Generic)",
+        "source": "entry-id",
+        "value": "Artillery (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Destroyer (Generic)",
+        "source": "entry-id",
+        "value": "Destroyer (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Fighter (Generic)",
+        "source": "entry-id",
+        "value": "Fighter (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Infantry (Generic)",
+        "source": "entry-id",
+        "value": "Infantry (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Interceptor (Generic)",
+        "source": "entry-id",
+        "value": "Interceptor (Generic)"
+      },
+      {
+        "kind": "display-name",
+        "type": "unit-types",
+        "id": "Tank (Generic)",
+        "source": "entry-id",
+        "value": "Tank (Generic)"
+      }
+    ]
+  },
+  "inferred": {
+    "count": 505,
+    "byKind": {
+      "icon": 505
+    },
+    "bySource": {
+      "damage-type-icon-map": 19,
+      "default-cultural": 53,
+      "entry-fallback": 1,
+      "modifier": 321,
+      "target": 88,
+      "terrain-image": 21,
+      "terrain-ocean-fallback": 1,
+      "type-scoped-character-trait-icon": 1
+    },
+    "values": [
+      {
+        "kind": "icon",
+        "type": "character-traits",
+        "id": "logical",
+        "source": "type-scoped-character-trait-icon",
+        "value": "charactertrait:logical"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airCavalry",
+        "source": "target",
+        "value": "air_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airCommand",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airDesigning",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airLandSupport",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airMastery",
+        "source": "modifier",
+        "value": "speed"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airReconaissance",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "airSuperiority",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanAstrogation",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanFreedom",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanFrontierism",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanHegemony",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanIngenuity",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanNavalPrimacy",
+        "source": "target",
+        "value": "water_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "americanWorkEthic",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocratic",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticAmbition",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticCulture",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticEconomics",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticLeadership",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticLoyalty",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticMilitary",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "aristocraticSupremacy",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistAutonomy",
+        "source": "target",
+        "value": "separatist"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistControl",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistCulture",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistEthics",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistMastery",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistMilitary",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "assimilationistPolitical",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistEducation",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistHumanism",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistMaterialism",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistPolitics",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistScientism",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistSkepticism",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "atheistWorldliness",
+        "source": "target",
+        "value": "consumerGoods"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishAdministration",
+        "source": "modifier",
+        "value": "edict"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishAdventurism",
+        "source": "target",
+        "value": "navyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishIndustrialism",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishInnovation",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishLegacy",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishPoliteness",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "britishStoicism",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityConversions",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityDeusVult",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityDevotion",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityPiety",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityTithes",
+        "source": "target",
+        "value": "clergy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityUnity",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "christianityWorship",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumerCulture",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersBreadAndCircus",
+        "source": "target",
+        "value": "laborer"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersCommerce",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersEconomy",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersExport",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersInnovation",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersMastery",
+        "source": "target",
+        "value": "consumerGoods"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "consumersPolitics",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveBattlements",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveFortification",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveMastery",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveMilitaryIndustry",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensivePsychology",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveResistance",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "defensiveUnits",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligent",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentConstruction",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentEntrepreneurship",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentExperience",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentLeadership",
+        "source": "target",
+        "value": "management"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentMastery",
+        "source": "modifier",
+        "value": "experience"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentWorkEthic",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diligentWorkflow",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyAlliances",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyConciliation",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyEnvoys",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyMastery",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyNetworking",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyUnderstanding",
+        "source": "target",
+        "value": "clergy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomacyUnity",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "diplomatic",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoing",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingAsceticism",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingCarefree",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingComplacency",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingCulture",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingMastery",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingPeace",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "easygoingWorldview",
+        "source": "target",
+        "value": "diplomacyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistArmy",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistBiologists",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistIndustry",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistManipulation",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistMastery",
+        "source": "target",
+        "value": "geneticMaterial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistPolitics",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "eugenicistResearch",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersAdvancement",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersAdventure",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersColonization",
+        "source": "target",
+        "value": "spaceCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersDaring",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersEmpire",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersInterplanetary",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "explorersMastery",
+        "source": "entry-fallback",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmAffinity",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsConscription",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsConsumption",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsMastery",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsOrganization",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsPractice",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsResistance",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "firearmsTraining",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "frontierSpirit",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltAssimilation",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltAtonement",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltCompensation",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltDiversity",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltReparations",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltSocialPrograms",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "guiltWelfare",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianCulture",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianDialectics",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianMastery",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianPolitics",
+        "source": "target",
+        "value": "clergy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianSpiritualism",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianSupremacy",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hegelianWorldview",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "heritageAmerican",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "heritageBritish",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismCastes",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismCommunity",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismCulture",
+        "source": "target",
+        "value": "diplomacyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismMastery",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismPolytheism",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismReincarnation",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "hinduismSpiritualism",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityAdaptability",
+        "source": "modifier",
+        "value": "planet"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityAggression",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityInnovation",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityPolitics",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityPsychology",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanitySupremacy",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "humanityTribalism",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_guiltComplex",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_individualism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_intellectualism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_moralism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_obliterationOfSelf",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_prosperism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_statism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_stoicism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_traditionalism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_transformationism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_tribalism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "idea_utopianism",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismAutonomy",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismEntrepreneurship",
+        "source": "target",
+        "value": "commerce"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismFreedom",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismInitiative",
+        "source": "target",
+        "value": "consumerGoodsFactory"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismInnovation",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismLiberty",
+        "source": "modifier",
+        "value": "enactDecision"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "individualismSelfReliance",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industrious",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryConstruction",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryDiligence",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryMastery",
+        "source": "target",
+        "value": "factory"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryMechanization",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryProduction",
+        "source": "modifier",
+        "value": "logistics"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryTrading",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "industryWorking",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influenceAdministration",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influenceMastery",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influenceMicromanagement",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influenceOrchestration",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influenceOrganization",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influencePolitics",
+        "source": "target",
+        "value": "charisma"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influencePsychology",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "influential",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovative",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeAdministration",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeEngineering",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeFunding",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeLeadership",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeResearch",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeStrategy",
+        "source": "modifier",
+        "value": "experience"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "innovativeSupremacy",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insular",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularAdaption",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularIsolation",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularMastery",
+        "source": "modifier",
+        "value": "logistics"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularPolitics",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularSuperiority",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularTraditions",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "insularUnity",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismAcademia",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismElite",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismEnlightenment",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismMeritocracy",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismProgress",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismReason",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "intellectualismScience",
+        "source": "target",
+        "value": "university"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistAdministration",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistColonization",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistCulture",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistDiplomacy",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistExpansion",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistMastery",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "irridentistUnification",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamFanaticism",
+        "source": "target",
+        "value": "clergy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamGlobalIntifada",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamQuran",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamSubmission",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamTerror",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamUnification",
+        "source": "modifier",
+        "value": "speed"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "islamWorship",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistDefense",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistInsularity",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistIntrospection",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistMastery",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistNationalism",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistUnification",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "isolationistUpwardConstruction",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismAncients",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismChosen",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismConviction",
+        "source": "target",
+        "value": "clergy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismInternationalism",
+        "source": "target",
+        "value": "diplomacyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismMonotheism",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismOrganization",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "judaismUsury",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landArtillery",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landCommander",
+        "source": "target",
+        "value": "strategy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landInfantry",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landMastery",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landOrganization",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landReinforcement",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "landTanks",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "luddite",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditeCrusade",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditeCulture",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditeImprovisation",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditeMastery",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditePower",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditePurity",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "ludditeSupremacy",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateCommand",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateEconomy",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateMastery",
+        "source": "modifier",
+        "value": "defense"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateObligations",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateOfHeaven",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandatePolitics",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateProsperity",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "mandateSuperiority",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismClassWar",
+        "source": "target",
+        "value": "laborer"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismEquity",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismInternationale",
+        "source": "target",
+        "value": "diplomacyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismMaterialism",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismPraxis",
+        "source": "modifier",
+        "value": "logistics"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismRevolution",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "marxismStruggleSession",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaristDefensive",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaristOffensive",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaristQuality",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaristQuantity",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaryAirforce",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaryLand",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militaryNaval",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "militarySpaceforce",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistConstruction",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistExpansion",
+        "source": "target",
+        "value": "infrastructure"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistIndustry",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistInfrastructure",
+        "source": "target",
+        "value": "infrastructure"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistMastery",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "monumentalistOrganization",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismCrusade",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismDiscipline",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismJustWar",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismOrder",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismPiety",
+        "source": "target",
+        "value": "monument"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismRighteousness",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moralismVirtue",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "moumentalistPsychology",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyAttack",
+        "source": "target",
+        "value": "water_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyCommand",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyCommerce",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyMastery",
+        "source": "target",
+        "value": "navyCapacity"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyMorale",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyRecruitment",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "navyTactics",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamily",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyCohesion",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyCommunity",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyMastery",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyProsperity",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyResourceful",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilySociety",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "nuclearFamilyTradition",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationCollective",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationConformity",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationDevotion",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationObedience",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationSacrifice",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationSubmission",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "obliterationUnification",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultElitism",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultEvil",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultForbiddenKnowledge",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultIdeology",
+        "source": "modifier",
+        "value": "logistics"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultMagic",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultRitual",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "occultUnion",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveAttack",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveLegions",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveMastery",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensivePersistence",
+        "source": "modifier",
+        "value": "defense"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveSieges",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveSupply",
+        "source": "modifier",
+        "value": "speed"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "offensiveTraining",
+        "source": "target",
+        "value": "strategy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistCommunalism",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistDefense",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistEthics",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistMastery",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistPlacation",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistPolitics",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "passivistRhetoric",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocratic",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticFinancing",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticInvestment",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticLeadership",
+        "source": "modifier",
+        "value": "defense"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticMaterialism",
+        "source": "target",
+        "value": "consumerGoodsFactory"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticMechanics",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticMerit",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "plutocraticSupremacy",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamist",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistChaos",
+        "source": "target",
+        "value": "laborer"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistFamily",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistHierarchy",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistManagement",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistMastery",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistPsychology",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "polygamistSociety",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prideful",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulAggression",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulAmbition",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulArrogance",
+        "source": "modifier",
+        "value": "opinion"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulDictation",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulMastery",
+        "source": "modifier",
+        "value": "enactDecision"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulOrchestration",
+        "source": "target",
+        "value": "charisma"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "pridefulUnity",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismAmbition",
+        "source": "target",
+        "value": "middleClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismDevelopment",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismGrowth",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismIndustry",
+        "source": "target",
+        "value": "factory"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismOpportunity",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismProgress",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "prosperismWealth",
+        "source": "modifier",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityCommand",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityDiscipline",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityElitism",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityMastery",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityOrganization",
+        "source": "modifier",
+        "value": "experience"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityTactics",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "qualityTraining",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityCommand",
+        "source": "modifier",
+        "value": "leader"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityHumanWave",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityMastery",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityMilitarism",
+        "source": "target",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityOrganization",
+        "source": "modifier",
+        "value": "defense"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityOverwhelm",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "quantityWarmachine",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophile",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileArmy",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileConstruction",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileIndustry",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileMastery",
+        "source": "target",
+        "value": "robots"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileMechanism",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileRobotics",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "robophileTechnicians",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticAnalytics",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticComputation",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticEnigmatics",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticMastery",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticMechanics",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticMilitary",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "roboticWorkforce",
+        "source": "modifier",
+        "value": "population"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContract",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractControl",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractLaw",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractMastery",
+        "source": "modifier",
+        "value": "enactDecision"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractOrganization",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractPolitics",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractSociety",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "socialContractStatism",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceAttacking",
+        "source": "target",
+        "value": "space_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceDominance",
+        "source": "target",
+        "value": "space_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceLogistics",
+        "source": "modifier",
+        "value": "speed"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceMorale",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceRecruitment",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceResources",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "spaceTraining",
+        "source": "target",
+        "value": "shipyard"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismAuthority",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismBureaucracy",
+        "source": "target",
+        "value": "bureaucracy"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismCentralization",
+        "source": "modifier",
+        "value": "logistics"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismControl",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismMobilization",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismOrder",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "statismPlanning",
+        "source": "target",
+        "value": "industry"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismDefiance",
+        "source": "modifier",
+        "value": "defense"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismDiscipline",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismEndurance",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismFortitude",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismPerseverance",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismResilience",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "stoicismStolidness",
+        "source": "modifier",
+        "value": "unrest"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thrifty",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyCommerce",
+        "source": "target",
+        "value": "consumerGoodsFactory"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyExpansion",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyExploitation",
+        "source": "target",
+        "value": "extraction"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyInnovation",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyMastery",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftyResources",
+        "source": "modifier",
+        "value": "currency"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "thriftySociety",
+        "source": "target",
+        "value": "corporate"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismAncestors",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismConservatism",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismContinuity",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismCulture",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismHierarchy",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismRituals",
+        "source": "target",
+        "value": "monument"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traditionalismStability",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "traitSuperiorGenes",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationChange",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationEvolution",
+        "source": "modifier",
+        "value": "education"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationFuturism",
+        "source": "target",
+        "value": "university"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationInnovation",
+        "source": "modifier",
+        "value": "enactDecision"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationNewWorld",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationProgress",
+        "source": "modifier",
+        "value": "research"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "transformationVision",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismClans",
+        "source": "target",
+        "value": "upperClass"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismFerocity",
+        "source": "modifier",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismKinship",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismLoyalty",
+        "source": "target",
+        "value": "military"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismRaiding",
+        "source": "modifier",
+        "value": "speed"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismTradition",
+        "source": "modifier",
+        "value": "stability"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "tribalismWarriors",
+        "source": "modifier",
+        "value": "manpower"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophile",
+        "source": "default-cultural",
+        "value": "cultural"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileConstruction",
+        "source": "target",
+        "value": "infrastructure"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileGrowth",
+        "source": "target",
+        "value": "steel"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileInfrastructure",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileMastery",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileMonuments",
+        "source": "target",
+        "value": "monument"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophileOrganization",
+        "source": "modifier",
+        "value": "political"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "urbanophilePopulation",
+        "source": "modifier",
+        "value": "colony"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismCollectivism",
+        "source": "target",
+        "value": "laborer"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismDreams",
+        "source": "modifier",
+        "value": "prestige"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismEquality",
+        "source": "target",
+        "value": "laborer"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismReform",
+        "source": "modifier",
+        "value": "enactDecision"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismSocialism",
+        "source": "modifier",
+        "value": "industrial"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismVision",
+        "source": "modifier",
+        "value": "culture"
+      },
+      {
+        "kind": "icon",
+        "type": "culture-traits",
+        "id": "utopianismZeal",
+        "source": "modifier",
+        "value": "morale"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "airHard",
+        "source": "damage-type-icon-map",
+        "value": "air_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "airSoft",
+        "source": "damage-type-icon-map",
+        "value": "air_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "airTracking",
+        "source": "damage-type-icon-map",
+        "value": "air_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "biological",
+        "source": "damage-type-icon-map",
+        "value": "biological_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "depthCharge",
+        "source": "damage-type-icon-map",
+        "value": "missileAttack_water"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "emp",
+        "source": "damage-type-icon-map",
+        "value": "emp"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "gravometric",
+        "source": "damage-type-icon-map",
+        "value": "gravitons"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "landHard",
+        "source": "damage-type-icon-map",
+        "value": "land_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "landSoft",
+        "source": "damage-type-icon-map",
+        "value": "land_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "landTracking",
+        "source": "damage-type-icon-map",
+        "value": "land_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "laser",
+        "source": "damage-type-icon-map",
+        "value": "laser_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "psychological",
+        "source": "damage-type-icon-map",
+        "value": "Psychology"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "spaceHard",
+        "source": "damage-type-icon-map",
+        "value": "space_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "spaceSoft",
+        "source": "damage-type-icon-map",
+        "value": "space_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "spaceTracking",
+        "source": "damage-type-icon-map",
+        "value": "space_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "strategic",
+        "source": "damage-type-icon-map",
+        "value": "strategic_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "torpedo",
+        "source": "damage-type-icon-map",
+        "value": "torpedo0"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "waterHard",
+        "source": "damage-type-icon-map",
+        "value": "water_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "damage-types",
+        "id": "waterSoft",
+        "source": "damage-type-icon-map",
+        "value": "water_attack"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "arctic",
+        "source": "terrain-image",
+        "value": "terrain:arctic"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "asteroid",
+        "source": "terrain-image",
+        "value": "terrain:asteroid"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "deepOcean",
+        "source": "terrain-image",
+        "value": "terrain:deepOcean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "desert",
+        "source": "terrain-image",
+        "value": "terrain:desert"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "gasGiantAtmosphere",
+        "source": "terrain-image",
+        "value": "terrain:gasGiantAtmosphere"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "hills",
+        "source": "terrain-image",
+        "value": "terrain:hills"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "hothouse",
+        "source": "terrain-image",
+        "value": "terrain:hothouse"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "interplanetary",
+        "source": "terrain-image",
+        "value": "terrain:interplanetary"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "jungle",
+        "source": "terrain-image",
+        "value": "terrain:jungle"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "lavaOcean",
+        "source": "terrain-image",
+        "value": "terrain:lavaOcean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "methaneOcean",
+        "source": "terrain-image",
+        "value": "terrain:methaneOcean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "mountain",
+        "source": "terrain-image",
+        "value": "terrain:mountain"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "ocean",
+        "source": "terrain-image",
+        "value": "terrain:ocean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "plains",
+        "source": "terrain-image",
+        "value": "terrain:plains"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "river",
+        "source": "terrain-ocean-fallback",
+        "value": "terrain:ocean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "salineOcean",
+        "source": "terrain-image",
+        "value": "terrain:salineOcean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "space",
+        "source": "terrain-image",
+        "value": "terrain:space"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "spaceMountains",
+        "source": "terrain-image",
+        "value": "terrain:spaceMountains"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "spacePlains",
+        "source": "terrain-image",
+        "value": "terrain:spacePlains"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "spaceStation",
+        "source": "terrain-image",
+        "value": "terrain:spaceStation"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "subsurfaceOcean",
+        "source": "terrain-image",
+        "value": "terrain:subsurfaceOcean"
+      },
+      {
+        "kind": "icon",
+        "type": "terrain-types",
+        "id": "volcano",
+        "source": "terrain-image",
+        "value": "terrain:volcano"
+      }
+    ]
+  }
+}

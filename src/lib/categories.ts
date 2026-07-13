@@ -1,13 +1,76 @@
 import type { CategoryMeta } from './types';
 
 export const CATEGORY_GROUPS = [
-  { id: 'core', label: 'Empire & Economy', description: 'Research, production, resources, and development.' },
-  { id: 'society', label: 'Government & Society', description: 'Politics, cultures, leaders, and internal affairs.' },
-  { id: 'military', label: 'Military & Expansion', description: 'Unit design, planetary deposits, and strategic eras.' },
-  { id: 'reference', label: 'Game Reference', description: 'Events, situations, effects, and scripting definitions.' },
+  { id: 'world', label: 'Nations & Worlds', description: 'Countries, cultures, territories, and the worlds they inhabit.' },
+  { id: 'society', label: 'Government & Society', description: 'Government, political factions, laws, and population systems.' },
+  { id: 'core', label: 'Economy & Research', description: 'Resources, construction, technology, and national development.' },
+  { id: 'characters', label: 'Characters', description: 'Character roles, traits, skills, equipment, and interactions.' },
+  { id: 'military', label: 'Military', description: 'Unit design, combat statistics, domains, and battle stances.' },
+  { id: 'diplomacy', label: 'Diplomacy & Intelligence', description: 'Diplomacy, espionage, organizations, missions, and empire actions.' },
+  { id: 'reference', label: 'Game Reference', description: 'Technical definitions, modifiers, events, and interface systems.' },
 ] as const;
 
+// These structures are still extracted and normalized for source fidelity and
+// modifier/name resolution, but they are not player-facing wiki categories.
+export const WEBSITE_HIDDEN_CATEGORY_SLUGS = new Set([
+  'religions',
+  'religion-traits',
+  'ideologies',
+  'ideology-traits',
+  'region-interactions',
+  'province-buildings',
+  'industries',
+  'consumer-demand',
+  'government-forms',
+  'government-types',
+  'policies',
+  'population-types',
+  'social-metrics',
+  'ethics',
+  'decisions',
+  'space-objects',
+  'population-laws',
+  'character-skills',
+  'character-equipment',
+  'character-interactions',
+  'psychology',
+  'battle-stances',
+  'auto-units',
+]);
+
+// Individual definitions that remain available to the parser and curated data,
+// but represent unused game structures that should not appear on the wiki.
+export const WEBSITE_HIDDEN_ENTRY_KEYS = new Set([
+  'government-reforms:adminStance',
+  'government-reform-options:bureaucracy_secular',
+  'government-reform-options:bureaucracy_ideological',
+  'government-reform-options:bureaucracy_privatised',
+  'government-reform-options:bureaucracy_militarized',
+  'government-reform-options:bureaucracy_technocratic',
+  'government-reform-options:bureaucracy_nonExistent',
+]);
+
+export function isWebsiteEntry(type: string, id: string): boolean {
+  return isWebsiteCategory(type) && !WEBSITE_HIDDEN_ENTRY_KEYS.has(`${type}:${id}`);
+}
+
 export const CATEGORIES: CategoryMeta[] = [
+  {
+    slug: 'countries',
+    label: 'Country',
+    pluralLabel: 'Countries',
+    description: 'Starting countries and their governments, cultures, economies, and territories in each scenario.',
+    priority: 0,
+    group: 'core',
+  },
+  {
+    slug: 'regions',
+    label: 'Region',
+    pluralLabel: 'Regions',
+    description: 'Starting regions, their populations, owners, planetary bodies, specializations, and deposits in each scenario.',
+    priority: 0.5,
+    group: 'world',
+  },
   {
     slug: 'resources',
     label: 'Resource',
@@ -198,7 +261,7 @@ export const CATEGORIES: CategoryMeta[] = [
   { slug: 'ideologies', label: 'Ideology', pluralLabel: 'Ideologies', description: 'Political ideologies.', defineFile: 'Ideologies.json', priority: 26, group: 'society' },
   { slug: 'ideology-traits', label: 'Ideology Trait', pluralLabel: 'Ideology Traits', description: 'Tenets and traits of each ideology.', defineFile: 'IdeologyTraits.json', priority: 27, group: 'society' },
   { slug: 'government-forms', label: 'Government Form', pluralLabel: 'Government Forms', description: 'Forms of government.', defineFile: 'GovtForms.json', priority: 28, group: 'society' },
-  { slug: 'government-types', label: 'Government Type', pluralLabel: 'Government Types', description: 'Types of government.', defineFile: 'GovtTypes.json', priority: 29, group: 'society', mergedInto: 'government-forms' },
+  { slug: 'government-types', label: 'Government Type', pluralLabel: 'Government Types', description: 'Types of government.', defineFile: 'GovtTypes.json', priority: 29, group: 'society' },
   { slug: 'faction-privileges', label: 'Faction Privilege', pluralLabel: 'Faction Privileges', description: 'Privileges that can be granted to factions.', defineFile: 'FactionPrivileges.json', priority: 30, group: 'society' },
   { slug: 'policies', label: 'Policy', pluralLabel: 'Policies', description: 'National policy categories.', defineFile: 'Policies.json', priority: 31, group: 'society' },
   { slug: 'policy-options', label: 'Policy Option', pluralLabel: 'Policy Options', description: 'Individual policy choices.', defineFile: 'PolicyOptions.json', priority: 32, group: 'society', mergedInto: 'policies' },
@@ -260,9 +323,59 @@ export const CATEGORIES: CategoryMeta[] = [
   { slug: 'reform-variant-tech', label: 'Reform Variant Tech', pluralLabel: 'Reform Variant Techs', description: 'Technology variants unlocked by reforms.', defineFile: 'ReformVariantTech.json', priority: 85, group: 'reference', mergedInto: 'government-reforms' },
 ];
 
+// Player-facing navigation order. Keeping this separate from extraction order
+// lets the parser retain the game's structure while the wiki follows the way
+// readers move through its systems.
+const WEBSITE_CATEGORY_ORDER: Array<{ group: CategoryMeta['group']; slugs: string[] }> = [
+  {
+    group: 'world',
+    slugs: ['countries', 'regions', 'cultures', 'culture-traits', 'planetary-bodies', 'terrain-types', 'deposits', 'specializations', 'space-objects', 'eras'],
+  },
+  {
+    group: 'society',
+    slugs: ['government-types', 'government-reforms', 'factions', 'faction-privileges', 'population-laws', 'population-types', 'ethics', 'social-metrics', 'edicts', 'decisions'],
+  },
+  {
+    group: 'core',
+    slugs: ['resources', 'deposit-resources', 'projects', 'technologies', 'sliders'],
+  },
+  {
+    group: 'characters',
+    slugs: ['character-jobs', 'character-traits', 'character-skills', 'character-equipment', 'character-interactions', 'psychology'],
+  },
+  {
+    group: 'military',
+    slugs: ['unit-components', 'auto-units', 'unit-types', 'unit-archetypes', 'battle-domains', 'damage-types', 'battle-stances'],
+  },
+  {
+    group: 'diplomacy',
+    slugs: ['diplomatic-actions', 'diplomatic-missions', 'espionage-operations', 'organization-types', 'missions', 'empire-actions', 'assets'],
+  },
+  {
+    group: 'reference',
+    slugs: ['modifiers', 'static-modifiers', 'events', 'situations', 'mission-components', 'map-modes', 'notifications', 'diplomatic-flags', 'clock-phases', 'ai-strategies', 'teams'],
+  },
+];
+
+let websitePriority = 0;
+for (const placement of WEBSITE_CATEGORY_ORDER) {
+  for (const slug of placement.slugs) {
+    const category = CATEGORIES.find((item) => item.slug === slug);
+    if (!category) continue;
+    category.group = placement.group;
+    category.priority = websitePriority++;
+  }
+}
+
 export const CATEGORY_BY_SLUG = Object.fromEntries(
   CATEGORIES.map((c) => [c.slug, c]),
 );
+
+export function isWebsiteCategory(slug: string): boolean {
+  const category = CATEGORY_BY_SLUG[slug];
+  return !WEBSITE_HIDDEN_CATEGORY_SLUGS.has(slug)
+    && !(category?.mergedInto && WEBSITE_HIDDEN_CATEGORY_SLUGS.has(category.mergedInto));
+}
 
 export const DEFINE_FILE_TO_SLUG: Record<string, string> = Object.fromEntries(
   CATEGORIES.filter((c) => c.defineFile).map((c) => [c.defineFile!, c.slug]),

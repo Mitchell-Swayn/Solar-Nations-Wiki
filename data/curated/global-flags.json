@@ -2,7 +2,7 @@
   {
     "id": "robotCountryGlobalFlag",
     "type": "global-flags",
-    "displayName": "Robot Country Global Flag",
+    "displayName": "robotCountryGlobalFlag",
     "fields": {
       "Name": "robotCountryGlobalFlag"
     },
@@ -24,7 +24,7 @@
   {
     "id": "superhumanCountryGlobalFlag",
     "type": "global-flags",
-    "displayName": "Superhuman Country Global Flag",
+    "displayName": "superhumanCountryGlobalFlag",
     "fields": {
       "Name": "superhumanCountryGlobalFlag"
     },

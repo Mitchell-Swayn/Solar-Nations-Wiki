@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ScenarioTabs from '../../components/ScenarioTabs.astro';
+import GameIcon from '../../components/GameIcon.astro';
+import CountryFlagIcon from '../../components/CountryFlagIcon.astro';
+import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../../lib/categories';
+import { getEntry } from '../../lib/data';
+import { getRegionOwner, getRegionPath, getRegionScenarios, getRegionTerrainIcon } from '../../lib/regions';
+import { getOrbitIconBody, getOrbitLabel, getOrbitParent } from '../../lib/planetary-orbits';
+import { withBase } from '../../lib/base';
+
+const category = CATEGORY_BY_SLUG.regions;
+const group = CATEGORY_GROUPS.find((item) => item.id === category.group);
+const scenarios = getRegionScenarios();
+const total = scenarios.reduce((sum, scenario) => sum + scenario.regions.length, 0);
+const tabs = scenarios.map((scenario) => ({ id: scenario.id, label: scenario.name, href: `?scenario=${scenario.id}` }));
+const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+const groupedScenarios = scenarios.map((scenario) => {
+  const regionsByPlanet = new Map<string, typeof scenario.regions>();
+  for (const region of scenario.regions) {
+    const regions = regionsByPlanet.get(region.planet) ?? [];
+    regions.push(region);
+    regionsByPlanet.set(region.planet, regions);
+  }
+  const planetGroups = [...regionsByPlanet].map(([planetId, regions]) => ({
+    planetId,
+    planet: getEntry('planetary-bodies', planetId),
+    regions,
+  }));
+  const groupById = new Map(planetGroups.map((item) => [item.planetId, item]));
+  const included = new Set(groupById.keys());
+  for (const bodyId of [...included]) {
+    let parent = getOrbitParent(bodyId);
+    while (parent) {
+      included.add(parent);
+      parent = getOrbitParent(parent);
+    }
+  }
+  const ordered: Array<(typeof planetGroups)[number] & { systemIcon: ReturnType<typeof getEntry>; depth: number; label: string }> = [];
+  const children = new Map<string | undefined, string[]>();
+  for (const bodyId of included) {
+    const parent = getOrbitParent(bodyId);
+    const key = parent && included.has(parent) ? parent : undefined;
+    children.set(key, [...(children.get(key) ?? []), bodyId]);
+  }
+  const name = (id: string) => getOrbitLabel(id)
+    ?? getEntry('planetary-bodies', id)?.displayName
+    ?? groupById.get(id)?.regions[0]?.name
+    ?? id;
+  const visit = (bodyId: string, depth: number) => {
+    const body = groupById.get(bodyId);
+    const planet = body?.planet ?? getEntry('planetary-bodies', bodyId);
+    ordered.push({ planetId: bodyId, planet, systemIcon: planet ?? getEntry('planetary-bodies', getOrbitIconBody(bodyId)), regions: body?.regions ?? [], depth, label: name(bodyId) });
+    for (const child of (children.get(bodyId) ?? []).sort((a, b) => name(a).localeCompare(name(b)))) visit(child, depth + 1);
+  };
+  for (const root of (children.get(undefined) ?? []).sort((a, b) => name(a).localeCompare(name(b)))) visit(root, 0);
+  return { scenario, planetGroups: ordered };
+});
+---
+
+<BaseLayout title="Regions" description={category.description} activeType="regions">
+  <Breadcrumbs group={group?.label} category="Regions" />
+  <header class="collection-header"><div><p class="eyebrow">{group?.label}</p><h1>Regions</h1><p>{category.description}</p></div><div class="collection-count"><strong>{total}</strong><span>Scenario entries</span></div></header>
+  <ScenarioTabs tabs={tabs} switchPanels />
+  <div class="collection-tools"><label class="filter-input"><span class="sr-only">Filter regions</span><span class="search-symbol"></span><input id="region-filter" type="search" placeholder="Filter regions..." /></label><span id="visible-count">Showing {scenarios[0]?.regions.length ?? 0}</span></div>
+  <div class="region-scenarios">
+    {groupedScenarios.map(({ scenario, planetGroups }, index) => <section id={`scenario-panel-${scenario.id}`} data-scenario data-scenario-panel={scenario.id} hidden={index > 0}>
+      {planetGroups.map(({ planetId, planet, systemIcon, regions, depth, label }) => <section class="planet-region-group" data-region-group data-orbit-id={planetId} data-orbit-parent={getOrbitParent(planetId)} data-depth={depth}>
+        <header class="planet-region-heading compact" style={`--orbit-depth: ${depth}`}>
+          <div class="planet-heading-title">
+            <GameIcon name={systemIcon?.icon ?? 'planet'} size={32} />
+            <h2>{label}</h2>
+          </div>
+          {regions.length === 1 ? (() => {
+            const region = regions[0];
+            const owner = getRegionOwner(scenario, region);
+            return <a class="inline-region" href={withBase(getRegionPath(scenario.id, region.id))} data-region data-search={`${region.name} ${region.id} ${planet?.displayName ?? region.planet} ${owner?.name ?? ''}`.toLowerCase()}>
+              <GameIcon name={getRegionTerrainIcon(region)} size={28} />
+              <span class="inline-region-name"><strong>{region.name}</strong><small>{owner ? <><CountryFlagIcon flag={owner.flag} countryName={owner.name} size={22} />{owner.name}</> : 'Unowned'}</small></span>
+              <span class="inline-region-stats"><strong>{region.population > 0 ? compactNumber.format(region.population) : 'Unpopulated'}</strong><small>{region.provinceCount} {region.provinceCount === 1 ? 'province' : 'provinces'}</small></span>
+            </a>;
+          })() : <span>{regions.length > 1 ? `${regions.length} regions` : 'Orbital parent'}</span>}
+        </header>
+        {regions.length > 1 && <div class="region-grid" style={`--orbit-depth: ${depth}`}>
+        {regions.map((region) => {
+          const owner = getRegionOwner(scenario, region);
+          return <a class="inline-region" href={withBase(getRegionPath(scenario.id, region.id))} data-region data-search={`${region.name} ${region.id} ${planet?.displayName ?? region.planet} ${owner?.name ?? ''}`.toLowerCase()}>
+            <GameIcon name={getRegionTerrainIcon(region)} size={28} />
+            <span class="inline-region-name"><strong>{region.name}</strong><small>{owner ? <><CountryFlagIcon flag={owner.flag} countryName={owner.name} size={22} />{owner.name}</> : 'Unowned'}</small></span>
+            <span class="inline-region-stats"><strong>{region.population > 0 ? compactNumber.format(region.population) : 'Unpopulated'}</strong><small>{region.provinceCount} {region.provinceCount === 1 ? 'province' : 'provinces'}</small></span>
+          </a>;
+        })}
+        </div>}
+      </section>)}
+    </section>)}
+  </div>
+  <p class="empty-state" id="empty-state" hidden>No regions match this filter.</p>
+</BaseLayout>
+
+<script>
+  const filter = document.getElementById('region-filter') as HTMLInputElement;
+  const rows = [...document.querySelectorAll<HTMLElement>('[data-region]')];
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-scenario]')];
+  const count = document.getElementById('visible-count');
+  const empty = document.getElementById('empty-state');
+  const applyFilter = () => {
+    const query = filter.value.trim().toLowerCase();
+    const activeScenario = document.querySelector<HTMLElement>('[data-scenario-tabs] [aria-selected="true"]')?.dataset.scenarioId;
+    let visible = 0;
+    for (const row of rows) row.hidden = !row.dataset.search?.includes(query);
+    const groups = [...document.querySelectorAll<HTMLElement>('[data-region-group]')];
+    for (const group of groups) {
+      group.hidden = ![...group.querySelectorAll<HTMLElement>('[data-region]')].some((row) => !row.hidden);
+    }
+    for (let changed = true; changed;) {
+      changed = false;
+      for (const group of groups) {
+        if (!group.hidden) continue;
+        const hasVisibleChild = groups.some((child) => !child.hidden
+          && child.dataset.orbitParent === group.dataset.orbitId
+          && child.closest('[data-scenario]') === group.closest('[data-scenario]'));
+        if (hasVisibleChild) { group.hidden = false; changed = true; }
+      }
+    }
+    for (const section of sections) {
+      const active = section.dataset.scenarioPanel === activeScenario;
+      const matches = [...section.querySelectorAll<HTMLElement>('[data-region]')].filter((row) => !row.hidden).length;
+      section.hidden = !active || matches === 0;
+      if (active) visible = matches;
+    }
+    if (count) count.textContent = `Showing ${visible}`;
+    if (empty) empty.hidden = visible !== 0;
+  };
+  filter?.addEventListener('input', applyFilter);
+  document.querySelector('[data-scenario-tabs]')?.addEventListener('click', () => queueMicrotask(applyFilter));
+  window.addEventListener('popstate', () => queueMicrotask(applyFilter));
+  applyFilter();
+</script>
+
+<style>
+  .region-scenarios { margin-top: 28px; }
+  .planet-region-group + .planet-region-group { margin-top: 28px; }
+  .planet-region-group[data-depth]:not([data-depth="0"]) { margin-top: 16px; }
+  .planet-region-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 10px; padding: 0 0 8px calc(var(--orbit-depth) * 18px); border-bottom: 1px solid var(--border); }
+  .planet-heading-title { display: flex; align-items: center; gap: 9px; min-width: 0; }
+  .planet-region-heading h2 { overflow: hidden; margin: 0; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; }
+  .planet-region-heading > span { flex: none; color: var(--text-muted); font-size: 9px; font-weight: 700; }
+  .planet-region-heading.compact { margin-bottom: 0; padding-bottom: 6px; }
+  .inline-region { display: grid; grid-template-columns: 30px minmax(120px, 1fr) auto; align-items: center; gap: 8px; min-width: min(440px, 60%); padding: 5px 8px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; }
+  .inline-region:hover { color: var(--text); border-color: var(--border-strong); }
+  .inline-region-name, .inline-region-stats { min-width: 0; }
+  .inline-region-name strong, .inline-region-name small, .inline-region-stats strong, .inline-region-stats small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .inline-region-name strong, .inline-region-stats strong { font-size: 10px; }
+  .inline-region-name small { display: flex; align-items: center; gap: 5px; }
+  .inline-region-name small, .inline-region-stats small { margin-top: 1px; color: var(--text-muted); font-size: 8px; }
+  .inline-region-stats { text-align: right; }
+  .region-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-left: calc(var(--orbit-depth) * 18px); }
+  .region-grid .inline-region { min-width: 0; width: 100%; }
+  @media (max-width: 950px) { .region-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .planet-region-heading.compact { align-items: stretch; flex-direction: column; } .inline-region { min-width: 0; width: 100%; } }
+</style>

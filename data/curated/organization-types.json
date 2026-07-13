@@ -2,7 +2,7 @@
   {
     "id": "culturalExchange",
     "type": "organization-types",
-    "displayName": "Cultural Exchange",
+    "displayName": "Culture Exchange",
     "icon": "",
     "fields": {
       "Name": "culturalExchange",

@@ -1,0 +1,50 @@
+---
+import type { ModifierRef, WikiEntry } from '../lib/types';
+import GameIcon from './GameIcon.astro';
+import ModifierList from './ModifierList.astro';
+
+interface Props {
+  fields: Record<string, unknown>;
+  modifiers: ModifierRef[];
+  faction?: WikiEntry;
+}
+
+const { fields, modifiers, faction } = Astro.props;
+const number = (key: string) => typeof fields[key] === 'number' ? fields[key] as number : undefined;
+const signed = (value: number) => `${value >= 0 ? '+' : ''}${value}`;
+const percent = (value: number) => `${value >= 0 ? '+' : ''}${(value * 100).toFixed(1)}%`;
+const mechanics = [
+  { label: 'Grant stability change', value: number('StabilityGain'), icon: 'stability', format: signed, tone: 'benefit' },
+  { label: 'Stability maintenance', value: number('StabilityMaintenance'), icon: 'stability', format: signed, tone: 'neutral' },
+  { label: `${faction?.displayName ?? 'Faction'} power`, value: number('PowerChange'), icon: faction?.icon, format: percent, tone: 'benefit' },
+  { label: `${faction?.displayName ?? 'Faction'} loyalty`, value: number('LoyaltyImpact'), icon: faction?.icon, format: percent, tone: 'benefit' },
+].filter((effect): effect is typeof effect & { value: number } => effect.value !== undefined);
+---
+
+<div class="privilege-mechanics">
+  {mechanics.map((effect) => (
+    <div class="privilege-mechanic">
+      <span class="privilege-mechanic-name">{effect.icon && <GameIcon name={effect.icon} size={22} />}<span>{effect.label}</span></span>
+      <strong class:list={{ positive: effect.tone === 'benefit' && effect.value > 0, negative: effect.tone === 'benefit' && effect.value < 0 }}>{effect.format(effect.value)}</strong>
+    </div>
+  ))}
+</div>
+
+{modifiers.length > 0 && (
+  <div class="privilege-modifiers">
+    <h3>Modifiers</h3>
+    <ModifierList modifiers={modifiers} />
+  </div>
+)}
+
+<style>
+  .privilege-mechanics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); }
+  .privilege-mechanic { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 54px; padding: 10px 14px; background: var(--surface); border-right: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong); }
+  .privilege-mechanic-name { display: inline-flex; align-items: center; gap: 8px; min-width: 0; font-size: 12px; font-weight: 600; }
+  .privilege-mechanic strong { flex: 0 0 auto; font-family: var(--mono); font-size: 12px; }
+  .positive { color: var(--positive); }
+  .negative { color: var(--negative); }
+  .privilege-modifiers { margin-top: 24px; }
+  .privilege-modifiers h3 { margin: 0 0 8px; font-size: 14px; }
+  @media (max-width: 640px) { .privilege-mechanics { grid-template-columns: 1fr; } }
+</style>

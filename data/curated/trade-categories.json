@@ -2,7 +2,7 @@
   {
     "id": "misc",
     "type": "trade-categories",
-    "displayName": "Misc",
+    "displayName": "misc",
     "icon": "alliance",
     "fields": {
       "Name": "misc",
@@ -28,7 +28,7 @@
   {
     "id": "territory",
     "type": "trade-categories",
-    "displayName": "Territory",
+    "displayName": "territory",
     "icon": "territory",
     "fields": {
       "Name": "territory",

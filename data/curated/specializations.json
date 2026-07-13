@@ -131,7 +131,7 @@
   {
     "id": "defaultSpec",
     "type": "specializations",
-    "displayName": "Default Spec",
+    "displayName": "defaultSpec",
     "icon": "colony",
     "fields": {
       "Name": "defaultSpec",
@@ -278,7 +278,7 @@
   {
     "id": "protectorateSpec",
     "type": "specializations",
-    "displayName": "Protectorate Spec",
+    "displayName": "protectorateSpec",
     "icon": "colony",
     "fields": {
       "Name": "protectorateSpec",
@@ -381,7 +381,7 @@
   {
     "id": "unintegratedSpec",
     "type": "specializations",
-    "displayName": "Unintegrated Spec",
+    "displayName": "unintegratedSpec",
     "icon": "colony",
     "fields": {
       "Name": "unintegratedSpec",

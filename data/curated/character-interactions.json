@@ -2,7 +2,7 @@
   {
     "id": "coupGovernment",
     "type": "character-interactions",
-    "displayName": "Coup Government",
+    "displayName": "coupGovernment",
     "fields": {
       "Name": "coupGovernment",
       "Effects": [
@@ -26,7 +26,7 @@
   {
     "id": "NewRow",
     "type": "character-interactions",
-    "displayName": "New Row",
+    "displayName": "NewRow",
     "fields": {
       "Name": "NewRow",
       "Effects": [],
@@ -39,7 +39,7 @@
   {
     "id": "retire",
     "type": "character-interactions",
-    "displayName": "Retire",
+    "displayName": "retire",
     "fields": {
       "Name": "retire",
       "Effects": [

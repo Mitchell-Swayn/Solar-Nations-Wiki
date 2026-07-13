@@ -2,7 +2,7 @@
   {
     "id": "highOrbit",
     "type": "space-zone-types",
-    "displayName": "High Orbit",
+    "displayName": "highOrbit",
     "fields": {
       "Name": "highOrbit",
       "DefaultStart": 0.5,
@@ -18,7 +18,7 @@
   {
     "id": "interplanetarySpace",
     "type": "space-zone-types",
-    "displayName": "Interplanetary Space",
+    "displayName": "interplanetarySpace",
     "fields": {
       "Name": "interplanetarySpace",
       "DefaultStart": 0.5,
@@ -34,7 +34,7 @@
   {
     "id": "lowOrbit",
     "type": "space-zone-types",
-    "displayName": "Low Orbit",
+    "displayName": "lowOrbit",
     "fields": {
       "Name": "lowOrbit",
       "DefaultStart": 0.05,
@@ -50,7 +50,7 @@
   {
     "id": "middleOrbit",
     "type": "space-zone-types",
-    "displayName": "Middle Orbit",
+    "displayName": "middleOrbit",
     "fields": {
       "Name": "middleOrbit",
       "DefaultStart": 0.1,

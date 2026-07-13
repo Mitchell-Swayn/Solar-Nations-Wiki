@@ -1,0 +1,69 @@
+---
+import type { ModifierRef } from '../lib/types';
+import { getEntry } from '../lib/data';
+import GameIcon from './GameIcon.astro';
+import ModifierBadges from './ModifierBadges.astro';
+
+interface Props {
+  skillModifiers: Record<string, ModifierRef[]>;
+}
+
+const { skillModifiers } = Astro.props;
+const groups = Object.entries(skillModifiers).map(([skillId, modifiers]) => {
+  const skill = getEntry('character-skills', skillId);
+  return {
+    name: skill?.displayName ?? skillId,
+    icon: skill?.icon,
+    modifiers,
+  };
+});
+---
+
+<span class="job-skill-bonuses">
+  {groups.map((group) => (
+    <span class="job-skill-bonus">
+      <span class="job-skill-heading">
+        {group.icon && <GameIcon name={group.icon} size={16} />}
+        <b>{group.name}</b>
+        <small>per level</small>
+      </span>
+      <ModifierBadges modifiers={group.modifiers} />
+    </span>
+  ))}
+</span>
+
+<style>
+  .job-skill-bonuses,
+  .job-skill-bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-skill-bonuses {
+    gap: 0.65rem;
+    min-width: 0;
+  }
+
+  .job-skill-bonus {
+    gap: 0.2rem;
+  }
+
+  .job-skill-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text);
+    font-size: 10px;
+  }
+
+  .job-skill-heading small {
+    color: var(--text-muted);
+    font-size: 9px;
+    font-weight: 500;
+  }
+
+  .job-skill-bonus :global(.row-effects) {
+    padding-left: 21px;
+  }
+</style>
