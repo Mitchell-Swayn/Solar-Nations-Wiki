@@ -1,13 +1,15 @@
 import type { CategoryMeta } from './types';
 
 export const CATEGORY_GROUPS = [
-  { id: 'world', label: 'Nations & Worlds', description: 'Countries, cultures, territories, and the worlds they inhabit.' },
-  { id: 'society', label: 'Government & Society', description: 'Government, political factions, laws, and population systems.' },
-  { id: 'core', label: 'Economy & Research', description: 'Resources, construction, technology, and national development.' },
+  { id: 'nations', label: 'Nations & Cultures', description: 'Countries, cultures, and the traits that define them.' },
+  { id: 'world', label: 'Worlds & Regions', description: 'Planetary bodies, regions, terrain, deposits, and regional development.' },
+  { id: 'society', label: 'Government & Politics', description: 'Government reforms, political factions, privileges, and edicts.' },
+  { id: 'core', label: 'Economy & Technology', description: 'Resources, construction, technology, and national development.' },
   { id: 'characters', label: 'Characters', description: 'Character roles, traits, skills, equipment, and interactions.' },
   { id: 'military', label: 'Military', description: 'Unit design, combat statistics, domains, and battle stances.' },
-  { id: 'diplomacy', label: 'Diplomacy & Intelligence', description: 'Diplomacy, espionage, organizations, missions, and empire actions.' },
-  { id: 'reference', label: 'Game Reference', description: 'Technical definitions, modifiers, events, and interface systems.' },
+  { id: 'diplomacy', label: 'Diplomacy & Intelligence', description: 'Diplomacy, espionage, organizations, assets, and empire actions.' },
+  { id: 'progression', label: 'Events & Progression', description: 'Eras, situations, events, and missions that shape a campaign.' },
+  { id: 'reference', label: 'Game Reference', description: 'Technical definitions, modifiers, and interface systems.' },
 ] as const;
 
 // These structures are still extracted and normalized for source fidelity and
@@ -328,8 +330,12 @@ export const CATEGORIES: CategoryMeta[] = [
 // readers move through its systems.
 const WEBSITE_CATEGORY_ORDER: Array<{ group: CategoryMeta['group']; slugs: string[] }> = [
   {
+    group: 'nations',
+    slugs: ['countries', 'cultures', 'culture-traits'],
+  },
+  {
     group: 'world',
-    slugs: ['countries', 'regions', 'cultures', 'culture-traits', 'planetary-bodies', 'terrain-types', 'deposits', 'specializations', 'space-objects', 'eras'],
+    slugs: ['planetary-bodies', 'regions', 'specializations', 'terrain-types', 'deposits', 'space-objects'],
   },
   {
     group: 'society',
@@ -345,15 +351,19 @@ const WEBSITE_CATEGORY_ORDER: Array<{ group: CategoryMeta['group']; slugs: strin
   },
   {
     group: 'military',
-    slugs: ['unit-components', 'auto-units', 'unit-types', 'unit-archetypes', 'battle-domains', 'damage-types', 'battle-stances'],
+    slugs: ['battle-domains', 'unit-types', 'unit-archetypes', 'unit-components', 'damage-types', 'auto-units', 'battle-stances'],
   },
   {
     group: 'diplomacy',
-    slugs: ['diplomatic-actions', 'diplomatic-missions', 'espionage-operations', 'organization-types', 'missions', 'empire-actions', 'assets'],
+    slugs: ['diplomatic-actions', 'empire-actions', 'diplomatic-missions', 'organization-types', 'espionage-operations', 'assets'],
+  },
+  {
+    group: 'progression',
+    slugs: ['eras', 'situations', 'events', 'missions'],
   },
   {
     group: 'reference',
-    slugs: ['modifiers', 'static-modifiers', 'events', 'situations', 'mission-components', 'map-modes', 'notifications', 'diplomatic-flags', 'clock-phases', 'ai-strategies', 'teams'],
+    slugs: ['modifiers', 'static-modifiers', 'map-modes', 'notifications', 'diplomatic-flags', 'clock-phases', 'teams', 'ai-strategies', 'mission-components'],
   },
 ];
 

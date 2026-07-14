@@ -44,7 +44,7 @@ export interface CategoryMeta {
   description: string;
   defineFile?: string;
   priority: number;
-  group: 'world' | 'society' | 'core' | 'characters' | 'military' | 'diplomacy' | 'reference';
+  group: 'nations' | 'world' | 'society' | 'core' | 'characters' | 'military' | 'diplomacy' | 'progression' | 'reference';
   mergedInto?: string;
 }
 

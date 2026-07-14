@@ -111,6 +111,7 @@ const propertyCount = Object.keys(detailFields).filter((key) => !['Name', 'Icon'
 
       {type === 'planetary-bodies' && <RegionScenarioList planetId={entry.id} />}
       {type === 'deposits' && <RegionScenarioList depositId={entry.id} />}
+      {type === 'deposit-resources' && <RegionScenarioList depositResourceId={entry.id} />}
 
       {entry.prerequisites.length > 0 && <section class="article-section" id="requirements"><h2>Requirements</h2><PrerequisiteChain prerequisites={entry.prerequisites} /></section>}
       {reformOptions.length > 0 && <section class="article-section" id="options"><h2>Reform options</h2><div class="related-options">{reformOptions.map((option) => <a href={withBase(`/government-reform-options/${option.id}/`)}>{option.icon && <GameIcon name={option.icon} size={30} />}<span><strong>{option.displayName}</strong><code>{option.id}</code></span><b>›</b></a>)}</div></section>}

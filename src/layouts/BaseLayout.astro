@@ -1,7 +1,7 @@
 ---
 import { withBase } from '../lib/base';
 import { getCategories, getCategoryCount, getIndex } from '../lib/data';
-import { CATEGORY_BY_SLUG, CATEGORY_GROUPS } from '../lib/categories';
+import { CATEGORY_GROUPS } from '../lib/categories';
 import { getCountryScenarios } from '../lib/countries';
 
 interface Props {
@@ -13,7 +13,6 @@ interface Props {
 const { title, description, activeType } = Astro.props;
 const fullTitle = title === 'Solar Nations 2 Wiki' ? title : `${title} | Solar Nations 2 Wiki`;
 const categories = getCategories().filter((category) => !category.mergedInto);
-const activeCategoryGroup = activeType ? CATEGORY_BY_SLUG[activeType]?.group : undefined;
 const categoryCounts = Object.fromEntries(categories.map((category) => [category.slug, getCategoryCount(category.slug)]));
 const generatedDate = new Date(getIndex().generatedAt);
 const buildLabel = Number.isNaN(generatedDate.valueOf())
@@ -56,8 +55,8 @@ const scenarioIds = getCountryScenarios().map((scenario) => scenario.id);
         <nav aria-label="Wiki sections">
           <a href={withBase('/')} class:list={['nav-home', { active: !activeType }]}>Overview</a>
           {CATEGORY_GROUPS.map((group) => (
-            <details class="nav-group" open={group.id !== 'reference' || activeCategoryGroup === group.id}>
-              <summary>{group.label}</summary>
+            <section class="nav-group" aria-labelledby={`nav-group-${group.id}`}>
+              <h2 id={`nav-group-${group.id}`}>{group.label}</h2>
               <div>
                 {categories.filter((cat) => cat.group === group.id).map((cat) => (
                   <a href={withBase(`/${cat.slug}/`)} class:list={{ active: activeType === cat.slug }}>
@@ -65,7 +64,7 @@ const scenarioIds = getCountryScenarios().map((scenario) => scenario.id);
                   </a>
                 ))}
               </div>
-            </details>
+            </section>
           ))}
         </nav>
         <p class="sidebar-note">Game data reference<br />{buildLabel}</p>

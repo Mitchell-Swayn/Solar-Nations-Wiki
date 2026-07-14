@@ -3,21 +3,30 @@ import ScenarioTabs from './ScenarioTabs.astro';
 import GameIcon from './GameIcon.astro';
 import CountryFlagIcon from './CountryFlagIcon.astro';
 import { getCountryScenarios } from '../lib/countries';
-import { getEntry } from '../lib/data';
+import { getEntry, getEntriesByType } from '../lib/data';
 import { getRegionOwner, getRegionPath, getRegionTerrainIcon } from '../lib/regions';
 import { withBase } from '../lib/base';
 
 interface Props {
   planetId?: string;
   depositId?: string;
+  depositResourceId?: string;
 }
 
-const { planetId, depositId } = Astro.props;
+const { planetId, depositId, depositResourceId } = Astro.props;
+const selectedDepositIds = depositId
+  ? new Set([depositId])
+  : depositResourceId
+    ? new Set(getEntriesByType('deposits')
+      .filter((deposit) => deposit.modifiers.some((modifier) =>
+        modifier.key === 'resourceProduction' && modifier.value1 === depositResourceId))
+      .map((deposit) => deposit.id))
+    : undefined;
 const states = getCountryScenarios().map((scenario) => ({
   scenario,
   regions: scenario.regions.filter((region) =>
     (planetId === undefined || region.planet === planetId)
-    && (depositId === undefined || region.deposits.some((deposit) => deposit.id === depositId))),
+    && (selectedDepositIds === undefined || region.deposits.some((deposit) => selectedDepositIds.has(deposit.id)))),
 }));
 const tabs = states.map((state) => ({
   id: state.scenario.id,
@@ -25,7 +34,9 @@ const tabs = states.map((state) => ({
   href: `?scenario=${state.scenario.id}`,
 }));
 const compactNumber = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
-const quantity = (region: typeof states[number]['regions'][number]) => region.deposits.find((deposit) => deposit.id === depositId)?.quantity;
+const quantity = (region: typeof states[number]['regions'][number]) => region.deposits
+  .filter((deposit) => selectedDepositIds?.has(deposit.id))
+  .reduce((sum, deposit) => sum + deposit.quantity, 0);
 ---
 
 <section class="article-section region-presence" id="regions">
@@ -43,7 +54,7 @@ const quantity = (region: typeof states[number]['regions'][number]) => region.de
             <span class="region-presence-icon"><GameIcon name={icon} size={30} /></span>
             <span class="region-presence-name"><strong>{region.name}</strong><small>{region.regionType === 'planetary' ? 'Unpopulated region' : specialization?.displayName ?? 'No specialization'}</small></span>
             {owner ? <span class="region-owner"><CountryFlagIcon flag={owner.flag} countryName={owner.name} size={30} /><span>{owner.name}</span></span> : <span class="region-owner muted">Unowned</span>}
-            <span class="region-presence-value">{depositId ? <><strong>{quantity(region)?.toLocaleString()}</strong><small>Quantity</small></> : <><strong>{compactNumber.format(region.population)}</strong><small>Population</small></>}</span>
+            <span class="region-presence-value">{selectedDepositIds ? <><strong>{quantity(region).toLocaleString()}</strong><small>Quantity</small></> : <><strong>{compactNumber.format(region.population)}</strong><small>Population</small></>}</span>
           </a>;
         })}
       </div> : <p class="notice">No regions in this scenario.</p>}
